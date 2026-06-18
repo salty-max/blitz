@@ -3,6 +3,7 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "dist",
+    "resolveJsonModule": true,
     "paths": {
       "@blitz/data": ["./src/index.ts"],
       "@blitz/data/*": ["./src/*"]
