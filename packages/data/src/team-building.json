@@ -1,0 +1,10 @@
+{
+  "budget": 1000000,
+  "minPlayers": 11,
+  "maxPlayers": 16,
+  "rerollMax": 8,
+  "apothecaryCost": 50000,
+  "assistantCoaches": { "cost": 10000, "max": 6 },
+  "cheerleaders": { "cost": 10000, "max": 6 },
+  "dedicatedFans": { "cost": 5000, "start": 1, "max": 3 }
+}
