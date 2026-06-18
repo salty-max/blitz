@@ -1,0 +1,583 @@
+[
+  {
+    "key": "block",
+    "name": "Block",
+    "category": "general",
+    "effect": "Not knocked down on a [[both-down]] result."
+  },
+  {
+    "key": "dauntless",
+    "name": "Dauntless",
+    "category": "general",
+    "effect": "Roll to match a stronger opponent's Strength for a block."
+  },
+  {
+    "key": "fend",
+    "name": "Fend",
+    "category": "general",
+    "effect": "Opponents can't [[follow-up]] after pushing you back."
+  },
+  {
+    "key": "frenzy",
+    "name": "Frenzy",
+    "category": "general",
+    "effect": "Must [[follow-up]] and throw a second block if the target was pushed back."
+  },
+  {
+    "key": "kick",
+    "name": "Kick",
+    "category": "general",
+    "effect": "Reduce kick-off deviation to a D3."
+  },
+  {
+    "key": "pro",
+    "name": "Pro",
+    "category": "general",
+    "effect": "Once per activation, roll 3+ to re-roll one die."
+  },
+  {
+    "key": "steady-footing",
+    "name": "Steady Footing",
+    "category": "general",
+    "effect": "Roll a 6 to avoid a knock-down or fall."
+  },
+  {
+    "key": "strip-ball",
+    "name": "Strip Ball",
+    "category": "general",
+    "effect": "A ball carrier you [[push-back]] drops the ball."
+  },
+  {
+    "key": "sure-hands",
+    "name": "Sure Hands",
+    "category": "general",
+    "effect": "Re-roll a failed pick-up; immune to [[strip-ball]]."
+  },
+  {
+    "key": "tackle",
+    "name": "Tackle",
+    "category": "general",
+    "effect": "Opponents can't use [[dodge]] to leave your [[tackle-zone]]."
+  },
+  {
+    "key": "taunt",
+    "name": "Taunt",
+    "category": "general",
+    "effect": "Force a player you pushed back to [[follow-up]]."
+  },
+  {
+    "key": "wrestle",
+    "name": "Wrestle",
+    "category": "general",
+    "effect": "On a [[both-down]], put both players [[prone]]."
+  },
+
+  {
+    "key": "catch",
+    "name": "Catch",
+    "category": "agility",
+    "effect": "Re-roll a failed catch."
+  },
+  {
+    "key": "diving-catch",
+    "name": "Diving Catch",
+    "category": "agility",
+    "effect": "Catch into adjacent squares; +1 to catch in the target square."
+  },
+  {
+    "key": "diving-tackle",
+    "name": "Diving Tackle",
+    "category": "agility",
+    "effect": "Apply −2 to an opponent's [[dodge]] out of your [[tackle-zone]]; you go [[prone]]."
+  },
+  {
+    "key": "dodge",
+    "name": "Dodge",
+    "category": "agility",
+    "effect": "Once per turn, re-roll a failed dodge."
+  },
+  {
+    "key": "defensive",
+    "name": "Defensive",
+    "category": "agility",
+    "effect": "Opponents you mark can't use [[guard]] or Put the Boot In during their turn."
+  },
+  {
+    "key": "hit-and-run",
+    "name": "Hit and Run",
+    "category": "agility",
+    "effect": "After a block or stab, step one free square if still standing."
+  },
+  {
+    "key": "jump-up",
+    "name": "Jump Up",
+    "category": "agility",
+    "effect": "Stand up free; may block while [[prone]] (+1 to the test)."
+  },
+  {
+    "key": "leap",
+    "name": "Leap",
+    "category": "agility",
+    "effect": "Jump an adjacent square with reduced penalties (minimum −1)."
+  },
+  {
+    "key": "safe-pair-of-hands",
+    "name": "Safe Pair of Hands",
+    "category": "agility",
+    "effect": "When knocked down, place the ball in an adjacent square instead of bouncing it."
+  },
+  {
+    "key": "sidestep",
+    "name": "Sidestep",
+    "category": "agility",
+    "effect": "Choose your own [[push-back]] square."
+  },
+  {
+    "key": "sprint",
+    "name": "Sprint",
+    "category": "agility",
+    "effect": "One extra [[rush]] per move."
+  },
+  {
+    "key": "sure-feet",
+    "name": "Sure Feet",
+    "category": "agility",
+    "effect": "Once per turn, re-roll a failed [[rush]]."
+  },
+
+  {
+    "key": "accurate",
+    "name": "Accurate",
+    "category": "passing",
+    "effect": "+1 on a Quick or Short pass."
+  },
+  {
+    "key": "cannoneer",
+    "name": "Cannoneer",
+    "category": "passing",
+    "effect": "+1 on a Long pass or Long Bomb."
+  },
+  {
+    "key": "cloud-burster",
+    "name": "Cloud Burster",
+    "category": "passing",
+    "effect": "Re-roll a Long Bomb, or deny opponents an interception."
+  },
+  {
+    "key": "dump-off",
+    "name": "Dump-Off",
+    "category": "passing",
+    "effect": "Make a quick pass when targeted by a block."
+  },
+  {
+    "key": "give-and-go",
+    "name": "Give and Go",
+    "category": "passing",
+    "effect": "Keep moving after a quick pass or hand-off."
+  },
+  {
+    "key": "hail-mary-pass",
+    "name": "Hail Mary Pass",
+    "category": "passing",
+    "effect": "Throw to any square as a Long Bomb; can't be intercepted."
+  },
+  {
+    "key": "leader",
+    "name": "Leader",
+    "category": "passing",
+    "effect": "One extra team re-roll while on the pitch at the start of a half."
+  },
+  {
+    "key": "nerves-of-steel",
+    "name": "Nerves of Steel",
+    "category": "passing",
+    "effect": "Ignore [[marked|marking]] modifiers when passing or catching."
+  },
+  {
+    "key": "on-the-ball",
+    "name": "On the Ball",
+    "category": "passing",
+    "effect": "Move up to 3 squares before an opponent's pass resolves."
+  },
+  {
+    "key": "pass",
+    "name": "Pass",
+    "category": "passing",
+    "effect": "Re-roll a failed pass."
+  },
+  {
+    "key": "punt",
+    "name": "Punt",
+    "category": "passing",
+    "effect": "A special action to kick the ball downfield."
+  },
+  {
+    "key": "safe-pass",
+    "name": "Safe Pass",
+    "category": "passing",
+    "effect": "A natural 1 on a pass keeps the ball — no [[turnover]]."
+  },
+
+  {
+    "key": "arm-bar",
+    "name": "Arm Bar",
+    "category": "strength",
+    "effect": "+1 to armour/injury if an opponent falls [[dodge|dodging]] from your [[tackle-zone]]."
+  },
+  {
+    "key": "brawler",
+    "name": "Brawler",
+    "category": "strength",
+    "effect": "Re-roll a single [[both-down]] when blocking."
+  },
+  {
+    "key": "break-tackle",
+    "name": "Break Tackle",
+    "category": "strength",
+    "effect": "+1/+2/+3 to a dodge, scaling with your Strength."
+  },
+  {
+    "key": "bullseye",
+    "name": "Bullseye",
+    "category": "strength",
+    "effect": "Throw Team-mate lands on target with no scatter."
+  },
+  {
+    "key": "grab",
+    "name": "Grab",
+    "category": "strength",
+    "effect": "Choose the opponent's [[push-back]] square; they can't [[sidestep]]."
+  },
+  {
+    "key": "guard",
+    "name": "Guard",
+    "category": "strength",
+    "effect": "Give [[assist|assists]] even while [[marked]]."
+  },
+  {
+    "key": "juggernaut",
+    "name": "Juggernaut",
+    "category": "strength",
+    "effect": "On a [[blitz]], treat [[both-down]] as a push; ignore [[fend]], [[stand-firm]] and [[wrestle]]."
+  },
+  {
+    "key": "mighty-blow",
+    "name": "Mighty Blow",
+    "category": "strength",
+    "effect": "+1 to armour/injury when you knock a player down."
+  },
+  {
+    "key": "multiple-block",
+    "name": "Multiple Block",
+    "category": "strength",
+    "effect": "Block two opponents at once (−2 ST)."
+  },
+  {
+    "key": "stand-firm",
+    "name": "Stand Firm",
+    "category": "strength",
+    "effect": "Don't get [[push-back|pushed back]]."
+  },
+  {
+    "key": "strong-arm",
+    "name": "Strong Arm",
+    "category": "strength",
+    "effect": "+1 to Throw Team-mate."
+  },
+  {
+    "key": "thick-skull",
+    "name": "Thick Skull",
+    "category": "strength",
+    "effect": "Only knocked out on 9+ (8+ if [[stunty]])."
+  },
+
+  {
+    "key": "big-hand",
+    "name": "Big Hand",
+    "category": "mutation",
+    "effect": "Ignore all penalties when picking up the ball."
+  },
+  {
+    "key": "claws",
+    "name": "Claws",
+    "category": "mutation",
+    "effect": "Break armour on an 8+ regardless of AV."
+  },
+  {
+    "key": "disturbing-presence",
+    "name": "Disturbing Presence",
+    "category": "mutation",
+    "effect": "−1 to enemy pass, catch or intercept per such player within 3 squares."
+  },
+  {
+    "key": "extra-arms",
+    "name": "Extra Arms",
+    "category": "mutation",
+    "effect": "+1 to catch, pick up or intercept."
+  },
+  {
+    "key": "foul-appearance",
+    "name": "Foul Appearance",
+    "category": "mutation",
+    "effect": "An attacker rolls first; on a 1 the action targeting you fails."
+  },
+  {
+    "key": "horns",
+    "name": "Horns",
+    "category": "mutation",
+    "effect": "+1 ST on a [[blitz]] block."
+  },
+  {
+    "key": "iron-hard-skin",
+    "name": "Iron Hard Skin",
+    "category": "mutation",
+    "effect": "Opponents can't modify armour rolls against you; immune to [[claws]]."
+  },
+  {
+    "key": "monstrous-mouth",
+    "name": "Monstrous Mouth",
+    "category": "mutation",
+    "effect": "Pin a [[marked]] standing opponent so they can't leave."
+  },
+  {
+    "key": "prehensile-tail",
+    "name": "Prehensile Tail",
+    "category": "mutation",
+    "effect": "Extra −1 to opponents [[dodge|dodging]] out of your [[tackle-zone]]."
+  },
+  {
+    "key": "tentacles",
+    "name": "Tentacles",
+    "category": "mutation",
+    "effect": "Roll D6 + ST vs their ST; 6+ stops them leaving."
+  },
+  {
+    "key": "two-heads",
+    "name": "Two Heads",
+    "category": "mutation",
+    "effect": "+1 to dodge."
+  },
+  {
+    "key": "very-long-legs",
+    "name": "Very Long Legs",
+    "category": "mutation",
+    "effect": "+1 to leap or jump, +2 to intercept; ignore [[cloud-burster]]."
+  },
+
+  {
+    "key": "always-hungry",
+    "name": "Always Hungry",
+    "category": "trait",
+    "effect": "Risk eating the team-mate you throw."
+  },
+  {
+    "key": "animal-savagery",
+    "name": "Animal Savagery",
+    "category": "trait",
+    "effect": "May knock down your own adjacent team-mate after acting."
+  },
+  {
+    "key": "animosity",
+    "name": "Animosity (X)",
+    "category": "trait",
+    "effect": "May refuse to pass or hand-off to a named team-mate."
+  },
+  {
+    "key": "ball-and-chain",
+    "name": "Ball & Chain",
+    "category": "trait",
+    "effect": "Moves randomly via template, hitting everything in its path."
+  },
+  {
+    "key": "bloodlust",
+    "name": "Bloodlust (X+)",
+    "category": "trait",
+    "effect": "Must feed on a Thrall after acting, or cause a [[turnover]]."
+  },
+  {
+    "key": "bombardier",
+    "name": "Bombardier",
+    "category": "trait",
+    "effect": "Throw a bomb (like a pass) that knocks down on a hit."
+  },
+  {
+    "key": "bone-head",
+    "name": "Bone Head",
+    "category": "trait",
+    "effect": "May become [[distracted]] after acting (a 1)."
+  },
+  {
+    "key": "breathe-fire",
+    "name": "Breathe Fire",
+    "category": "trait",
+    "effect": "A special attack on a [[marked]] opponent."
+  },
+  {
+    "key": "chainsaw",
+    "name": "Chainsaw",
+    "category": "trait",
+    "effect": "A special attack with a +3 armour roll; a 1 hits yourself."
+  },
+  {
+    "key": "decay",
+    "name": "Decay",
+    "category": "trait",
+    "effect": "+1 to [[casualty]] rolls made against you."
+  },
+  {
+    "key": "drunkard",
+    "name": "Drunkard",
+    "category": "trait",
+    "effect": "−1 to [[rush]]."
+  },
+  {
+    "key": "hatred",
+    "name": "Hatred (X)",
+    "category": "trait",
+    "effect": "Re-roll a Player Down result when blocking a named opponent."
+  },
+  {
+    "key": "hypnotic-gaze",
+    "name": "Hypnotic Gaze",
+    "category": "trait",
+    "effect": "Make an adjacent opponent [[distracted]]."
+  },
+  {
+    "key": "insignificant",
+    "name": "Insignificant",
+    "category": "trait",
+    "effect": "Can't outnumber your non-insignificant players."
+  },
+  {
+    "key": "kick-team-mate",
+    "name": "Kick Team-Mate",
+    "category": "trait",
+    "effect": "Throw a team-mate as an attack (once per turn)."
+  },
+  {
+    "key": "loner",
+    "name": "Loner (X+)",
+    "category": "trait",
+    "effect": "Roll X+ to use a team re-roll, or lose it."
+  },
+  {
+    "key": "my-ball",
+    "name": "My Ball",
+    "category": "trait",
+    "effect": "Won't voluntarily give up the ball."
+  },
+  {
+    "key": "no-ball",
+    "name": "No Ball",
+    "category": "trait",
+    "effect": "Can't carry the ball; auto-fails catch, pick-up or intercept."
+  },
+  {
+    "key": "pick-me-up",
+    "name": "Pick-Me-Up",
+    "category": "trait",
+    "effect": "Nearby [[prone]] team-mates may stand free at the opponent's turn end."
+  },
+  {
+    "key": "plague-ridden",
+    "name": "Plague Ridden",
+    "category": "trait",
+    "effect": "Once a game, raise a new lineman from a kill."
+  },
+  {
+    "key": "pogo",
+    "name": "Pogo",
+    "category": "trait",
+    "effect": "Jump an adjacent square ignoring jump penalties."
+  },
+  {
+    "key": "projectile-vomit",
+    "name": "Projectile Vomit",
+    "category": "trait",
+    "effect": "A special attack on an adjacent opponent."
+  },
+  {
+    "key": "really-stupid",
+    "name": "Really Stupid",
+    "category": "trait",
+    "effect": "Likely to become [[distracted]] unless team-mates are near."
+  },
+  {
+    "key": "regeneration",
+    "name": "Regeneration",
+    "category": "trait",
+    "effect": "4+ to shrug off a [[casualty]] (to Reserves)."
+  },
+  {
+    "key": "right-stuff",
+    "name": "Right Stuff",
+    "category": "trait",
+    "effect": "Can be thrown (Throw Team-mate), even while [[prone]]."
+  },
+  {
+    "key": "secret-weapon",
+    "name": "Secret Weapon",
+    "category": "trait",
+    "effect": "Sent off at the end of the drive it played in."
+  },
+  {
+    "key": "stab",
+    "name": "Stab",
+    "category": "trait",
+    "effect": "A special attack with an unmodifiable armour roll."
+  },
+  {
+    "key": "stunty",
+    "name": "Stunty",
+    "category": "trait",
+    "effect": "No [[marked|marking]] penalty when dodging; −1 to intercept; uses the Stunty injury table."
+  },
+  {
+    "key": "swoop",
+    "name": "Swoop",
+    "category": "trait",
+    "effect": "When thrown, glide (no scatter) and re-roll the landing."
+  },
+  {
+    "key": "take-root",
+    "name": "Take Root",
+    "category": "trait",
+    "effect": "May become rooted (stuck) after acting (a 1)."
+  },
+  {
+    "key": "throw-team-mate",
+    "name": "Throw Team-Mate",
+    "category": "trait",
+    "effect": "May throw a team-mate who has [[right-stuff]]."
+  },
+  {
+    "key": "timmm-ber",
+    "name": "Timmm-Ber!",
+    "category": "trait",
+    "effect": "Adjacent team-mates help a low-MA player stand (+1 each)."
+  },
+  {
+    "key": "titchy",
+    "name": "Titchy",
+    "category": "trait",
+    "effect": "+1 to dodge; adds no [[marked|marking]] penalty to opponents."
+  },
+  {
+    "key": "trickster",
+    "name": "Trickster",
+    "category": "trait",
+    "effect": "When targeted, slip to an adjacent square before the action resolves."
+  },
+  {
+    "key": "unchannelled-fury",
+    "name": "Unchannelled Fury",
+    "category": "trait",
+    "effect": "May rage and waste its activation (a 1–3)."
+  },
+  {
+    "key": "unsteady",
+    "name": "Unsteady",
+    "category": "trait",
+    "effect": "Can't use the Secure the Ball action."
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "key": "tackle-zone",
+    "term": "Tackle Zone",
+    "definition": "The eight squares around a Standing player. An enemy standing in one is [[marked]]."
+  },
+  {
+    "key": "marked",
+    "term": "Marked",
+    "definition": "Standing in an opponent's [[tackle-zone]] — what forces a dodge to leave and adds −1 to many actions."
+  },
+  {
+    "key": "rush",
+    "term": "Rush",
+    "definition": "Moving beyond your MA, one square at a time; each rush needs a 2+ (a natural 1 falls). Up to two per move."
+  },
+  {
+    "key": "turnover",
+    "term": "Turnover",
+    "definition": "Ends your team turn at once — a fumbled pick-up or pass, going down with the ball, or the ball reaching the opposition."
+  },
+  {
+    "key": "prone",
+    "term": "Prone",
+    "definition": "Knocked down but face-up. Can't act; standing up costs 3 squares of movement. Exerts no [[tackle-zone]]."
+  },
+  {
+    "key": "stunned",
+    "term": "Stunned",
+    "definition": "Face-down and unable to be activated. Turned face-up to [[prone]] at the end of your turn."
+  },
+  {
+    "key": "distracted",
+    "term": "Distracted",
+    "definition": "Can't catch, intercept or give [[assist|assists]]; recovers at the end of your turn."
+  },
+  {
+    "key": "both-down",
+    "term": "Both Down",
+    "definition": "A Block result that knocks both players down unless they have [[block]] or [[wrestle]]."
+  },
+  {
+    "key": "push-back",
+    "term": "Push Back",
+    "definition": "A Block result that shoves the target one square away; the blocker may [[follow-up]]."
+  },
+  {
+    "key": "pow",
+    "term": "POW!",
+    "definition": "A Block result that pushes the target back and knocks them down."
+  },
+  {
+    "key": "knocked-down",
+    "term": "Knocked Down",
+    "definition": "Put [[prone]] (or [[stunned]]) — which triggers an Armour roll."
+  },
+  {
+    "key": "follow-up",
+    "term": "Follow-up",
+    "definition": "Moving for free into the square a pushed-back player has vacated."
+  },
+  {
+    "key": "assist",
+    "term": "Assist",
+    "definition": "A nearby team-mate adding ±1 Strength to a block — offensive (yours) or defensive (theirs)."
+  },
+  {
+    "key": "blitz",
+    "term": "Blitz",
+    "definition": "A Block combined with movement; one player may Blitz per team turn."
+  },
+  {
+    "key": "foul",
+    "term": "Foul",
+    "definition": "Attacking a [[prone]] or [[stunned]] opponent; one per turn, and the fouler risks being sent off."
+  },
+  {
+    "key": "casualty",
+    "term": "Casualty",
+    "definition": "A serious-injury result — roll on the casualty table for the outcome."
+  }
+]

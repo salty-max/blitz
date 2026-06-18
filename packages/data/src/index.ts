@@ -1,2 +1,2 @@
-/** Placeholder export until data is built out. */
-export const PACKAGE = '@blitz/data'
+export { getGlossaryTerm, glossary } from './glossary'
+export { getSkill, skills } from './skills'
