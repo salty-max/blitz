@@ -73,6 +73,25 @@ each effect.
 | Strong Arm     | +1 to Throw Team-mate                                                 |
 | Thick Skull    | only knocked out on 9+ (8+ if Stunty)                                 |
 
+## Devious
+
+Dirty tricks — fouling and shadowing.
+
+| Skill             | Effect                                                        |
+| ----------------- | ------------------------------------------------------------- |
+| Dirty Player      | +1 to the Armour or Injury roll when you foul                 |
+| Eye Gouge         | an opponent you push back can't give assists                  |
+| Fumblerooski      | drop the ball on the ground mid-move with no turnover         |
+| Lethal Flight     | +1 armour/injury when a thrown player knocks an opponent down |
+| Lone Fouler       | re-roll a failed armour roll fouling with no assists          |
+| Pile Driver       | after a block knock-down, make a free foul                    |
+| Put the Boot In   | give offensive foul assists even while marked                 |
+| Quick Foul        | keep moving after you foul                                    |
+| Saboteur          | when you go down on a block, the opponent goes down too       |
+| Shadowing         | on a 4+, follow an opponent who leaves your tackle zone       |
+| Sneaky Git        | not sent off for doubles when fouling, unless armour breaks   |
+| Violent Innovator | earn SPP for casualties from your special actions             |
+
 ## Mutations
 
 | Mutation            | Effect                                                      |

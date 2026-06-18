@@ -7,6 +7,7 @@ export const skillCategorySchema = z.enum([
   'passing',
   'strength',
   'mutation',
+  'devious',
   'trait',
 ])
 export type SkillCategory = z.infer<typeof skillCategorySchema>

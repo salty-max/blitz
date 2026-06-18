@@ -292,6 +292,79 @@
   },
 
   {
+    "key": "dirty-player",
+    "name": "Dirty Player",
+    "category": "devious",
+    "effect": "+1 to the Armour or Injury roll when you [[foul]]."
+  },
+  {
+    "key": "eye-gouge",
+    "name": "Eye Gouge",
+    "category": "devious",
+    "effect": "An opponent you [[push-back]] can't give [[assist|assists]]."
+  },
+  {
+    "key": "fumblerooski",
+    "name": "Fumblerooski",
+    "category": "devious",
+    "effect": "Drop the ball on the ground mid-move without a [[turnover]]."
+  },
+  {
+    "key": "lethal-flight",
+    "name": "Lethal Flight",
+    "category": "devious",
+    "effect": "+1 to armour/injury when a thrown player knocks an opponent down."
+  },
+  {
+    "key": "lone-fouler",
+    "name": "Lone Fouler",
+    "category": "devious",
+    "effect": "Re-roll a failed Armour roll when you [[foul]] with no [[assist|assists]]."
+  },
+  {
+    "key": "pile-driver",
+    "name": "Pile Driver",
+    "category": "devious",
+    "effect": "After a knock-down from a block, make a free [[foul]]."
+  },
+  {
+    "key": "put-the-boot-in",
+    "name": "Put the Boot In",
+    "category": "devious",
+    "effect": "Give offensive [[assist|assists]] to a [[foul]] even while [[marked]]."
+  },
+  {
+    "key": "quick-foul",
+    "name": "Quick Foul",
+    "category": "devious",
+    "effect": "Keep moving after you [[foul]]."
+  },
+  {
+    "key": "saboteur",
+    "name": "Saboteur",
+    "category": "devious",
+    "effect": "When you go down on a block, the opponent is [[knocked-down]] too."
+  },
+  {
+    "key": "shadowing",
+    "name": "Shadowing",
+    "category": "devious",
+    "effect": "On a 4+, follow an opponent who leaves your [[tackle-zone]] into their old square."
+  },
+  {
+    "key": "sneaky-git",
+    "name": "Sneaky Git",
+    "category": "devious",
+    "effect": "Not sent off for doubles when [[foul|fouling]], unless armour breaks."
+  },
+  {
+    "key": "violent-innovator",
+    "name": "Violent Innovator",
+    "category": "devious",
+    "effect": "Earn SPP for casualties from your special actions."
+  },
+
+  {
     "key": "big-hand",
     "name": "Big Hand",
     "category": "mutation",

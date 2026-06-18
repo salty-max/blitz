@@ -7,6 +7,7 @@ describe('skill & keyword catalogue', () => {
     expect(skills.length).toBeGreaterThan(80)
     expect(getSkill('block')?.name).toBe('Block')
     expect(getSkill('block')?.category).toBe('general')
+    expect(getSkill('sneaky-git')?.category).toBe('devious')
     expect(getSkill('not-a-skill')).toBeUndefined()
   })
 
