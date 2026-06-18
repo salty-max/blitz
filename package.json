@@ -2,7 +2,7 @@
   "name": "blitz",
   "private": true,
   "type": "module",
-  "description": "Blood Bowl toolkit: exact dice-odds engine, roster DSL, and web UI",
+  "description": "Blood Bowl toolkit: team & league management and a rules codex",
   "workspaces": [
     "packages/*",
     "apps/*"

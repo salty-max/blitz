@@ -5,11 +5,13 @@ human-facing entry point and must never reference this file.
 
 ## What this is
 
-A Blood Bowl toolkit: an exact dice-odds engine (`packages/engine`), with a
-normalized data model, roster DSL, reference data, API, and web UI. Monolith with
-package boundaries — see the README for the layout. It is a sister project to
-`auspex` (the 40k combat-math toolkit) and deliberately reuses its stack on a
-smaller, self-contained ruleset.
+A Blood Bowl toolkit for coaches: **team management**, **league/tournament
+management**, and a **codex** (rules + teams + skills reference). Monolith with
+package boundaries — see the README for the layout. The spine is the data model
+(`packages/schema` + `packages/data`), the API, and the web app; `packages/engine`
+is only a small odds helper for tooltips (Blood Bowl's per-roll odds are trivial
+and the real depth is positional, so it is not the centrepiece). Sister project to
+`auspex` (the 40k combat-math toolkit), reusing its stack on a self-contained game.
 
 ## Toolchain
 

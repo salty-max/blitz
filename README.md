@@ -1,29 +1,35 @@
 # blitz
 
-A Blood Bowl toolkit: an exact dice-odds engine, a roster DSL, and a web UI.
+A Blood Bowl toolkit for coaches: build and manage your teams, run leagues and
+tournaments, and look anything up in a searchable codex.
 
-> Know what a play is really worth before you commit the block.
+## What it does
 
-## Why
+- **Team management** — draft a roster within the rules and your budget, then
+  carry it through a season: SPP, advancements, lasting injuries, and team value.
+- **League & tournament management** — set up a competition, schedule fixtures,
+  record results, and track standings and progression.
+- **Codex** — a clean, searchable reference for the rules, teams, skills, star
+  players, and inducements, with in-app tooltips.
 
-Blood Bowl is a game of dice — blocks, dodges, rushes, passes, armour and injury,
-all bent by skills and re-rolls. `blitz` computes the **exact** probabilities of
-those plays (closed-form distributions, never simulation), so the odds on screen
-are the real odds.
+Targets **Blood Bowl: Third Season Edition (2025)**. Rules content is written in
+our own words from the official rules, alongside the factual data (stats, costs,
+skills, tables) — it is not a copy of the rulebook.
 
 ## Layout
 
-- `packages/engine` — exact probability primitives + Blood Bowl dice (zero deps).
-- `packages/schema` — the normalised data model (teams, positions, skills, rosters).
-- `packages/dsl` — the roster text language.
+- `packages/schema` — the data model (teams, players, skills, star players,
+  inducements, league entities).
 - `packages/data` — curated Blood Bowl reference data.
-- `packages/resolver` — binds a roster to its players, costs and legality.
-- `apps/api` — read API over the data.
-- `apps/web` — the web UI.
+- `packages/resolver` — roster legality and budget validation.
+- `packages/dsl` — the roster text format.
+- `packages/engine` — a small odds helper (block / armour / injury) for tooltips.
+- `apps/api` — the read + persistence API (teams and leagues).
+- `apps/web` — the codex, team builder, and league/tournament manager.
 
 ## Toolchain
 
-Bun + Turborepo, TypeScript strict, ESM only.
+Bun + Turborepo, TypeScript strict, ESM only. See `CLAUDE.md` for conventions.
 
 ```sh
 bun install
