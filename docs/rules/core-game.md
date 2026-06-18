@@ -80,9 +80,3 @@ their whole move to do so); on **1–3** they stay prone and the activation ends
 - **engine** — not applicable; these are positional/board-state rules. The odds
   helper (#13) may surface success chances for dodge / rush / pick-up.
 - **codex/tooltips** — this file is the source for the core-rules section.
-
-## Sources
-
-- bloodbowlbase.ru — Third Season Edition core rules, "The Game of Blood Bowl".
-  To be verified against the official Third Season Edition rulebook (the
-  authority).

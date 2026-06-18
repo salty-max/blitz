@@ -102,8 +102,3 @@ standings, and this progression.
 - **api/web** — this sequence (SPP, advancement, value, treasury, fans) is the
   core of team progression (#17) and league management (#18–#19).
 - **codex/tooltips** — source for the SPP and advancement reference.
-
-## Sources
-
-- bloodbowlbase.ru — Third Season Edition, "League Play". To be verified against
-  the official rulebook.

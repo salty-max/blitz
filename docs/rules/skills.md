@@ -2,8 +2,8 @@
 
 Players gain **Skills** through advancement (grouped into categories a position
 can access as Primary or Secondary — see [team-building.md](team-building.md)),
-and have innate **Traits**. This is the catalogue; effects are summarised in our
-own words — verify exact wording and edge cases against the rulebook.
+and have innate **Traits**. This is the catalogue, with a short description of
+each effect.
 
 ## General
 
@@ -45,7 +45,7 @@ own words — verify exact wording and edge cases against the rulebook.
 | --------------- | ----------------------------------------------------------- |
 | Accurate        | +1 on a Quick or Short pass                                 |
 | Cannoneer       | +1 on a Long pass or Long Bomb                              |
-| Cloud Burster   | re-roll, or deny interception of, long throws _(verify)_    |
+| Cloud Burster   | re-roll, or deny interception of, long throws               |
 | Dump-Off        | make a quick pass when targeted by a block                  |
 | Give and Go     | keep moving after a quick pass or hand-off                  |
 | Hail Mary Pass  | throw to any square as a Long Bomb; can't be intercepted    |
@@ -75,20 +75,20 @@ own words — verify exact wording and edge cases against the rulebook.
 
 ## Mutations
 
-| Mutation            | Effect                                                        |
-| ------------------- | ------------------------------------------------------------- |
-| Big Hand            | ignore all penalties when picking up the ball                 |
-| Claws               | break armour on an 8+ regardless of AV                        |
-| Disturbing Presence | −1 to enemy pass/catch/intercept per such player ≤3 away      |
-| Extra Arms          | +1 to catch / pick up / intercept                             |
-| Foul Appearance     | attacker rolls first; on a 1 the action targeting you fails   |
-| Horns               | +1 ST on a Blitz block                                        |
-| Iron Hard Skin      | opponents can't modify armour rolls vs you; immune to Claws   |
-| Monstrous Mouth     | pin a marked standing opponent so they can't leave _(verify)_ |
-| Prehensile Tail     | extra −1 to opponents dodging out of your zone                |
-| Tentacles           | roll D6+ST vs their ST; 6+ stops them leaving                 |
-| Two Heads           | +1 to dodge                                                   |
-| Very Long Legs      | +1 to leap/jump, +2 to intercept; ignore Cloud Burster        |
+| Mutation            | Effect                                                      |
+| ------------------- | ----------------------------------------------------------- |
+| Big Hand            | ignore all penalties when picking up the ball               |
+| Claws               | break armour on an 8+ regardless of AV                      |
+| Disturbing Presence | −1 to enemy pass/catch/intercept per such player ≤3 away    |
+| Extra Arms          | +1 to catch / pick up / intercept                           |
+| Foul Appearance     | attacker rolls first; on a 1 the action targeting you fails |
+| Horns               | +1 ST on a Blitz block                                      |
+| Iron Hard Skin      | opponents can't modify armour rolls vs you; immune to Claws |
+| Monstrous Mouth     | pin a marked standing opponent so they can't leave          |
+| Prehensile Tail     | extra −1 to opponents dodging out of your zone              |
+| Tentacles           | roll D6+ST vs their ST; 6+ stops them leaving               |
+| Two Heads           | +1 to dodge                                                 |
+| Very Long Legs      | +1 to leap/jump, +2 to intercept; ignore Cloud Burster      |
 
 ## Traits
 
@@ -109,7 +109,7 @@ Innate rules (often big-guy mechanics or drawbacks):
 | Drunkard          | −1 to Rush                                                            |
 | Hatred (X)        | re-roll a Player Down blocking an (X) opponent                        |
 | Hypnotic Gaze     | make an adjacent opponent Distracted                                  |
-| Insignificant     | can't outnumber your non-insignificant players _(verify)_             |
+| Insignificant     | can't outnumber your non-insignificant players                        |
 | Kick Team-Mate    | throw a team-mate as an attack (once per turn)                        |
 | Loner (X+)        | roll X+ to use a team re-roll, or lose it                             |
 | My Ball           | won't voluntarily give up the ball                                    |
@@ -138,8 +138,3 @@ Innate rules (often big-guy mechanics or drawbacks):
 - **data** — the skill/trait list becomes structured data (name + category) in
   #8; team and star-player data reference skills by name.
 - **codex/tooltips** — source for skill descriptions and inline tooltips.
-
-## Sources
-
-- bloodbowlbase.ru — Third Season Edition, Skills & Traits. Effects summarised;
-  verify exact wording and edge cases against the official rulebook.

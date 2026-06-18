@@ -41,17 +41,17 @@ net, not the iteration loop.
 
 ## Rules accuracy (the project's core invariant)
 
-The engine must implement the **real** Blood Bowl rules, not remembered
-approximations.
+The codex, data and engine must match the **real** Blood Bowl rules, not
+remembered approximations.
 
-- `docs/rules/` holds the implemented rules **verbatim** (quoted from official
-  sources, with links) plus the engine's implementation status for each.
-- Before implementing or changing any game mechanic: check `docs/rules/`; if the
-  rule isn't documented there yet, look it up at the source, add it to the doc in
-  the same PR, then implement against the quoted text.
-- Source code never cites rule sections — comments describe what the code does
-  ("a re-roll fires only on a failed first attempt"), not where the rule comes
-  from. The mapping from rule text to code lives in `docs/rules/` only.
+- `docs/rules/` is the project's working rules reference (Third Season Edition):
+  mechanics summarised concisely with the factual data, plus an
+  implementation-status note per file. It is the single source the codex, data
+  and engine are built against.
+- Before implementing or changing any game mechanic: check `docs/rules/`; if it
+  isn't documented there yet, add it in the same PR, then build against it.
+- Source code describes what it does ("a re-roll fires only on a failed first
+  attempt"), not rule citations.
 
 ## Engine conventions (`packages/engine`)
 
