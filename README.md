@@ -12,9 +12,7 @@ tournaments, and look anything up in a searchable codex.
 - **Codex** — a clean, searchable reference for the rules, teams, skills, star
   players, and inducements, with in-app tooltips.
 
-Targets **Blood Bowl: Third Season Edition (2025)**. Rules content is written in
-our own words from the official rules, alongside the factual data (stats, costs,
-skills, tables) — it is not a copy of the rulebook.
+Targets **Blood Bowl: Third Season Edition (2025)**.
 
 ## Layout
 

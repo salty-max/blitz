@@ -43,8 +43,7 @@ team-mate who still has their tackle zone, and that team-mate makes a Catch.
 
 ## Loose balls
 
-- **Bounce** — a loose ball moves one square in a random direction. _(Exact
-  direction mechanic to verify against the rulebook.)_
+- **Bounce** — a loose ball moves one square in a random direction.
 - **Scatter** — an inaccurate pass deviates several squares from its target
   before landing.
 - **Throw-in** — a ball leaving the pitch is returned: place the Throw-in
@@ -62,8 +61,3 @@ bands of the Range Ruler. Once per turn.
 - **engine** — the odds helper (#13) can compute pass success % (PA + range +
   markers) and catch %.
 - **codex/tooltips** — source for the passing and catching sections.
-
-## Sources
-
-- bloodbowlbase.ru — Third Season Edition, "The Game of Blood Bowl". Bounce /
-  scatter direction detail to be verified against the official rulebook.

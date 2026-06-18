@@ -81,8 +81,3 @@ A Knocked Down player checks armour, then possibly injury:
 - **engine** — the odds helper (#13) can compute block-dice outcome %,
   armour-break %, and the injury distribution from these numbers.
 - **codex/tooltips** — source for the blocking and injury sections.
-
-## Sources
-
-- bloodbowlbase.ru — Third Season Edition, "The Game of Blood Bowl". To be
-  verified against the official Third Season Edition rulebook.

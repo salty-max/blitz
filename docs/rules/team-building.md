@@ -52,8 +52,7 @@ in league play, or from the draft budget otherwise. Common inducements:
 | Halfling Master Chef          | 300,000 gp       | 0–1   |
 | Mercenary player              | base + 30,000 gp | 0–3   |
 
-_(Some teams get certain inducements at a discount or higher limit; verify the
-per-team specifics against the rulebook.)_
+Some teams get certain inducements at a discount or a higher limit.
 
 ## Star players
 
@@ -70,9 +69,3 @@ per-team specifics against the rulebook.)_
   count limits.
 - **codex/tooltips** — source for the team-building, inducements and star-player
   sections, and the backbone of the team builder.
-
-## Sources
-
-- bloodbowlbase.ru — Third Season Edition, "Drafting a Blood Bowl Team" and
-  "Inducements". Per-team rosters and star profiles to be verified against the
-  official rulebook.
