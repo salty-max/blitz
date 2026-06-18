@@ -1,0 +1,16 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": { "dependsOn": ["^build"], "outputs": ["dist/**"] },
+    "test": { "dependsOn": ["^build", "build"] },
+    "dev": { "dependsOn": ["^build"], "cache": false, "persistent": true },
+    "typecheck": { "dependsOn": ["^build", "build"] },
+    "lint": {
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "$TURBO_ROOT$/eslint.config.js",
+        "$TURBO_ROOT$/.prettierrc"
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "dist",
+    "paths": {
+      "@blitz/schema": ["./src/index.ts"],
+      "@blitz/schema/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["tests"]
+}
