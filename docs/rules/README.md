@@ -22,11 +22,12 @@ against.
 
 - [core-game.md](core-game.md) — turn sequence, actions, movement, dodging,
   rushing, securing the ball, standing up
-- `blocking.md` — block dice, strength & assists, follow-up, armour, injury,
-  casualties _(planned, #2)_
-- `passing.md` — throwing, catching, pick-up, hand-off, scatter, kick-off
-  _(planned, #3)_
-- `skills.md` — skills & traits catalogue _(planned, #4)_
-- `team-building.md` — rosters, star players, inducements _(planned, #5)_
-- `post-game-and-leagues.md` — SPP, advancement, team value, league/tournament
-  play _(planned, #6)_
+- [blocking.md](blocking.md) — block dice, strength & assists, follow-up, armour,
+  injury, casualties
+- [passing.md](passing.md) — throwing, catching, pick-up, hand-off, scatter,
+  throw-in
+- [skills.md](skills.md) — skills & traits catalogue
+- [team-building.md](team-building.md) — rosters, sideline staff, star players,
+  inducements
+- [post-game-and-leagues.md](post-game-and-leagues.md) — SPP, advancement, team
+  value, league/tournament play
