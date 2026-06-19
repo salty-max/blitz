@@ -2,6 +2,7 @@ import { inducements } from './inducements'
 import type { SpecialRuleKey } from './keys.gen'
 import { getSkill } from './skills'
 import { getSpecialRule } from './special-rules'
+import { getStarAbility } from './star-abilities'
 import { starPlayers } from './star-players'
 import { teams } from './teams'
 import type {
@@ -9,6 +10,7 @@ import type {
   Position,
   Skill,
   SpecialRule,
+  StarAbility,
   StarPlayer,
   Team,
 } from './types'
@@ -17,6 +19,8 @@ const isSkill = (skill: Skill | undefined): skill is Skill =>
   skill !== undefined
 const isRule = (rule: SpecialRule | undefined): rule is SpecialRule =>
   rule !== undefined
+const isAbility = (ability: StarAbility | undefined): ability is StarAbility =>
+  ability !== undefined
 
 const ruleKey = (rule: SpecialRule | SpecialRuleKey): SpecialRuleKey =>
   typeof rule === 'string' ? rule : rule.key
@@ -29,6 +33,11 @@ export function positionSkills(position: Position): Skill[] {
 /** Resolve a star player's skill keys to the skill objects. */
 export function starSkills(star: StarPlayer): Skill[] {
   return star.skills.map((key) => getSkill(key)).filter(isSkill)
+}
+
+/** Resolve a star player's ability keys to the ability objects. */
+export function abilitiesOf(star: StarPlayer): StarAbility[] {
+  return star.abilities.map((key) => getStarAbility(key)).filter(isAbility)
 }
 
 /** Resolve a team's special-rule keys to the special-rule objects. */

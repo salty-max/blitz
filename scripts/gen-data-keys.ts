@@ -14,6 +14,12 @@ const entities = [
   ],
   ['TEAM_KEYS', 'TeamKey', 'teams.json', 'a team'],
   ['STAR_PLAYER_KEYS', 'StarPlayerKey', 'star-players.json', 'a star player'],
+  [
+    'STAR_ABILITY_KEYS',
+    'StarAbilityKey',
+    'star-abilities.json',
+    'a star ability',
+  ],
   ['INDUCEMENT_KEYS', 'InducementKey', 'inducements.json', 'an inducement'],
 ]
 

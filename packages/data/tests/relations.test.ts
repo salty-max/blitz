@@ -1,4 +1,5 @@
 import {
+  abilitiesOf,
   getStarPlayer,
   getTeam,
   inducementsForTeam,
@@ -60,6 +61,13 @@ describe('relationships', () => {
       'tomb-kings',
       'vampire',
     ])
+  })
+
+  test('abilitiesOf resolves a star to its ability objects', () => {
+    const griff = getStarPlayer('griff-oberwald')
+    expect(abilitiesOf(griff!).map((a) => a.name)).toContain(
+      'Consummate Professional'
+    )
   })
 
   test('positionSkills and starSkills resolve keys to skill objects', () => {

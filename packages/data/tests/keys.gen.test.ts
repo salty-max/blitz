@@ -7,7 +7,9 @@ import {
   skills,
   SPECIAL_RULE_KEYS,
   specialRules,
+  STAR_ABILITY_KEYS,
   STAR_PLAYER_KEYS,
+  starAbilities,
   starPlayers,
   TEAM_KEYS,
   teams,
@@ -21,6 +23,7 @@ describe('generated key unions (keys.gen.ts)', () => {
     ['special rules', SPECIAL_RULE_KEYS, specialRules],
     ['teams', TEAM_KEYS, teams],
     ['star players', STAR_PLAYER_KEYS, starPlayers],
+    ['star abilities', STAR_ABILITY_KEYS, starAbilities],
     ['inducements', INDUCEMENT_KEYS, inducements],
   ]
 

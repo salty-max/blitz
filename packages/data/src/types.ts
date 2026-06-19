@@ -4,6 +4,7 @@ import type {
   Position as RawPosition,
   Skill as RawSkill,
   SpecialRule as RawSpecialRule,
+  StarAbility as RawStarAbility,
   StarPlayer as RawStarPlayer,
   Team as RawTeam,
 } from '@blitz/schema'
@@ -13,6 +14,7 @@ import type {
   InducementKey,
   SkillKey,
   SpecialRuleKey,
+  StarAbilityKey,
   StarPlayerKey,
   TeamKey,
 } from './keys.gen'
@@ -44,11 +46,18 @@ export type Team = Omit<RawTeam, 'key' | 'specialRules' | 'positions'> & {
   positions: Position[]
 }
 
-/** A star player; its skills and `playsFor` are typed keys. */
-export type StarPlayer = Omit<RawStarPlayer, 'key' | 'skills' | 'playsFor'> & {
+/** A star player's unique special ability. */
+export type StarAbility = Omit<RawStarAbility, 'key'> & { key: StarAbilityKey }
+
+/** A star player; its skills, `playsFor` and `abilities` are typed keys. */
+export type StarPlayer = Omit<
+  RawStarPlayer,
+  'key' | 'skills' | 'playsFor' | 'abilities'
+> & {
   key: StarPlayerKey
   skills: SkillKey[]
   playsFor: SpecialRuleKey[]
+  abilities: StarAbilityKey[]
 }
 
 /** An inducement; its `restrictedTo` rules are special-rule keys. */
