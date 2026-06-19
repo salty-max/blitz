@@ -23,6 +23,8 @@ note so the gap between "documented" and "modelled" stays visible.
 - [skills.md](skills.md) — skills & traits catalogue
 - [team-building.md](team-building.md) — rosters, sideline staff, star players,
   inducements
+- [teams/](teams/README.md) — the 30 team rosters (positions, characteristics,
+  costs, skill access)
 - [pre-game-and-prayers.md](pre-game-and-prayers.md) — pre-game sequence,
   journeymen, Prayers to Nuffle
 - [post-game-and-leagues.md](post-game-and-leagues.md) — SPP, advancement, team

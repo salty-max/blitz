@@ -9,8 +9,8 @@ the one-off help (inducements and star players) you can hire for a match.
 - Draft **11–16 players**.
 - Players come from your team's roster. Each position lists its characteristics
   (**MA · ST · AG · PA · AV**), cost, a **0–N** count limit, starting skills, and
-  the **Primary / Secondary** skill categories it can advance into. Those
-  per-team numbers live in the data layer (#9), not here.
+  the **Primary / Secondary** skill categories it can advance into. Each team's
+  full roster is in [teams/](teams/README.md).
 
 ## Sideline staff & assets
 
