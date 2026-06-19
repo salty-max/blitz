@@ -7,6 +7,12 @@ export {
   skillCategorySchema,
   skillSchema,
 } from './skill'
+export {
+  type SpecialRule,
+  type SpecialRuleCategory,
+  specialRuleCategorySchema,
+  specialRuleSchema,
+} from './special-rule'
 export { type StarPlayer, starPlayerSchema } from './star-player'
 export {
   type Characteristics,
