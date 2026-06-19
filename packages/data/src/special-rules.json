@@ -1,0 +1,116 @@
+[
+  {
+    "key": "badlands-brawl",
+    "name": "Badlands Brawl",
+    "category": "league",
+    "effect": "The Greenskin-and-Ogre regional league — governs which star players and inducements the team may hire."
+  },
+  {
+    "key": "chaos-clash",
+    "name": "Chaos Clash",
+    "category": "league",
+    "effect": "The league of the Chaos powers — governs star-player and inducement access. A Chaos Renegades team picks one Favoured of (Chaos god) alignment at draft."
+  },
+  {
+    "key": "elven-kingdoms-league",
+    "name": "Elven Kingdoms League",
+    "category": "league",
+    "effect": "The elven league — governs which star players and inducements the team may hire."
+  },
+  {
+    "key": "halfling-thimble-cup",
+    "name": "Halfling Thimble Cup",
+    "category": "league",
+    "effect": "A league for the smaller folk — governs which star players and inducements the team may hire."
+  },
+  {
+    "key": "lustrian-superleague",
+    "name": "Lustrian Superleague",
+    "category": "league",
+    "effect": "The ancient Lustrian league — governs which star players and inducements the team may hire."
+  },
+  {
+    "key": "old-world-classic",
+    "name": "Old World Classic",
+    "category": "league",
+    "effect": "The Old World league of diverse human-and-allied teams — governs which star players and inducements the team may hire."
+  },
+  {
+    "key": "sylvanian-spotlight",
+    "name": "Sylvanian Spotlight",
+    "category": "league",
+    "effect": "The undead league — governs which star players and inducements the team may hire."
+  },
+  {
+    "key": "underworld-challenge",
+    "name": "Underworld Challenge",
+    "category": "league",
+    "effect": "The league of underground-dwelling fringe races — governs which star players and inducements the team may hire."
+  },
+  {
+    "key": "woodland-league",
+    "name": "Woodland League",
+    "category": "league",
+    "effect": "A forest league — governs which star players and inducements the team may hire."
+  },
+  {
+    "key": "worlds-edge-superleague",
+    "name": "Worlds Edge Superleague",
+    "category": "league",
+    "effect": "The mountain league, traditionally Dwarven — governs which star players and inducements the team may hire."
+  },
+  {
+    "key": "brawlin-brutes",
+    "name": "Brawlin' Brutes",
+    "category": "special",
+    "effect": "Players earn 3 SPP for causing a [[casualty]] (not 2), but only 2 SPP for a Touchdown (not 3)."
+  },
+  {
+    "key": "bribery-and-corruption",
+    "name": "Bribery and Corruption",
+    "category": "special",
+    "effect": "Once per game, re-roll a 1 when Arguing the Call. Bribes cost 50,000 gp (limit 0-6) and a Biased Referee costs 80,000 gp."
+  },
+  {
+    "key": "favoured-of-hashut",
+    "name": "Favoured of Hashut",
+    "category": "special",
+    "effect": "The team's Chaos alignment (Hashut) — governs which Chaos star players it may hire."
+  },
+  {
+    "key": "favoured-of-khorne",
+    "name": "Favoured of Khorne",
+    "category": "special",
+    "effect": "The team's Chaos alignment (Khorne) — governs which Chaos star players it may hire."
+  },
+  {
+    "key": "favoured-of-nurgle",
+    "name": "Favoured of Nurgle",
+    "category": "special",
+    "effect": "The team's Chaos alignment (Nurgle) — governs Chaos star access and lets the team take the Plague Doctor inducement."
+  },
+  {
+    "key": "low-cost-linemen",
+    "name": "Low Cost Linemen",
+    "category": "special",
+    "effect": "In league play, Lineman hiring fees count as 0 gp toward Team Value; the team may take the Riotous Rookies inducement."
+  },
+  {
+    "key": "masters-of-undeath",
+    "name": "Masters of Undeath",
+    "category": "special",
+    "effect": "Once per game, Raise the Dead — a slain opposition player of ST 4 or less rises as a free Zombie or Skeleton Lineman in your reserves (kept after the game). May take the Mortuary Assistant inducement."
+  },
+  {
+    "key": "swarming",
+    "name": "Swarming",
+    "category": "special",
+    "effect": "At the start of each drive, set up D3 extra Lineman from reserves, beyond the usual eleven."
+  },
+  {
+    "key": "team-captain",
+    "name": "Team Captain",
+    "category": "special",
+    "effect": "Nominate a non-Big-Guy starter as captain: it gains [[pro]] for free, and whenever you use a team re-roll a natural 6 makes that re-roll free."
+  }
+]

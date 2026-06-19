@@ -26,6 +26,7 @@ note so the gap between "documented" and "modelled" stays visible.
 - [teams/](teams/README.md) — the 31 team rosters (positions, characteristics,
   costs, skill access)
 - [star-players.md](star-players.md) — the 62 mercenary star players
+- [special-rules.md](special-rules.md) — team special rules (leagues + mechanical)
 - [pre-game-and-prayers.md](pre-game-and-prayers.md) — pre-game sequence,
   journeymen, Prayers to Nuffle
 - [post-game-and-leagues.md](post-game-and-leagues.md) — SPP, advancement, team

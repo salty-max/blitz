@@ -451,9 +451,8 @@
     "rerollCost": 70000,
     "tier": 3,
     "apothecary": true,
-    "specialRules": [
-      "Chaos Clash - Choose either: Favoured of Nurgle, Favoured of Khorne, Favoured of Chaos Undivided, Favoured of Slaanesh, Favoured of Tzeentch"
-    ],
+    "specialRules": ["Chaos Clash"],
+    "description": "Pick one Favoured of (Chaos god) alignment at draft — it sets which Chaos star players the team may hire.",
     "positions": [
       {
         "key": "renegade-human",
