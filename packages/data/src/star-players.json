@@ -22,7 +22,7 @@
       "stunty",
       "titchy"
     ],
-    "playsFor": ["any"],
+    "playsFor": [],
     "special": "Blind Rage — Akhorne may choose to re-roll the D6 when rolling for the Dauntless skill."
   },
   {
@@ -374,7 +374,7 @@
       "sure-hands",
       "thick-skull"
     ],
-    "playsFor": ["any"],
+    "playsFor": [],
     "special": "I'll Carry You — once per half, if Grak begins his activation adjacent to Crumbleberry he may pick up Crumbleberry; temporarily remove Crumbleberry from the pitch and, at the end of Grak's activation, place Crumbleberry in an unoccupied square adjacent to Grak. While Crumbleberry is being carried by Grak, Grak gains the Break Tackle and Dodge Skills. Characteristics block above is the first member, Grak (MA 5, ST 5, AG 4+, PA 4+, AV 10+; skills: Bone Head, Kick Team-mate, Loner (4+), Mighty Blow, Thick Skull). Second member Crumbleberry: MA 5, ST 2, AG 3+, PA 5+, AV 7+; skills: Dodge, Lethal Flight, Loner (4+), Right Stuff, Stunty, Sure Hands. Plays for all team types (page lists every league keyword)."
   },
   {

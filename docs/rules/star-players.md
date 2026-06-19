@@ -3,8 +3,8 @@
 Mercenary **star players** hired as an inducement — up to two for a single match,
 each for the fixed fee below. A star never earns SPP, MVP or advancements, and any
 casualty against it is waived at the end of the game. **Plays for** lists the team
-special rules a star can be hired under (`any` = any team). The same data is
-structured in `@blitz/data` (`starPlayers`).
+special rules a star can be hired under — a star with none listed plays for any
+team. The same data is structured in `@blitz/data` (`starPlayers`).
 
 ### Akhorne the Squirrel — 80k
 

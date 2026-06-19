@@ -12,8 +12,8 @@ export const starPlayerSchema = z.object({
   characteristics: characteristicsSchema,
   /** Skill keys. */
   skills: z.array(z.string().min(1)).default([]),
-  /** Team special-rule keywords this star plays for (use `any` for all). */
-  playsFor: z.array(z.string().min(1)).min(1),
+  /** Team special-rule keywords this star plays for; empty = any team. */
+  playsFor: z.array(z.string().min(1)).default([]),
   /** Optional special-rule text; may contain `[[key]]` cross-references. */
   special: z.string().optional(),
 })

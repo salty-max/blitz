@@ -26,12 +26,11 @@ describe('star players', () => {
     expect(dangling).toEqual([])
   })
 
-  test('every playsFor entry is "any" or a real team special rule', () => {
+  test('every playsFor entry is a real team special rule (empty = any team)', () => {
     const dangling: string[] = []
     for (const star of starPlayers) {
       for (const rule of star.playsFor) {
-        if (rule !== 'any' && !rules.has(rule))
-          dangling.push(`${star.key} → ${rule}`)
+        if (!rules.has(rule)) dangling.push(`${star.key} → ${rule}`)
       }
     }
     expect(dangling).toEqual([])
