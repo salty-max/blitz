@@ -27,23 +27,23 @@ describe('special rules', () => {
     )
   })
 
-  test('every special rule used across the data is defined', () => {
-    const names = new Set(specialRules.map((r) => r.name))
+  test('every special-rule key referenced across the data is defined', () => {
+    const keys = new Set(specialRules.map((r) => r.key))
     const dangling: string[] = []
     for (const team of teams) {
-      for (const rule of team.specialRules) {
-        if (!names.has(rule)) dangling.push(`team ${team.key} → ${rule}`)
+      for (const key of team.specialRules) {
+        if (!keys.has(key)) dangling.push(`team ${team.key} → ${key}`)
       }
     }
     for (const star of starPlayers) {
-      for (const rule of star.playsFor) {
-        if (!names.has(rule)) dangling.push(`star ${star.key} → ${rule}`)
+      for (const key of star.playsFor) {
+        if (!keys.has(key)) dangling.push(`star ${star.key} → ${key}`)
       }
     }
     for (const inducement of inducements) {
-      for (const rule of inducement.restrictedTo) {
-        if (!names.has(rule))
-          dangling.push(`inducement ${inducement.key} → ${rule}`)
+      for (const key of inducement.restrictedTo) {
+        if (!keys.has(key))
+          dangling.push(`inducement ${inducement.key} → ${key}`)
       }
     }
     expect(dangling).toEqual([])
@@ -52,7 +52,7 @@ describe('special rules', () => {
   test('every special rule is used by at least one team', () => {
     const used = new Set(teams.flatMap((t) => t.specialRules))
     const orphans = specialRules
-      .filter((r) => !used.has(r.name))
+      .filter((r) => !used.has(r.key))
       .map((r) => r.key)
     expect(orphans).toEqual([])
   })

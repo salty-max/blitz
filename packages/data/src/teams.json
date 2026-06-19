@@ -5,7 +5,7 @@
     "rerollCost": 60000,
     "tier": 1,
     "apothecary": true,
-    "specialRules": ["Lustrian Superleague"],
+    "specialRules": ["lustrian-superleague"],
     "positions": [
       {
         "key": "eagle-warrior-lineman",
@@ -80,9 +80,9 @@
     "tier": 3,
     "apothecary": true,
     "specialRules": [
-      "Badlands Brawl",
-      "Bribery and Corruption",
-      "Brawlin' Brutes"
+      "badlands-brawl",
+      "bribery-and-corruption",
+      "brawlin-brutes"
     ],
     "positions": [
       {
@@ -148,7 +148,7 @@
     "rerollCost": 60000,
     "tier": 2,
     "apothecary": true,
-    "specialRules": ["Old World Classic"],
+    "specialRules": ["old-world-classic"],
     "positions": [
       {
         "key": "bretonnian-squire-lineman",
@@ -222,7 +222,7 @@
     "rerollCost": 50000,
     "tier": 3,
     "apothecary": true,
-    "specialRules": ["Chaos Clash"],
+    "specialRules": ["chaos-clash"],
     "positions": [
       {
         "key": "beastman-lineman",
@@ -333,7 +333,7 @@
     "rerollCost": 70000,
     "tier": 1,
     "apothecary": true,
-    "specialRules": ["Badlands Brawl", "Chaos Clash", "Favoured of Hashut"],
+    "specialRules": ["badlands-brawl", "chaos-clash", "favoured-of-hashut"],
     "positions": [
       {
         "key": "hobgoblin-lineman",
@@ -451,7 +451,7 @@
     "rerollCost": 70000,
     "tier": 3,
     "apothecary": true,
-    "specialRules": ["Chaos Clash"],
+    "specialRules": ["chaos-clash"],
     "description": "Pick one Favoured of (Chaos god) alignment at draft — it sets which Chaos star players the team may hire.",
     "positions": [
       {
@@ -649,7 +649,7 @@
     "rerollCost": 50000,
     "tier": 1,
     "apothecary": true,
-    "specialRules": ["Elven Kingdoms League"],
+    "specialRules": ["elven-kingdoms-league"],
     "positions": [
       {
         "key": "dark-elf-lineman",
@@ -740,9 +740,9 @@
     "tier": 1,
     "apothecary": true,
     "specialRules": [
-      "Worlds Edge Superleague",
-      "Bribery and Corruption",
-      "Brawlin' Brutes"
+      "worlds-edge-superleague",
+      "bribery-and-corruption",
+      "brawlin-brutes"
     ],
     "positions": [
       {
@@ -848,7 +848,7 @@
     "rerollCost": 50000,
     "tier": 2,
     "apothecary": true,
-    "specialRules": ["Elven Kingdoms League"],
+    "specialRules": ["elven-kingdoms-league"],
     "positions": [
       {
         "key": "elf-lineman",
@@ -922,7 +922,7 @@
     "rerollCost": 50000,
     "tier": 4,
     "apothecary": true,
-    "specialRules": ["Halfling Thimble Cup", "Woodland League"],
+    "specialRules": ["halfling-thimble-cup", "woodland-league"],
     "positions": [
       {
         "key": "gnome-lineman",
@@ -1021,9 +1021,9 @@
     "tier": 4,
     "apothecary": true,
     "specialRules": [
-      "Badlands Brawl",
-      "Underworld Challenge",
-      "Bribery and Corruption"
+      "badlands-brawl",
+      "underworld-challenge",
+      "bribery-and-corruption"
     ],
     "positions": [
       {
@@ -1181,7 +1181,7 @@
     "rerollCost": 60000,
     "tier": 4,
     "apothecary": true,
-    "specialRules": ["Halfling Thimble Cup", "Woodland League"],
+    "specialRules": ["halfling-thimble-cup", "woodland-league"],
     "positions": [
       {
         "key": "halfling-hopeful",
@@ -1263,7 +1263,7 @@
     "rerollCost": 50000,
     "tier": 1,
     "apothecary": true,
-    "specialRules": ["Elven Kingdoms League"],
+    "specialRules": ["elven-kingdoms-league"],
     "positions": [
       {
         "key": "high-elf-lineman",
@@ -1337,7 +1337,7 @@
     "rerollCost": 50000,
     "tier": 2,
     "apothecary": true,
-    "specialRules": ["Old World Classic", "Team Captain"],
+    "specialRules": ["old-world-classic", "team-captain"],
     "positions": [
       {
         "key": "human-lineman",
@@ -1449,7 +1449,7 @@
     "rerollCost": 60000,
     "tier": 2,
     "apothecary": true,
-    "specialRules": ["Old World Classic"],
+    "specialRules": ["old-world-classic"],
     "positions": [
       {
         "key": "imperial-retainer",
@@ -1545,7 +1545,7 @@
     "rerollCost": 60000,
     "tier": 3,
     "apothecary": true,
-    "specialRules": ["Chaos Clash", "Favoured of Khorne", "Brawlin' Brutes"],
+    "specialRules": ["chaos-clash", "favoured-of-khorne", "brawlin-brutes"],
     "positions": [
       {
         "key": "bloodborn-marauder",
@@ -1625,7 +1625,7 @@
     "rerollCost": 70000,
     "tier": 1,
     "apothecary": true,
-    "specialRules": ["Lustrian Superleague"],
+    "specialRules": ["lustrian-superleague"],
     "positions": [
       {
         "key": "skink-lineman",
@@ -1705,7 +1705,7 @@
     "rerollCost": 70000,
     "tier": 2,
     "apothecary": false,
-    "specialRules": ["Masters of Undeath", "Sylvanian Spotlight"],
+    "specialRules": ["masters-of-undeath", "sylvanian-spotlight"],
     "positions": [
       {
         "key": "zombie-lineman",
@@ -1806,7 +1806,7 @@
     "rerollCost": 60000,
     "tier": 1,
     "apothecary": true,
-    "specialRules": ["Old World Classic", "Chaos Clash", "Favoured of Khorne"],
+    "specialRules": ["old-world-classic", "chaos-clash", "favoured-of-khorne"],
     "positions": [
       {
         "key": "norse-raider-lineman",
@@ -1924,7 +1924,7 @@
     "rerollCost": 60000,
     "tier": 3,
     "apothecary": true,
-    "specialRules": ["Chaos Clash", "Brawlin' Brutes", "Favoured of Nurgle"],
+    "specialRules": ["chaos-clash", "brawlin-brutes", "favoured-of-nurgle"],
     "positions": [
       {
         "key": "rotter",
@@ -2022,10 +2022,10 @@
     "tier": 4,
     "apothecary": true,
     "specialRules": [
-      "Badlands Brawl",
-      "Worlds Edge Superleague",
-      "Low Cost Linemen",
-      "Brawlin' Brutes"
+      "badlands-brawl",
+      "worlds-edge-superleague",
+      "low-cost-linemen",
+      "brawlin-brutes"
     ],
     "positions": [
       {
@@ -2100,7 +2100,7 @@
     "rerollCost": 70000,
     "tier": 1,
     "apothecary": true,
-    "specialRules": ["Old World Classic"],
+    "specialRules": ["old-world-classic"],
     "positions": [
       {
         "key": "human-lineman",
@@ -2307,7 +2307,7 @@
     "rerollCost": 60000,
     "tier": 2,
     "apothecary": true,
-    "specialRules": ["Badlands Brawl", "Brawlin' Brutes", "Team Captain"],
+    "specialRules": ["badlands-brawl", "brawlin-brutes", "team-captain"],
     "positions": [
       {
         "key": "orc-lineman",
@@ -2421,7 +2421,7 @@
     "rerollCost": 70000,
     "tier": 2,
     "apothecary": false,
-    "specialRules": ["Sylvanian Spotlight", "Masters of Undeath"],
+    "specialRules": ["sylvanian-spotlight", "masters-of-undeath"],
     "positions": [
       {
         "key": "skeleton-lineman",
@@ -2511,7 +2511,7 @@
     "rerollCost": 50000,
     "tier": 2,
     "apothecary": true,
-    "specialRules": ["Underworld Challenge"],
+    "specialRules": ["underworld-challenge"],
     "positions": [
       {
         "key": "skaven-clanrat",
@@ -2607,7 +2607,7 @@
     "rerollCost": 50000,
     "tier": 3,
     "apothecary": true,
-    "specialRules": ["Lustrian Superleague"],
+    "specialRules": ["lustrian-superleague"],
     "positions": [
       {
         "key": "slann-lineman",
@@ -2693,10 +2693,10 @@
     "tier": 4,
     "apothecary": true,
     "specialRules": [
-      "Underworld Challenge",
-      "Bribery and Corruption",
-      "Low Cost Linemen",
-      "Swarming"
+      "underworld-challenge",
+      "bribery-and-corruption",
+      "low-cost-linemen",
+      "swarming"
     ],
     "positions": [
       {
@@ -2843,7 +2843,7 @@
     "rerollCost": 60000,
     "tier": 2,
     "apothecary": false,
-    "specialRules": ["Sylvanian Spotlight", "Masters of Undeath"],
+    "specialRules": ["sylvanian-spotlight", "masters-of-undeath"],
     "positions": [
       {
         "key": "skeleton-lineman",
@@ -2917,7 +2917,7 @@
     "rerollCost": 70000,
     "tier": 1,
     "apothecary": true,
-    "specialRules": ["Underworld Challenge", "Bribery and Corruption"],
+    "specialRules": ["underworld-challenge", "bribery-and-corruption"],
     "positions": [
       {
         "key": "goblin-lineman",
@@ -3076,7 +3076,7 @@
     "rerollCost": 60000,
     "tier": 2,
     "apothecary": true,
-    "specialRules": ["Sylvanian Spotlight", "Masters of Undeath"],
+    "specialRules": ["sylvanian-spotlight", "masters-of-undeath"],
     "positions": [
       {
         "key": "thrall-lineman",
@@ -3182,7 +3182,7 @@
     "rerollCost": 50000,
     "tier": 1,
     "apothecary": true,
-    "specialRules": ["Elven Kingdoms League", "Woodland League"],
+    "specialRules": ["elven-kingdoms-league", "woodland-league"],
     "positions": [
       {
         "key": "wood-elf-lineman",

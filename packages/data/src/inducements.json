@@ -77,7 +77,7 @@
     "cost": 100000,
     "max": 1,
     "effect": "Once per game, re-roll a failed [[regeneration]] roll.",
-    "restrictedTo": ["Masters of Undeath"]
+    "restrictedTo": ["masters-of-undeath"]
   },
   {
     "key": "plague-doctor",
@@ -85,7 +85,7 @@
     "cost": 100000,
     "max": 1,
     "effect": "Re-roll a failed [[regeneration]] roll, or act once as an Apothecary.",
-    "restrictedTo": ["Favoured of Nurgle"]
+    "restrictedTo": ["favoured-of-nurgle"]
   },
   {
     "key": "riotous-rookies",
@@ -93,7 +93,7 @@
     "cost": 150000,
     "max": 1,
     "effect": "Field 2D3+1 extra Journeymen for this game.",
-    "restrictedTo": ["Low Cost Linemen"]
+    "restrictedTo": ["low-cost-linemen"]
   },
   {
     "key": "biased-referee",
