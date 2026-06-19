@@ -37,8 +37,7 @@ describe('special rules', () => {
     }
     for (const star of starPlayers) {
       for (const rule of star.playsFor) {
-        if (rule !== 'any' && !names.has(rule))
-          dangling.push(`star ${star.key} → ${rule}`)
+        if (!names.has(rule)) dangling.push(`star ${star.key} → ${rule}`)
       }
     }
     for (const inducement of inducements) {
