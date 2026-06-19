@@ -11,6 +11,10 @@
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
+    "@blitz/data": "workspace:*",
+    "@blitz/schema": "workspace:*",
+    "@radix-ui/react-dialog": "^1.1.17",
+    "@tanstack/react-router": "^1.170.16",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
