@@ -1,4 +1,5 @@
 export { getGlossaryTerm, glossary } from './glossary'
+export { getInducement, inducements } from './inducements'
 export { getSkill, skills } from './skills'
 export { teamBuildingRules } from './team-building'
 export { getTeam, teams } from './teams'
