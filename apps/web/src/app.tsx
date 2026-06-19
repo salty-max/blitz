@@ -1,11 +1,13 @@
-/** Placeholder shell until the Blood Bowl UI is built out. */
+import { RouterProvider } from '@tanstack/react-router'
+
+import { RefDrawerProvider } from '@/components/ref-drawer'
+import { router } from '@/router'
+
+/** The Blood Bowl codex — routed pages wrapped in the ref side-drawer. */
 export default function App() {
   return (
-    <main className="grid min-h-dvh place-items-center gap-2 text-center">
-      <div>
-        <h1 className="text-4xl font-bold tracking-tight">blitz</h1>
-        <p className="mt-2 text-neutral-500">Blood Bowl odds, exactly.</p>
-      </div>
-    </main>
+    <RefDrawerProvider>
+      <RouterProvider router={router} />
+    </RefDrawerProvider>
   )
 }
