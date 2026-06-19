@@ -4,8 +4,8 @@ import { describe, expect, test } from 'bun:test'
 describe('team rosters', () => {
   const skillKeys = new Set(skills.map((skill) => skill.key))
 
-  test('all 30 teams load and resolve by key', () => {
-    expect(teams.length).toBe(30)
+  test('all 31 teams load and resolve by key', () => {
+    expect(teams.length).toBe(31)
     expect(getTeam('human')?.name).toBe('Human')
     expect(getTeam('orc')?.positions.length).toBeGreaterThan(0)
     expect(getTeam('not-a-team')).toBeUndefined()
