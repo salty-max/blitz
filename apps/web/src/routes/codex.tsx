@@ -1,4 +1,5 @@
 import {
+  glossary,
   inducements,
   skills,
   specialRules,
@@ -18,6 +19,7 @@ const CATEGORIES = [
     count: inducements.length,
   },
   { to: '/codex/rules', label: 'Special Rules', count: specialRules.length },
+  { to: '/codex/glossary', label: 'Glossary', count: glossary.length },
 ] as const
 
 /**

@@ -7,6 +7,7 @@ import {
 import { AppShell } from '@/components/app-shell'
 import { CodexHome, CodexLayout } from '@/routes/codex'
 import { ComingSoon } from '@/routes/coming-soon'
+import { GlossaryPage } from '@/routes/glossary'
 import { InducementsPage } from '@/routes/inducements'
 import { LandingPage } from '@/routes/landing'
 import { RulesPage } from '@/routes/rules'
@@ -86,6 +87,12 @@ const codexRulesRoute = createRoute({
   component: RulesPage,
 })
 
+const codexGlossaryRoute = createRoute({
+  getParentRoute: () => codexCategoryRoute,
+  path: 'glossary',
+  component: GlossaryPage,
+})
+
 // Team management — your own rosters across a season.
 const teamsRoute = createRoute({
   getParentRoute: () => rootRoute,
@@ -110,6 +117,7 @@ const routeTree = rootRoute.addChildren([
       codexStarsRoute,
       codexInducementsRoute,
       codexRulesRoute,
+      codexGlossaryRoute,
     ]),
   ]),
   teamsRoute,
