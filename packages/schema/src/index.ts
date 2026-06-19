@@ -13,6 +13,7 @@ export {
   specialRuleCategorySchema,
   specialRuleSchema,
 } from './special-rule'
+export { type StarAbility, starAbilitySchema } from './star-ability'
 export { type StarPlayer, starPlayerSchema } from './star-player'
 export {
   type Characteristics,
