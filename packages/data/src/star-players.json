@@ -1,0 +1,1312 @@
+[
+  {
+    "key": "akhorne-the-squirrel",
+    "name": "Akhorne the Squirrel",
+    "cost": 80000,
+    "characteristics": {
+      "ma": 7,
+      "st": 1,
+      "ag": 2,
+      "pa": null,
+      "av": 6
+    },
+    "skills": [
+      "claws",
+      "dauntless",
+      "dodge",
+      "frenzy",
+      "jump-up",
+      "loner",
+      "no-ball",
+      "sidestep",
+      "stunty",
+      "titchy"
+    ],
+    "playsFor": ["any"],
+    "special": "Blind Rage — Akhorne may choose to re-roll the D6 when rolling for the Dauntless skill."
+  },
+  {
+    "key": "anqi-panqi",
+    "name": "Anqi Panqi",
+    "cost": 190000,
+    "characteristics": {
+      "ma": 7,
+      "st": 4,
+      "ag": 5,
+      "pa": 6,
+      "av": 10
+    },
+    "skills": ["block", "grab", "loner", "stand-firm", "unsteady"],
+    "playsFor": ["Lustrian Superleague"],
+    "special": "Savage Blow — Once per game, when Anqi performs a Block Action against an opposition player he may choose to re-roll any number of the Block dice."
+  },
+  {
+    "key": "barik-farblast",
+    "name": "Barik Farblast",
+    "cost": 80000,
+    "characteristics": {
+      "ma": 6,
+      "st": 3,
+      "ag": 4,
+      "pa": 3,
+      "av": 9
+    },
+    "skills": [
+      "cannoneer",
+      "hail-mary-pass",
+      "loner",
+      "pass",
+      "secret-weapon",
+      "sure-hands",
+      "thick-skull"
+    ],
+    "playsFor": ["Worlds Edge Superleague", "Old World Classic"],
+    "special": "Blast It! — Whenever Barik makes a Hail Mary Pass, he may re-roll any Scatter results for determining where the ball lands, and any team-mate attempting to catch the ball applies a +1 modifier to the roll."
+  },
+  {
+    "key": "bilerot-vomitflesh",
+    "name": "Bilerot Vomitflesh",
+    "cost": 180000,
+    "characteristics": {
+      "ma": 4,
+      "st": 5,
+      "ag": 4,
+      "pa": 6,
+      "av": 10
+    },
+    "skills": [
+      "dirty-player",
+      "disturbing-presence",
+      "foul-appearance",
+      "lone-fouler",
+      "loner",
+      "regeneration",
+      "unsteady"
+    ],
+    "playsFor": ["Favoured of Nurgle"],
+    "special": "Putrid Regurgitation — Once per half, Bilerot may use the Projectile Vomit Special Action. This may still be used even if Bilerot has already performed a Block Action this turn."
+  },
+  {
+    "key": "boa-kon-ssstriktr",
+    "name": "Boa Kon'ssstriktr",
+    "cost": 180000,
+    "characteristics": {
+      "ma": 6,
+      "st": 3,
+      "ag": 3,
+      "pa": 4,
+      "av": 9
+    },
+    "skills": [
+      "dodge",
+      "fend",
+      "hypnotic-gaze",
+      "loner",
+      "prehensile-tail",
+      "safe-pair-of-hands",
+      "sidestep"
+    ],
+    "playsFor": ["Lustrian Superleague"],
+    "special": "Look Into My Eyes — Once per game, if Boa begins his activation Marking an opposition player in possession of the ball, he may roll a D6. On a 1, nothing happens. On a 2+, the opposition player loses possession of the ball, Boa immediately gains possession of the ball, and Boa's activation immediately ends."
+  },
+  {
+    "key": "bomber-dribblesnot",
+    "name": "Bomber Dribblesnot",
+    "cost": 80000,
+    "characteristics": {
+      "ma": 6,
+      "st": 2,
+      "ag": 3,
+      "pa": 3,
+      "av": 8
+    },
+    "skills": [
+      "accurate",
+      "bombardier",
+      "dodge",
+      "loner",
+      "right-stuff",
+      "secret-weapon",
+      "stunty"
+    ],
+    "playsFor": ["Badlands Brawl", "Underworld Challenge"],
+    "special": "Kaboom! — Once per game, if an opposition player catches a bomb thrown by Bomber, you can choose to have it explode rather than the opposition player immediately attempting to throw it again."
+  },
+  {
+    "key": "captain-karina-von-riesz",
+    "name": "Captain Karina von Riesz",
+    "cost": 230000,
+    "characteristics": {
+      "ma": 7,
+      "st": 4,
+      "ag": 2,
+      "pa": 3,
+      "av": 9
+    },
+    "skills": [
+      "bloodlust",
+      "dodge",
+      "hypnotic-gaze",
+      "jump-up",
+      "loner",
+      "regeneration"
+    ],
+    "playsFor": ["Sylvanian Spotlight"],
+    "special": "Tasty Morsel — Once per game, when Karina fails a Bloodlust roll, she may choose to bite an opposition player with a ST of 3 or lower as if they were a Thrall Lineman team-mate. Karina may not bite Star Players with this special rule."
+  },
+  {
+    "key": "cindy-piewhistle",
+    "name": "Cindy Piewhistle",
+    "cost": 100000,
+    "characteristics": {
+      "ma": 5,
+      "st": 2,
+      "ag": 3,
+      "pa": 3,
+      "av": 7
+    },
+    "skills": [
+      "accurate",
+      "bombardier",
+      "dodge",
+      "loner",
+      "secret-weapon",
+      "stunty"
+    ],
+    "playsFor": ["Old World Classic", "Halfling Thimble Cup"],
+    "special": "All You Can Eat — Once per game, Cindy may perform two Throw Bomb Special Actions rather than one; though she must commit to doing so before making the first Action. If she does, immediately after performing the second Throw Bomb Special Action, roll a D6. On a 1-3, Cindy is immediately Sent-off."
+  },
+  {
+    "key": "count-luthor-von-drakenborg",
+    "name": "Count Luthor Von Drakenborg",
+    "cost": 300000,
+    "characteristics": {
+      "ma": 6,
+      "st": 5,
+      "ag": 2,
+      "pa": 3,
+      "av": 10
+    },
+    "skills": ["block", "hypnotic-gaze", "loner", "regeneration", "sidestep"],
+    "playsFor": ["Sylvanian Spotlight"],
+    "special": "Star of the Show — Once per game, when Count Luthor scores a Touchdown, his controlling coach gains one Team Re-roll until the end of the following Drive. If this Team Re-roll has not been used by the end of the next Drive, it is lost."
+  },
+  {
+    "key": "deeproot-strongbranch",
+    "name": "Deeproot Strongbranch",
+    "cost": 280000,
+    "characteristics": {
+      "ma": 2,
+      "st": 7,
+      "ag": 5,
+      "pa": 4,
+      "av": 11
+    },
+    "skills": [
+      "block",
+      "bullseye",
+      "loner",
+      "mighty-blow",
+      "stand-firm",
+      "strong-arm",
+      "thick-skull",
+      "throw-team-mate",
+      "timmm-ber"
+    ],
+    "playsFor": ["Woodland League"],
+    "special": "Reliable — if Deeproot makes a Fumbled Throw when performing a Throw Team-mate Action, the player that was being thrown will Bounce as normal but will automatically land safely."
+  },
+  {
+    "key": "dribl-and-drull",
+    "name": "Dribl and Drull",
+    "cost": 230000,
+    "characteristics": {
+      "ma": 8,
+      "st": 2,
+      "ag": 3,
+      "pa": 4,
+      "av": 8
+    },
+    "skills": [
+      "dirty-player",
+      "dodge",
+      "loner",
+      "quick-foul",
+      "sidestep",
+      "sneaky-git",
+      "stab",
+      "stunty"
+    ],
+    "playsFor": ["Lustrian Superleague"],
+    "special": "A Sneaky Pair — Dribl & Drull must be hired as a pair. Additionally, whenever Dribl or Drull perform either a Foul Action or a Stab Special Action against an opposition player Marked by both Dribl & Drull, they may apply a +1 modifier to the roll. Characteristics block above is the first member, Dribl (MA 8, ST 2, AG 3+, PA 4+, AV 8+; skills: Dirty Player, Dodge, Loner (4+), Quick Foul, Sidestep, Sneaky Git, Stunty). Second member Drull: MA 8, ST 2, AG 3+, PA 4+, AV 8+; skills: Dodge, Loner (4+), Sidestep, Stab, Stunty."
+  },
+  {
+    "key": "eldril-sidewinder",
+    "name": "Eldril Sidewinder",
+    "cost": 220000,
+    "characteristics": {
+      "ma": 8,
+      "st": 3,
+      "ag": 2,
+      "pa": 3,
+      "av": 8
+    },
+    "skills": [
+      "catch",
+      "dodge",
+      "hypnotic-gaze",
+      "loner",
+      "nerves-of-steel",
+      "on-the-ball"
+    ],
+    "playsFor": ["Elven Kingdoms League"],
+    "special": "Mesmerising Dance — once per half, Eldril may re-roll the dice when performing a Hypnotic Gaze Special Action."
+  },
+  {
+    "key": "estelle-la-veneaux",
+    "name": "Estelle la Veneaux",
+    "cost": 190000,
+    "characteristics": {
+      "ma": 6,
+      "st": 3,
+      "ag": 3,
+      "pa": 4,
+      "av": 8
+    },
+    "skills": ["disturbing-presence", "dodge", "guard", "loner", "sidestep"],
+    "playsFor": ["Lustrian Superleague"],
+    "special": "Baleful Hex — once per game, at the beginning of Estelle's activation, she may select an opposition player within 5 squares and roll a D6. On a 2+, the selected player becomes Distracted and cannot be activated during their team's next Turn."
+  },
+  {
+    "key": "fungus-the-loon",
+    "name": "Fungus the Loon",
+    "cost": 80000,
+    "characteristics": {
+      "ma": 4,
+      "st": 7,
+      "ag": 3,
+      "pa": null,
+      "av": 8
+    },
+    "skills": [
+      "ball-and-chain",
+      "loner",
+      "mighty-blow",
+      "no-ball",
+      "secret-weapon",
+      "stunty"
+    ],
+    "playsFor": ["Badlands Brawl", "Underworld Challenge"],
+    "special": "Whirling Dervish — once per Activation, Fungus may re-roll the D6 when determining which direction he moves in."
+  },
+  {
+    "key": "glart-smashrip",
+    "name": "Glart Smashrip",
+    "cost": 175000,
+    "characteristics": {
+      "ma": 5,
+      "st": 4,
+      "ag": 4,
+      "pa": 6,
+      "av": 9
+    },
+    "skills": ["block", "claws", "grab", "juggernaut", "loner", "stand-firm"],
+    "playsFor": ["Underworld Challenge"],
+    "special": "Frenzied Rush — once per half, when Glart declares a Blitz Action he may gain the Frenzy Skill until the end of his activation. Glart may not use the Grab Skill during a Turn in which he uses this special rule."
+  },
+  {
+    "key": "gloriel-summerbloom",
+    "name": "Gloriel Summerbloom",
+    "cost": 150000,
+    "characteristics": {
+      "ma": 7,
+      "st": 2,
+      "ag": 2,
+      "pa": 2,
+      "av": 8
+    },
+    "skills": ["accurate", "dodge", "loner", "pass", "sidestep", "sure-hands"],
+    "playsFor": ["Elven Kingdoms League"],
+    "special": "Shot to Nothing — once per game, when Gloriel is activated she may use this special rule; if she does, Gloriel gains the Hail Mary Pass Skill until the end of her activation."
+  },
+  {
+    "key": "glotl-stop",
+    "name": "Glotl Stop",
+    "cost": 260000,
+    "characteristics": {
+      "ma": 6,
+      "st": 6,
+      "ag": 5,
+      "pa": 6,
+      "av": 10
+    },
+    "skills": [
+      "animal-savagery",
+      "frenzy",
+      "loner",
+      "mighty-blow",
+      "prehensile-tail",
+      "stand-firm",
+      "thick-skull"
+    ],
+    "playsFor": ["Lustrian Superleague"],
+    "special": "Primal Savagery — once per game, when Glotl fails an Animal Savagery roll, it may lash out at an opposition player rather than a team-mate."
+  },
+  {
+    "key": "grak-and-crumbleberry",
+    "name": "Grak and Crumbleberry",
+    "cost": 250000,
+    "characteristics": {
+      "ma": 5,
+      "st": 5,
+      "ag": 4,
+      "pa": 4,
+      "av": 10
+    },
+    "skills": [
+      "bone-head",
+      "dodge",
+      "kick-team-mate",
+      "lethal-flight",
+      "loner",
+      "mighty-blow",
+      "right-stuff",
+      "sure-hands",
+      "thick-skull"
+    ],
+    "playsFor": ["any"],
+    "special": "I'll Carry You — once per half, if Grak begins his activation adjacent to Crumbleberry he may pick up Crumbleberry; temporarily remove Crumbleberry from the pitch and, at the end of Grak's activation, place Crumbleberry in an unoccupied square adjacent to Grak. While Crumbleberry is being carried by Grak, Grak gains the Break Tackle and Dodge Skills. Characteristics block above is the first member, Grak (MA 5, ST 5, AG 4+, PA 4+, AV 10+; skills: Bone Head, Kick Team-mate, Loner (4+), Mighty Blow, Thick Skull). Second member Crumbleberry: MA 5, ST 2, AG 3+, PA 5+, AV 7+; skills: Dodge, Lethal Flight, Loner (4+), Right Stuff, Stunty, Sure Hands. Plays for all team types (page lists every league keyword)."
+  },
+  {
+    "key": "grashnak-backhoof",
+    "name": "Grashnak Backhoof",
+    "cost": 240000,
+    "characteristics": {
+      "ma": 6,
+      "st": 6,
+      "ag": 4,
+      "pa": 6,
+      "av": 9
+    },
+    "skills": [
+      "frenzy",
+      "horns",
+      "loner",
+      "mighty-blow",
+      "thick-skull",
+      "unchannelled-fury"
+    ],
+    "playsFor": ["Chaos Clash"],
+    "special": "Gored by the Bull — Once per game, when Grashnak performs a Block Action as part of a Blitz Action, he may roll one additional Block Dice against the opposition player regardless of their ST, to a maximum of three Block Dice."
+  },
+  {
+    "key": "gretchen-watcher",
+    "name": "Gretchen Wätcher",
+    "cost": 180000,
+    "characteristics": {
+      "ma": 7,
+      "st": 3,
+      "ag": 2,
+      "pa": null,
+      "av": 9
+    },
+    "skills": [
+      "disturbing-presence",
+      "dodge",
+      "foul-appearance",
+      "jump-up",
+      "loner",
+      "no-ball",
+      "regeneration",
+      "shadowing",
+      "sidestep"
+    ],
+    "playsFor": ["Sylvanian Spotlight"],
+    "special": "Sylvanian Spotlight — Once per game, when Gretchen is activated she may use this special rule; until the end of her activation, Gretchen does not have to make Dodge rolls for leaving a square within an opposition player's Tackle Zone; Incorporeal — Gretchen's ghostly form lets her slip free of opposition Tackle Zones without making the usual Dodge rolls."
+  },
+  {
+    "key": "griff-oberwald",
+    "name": "Griff Oberwald",
+    "cost": 300000,
+    "characteristics": {
+      "ma": 7,
+      "st": 4,
+      "ag": 2,
+      "pa": 3,
+      "av": 9
+    },
+    "skills": ["block", "dodge", "fend", "loner", "sprint", "sure-feet"],
+    "playsFor": ["Old World Classic"],
+    "special": "Consummate Professional — Once per game, Griff may apply a +1 modifier to an Agility Test he has made. This modifier may be applied after the roll has been made."
+  },
+  {
+    "key": "grim-ironjaw",
+    "name": "Grim Ironjaw",
+    "cost": 200000,
+    "characteristics": {
+      "ma": 5,
+      "st": 4,
+      "ag": 3,
+      "pa": 6,
+      "av": 9
+    },
+    "skills": [
+      "block",
+      "dauntless",
+      "frenzy",
+      "hatred",
+      "loner",
+      "multiple-block",
+      "thick-skull"
+    ],
+    "playsFor": ["Worlds Edge Superleague"],
+    "special": "Slayer — Once per game, when an opposition Big Guy is Knocked Down as a result of a Block Action performed by Grim, you may apply an additional +1 modifier to either the Armour Roll or the Injury Roll. This modifier may be applied after the roll has been made."
+  },
+  {
+    "key": "grombrindal",
+    "name": "Grombrindal",
+    "cost": 170000,
+    "characteristics": {
+      "ma": 5,
+      "st": 3,
+      "ag": 3,
+      "pa": 4,
+      "av": 10
+    },
+    "skills": [
+      "block",
+      "break-tackle",
+      "dauntless",
+      "loner",
+      "mighty-blow",
+      "stand-firm",
+      "sure-feet",
+      "thick-skull"
+    ],
+    "playsFor": [
+      "Worlds Edge Superleague",
+      "Old World Classic",
+      "Halfling Thimble Cup"
+    ],
+    "special": "Wisdom of the White Dwarf — Once per game, when Grombrindal is activated he may select one team-mate within 2 squares. The selected team-mate gains one of the following Skills until the end of turn: Break Tackle, Dauntless, Mighty Blow, Sure Feet."
+  },
+  {
+    "key": "guffle-pusmaw",
+    "name": "Guffle Pusmaw",
+    "cost": 150000,
+    "characteristics": {
+      "ma": 5,
+      "st": 4,
+      "ag": 4,
+      "pa": 6,
+      "av": 10
+    },
+    "skills": [
+      "foul-appearance",
+      "loner",
+      "monstrous-mouth",
+      "nerves-of-steel",
+      "on-the-ball",
+      "plague-ridden"
+    ],
+    "playsFor": ["Favoured of Nurgle"],
+    "special": "Quick Bite — Once per game, if Guffle is Marking an opposition player who catches the ball, he may immediately make an Armour Roll against that player. If the target's Armour is broken, Guffle immediately gains possession of the ball. No Turnover is caused as a result of using this special rule."
+  },
+  {
+    "key": "h-thark-the-unstoppable",
+    "name": "H'thark the Unstoppable",
+    "cost": 300000,
+    "characteristics": {
+      "ma": 6,
+      "st": 6,
+      "ag": 4,
+      "pa": 6,
+      "av": 10
+    },
+    "skills": [
+      "block",
+      "break-tackle",
+      "defensive",
+      "juggernaut",
+      "loner",
+      "sprint",
+      "sure-feet",
+      "thick-skull",
+      "unsteady"
+    ],
+    "playsFor": ["Badlands Brawl", "Favoured of Hashut"],
+    "special": "Unstoppable Momentum — Whenever H'thark performs a Block Action as part of a Blitz Action, he may re-roll a single Block Dice."
+  },
+  {
+    "key": "hakflem-skuttlespike",
+    "name": "Hakflem Skuttlespike",
+    "cost": 200000,
+    "characteristics": {
+      "ma": 8,
+      "st": 3,
+      "ag": 2,
+      "pa": 3,
+      "av": 8
+    },
+    "skills": ["dodge", "extra-arms", "loner", "prehensile-tail", "two-heads"],
+    "playsFor": ["Underworld Challenge"],
+    "special": "Treacherous — Once per game, if Hakflem is adjacent to a team-mate who is in possession of the ball when he is activated, then Hakflem can choose to gain possession of the ball. If he does, then the team-mate will immediately be Knocked Down. This will not cause a Turnover even if the team-mate suffers a Casualty."
+  },
+  {
+    "key": "helmut-wulf",
+    "name": "Helmut Wulf",
+    "cost": 140000,
+    "characteristics": {
+      "ma": 6,
+      "st": 3,
+      "ag": 3,
+      "pa": null,
+      "av": 9
+    },
+    "skills": [
+      "chainsaw",
+      "loner",
+      "no-ball",
+      "pro",
+      "secret-weapon",
+      "stand-firm"
+    ],
+    "playsFor": ["Old World Classic"],
+    "special": "Old Pro — Once per game, Helmut may use his Pro Skill to re-roll a single dice rolled as part of an Armour Roll."
+  },
+  {
+    "key": "ivan-the-animal-deathshroud",
+    "name": "Ivan 'The Animal' Deathshroud",
+    "cost": 210000,
+    "characteristics": {
+      "ma": 6,
+      "st": 4,
+      "ag": 4,
+      "pa": 5,
+      "av": 9
+    },
+    "skills": [
+      "block",
+      "disturbing-presence",
+      "hatred",
+      "juggernaut",
+      "loner",
+      "regeneration",
+      "strip-ball",
+      "tackle"
+    ],
+    "playsFor": ["Sylvanian Spotlight"],
+    "special": "Dwarven Scourge — Once per game, when an opposition player is Knocked Down as a result of a Block Action performed by Ivan, you may apply an additional +1 modifier to the Armour Roll or Injury roll. If this is against a Dwarf player this may instead be a +2 modifier."
+  },
+  {
+    "key": "ivar-eriksson",
+    "name": "Ivar Eriksson",
+    "cost": 215000,
+    "characteristics": {
+      "ma": 6,
+      "st": 4,
+      "ag": 3,
+      "pa": 4,
+      "av": 9
+    },
+    "skills": ["block", "guard", "loner", "tackle"],
+    "playsFor": ["Old World Classic"],
+    "special": "Raiding Party — Once per Drive, when Ivar begins his activation he may select one Open team-mate within 5 squares. The selected player may immediately move 1 square, though they must end this move Marking an opposition player."
+  },
+  {
+    "key": "jeremiah-kool",
+    "name": "Jeremiah Kool",
+    "cost": 300000,
+    "characteristics": {
+      "ma": 8,
+      "st": 3,
+      "ag": 1,
+      "pa": 2,
+      "av": 9
+    },
+    "skills": [
+      "block",
+      "diving-catch",
+      "dodge",
+      "dump-off",
+      "loner",
+      "nerves-of-steel",
+      "on-the-ball",
+      "pass",
+      "sidestep"
+    ],
+    "playsFor": ["Elven Kingdoms League"],
+    "special": "The Flashing Blade — Once per game, at the start of his activation, Jeremiah may declare a Stab Special Action against an opposition player he is Marking. After performing the Stab Special Action, Jeremiah may then perform a Move Action before his activation ends."
+  },
+  {
+    "key": "jordell-freshbreeze",
+    "name": "Jordell Freshbreeze",
+    "cost": 280000,
+    "characteristics": {
+      "ma": 8,
+      "st": 3,
+      "ag": 1,
+      "pa": 3,
+      "av": 8
+    },
+    "skills": [
+      "block",
+      "diving-catch",
+      "dodge",
+      "leap",
+      "loner",
+      "sidestep",
+      "steady-footing"
+    ],
+    "playsFor": ["Elven Kingdoms League", "Woodland League"],
+    "special": "Swift as the Breeze — Once per game, Jordell can choose to pass a single Dodge, Leap or Rush Test on a 2+, regardless of any modifiers."
+  },
+  {
+    "key": "josef-bugman",
+    "name": "Josef Bugman",
+    "cost": 180000,
+    "characteristics": {
+      "ma": 5,
+      "st": 3,
+      "ag": 3,
+      "pa": 4,
+      "av": 9
+    },
+    "skills": [
+      "block",
+      "drunkard",
+      "fend",
+      "loner",
+      "tackle",
+      "taunt",
+      "thick-skull"
+    ],
+    "playsFor": ["Worlds Edge Superleague", "Old World Classic"],
+    "special": "Dwarfen Grit — Once per game, when Josef's armour is broken as the result of an Armour Roll, you may choose to have the Armour Roll re-rolled."
+  },
+  {
+    "key": "karla-von-kill",
+    "name": "Karla von Kill",
+    "cost": 210000,
+    "characteristics": {
+      "ma": 6,
+      "st": 4,
+      "ag": 3,
+      "pa": 3,
+      "av": 9
+    },
+    "skills": ["block", "dauntless", "dodge", "jump-up", "loner"],
+    "playsFor": ["Old World Classic", "Lustrian Superleague"],
+    "special": "Indomitable — Once per game, when Karla successfully rolls to use her Dauntless Skill, she may increase her ST characteristic to double that of the target of the Block Action."
+  },
+  {
+    "key": "kiroth-krakeneye",
+    "name": "Kiroth Krakeneye",
+    "cost": 160000,
+    "characteristics": {
+      "ma": 7,
+      "st": 3,
+      "ag": 2,
+      "pa": 3,
+      "av": 8
+    },
+    "skills": [
+      "disturbing-presence",
+      "foul-appearance",
+      "loner",
+      "on-the-ball",
+      "tackle",
+      "tentacles"
+    ],
+    "playsFor": ["Elven Kingdoms League"],
+    "special": "Black Ink — Once per game, at the start of any of his activations, Kiroth can select an opposition player he is Marking. The selected player becomes Distracted until they are next activated."
+  },
+  {
+    "key": "kreek-rustgouger",
+    "name": "Kreek Rustgouger",
+    "cost": 180000,
+    "characteristics": {
+      "ma": 4,
+      "st": 7,
+      "ag": 4,
+      "pa": null,
+      "av": 10
+    },
+    "skills": [
+      "ball-and-chain",
+      "loner",
+      "mighty-blow",
+      "no-ball",
+      "prehensile-tail",
+      "secret-weapon"
+    ],
+    "playsFor": ["Underworld Challenge"],
+    "special": "I'll Be Back! — The first time in a game that Kreek would be Sent-off as per the Secret Weapon Trait, he is not Sent-off and may instead continue as part of the game. Kreek's coach may not Argue the Call when Kreek uses this special rule."
+  },
+  {
+    "key": "lord-borak-the-despoiler",
+    "name": "Lord Borak the Despoiler",
+    "cost": 270000,
+    "characteristics": {
+      "ma": 5,
+      "st": 5,
+      "ag": 3,
+      "pa": 5,
+      "av": 10
+    },
+    "skills": [
+      "block",
+      "dirty-player",
+      "leader",
+      "loner",
+      "mighty-blow",
+      "put-the-boot-in",
+      "sneaky-git"
+    ],
+    "playsFor": ["Chaos Clash"],
+    "special": "Lord of Chaos — Once per game, when Lord Borak performs a Block Action he may re-roll a single Block Dice."
+  },
+  {
+    "key": "maple-highgrove",
+    "name": "Maple Highgrove",
+    "cost": 210000,
+    "characteristics": {
+      "ma": 3,
+      "st": 5,
+      "ag": 5,
+      "pa": 5,
+      "av": 11
+    },
+    "skills": [
+      "brawler",
+      "grab",
+      "loner",
+      "mighty-blow",
+      "stand-firm",
+      "tentacles",
+      "thick-skull"
+    ],
+    "playsFor": ["Woodland League"],
+    "special": "Vicious Vines — Once per half, when Maple declares a Block Action he may do so against an opposition player who is 2 squares away following all the normal rules for performing a Block Action, though he may not follow-up."
+  },
+  {
+    "key": "max-spleenripper",
+    "name": "Max Spleenripper",
+    "cost": 130000,
+    "characteristics": {
+      "ma": 5,
+      "st": 4,
+      "ag": 4,
+      "pa": null,
+      "av": 9
+    },
+    "skills": ["chainsaw", "loner", "no-ball", "secret-weapon"],
+    "playsFor": ["Favoured of Khorne"],
+    "special": "Maximum Carnage — Once per game, after Max performs a Chainsaw Attack Special Action he may immediately perform another Chainsaw Attack Special Action that targets a different opposition player."
+  },
+  {
+    "key": "morg-n-thorg",
+    "name": "Morg'n'Thorg",
+    "cost": 340000,
+    "characteristics": {
+      "ma": 6,
+      "st": 6,
+      "ag": 3,
+      "pa": 4,
+      "av": 11
+    },
+    "skills": [
+      "block",
+      "bullseye",
+      "hatred",
+      "loner",
+      "mighty-blow",
+      "thick-skull",
+      "throw-team-mate"
+    ],
+    "playsFor": [
+      "Badlands Brawl",
+      "Worlds Edge Superleague",
+      "Old World Classic",
+      "Elven Kingdoms League",
+      "Underworld Challenge",
+      "Halfling Thimble Cup",
+      "Lustrian Superleague",
+      "Chaos Clash",
+      "Woodland League"
+    ],
+    "special": "The Ballista — Once per game, when Morg performs a Throw Team-mate Action, he may re-roll the Passing Ability Test."
+  },
+  {
+    "key": "nobbla-blackwart",
+    "name": "Nobbla Blackwart",
+    "cost": 120000,
+    "characteristics": {
+      "ma": 6,
+      "st": 2,
+      "ag": 3,
+      "pa": null,
+      "av": 8
+    },
+    "skills": [
+      "block",
+      "chainsaw",
+      "dodge",
+      "loner",
+      "no-ball",
+      "saboteur",
+      "secret-weapon",
+      "stunty"
+    ],
+    "playsFor": ["Badlands Brawl", "Underworld Challenge"],
+    "special": "Kick 'em While They're Down! — Once per game, Nobbla may use the Chainsaw Attack Special Action against a Prone or Stunned opposition player. This does not count as a Foul Action and so Nobbla cannot be Sent-off when using this special rule."
+  },
+  {
+    "key": "puggy-baconbreath",
+    "name": "Puggy Baconbreath",
+    "cost": 120000,
+    "characteristics": {
+      "ma": 5,
+      "st": 3,
+      "ag": 3,
+      "pa": 3,
+      "av": 8
+    },
+    "skills": [
+      "block",
+      "dodge",
+      "loner",
+      "nerves-of-steel",
+      "right-stuff",
+      "stunty"
+    ],
+    "playsFor": ["Old World Classic", "Halfling Thimble Cup"],
+    "special": "Halfling Luck — Once per game, Puggy may re-roll a single dice that was rolled either as a single dice roll, a multiple dice roll, or a dice pool, though this cannot be a dice that was rolled as part of an Armour Roll, Injury Roll or Casualty Roll."
+  },
+  {
+    "key": "rashnak-backstabber",
+    "name": "Rashnak Backstabber",
+    "cost": 130000,
+    "characteristics": {
+      "ma": 7,
+      "st": 3,
+      "ag": 3,
+      "pa": 5,
+      "av": 8
+    },
+    "skills": ["loner", "shadowing", "sidestep", "sneaky-git", "stab"],
+    "playsFor": ["Badlands Brawl"],
+    "special": "Toxin Connoisseur — Once per game, when Rashnak successfully breaks an opposition player's armour as a result of a Stab Special Action, you may apply an additional +1 modifier to the Injury Roll. This modifier may be applied after the roll has been made."
+  },
+  {
+    "key": "ripper-bolgrot",
+    "name": "Ripper Bolgrot",
+    "cost": 250000,
+    "characteristics": {
+      "ma": 5,
+      "st": 6,
+      "ag": 5,
+      "pa": 4,
+      "av": 10
+    },
+    "skills": [
+      "bullseye",
+      "grab",
+      "loner",
+      "mighty-blow",
+      "regeneration",
+      "throw-team-mate"
+    ],
+    "playsFor": ["Badlands Brawl", "Underworld Challenge"],
+    "special": "Thinking Man's Troll — Once per half, Ripper may re-roll a single dice that was rolled either as a single dice roll, a multiple dice roll, or a dice pool, though this cannot be a dice that was rolled as part of an Armour Roll, Injury Roll or Casualty Roll."
+  },
+  {
+    "key": "rodney-roachbait",
+    "name": "Rodney Roachbait",
+    "cost": 70000,
+    "characteristics": {
+      "ma": 6,
+      "st": 2,
+      "ag": 3,
+      "pa": 4,
+      "av": 7
+    },
+    "skills": [
+      "catch",
+      "diving-catch",
+      "jump-up",
+      "loner",
+      "on-the-ball",
+      "sidestep",
+      "stunty",
+      "wrestle"
+    ],
+    "playsFor": ["Woodland League"],
+    "special": "Catch of the Day — Once per half, if Rodney is Standing and begins his activation within 3 squares of a ball which is on the ground he may roll a D6. On a 1-2, nothing happens. On a 3+, Rodney immediately gains possession of the ball."
+  },
+  {
+    "key": "roxanna-darknail",
+    "name": "Roxanna Darknail",
+    "cost": 270000,
+    "characteristics": {
+      "ma": 8,
+      "st": 3,
+      "ag": 1,
+      "pa": 3,
+      "av": 8
+    },
+    "skills": ["dodge", "frenzy", "juggernaut", "jump-up", "leap", "loner"],
+    "playsFor": ["Elven Kingdoms League"],
+    "special": "Slashing Nails — Once per half, when Roxanna declares a Blitz Action, she gains the Claws Skill until the end of her activation."
+  },
+  {
+    "key": "rumbelow-sheepskin",
+    "name": "Rumbelow Sheepskin",
+    "cost": 170000,
+    "characteristics": {
+      "ma": 6,
+      "st": 3,
+      "ag": 3,
+      "pa": 5,
+      "av": 8
+    },
+    "skills": [
+      "block",
+      "horns",
+      "juggernaut",
+      "loner",
+      "tackle",
+      "thick-skull"
+    ],
+    "playsFor": ["Halfling Thimble Cup"],
+    "special": "Ram — Once per game, when an opposition player is Knocked Down as a result of a Block Action performed by Rumbelow, you may apply an additional +1 modifier to either the Armour Roll or the Injury Roll."
+  },
+  {
+    "key": "scrappa-sorehead",
+    "name": "Scrappa Sorehead",
+    "cost": 120000,
+    "characteristics": {
+      "ma": 7,
+      "st": 2,
+      "ag": 3,
+      "pa": 4,
+      "av": 8
+    },
+    "skills": [
+      "dirty-player",
+      "dodge",
+      "loner",
+      "right-stuff",
+      "sprint",
+      "stunty",
+      "sure-feet"
+    ],
+    "playsFor": ["Badlands Brawl", "Underworld Challenge"],
+    "special": "Yoink! — Once per game, when Scrappa attempts to Intercept a Pass Action he may roll a D6. On a 2+, Scrappa doesn't need to Intercept; instead, he will automatically Intercept the Pass Action and gains control of the ball."
+  },
+  {
+    "key": "scyla-anfingrimm",
+    "name": "Scyla Anfingrimm",
+    "cost": 200000,
+    "characteristics": {
+      "ma": 5,
+      "st": 5,
+      "ag": 4,
+      "pa": 6,
+      "av": 10
+    },
+    "skills": [
+      "claws",
+      "frenzy",
+      "loner",
+      "mighty-blow",
+      "prehensile-tail",
+      "thick-skull",
+      "unchannelled-fury"
+    ],
+    "playsFor": ["Favoured of Khorne"],
+    "special": "Fury of the Blood God — Once per game, if Scyla rolls a 1 for his Unchannelled Fury roll after declaring a Block Action then, instead of applying the usual effects of Unchannelled Fury, Scyla may perform two Block Actions instead. The first Block Action must be fully resolved, including the use of the Frenzy Skill, before the second one is performed."
+  },
+  {
+    "key": "skitter-stab-stab",
+    "name": "Skitter Stab-Stab",
+    "cost": 170000,
+    "characteristics": {
+      "ma": 9,
+      "st": 2,
+      "ag": 2,
+      "pa": 4,
+      "av": 8
+    },
+    "skills": ["dodge", "loner", "prehensile-tail", "shadowing", "stab"],
+    "playsFor": ["Underworld Challenge"],
+    "special": "Master Assassin — Once per game, when Skitter performs a Stab Special Action, he may choose to re-roll the Armour Roll."
+  },
+  {
+    "key": "skrorg-snowpelt",
+    "name": "Skrorg Snowpelt",
+    "cost": 240000,
+    "characteristics": {
+      "ma": 5,
+      "st": 5,
+      "ag": 4,
+      "pa": 6,
+      "av": 9
+    },
+    "skills": [
+      "block",
+      "claws",
+      "disturbing-presence",
+      "juggernaut",
+      "loner",
+      "mighty-blow"
+    ],
+    "playsFor": ["Worlds Edge Superleague", "Old World Classic"],
+    "special": "Pump Up the Crowd — Once per game, when Skrorg causes an opposition player to be removed as a Casualty as the result of a Block Action, Skrorg's controlling coach gains one Team Re-roll until the end of the current Drive. If the Re-roll has not been used by the end of the Drive, it is lost."
+  },
+  {
+    "key": "skrull-halfheight",
+    "name": "Skrull Halfheight",
+    "cost": 150000,
+    "characteristics": {
+      "ma": 6,
+      "st": 3,
+      "ag": 4,
+      "pa": 3,
+      "av": 9
+    },
+    "skills": [
+      "accurate",
+      "loner",
+      "nerves-of-steel",
+      "pass",
+      "regeneration",
+      "sure-hands",
+      "thick-skull"
+    ],
+    "playsFor": ["Worlds Edge Superleague", "Sylvanian Spotlight"],
+    "special": "Strong Passing Game — Once per game, when Skrull performs a Pass Action he may modify the result of the Passing Ability Test by the value of his ST characteristic, to a maximum of 6."
+  },
+  {
+    "key": "swiftvine-glimmershard",
+    "name": "Swiftvine Glimmershard",
+    "cost": 110000,
+    "characteristics": {
+      "ma": 7,
+      "st": 2,
+      "ag": 3,
+      "pa": 5,
+      "av": 7
+    },
+    "skills": [
+      "disturbing-presence",
+      "fend",
+      "loner",
+      "sidestep",
+      "stab",
+      "stunty"
+    ],
+    "playsFor": ["Woodland League"],
+    "special": "Furious Outburst — Once per half, so long as she is Standing at the start of her activation, Swiftvine can place herself adjacent to a Standing opposition player within 3 squares of her and immediately make a Stab Special Action against them. She may then place herself in an unoccupied square within 3 squares of her new position. Her activation then immediately ends. This counts as the team's Blitz Action for the turn."
+  },
+  {
+    "key": "the-black-gobbo",
+    "name": "The Black Gobbo",
+    "cost": 210000,
+    "characteristics": {
+      "ma": 6,
+      "st": 2,
+      "ag": 3,
+      "pa": 3,
+      "av": 8
+    },
+    "skills": [
+      "bombardier",
+      "disturbing-presence",
+      "dodge",
+      "loner",
+      "sidestep",
+      "sneaky-git",
+      "stab",
+      "stunty"
+    ],
+    "playsFor": ["Badlands Brawl", "Underworld Challenge"],
+    "special": "Sneakiest of the Lot — If your team includes the Black Gobbo, then you may declare two Foul Actions per Turn rather than the usual one. However, one of these Foul Actions must be declared by the Black Gobbo himself."
+  },
+  {
+    "key": "the-mighty-zug",
+    "name": "The Mighty Zug",
+    "cost": 220000,
+    "characteristics": {
+      "ma": 5,
+      "st": 5,
+      "ag": 4,
+      "pa": 6,
+      "av": 10
+    },
+    "skills": ["block", "loner", "mighty-blow", "unsteady"],
+    "playsFor": ["Old World Classic", "Lustrian Superleague"],
+    "special": "Crushing Blow — Once per game, when an opposition player is Knocked Down as the result of a Block Action performed by Zug, you may apply an additional +1 modifier to the Armour Roll. This modifier may be applied after the Armour Roll has been made."
+  },
+  {
+    "key": "the-swift-twins",
+    "name": "The Swift Twins",
+    "cost": 300000,
+    "characteristics": {
+      "ma": 7,
+      "st": 3,
+      "ag": 2,
+      "pa": 3,
+      "av": 9
+    },
+    "skills": [
+      "accurate",
+      "block",
+      "loner",
+      "mighty-blow",
+      "nerves-of-steel",
+      "pass",
+      "safe-pass",
+      "sure-hands",
+      "tackle"
+    ],
+    "playsFor": ["Elven Kingdoms League"],
+    "special": "Working in Tandem — The Swift Twins must be hired as a pair. Lucien: if Lucien performs a Block Action against an opposition player who is also Marked by Valen, Lucien may re-roll a single Block Dice. Valen: if Valen performs a Pass Action that targets a square containing Lucien, Valen suffers no modifiers to the PA test for the range of the Pass Action."
+  },
+  {
+    "key": "thorsson-stoutmead",
+    "name": "Thorsson Stoutmead",
+    "cost": 170000,
+    "characteristics": {
+      "ma": 6,
+      "st": 3,
+      "ag": 4,
+      "pa": 3,
+      "av": 8
+    },
+    "skills": ["block", "drunkard", "loner", "thick-skull"],
+    "playsFor": ["Worlds Edge Superleague", "Old World Classic"],
+    "special": "Beer Barrel Bash — Once per Drive, at the start of his activation, Thorsson may select an opposition player within three squares and roll a D6. On a 3+, the selected player is immediately Knocked Down. On a 2, nothing happens. On a 1, Thorsson Falls Over. After using this special rule, Thorsson's activation immediately ends."
+  },
+  {
+    "key": "varag-ghoul-chewer",
+    "name": "Varag Ghoul-Chewer",
+    "cost": 260000,
+    "characteristics": {
+      "ma": 6,
+      "st": 5,
+      "ag": 3,
+      "pa": 5,
+      "av": 10
+    },
+    "skills": [
+      "block",
+      "hatred",
+      "jump-up",
+      "loner",
+      "mighty-blow",
+      "thick-skull",
+      "unsteady"
+    ],
+    "playsFor": ["Badlands Brawl"],
+    "special": "Krump and Smash — Once per game, when an opposition player is Knocked Down as a result of a Block Action performed by Varag, he may re-roll the Armour Roll."
+  },
+  {
+    "key": "wilhelm-chaney",
+    "name": "Wilhelm Chaney",
+    "cost": 220000,
+    "characteristics": {
+      "ma": 8,
+      "st": 4,
+      "ag": 3,
+      "pa": 5,
+      "av": 9
+    },
+    "skills": ["catch", "claws", "frenzy", "loner", "regeneration", "wrestle"],
+    "playsFor": ["Sylvanian Spotlight"],
+    "special": "Savage Mauling — Once per game, when Wilhelm makes an Injury Roll against an opposition player, he may choose to re-roll the result."
+  },
+  {
+    "key": "willow-rosebark",
+    "name": "Willow Rosebark",
+    "cost": 160000,
+    "characteristics": {
+      "ma": 8,
+      "st": 4,
+      "ag": 3,
+      "pa": 4,
+      "av": 9
+    },
+    "skills": ["dauntless", "loner", "sidestep", "thick-skull"],
+    "playsFor": ["Woodland League"],
+    "special": "Woodland Fury — Once per game, when Willow performs a Block Action that would result in her being Knocked Down, she can choose to re-roll a single Block Dice."
+  },
+  {
+    "key": "withergrasp-doubledrool",
+    "name": "Withergrasp Doubledrool",
+    "cost": 170000,
+    "characteristics": {
+      "ma": 6,
+      "st": 3,
+      "ag": 3,
+      "pa": 4,
+      "av": 9
+    },
+    "skills": [
+      "foul-appearance",
+      "loner",
+      "prehensile-tail",
+      "tackle",
+      "tentacles",
+      "two-heads",
+      "wrestle"
+    ],
+    "playsFor": ["Favoured of Nurgle"],
+    "special": "Watch Out! — The first time each Drive that Withergrasp is the target of a Block Action performed by an opposition player, he counts as having the Dodge Skill."
+  },
+  {
+    "key": "zolcath-the-zoat",
+    "name": "Zolcath the Zoat",
+    "cost": 220000,
+    "characteristics": {
+      "ma": 5,
+      "st": 5,
+      "ag": 4,
+      "pa": 5,
+      "av": 10
+    },
+    "skills": [
+      "disturbing-presence",
+      "juggernaut",
+      "loner",
+      "mighty-blow",
+      "prehensile-tail",
+      "regeneration",
+      "sure-feet"
+    ],
+    "playsFor": ["Elven Kingdoms League", "Lustrian Superleague"],
+    "special": "Excuse me, are you a Zoat? — Once per game, when Zolcath is activated he may select an opposition player within 3 squares. The selected player immediately becomes Distracted."
+  },
+  {
+    "key": "zzharg-madeye",
+    "name": "Zzharg Madeye",
+    "cost": 130000,
+    "characteristics": {
+      "ma": 4,
+      "st": 4,
+      "ag": 4,
+      "pa": 3,
+      "av": 10
+    },
+    "skills": [
+      "cannoneer",
+      "hail-mary-pass",
+      "loner",
+      "nerves-of-steel",
+      "secret-weapon",
+      "thick-skull"
+    ],
+    "playsFor": ["Favoured of Hashut"],
+    "special": "Blastin' Solves Everything — Once per half, at the start of his activation, Zzharg may select a Standing opposition player within 3 squares and roll a D6. On a 3+, the selected player is hit. On a 2, the opposing coach selects a player (from either team, but not Zzharg) within 3 squares of the originally selected player to be hit instead. On a 1, Zzharg is hit instead. Make an Armour Roll for whichever player is hit. Zzharg's activation then immediately ends."
+  }
+]
