@@ -1444,8 +1444,8 @@
     "specialRules": ["Old World Classic"],
     "positions": [
       {
-        "key": "imperial-retainer-lineman",
-        "name": "Imperial Retainer (Lineman)",
+        "key": "imperial-retainer",
+        "name": "Imperial Retainer",
         "max": 16,
         "cost": 45000,
         "characteristics": {
@@ -1476,8 +1476,8 @@
         "secondary": ["agility", "strength"]
       },
       {
-        "key": "bodyguard-blocker",
-        "name": "Bodyguard (Blocker)",
+        "key": "bodyguard",
+        "name": "Bodyguard",
         "max": 4,
         "cost": 85000,
         "characteristics": {
@@ -1697,7 +1697,7 @@
     "rerollCost": 70000,
     "tier": 2,
     "apothecary": false,
-    "specialRules": ["Masters of Undeath"],
+    "specialRules": ["Masters of Undeath", "Sylvanian Spotlight"],
     "positions": [
       {
         "key": "zombie-lineman",
@@ -1712,8 +1712,8 @@
           "av": 9
         },
         "startingSkills": ["eye-gouge", "regeneration", "unsteady"],
-        "primary": ["devious"],
-        "secondary": ["general", "agility", "strength"]
+        "primary": ["devious", "general"],
+        "secondary": ["agility", "strength"]
       },
       {
         "key": "ghoul-runner",
@@ -1728,8 +1728,8 @@
           "av": 8
         },
         "startingSkills": ["dodge", "regeneration"],
-        "primary": ["agility"],
-        "secondary": ["general", "devious", "passing", "strength"]
+        "primary": ["agility", "general"],
+        "secondary": ["devious", "passing", "strength"]
       },
       {
         "key": "wraith",
@@ -1750,8 +1750,8 @@
           "regeneration",
           "sidestep"
         ],
-        "primary": ["general"],
-        "secondary": ["strength", "agility", "devious"]
+        "primary": ["general", "strength"],
+        "secondary": ["agility", "devious"]
       },
       {
         "key": "flesh-golem",
@@ -1771,8 +1771,8 @@
           "thick-skull",
           "unsteady"
         ],
-        "primary": ["general"],
-        "secondary": ["strength", "agility", "devious"]
+        "primary": ["general", "strength"],
+        "secondary": ["agility", "devious"]
       },
       {
         "key": "werewolf",
@@ -1787,8 +1787,8 @@
           "av": 9
         },
         "startingSkills": ["claws", "frenzy", "regeneration"],
-        "primary": ["agility"],
-        "secondary": ["general", "devious", "passing", "strength"]
+        "primary": ["agility", "general"],
+        "secondary": ["devious", "passing", "strength"]
       }
     ]
   },
@@ -1916,7 +1916,7 @@
     "rerollCost": 60000,
     "tier": 3,
     "apothecary": true,
-    "specialRules": ["Chaos Clash", "Favoured of Nurgle", "Brawlin' Brutes"],
+    "specialRules": ["Favoured of Nurgle", "Brawlin' Brutes"],
     "positions": [
       {
         "key": "rotter",
@@ -2102,8 +2102,8 @@
           "av": 9
         },
         "startingSkills": [],
-        "primary": ["general"],
-        "secondary": ["agility", "strength"]
+        "primary": ["general", "agility", "strength"],
+        "secondary": []
       },
       {
         "key": "halfling-hopeful",
