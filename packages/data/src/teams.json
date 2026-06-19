@@ -2603,6 +2603,91 @@
     ]
   },
   {
+    "key": "slann",
+    "name": "Slann",
+    "rerollCost": 50000,
+    "tier": 3,
+    "apothecary": true,
+    "specialRules": ["Lustrian Superleague"],
+    "positions": [
+      {
+        "key": "slann-lineman",
+        "name": "Slann Lineman",
+        "max": 16,
+        "cost": 60000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": ["pogo"],
+        "primary": ["general"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "slann-catcher",
+        "name": "Slann Catcher",
+        "max": 2,
+        "cost": 80000,
+        "characteristics": {
+          "ma": 7,
+          "st": 2,
+          "ag": 2,
+          "pa": 3,
+          "av": 8
+        },
+        "startingSkills": [
+          "diving-catch",
+          "on-the-ball",
+          "pogo",
+          "very-long-legs"
+        ],
+        "primary": ["general", "agility"],
+        "secondary": ["strength", "passing"]
+      },
+      {
+        "key": "slann-blitzer",
+        "name": "Slann Blitzer",
+        "max": 2,
+        "cost": 100000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": ["diving-tackle", "hit-and-run", "jump-up", "pogo"],
+        "primary": ["general", "agility", "strength"],
+        "secondary": ["passing"]
+      },
+      {
+        "key": "kroxigor",
+        "name": "Kroxigor",
+        "max": 1,
+        "cost": 140000,
+        "characteristics": {
+          "ma": 6,
+          "st": 5,
+          "ag": 5,
+          "pa": 6,
+          "av": 10
+        },
+        "startingSkills": [
+          "bone-head",
+          "loner",
+          "mighty-blow",
+          "prehensile-tail",
+          "thick-skull"
+        ],
+        "primary": ["strength"],
+        "secondary": ["general", "agility"]
+      }
+    ]
+  },
+  {
     "key": "snotling",
     "name": "Snotling",
     "rerollCost": 70000,

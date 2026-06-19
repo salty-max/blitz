@@ -1,6 +1,6 @@
 # Team rosters
 
-The 30 teams of **Blood Bowl: Third Season Edition (2025)**. Each page lists the
+The 31 teams of **Blood Bowl: Third Season Edition (2025)**. Each page lists the
 full roster — every position with its characteristics (MA · ST · AG · PA · AV),
 cost, count limit, starting skills, and Primary / Secondary skill access — plus
 the team re-roll cost, special rules, apothecary access and tier. These pages are
@@ -16,12 +16,12 @@ the source for the codex and team builder; the same data is structured in
 | Chaos Dwarf         | 1    | 6         | [chaos-dwarf.md](chaos-dwarf.md)                 |
 | Chaos Renegades     | 3    | 10        | [chaos-renegades.md](chaos-renegades.md)         |
 | Dark Elf            | 1    | 5         | [dark-elf.md](dark-elf.md)                       |
-| Dwarf               | 2    | 5         | [dwarf.md](dwarf.md)                             |
+| Dwarf               | 1    | 5         | [dwarf.md](dwarf.md)                             |
 | Elven Union         | 2    | 4         | [elven-union.md](elven-union.md)                 |
 | Gnome               | 4    | 5         | [gnome.md](gnome.md)                             |
 | Goblin              | 4    | 8         | [goblin.md](goblin.md)                           |
 | Halfling            | 4    | 4         | [halfling.md](halfling.md)                       |
-| High Elf            | —    | 4         | [high-elf.md](high-elf.md)                       |
+| High Elf            | 1    | 4         | [high-elf.md](high-elf.md)                       |
 | Human               | 2    | 6         | [human.md](human.md)                             |
 | Imperial Nobility   | 2    | 5         | [imperial-nobility.md](imperial-nobility.md)     |
 | Khorne              | 3    | 4         | [khorne.md](khorne.md)                           |
@@ -34,6 +34,7 @@ the source for the codex and team builder; the same data is structured in
 | Orc                 | 2    | 6         | [orc.md](orc.md)                                 |
 | Shambling Undead    | 2    | 5         | [shambling-undead.md](shambling-undead.md)       |
 | Skaven              | 2    | 5         | [skaven.md](skaven.md)                           |
+| Slann               | 3    | 4         | [slann.md](slann.md)                             |
 | Snotling            | 4    | 6         | [snotling.md](snotling.md)                       |
 | Tomb Kings          | 2    | 4         | [tomb-kings.md](tomb-kings.md)                   |
 | Underworld Denizens | 1    | 8         | [underworld-denizens.md](underworld-denizens.md) |
