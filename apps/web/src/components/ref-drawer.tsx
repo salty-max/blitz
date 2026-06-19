@@ -1,3 +1,4 @@
+import { Badge } from '@blitz/ui'
 import * as Dialog from '@radix-ui/react-dialog'
 import {
   createContext,
@@ -53,44 +54,44 @@ export function RefDrawerProvider({ children }: { children: ReactNode }) {
         }}
       >
         <Dialog.Portal>
-          <Dialog.Overlay className="fixed inset-0 bg-ink/50" />
-          <Dialog.Content className="fixed inset-y-0 right-0 flex w-full max-w-md flex-col overflow-y-auto border-l-4 border-ink bg-paper shadow-2xl focus:outline-none">
-            <div className="flex items-center justify-between border-b-2 border-ink/15 px-5 py-3">
-              <span className="bg-blood px-2 py-1 font-headline text-xs font-bold uppercase tracking-widest text-paper">
-                {resolved?.kind ?? 'Reference'}
-              </span>
-              <div className="flex items-center gap-3 font-headline text-sm font-semibold uppercase tracking-wide">
-                {stack.length > 1 && (
-                  <button
-                    type="button"
-                    onClick={back}
-                    className="text-ink/60 hover:text-ink"
-                  >
-                    ← Back
-                  </button>
-                )}
-                <Dialog.Close className="text-ink/60 hover:text-blood">
-                  Close ✕
-                </Dialog.Close>
+          <Dialog.Overlay className="fixed inset-0 bg-ink/50 data-[state=closed]:animate-overlay-out data-[state=open]:animate-overlay-in" />
+          <Dialog.Content className="fixed inset-x-0 bottom-0 max-h-[85vh] overflow-y-auto border-t-4 border-ink bg-paper shadow-2xl focus:outline-none data-[state=closed]:animate-sheet-out data-[state=open]:animate-sheet-in">
+            <div className="mx-auto w-full max-w-3xl">
+              <div className="flex items-center justify-between border-b-2 border-ink/15 px-5 py-3">
+                <Badge>{resolved?.kind ?? 'Reference'}</Badge>
+                <div className="flex items-center gap-3 font-headline text-sm font-semibold uppercase tracking-wide">
+                  {stack.length > 1 && (
+                    <button
+                      type="button"
+                      onClick={back}
+                      className="text-ink/60 hover:text-ink"
+                    >
+                      ← Back
+                    </button>
+                  )}
+                  <Dialog.Close className="text-ink/60 hover:text-blood">
+                    Close ✕
+                  </Dialog.Close>
+                </div>
               </div>
-            </div>
 
-            <div className="px-5 py-4">
-              <Dialog.Title className="font-display text-3xl uppercase leading-none">
-                {resolved?.name ?? 'Unknown reference'}
-              </Dialog.Title>
-              {resolved?.meta && (
-                <p className="mt-1 font-headline text-sm font-semibold uppercase tracking-wide text-ink/55">
-                  {resolved.meta}
-                </p>
-              )}
-              <p className="mt-4 leading-relaxed text-ink/90">
-                {resolved ? (
-                  <RefText>{resolved.body}</RefText>
-                ) : (
-                  `No entry found for "${currentKey ?? ''}".`
+              <div className="px-5 py-5">
+                <Dialog.Title className="font-display text-3xl uppercase leading-none">
+                  {resolved?.name ?? 'Unknown reference'}
+                </Dialog.Title>
+                {resolved?.meta && (
+                  <p className="mt-1 font-headline text-sm font-semibold uppercase tracking-wide text-ink/55">
+                    {resolved.meta}
+                  </p>
                 )}
-              </p>
+                <p className="mt-4 leading-relaxed text-ink/90">
+                  {resolved ? (
+                    <RefText>{resolved.body}</RefText>
+                  ) : (
+                    `No entry found for "${currentKey ?? ''}".`
+                  )}
+                </p>
+              </div>
             </div>
           </Dialog.Content>
         </Dialog.Portal>

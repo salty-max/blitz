@@ -4,6 +4,9 @@ import { Fragment } from 'react'
 import { useRefDrawer } from '@/components/ref-drawer'
 import { resolveRef } from '@/lib/resolve-ref'
 
+const refLinkClass =
+  'font-semibold text-blood underline decoration-blood/40 decoration-2 underline-offset-2 transition-colors hover:decoration-blood'
+
 /**
  * Renders text containing `[[key]]` / `[[key|label]]` references, turning each
  * reference into a button that opens it in the side-drawer. Plain text passes
@@ -22,7 +25,7 @@ export function RefText({ children }: { children: string }) {
             key={index}
             type="button"
             onClick={() => openRef(segment.key)}
-            className="font-semibold text-blood underline decoration-blood/40 decoration-2 underline-offset-2 transition-colors hover:decoration-blood"
+            className={refLinkClass}
           >
             {segment.label ?? resolveRef(segment.key)?.name ?? segment.key}
           </button>

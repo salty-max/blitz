@@ -6,7 +6,9 @@
     "moduleResolution": "Bundler",
     "noEmit": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@blitz/ui": ["../../packages/ui/src/index.ts"],
+      "@blitz/ui/*": ["../../packages/ui/src/*"]
     }
   },
   "include": ["src", "vite.config.ts"]
