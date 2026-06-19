@@ -4,7 +4,7 @@
     {
       "name": "web",
       "runtimeExecutable": "bun",
-      "runtimeArgs": ["--cwd", "apps/web", "run", "dev"],
+      "runtimeArgs": ["run", "--cwd", "apps/web", "dev"],
       "port": 5173
     }
   ]
