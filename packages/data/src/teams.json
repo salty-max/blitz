@@ -35,7 +35,7 @@
           "pa": 3,
           "av": 8
         },
-        "startingSkills": ["dodge", "on-the-ball", "pass", "safe-pass"],
+        "startingSkills": ["dodge", "on-the-ball"],
         "primary": ["general", "passing"],
         "secondary": ["agility", "strength"]
       },
@@ -52,7 +52,7 @@
           "av": 8
         },
         "startingSkills": ["dodge", "hit-and-run", "jump-up"],
-        "primary": ["agility", "general"],
+        "primary": ["general", "agility"],
         "secondary": ["strength"]
       },
       {
@@ -79,7 +79,11 @@
     "rerollCost": 60000,
     "tier": 3,
     "apothecary": true,
-    "specialRules": ["Bribery and Corruption", "Brawlin' Brutes"],
+    "specialRules": [
+      "Badlands Brawl",
+      "Bribery and Corruption",
+      "Brawlin' Brutes"
+    ],
     "positions": [
       {
         "key": "goblin-bruiser",
@@ -95,7 +99,7 @@
         },
         "startingSkills": ["dodge", "right-stuff", "stunty", "thick-skull"],
         "primary": ["agility", "devious"],
-        "secondary": ["general", "passing", "strength"]
+        "secondary": ["general", "strength", "passing"]
       },
       {
         "key": "black-orc",
@@ -134,7 +138,7 @@
           "throw-team-mate"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general", "passing"]
+        "secondary": ["general", "agility", "passing"]
       }
     ]
   },
@@ -175,7 +179,7 @@
           "av": 9
         },
         "startingSkills": ["catch", "dauntless", "nerves-of-steel"],
-        "primary": ["agility", "general"],
+        "primary": ["general", "agility"],
         "secondary": ["strength"]
       },
       {
@@ -190,7 +194,7 @@
           "pa": 3,
           "av": 9
         },
-        "startingSkills": ["dauntless", "nerves-of-steel", "pass"],
+        "startingSkills": ["dauntless", "nerves-of-steel"],
         "primary": ["general", "passing"],
         "secondary": ["agility", "strength"]
       },
@@ -218,7 +222,7 @@
     "rerollCost": 50000,
     "tier": 3,
     "apothecary": true,
-    "specialRules": ["Favoured of..."],
+    "specialRules": ["Chaos Clash"],
     "positions": [
       {
         "key": "beastman-lineman",
@@ -234,7 +238,7 @@
         },
         "startingSkills": ["horns", "thick-skull"],
         "primary": ["general", "mutation"],
-        "secondary": ["agility", "passing", "strength", "devious"]
+        "secondary": ["agility", "strength", "passing", "devious"]
       },
       {
         "key": "chaos-chosen",
@@ -249,7 +253,7 @@
           "av": 10
         },
         "startingSkills": ["arm-bar"],
-        "primary": ["general", "mutation", "strength"],
+        "primary": ["general", "strength", "mutation"],
         "secondary": ["agility", "devious"]
       },
       {
@@ -273,8 +277,8 @@
           "regeneration",
           "throw-team-mate"
         ],
-        "primary": ["mutation", "strength"],
-        "secondary": ["agility", "general", "passing"]
+        "primary": ["strength", "mutation"],
+        "secondary": ["general", "agility", "passing"]
       },
       {
         "key": "ogre",
@@ -295,8 +299,8 @@
           "thick-skull",
           "throw-team-mate"
         ],
-        "primary": ["mutation", "strength"],
-        "secondary": ["agility", "general"]
+        "primary": ["strength", "mutation"],
+        "secondary": ["general", "agility"]
       },
       {
         "key": "minotaur",
@@ -318,8 +322,8 @@
           "thick-skull",
           "unchannelled-fury"
         ],
-        "primary": ["mutation", "strength"],
-        "secondary": ["agility", "general"]
+        "primary": ["strength", "mutation"],
+        "secondary": ["general", "agility"]
       }
     ]
   },
@@ -329,7 +333,7 @@
     "rerollCost": 70000,
     "tier": 1,
     "apothecary": true,
-    "specialRules": ["Favoured of Hashut"],
+    "specialRules": ["Badlands Brawl", "Chaos Clash", "Favoured of Hashut"],
     "positions": [
       {
         "key": "hobgoblin-lineman",
@@ -345,23 +349,7 @@
         },
         "startingSkills": [],
         "primary": ["devious"],
-        "secondary": ["agility", "general", "strength"]
-      },
-      {
-        "key": "sneaky-stabba",
-        "name": "Sneaky Stabba",
-        "max": 2,
-        "cost": 60000,
-        "characteristics": {
-          "ma": 6,
-          "st": 3,
-          "ag": 3,
-          "pa": 5,
-          "av": 8
-        },
-        "startingSkills": ["shadowing", "stab"],
-        "primary": ["devious", "general"],
-        "secondary": ["agility", "strength"]
+        "secondary": ["general", "agility", "strength"]
       },
       {
         "key": "chaos-dwarf-blocker",
@@ -377,7 +365,23 @@
         },
         "startingSkills": ["block", "iron-hard-skin", "thick-skull"],
         "primary": ["general", "strength"],
-        "secondary": ["agility", "devious", "mutation"]
+        "secondary": ["agility", "mutation", "devious"]
+      },
+      {
+        "key": "sneaky-stabba",
+        "name": "Sneaky Stabba",
+        "max": 2,
+        "cost": 60000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 5,
+          "av": 8
+        },
+        "startingSkills": ["shadowing", "stab"],
+        "primary": ["general", "devious"],
+        "secondary": ["agility", "strength"]
       },
       {
         "key": "flamesmith",
@@ -398,7 +402,7 @@
           "thick-skull"
         ],
         "primary": ["general", "strength"],
-        "secondary": ["agility", "devious", "mutation"]
+        "secondary": ["agility", "mutation", "devious"]
       },
       {
         "key": "bull-centaur",
@@ -414,7 +418,7 @@
         },
         "startingSkills": ["sprint", "sure-feet", "thick-skull", "unsteady"],
         "primary": ["general", "strength"],
-        "secondary": ["agility", "devious", "mutation"]
+        "secondary": ["agility", "mutation", "devious"]
       },
       {
         "key": "minotaur",
@@ -436,8 +440,8 @@
           "thick-skull",
           "unchannelled-fury"
         ],
-        "primary": ["mutation", "strength"],
-        "secondary": ["agility", "general"]
+        "primary": ["strength", "mutation"],
+        "secondary": ["general", "agility"]
       }
     ]
   },
@@ -448,11 +452,7 @@
     "tier": 3,
     "apothecary": true,
     "specialRules": [
-      "Favoured of Khorne",
-      "Favoured of Nurgle",
-      "Favoured of Slaanesh",
-      "Favoured of Tzeentch",
-      "Favoured of Undivided"
+      "Chaos Clash - Choose either: Favoured of Nurgle, Favoured of Khorne, Favoured of Chaos Undivided, Favoured of Slaanesh, Favoured of Tzeentch"
     ],
     "positions": [
       {
@@ -468,7 +468,7 @@
           "av": 9
         },
         "startingSkills": ["animosity"],
-        "primary": ["devious", "general", "mutation"],
+        "primary": ["general", "mutation", "devious"],
         "secondary": ["agility", "strength"]
       },
       {
@@ -484,7 +484,7 @@
           "av": 8
         },
         "startingSkills": ["animosity", "dodge", "right-stuff", "stunty"],
-        "primary": ["agility", "devious", "mutation"],
+        "primary": ["agility", "mutation", "devious"],
         "secondary": ["general", "passing"]
       },
       {
@@ -500,7 +500,7 @@
           "av": 10
         },
         "startingSkills": ["animosity"],
-        "primary": ["devious", "general", "mutation"],
+        "primary": ["general", "mutation", "devious"],
         "secondary": ["agility", "strength"]
       },
       {
@@ -516,7 +516,7 @@
           "av": 8
         },
         "startingSkills": ["animosity"],
-        "primary": ["devious", "general", "mutation"],
+        "primary": ["general", "mutation", "devious"],
         "secondary": ["agility", "strength"]
       },
       {
@@ -532,7 +532,7 @@
           "av": 9
         },
         "startingSkills": ["animosity"],
-        "primary": ["agility", "devious", "general", "mutation"],
+        "primary": ["general", "agility", "mutation", "devious"],
         "secondary": ["strength"]
       },
       {
@@ -548,7 +548,7 @@
           "av": 9
         },
         "startingSkills": ["animosity", "pass", "sure-hands"],
-        "primary": ["devious", "general", "mutation", "passing"],
+        "primary": ["general", "passing", "mutation", "devious"],
         "secondary": ["agility", "strength"]
       },
       {
@@ -573,7 +573,7 @@
           "throw-team-mate"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general", "mutation", "passing"]
+        "secondary": ["general", "agility", "passing", "mutation"]
       },
       {
         "key": "ogre",
@@ -595,7 +595,7 @@
           "throw-team-mate"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general", "mutation"]
+        "secondary": ["general", "agility", "mutation"]
       },
       {
         "key": "minotaur",
@@ -618,7 +618,7 @@
           "unchannelled-fury"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general", "mutation"]
+        "secondary": ["general", "agility", "mutation"]
       },
       {
         "key": "rat-ogre",
@@ -640,7 +640,7 @@
           "prehensile-tail"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general", "mutation"]
+        "secondary": ["general", "agility", "mutation"]
       }
     ]
   },
@@ -665,7 +665,7 @@
           "av": 9
         },
         "startingSkills": [],
-        "primary": ["agility", "general"],
+        "primary": ["agility"],
         "secondary": ["strength", "devious"]
       },
       {
@@ -681,7 +681,7 @@
           "av": 8
         },
         "startingSkills": ["dump-off", "punt"],
-        "primary": ["agility", "general", "passing"],
+        "primary": ["general", "agility", "passing"],
         "secondary": ["strength", "devious"]
       },
       {
@@ -713,8 +713,8 @@
           "av": 9
         },
         "startingSkills": ["block"],
-        "primary": ["agility", "general"],
-        "secondary": ["passing", "strength", "devious"]
+        "primary": ["general", "agility"],
+        "secondary": ["strength", "passing", "devious"]
       },
       {
         "key": "witch-elf",
@@ -729,7 +729,7 @@
           "av": 8
         },
         "startingSkills": ["dodge", "frenzy", "jump-up"],
-        "primary": ["agility", "general"],
+        "primary": ["general", "agility"],
         "secondary": ["strength", "devious"]
       }
     ]
@@ -738,9 +738,13 @@
     "key": "dwarf",
     "name": "Dwarf",
     "rerollCost": 60000,
-    "tier": 2,
+    "tier": 1,
     "apothecary": true,
-    "specialRules": ["Brawlin' Brutes", "Bribery and Corruption"],
+    "specialRules": [
+      "Worlds Edge Superleague",
+      "Bribery and Corruption",
+      "Brawlin' Brutes"
+    ],
     "positions": [
       {
         "key": "dwarf-lineman",
@@ -755,7 +759,7 @@
           "av": 10
         },
         "startingSkills": ["block", "defensive", "thick-skull"],
-        "primary": ["devious", "general"],
+        "primary": ["general", "devious"],
         "secondary": ["strength"]
       },
       {
@@ -834,7 +838,7 @@
           "secret-weapon",
           "stand-firm"
         ],
-        "primary": ["devious", "strength"],
+        "primary": ["strength", "devious"],
         "secondary": ["general"]
       }
     ]
@@ -860,7 +864,7 @@
           "av": 8
         },
         "startingSkills": ["fumblerooski"],
-        "primary": ["agility", "general"],
+        "primary": ["general", "agility"],
         "secondary": ["strength"]
       },
       {
@@ -875,9 +879,9 @@
           "pa": 2,
           "av": 8
         },
-        "startingSkills": ["hail-mary-pass", "pass"],
-        "primary": ["agility", "general", "passing"],
-        "secondary": ["strength"]
+        "startingSkills": ["hail-mary-pass"],
+        "primary": ["passing"],
+        "secondary": ["general", "agility", "strength"]
       },
       {
         "key": "elf-catcher",
@@ -892,7 +896,7 @@
           "av": 8
         },
         "startingSkills": ["catch", "diving-catch", "nerves-of-steel"],
-        "primary": ["agility", "general"],
+        "primary": ["general", "agility"],
         "secondary": ["strength"]
       },
       {
@@ -908,8 +912,8 @@
           "av": 9
         },
         "startingSkills": ["block", "sidestep"],
-        "primary": ["agility", "general"],
-        "secondary": ["passing", "strength"]
+        "primary": ["general", "agility"],
+        "secondary": ["strength", "passing"]
       }
     ]
   },
@@ -950,8 +954,8 @@
           "av": 6
         },
         "startingSkills": ["dodge", "my-ball", "sidestep", "stunty"],
-        "primary": [],
-        "secondary": ["agility"]
+        "primary": ["agility"],
+        "secondary": []
       },
       {
         "key": "gnome-illusionist",
@@ -983,7 +987,7 @@
         },
         "startingSkills": ["guard", "jump-up", "stunty", "wrestle"],
         "primary": ["agility"],
-        "secondary": ["devious", "general", "strength"]
+        "secondary": ["general", "strength", "devious"]
       },
       {
         "key": "altern-forest-treeman",
@@ -1007,7 +1011,7 @@
           "timmm-ber"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general", "passing"]
+        "secondary": ["general", "agility", "passing"]
       }
     ]
   },
@@ -1017,7 +1021,11 @@
     "rerollCost": 60000,
     "tier": 4,
     "apothecary": true,
-    "specialRules": ["Bribery and Corruption"],
+    "specialRules": [
+      "Badlands Brawl",
+      "Underworld Challenge",
+      "Bribery and Corruption"
+    ],
     "positions": [
       {
         "key": "goblin-lineman",
@@ -1033,7 +1041,7 @@
         },
         "startingSkills": ["dodge", "right-stuff", "stunty"],
         "primary": ["agility", "devious"],
-        "secondary": ["general", "passing", "strength"]
+        "secondary": ["general", "strength", "passing"]
       },
       {
         "key": "looney",
@@ -1049,7 +1057,7 @@
         },
         "startingSkills": ["chainsaw", "no-ball", "secret-weapon", "stunty"],
         "primary": ["devious"],
-        "secondary": ["agility", "general", "strength"]
+        "secondary": ["general", "agility", "strength"]
       },
       {
         "key": "bomma",
@@ -1064,8 +1072,8 @@
           "av": 8
         },
         "startingSkills": ["bombardier", "dodge", "secret-weapon", "stunty"],
-        "primary": ["devious", "passing"],
-        "secondary": ["agility", "general", "strength"]
+        "primary": ["passing", "devious"],
+        "secondary": ["general", "strength"]
       },
       {
         "key": "ooligan",
@@ -1104,7 +1112,7 @@
         },
         "startingSkills": ["dodge", "right-stuff", "stunty", "swoop"],
         "primary": ["agility"],
-        "secondary": ["devious", "general", "strength"]
+        "secondary": ["general", "strength", "devious"]
       },
       {
         "key": "fanatic",
@@ -1124,8 +1132,8 @@
           "secret-weapon",
           "stunty"
         ],
-        "primary": ["devious", "strength"],
-        "secondary": ["agility", "general"]
+        "primary": ["strength", "devious"],
+        "secondary": ["general", "agility"]
       },
       {
         "key": "pogoer",
@@ -1141,7 +1149,7 @@
         },
         "startingSkills": ["dodge", "pogo", "stunty"],
         "primary": ["agility"],
-        "secondary": ["devious", "general", "strength"]
+        "secondary": ["general", "strength", "devious"]
       },
       {
         "key": "trained-troll",
@@ -1164,7 +1172,7 @@
           "throw-team-mate"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general", "passing"]
+        "secondary": ["general", "agility", "passing"]
       }
     ]
   },
@@ -1246,7 +1254,7 @@
           "timmm-ber"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general", "passing", "devious"]
+        "secondary": ["general", "agility", "passing", "devious"]
       }
     ]
   },
@@ -1254,6 +1262,7 @@
     "key": "high-elf",
     "name": "High Elf",
     "rerollCost": 50000,
+    "tier": 1,
     "apothecary": true,
     "specialRules": ["Elven Kingdoms League"],
     "positions": [
@@ -1270,7 +1279,7 @@
           "av": 9
         },
         "startingSkills": [],
-        "primary": ["agility", "general"],
+        "primary": ["general", "agility"],
         "secondary": ["strength"]
       },
       {
@@ -1286,7 +1295,7 @@
           "av": 9
         },
         "startingSkills": ["cloud-burster", "pass", "safe-pass"],
-        "primary": ["agility", "general", "passing"],
+        "primary": ["general", "agility", "passing"],
         "secondary": ["strength"]
       },
       {
@@ -1302,7 +1311,7 @@
           "av": 9
         },
         "startingSkills": ["block", "my-ball", "steady-footing"],
-        "primary": ["agility", "general"],
+        "primary": ["general", "agility"],
         "secondary": ["strength"]
       },
       {
@@ -1318,8 +1327,8 @@
           "av": 9
         },
         "startingSkills": ["claws", "wrestle"],
-        "primary": ["agility", "general"],
-        "secondary": ["passing", "strength"]
+        "primary": ["general", "agility"],
+        "secondary": ["strength", "passing"]
       }
     ]
   },
@@ -1329,7 +1338,7 @@
     "rerollCost": 50000,
     "tier": 2,
     "apothecary": true,
-    "specialRules": ["Team Captain"],
+    "specialRules": ["Old World Classic", "Team Captain"],
     "positions": [
       {
         "key": "human-lineman",
@@ -1345,7 +1354,7 @@
         },
         "startingSkills": [],
         "primary": ["general"],
-        "secondary": ["agility", "devious", "strength"]
+        "secondary": ["agility", "strength", "devious"]
       },
       {
         "key": "halfling-hopeful",
@@ -1361,7 +1370,7 @@
         },
         "startingSkills": ["dodge", "right-stuff", "stunty"],
         "primary": ["agility"],
-        "secondary": ["devious", "general", "strength"]
+        "secondary": ["general", "strength", "devious"]
       },
       {
         "key": "human-catcher",
@@ -1376,8 +1385,8 @@
           "av": 8
         },
         "startingSkills": ["catch", "dodge"],
-        "primary": ["agility", "general"],
-        "secondary": ["devious", "passing", "strength"]
+        "primary": ["general", "agility"],
+        "secondary": ["strength", "passing", "devious"]
       },
       {
         "key": "human-thrower",
@@ -1393,7 +1402,7 @@
         },
         "startingSkills": ["pass", "sure-hands"],
         "primary": ["general", "passing"],
-        "secondary": ["agility", "devious", "strength"]
+        "secondary": ["agility", "strength", "devious"]
       },
       {
         "key": "human-blitzer",
@@ -1431,7 +1440,7 @@
           "throw-team-mate"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general", "mutation"]
+        "secondary": ["general", "agility"]
       }
     ]
   },
@@ -1471,7 +1480,7 @@
           "pa": 2,
           "av": 9
         },
-        "startingSkills": ["give-and-go", "pass", "pro"],
+        "startingSkills": ["give-and-go", "pass"],
         "primary": ["general", "passing"],
         "secondary": ["agility", "strength"]
       },
@@ -1504,8 +1513,8 @@
           "av": 9
         },
         "startingSkills": ["block", "catch", "pro"],
-        "primary": ["agility", "general"],
-        "secondary": ["passing", "strength"]
+        "primary": ["general", "agility"],
+        "secondary": ["strength", "passing"]
       },
       {
         "key": "ogre",
@@ -1527,7 +1536,7 @@
           "throw-team-mate"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general", "mutation"]
+        "secondary": ["general", "agility"]
       }
     ]
   },
@@ -1537,7 +1546,7 @@
     "rerollCost": 60000,
     "tier": 3,
     "apothecary": true,
-    "specialRules": ["Favoured of Khorne", "Brawlin' Brutes"],
+    "specialRules": ["Chaos Clash", "Favoured of Khorne", "Brawlin' Brutes"],
     "positions": [
       {
         "key": "bloodborn-marauder",
@@ -1568,7 +1577,7 @@
           "av": 9
         },
         "startingSkills": ["horns", "juggernaut", "jump-up", "thick-skull"],
-        "primary": ["general", "mutation", "strength"],
+        "primary": ["general", "strength", "mutation"],
         "secondary": ["agility", "passing", "devious"]
       },
       {
@@ -1584,7 +1593,7 @@
           "av": 10
         },
         "startingSkills": ["frenzy"],
-        "primary": ["general", "mutation", "strength"],
+        "primary": ["general", "strength", "mutation"],
         "secondary": ["agility", "devious"]
       },
       {
@@ -1606,8 +1615,8 @@
           "mighty-blow",
           "unchannelled-fury"
         ],
-        "primary": ["mutation", "strength"],
-        "secondary": ["agility", "general"]
+        "primary": ["strength", "mutation"],
+        "secondary": ["general", "agility"]
       }
     ]
   },
@@ -1633,7 +1642,7 @@
         },
         "startingSkills": ["dodge", "stunty"],
         "primary": ["agility"],
-        "secondary": ["general", "passing", "strength", "devious"]
+        "secondary": ["general", "strength", "passing", "devious"]
       },
       {
         "key": "chameleon-skink",
@@ -1687,7 +1696,7 @@
           "thick-skull"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general"]
+        "secondary": ["general", "agility"]
       }
     ]
   },
@@ -1712,7 +1721,7 @@
           "av": 9
         },
         "startingSkills": ["eye-gouge", "regeneration", "unsteady"],
-        "primary": ["devious", "general"],
+        "primary": ["general", "devious"],
         "secondary": ["agility", "strength"]
       },
       {
@@ -1728,8 +1737,8 @@
           "av": 8
         },
         "startingSkills": ["dodge", "regeneration"],
-        "primary": ["agility", "general"],
-        "secondary": ["devious", "passing", "strength"]
+        "primary": ["general", "agility"],
+        "secondary": ["strength", "passing", "devious"]
       },
       {
         "key": "wraith",
@@ -1787,8 +1796,8 @@
           "av": 9
         },
         "startingSkills": ["claws", "frenzy", "regeneration"],
-        "primary": ["agility", "general"],
-        "secondary": ["devious", "passing", "strength"]
+        "primary": ["general", "agility"],
+        "secondary": ["strength", "passing", "devious"]
       }
     ]
   },
@@ -1798,7 +1807,7 @@
     "rerollCost": 60000,
     "tier": 1,
     "apothecary": true,
-    "specialRules": ["Favoured of Khorne"],
+    "specialRules": ["Old World Classic", "Chaos Clash", "Favoured of Khorne"],
     "positions": [
       {
         "key": "norse-raider-lineman",
@@ -1814,7 +1823,7 @@
         },
         "startingSkills": ["block", "drunkard", "thick-skull", "unsteady"],
         "primary": ["general"],
-        "secondary": ["agility", "passing", "strength"]
+        "secondary": ["agility", "strength", "passing"]
       },
       {
         "key": "beer-boar",
@@ -1867,7 +1876,7 @@
           "av": 8
         },
         "startingSkills": ["catch", "dauntless", "pass", "strip-ball"],
-        "primary": ["agility", "general", "passing"],
+        "primary": ["general", "agility", "passing"],
         "secondary": ["strength"]
       },
       {
@@ -1906,7 +1915,7 @@
           "unchannelled-fury"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general"]
+        "secondary": ["general", "agility"]
       }
     ]
   },
@@ -1916,7 +1925,7 @@
     "rerollCost": 60000,
     "tier": 3,
     "apothecary": true,
-    "specialRules": ["Favoured of Nurgle", "Brawlin' Brutes"],
+    "specialRules": ["Chaos Clash", "Brawlin' Brutes", "Favoured of Nurgle"],
     "positions": [
       {
         "key": "rotter",
@@ -1953,7 +1962,7 @@
           "steady-footing",
           "thick-skull"
         ],
-        "primary": ["general", "mutation", "strength"],
+        "primary": ["general", "strength", "mutation"],
         "secondary": ["agility", "passing", "devious"]
       },
       {
@@ -1976,8 +1985,8 @@
           "stand-firm",
           "unsteady"
         ],
-        "primary": ["general", "mutation", "strength"],
-        "secondary": ["agility", "devious"]
+        "primary": ["general", "strength", "mutation"],
+        "secondary": ["agility", "strength"]
       },
       {
         "key": "rotspawn",
@@ -2013,7 +2022,12 @@
     "rerollCost": 70000,
     "tier": 4,
     "apothecary": true,
-    "specialRules": ["Brawlin' Brutes", "Low Cost Linemen"],
+    "specialRules": [
+      "Badlands Brawl",
+      "Worlds Edge Superleague",
+      "Low Cost Linemen",
+      "Brawlin' Brutes"
+    ],
     "positions": [
       {
         "key": "gnoblar-lineman",
@@ -2056,7 +2070,7 @@
           "throw-team-mate"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "devious", "general", "passing"]
+        "secondary": ["general", "agility", "passing", "devious"]
       },
       {
         "key": "ogre-runt-punter",
@@ -2076,8 +2090,8 @@
           "mighty-blow",
           "thick-skull"
         ],
-        "primary": ["passing", "strength"],
-        "secondary": ["agility", "devious", "general"]
+        "primary": ["strength", "passing"],
+        "secondary": ["general", "agility", "devious"]
       }
     ]
   },
@@ -2102,13 +2116,13 @@
           "av": 9
         },
         "startingSkills": [],
-        "primary": ["general", "agility", "strength"],
-        "secondary": []
+        "primary": ["general"],
+        "secondary": ["agility", "strength"]
       },
       {
         "key": "halfling-hopeful",
         "name": "Halfling Hopeful",
-        "max": 5,
+        "max": 3,
         "cost": 30000,
         "characteristics": {
           "ma": 5,
@@ -2134,8 +2148,8 @@
           "av": 8
         },
         "startingSkills": ["catch", "dodge"],
-        "primary": ["agility", "general"],
-        "secondary": ["passing", "strength"]
+        "primary": ["general", "agility"],
+        "secondary": ["strength", "passing"]
       },
       {
         "key": "dwarf-lineman",
@@ -2259,7 +2273,7 @@
           "throw-team-mate"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general", "mutation"]
+        "secondary": ["general", "agility"]
       },
       {
         "key": "altern-forest-treeman",
@@ -2284,7 +2298,7 @@
           "timmm-ber"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general", "passing"]
+        "secondary": ["general", "agility", "passing"]
       }
     ]
   },
@@ -2294,7 +2308,7 @@
     "rerollCost": 60000,
     "tier": 2,
     "apothecary": true,
-    "specialRules": ["Brawlin' Brutes", "Team Captain"],
+    "specialRules": ["Badlands Brawl", "Brawlin' Brutes", "Team Captain"],
     "positions": [
       {
         "key": "orc-lineman",
@@ -2321,12 +2335,12 @@
           "ma": 6,
           "st": 2,
           "ag": 3,
-          "pa": 3,
+          "pa": 4,
           "av": 8
         },
         "startingSkills": ["dodge", "right-stuff", "stunty"],
         "primary": ["agility", "devious"],
-        "secondary": ["general", "passing", "strength"]
+        "secondary": ["general", "strength", "passing"]
       },
       {
         "key": "orc-thrower",
@@ -2398,7 +2412,7 @@
           "throw-team-mate"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general", "passing"]
+        "secondary": ["general", "agility", "passing"]
       }
     ]
   },
@@ -2408,7 +2422,7 @@
     "rerollCost": 70000,
     "tier": 2,
     "apothecary": false,
-    "specialRules": ["Masters of Undeath"],
+    "specialRules": ["Sylvanian Spotlight", "Masters of Undeath"],
     "positions": [
       {
         "key": "skeleton-lineman",
@@ -2424,7 +2438,7 @@
         },
         "startingSkills": ["regeneration", "thick-skull"],
         "primary": ["general"],
-        "secondary": ["agility", "devious", "strength"]
+        "secondary": ["agility", "strength", "devious"]
       },
       {
         "key": "zombie-lineman",
@@ -2439,7 +2453,7 @@
           "av": 9
         },
         "startingSkills": ["eye-gouge", "regeneration", "unsteady"],
-        "primary": ["devious", "general"],
+        "primary": ["general", "devious"],
         "secondary": ["agility", "strength"]
       },
       {
@@ -2455,8 +2469,8 @@
           "av": 8
         },
         "startingSkills": ["dodge", "regeneration"],
-        "primary": ["agility", "general"],
-        "secondary": ["devious", "passing", "strength"]
+        "primary": ["general", "agility"],
+        "secondary": ["strength", "passing", "devious"]
       },
       {
         "key": "wight-blitzer",
@@ -2488,7 +2502,7 @@
         },
         "startingSkills": ["mighty-blow", "regeneration"],
         "primary": ["strength"],
-        "secondary": ["agility", "general"]
+        "secondary": ["general", "agility"]
       }
     ]
   },
@@ -2514,7 +2528,7 @@
         },
         "startingSkills": [],
         "primary": ["general", "devious"],
-        "secondary": ["agility", "mutation", "strength"]
+        "secondary": ["agility", "strength", "mutation"]
       },
       {
         "key": "skaven-thrower",
@@ -2530,7 +2544,7 @@
         },
         "startingSkills": ["pass", "sure-hands"],
         "primary": ["general", "passing"],
-        "secondary": ["agility", "devious", "mutation", "strength"]
+        "secondary": ["agility", "strength", "mutation", "devious"]
       },
       {
         "key": "gutter-runner",
@@ -2545,8 +2559,8 @@
           "av": 8
         },
         "startingSkills": ["dodge", "stab"],
-        "primary": ["agility", "general", "devious"],
-        "secondary": ["mutation", "strength"]
+        "primary": ["general", "agility", "devious"],
+        "secondary": ["strength", "mutation"]
       },
       {
         "key": "skaven-blitzer",
@@ -2562,7 +2576,7 @@
         },
         "startingSkills": ["block", "strip-ball"],
         "primary": ["general", "strength"],
-        "secondary": ["agility", "devious", "mutation"]
+        "secondary": ["agility", "mutation", "devious"]
       },
       {
         "key": "rat-ogre",
@@ -2584,7 +2598,7 @@
           "prehensile-tail"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general", "mutation"]
+        "secondary": ["general", "agility", "mutation"]
       }
     ]
   },
@@ -2594,7 +2608,12 @@
     "rerollCost": 70000,
     "tier": 4,
     "apothecary": true,
-    "specialRules": ["Bribery and Corruption", "Low Cost Linemen", "Swarming"],
+    "specialRules": [
+      "Underworld Challenge",
+      "Bribery and Corruption",
+      "Low Cost Linemen",
+      "Swarming"
+    ],
     "positions": [
       {
         "key": "snotling-lineman",
@@ -2633,9 +2652,9 @@
         },
         "startingSkills": [
           "dodge",
-          "pogo",
           "right-stuff",
           "sidestep",
+          "sprint",
           "stunty"
         ],
         "primary": ["agility", "devious"],
@@ -2655,9 +2674,9 @@
         },
         "startingSkills": [
           "dodge",
+          "pogo",
           "right-stuff",
           "sidestep",
-          "sprint",
           "stunty"
         ],
         "primary": ["agility", "devious"],
@@ -2684,7 +2703,7 @@
           "stunty",
           "titchy"
         ],
-        "primary": ["agility", "devious", "passing"],
+        "primary": ["agility", "passing", "devious"],
         "secondary": ["general"]
       },
       {
@@ -2706,8 +2725,8 @@
           "really-stupid",
           "stand-firm"
         ],
-        "primary": ["devious", "strength"],
-        "secondary": ["agility", "general"]
+        "primary": ["strength", "devious"],
+        "secondary": ["general", "agility"]
       },
       {
         "key": "trained-troll",
@@ -2730,7 +2749,7 @@
           "throw-team-mate"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general", "passing"]
+        "secondary": ["general", "agility", "passing"]
       }
     ]
   },
@@ -2740,7 +2759,7 @@
     "rerollCost": 60000,
     "tier": 2,
     "apothecary": false,
-    "specialRules": ["Masters of Undeath"],
+    "specialRules": ["Sylvanian Spotlight", "Masters of Undeath"],
     "positions": [
       {
         "key": "skeleton-lineman",
@@ -2756,7 +2775,7 @@
         },
         "startingSkills": ["regeneration", "thick-skull"],
         "primary": ["general"],
-        "secondary": ["agility", "devious", "strength"]
+        "secondary": ["agility", "strength", "devious"]
       },
       {
         "key": "tomb-kings-thrower",
@@ -2772,7 +2791,7 @@
         },
         "startingSkills": ["pass", "regeneration", "sure-hands", "thick-skull"],
         "primary": ["general", "passing"],
-        "secondary": ["agility", "devious", "strength"]
+        "secondary": ["agility", "strength", "devious"]
       },
       {
         "key": "tomb-kings-blitzer",
@@ -2804,7 +2823,7 @@
         },
         "startingSkills": ["brawler", "decay", "regeneration"],
         "primary": ["strength"],
-        "secondary": ["agility", "general"]
+        "secondary": ["general", "agility"]
       }
     ]
   },
@@ -2814,7 +2833,7 @@
     "rerollCost": 70000,
     "tier": 1,
     "apothecary": true,
-    "specialRules": ["Bribery and Corruption"],
+    "specialRules": ["Underworld Challenge", "Bribery and Corruption"],
     "positions": [
       {
         "key": "goblin-lineman",
@@ -2829,8 +2848,8 @@
           "av": 8
         },
         "startingSkills": ["dodge", "right-stuff", "stunty"],
-        "primary": ["agility", "devious", "mutation"],
-        "secondary": ["general", "passing", "strength"]
+        "primary": ["agility", "mutation", "devious"],
+        "secondary": ["general", "strength", "passing"]
       },
       {
         "key": "snotling-lineman",
@@ -2852,7 +2871,7 @@
           "stunty",
           "titchy"
         ],
-        "primary": ["agility", "devious", "mutation"],
+        "primary": ["agility", "mutation", "devious"],
         "secondary": ["general"]
       },
       {
@@ -2884,8 +2903,8 @@
           "av": 8
         },
         "startingSkills": ["animosity", "pass", "sure-hands"],
-        "primary": ["general", "mutation", "passing"],
-        "secondary": ["agility", "devious", "strength"]
+        "primary": ["general", "passing", "mutation"],
+        "secondary": ["agility", "strength", "devious"]
       },
       {
         "key": "gutter-runner",
@@ -2900,7 +2919,7 @@
           "av": 8
         },
         "startingSkills": ["animosity", "dodge", "stab"],
-        "primary": ["agility", "general", "mutation", "devious"],
+        "primary": ["general", "agility", "mutation", "devious"],
         "secondary": ["strength"]
       },
       {
@@ -2916,8 +2935,8 @@
           "av": 9
         },
         "startingSkills": ["animosity", "block", "strip-ball"],
-        "primary": ["general", "mutation", "strength"],
-        "secondary": ["agility", "passing"]
+        "primary": ["general", "strength", "mutation"],
+        "secondary": ["agility", "devious"]
       },
       {
         "key": "troll",
@@ -2940,8 +2959,8 @@
           "regeneration",
           "throw-team-mate"
         ],
-        "primary": ["mutation", "strength"],
-        "secondary": ["agility", "general", "passing"]
+        "primary": ["strength", "mutation"],
+        "secondary": ["general", "agility", "passing"]
       },
       {
         "key": "rat-ogre",
@@ -2962,8 +2981,8 @@
           "mighty-blow",
           "prehensile-tail"
         ],
-        "primary": ["mutation", "strength"],
-        "secondary": ["agility", "general"]
+        "primary": ["strength", "mutation"],
+        "secondary": ["general", "agility"]
       }
     ]
   },
@@ -2973,7 +2992,7 @@
     "rerollCost": 60000,
     "tier": 2,
     "apothecary": true,
-    "specialRules": ["Masters of Undeath"],
+    "specialRules": ["Sylvanian Spotlight", "Masters of Undeath"],
     "positions": [
       {
         "key": "thrall-lineman",
@@ -3004,8 +3023,8 @@
           "av": 8
         },
         "startingSkills": ["bloodlust", "hypnotic-gaze", "regeneration"],
-        "primary": ["agility", "general"],
-        "secondary": ["passing", "strength"]
+        "primary": ["general", "agility"],
+        "secondary": ["strength", "passing"]
       },
       {
         "key": "vampire-thrower",
@@ -3025,7 +3044,7 @@
           "pass",
           "regeneration"
         ],
-        "primary": ["agility", "general", "passing"],
+        "primary": ["general", "agility", "passing"],
         "secondary": ["strength"]
       },
       {
@@ -3046,8 +3065,8 @@
           "juggernaut",
           "regeneration"
         ],
-        "primary": ["agility", "general", "strength"],
-        "secondary": []
+        "primary": ["general", "agility", "strength"],
+        "secondary": ["passing"]
       },
       {
         "key": "vargheist",
@@ -3069,7 +3088,7 @@
           "regeneration"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general"]
+        "secondary": ["general", "agility"]
       }
     ]
   },
@@ -3084,7 +3103,7 @@
       {
         "key": "wood-elf-lineman",
         "name": "Wood Elf Lineman",
-        "max": 16,
+        "max": 12,
         "cost": 65000,
         "characteristics": {
           "ma": 7,
@@ -3094,7 +3113,7 @@
           "av": 8
         },
         "startingSkills": [],
-        "primary": ["agility", "general"],
+        "primary": ["general", "agility"],
         "secondary": ["strength"]
       },
       {
@@ -3110,7 +3129,7 @@
           "av": 8
         },
         "startingSkills": ["pass", "safe-pair-of-hands"],
-        "primary": ["agility", "general", "passing"],
+        "primary": ["general", "agility", "passing"],
         "secondary": ["strength"]
       },
       {
@@ -3126,8 +3145,8 @@
           "av": 8
         },
         "startingSkills": ["catch", "dodge", "sprint"],
-        "primary": ["agility", "general"],
-        "secondary": ["passing", "strength"]
+        "primary": ["general", "agility"],
+        "secondary": ["strength", "passing"]
       },
       {
         "key": "wardancer",
@@ -3142,8 +3161,8 @@
           "av": 8
         },
         "startingSkills": ["block", "dodge", "leap"],
-        "primary": ["agility", "general"],
-        "secondary": ["passing", "strength"]
+        "primary": ["general", "agility"],
+        "secondary": ["strength", "passing"]
       },
       {
         "key": "loren-forest-treeman",
@@ -3167,7 +3186,7 @@
           "throw-team-mate"
         ],
         "primary": ["strength"],
-        "secondary": ["agility", "general"]
+        "secondary": ["general", "agility", "passing"]
       }
     ]
   }
