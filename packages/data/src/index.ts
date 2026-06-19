@@ -1,6 +1,15 @@
 export { getGlossaryTerm, glossary } from './glossary'
 export { getInducement, inducements } from './inducements'
 export * from './keys.gen'
+export {
+  inducementsForTeam,
+  positionSkills,
+  starsForTeam,
+  starSkills,
+  teamsForSpecialRule,
+  teamsForStar,
+  teamSpecialRules,
+} from './relations'
 export { getSkill, skills } from './skills'
 export { getSpecialRule, specialRules } from './special-rules'
 export { getStarPlayer, starPlayers } from './star-players'
