@@ -17,15 +17,12 @@ export function SkillsPage() {
   return (
     <div>
       <h1 className="font-display text-5xl uppercase">Skills &amp; Traits</h1>
-      <p className="mt-2 max-w-2xl text-ink/70">
-        The full catalogue. Highlighted terms open in the drawer.
-      </p>
 
       {CATEGORIES.map(([key, label]) => {
         const group = skills.filter((skill) => skill.category === key)
         return (
           <section key={key} className="mt-8">
-            <h2 className="flex items-baseline gap-2 border-b-2 border-ink pb-1 font-display text-2xl uppercase text-blood">
+            <h2 className="flex items-baseline gap-2 border-b-2 border-ink pb-1 font-display text-3xl uppercase text-blood">
               {label}
               <span className="font-headline text-base font-semibold text-ink/40">
                 · {group.length}

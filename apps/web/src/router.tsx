@@ -4,56 +4,116 @@ import {
   createRouter,
 } from '@tanstack/react-router'
 
-import { CodexLayout } from '@/components/codex-layout'
+import { AppShell } from '@/components/app-shell'
+import { CodexHome, CodexLayout } from '@/routes/codex'
 import { ComingSoon } from '@/routes/coming-soon'
-import { HomePage } from '@/routes/home'
+import { InducementsPage } from '@/routes/inducements'
+import { LandingPage } from '@/routes/landing'
+import { RulesPage } from '@/routes/rules'
 import { SkillsPage } from '@/routes/skills'
+import { StarsPage } from '@/routes/stars'
+import { TeamDetail, TeamsIndex } from '@/routes/teams'
 
-const rootRoute = createRootRoute({ component: CodexLayout })
+const rootRoute = createRootRoute({ component: AppShell })
 
 const indexRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/',
-  component: HomePage,
+  component: LandingPage,
 })
 
-const skillsRoute = createRoute({
+// Codex — the reference. Renders its index (the landing) or, for a category,
+// the shared sub-nav layout, through the outlet.
+const codexRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: '/skills',
+  path: '/codex',
+})
+
+const codexIndexRoute = createRoute({
+  getParentRoute: () => codexRoute,
+  path: '/',
+  component: CodexHome,
+})
+
+// Pathless layout — gives every category page the codex sub-nav while keeping
+// the URLs at /codex/<category>.
+const codexCategoryRoute = createRoute({
+  getParentRoute: () => codexRoute,
+  id: 'category',
+  component: CodexLayout,
+})
+
+// Teams — an index of rosters, each linking to its detail page. No component of
+// its own; it renders the index or a team detail through the outlet.
+const codexTeamsRoute = createRoute({
+  getParentRoute: () => codexCategoryRoute,
+  path: 'teams',
+})
+
+const codexTeamsIndexRoute = createRoute({
+  getParentRoute: () => codexTeamsRoute,
+  path: '/',
+  component: TeamsIndex,
+})
+
+const codexTeamDetailRoute = createRoute({
+  getParentRoute: () => codexTeamsRoute,
+  path: '$key',
+  component: TeamDetail,
+})
+
+const codexSkillsRoute = createRoute({
+  getParentRoute: () => codexCategoryRoute,
+  path: 'skills',
   component: SkillsPage,
 })
 
+const codexStarsRoute = createRoute({
+  getParentRoute: () => codexCategoryRoute,
+  path: 'stars',
+  component: StarsPage,
+})
+
+const codexInducementsRoute = createRoute({
+  getParentRoute: () => codexCategoryRoute,
+  path: 'inducements',
+  component: InducementsPage,
+})
+
+const codexRulesRoute = createRoute({
+  getParentRoute: () => codexCategoryRoute,
+  path: 'rules',
+  component: RulesPage,
+})
+
+// Team management — your own rosters across a season.
 const teamsRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/teams',
-  component: () => <ComingSoon title="Teams" />,
+  component: () => <ComingSoon title="Team Management" />,
 })
 
-const starsRoute = createRoute({
+// League & tournament management.
+const leaguesRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: '/stars',
-  component: () => <ComingSoon title="Star Players" />,
-})
-
-const inducementsRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: '/inducements',
-  component: () => <ComingSoon title="Inducements" />,
-})
-
-const rulesRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: '/rules',
-  component: () => <ComingSoon title="Special Rules" />,
+  path: '/leagues',
+  component: () => <ComingSoon title="Leagues" />,
 })
 
 const routeTree = rootRoute.addChildren([
   indexRoute,
-  skillsRoute,
+  codexRoute.addChildren([
+    codexIndexRoute,
+    codexCategoryRoute.addChildren([
+      codexTeamsRoute.addChildren([codexTeamsIndexRoute, codexTeamDetailRoute]),
+      codexSkillsRoute,
+      codexStarsRoute,
+      codexInducementsRoute,
+      codexRulesRoute,
+    ]),
+  ]),
   teamsRoute,
-  starsRoute,
-  inducementsRoute,
-  rulesRoute,
+  leaguesRoute,
 ])
 
 export const router = createRouter({ routeTree })
