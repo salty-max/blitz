@@ -14,6 +14,7 @@
     "lint": "turbo run lint",
     "lint:fix": "eslint . --fix --max-warnings 0",
     "format": "prettier . -w",
+    "gen:keys": "bun scripts/gen-data-keys.ts",
     "dev": "turbo run dev",
     "dev:web": "turbo run dev --filter=@blitz/web",
     "dev:api": "turbo run dev --filter=@blitz/api",

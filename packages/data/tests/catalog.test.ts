@@ -23,7 +23,7 @@ describe('skill & keyword catalogue', () => {
   })
 
   test('every cross-reference resolves to a known entry', () => {
-    const known = new Set([
+    const known = new Set<string>([
       ...skills.map((s) => s.key),
       ...glossary.map((g) => g.key),
     ])

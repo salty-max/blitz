@@ -58,7 +58,7 @@ describe('special rules', () => {
   })
 
   test('effect cross-references resolve to a known skill or glossary term', () => {
-    const known = new Set([
+    const known = new Set<string>([
       ...skills.map((s) => s.key),
       ...glossary.map((g) => g.key),
     ])
