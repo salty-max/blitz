@@ -88,9 +88,10 @@ export default [
   },
 
   // Library and backend source — full ruleset including type-checked rules and
-  // JSDoc. The web app is a React SPA with different conventions (below).
+  // JSDoc. The web app and the UI lib are React with different conventions (below).
   ...tseslint.config({
     files: ['packages/*/src/**/*.{ts,tsx}', 'apps/api/src/**/*.{ts,tsx}'],
+    ignores: ['packages/ui/**'],
     extends: [
       ...tseslint.configs.recommendedTypeChecked,
       jsdocPlugin.configs['flat/recommended-typescript'],
@@ -116,6 +117,36 @@ export default [
   // components document themselves. PascalCase component files are allowed.
   ...tseslint.config({
     files: ['apps/web/**/*.{ts,tsx}'],
+    extends: [
+      ...tseslint.configs.recommendedTypeChecked,
+      regexpPlugin.configs['flat/recommended'],
+    ],
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
+    plugins: {
+      ...sharedPlugins,
+      'react-hooks': reactHooks,
+    },
+    rules: {
+      ...prettierConfig.rules,
+      ...sharedRules,
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'error',
+      'unicorn/filename-case': [
+        'error',
+        { cases: { kebabCase: true, pascalCase: true } },
+      ],
+    },
+  }),
+
+  // UI lib — React components, same conventions as the web app: type-checked
+  // rules + hooks rules, no JSDoc (components document themselves).
+  ...tseslint.config({
+    files: ['packages/ui/src/**/*.{ts,tsx}'],
     extends: [
       ...tseslint.configs.recommendedTypeChecked,
       regexpPlugin.configs['flat/recommended'],
