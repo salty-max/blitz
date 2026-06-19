@@ -46,8 +46,8 @@ export const teamSchema = z.object({
   specialRules: z.array(z.string().min(1)).default([]),
   /** Whether the team may hire an Apothecary. */
   apothecary: z.boolean().default(true),
-  /** Competitive tier (1 = strongest), where the roster defines one. */
-  tier: z.number().int().min(1).max(3).optional(),
+  /** Competitive tier (1 = strongest, 4 = weakest), where the roster defines one. */
+  tier: z.number().int().min(1).max(4).optional(),
   /** Short codex blurb; may contain `[[key]]` cross-references. */
   description: z.string().optional(),
 })

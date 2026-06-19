@@ -1,0 +1,3174 @@
+[
+  {
+    "key": "amazon",
+    "name": "Amazon",
+    "rerollCost": 60000,
+    "tier": 1,
+    "apothecary": true,
+    "specialRules": ["Lustrian Superleague"],
+    "positions": [
+      {
+        "key": "eagle-warrior-lineman",
+        "name": "Eagle Warrior (Lineman)",
+        "max": 16,
+        "cost": 50000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["dodge"],
+        "primary": ["general"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "python-warrior-thrower",
+        "name": "Python Warrior (Thrower)",
+        "max": 2,
+        "cost": 80000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 3,
+          "av": 8
+        },
+        "startingSkills": ["dodge", "on-the-ball", "pass", "safe-pass"],
+        "primary": ["general", "passing"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "piranha-warrior-blitzer",
+        "name": "Piranha Warrior (Blitzer)",
+        "max": 2,
+        "cost": 90000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["dodge", "hit-and-run", "jump-up"],
+        "primary": ["agility", "general"],
+        "secondary": ["strength"]
+      },
+      {
+        "key": "jaguar-warrior-blocker",
+        "name": "Jaguar Warrior (Blocker)",
+        "max": 2,
+        "cost": 110000,
+        "characteristics": {
+          "ma": 6,
+          "st": 4,
+          "ag": 3,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": ["defensive", "dodge"],
+        "primary": ["general", "strength"],
+        "secondary": ["agility"]
+      }
+    ]
+  },
+  {
+    "key": "black-orc",
+    "name": "Black Orc",
+    "rerollCost": 60000,
+    "tier": 3,
+    "apothecary": true,
+    "specialRules": ["Bribery and Corruption", "Brawlin' Brutes"],
+    "positions": [
+      {
+        "key": "goblin-bruiser",
+        "name": "Goblin Bruiser",
+        "max": 16,
+        "cost": 45000,
+        "characteristics": {
+          "ma": 6,
+          "st": 2,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["dodge", "right-stuff", "stunty", "thick-skull"],
+        "primary": ["agility", "devious"],
+        "secondary": ["general", "passing", "strength"]
+      },
+      {
+        "key": "black-orc",
+        "name": "Black Orc",
+        "max": 6,
+        "cost": 90000,
+        "characteristics": {
+          "ma": 4,
+          "st": 4,
+          "ag": 4,
+          "pa": 5,
+          "av": 10
+        },
+        "startingSkills": ["brawler", "grab"],
+        "primary": ["general", "strength"],
+        "secondary": ["agility", "devious"]
+      },
+      {
+        "key": "trained-troll",
+        "name": "Trained Troll",
+        "max": 1,
+        "cost": 115000,
+        "characteristics": {
+          "ma": 4,
+          "st": 5,
+          "ag": 5,
+          "pa": 5,
+          "av": 10
+        },
+        "startingSkills": [
+          "always-hungry",
+          "mighty-blow",
+          "projectile-vomit",
+          "really-stupid",
+          "regeneration",
+          "throw-team-mate"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general", "passing"]
+      }
+    ]
+  },
+  {
+    "key": "bretonnian",
+    "name": "Bretonnian",
+    "rerollCost": 60000,
+    "tier": 2,
+    "apothecary": true,
+    "specialRules": ["Old World Classic"],
+    "positions": [
+      {
+        "key": "bretonnian-squire-lineman",
+        "name": "Bretonnian Squire (Lineman)",
+        "max": 16,
+        "cost": 50000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["wrestle"],
+        "primary": ["general"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "bretonnian-knight-catcher",
+        "name": "Bretonnian Knight Catcher",
+        "max": 2,
+        "cost": 85000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": ["catch", "dauntless", "nerves-of-steel"],
+        "primary": ["agility", "general"],
+        "secondary": ["strength"]
+      },
+      {
+        "key": "bretonnian-knight-thrower",
+        "name": "Bretonnian Knight Thrower",
+        "max": 2,
+        "cost": 80000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 3,
+          "av": 9
+        },
+        "startingSkills": ["dauntless", "nerves-of-steel", "pass"],
+        "primary": ["general", "passing"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "grail-knight-blitzer",
+        "name": "Grail Knight (Blitzer)",
+        "max": 2,
+        "cost": 95000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 10
+        },
+        "startingSkills": ["block", "dauntless", "steady-footing"],
+        "primary": ["general", "strength"],
+        "secondary": ["agility"]
+      }
+    ]
+  },
+  {
+    "key": "chaos-chosen",
+    "name": "Chaos Chosen",
+    "rerollCost": 50000,
+    "tier": 3,
+    "apothecary": true,
+    "specialRules": ["Favoured of..."],
+    "positions": [
+      {
+        "key": "beastman-lineman",
+        "name": "Beastman Lineman",
+        "max": 16,
+        "cost": 55000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 3,
+          "av": 9
+        },
+        "startingSkills": ["horns", "thick-skull"],
+        "primary": ["general", "mutation"],
+        "secondary": ["agility", "passing", "strength", "devious"]
+      },
+      {
+        "key": "chaos-chosen",
+        "name": "Chaos Chosen",
+        "max": 4,
+        "cost": 100000,
+        "characteristics": {
+          "ma": 5,
+          "st": 4,
+          "ag": 3,
+          "pa": 5,
+          "av": 10
+        },
+        "startingSkills": ["arm-bar"],
+        "primary": ["general", "mutation", "strength"],
+        "secondary": ["agility", "devious"]
+      },
+      {
+        "key": "troll",
+        "name": "Troll",
+        "max": 1,
+        "cost": 115000,
+        "characteristics": {
+          "ma": 4,
+          "st": 5,
+          "ag": 5,
+          "pa": 5,
+          "av": 10
+        },
+        "startingSkills": [
+          "always-hungry",
+          "loner",
+          "mighty-blow",
+          "projectile-vomit",
+          "really-stupid",
+          "regeneration",
+          "throw-team-mate"
+        ],
+        "primary": ["mutation", "strength"],
+        "secondary": ["agility", "general", "passing"]
+      },
+      {
+        "key": "ogre",
+        "name": "Ogre",
+        "max": 1,
+        "cost": 140000,
+        "characteristics": {
+          "ma": 5,
+          "st": 5,
+          "ag": 4,
+          "pa": 5,
+          "av": 10
+        },
+        "startingSkills": [
+          "bone-head",
+          "loner",
+          "mighty-blow",
+          "thick-skull",
+          "throw-team-mate"
+        ],
+        "primary": ["mutation", "strength"],
+        "secondary": ["agility", "general"]
+      },
+      {
+        "key": "minotaur",
+        "name": "Minotaur",
+        "max": 1,
+        "cost": 150000,
+        "characteristics": {
+          "ma": 5,
+          "st": 5,
+          "ag": 4,
+          "pa": 6,
+          "av": 9
+        },
+        "startingSkills": [
+          "frenzy",
+          "horns",
+          "loner",
+          "mighty-blow",
+          "thick-skull",
+          "unchannelled-fury"
+        ],
+        "primary": ["mutation", "strength"],
+        "secondary": ["agility", "general"]
+      }
+    ]
+  },
+  {
+    "key": "chaos-dwarf",
+    "name": "Chaos Dwarf",
+    "rerollCost": 70000,
+    "tier": 1,
+    "apothecary": true,
+    "specialRules": ["Favoured of Hashut"],
+    "positions": [
+      {
+        "key": "hobgoblin-lineman",
+        "name": "Hobgoblin Lineman",
+        "max": 16,
+        "cost": 40000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": [],
+        "primary": ["devious"],
+        "secondary": ["agility", "general", "strength"]
+      },
+      {
+        "key": "sneaky-stabba",
+        "name": "Sneaky Stabba",
+        "max": 2,
+        "cost": 60000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 5,
+          "av": 8
+        },
+        "startingSkills": ["shadowing", "stab"],
+        "primary": ["devious", "general"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "chaos-dwarf-blocker",
+        "name": "Chaos Dwarf Blocker",
+        "max": 4,
+        "cost": 70000,
+        "characteristics": {
+          "ma": 4,
+          "st": 3,
+          "ag": 4,
+          "pa": 6,
+          "av": 10
+        },
+        "startingSkills": ["block", "iron-hard-skin", "thick-skull"],
+        "primary": ["general", "strength"],
+        "secondary": ["agility", "devious", "mutation"]
+      },
+      {
+        "key": "flamesmith",
+        "name": "Flamesmith",
+        "max": 2,
+        "cost": 80000,
+        "characteristics": {
+          "ma": 5,
+          "st": 3,
+          "ag": 4,
+          "pa": 6,
+          "av": 10
+        },
+        "startingSkills": [
+          "brawler",
+          "breathe-fire",
+          "disturbing-presence",
+          "thick-skull"
+        ],
+        "primary": ["general", "strength"],
+        "secondary": ["agility", "devious", "mutation"]
+      },
+      {
+        "key": "bull-centaur",
+        "name": "Bull Centaur",
+        "max": 2,
+        "cost": 130000,
+        "characteristics": {
+          "ma": 6,
+          "st": 4,
+          "ag": 4,
+          "pa": 6,
+          "av": 10
+        },
+        "startingSkills": ["sprint", "sure-feet", "thick-skull", "unsteady"],
+        "primary": ["general", "strength"],
+        "secondary": ["agility", "devious", "mutation"]
+      },
+      {
+        "key": "minotaur",
+        "name": "Minotaur",
+        "max": 1,
+        "cost": 150000,
+        "characteristics": {
+          "ma": 5,
+          "st": 5,
+          "ag": 4,
+          "pa": 6,
+          "av": 9
+        },
+        "startingSkills": [
+          "frenzy",
+          "horns",
+          "loner",
+          "mighty-blow",
+          "thick-skull",
+          "unchannelled-fury"
+        ],
+        "primary": ["mutation", "strength"],
+        "secondary": ["agility", "general"]
+      }
+    ]
+  },
+  {
+    "key": "chaos-renegades",
+    "name": "Chaos Renegades",
+    "rerollCost": 70000,
+    "tier": 3,
+    "apothecary": true,
+    "specialRules": [
+      "Favoured of Khorne",
+      "Favoured of Nurgle",
+      "Favoured of Slaanesh",
+      "Favoured of Tzeentch",
+      "Favoured of Undivided"
+    ],
+    "positions": [
+      {
+        "key": "renegade-human",
+        "name": "Renegade Human",
+        "max": 16,
+        "cost": 50000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": ["animosity"],
+        "primary": ["devious", "general", "mutation"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "renegade-goblin",
+        "name": "Renegade Goblin",
+        "max": 1,
+        "cost": 40000,
+        "characteristics": {
+          "ma": 6,
+          "st": 2,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["animosity", "dodge", "right-stuff", "stunty"],
+        "primary": ["agility", "devious", "mutation"],
+        "secondary": ["general", "passing"]
+      },
+      {
+        "key": "renegade-orc",
+        "name": "Renegade Orc",
+        "max": 1,
+        "cost": 50000,
+        "characteristics": {
+          "ma": 5,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 10
+        },
+        "startingSkills": ["animosity"],
+        "primary": ["devious", "general", "mutation"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "renegade-skaven",
+        "name": "Renegade Skaven",
+        "max": 1,
+        "cost": 50000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["animosity"],
+        "primary": ["devious", "general", "mutation"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "renegade-dark-elf",
+        "name": "Renegade Dark Elf",
+        "max": 1,
+        "cost": 65000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 2,
+          "pa": 3,
+          "av": 9
+        },
+        "startingSkills": ["animosity"],
+        "primary": ["agility", "devious", "general", "mutation"],
+        "secondary": ["strength"]
+      },
+      {
+        "key": "renegade-human-thrower",
+        "name": "Renegade Human Thrower",
+        "max": 1,
+        "cost": 75000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 3,
+          "av": 9
+        },
+        "startingSkills": ["animosity", "pass", "sure-hands"],
+        "primary": ["devious", "general", "mutation", "passing"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "troll",
+        "name": "Troll",
+        "max": 1,
+        "cost": 115000,
+        "characteristics": {
+          "ma": 4,
+          "st": 5,
+          "ag": 5,
+          "pa": 5,
+          "av": 10
+        },
+        "startingSkills": [
+          "always-hungry",
+          "loner",
+          "mighty-blow",
+          "projectile-vomit",
+          "really-stupid",
+          "regeneration",
+          "throw-team-mate"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general", "mutation", "passing"]
+      },
+      {
+        "key": "ogre",
+        "name": "Ogre",
+        "max": 1,
+        "cost": 140000,
+        "characteristics": {
+          "ma": 5,
+          "st": 5,
+          "ag": 4,
+          "pa": 5,
+          "av": 10
+        },
+        "startingSkills": [
+          "bone-head",
+          "loner",
+          "mighty-blow",
+          "thick-skull",
+          "throw-team-mate"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general", "mutation"]
+      },
+      {
+        "key": "minotaur",
+        "name": "Minotaur",
+        "max": 1,
+        "cost": 150000,
+        "characteristics": {
+          "ma": 5,
+          "st": 5,
+          "ag": 4,
+          "pa": 6,
+          "av": 9
+        },
+        "startingSkills": [
+          "frenzy",
+          "horns",
+          "loner",
+          "mighty-blow",
+          "thick-skull",
+          "unchannelled-fury"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general", "mutation"]
+      },
+      {
+        "key": "rat-ogre",
+        "name": "Rat Ogre",
+        "max": 1,
+        "cost": 150000,
+        "characteristics": {
+          "ma": 6,
+          "st": 5,
+          "ag": 4,
+          "pa": 6,
+          "av": 9
+        },
+        "startingSkills": [
+          "animal-savagery",
+          "frenzy",
+          "loner",
+          "mighty-blow",
+          "prehensile-tail"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general", "mutation"]
+      }
+    ]
+  },
+  {
+    "key": "dark-elf",
+    "name": "Dark Elf",
+    "rerollCost": 50000,
+    "tier": 1,
+    "apothecary": true,
+    "specialRules": ["Elven Kingdoms League"],
+    "positions": [
+      {
+        "key": "dark-elf-lineman",
+        "name": "Dark Elf Lineman",
+        "max": 16,
+        "cost": 65000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 2,
+          "pa": 3,
+          "av": 9
+        },
+        "startingSkills": [],
+        "primary": ["agility", "general"],
+        "secondary": ["strength", "devious"]
+      },
+      {
+        "key": "dark-elf-runner",
+        "name": "Dark Elf Runner",
+        "max": 2,
+        "cost": 80000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 2,
+          "pa": 3,
+          "av": 8
+        },
+        "startingSkills": ["dump-off", "punt"],
+        "primary": ["agility", "general", "passing"],
+        "secondary": ["strength", "devious"]
+      },
+      {
+        "key": "dark-elf-assassin",
+        "name": "Dark Elf Assassin",
+        "max": 2,
+        "cost": 90000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 2,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["hit-and-run", "shadowing", "stab"],
+        "primary": ["agility", "devious"],
+        "secondary": ["general", "strength"]
+      },
+      {
+        "key": "dark-elf-blitzer",
+        "name": "Dark Elf Blitzer",
+        "max": 2,
+        "cost": 105000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 2,
+          "pa": 3,
+          "av": 9
+        },
+        "startingSkills": ["block"],
+        "primary": ["agility", "general"],
+        "secondary": ["passing", "strength", "devious"]
+      },
+      {
+        "key": "witch-elf",
+        "name": "Witch Elf",
+        "max": 2,
+        "cost": 110000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 2,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["dodge", "frenzy", "jump-up"],
+        "primary": ["agility", "general"],
+        "secondary": ["strength", "devious"]
+      }
+    ]
+  },
+  {
+    "key": "dwarf",
+    "name": "Dwarf",
+    "rerollCost": 60000,
+    "tier": 2,
+    "apothecary": true,
+    "specialRules": ["Brawlin' Brutes", "Bribery and Corruption"],
+    "positions": [
+      {
+        "key": "dwarf-lineman",
+        "name": "Dwarf Lineman",
+        "max": 16,
+        "cost": 70000,
+        "characteristics": {
+          "ma": 4,
+          "st": 3,
+          "ag": 4,
+          "pa": 5,
+          "av": 10
+        },
+        "startingSkills": ["block", "defensive", "thick-skull"],
+        "primary": ["devious", "general"],
+        "secondary": ["strength"]
+      },
+      {
+        "key": "dwarf-runner",
+        "name": "Dwarf Runner",
+        "max": 2,
+        "cost": 80000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": ["sprint", "sure-hands", "thick-skull"],
+        "primary": ["general", "passing"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "dwarf-blitzer",
+        "name": "Dwarf Blitzer",
+        "max": 2,
+        "cost": 100000,
+        "characteristics": {
+          "ma": 5,
+          "st": 3,
+          "ag": 4,
+          "pa": 4,
+          "av": 10
+        },
+        "startingSkills": ["block", "diving-tackle", "tackle", "thick-skull"],
+        "primary": ["general", "strength"],
+        "secondary": ["passing"]
+      },
+      {
+        "key": "troll-slayer",
+        "name": "Troll Slayer",
+        "max": 2,
+        "cost": 95000,
+        "characteristics": {
+          "ma": 5,
+          "st": 3,
+          "ag": 4,
+          "pa": 5,
+          "av": 9
+        },
+        "startingSkills": [
+          "block",
+          "dauntless",
+          "frenzy",
+          "hatred",
+          "thick-skull"
+        ],
+        "primary": ["general", "strength"],
+        "secondary": ["devious"]
+      },
+      {
+        "key": "deathroller",
+        "name": "Deathroller",
+        "max": 1,
+        "cost": 170000,
+        "characteristics": {
+          "ma": 5,
+          "st": 7,
+          "ag": 5,
+          "pa": null,
+          "av": 11
+        },
+        "startingSkills": [
+          "break-tackle",
+          "dirty-player",
+          "juggernaut",
+          "loner",
+          "mighty-blow",
+          "no-ball",
+          "secret-weapon",
+          "stand-firm"
+        ],
+        "primary": ["devious", "strength"],
+        "secondary": ["general"]
+      }
+    ]
+  },
+  {
+    "key": "elven-union",
+    "name": "Elven Union",
+    "rerollCost": 50000,
+    "tier": 2,
+    "apothecary": true,
+    "specialRules": ["Elven Kingdoms League"],
+    "positions": [
+      {
+        "key": "elf-lineman",
+        "name": "Elf Lineman",
+        "max": 16,
+        "cost": 65000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 2,
+          "pa": 3,
+          "av": 8
+        },
+        "startingSkills": ["fumblerooski"],
+        "primary": ["agility", "general"],
+        "secondary": ["strength"]
+      },
+      {
+        "key": "elf-thrower",
+        "name": "Elf Thrower",
+        "max": 2,
+        "cost": 75000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 2,
+          "pa": 2,
+          "av": 8
+        },
+        "startingSkills": ["hail-mary-pass", "pass"],
+        "primary": ["agility", "general", "passing"],
+        "secondary": ["strength"]
+      },
+      {
+        "key": "elf-catcher",
+        "name": "Elf Catcher",
+        "max": 2,
+        "cost": 100000,
+        "characteristics": {
+          "ma": 8,
+          "st": 3,
+          "ag": 2,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["catch", "diving-catch", "nerves-of-steel"],
+        "primary": ["agility", "general"],
+        "secondary": ["strength"]
+      },
+      {
+        "key": "elf-blitzer",
+        "name": "Elf Blitzer",
+        "max": 2,
+        "cost": 115000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 2,
+          "pa": 3,
+          "av": 9
+        },
+        "startingSkills": ["block", "sidestep"],
+        "primary": ["agility", "general"],
+        "secondary": ["passing", "strength"]
+      }
+    ]
+  },
+  {
+    "key": "gnome",
+    "name": "Gnome",
+    "rerollCost": 50000,
+    "tier": 4,
+    "apothecary": true,
+    "specialRules": ["Halfling Thimble Cup", "Woodland League"],
+    "positions": [
+      {
+        "key": "gnome-lineman",
+        "name": "Gnome Lineman",
+        "max": 16,
+        "cost": 40000,
+        "characteristics": {
+          "ma": 5,
+          "st": 2,
+          "ag": 3,
+          "pa": 4,
+          "av": 7
+        },
+        "startingSkills": ["jump-up", "right-stuff", "stunty", "wrestle"],
+        "primary": ["agility"],
+        "secondary": ["general", "strength", "devious"]
+      },
+      {
+        "key": "woodland-fox",
+        "name": "Woodland Fox",
+        "max": 2,
+        "cost": 50000,
+        "characteristics": {
+          "ma": 7,
+          "st": 2,
+          "ag": 2,
+          "pa": null,
+          "av": 6
+        },
+        "startingSkills": ["dodge", "my-ball", "sidestep", "stunty"],
+        "primary": [],
+        "secondary": ["agility"]
+      },
+      {
+        "key": "gnome-illusionist",
+        "name": "Gnome Illusionist",
+        "max": 2,
+        "cost": 50000,
+        "characteristics": {
+          "ma": 5,
+          "st": 2,
+          "ag": 3,
+          "pa": 3,
+          "av": 7
+        },
+        "startingSkills": ["jump-up", "stunty", "trickster", "wrestle"],
+        "primary": ["agility", "passing"],
+        "secondary": ["general", "devious"]
+      },
+      {
+        "key": "gnome-beastmaster",
+        "name": "Gnome Beastmaster",
+        "max": 2,
+        "cost": 55000,
+        "characteristics": {
+          "ma": 5,
+          "st": 2,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["guard", "jump-up", "stunty", "wrestle"],
+        "primary": ["agility"],
+        "secondary": ["devious", "general", "strength"]
+      },
+      {
+        "key": "altern-forest-treeman",
+        "name": "Altern Forest Treeman",
+        "max": 2,
+        "cost": 120000,
+        "characteristics": {
+          "ma": 2,
+          "st": 6,
+          "ag": 5,
+          "pa": 5,
+          "av": 11
+        },
+        "startingSkills": [
+          "mighty-blow",
+          "stand-firm",
+          "strong-arm",
+          "take-root",
+          "thick-skull",
+          "throw-team-mate",
+          "timmm-ber"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general", "passing"]
+      }
+    ]
+  },
+  {
+    "key": "goblin",
+    "name": "Goblin",
+    "rerollCost": 60000,
+    "tier": 4,
+    "apothecary": true,
+    "specialRules": ["Bribery and Corruption"],
+    "positions": [
+      {
+        "key": "goblin-lineman",
+        "name": "Goblin Lineman",
+        "max": 16,
+        "cost": 40000,
+        "characteristics": {
+          "ma": 6,
+          "st": 2,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["dodge", "right-stuff", "stunty"],
+        "primary": ["agility", "devious"],
+        "secondary": ["general", "passing", "strength"]
+      },
+      {
+        "key": "looney",
+        "name": "Looney",
+        "max": 1,
+        "cost": 40000,
+        "characteristics": {
+          "ma": 6,
+          "st": 2,
+          "ag": 3,
+          "pa": null,
+          "av": 8
+        },
+        "startingSkills": ["chainsaw", "no-ball", "secret-weapon", "stunty"],
+        "primary": ["devious"],
+        "secondary": ["agility", "general", "strength"]
+      },
+      {
+        "key": "bomma",
+        "name": "Bomma",
+        "max": 1,
+        "cost": 45000,
+        "characteristics": {
+          "ma": 6,
+          "st": 2,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["bombardier", "dodge", "secret-weapon", "stunty"],
+        "primary": ["devious", "passing"],
+        "secondary": ["agility", "general", "strength"]
+      },
+      {
+        "key": "ooligan",
+        "name": "'Ooligan",
+        "max": 1,
+        "cost": 60000,
+        "characteristics": {
+          "ma": 6,
+          "st": 2,
+          "ag": 3,
+          "pa": 5,
+          "av": 8
+        },
+        "startingSkills": [
+          "dirty-player",
+          "disturbing-presence",
+          "dodge",
+          "right-stuff",
+          "stunty",
+          "taunt"
+        ],
+        "primary": ["agility", "devious"],
+        "secondary": ["general", "strength"]
+      },
+      {
+        "key": "doom-diver",
+        "name": "Doom Diver",
+        "max": 1,
+        "cost": 65000,
+        "characteristics": {
+          "ma": 6,
+          "st": 2,
+          "ag": 3,
+          "pa": 6,
+          "av": 8
+        },
+        "startingSkills": ["dodge", "right-stuff", "stunty", "swoop"],
+        "primary": ["agility"],
+        "secondary": ["devious", "general", "strength"]
+      },
+      {
+        "key": "fanatic",
+        "name": "Fanatic",
+        "max": 1,
+        "cost": 70000,
+        "characteristics": {
+          "ma": 3,
+          "st": 7,
+          "ag": 3,
+          "pa": null,
+          "av": 8
+        },
+        "startingSkills": [
+          "ball-and-chain",
+          "no-ball",
+          "secret-weapon",
+          "stunty"
+        ],
+        "primary": ["devious", "strength"],
+        "secondary": ["agility", "general"]
+      },
+      {
+        "key": "pogoer",
+        "name": "Pogoer",
+        "max": 1,
+        "cost": 75000,
+        "characteristics": {
+          "ma": 7,
+          "st": 2,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["dodge", "pogo", "stunty"],
+        "primary": ["agility"],
+        "secondary": ["devious", "general", "strength"]
+      },
+      {
+        "key": "trained-troll",
+        "name": "Trained Troll",
+        "max": 2,
+        "cost": 115000,
+        "characteristics": {
+          "ma": 4,
+          "st": 5,
+          "ag": 5,
+          "pa": 5,
+          "av": 10
+        },
+        "startingSkills": [
+          "always-hungry",
+          "mighty-blow",
+          "projectile-vomit",
+          "really-stupid",
+          "regeneration",
+          "throw-team-mate"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general", "passing"]
+      }
+    ]
+  },
+  {
+    "key": "halfling",
+    "name": "Halfling",
+    "rerollCost": 60000,
+    "tier": 4,
+    "apothecary": true,
+    "specialRules": ["Halfling Thimble Cup", "Woodland League"],
+    "positions": [
+      {
+        "key": "halfling-hopeful",
+        "name": "Halfling Hopeful",
+        "max": 16,
+        "cost": 30000,
+        "characteristics": {
+          "ma": 5,
+          "st": 2,
+          "ag": 3,
+          "pa": 4,
+          "av": 7
+        },
+        "startingSkills": ["dodge", "right-stuff", "stunty"],
+        "primary": ["agility"],
+        "secondary": ["general", "strength", "devious"]
+      },
+      {
+        "key": "halfling-hefty",
+        "name": "Halfling Hefty",
+        "max": 2,
+        "cost": 50000,
+        "characteristics": {
+          "ma": 5,
+          "st": 2,
+          "ag": 3,
+          "pa": 3,
+          "av": 8
+        },
+        "startingSkills": ["dodge", "fend", "stunty"],
+        "primary": ["agility", "passing"],
+        "secondary": ["general", "strength", "devious"]
+      },
+      {
+        "key": "halfling-catcher",
+        "name": "Halfling Catcher",
+        "max": 2,
+        "cost": 55000,
+        "characteristics": {
+          "ma": 5,
+          "st": 2,
+          "ag": 3,
+          "pa": 4,
+          "av": 7
+        },
+        "startingSkills": ["catch", "dodge", "right-stuff", "sprint", "stunty"],
+        "primary": ["agility"],
+        "secondary": ["general", "strength", "devious"]
+      },
+      {
+        "key": "athel-forest-treeman",
+        "name": "Athel Forest Treeman",
+        "max": 2,
+        "cost": 120000,
+        "characteristics": {
+          "ma": 2,
+          "st": 6,
+          "ag": 5,
+          "pa": 5,
+          "av": 11
+        },
+        "startingSkills": [
+          "mighty-blow",
+          "stand-firm",
+          "strong-arm",
+          "take-root",
+          "thick-skull",
+          "throw-team-mate",
+          "timmm-ber"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general", "passing", "devious"]
+      }
+    ]
+  },
+  {
+    "key": "high-elf",
+    "name": "High Elf",
+    "rerollCost": 50000,
+    "apothecary": true,
+    "specialRules": ["Elven Kingdoms League"],
+    "positions": [
+      {
+        "key": "high-elf-lineman",
+        "name": "High Elf Lineman",
+        "max": 16,
+        "cost": 65000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 2,
+          "pa": 3,
+          "av": 9
+        },
+        "startingSkills": [],
+        "primary": ["agility", "general"],
+        "secondary": ["strength"]
+      },
+      {
+        "key": "phoenix-warrior",
+        "name": "Phoenix Warrior",
+        "max": 2,
+        "cost": 90000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 2,
+          "pa": 2,
+          "av": 9
+        },
+        "startingSkills": ["cloud-burster", "pass", "safe-pass"],
+        "primary": ["agility", "general", "passing"],
+        "secondary": ["strength"]
+      },
+      {
+        "key": "dragon-prince",
+        "name": "Dragon Prince",
+        "max": 2,
+        "cost": 110000,
+        "characteristics": {
+          "ma": 8,
+          "st": 3,
+          "ag": 2,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": ["block", "my-ball", "steady-footing"],
+        "primary": ["agility", "general"],
+        "secondary": ["strength"]
+      },
+      {
+        "key": "white-lion",
+        "name": "White Lion",
+        "max": 2,
+        "cost": 110000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 2,
+          "pa": 3,
+          "av": 9
+        },
+        "startingSkills": ["claws", "wrestle"],
+        "primary": ["agility", "general"],
+        "secondary": ["passing", "strength"]
+      }
+    ]
+  },
+  {
+    "key": "human",
+    "name": "Human",
+    "rerollCost": 50000,
+    "tier": 2,
+    "apothecary": true,
+    "specialRules": ["Team Captain"],
+    "positions": [
+      {
+        "key": "human-lineman",
+        "name": "Human Lineman",
+        "max": 16,
+        "cost": 50000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": [],
+        "primary": ["general"],
+        "secondary": ["agility", "devious", "strength"]
+      },
+      {
+        "key": "halfling-hopeful",
+        "name": "Halfling Hopeful",
+        "max": 3,
+        "cost": 30000,
+        "characteristics": {
+          "ma": 5,
+          "st": 2,
+          "ag": 3,
+          "pa": 4,
+          "av": 7
+        },
+        "startingSkills": ["dodge", "right-stuff", "stunty"],
+        "primary": ["agility"],
+        "secondary": ["devious", "general", "strength"]
+      },
+      {
+        "key": "human-catcher",
+        "name": "Human Catcher",
+        "max": 2,
+        "cost": 75000,
+        "characteristics": {
+          "ma": 8,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["catch", "dodge"],
+        "primary": ["agility", "general"],
+        "secondary": ["devious", "passing", "strength"]
+      },
+      {
+        "key": "human-thrower",
+        "name": "Human Thrower",
+        "max": 2,
+        "cost": 75000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 3,
+          "av": 9
+        },
+        "startingSkills": ["pass", "sure-hands"],
+        "primary": ["general", "passing"],
+        "secondary": ["agility", "devious", "strength"]
+      },
+      {
+        "key": "human-blitzer",
+        "name": "Human Blitzer",
+        "max": 2,
+        "cost": 85000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": ["block", "tackle"],
+        "primary": ["general", "strength"],
+        "secondary": ["agility", "devious"]
+      },
+      {
+        "key": "ogre",
+        "name": "Ogre",
+        "max": 1,
+        "cost": 140000,
+        "characteristics": {
+          "ma": 5,
+          "st": 5,
+          "ag": 4,
+          "pa": 5,
+          "av": 10
+        },
+        "startingSkills": [
+          "bone-head",
+          "loner",
+          "mighty-blow",
+          "thick-skull",
+          "throw-team-mate"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general", "mutation"]
+      }
+    ]
+  },
+  {
+    "key": "imperial-nobility",
+    "name": "Imperial Nobility",
+    "rerollCost": 60000,
+    "tier": 2,
+    "apothecary": true,
+    "specialRules": ["Old World Classic"],
+    "positions": [
+      {
+        "key": "imperial-retainer-lineman",
+        "name": "Imperial Retainer (Lineman)",
+        "max": 16,
+        "cost": 45000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["fend"],
+        "primary": ["general"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "imperial-thrower",
+        "name": "Imperial Thrower",
+        "max": 2,
+        "cost": 75000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 2,
+          "av": 9
+        },
+        "startingSkills": ["give-and-go", "pass", "pro"],
+        "primary": ["general", "passing"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "bodyguard-blocker",
+        "name": "Bodyguard (Blocker)",
+        "max": 4,
+        "cost": 85000,
+        "characteristics": {
+          "ma": 5,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": ["stand-firm", "wrestle"],
+        "primary": ["general", "strength"],
+        "secondary": ["agility"]
+      },
+      {
+        "key": "noble-blitzer",
+        "name": "Noble Blitzer",
+        "max": 2,
+        "cost": 90000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": ["block", "catch", "pro"],
+        "primary": ["agility", "general"],
+        "secondary": ["passing", "strength"]
+      },
+      {
+        "key": "ogre",
+        "name": "Ogre",
+        "max": 1,
+        "cost": 140000,
+        "characteristics": {
+          "ma": 5,
+          "st": 5,
+          "ag": 4,
+          "pa": 5,
+          "av": 10
+        },
+        "startingSkills": [
+          "bone-head",
+          "loner",
+          "mighty-blow",
+          "thick-skull",
+          "throw-team-mate"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general", "mutation"]
+      }
+    ]
+  },
+  {
+    "key": "khorne",
+    "name": "Khorne",
+    "rerollCost": 60000,
+    "tier": 3,
+    "apothecary": true,
+    "specialRules": ["Favoured of Khorne", "Brawlin' Brutes"],
+    "positions": [
+      {
+        "key": "bloodborn-marauder",
+        "name": "Bloodborn Marauder",
+        "max": 16,
+        "cost": 50000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["frenzy"],
+        "primary": ["general", "mutation"],
+        "secondary": ["agility", "strength", "devious"]
+      },
+      {
+        "key": "khorngor",
+        "name": "Khorngor",
+        "max": 2,
+        "cost": 70000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": ["horns", "juggernaut", "jump-up", "thick-skull"],
+        "primary": ["general", "mutation", "strength"],
+        "secondary": ["agility", "passing", "devious"]
+      },
+      {
+        "key": "bloodseeker",
+        "name": "Bloodseeker",
+        "max": 4,
+        "cost": 105000,
+        "characteristics": {
+          "ma": 5,
+          "st": 4,
+          "ag": 4,
+          "pa": 6,
+          "av": 10
+        },
+        "startingSkills": ["frenzy"],
+        "primary": ["general", "mutation", "strength"],
+        "secondary": ["agility", "devious"]
+      },
+      {
+        "key": "bloodspawn",
+        "name": "Bloodspawn",
+        "max": 1,
+        "cost": 160000,
+        "characteristics": {
+          "ma": 5,
+          "st": 5,
+          "ag": 4,
+          "pa": 6,
+          "av": 9
+        },
+        "startingSkills": [
+          "claws",
+          "frenzy",
+          "loner",
+          "mighty-blow",
+          "unchannelled-fury"
+        ],
+        "primary": ["mutation", "strength"],
+        "secondary": ["agility", "general"]
+      }
+    ]
+  },
+  {
+    "key": "lizardmen",
+    "name": "Lizardmen",
+    "rerollCost": 70000,
+    "tier": 1,
+    "apothecary": true,
+    "specialRules": ["Lustrian Superleague"],
+    "positions": [
+      {
+        "key": "skink-lineman",
+        "name": "Skink Lineman",
+        "max": 16,
+        "cost": 60000,
+        "characteristics": {
+          "ma": 8,
+          "st": 2,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["dodge", "stunty"],
+        "primary": ["agility"],
+        "secondary": ["general", "passing", "strength", "devious"]
+      },
+      {
+        "key": "chameleon-skink",
+        "name": "Chameleon Skink",
+        "max": 2,
+        "cost": 70000,
+        "characteristics": {
+          "ma": 7,
+          "st": 2,
+          "ag": 3,
+          "pa": 3,
+          "av": 8
+        },
+        "startingSkills": ["dodge", "on-the-ball", "shadowing", "stunty"],
+        "primary": ["agility", "passing"],
+        "secondary": ["general", "strength", "devious"]
+      },
+      {
+        "key": "saurus-blocker",
+        "name": "Saurus Blocker",
+        "max": 6,
+        "cost": 90000,
+        "characteristics": {
+          "ma": 6,
+          "st": 4,
+          "ag": 5,
+          "pa": 6,
+          "av": 10
+        },
+        "startingSkills": ["juggernaut", "unsteady"],
+        "primary": ["general", "strength"],
+        "secondary": ["agility"]
+      },
+      {
+        "key": "kroxigor",
+        "name": "Kroxigor",
+        "max": 1,
+        "cost": 140000,
+        "characteristics": {
+          "ma": 6,
+          "st": 5,
+          "ag": 5,
+          "pa": 6,
+          "av": 10
+        },
+        "startingSkills": [
+          "bone-head",
+          "loner",
+          "mighty-blow",
+          "prehensile-tail",
+          "thick-skull"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general"]
+      }
+    ]
+  },
+  {
+    "key": "necromantic-horror",
+    "name": "Necromantic Horror",
+    "rerollCost": 70000,
+    "tier": 2,
+    "apothecary": false,
+    "specialRules": ["Masters of Undeath"],
+    "positions": [
+      {
+        "key": "zombie-lineman",
+        "name": "Zombie Lineman",
+        "max": 16,
+        "cost": 40000,
+        "characteristics": {
+          "ma": 4,
+          "st": 3,
+          "ag": 4,
+          "pa": 6,
+          "av": 9
+        },
+        "startingSkills": ["eye-gouge", "regeneration", "unsteady"],
+        "primary": ["devious"],
+        "secondary": ["general", "agility", "strength"]
+      },
+      {
+        "key": "ghoul-runner",
+        "name": "Ghoul Runner",
+        "max": 2,
+        "cost": 75000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 3,
+          "pa": 3,
+          "av": 8
+        },
+        "startingSkills": ["dodge", "regeneration"],
+        "primary": ["agility"],
+        "secondary": ["general", "devious", "passing", "strength"]
+      },
+      {
+        "key": "wraith",
+        "name": "Wraith",
+        "max": 2,
+        "cost": 85000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": null,
+          "av": 9
+        },
+        "startingSkills": [
+          "block",
+          "foul-appearance",
+          "no-ball",
+          "regeneration",
+          "sidestep"
+        ],
+        "primary": ["general"],
+        "secondary": ["strength", "agility", "devious"]
+      },
+      {
+        "key": "flesh-golem",
+        "name": "Flesh Golem",
+        "max": 2,
+        "cost": 110000,
+        "characteristics": {
+          "ma": 4,
+          "st": 4,
+          "ag": 4,
+          "pa": 6,
+          "av": 10
+        },
+        "startingSkills": [
+          "regeneration",
+          "stand-firm",
+          "thick-skull",
+          "unsteady"
+        ],
+        "primary": ["general"],
+        "secondary": ["strength", "agility", "devious"]
+      },
+      {
+        "key": "werewolf",
+        "name": "Werewolf",
+        "max": 2,
+        "cost": 120000,
+        "characteristics": {
+          "ma": 8,
+          "st": 3,
+          "ag": 3,
+          "pa": 3,
+          "av": 9
+        },
+        "startingSkills": ["claws", "frenzy", "regeneration"],
+        "primary": ["agility"],
+        "secondary": ["general", "devious", "passing", "strength"]
+      }
+    ]
+  },
+  {
+    "key": "norse",
+    "name": "Norse",
+    "rerollCost": 60000,
+    "tier": 1,
+    "apothecary": true,
+    "specialRules": ["Favoured of Khorne"],
+    "positions": [
+      {
+        "key": "norse-raider-lineman",
+        "name": "Norse Raider (Lineman)",
+        "max": 16,
+        "cost": 50000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["block", "drunkard", "thick-skull", "unsteady"],
+        "primary": ["general"],
+        "secondary": ["agility", "passing", "strength"]
+      },
+      {
+        "key": "beer-boar",
+        "name": "Beer Boar",
+        "max": 2,
+        "cost": 20000,
+        "characteristics": {
+          "ma": 5,
+          "st": 1,
+          "ag": 3,
+          "pa": null,
+          "av": 6
+        },
+        "startingSkills": [
+          "dodge",
+          "no-ball",
+          "pick-me-up",
+          "stunty",
+          "titchy"
+        ],
+        "primary": ["agility"],
+        "secondary": []
+      },
+      {
+        "key": "norse-berserker-blitzer",
+        "name": "Norse Berserker (Blitzer)",
+        "max": 2,
+        "cost": 90000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 5,
+          "av": 8
+        },
+        "startingSkills": ["block", "frenzy", "jump-up"],
+        "primary": ["general", "strength"],
+        "secondary": ["agility", "passing"]
+      },
+      {
+        "key": "valkyrie",
+        "name": "Valkyrie",
+        "max": 2,
+        "cost": 95000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 3,
+          "pa": 3,
+          "av": 8
+        },
+        "startingSkills": ["catch", "dauntless", "pass", "strip-ball"],
+        "primary": ["agility", "general", "passing"],
+        "secondary": ["strength"]
+      },
+      {
+        "key": "ulfwerener",
+        "name": "Ulfwerener",
+        "max": 2,
+        "cost": 105000,
+        "characteristics": {
+          "ma": 6,
+          "st": 4,
+          "ag": 4,
+          "pa": 6,
+          "av": 9
+        },
+        "startingSkills": ["frenzy", "unsteady"],
+        "primary": ["general", "strength"],
+        "secondary": ["agility"]
+      },
+      {
+        "key": "yhetee",
+        "name": "Yhetee",
+        "max": 1,
+        "cost": 140000,
+        "characteristics": {
+          "ma": 5,
+          "st": 5,
+          "ag": 4,
+          "pa": 6,
+          "av": 9
+        },
+        "startingSkills": [
+          "claws",
+          "disturbing-presence",
+          "frenzy",
+          "loner",
+          "unchannelled-fury"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general"]
+      }
+    ]
+  },
+  {
+    "key": "nurgle",
+    "name": "Nurgle",
+    "rerollCost": 60000,
+    "tier": 3,
+    "apothecary": true,
+    "specialRules": ["Chaos Clash", "Favoured of Nurgle", "Brawlin' Brutes"],
+    "positions": [
+      {
+        "key": "rotter",
+        "name": "Rotter",
+        "max": 16,
+        "cost": 40000,
+        "characteristics": {
+          "ma": 5,
+          "st": 3,
+          "ag": 4,
+          "pa": 6,
+          "av": 9
+        },
+        "startingSkills": ["decay", "plague-ridden"],
+        "primary": ["general", "mutation", "devious"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "pestigor",
+        "name": "Pestigor",
+        "max": 2,
+        "cost": 70000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": [
+          "horns",
+          "plague-ridden",
+          "regeneration",
+          "steady-footing",
+          "thick-skull"
+        ],
+        "primary": ["general", "mutation", "strength"],
+        "secondary": ["agility", "passing", "devious"]
+      },
+      {
+        "key": "bloater",
+        "name": "Bloater",
+        "max": 4,
+        "cost": 110000,
+        "characteristics": {
+          "ma": 4,
+          "st": 4,
+          "ag": 4,
+          "pa": 6,
+          "av": 10
+        },
+        "startingSkills": [
+          "disturbing-presence",
+          "foul-appearance",
+          "plague-ridden",
+          "regeneration",
+          "stand-firm",
+          "unsteady"
+        ],
+        "primary": ["general", "mutation", "strength"],
+        "secondary": ["agility", "devious"]
+      },
+      {
+        "key": "rotspawn",
+        "name": "Rotspawn",
+        "max": 1,
+        "cost": 140000,
+        "characteristics": {
+          "ma": 4,
+          "st": 5,
+          "ag": 5,
+          "pa": 6,
+          "av": 10
+        },
+        "startingSkills": [
+          "disturbing-presence",
+          "foul-appearance",
+          "loner",
+          "mighty-blow",
+          "pick-me-up",
+          "plague-ridden",
+          "really-stupid",
+          "regeneration",
+          "tentacles"
+        ],
+        "primary": ["strength"],
+        "secondary": ["general", "mutation", "devious"]
+      }
+    ]
+  },
+  {
+    "key": "ogre",
+    "name": "Ogre",
+    "rerollCost": 70000,
+    "tier": 4,
+    "apothecary": true,
+    "specialRules": ["Brawlin' Brutes", "Low Cost Linemen"],
+    "positions": [
+      {
+        "key": "gnoblar-lineman",
+        "name": "Gnoblar Lineman",
+        "max": 16,
+        "cost": 15000,
+        "characteristics": {
+          "ma": 5,
+          "st": 1,
+          "ag": 3,
+          "pa": 4,
+          "av": 6
+        },
+        "startingSkills": [
+          "dodge",
+          "right-stuff",
+          "sidestep",
+          "stunty",
+          "titchy"
+        ],
+        "primary": ["agility", "devious"],
+        "secondary": ["general"]
+      },
+      {
+        "key": "ogre-blocker",
+        "name": "Ogre Blocker",
+        "max": 5,
+        "cost": 140000,
+        "characteristics": {
+          "ma": 5,
+          "st": 5,
+          "ag": 4,
+          "pa": 5,
+          "av": 10
+        },
+        "startingSkills": [
+          "bone-head",
+          "mighty-blow",
+          "thick-skull",
+          "throw-team-mate"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "devious", "general", "passing"]
+      },
+      {
+        "key": "ogre-runt-punter",
+        "name": "Ogre Runt Punter",
+        "max": 1,
+        "cost": 145000,
+        "characteristics": {
+          "ma": 5,
+          "st": 5,
+          "ag": 4,
+          "pa": 4,
+          "av": 10
+        },
+        "startingSkills": [
+          "bone-head",
+          "kick-team-mate",
+          "mighty-blow",
+          "thick-skull"
+        ],
+        "primary": ["passing", "strength"],
+        "secondary": ["agility", "devious", "general"]
+      }
+    ]
+  },
+  {
+    "key": "old-world-alliance",
+    "name": "Old World Alliance",
+    "rerollCost": 70000,
+    "tier": 1,
+    "apothecary": true,
+    "specialRules": ["Old World Classic"],
+    "positions": [
+      {
+        "key": "human-lineman",
+        "name": "Human Lineman",
+        "max": 16,
+        "cost": 50000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": [],
+        "primary": ["general"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "halfling-hopeful",
+        "name": "Halfling Hopeful",
+        "max": 5,
+        "cost": 30000,
+        "characteristics": {
+          "ma": 5,
+          "st": 2,
+          "ag": 3,
+          "pa": 4,
+          "av": 7
+        },
+        "startingSkills": ["dodge", "right-stuff", "stunty"],
+        "primary": ["agility"],
+        "secondary": ["general", "strength"]
+      },
+      {
+        "key": "human-catcher",
+        "name": "Human Catcher",
+        "max": 1,
+        "cost": 75000,
+        "characteristics": {
+          "ma": 8,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["catch", "dodge"],
+        "primary": ["agility", "general"],
+        "secondary": ["passing", "strength"]
+      },
+      {
+        "key": "dwarf-lineman",
+        "name": "Dwarf Lineman",
+        "max": 3,
+        "cost": 70000,
+        "characteristics": {
+          "ma": 4,
+          "st": 3,
+          "ag": 4,
+          "pa": 5,
+          "av": 10
+        },
+        "startingSkills": ["block", "defensive", "thick-skull"],
+        "primary": ["general", "devious"],
+        "secondary": ["strength"]
+      },
+      {
+        "key": "human-thrower",
+        "name": "Human Thrower",
+        "max": 1,
+        "cost": 75000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 3,
+          "av": 9
+        },
+        "startingSkills": ["pass", "sure-hands"],
+        "primary": ["general", "passing"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "dwarf-runner",
+        "name": "Dwarf Runner",
+        "max": 1,
+        "cost": 80000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": ["sprint", "sure-hands", "thick-skull"],
+        "primary": ["general", "passing"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "human-blitzer",
+        "name": "Human Blitzer",
+        "max": 1,
+        "cost": 85000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": ["block", "tackle"],
+        "primary": ["general", "strength"],
+        "secondary": ["agility"]
+      },
+      {
+        "key": "dwarf-blitzer",
+        "name": "Dwarf Blitzer",
+        "max": 1,
+        "cost": 100000,
+        "characteristics": {
+          "ma": 5,
+          "st": 3,
+          "ag": 4,
+          "pa": 4,
+          "av": 10
+        },
+        "startingSkills": ["block", "diving-tackle", "tackle", "thick-skull"],
+        "primary": ["general", "strength"],
+        "secondary": ["passing"]
+      },
+      {
+        "key": "troll-slayer",
+        "name": "Troll Slayer",
+        "max": 1,
+        "cost": 95000,
+        "characteristics": {
+          "ma": 5,
+          "st": 3,
+          "ag": 4,
+          "pa": 5,
+          "av": 9
+        },
+        "startingSkills": [
+          "block",
+          "dauntless",
+          "frenzy",
+          "hatred",
+          "thick-skull"
+        ],
+        "primary": ["general", "strength"],
+        "secondary": ["agility"]
+      },
+      {
+        "key": "ogre",
+        "name": "Ogre",
+        "max": 1,
+        "cost": 140000,
+        "characteristics": {
+          "ma": 5,
+          "st": 5,
+          "ag": 4,
+          "pa": 5,
+          "av": 10
+        },
+        "startingSkills": [
+          "bone-head",
+          "loner",
+          "mighty-blow",
+          "thick-skull",
+          "throw-team-mate"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general", "mutation"]
+      },
+      {
+        "key": "altern-forest-treeman",
+        "name": "Altern Forest Treeman",
+        "max": 1,
+        "cost": 120000,
+        "characteristics": {
+          "ma": 2,
+          "st": 6,
+          "ag": 5,
+          "pa": 5,
+          "av": 11
+        },
+        "startingSkills": [
+          "loner",
+          "mighty-blow",
+          "stand-firm",
+          "strong-arm",
+          "take-root",
+          "thick-skull",
+          "throw-team-mate",
+          "timmm-ber"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general", "passing"]
+      }
+    ]
+  },
+  {
+    "key": "orc",
+    "name": "Orc",
+    "rerollCost": 60000,
+    "tier": 2,
+    "apothecary": true,
+    "specialRules": ["Brawlin' Brutes", "Team Captain"],
+    "positions": [
+      {
+        "key": "orc-lineman",
+        "name": "Orc Lineman",
+        "max": 16,
+        "cost": 50000,
+        "characteristics": {
+          "ma": 5,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 10
+        },
+        "startingSkills": [],
+        "primary": ["general", "strength"],
+        "secondary": ["agility", "devious"]
+      },
+      {
+        "key": "goblin-lineman",
+        "name": "Goblin Lineman",
+        "max": 4,
+        "cost": 40000,
+        "characteristics": {
+          "ma": 6,
+          "st": 2,
+          "ag": 3,
+          "pa": 3,
+          "av": 8
+        },
+        "startingSkills": ["dodge", "right-stuff", "stunty"],
+        "primary": ["agility", "devious"],
+        "secondary": ["general", "passing", "strength"]
+      },
+      {
+        "key": "orc-thrower",
+        "name": "Orc Thrower",
+        "max": 2,
+        "cost": 75000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 3,
+          "av": 9
+        },
+        "startingSkills": ["pass", "sure-hands"],
+        "primary": ["general", "passing"],
+        "secondary": ["agility", "strength", "devious"]
+      },
+      {
+        "key": "orc-blitzer",
+        "name": "Orc Blitzer",
+        "max": 2,
+        "cost": 85000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 10
+        },
+        "startingSkills": ["block", "break-tackle"],
+        "primary": ["general", "strength"],
+        "secondary": ["agility", "devious"]
+      },
+      {
+        "key": "big-un-blocker",
+        "name": "Big Un Blocker",
+        "max": 2,
+        "cost": 95000,
+        "characteristics": {
+          "ma": 5,
+          "st": 4,
+          "ag": 4,
+          "pa": 6,
+          "av": 10
+        },
+        "startingSkills": ["mighty-blow", "taunt", "thick-skull", "unsteady"],
+        "primary": ["general", "strength"],
+        "secondary": ["agility", "devious"]
+      },
+      {
+        "key": "troll",
+        "name": "Troll",
+        "max": 1,
+        "cost": 115000,
+        "characteristics": {
+          "ma": 4,
+          "st": 5,
+          "ag": 5,
+          "pa": 5,
+          "av": 10
+        },
+        "startingSkills": [
+          "always-hungry",
+          "loner",
+          "mighty-blow",
+          "projectile-vomit",
+          "really-stupid",
+          "regeneration",
+          "throw-team-mate"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general", "passing"]
+      }
+    ]
+  },
+  {
+    "key": "shambling-undead",
+    "name": "Shambling Undead",
+    "rerollCost": 70000,
+    "tier": 2,
+    "apothecary": false,
+    "specialRules": ["Masters of Undeath"],
+    "positions": [
+      {
+        "key": "skeleton-lineman",
+        "name": "Skeleton Lineman",
+        "max": 16,
+        "cost": 40000,
+        "characteristics": {
+          "ma": 5,
+          "st": 3,
+          "ag": 4,
+          "pa": 6,
+          "av": 8
+        },
+        "startingSkills": ["regeneration", "thick-skull"],
+        "primary": ["general"],
+        "secondary": ["agility", "devious", "strength"]
+      },
+      {
+        "key": "zombie-lineman",
+        "name": "Zombie Lineman",
+        "max": 16,
+        "cost": 40000,
+        "characteristics": {
+          "ma": 4,
+          "st": 3,
+          "ag": 4,
+          "pa": 6,
+          "av": 9
+        },
+        "startingSkills": ["eye-gouge", "regeneration", "unsteady"],
+        "primary": ["devious", "general"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "ghoul-runner",
+        "name": "Ghoul Runner",
+        "max": 2,
+        "cost": 75000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 3,
+          "pa": 3,
+          "av": 8
+        },
+        "startingSkills": ["dodge", "regeneration"],
+        "primary": ["agility", "general"],
+        "secondary": ["devious", "passing", "strength"]
+      },
+      {
+        "key": "wight-blitzer",
+        "name": "Wight Blitzer",
+        "max": 2,
+        "cost": 95000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 5,
+          "av": 9
+        },
+        "startingSkills": ["block", "regeneration", "tackle", "thick-skull"],
+        "primary": ["general", "strength"],
+        "secondary": ["agility", "devious"]
+      },
+      {
+        "key": "mummy",
+        "name": "Mummy",
+        "max": 2,
+        "cost": 125000,
+        "characteristics": {
+          "ma": 3,
+          "st": 5,
+          "ag": 5,
+          "pa": 6,
+          "av": 10
+        },
+        "startingSkills": ["mighty-blow", "regeneration"],
+        "primary": ["strength"],
+        "secondary": ["agility", "general"]
+      }
+    ]
+  },
+  {
+    "key": "skaven",
+    "name": "Skaven",
+    "rerollCost": 50000,
+    "tier": 2,
+    "apothecary": true,
+    "specialRules": ["Underworld Challenge"],
+    "positions": [
+      {
+        "key": "skaven-clanrat",
+        "name": "Skaven Clanrat",
+        "max": 16,
+        "cost": 50000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": [],
+        "primary": ["general", "devious"],
+        "secondary": ["agility", "mutation", "strength"]
+      },
+      {
+        "key": "skaven-thrower",
+        "name": "Skaven Thrower",
+        "max": 2,
+        "cost": 80000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 3,
+          "pa": 2,
+          "av": 8
+        },
+        "startingSkills": ["pass", "sure-hands"],
+        "primary": ["general", "passing"],
+        "secondary": ["agility", "devious", "mutation", "strength"]
+      },
+      {
+        "key": "gutter-runner",
+        "name": "Gutter Runner",
+        "max": 2,
+        "cost": 85000,
+        "characteristics": {
+          "ma": 9,
+          "st": 2,
+          "ag": 2,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["dodge", "stab"],
+        "primary": ["agility", "general", "devious"],
+        "secondary": ["mutation", "strength"]
+      },
+      {
+        "key": "skaven-blitzer",
+        "name": "Skaven Blitzer",
+        "max": 2,
+        "cost": 90000,
+        "characteristics": {
+          "ma": 8,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": ["block", "strip-ball"],
+        "primary": ["general", "strength"],
+        "secondary": ["agility", "devious", "mutation"]
+      },
+      {
+        "key": "rat-ogre",
+        "name": "Rat Ogre",
+        "max": 1,
+        "cost": 150000,
+        "characteristics": {
+          "ma": 6,
+          "st": 5,
+          "ag": 4,
+          "pa": 6,
+          "av": 9
+        },
+        "startingSkills": [
+          "animal-savagery",
+          "frenzy",
+          "loner",
+          "mighty-blow",
+          "prehensile-tail"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general", "mutation"]
+      }
+    ]
+  },
+  {
+    "key": "snotling",
+    "name": "Snotling",
+    "rerollCost": 70000,
+    "tier": 4,
+    "apothecary": true,
+    "specialRules": ["Bribery and Corruption", "Low Cost Linemen", "Swarming"],
+    "positions": [
+      {
+        "key": "snotling-lineman",
+        "name": "Snotling Lineman",
+        "max": 16,
+        "cost": 15000,
+        "characteristics": {
+          "ma": 5,
+          "st": 1,
+          "ag": 3,
+          "pa": 4,
+          "av": 6
+        },
+        "startingSkills": [
+          "dodge",
+          "insignificant",
+          "right-stuff",
+          "sidestep",
+          "stunty",
+          "titchy"
+        ],
+        "primary": ["agility", "devious"],
+        "secondary": ["general"]
+      },
+      {
+        "key": "fun-hoppa",
+        "name": "Fun-hoppa",
+        "max": 2,
+        "cost": 20000,
+        "characteristics": {
+          "ma": 6,
+          "st": 1,
+          "ag": 3,
+          "pa": 4,
+          "av": 6
+        },
+        "startingSkills": [
+          "dodge",
+          "pogo",
+          "right-stuff",
+          "sidestep",
+          "stunty"
+        ],
+        "primary": ["agility", "devious"],
+        "secondary": ["general"]
+      },
+      {
+        "key": "stilty-runna",
+        "name": "Stilty Runna",
+        "max": 2,
+        "cost": 20000,
+        "characteristics": {
+          "ma": 6,
+          "st": 1,
+          "ag": 3,
+          "pa": 4,
+          "av": 6
+        },
+        "startingSkills": [
+          "dodge",
+          "right-stuff",
+          "sidestep",
+          "sprint",
+          "stunty"
+        ],
+        "primary": ["agility", "devious"],
+        "secondary": ["general"]
+      },
+      {
+        "key": "fungus-flinga",
+        "name": "Fungus Flinga",
+        "max": 2,
+        "cost": 30000,
+        "characteristics": {
+          "ma": 5,
+          "st": 1,
+          "ag": 3,
+          "pa": 4,
+          "av": 6
+        },
+        "startingSkills": [
+          "bombardier",
+          "dodge",
+          "right-stuff",
+          "secret-weapon",
+          "sidestep",
+          "stunty",
+          "titchy"
+        ],
+        "primary": ["agility", "devious", "passing"],
+        "secondary": ["general"]
+      },
+      {
+        "key": "pump-wagon",
+        "name": "Pump Wagon",
+        "max": 2,
+        "cost": 100000,
+        "characteristics": {
+          "ma": 5,
+          "st": 5,
+          "ag": 5,
+          "pa": 6,
+          "av": 9
+        },
+        "startingSkills": [
+          "dirty-player",
+          "juggernaut",
+          "mighty-blow",
+          "really-stupid",
+          "stand-firm"
+        ],
+        "primary": ["devious", "strength"],
+        "secondary": ["agility", "general"]
+      },
+      {
+        "key": "trained-troll",
+        "name": "Trained Troll",
+        "max": 2,
+        "cost": 115000,
+        "characteristics": {
+          "ma": 4,
+          "st": 5,
+          "ag": 5,
+          "pa": 5,
+          "av": 10
+        },
+        "startingSkills": [
+          "always-hungry",
+          "mighty-blow",
+          "projectile-vomit",
+          "really-stupid",
+          "regeneration",
+          "throw-team-mate"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general", "passing"]
+      }
+    ]
+  },
+  {
+    "key": "tomb-kings",
+    "name": "Tomb Kings",
+    "rerollCost": 60000,
+    "tier": 2,
+    "apothecary": false,
+    "specialRules": ["Masters of Undeath"],
+    "positions": [
+      {
+        "key": "skeleton-lineman",
+        "name": "Skeleton Lineman",
+        "max": 16,
+        "cost": 40000,
+        "characteristics": {
+          "ma": 5,
+          "st": 3,
+          "ag": 4,
+          "pa": 6,
+          "av": 8
+        },
+        "startingSkills": ["regeneration", "thick-skull"],
+        "primary": ["general"],
+        "secondary": ["agility", "devious", "strength"]
+      },
+      {
+        "key": "tomb-kings-thrower",
+        "name": "Tomb Kings Thrower",
+        "max": 2,
+        "cost": 65000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 4,
+          "pa": 3,
+          "av": 9
+        },
+        "startingSkills": ["pass", "regeneration", "sure-hands", "thick-skull"],
+        "primary": ["general", "passing"],
+        "secondary": ["agility", "devious", "strength"]
+      },
+      {
+        "key": "tomb-kings-blitzer",
+        "name": "Tomb Kings Blitzer",
+        "max": 2,
+        "cost": 85000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 4,
+          "pa": 5,
+          "av": 9
+        },
+        "startingSkills": ["block", "regeneration", "thick-skull"],
+        "primary": ["general", "strength"],
+        "secondary": ["agility", "devious"]
+      },
+      {
+        "key": "tomb-guardian",
+        "name": "Tomb Guardian",
+        "max": 4,
+        "cost": 115000,
+        "characteristics": {
+          "ma": 4,
+          "st": 5,
+          "ag": 5,
+          "pa": 6,
+          "av": 10
+        },
+        "startingSkills": ["brawler", "decay", "regeneration"],
+        "primary": ["strength"],
+        "secondary": ["agility", "general"]
+      }
+    ]
+  },
+  {
+    "key": "underworld-denizens",
+    "name": "Underworld Denizens",
+    "rerollCost": 70000,
+    "tier": 1,
+    "apothecary": true,
+    "specialRules": ["Bribery and Corruption"],
+    "positions": [
+      {
+        "key": "goblin-lineman",
+        "name": "Goblin Lineman",
+        "max": 16,
+        "cost": 40000,
+        "characteristics": {
+          "ma": 6,
+          "st": 2,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["dodge", "right-stuff", "stunty"],
+        "primary": ["agility", "devious", "mutation"],
+        "secondary": ["general", "passing", "strength"]
+      },
+      {
+        "key": "snotling-lineman",
+        "name": "Snotling Lineman",
+        "max": 6,
+        "cost": 15000,
+        "characteristics": {
+          "ma": 5,
+          "st": 1,
+          "ag": 3,
+          "pa": 4,
+          "av": 6
+        },
+        "startingSkills": [
+          "dodge",
+          "insignificant",
+          "right-stuff",
+          "sidestep",
+          "stunty",
+          "titchy"
+        ],
+        "primary": ["agility", "devious", "mutation"],
+        "secondary": ["general"]
+      },
+      {
+        "key": "skaven-clanrat",
+        "name": "Skaven Clanrat",
+        "max": 3,
+        "cost": 50000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["animosity"],
+        "primary": ["general", "mutation", "devious"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "skaven-thrower",
+        "name": "Skaven Thrower",
+        "max": 1,
+        "cost": 80000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 3,
+          "pa": 2,
+          "av": 8
+        },
+        "startingSkills": ["animosity", "pass", "sure-hands"],
+        "primary": ["general", "mutation", "passing"],
+        "secondary": ["agility", "devious", "strength"]
+      },
+      {
+        "key": "gutter-runner",
+        "name": "Gutter Runner",
+        "max": 1,
+        "cost": 85000,
+        "characteristics": {
+          "ma": 9,
+          "st": 2,
+          "ag": 2,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": ["animosity", "dodge", "stab"],
+        "primary": ["agility", "general", "mutation", "devious"],
+        "secondary": ["strength"]
+      },
+      {
+        "key": "skaven-blitzer",
+        "name": "Skaven Blitzer",
+        "max": 1,
+        "cost": 90000,
+        "characteristics": {
+          "ma": 8,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": ["animosity", "block", "strip-ball"],
+        "primary": ["general", "mutation", "strength"],
+        "secondary": ["agility", "passing"]
+      },
+      {
+        "key": "troll",
+        "name": "Troll",
+        "max": 1,
+        "cost": 115000,
+        "characteristics": {
+          "ma": 4,
+          "st": 5,
+          "ag": 5,
+          "pa": 5,
+          "av": 10
+        },
+        "startingSkills": [
+          "always-hungry",
+          "loner",
+          "mighty-blow",
+          "projectile-vomit",
+          "really-stupid",
+          "regeneration",
+          "throw-team-mate"
+        ],
+        "primary": ["mutation", "strength"],
+        "secondary": ["agility", "general", "passing"]
+      },
+      {
+        "key": "rat-ogre",
+        "name": "Rat Ogre",
+        "max": 1,
+        "cost": 150000,
+        "characteristics": {
+          "ma": 6,
+          "st": 5,
+          "ag": 4,
+          "pa": 6,
+          "av": 9
+        },
+        "startingSkills": [
+          "animal-savagery",
+          "frenzy",
+          "loner",
+          "mighty-blow",
+          "prehensile-tail"
+        ],
+        "primary": ["mutation", "strength"],
+        "secondary": ["agility", "general"]
+      }
+    ]
+  },
+  {
+    "key": "vampire",
+    "name": "Vampire",
+    "rerollCost": 60000,
+    "tier": 2,
+    "apothecary": true,
+    "specialRules": ["Masters of Undeath"],
+    "positions": [
+      {
+        "key": "thrall-lineman",
+        "name": "Thrall Lineman",
+        "max": 16,
+        "cost": 40000,
+        "characteristics": {
+          "ma": 6,
+          "st": 3,
+          "ag": 3,
+          "pa": 4,
+          "av": 8
+        },
+        "startingSkills": [],
+        "primary": ["general"],
+        "secondary": ["agility", "strength"]
+      },
+      {
+        "key": "vampire-runner",
+        "name": "Vampire Runner",
+        "max": 2,
+        "cost": 100000,
+        "characteristics": {
+          "ma": 8,
+          "st": 3,
+          "ag": 2,
+          "pa": 3,
+          "av": 8
+        },
+        "startingSkills": ["bloodlust", "hypnotic-gaze", "regeneration"],
+        "primary": ["agility", "general"],
+        "secondary": ["passing", "strength"]
+      },
+      {
+        "key": "vampire-thrower",
+        "name": "Vampire Thrower",
+        "max": 2,
+        "cost": 110000,
+        "characteristics": {
+          "ma": 6,
+          "st": 4,
+          "ag": 2,
+          "pa": 2,
+          "av": 9
+        },
+        "startingSkills": [
+          "bloodlust",
+          "hypnotic-gaze",
+          "pass",
+          "regeneration"
+        ],
+        "primary": ["agility", "general", "passing"],
+        "secondary": ["strength"]
+      },
+      {
+        "key": "vampire-blitzer",
+        "name": "Vampire Blitzer",
+        "max": 2,
+        "cost": 110000,
+        "characteristics": {
+          "ma": 6,
+          "st": 4,
+          "ag": 2,
+          "pa": 4,
+          "av": 9
+        },
+        "startingSkills": [
+          "bloodlust",
+          "hypnotic-gaze",
+          "juggernaut",
+          "regeneration"
+        ],
+        "primary": ["agility", "general", "strength"],
+        "secondary": []
+      },
+      {
+        "key": "vargheist",
+        "name": "Vargheist",
+        "max": 1,
+        "cost": 150000,
+        "characteristics": {
+          "ma": 5,
+          "st": 5,
+          "ag": 4,
+          "pa": 6,
+          "av": 10
+        },
+        "startingSkills": [
+          "bloodlust",
+          "claws",
+          "frenzy",
+          "loner",
+          "regeneration"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general"]
+      }
+    ]
+  },
+  {
+    "key": "wood-elf",
+    "name": "Wood Elf",
+    "rerollCost": 50000,
+    "tier": 1,
+    "apothecary": true,
+    "specialRules": ["Elven Kingdoms League", "Woodland League"],
+    "positions": [
+      {
+        "key": "wood-elf-lineman",
+        "name": "Wood Elf Lineman",
+        "max": 16,
+        "cost": 65000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 2,
+          "pa": 3,
+          "av": 8
+        },
+        "startingSkills": [],
+        "primary": ["agility", "general"],
+        "secondary": ["strength"]
+      },
+      {
+        "key": "wood-elf-thrower",
+        "name": "Wood Elf Thrower",
+        "max": 2,
+        "cost": 85000,
+        "characteristics": {
+          "ma": 7,
+          "st": 3,
+          "ag": 2,
+          "pa": 2,
+          "av": 8
+        },
+        "startingSkills": ["pass", "safe-pair-of-hands"],
+        "primary": ["agility", "general", "passing"],
+        "secondary": ["strength"]
+      },
+      {
+        "key": "wood-elf-catcher",
+        "name": "Wood Elf Catcher",
+        "max": 2,
+        "cost": 90000,
+        "characteristics": {
+          "ma": 8,
+          "st": 2,
+          "ag": 2,
+          "pa": 3,
+          "av": 8
+        },
+        "startingSkills": ["catch", "dodge", "sprint"],
+        "primary": ["agility", "general"],
+        "secondary": ["passing", "strength"]
+      },
+      {
+        "key": "wardancer",
+        "name": "Wardancer",
+        "max": 2,
+        "cost": 130000,
+        "characteristics": {
+          "ma": 8,
+          "st": 3,
+          "ag": 2,
+          "pa": 3,
+          "av": 8
+        },
+        "startingSkills": ["block", "dodge", "leap"],
+        "primary": ["agility", "general"],
+        "secondary": ["passing", "strength"]
+      },
+      {
+        "key": "loren-forest-treeman",
+        "name": "Loren Forest Treeman",
+        "max": 1,
+        "cost": 120000,
+        "characteristics": {
+          "ma": 2,
+          "st": 6,
+          "ag": 5,
+          "pa": 5,
+          "av": 11
+        },
+        "startingSkills": [
+          "loner",
+          "mighty-blow",
+          "stand-firm",
+          "strong-arm",
+          "take-root",
+          "thick-skull",
+          "throw-team-mate"
+        ],
+        "primary": ["strength"],
+        "secondary": ["agility", "general"]
+      }
+    ]
+  }
+]
