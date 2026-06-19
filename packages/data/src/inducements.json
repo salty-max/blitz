@@ -1,0 +1,130 @@
+[
+  {
+    "key": "prayers-to-nuffle",
+    "name": "Prayers to Nuffle",
+    "cost": 10000,
+    "max": 3,
+    "effect": "Roll on the Prayers to Nuffle table for a random pre-game blessing.",
+    "restrictedTo": []
+  },
+  {
+    "key": "temp-agency-cheerleaders",
+    "name": "Temp Agency Cheerleaders",
+    "cost": 5000,
+    "max": 5,
+    "effect": "Hire one extra Cheerleader for this game.",
+    "restrictedTo": []
+  },
+  {
+    "key": "part-time-assistant-coaches",
+    "name": "Part-time Assistant Coaches",
+    "cost": 20000,
+    "max": 5,
+    "effect": "Hire one extra Assistant Coach for this game.",
+    "restrictedTo": []
+  },
+  {
+    "key": "team-mascot",
+    "name": "Team Mascot",
+    "cost": 25000,
+    "max": 1,
+    "effect": "Once per half, on a 4+, gain a one-use team re-roll.",
+    "restrictedTo": []
+  },
+  {
+    "key": "weather-mage",
+    "name": "Weather Mage",
+    "cost": 25000,
+    "max": 1,
+    "effect": "Once per game, re-roll the weather with a modifier of up to +2 / -2.",
+    "restrictedTo": []
+  },
+  {
+    "key": "bloodweiser-kegs",
+    "name": "Bloodweiser Kegs",
+    "cost": 50000,
+    "max": 2,
+    "effect": "+1 to your Knocked-out recovery rolls.",
+    "restrictedTo": []
+  },
+  {
+    "key": "bribes",
+    "name": "Bribes",
+    "cost": 100000,
+    "max": 3,
+    "effect": "Each bribe: on a 2+ a player is not sent off for a [[foul]] (and may keep playing). 50,000 gp and 0-6 for Bribery and Corruption teams.",
+    "restrictedTo": []
+  },
+  {
+    "key": "extra-team-training",
+    "name": "Extra Team Training",
+    "cost": 100000,
+    "max": 8,
+    "effect": "Gain one extra team re-roll for this game.",
+    "restrictedTo": []
+  },
+  {
+    "key": "wandering-apothecary",
+    "name": "Wandering Apothecary",
+    "cost": 100000,
+    "max": 2,
+    "effect": "Acts once per game as an extra Apothecary (teams that may use an Apothecary).",
+    "restrictedTo": []
+  },
+  {
+    "key": "mortuary-assistant",
+    "name": "Mortuary Assistant",
+    "cost": 100000,
+    "max": 1,
+    "effect": "Once per game, re-roll a failed [[regeneration]] roll.",
+    "restrictedTo": ["Masters of Undeath"]
+  },
+  {
+    "key": "plague-doctor",
+    "name": "Plague Doctor",
+    "cost": 100000,
+    "max": 1,
+    "effect": "Re-roll a failed [[regeneration]] roll, or act once as an Apothecary.",
+    "restrictedTo": ["Favoured of Nurgle"]
+  },
+  {
+    "key": "riotous-rookies",
+    "name": "Riotous Rookies",
+    "cost": 150000,
+    "max": 1,
+    "effect": "Field 2D3+1 extra Journeymen for this game.",
+    "restrictedTo": ["Low Cost Linemen"]
+  },
+  {
+    "key": "biased-referee",
+    "name": "Biased Referee",
+    "cost": 120000,
+    "max": 1,
+    "effect": "On a 5+ an opposing fouler is sent off; +1 to Argue the Call. 80,000 gp for Bribery and Corruption teams.",
+    "restrictedTo": []
+  },
+  {
+    "key": "halfling-master-chef",
+    "name": "Halfling Master Chef",
+    "cost": 300000,
+    "max": 1,
+    "effect": "Roll 3D6; for each 4+ you gain a team re-roll this game and the opponent loses one. 100,000 gp for Halfling teams.",
+    "restrictedTo": []
+  },
+  {
+    "key": "mercenary-players",
+    "name": "Mercenary Players",
+    "cost": 30000,
+    "max": 3,
+    "effect": "Hire any positional or lineman at +30,000 gp over their cost; they gain [[loner]] (4+).",
+    "restrictedTo": []
+  },
+  {
+    "key": "wizard",
+    "name": "Wizard",
+    "cost": 150000,
+    "max": 1,
+    "effect": "Once per game, cast Fireball or Zap (lightning bolt).",
+    "restrictedTo": []
+  }
+]
