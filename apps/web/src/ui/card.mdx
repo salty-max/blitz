@@ -1,0 +1,24 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks'
+
+import * as CardStories from './card.stories'
+
+<Meta of={CardStories} />
+
+# Card
+
+A bordered panel on the codex's `paper-2` surface. Pass `interactive` to turn it
+into a link target that inverts to ink on hover.
+
+<Canvas of={CardStories.Static} />
+
+## Props
+
+<Controls />
+
+## Interactive
+
+With `interactive` the card becomes a `group` that fills ink on hover. Give each
+text child its own `group-hover:` colour so it stays legible on the inverted
+background and fades in step with it.
+
+<Canvas of={CardStories.Interactive} />

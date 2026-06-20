@@ -16,7 +16,6 @@ const withDrawer: Decorator = (Story) => (
 const meta = {
   title: 'Composites/RefText',
   component: RefText,
-  tags: ['autodocs'],
   args: {
     children:
       'Must [[follow-up]] and throw a second block if the target was [[push-back|pushed back]].',

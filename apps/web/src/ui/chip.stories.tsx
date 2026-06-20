@@ -5,7 +5,6 @@ import { Chip } from './chip'
 const meta = {
   title: 'Components/Chip',
   component: Chip,
-  tags: ['autodocs'],
   args: { children: 'Skill' },
   argTypes: {
     variant: {

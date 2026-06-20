@@ -1,0 +1,24 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks'
+
+import * as InputStories from './input.stories'
+
+<Meta of={InputStories} />
+
+# Input
+
+A single-line text input in the Blitz aesthetic — a sharp bordered field that
+focuses to blood. Set `invalid` to flag a bad value; it also sets
+`aria-invalid` for assistive tech.
+
+<Canvas of={InputStories.Default} />
+
+## Props
+
+<Controls />
+
+## States
+
+<Canvas of={InputStories.Small} />
+<Canvas of={InputStories.Invalid} />
+<Canvas of={InputStories.Disabled} />
+<Canvas of={InputStories.Number} />

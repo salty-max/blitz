@@ -1,0 +1,22 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks'
+
+import * as EyebrowStories from './eyebrow.stories'
+
+<Meta of={EyebrowStories} />
+
+# Eyebrow
+
+The small uppercase kicker shown above a section heading or hero. Use `tone` to
+tint it and `size` to set its scale.
+
+<Canvas of={EyebrowStories.Blood} />
+
+## Props
+
+<Controls />
+
+## Tones
+
+<Canvas of={EyebrowStories.Blood} />
+<Canvas of={EyebrowStories.Gold} />
+<Canvas of={EyebrowStories.Muted} />

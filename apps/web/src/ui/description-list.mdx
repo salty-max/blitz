@@ -1,0 +1,13 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
+
+import * as DescriptionListStories from './description-list.stories'
+
+<Meta of={DescriptionListStories} />
+
+# DescriptionList
+
+A term/definition list with hairline dividers between rows. Each
+`DescriptionList.Row` pairs an uppercase headline term on the left with its
+details on the right; the `width` prop sets the term column (`md` or `lg`).
+
+<Canvas of={DescriptionListStories.Default} />

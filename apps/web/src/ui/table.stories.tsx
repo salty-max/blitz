@@ -11,7 +11,6 @@ const ROWS = [
 const meta = {
   title: 'Components/Table',
   component: Table,
-  tags: ['autodocs'],
   render: () => (
     <Table className="w-[34rem]">
       <Table.Header>

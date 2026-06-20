@@ -8,7 +8,6 @@ import { navLinkVariants } from './nav-link'
  */
 const meta = {
   title: 'Components/NavLink',
-  tags: ['autodocs'],
 } satisfies Meta
 
 export default meta

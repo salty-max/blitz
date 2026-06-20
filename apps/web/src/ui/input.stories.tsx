@@ -11,7 +11,6 @@ const withWidth: Decorator = (Story) => (
 const meta = {
   title: 'Components/Input',
   component: Input,
-  tags: ['autodocs'],
   args: { placeholder: 'Naggaroth Nightmares', 'aria-label': 'Team name' },
   argTypes: {
     size: { control: 'inline-radio', options: ['sm', 'md'] },

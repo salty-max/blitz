@@ -1,0 +1,17 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
+
+import * as FieldStories from './field.stories'
+
+<Meta of={FieldStories} />
+
+# Field
+
+A labelled read-only field: a small uppercase muted label above its value, for
+laying out a record's attributes. Use `Field.Label` on its own where you need
+just the label.
+
+<Canvas of={FieldStories.Default} />
+
+## Standalone label
+
+<Canvas of={FieldStories.StandaloneLabel} />

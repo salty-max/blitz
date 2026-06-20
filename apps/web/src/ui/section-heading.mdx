@@ -1,0 +1,22 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks'
+
+import * as SectionHeadingStories from './section-heading.stories'
+
+<Meta of={SectionHeadingStories} />
+
+# SectionHeading
+
+A catalogue section heading with an optional muted trailing hint — a count, a
+die type, and so on. Variants set the rule and colour treatment.
+
+<Canvas of={SectionHeadingStories.Plain} />
+
+## Props
+
+<Controls />
+
+## Variants
+
+<Canvas of={SectionHeadingStories.Plain} />
+<Canvas of={SectionHeadingStories.Blood} />
+<Canvas of={SectionHeadingStories.Bordered} />
