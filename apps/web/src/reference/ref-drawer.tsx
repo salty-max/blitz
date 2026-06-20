@@ -92,7 +92,10 @@ export function RefDrawerProvider({ children }: { children: ReactNode }) {
                 </div>
               </div>
 
-              <div className="px-5 py-5">
+              {/* Keyed by the current ref so navigating remounts the body —
+                  its links are then fresh nodes and don't inherit the hover
+                  state of the link that was just clicked. */}
+              <div key={currentKey} className="px-5 py-5">
                 <Dialog.Title className="font-display text-3xl uppercase leading-none">
                   {resolved?.name ?? 'Unknown reference'}
                 </Dialog.Title>
