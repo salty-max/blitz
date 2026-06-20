@@ -1,0 +1,43 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks'
+
+import * as ButtonStories from './button.stories'
+
+<Meta of={ButtonStories} />
+
+# Button
+
+A button in the Blitz aesthetic: a condensed uppercase headline label with a
+gold focus ring. Use it for the primary actions on a view.
+
+<Canvas of={ButtonStories.Solid} />
+
+## Props
+
+<Controls />
+
+## Variants
+
+Three weights, from loudest to quietest. Default to **solid** for the main
+call-to-action, **outline** for a secondary action beside it, and **ghost** for
+low-emphasis or repeated actions (toolbars, list rows).
+
+<Canvas of={ButtonStories.Solid} />
+<Canvas of={ButtonStories.Outline} />
+<Canvas of={ButtonStories.Ghost} />
+
+## Sizes
+
+`sm` for dense contexts (filter rows, table actions); `md` is the default.
+
+<Canvas of={ButtonStories.Small} />
+
+## As a link
+
+Pass `asChild` to render the button's styling onto another element — typically a
+router `Link` — so navigation stays a real anchor while looking like a button:
+
+```tsx
+<Button asChild>
+  <Link to="/codex">Open the codex</Link>
+</Button>
+```

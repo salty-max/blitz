@@ -1,0 +1,46 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title="Introduction" />
+
+# Blitz UI
+
+The component library behind the **Blitz** codex — a Blood Bowl toolkit dressed
+in the _Spike!_ sports-program aesthetic: heavy condensed display type over a
+clean body, printed on newsprint paper with ink, blood and trophy-gold accents.
+
+## How it is organised
+
+- **Components** — the primitives: `Button`, `Card`, `Chip`, the form controls
+  (`Input`, `Switch`, `SegmentedControl`, `Select`), `Table`, and the headings.
+- **Composites** — domain pieces assembled from primitives, such as `RollTable`
+  (dice-result tables) and `RefText` (the cross-linked `[[reference]]` system).
+
+Each component has a **Docs** page (overview, examples and a live props table)
+plus individual **stories** for its variants and states.
+
+## Design tokens
+
+Colour, type and motion live in `src/ui/theme.css` as Tailwind v4 `@theme`
+tokens, shared by the app and Storybook so the look stays with the components.
+
+| Token       | Value             | Used for                          |
+| ----------- | ----------------- | --------------------------------- |
+| `ink`       | near-black        | text, borders, filled controls    |
+| `paper`     | warm newsprint    | the page background               |
+| `blood`     | deep red          | the primary accent and actions    |
+| `gold`      | trophy gold       | costs and star highlights          |
+| `pitch`     | dark green        | league / competition accents      |
+| `display`   | Anton             | mastheads and big numerals         |
+| `headline`  | Barlow Condensed  | labels, chips, table headers       |
+| `body`      | Geist             | running text                       |
+
+## Conventions
+
+- Variants are defined with **`cva`**; class lists are merged with **`cn`**
+  (`clsx` + `tailwind-merge`).
+- Compound components (`Table`, `Select`, `DescriptionList`) are assembled with
+  `Object.assign` so they read as `Table.Row`, `Select.Item`, and so on.
+- Anything that can wrap a link accepts **`asChild`** (Radix `Slot`) to project
+  its styling onto a router `Link`.
+- The palette is deliberately small and the corners are sharp — reach for an
+  existing token before adding a new one.
