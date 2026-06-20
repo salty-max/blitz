@@ -1,25 +1,10 @@
 import { useRefDrawer } from '@/components/ref-drawer'
-import { cn } from '@/components/ui'
+import { Chip, cn } from '@/components/ui'
 import { resolveRef } from '@/lib/resolve-ref'
 
-const TONE = {
-  default:
-    'border-ink/25 text-ink/80 hover:border-blood hover:bg-blood hover:text-paper',
-  accent:
-    'border-blood/60 bg-blood/10 text-blood hover:border-blood hover:bg-blood hover:text-paper',
-} as const
-
-/** Class names for a badge chip in the given tone — usable on a button or a link. */
-export function chipClass(tone: keyof typeof TONE = 'default'): string {
-  return cn(
-    'inline-flex items-center border px-2 py-0.5 font-headline text-xs font-semibold uppercase tracking-wide transition-colors',
-    TONE[tone]
-  )
-}
-
 /**
- * Renders a list of reference keys as clickable badge chips that open the
- * drawer — for enumerated lists like a star's skills or special rules.
+ * Renders a list of reference keys as clickable chips that open the drawer —
+ * for enumerated lists like a star's skills or special rules.
  */
 export function RefChips({
   keys,
@@ -27,21 +12,23 @@ export function RefChips({
   className,
 }: {
   keys: readonly string[]
-  tone?: keyof typeof TONE
+  tone?: 'default' | 'accent'
   className?: string
 }) {
   const { openRef } = useRefDrawer()
   return (
     <div className={cn('flex flex-wrap gap-1.5', className)}>
       {keys.map((key) => (
-        <button
+        <Chip
           key={key}
-          type="button"
-          onClick={() => openRef(key)}
-          className={chipClass(tone)}
+          asChild
+          interactive
+          variant={tone === 'accent' ? 'accent' : 'outline'}
         >
-          {resolveRef(key)?.name ?? key}
-        </button>
+          <button type="button" onClick={() => openRef(key)}>
+            {resolveRef(key)?.name ?? key}
+          </button>
+        </Chip>
       ))}
     </div>
   )

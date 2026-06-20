@@ -1,6 +1,6 @@
-export { Badge, type BadgeProps, badgeVariants } from './badge'
 export { Button, type ButtonProps, buttonVariants } from './button'
 export { Card, type CardProps, cardVariants } from './card'
+export { Chip, type ChipProps, chipVariants } from './chip'
 export { cn } from './cn'
 export {
   DescriptionList,
