@@ -1,4 +1,3 @@
-import * as Dialog from '@radix-ui/react-dialog'
 import { ArrowLeft, X } from 'lucide-react'
 import {
   createContext,
@@ -11,7 +10,7 @@ import {
 
 import { type RefTone, resolveRef } from '@/lib/resolve-ref'
 import { RefText } from '@/reference/ref-text'
-import { Chip, type ChipProps } from '@/ui'
+import { Chip, type ChipProps, Sheet } from '@/ui'
 
 /** The drawer's kind chip takes the colour of the reference's category. */
 const toneChipVariant: Record<RefTone, ChipProps['variant']> = {
@@ -56,66 +55,61 @@ export function RefDrawerProvider({ children }: { children: ReactNode }) {
   return (
     <RefDrawerContext.Provider value={value}>
       {children}
-      <Dialog.Root
+      <Sheet
         open={stack.length > 0}
         onOpenChange={(open) => {
           if (!open) close()
         }}
       >
-        <Dialog.Portal>
-          <Dialog.Overlay className="fixed inset-0 bg-ink/50 data-[state=closed]:animate-overlay-out data-[state=open]:animate-overlay-in" />
-          <Dialog.Content className="fixed inset-x-0 bottom-0 max-h-[85vh] overflow-y-auto border-t-4 border-ink bg-paper shadow-2xl focus:outline-none data-[state=closed]:animate-sheet-out data-[state=open]:animate-sheet-in">
-            <div className="mx-auto w-full max-w-5xl">
-              <div className="flex items-center justify-between border-b-2 border-ink/15 px-5 py-3">
-                <Chip
-                  variant={resolved ? toneChipVariant[resolved.tone] : 'blood'}
-                >
-                  {resolved?.kind ?? 'Reference'}
-                </Chip>
-                <div className="flex items-center gap-1">
-                  {stack.length > 1 && (
-                    <button
-                      type="button"
-                      onClick={back}
-                      aria-label="Back"
-                      className="inline-flex h-8 w-8 items-center justify-center text-ink/55 transition-colors hover:bg-ink/5 hover:text-ink"
-                    >
-                      <ArrowLeft className="h-5 w-5" />
-                    </button>
-                  )}
-                  <Dialog.Close
-                    aria-label="Close"
-                    className="inline-flex h-8 w-8 items-center justify-center text-ink/55 transition-colors hover:bg-ink/5 hover:text-blood"
+        <Sheet.Content>
+          <div className="mx-auto w-full max-w-5xl">
+            <div className="flex items-center justify-between border-b-2 border-ink/15 px-5 py-3">
+              <Chip
+                variant={resolved ? toneChipVariant[resolved.tone] : 'blood'}
+              >
+                {resolved?.kind ?? 'Reference'}
+              </Chip>
+              <div className="flex items-center gap-1">
+                {stack.length > 1 && (
+                  <button
+                    type="button"
+                    onClick={back}
+                    aria-label="Back"
+                    className="inline-flex h-8 w-8 items-center justify-center text-ink/55 transition-colors hover:bg-ink/5 hover:text-ink"
                   >
-                    <X className="h-5 w-5" />
-                  </Dialog.Close>
-                </div>
-              </div>
-
-              {/* Keyed by the current ref so navigating remounts the body —
-                  its links are then fresh nodes and don't inherit the hover
-                  state of the link that was just clicked. */}
-              <div key={currentKey} className="px-5 py-5">
-                <Dialog.Title className="font-display text-3xl uppercase leading-none">
-                  {resolved?.name ?? 'Unknown reference'}
-                </Dialog.Title>
-                {resolved?.meta && (
-                  <p className="mt-1 font-headline text-sm font-semibold uppercase tracking-wide text-ink/55">
-                    {resolved.meta}
-                  </p>
+                    <ArrowLeft className="h-5 w-5" />
+                  </button>
                 )}
-                <p className="mt-4 leading-relaxed text-ink/90">
-                  {resolved ? (
-                    <RefText>{resolved.body}</RefText>
-                  ) : (
-                    `No entry found for "${currentKey ?? ''}".`
-                  )}
-                </p>
+                <Sheet.Close
+                  aria-label="Close"
+                  className="inline-flex h-8 w-8 items-center justify-center text-ink/55 transition-colors hover:bg-ink/5 hover:text-blood"
+                >
+                  <X className="h-5 w-5" />
+                </Sheet.Close>
               </div>
             </div>
-          </Dialog.Content>
-        </Dialog.Portal>
-      </Dialog.Root>
+
+            {/* Keyed by the current ref so navigating remounts the body —
+                its links are then fresh nodes and don't inherit the hover
+                state of the link that was just clicked. */}
+            <div key={currentKey} className="px-5 py-5">
+              <Sheet.Title>{resolved?.name ?? 'Unknown reference'}</Sheet.Title>
+              {resolved?.meta && (
+                <p className="mt-1 font-headline text-sm font-semibold uppercase tracking-wide text-ink/55">
+                  {resolved.meta}
+                </p>
+              )}
+              <p className="mt-4 leading-relaxed text-ink/90">
+                {resolved ? (
+                  <RefText>{resolved.body}</RefText>
+                ) : (
+                  `No entry found for "${currentKey ?? ''}".`
+                )}
+              </p>
+            </div>
+          </div>
+        </Sheet.Content>
+      </Sheet>
     </RefDrawerContext.Provider>
   )
 }

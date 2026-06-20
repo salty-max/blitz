@@ -1,0 +1,16 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
+
+import * as ToastStories from './toast.stories'
+
+<Meta of={ToastStories} />
+
+# Toast
+
+Brief, self-dismissing feedback that stacks at the bottom-right — a roster
+saved, a result recorded, a budget warning. Wrap the app once in a
+`ToastProvider`, then raise toasts from anywhere with the `useToast` hook:
+
+- `tone: 'success'` accents the toast pitch-green, `'danger'` blood; the default
+  is a neutral ink edge.
+
+<Canvas of={ToastStories.Default} />

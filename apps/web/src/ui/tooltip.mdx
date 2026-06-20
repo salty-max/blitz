@@ -1,0 +1,16 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
+
+import * as TooltipStories from './tooltip.stories'
+
+<Meta of={TooltipStories} />
+
+# Tooltip
+
+A small ink tooltip — a hint or an odds readout on hover and focus. This is the
+home for the engine's per-roll probabilities: wrap a roll-driven control and
+pass the odds as `content`.
+
+Set a `TooltipProvider` once near the app root to share the open delay; each
+`Tooltip` takes a `content` and wraps its trigger.
+
+<Canvas of={TooltipStories.Default} />
