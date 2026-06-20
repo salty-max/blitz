@@ -1,4 +1,4 @@
-import { EmptyState, PageHeading } from '@blitz/ui'
+import { EmptyState, PageHeading } from '@/components/ui'
 
 /** Placeholder for a section that isn't built yet. */
 export function ComingSoon({ title }: { title: string }) {

@@ -1,7 +1,7 @@
 import { skills } from '@blitz/data'
-import { DescriptionList, PageHeading, SectionHeading } from '@blitz/ui'
 
 import { RefText } from '@/components/ref-text'
+import { DescriptionList, PageHeading, SectionHeading } from '@/components/ui'
 
 const CATEGORIES = [
   ['general', 'General'],

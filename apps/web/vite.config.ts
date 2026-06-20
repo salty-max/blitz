@@ -8,9 +8,6 @@ export default defineConfig({
     dedupe: ['react', 'react-dom'],
     alias: {
       '@': new URL('./src', import.meta.url).pathname,
-      // Resolve the workspace UI lib to its source for instant HMR in dev.
-      '@blitz/ui': new URL('../../packages/ui/src/index.ts', import.meta.url)
-        .pathname,
     },
   },
 })

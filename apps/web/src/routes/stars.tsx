@@ -8,13 +8,13 @@ import {
   teams,
   teamsForStar,
 } from '@blitz/data'
-import { Card, EmptyState, Field, PageHeading, Select } from '@blitz/ui'
 import { useState } from 'react'
 
 import { CharacteristicsRow } from '@/components/characteristics'
 import { CostBadge } from '@/components/cost-badge'
 import { RefChips } from '@/components/ref-chips'
 import { TeamChips } from '@/components/team-chips'
+import { Card, EmptyState, Field, PageHeading, Select } from '@/components/ui'
 
 /** Pre-built lowercase search text per star — its name, skills and abilities. */
 const SEARCH_INDEX = starPlayers.map((star) => ({

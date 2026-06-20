@@ -1,6 +1,7 @@
-import { navLinkVariants } from '@blitz/ui'
 import { Link, Outlet } from '@tanstack/react-router'
 import { ArrowUpRight } from 'lucide-react'
+
+import { navLinkVariants } from '@/components/ui'
 
 const NAV = [
   { to: '/codex', label: 'Codex' },

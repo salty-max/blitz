@@ -1,6 +1,5 @@
-import { Table } from '@blitz/ui'
-
 import { RefText } from '@/components/ref-text'
+import { Table } from '@/components/ui'
 
 /** A row of a {@link RollTable}: a die roll (single face or inclusive range), the result, and its effect. */
 export type RollTableRow = {

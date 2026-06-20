@@ -1,4 +1,10 @@
 import { getTeam, starsForTeam, teams } from '@blitz/data'
+import { Link, useParams } from '@tanstack/react-router'
+import { type ReactNode, useState } from 'react'
+
+import { CostBadge } from '@/components/cost-badge'
+import { RefChips } from '@/components/ref-chips'
+import { RefText } from '@/components/ref-text'
 import {
   Button,
   Card,
@@ -6,13 +12,7 @@ import {
   PageHeading,
   SectionHeading,
   Table,
-} from '@blitz/ui'
-import { Link, useParams } from '@tanstack/react-router'
-import { type ReactNode, useState } from 'react'
-
-import { CostBadge } from '@/components/cost-badge'
-import { RefChips } from '@/components/ref-chips'
-import { RefText } from '@/components/ref-text'
+} from '@/components/ui'
 import { gp } from '@/lib/format'
 
 /** Single-letter codes for the skill-access categories shown in the roster table. */

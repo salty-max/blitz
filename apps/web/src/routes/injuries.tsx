@@ -1,8 +1,8 @@
 import { casualties, injuries, lastingInjuries } from '@blitz/data'
-import { PageHeading, SectionHeading } from '@blitz/ui'
 
 import { RefText } from '@/components/ref-text'
 import { RollTable } from '@/components/roll-table'
+import { PageHeading, SectionHeading } from '@/components/ui'
 
 /** The injury sequence — the 2D6 Injury roll (and its Stunty variant) feeding the D16 Casualty table. */
 export function InjuriesPage() {
