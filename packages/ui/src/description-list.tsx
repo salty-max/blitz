@@ -4,11 +4,11 @@ import { type ComponentProps, type ReactNode } from 'react'
 import { cn } from './cn'
 
 /** A term/definition list with hairline dividers between rows. */
-export function DescriptionList({ className, ...props }: ComponentProps<'dl'>) {
+function DescriptionListRoot({ className, ...props }: ComponentProps<'dl'>) {
   return <dl className={cn('divide-y divide-ink/10', className)} {...props} />
 }
 
-/** Class variants for a {@link DescriptionRow} — chiefly the term-column width. */
+/** Class variants for a {@link DescriptionList.Row} — chiefly the term-column width. */
 export const descriptionRowVariants = cva('grid gap-1 py-2.5 sm:gap-4', {
   variants: {
     width: {
@@ -19,7 +19,7 @@ export const descriptionRowVariants = cva('grid gap-1 py-2.5 sm:gap-4', {
   defaultVariants: { width: 'md' },
 })
 
-/** Props for {@link DescriptionRow}. */
+/** Props for {@link DescriptionList.Row}. */
 export type DescriptionRowProps = Omit<ComponentProps<'div'>, 'children'> &
   VariantProps<typeof descriptionRowVariants> & {
     /** The term shown in the left column. */
@@ -28,7 +28,7 @@ export type DescriptionRowProps = Omit<ComponentProps<'div'>, 'children'> &
   }
 
 /** A term/definition pair — the term on the left, its details on the right. */
-export function DescriptionRow({
+function DescriptionRow({
   term,
   width,
   className,
@@ -47,3 +47,8 @@ export function DescriptionRow({
     </div>
   )
 }
+
+/** A description list; use `DescriptionList.Row` for each term/definition pair. */
+export const DescriptionList = Object.assign(DescriptionListRoot, {
+  Row: DescriptionRow,
+})

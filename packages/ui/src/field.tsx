@@ -3,7 +3,7 @@ import { type ComponentProps, type ReactNode } from 'react'
 import { cn } from './cn'
 
 /** A small uppercase muted label that tops or prefixes a field's value. */
-export function FieldLabel({ className, ...props }: ComponentProps<'span'>) {
+function FieldLabel({ className, ...props }: ComponentProps<'span'>) {
   return (
     <span
       className={cn(
@@ -22,8 +22,8 @@ export type FieldProps = Omit<ComponentProps<'div'>, 'children'> & {
   children: ReactNode
 }
 
-/** A labelled field — a {@link FieldLabel} above its value. */
-export function Field({ label, className, children, ...props }: FieldProps) {
+/** A labelled field — a {@link Field.Label} above its value. */
+function FieldRoot({ label, className, children, ...props }: FieldProps) {
   return (
     <div className={className} {...props}>
       <FieldLabel>{label}</FieldLabel>
@@ -31,3 +31,6 @@ export function Field({ label, className, children, ...props }: FieldProps) {
     </div>
   )
 }
+
+/** A labelled field; use `Field.Label` for a standalone label. */
+export const Field = Object.assign(FieldRoot, { Label: FieldLabel })
