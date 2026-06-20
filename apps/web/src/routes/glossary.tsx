@@ -1,5 +1,5 @@
 import { glossary } from '@blitz/data'
-import { DescriptionList, DescriptionRow, PageHeading } from '@blitz/ui'
+import { DescriptionList, PageHeading } from '@blitz/ui'
 
 import { RefText } from '@/components/ref-text'
 
@@ -13,9 +13,9 @@ export function GlossaryPage() {
 
       <DescriptionList className="mt-6">
         {TERMS.map((entry) => (
-          <DescriptionRow key={entry.key} term={entry.term}>
+          <DescriptionList.Row key={entry.key} term={entry.term}>
             <RefText>{entry.definition}</RefText>
-          </DescriptionRow>
+          </DescriptionList.Row>
         ))}
       </DescriptionList>
     </div>

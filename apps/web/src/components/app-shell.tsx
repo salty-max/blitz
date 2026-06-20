@@ -1,5 +1,6 @@
 import { navLinkVariants } from '@blitz/ui'
 import { Link, Outlet } from '@tanstack/react-router'
+import { ArrowUpRight } from 'lucide-react'
 
 const NAV = [
   { to: '/codex', label: 'Codex' },
@@ -59,17 +60,19 @@ export function AppShell() {
               href="https://github.com/salty-max/blitz"
               target="_blank"
               rel="noreferrer"
-              className="text-paper/70 transition-colors hover:text-gold"
+              className="inline-flex items-center gap-1 text-paper/70 transition-colors hover:text-gold"
             >
-              GitHub ↗
+              GitHub
+              <ArrowUpRight className="h-3.5 w-3.5" />
             </a>
             <a
               href="https://github.com/salty-max/blitz/issues"
               target="_blank"
               rel="noreferrer"
-              className="text-paper/70 transition-colors hover:text-gold"
+              className="inline-flex items-center gap-1 text-paper/70 transition-colors hover:text-gold"
             >
-              Report an issue ↗
+              Report an issue
+              <ArrowUpRight className="h-3.5 w-3.5" />
             </a>
           </nav>
         </div>

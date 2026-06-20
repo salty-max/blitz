@@ -8,18 +8,7 @@ import {
   teams,
   teamsForStar,
 } from '@blitz/data'
-import {
-  Card,
-  EmptyState,
-  Field,
-  FieldLabel,
-  PageHeading,
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@blitz/ui'
+import { Card, EmptyState, Field, PageHeading, Select } from '@blitz/ui'
 import { useState } from 'react'
 
 import { CharacteristicsRow } from '@/components/characteristics'
@@ -113,19 +102,19 @@ export function StarsPage() {
           className={`${CONTROL} w-full px-3 placeholder:text-ink/40 sm:w-64`}
         />
         <div className="flex items-center gap-2">
-          <FieldLabel>Hireable by</FieldLabel>
+          <Field.Label>Hireable by</Field.Label>
           <Select value={teamKey} onValueChange={setTeamKey}>
-            <SelectTrigger className="w-56" aria-label="Filter by hiring team">
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value={ANY_TEAM}>Any team</SelectItem>
+            <Select.Trigger className="w-56" aria-label="Filter by hiring team">
+              <Select.Value />
+            </Select.Trigger>
+            <Select.Content>
+              <Select.Item value={ANY_TEAM}>Any team</Select.Item>
               {teams.map((t) => (
-                <SelectItem key={t.key} value={t.key}>
+                <Select.Item key={t.key} value={t.key}>
                   {t.name}
-                </SelectItem>
+                </Select.Item>
               ))}
-            </SelectContent>
+            </Select.Content>
           </Select>
         </div>
         <span className="font-headline text-sm font-semibold uppercase tracking-wide tabular-nums text-ink/45">

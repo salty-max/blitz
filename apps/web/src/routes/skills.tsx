@@ -1,10 +1,5 @@
 import { skills } from '@blitz/data'
-import {
-  DescriptionList,
-  DescriptionRow,
-  PageHeading,
-  SectionHeading,
-} from '@blitz/ui'
+import { DescriptionList, PageHeading, SectionHeading } from '@blitz/ui'
 
 import { RefText } from '@/components/ref-text'
 
@@ -33,9 +28,9 @@ export function SkillsPage() {
             </SectionHeading>
             <DescriptionList className="mt-3">
               {group.map((skill) => (
-                <DescriptionRow key={skill.key} term={skill.name}>
+                <DescriptionList.Row key={skill.key} term={skill.name}>
                   <RefText>{skill.effect}</RefText>
-                </DescriptionRow>
+                </DescriptionList.Row>
               ))}
             </DescriptionList>
           </section>

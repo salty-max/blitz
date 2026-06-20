@@ -1,10 +1,5 @@
 import { specialRules, teamsForSpecialRule } from '@blitz/data'
-import {
-  DescriptionList,
-  DescriptionRow,
-  PageHeading,
-  SectionHeading,
-} from '@blitz/ui'
+import { DescriptionList, PageHeading, SectionHeading } from '@blitz/ui'
 
 import { RefText } from '@/components/ref-text'
 import { TeamChips } from '@/components/team-chips'
@@ -31,14 +26,18 @@ export function RulesPage() {
               {group.map((rule) => {
                 const ruleTeams = teamsForSpecialRule(rule)
                 return (
-                  <DescriptionRow key={rule.key} width="lg" term={rule.name}>
+                  <DescriptionList.Row
+                    key={rule.key}
+                    width="lg"
+                    term={rule.name}
+                  >
                     <RefText>{rule.effect}</RefText>
                     {ruleTeams.length > 0 && (
                       <div className="mt-2">
                         <TeamChips teams={ruleTeams} />
                       </div>
                     )}
-                  </DescriptionRow>
+                  </DescriptionList.Row>
                 )
               })}
             </DescriptionList>
