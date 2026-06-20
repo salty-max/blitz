@@ -1,10 +1,12 @@
 export { Accordion } from './accordion'
+export { Avatar, type AvatarProps, avatarVariants } from './avatar'
 export { Breadcrumb } from './breadcrumb'
 export { Button, type ButtonProps, buttonVariants } from './button'
 export { Card, type CardProps, cardVariants } from './card'
 export { Checkbox } from './checkbox'
 export { Chip, type ChipProps, chipVariants } from './chip'
 export { cn } from './cn'
+export { Combobox, type ComboboxOption, type ComboboxProps } from './combobox'
 export {
   DescriptionList,
   type DescriptionRowProps,
@@ -20,6 +22,7 @@ export { type NavLinkVariants, navLinkVariants } from './nav-link'
 export { NumberStepper, type NumberStepperProps } from './number-stepper'
 export { PageHeading } from './page-heading'
 export { Pagination, type PaginationProps } from './pagination'
+export { Progress, type ProgressProps } from './progress'
 export { RadioGroup } from './radio-group'
 export {
   SectionHeading,
@@ -34,6 +37,7 @@ export {
 } from './segmented-control'
 export { Select } from './select'
 export { Sheet } from './sheet'
+export { StatBlock, type StatBlockProps } from './stat-block'
 export { Switch } from './switch'
 export { Table } from './table'
 export { Tabs } from './tabs'

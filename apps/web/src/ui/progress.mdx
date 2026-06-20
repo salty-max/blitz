@@ -1,0 +1,21 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks'
+
+import * as ProgressStories from './progress.stories'
+
+<Meta of={ProgressStories} />
+
+# Progress
+
+A sharp meter bar — budget against the cap, SPP toward the next advance, a
+team-value share. Pass `value` and `max`; the fill is clamped to the range and
+tinted by `tone`.
+
+<Canvas of={ProgressStories.Default} />
+
+## Props
+
+<Controls />
+
+## Tones
+
+<Canvas of={ProgressStories.Gold} />

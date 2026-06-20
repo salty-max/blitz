@@ -1,0 +1,21 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks'
+
+import * as StatBlockStories from './stat-block.stories'
+
+<Meta of={StatBlockStories} />
+
+# StatBlock
+
+A bordered figure card — a team's value, treasury, or W–D–L record. The label
+sits muted above a big display-face value, with an optional hint beneath. Lay a
+row of them out for a team or league summary.
+
+<Canvas of={StatBlockStories.Default} />
+
+## Props
+
+<Controls />
+
+## Record
+
+<Canvas of={StatBlockStories.Record} />

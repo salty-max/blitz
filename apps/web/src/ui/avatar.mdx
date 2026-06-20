@@ -1,0 +1,22 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks'
+
+import * as AvatarStories from './avatar.stories'
+
+<Meta of={AvatarStories} />
+
+# Avatar
+
+A sharp square avatar — a team crest or player portrait. Pass `src` for an
+image; it falls back to the `fallback` (typically initials) when there's no
+image or it fails to load.
+
+<Canvas of={AvatarStories.Initials} />
+
+## Props
+
+<Controls />
+
+## Sizes
+
+<Canvas of={AvatarStories.Small} />
+<Canvas of={AvatarStories.Large} />
