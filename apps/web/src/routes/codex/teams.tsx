@@ -81,7 +81,7 @@ export function TeamsIndex() {
           <Card key={team.key} asChild interactive>
             <Link to="/codex/teams/$key" params={{ key: team.key }}>
               <div className="flex items-baseline justify-between gap-3">
-                <h2 className="font-display text-3xl uppercase leading-none">
+                <h2 className="font-display text-3xl uppercase leading-none group-hover:text-paper">
                   {team.name}
                 </h2>
                 {team.tier != null && (

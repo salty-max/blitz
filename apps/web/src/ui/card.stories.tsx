@@ -9,8 +9,10 @@ const meta = {
   argTypes: { interactive: { control: 'boolean' } },
   render: (args) => (
     <Card {...args} className="w-72">
-      <h2 className="font-display text-3xl uppercase">Orcland Raiders</h2>
-      <p className="mt-2 text-sm text-ink/70">
+      <h2 className="font-display text-3xl uppercase group-hover:text-paper">
+        Orcland Raiders
+      </h2>
+      <p className="mt-2 text-sm text-ink/70 group-hover:text-paper/80">
         A bashy team of Orcs and Goblins.
       </p>
     </Card>

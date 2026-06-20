@@ -63,7 +63,7 @@ export function LandingPage() {
               <Eyebrow size="sm" className="group-hover:text-gold">
                 {pillar.kicker}
               </Eyebrow>
-              <h2 className="mt-1 font-display text-3xl uppercase">
+              <h2 className="mt-1 font-display text-3xl uppercase group-hover:text-paper">
                 {pillar.label}
               </h2>
               <p className="mt-3 flex-1 text-ink/70 group-hover:text-paper/80">

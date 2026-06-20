@@ -8,7 +8,11 @@ import { cn } from './cn'
 export const cardVariants = cva('border-2 border-ink bg-paper-2 p-5', {
   variants: {
     interactive: {
-      true: 'group transition-colors hover:bg-ink hover:text-paper',
+      // The background fades while each descendant runs its own colour
+      // transition, so all text fades in step with it. The card's own colour
+      // flips instantly (not transitioned), so children that inherit it animate
+      // cleanly from a single change rather than chasing a moving value.
+      true: 'group transition-[background-color] [&_*]:transition-colors hover:bg-ink hover:text-paper',
       false: '',
     },
   },
@@ -22,7 +26,12 @@ export type CardProps = ComponentProps<'div'> &
     asChild?: boolean
   }
 
-/** A bordered Blitz card; pass `interactive` to invert to ink on hover (e.g. a link). */
+/**
+ * A bordered Blitz card; pass `interactive` to invert to ink on hover (e.g. a
+ * link). Give every text child its own `group-hover:` colour so it stays
+ * legible on the inverted background and fades in step with it — text that
+ * only inherits the colour starts its transition a frame late.
+ */
 export function Card({
   className,
   asChild = false,

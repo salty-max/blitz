@@ -75,7 +75,7 @@ export function CodexHome() {
           <Card key={category.to} asChild interactive>
             <Link to={category.to}>
               <div className="flex items-baseline justify-between gap-3">
-                <h2 className="font-display text-3xl uppercase">
+                <h2 className="font-display text-3xl uppercase group-hover:text-paper">
                   {category.label}
                 </h2>
                 <span className="font-display text-3xl text-blood group-hover:text-gold">
