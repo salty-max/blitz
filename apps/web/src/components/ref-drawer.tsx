@@ -60,20 +60,22 @@ export function RefDrawerProvider({ children }: { children: ReactNode }) {
             <div className="mx-auto w-full max-w-3xl">
               <div className="flex items-center justify-between border-b-2 border-ink/15 px-5 py-3">
                 <Badge>{resolved?.kind ?? 'Reference'}</Badge>
-                <div className="flex items-center gap-3 font-headline text-sm font-semibold uppercase tracking-wide">
+                <div className="flex items-center gap-1">
                   {stack.length > 1 && (
                     <button
                       type="button"
                       onClick={back}
-                      className="inline-flex items-center gap-1 text-ink/60 hover:text-ink"
+                      aria-label="Back"
+                      className="inline-flex h-8 w-8 items-center justify-center text-ink/55 transition-colors hover:bg-ink/5 hover:text-ink"
                     >
-                      <ArrowLeft className="h-4 w-4" />
-                      Back
+                      <ArrowLeft className="h-5 w-5" />
                     </button>
                   )}
-                  <Dialog.Close className="inline-flex items-center gap-1 text-ink/60 hover:text-blood">
-                    Close
-                    <X className="h-4 w-4" />
+                  <Dialog.Close
+                    aria-label="Close"
+                    className="inline-flex h-8 w-8 items-center justify-center text-ink/55 transition-colors hover:bg-ink/5 hover:text-blood"
+                  >
+                    <X className="h-5 w-5" />
                   </Dialog.Close>
                 </div>
               </div>
