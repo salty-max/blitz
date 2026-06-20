@@ -5,7 +5,7 @@ import { resolveRef } from '@/lib/resolve-ref'
 import { useRefDrawer } from '@/reference/ref-drawer'
 
 const refLinkClass =
-  'font-semibold text-blood underline decoration-blood/40 decoration-2 underline-offset-2 transition-colors hover:decoration-blood'
+  'box-decoration-clone bg-blood/10 px-1 font-semibold text-blood transition-colors hover:bg-blood hover:text-paper'
 
 /**
  * Renders text containing `[[key]]` / `[[key|label]]` references, turning each
