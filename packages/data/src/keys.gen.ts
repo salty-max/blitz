@@ -356,3 +356,36 @@ export const INDUCEMENT_KEYS = [
 ] as const
 /** The key of an inducement. */
 export type InducementKey = (typeof INDUCEMENT_KEYS)[number]
+
+/** Every key of a casualty result. */
+export const CASUALTY_KEYS = [
+  'badly-hurt',
+  'dead',
+  'lasting-injury',
+  'serious-injury',
+  'seriously-hurt',
+] as const
+/** The key of a casualty result. */
+export type CasualtyKey = (typeof CASUALTY_KEYS)[number]
+
+/** Every key of a prayer. */
+export const PRAYER_KEYS = [
+  'bad-habits',
+  'blessing-of-nuffle',
+  'dazzling-catching',
+  'fan-interaction',
+  'fouling-frenzy',
+  'friends-with-the-ref',
+  'greasy-cleats',
+  'intensive-training',
+  'iron-man',
+  'knuckle-dusters',
+  'moles-under-the-pitch',
+  'perfect-passing',
+  'stiletto',
+  'throw-a-rock',
+  'treacherous-trapdoor',
+  'under-scrutiny',
+] as const
+/** The key of a prayer. */
+export type PrayerKey = (typeof PRAYER_KEYS)[number]

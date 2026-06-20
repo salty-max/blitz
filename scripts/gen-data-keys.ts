@@ -21,6 +21,8 @@ const entities = [
     'a star ability',
   ],
   ['INDUCEMENT_KEYS', 'InducementKey', 'inducements.json', 'an inducement'],
+  ['CASUALTY_KEYS', 'CasualtyKey', 'casualties.json', 'a casualty result'],
+  ['PRAYER_KEYS', 'PrayerKey', 'prayers.json', 'a prayer'],
 ]
 
 let out =
@@ -37,5 +39,5 @@ for (const [arr, type, file, desc] of entities) {
     )}\n] as const\n/** The key of ${desc}. */\nexport type ${type} = (typeof ${arr})[number]\n\n`
 }
 
-writeFileSync(`${dir}/keys.gen.ts`, out)
+writeFileSync(`${dir}/keys.gen.ts`, `${out.trimEnd()}\n`)
 console.log('wrote packages/data/src/keys.gen.ts')
