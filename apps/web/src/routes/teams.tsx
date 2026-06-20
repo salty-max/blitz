@@ -2,6 +2,8 @@ import { getTeam, starsForTeam, teams } from '@blitz/data'
 import {
   Button,
   Card,
+  EmptyState,
+  PageHeading,
   SectionHeading,
   Table,
   TableBody,
@@ -13,6 +15,7 @@ import {
 import { Link, useParams } from '@tanstack/react-router'
 import { type ReactNode, useState } from 'react'
 
+import { CostBadge } from '@/components/cost-badge'
 import { RefChips } from '@/components/ref-chips'
 import { RefText } from '@/components/ref-text'
 import { gp } from '@/lib/format'
@@ -56,7 +59,7 @@ export function TeamsIndex() {
 
   return (
     <div>
-      <h1 className="font-display text-5xl uppercase">Teams</h1>
+      <PageHeading>Teams</PageHeading>
 
       <div className="mt-4 flex flex-wrap gap-2">
         <Button
@@ -80,7 +83,7 @@ export function TeamsIndex() {
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {shown.map((team) => (
-          <Card key={team.key} asChild>
+          <Card key={team.key} asChild interactive>
             <Link to="/codex/teams/$key" params={{ key: team.key }}>
               <div className="flex items-baseline justify-between gap-3">
                 <h2 className="font-display text-3xl uppercase leading-none">
@@ -109,11 +112,7 @@ export function TeamDetail() {
   const team = key ? getTeam(key) : undefined
 
   if (!team) {
-    return (
-      <p className="font-headline text-lg uppercase tracking-wide text-ink/55">
-        No team found.
-      </p>
-    )
+    return <EmptyState>No team found.</EmptyState>
   }
 
   const stars = starsForTeam(team)
@@ -122,9 +121,7 @@ export function TeamDetail() {
     <div>
       <header className="border-b-4 border-ink pb-5">
         <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-          <h1 className="font-display text-5xl uppercase leading-none">
-            {team.name}
-          </h1>
+          <PageHeading className="leading-none">{team.name}</PageHeading>
           {team.tier != null && (
             <span className="font-headline text-lg font-semibold uppercase tracking-wide text-blood">
               Tier {team.tier}
@@ -241,9 +238,7 @@ export function TeamDetail() {
                   <span className="font-headline text-sm uppercase tracking-wide">
                     {star.name}
                   </span>
-                  <span className="shrink-0 bg-gold px-1.5 py-0.5 font-headline text-xs font-bold uppercase tabular-nums text-ink">
-                    {gp(star.cost)}
-                  </span>
+                  <CostBadge cost={star.cost} size="sm" className="shrink-0" />
                 </Link>
               </li>
             ))}

@@ -9,19 +9,23 @@ import {
   teamsForStar,
 } from '@blitz/data'
 import {
+  Card,
+  EmptyState,
+  Field,
+  FieldLabel,
+  PageHeading,
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
 } from '@blitz/ui'
-import { Link } from '@tanstack/react-router'
-import { type ReactNode, useState } from 'react'
+import { useState } from 'react'
 
 import { CharacteristicsRow } from '@/components/characteristics'
-import { FieldLabel } from '@/components/field-label'
-import { chipClass, RefChips } from '@/components/ref-chips'
-import { gp } from '@/lib/format'
+import { CostBadge } from '@/components/cost-badge'
+import { RefChips } from '@/components/ref-chips'
+import { TeamChips } from '@/components/team-chips'
 
 /** Pre-built lowercase search text per star — its name, skills and abilities. */
 const SEARCH_INDEX = starPlayers.map((star) => ({
@@ -35,69 +39,43 @@ const SEARCH_INDEX = starPlayers.map((star) => ({
     .toLowerCase(),
 }))
 
-/** A labelled detail row inside a star card. */
-function Row({ label, children }: { label: string; children: ReactNode }) {
-  return (
-    <div>
-      <FieldLabel>{label}</FieldLabel>
-      <div className="mt-1.5 text-sm text-ink/85">{children}</div>
-    </div>
-  )
-}
-
 /** A single showcased star — stats, skills, abilities and eligibility. */
 function StarCard({ star }: { star: StarPlayer }) {
   return (
-    <article
-      id={star.key}
-      className="scroll-mt-8 border-2 border-ink bg-paper-2 p-5"
-    >
+    <Card id={star.key} className="scroll-mt-8">
       <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-3">
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
           <h2 className="font-display text-2xl uppercase leading-none">
             {star.name}
           </h2>
-          <span className="inline-flex items-center bg-gold px-2.5 py-1 font-headline text-base font-bold uppercase leading-none tracking-wide tabular-nums text-ink">
-            {gp(star.cost)}
-          </span>
+          <CostBadge cost={star.cost} />
         </div>
         <CharacteristicsRow characteristics={star.characteristics} />
       </div>
 
       <div className="mt-4 space-y-3">
-        <Row label="Skills">
+        <Field label="Skills">
           <RefChips keys={star.skills} />
-        </Row>
+        </Field>
         {star.abilities.length > 0 && (
-          <Row label="Abilities">
+          <Field label="Abilities">
             <RefChips keys={star.abilities} tone="accent" />
-          </Row>
+          </Field>
         )}
-        <Row label="Plays for">
+        <Field label="Plays for">
           {star.playsFor.length === 0 ? (
             'Any team'
           ) : (
-            <div className="flex flex-wrap gap-1.5">
-              {teamsForStar(star).map((team) => (
-                <Link
-                  key={team.key}
-                  to="/codex/teams/$key"
-                  params={{ key: team.key }}
-                  className={chipClass()}
-                >
-                  {team.name}
-                </Link>
-              ))}
-            </div>
+            <TeamChips teams={teamsForStar(star)} />
           )}
-        </Row>
+        </Field>
         {star.playsFor.length > 0 && (
-          <Row label="Leagues & special rules">
+          <Field label="Leagues & special rules">
             <RefChips keys={star.playsFor} />
-          </Row>
+          </Field>
         )}
       </div>
-    </article>
+    </Card>
   )
 }
 
@@ -123,7 +101,7 @@ export function StarsPage() {
 
   return (
     <div>
-      <h1 className="font-display text-5xl uppercase">Star Players</h1>
+      <PageHeading>Star Players</PageHeading>
 
       <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2">
         <input
@@ -157,9 +135,7 @@ export function StarsPage() {
 
       <div className="mt-6 space-y-4">
         {shown.length === 0 ? (
-          <p className="font-headline text-lg uppercase tracking-wide text-ink/55">
-            No stars match.
-          </p>
+          <EmptyState>No stars match.</EmptyState>
         ) : (
           shown.map((star) => <StarCard key={star.key} star={star} />)
         )}

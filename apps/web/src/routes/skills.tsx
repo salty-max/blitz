@@ -1,5 +1,10 @@
 import { skills } from '@blitz/data'
-import { DescriptionList, DescriptionRow, SectionHeading } from '@blitz/ui'
+import {
+  DescriptionList,
+  DescriptionRow,
+  PageHeading,
+  SectionHeading,
+} from '@blitz/ui'
 
 import { RefText } from '@/components/ref-text'
 
@@ -17,7 +22,7 @@ const CATEGORIES = [
 export function SkillsPage() {
   return (
     <div>
-      <h1 className="font-display text-5xl uppercase">Skills &amp; Traits</h1>
+      <PageHeading>Skills &amp; Traits</PageHeading>
 
       {CATEGORIES.map(([key, label]) => {
         const group = skills.filter((skill) => skill.category === key)

@@ -1,5 +1,5 @@
 import { casualties, injuries, lastingInjuries } from '@blitz/data'
-import { SectionHeading } from '@blitz/ui'
+import { PageHeading, SectionHeading } from '@blitz/ui'
 
 import { RefText } from '@/components/ref-text'
 import { RollTable } from '@/components/roll-table'
@@ -11,7 +11,7 @@ export function InjuriesPage() {
 
   return (
     <div className="space-y-10">
-      <h1 className="font-display text-5xl uppercase">Injuries</h1>
+      <PageHeading>Injuries</PageHeading>
 
       <section className="space-y-5">
         <SectionHeading hint="2D6">Injury roll</SectionHeading>

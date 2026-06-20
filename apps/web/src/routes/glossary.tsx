@@ -1,5 +1,5 @@
 import { glossary } from '@blitz/data'
-import { DescriptionList, DescriptionRow } from '@blitz/ui'
+import { DescriptionList, DescriptionRow, PageHeading } from '@blitz/ui'
 
 import { RefText } from '@/components/ref-text'
 
@@ -9,7 +9,7 @@ const TERMS = [...glossary].sort((a, b) => a.term.localeCompare(b.term))
 export function GlossaryPage() {
   return (
     <div>
-      <h1 className="font-display text-5xl uppercase">Glossary</h1>
+      <PageHeading>Glossary</PageHeading>
 
       <DescriptionList className="mt-6">
         {TERMS.map((entry) => (
