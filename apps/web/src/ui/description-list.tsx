@@ -9,15 +9,18 @@ function DescriptionListRoot({ className, ...props }: ComponentProps<'dl'>) {
 }
 
 /** Class variants for a {@link DescriptionList.Row} — chiefly the term-column width. */
-export const descriptionRowVariants = cva('grid gap-1 py-2.5 sm:gap-4', {
-  variants: {
-    width: {
-      md: 'sm:grid-cols-[12rem_1fr]',
-      lg: 'sm:grid-cols-[14rem_1fr]',
+export const descriptionRowVariants = cva(
+  'grid gap-1 py-2.5 sm:items-center sm:gap-4',
+  {
+    variants: {
+      width: {
+        md: 'sm:grid-cols-[12rem_1fr]',
+        lg: 'sm:grid-cols-[14rem_1fr]',
+      },
     },
-  },
-  defaultVariants: { width: 'md' },
-})
+    defaultVariants: { width: 'md' },
+  }
+)
 
 /** Props for {@link DescriptionList.Row}. */
 export type DescriptionRowProps = Omit<ComponentProps<'div'>, 'children'> &
