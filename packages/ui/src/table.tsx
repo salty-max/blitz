@@ -3,7 +3,7 @@ import { type ComponentProps } from 'react'
 import { cn } from './cn'
 
 /** A horizontally scrollable data table with the codex's heavy header rule. */
-export function Table({ className, ...props }: ComponentProps<'table'>) {
+function TableRoot({ className, ...props }: ComponentProps<'table'>) {
   return (
     <div className="overflow-x-auto">
       <table
@@ -15,24 +15,24 @@ export function Table({ className, ...props }: ComponentProps<'table'>) {
 }
 
 /** The header group of a {@link Table}. */
-export function TableHeader(props: ComponentProps<'thead'>) {
+function TableHeader(props: ComponentProps<'thead'>) {
   return <thead {...props} />
 }
 
 /** The body group of a {@link Table} — rows are separated by hairlines. */
-export function TableBody({ className, ...props }: ComponentProps<'tbody'>) {
+function TableBody({ className, ...props }: ComponentProps<'tbody'>) {
   return (
     <tbody className={cn('divide-y divide-ink/10', className)} {...props} />
   )
 }
 
 /** A table row, baseline-aligned so a tall cell lines up with its roll. */
-export function TableRow({ className, ...props }: ComponentProps<'tr'>) {
+function TableRow({ className, ...props }: ComponentProps<'tr'>) {
   return <tr className={cn('align-baseline', className)} {...props} />
 }
 
 /** A header cell — uppercase, carrying the heavy rule beneath the header row. */
-export function TableHead({ className, ...props }: ComponentProps<'th'>) {
+function TableHead({ className, ...props }: ComponentProps<'th'>) {
   return (
     <th
       className={cn(
@@ -45,6 +45,18 @@ export function TableHead({ className, ...props }: ComponentProps<'th'>) {
 }
 
 /** A body cell. */
-export function TableCell({ className, ...props }: ComponentProps<'td'>) {
+function TableCell({ className, ...props }: ComponentProps<'td'>) {
   return <td className={cn('py-2.5', className)} {...props} />
 }
+
+/**
+ * A data table assembled from compound parts: `Table.Header`, `Table.Body`,
+ * `Table.Row`, `Table.Head` and `Table.Cell`.
+ */
+export const Table = Object.assign(TableRoot, {
+  Header: TableHeader,
+  Body: TableBody,
+  Row: TableRow,
+  Head: TableHead,
+  Cell: TableCell,
+})

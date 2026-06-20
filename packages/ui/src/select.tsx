@@ -1,67 +1,19 @@
 import * as SelectPrimitive from '@radix-ui/react-select'
+import { Check, ChevronDown, ChevronUp } from 'lucide-react'
 import { type ComponentProps } from 'react'
 
 import { cn } from './cn'
 
-function ChevronDownIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 20 20"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden
-      className={className}
-    >
-      <path d="M6 8l4 4 4-4" />
-    </svg>
-  )
+/** The select root — owns the open state and selected value. */
+function SelectRoot(props: ComponentProps<typeof SelectPrimitive.Root>) {
+  return <SelectPrimitive.Root {...props} />
 }
-
-function ChevronUpIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 20 20"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden
-      className={className}
-    >
-      <path d="M6 12l4-4 4 4" />
-    </svg>
-  )
-}
-
-function CheckIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 20 20"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2.5}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden
-      className={className}
-    >
-      <path d="M5 10.5l3.5 3.5L15 6.5" />
-    </svg>
-  )
-}
-
-/** A select menu — Radix-powered and fully styled (no native dropdown). */
-export const Select = SelectPrimitive.Root
 
 /** The current value (or placeholder) rendered inside the trigger. */
-export const SelectValue = SelectPrimitive.Value
+const SelectValue = SelectPrimitive.Value
 
 /** The button that opens the select menu. */
-export function SelectTrigger({
+function SelectTrigger({
   className,
   children,
   ...props
@@ -76,14 +28,14 @@ export function SelectTrigger({
     >
       <span className="truncate">{children}</span>
       <SelectPrimitive.Icon asChild>
-        <ChevronDownIcon className="h-4 w-4 shrink-0 text-ink/55 transition-transform duration-150 group-data-[state=open]:rotate-180" />
+        <ChevronDown className="h-4 w-4 shrink-0 text-ink/55 transition-transform duration-150 group-data-[state=open]:rotate-180" />
       </SelectPrimitive.Icon>
     </SelectPrimitive.Trigger>
   )
 }
 
 /** The dropdown panel listing the options. */
-export function SelectContent({
+function SelectContent({
   className,
   children,
   position = 'popper',
@@ -102,13 +54,13 @@ export function SelectContent({
         {...props}
       >
         <SelectPrimitive.ScrollUpButton className="flex h-6 cursor-default items-center justify-center bg-paper text-ink/55">
-          <ChevronUpIcon className="h-4 w-4" />
+          <ChevronUp className="h-4 w-4" />
         </SelectPrimitive.ScrollUpButton>
         <SelectPrimitive.Viewport className="p-1">
           {children}
         </SelectPrimitive.Viewport>
         <SelectPrimitive.ScrollDownButton className="flex h-6 cursor-default items-center justify-center bg-paper text-ink/55">
-          <ChevronDownIcon className="h-4 w-4" />
+          <ChevronDown className="h-4 w-4" />
         </SelectPrimitive.ScrollDownButton>
       </SelectPrimitive.Content>
     </SelectPrimitive.Portal>
@@ -116,7 +68,7 @@ export function SelectContent({
 }
 
 /** A selectable option. */
-export function SelectItem({
+function SelectItem({
   className,
   children,
   ...props
@@ -131,10 +83,22 @@ export function SelectItem({
     >
       <span className="absolute left-2 inline-flex items-center">
         <SelectPrimitive.ItemIndicator>
-          <CheckIcon className="h-4 w-4" />
+          <Check className="h-4 w-4" />
         </SelectPrimitive.ItemIndicator>
       </span>
       <SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
     </SelectPrimitive.Item>
   )
 }
+
+/**
+ * A select menu — Radix-powered and fully styled (no native dropdown) —
+ * assembled from compound parts: `Select.Trigger`, `Select.Value`,
+ * `Select.Content` and `Select.Item`.
+ */
+export const Select = Object.assign(SelectRoot, {
+  Trigger: SelectTrigger,
+  Value: SelectValue,
+  Content: SelectContent,
+  Item: SelectItem,
+})
