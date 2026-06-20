@@ -368,6 +368,19 @@ export const CASUALTY_KEYS = [
 /** The key of a casualty result. */
 export type CasualtyKey = (typeof CASUALTY_KEYS)[number]
 
+/** Every key of an injury result. */
+export const INJURY_KEYS = [
+  'casualty',
+  'knocked-out',
+  'stunned',
+  'stunty-badly-hurt',
+  'stunty-casualty',
+  'stunty-knocked-out',
+  'stunty-stunned',
+] as const
+/** The key of an injury result. */
+export type InjuryKey = (typeof INJURY_KEYS)[number]
+
 /** Every key of a prayer. */
 export const PRAYER_KEYS = [
   'bad-habits',
