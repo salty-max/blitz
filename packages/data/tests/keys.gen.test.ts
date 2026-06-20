@@ -1,8 +1,12 @@
 import {
+  casualties,
+  CASUALTY_KEYS,
   glossary,
   GLOSSARY_KEYS,
   INDUCEMENT_KEYS,
   inducements,
+  PRAYER_KEYS,
+  prayers,
   SKILL_KEYS,
   skills,
   SPECIAL_RULE_KEYS,
@@ -25,6 +29,8 @@ describe('generated key unions (keys.gen.ts)', () => {
     ['star players', STAR_PLAYER_KEYS, starPlayers],
     ['star abilities', STAR_ABILITY_KEYS, starAbilities],
     ['inducements', INDUCEMENT_KEYS, inducements],
+    ['casualties', CASUALTY_KEYS, casualties],
+    ['prayers', PRAYER_KEYS, prayers],
   ]
 
   for (const [name, keys, data] of cases) {

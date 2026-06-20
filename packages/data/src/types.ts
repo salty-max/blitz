@@ -1,7 +1,9 @@
 import type {
+  Casualty as RawCasualty,
   GlossaryTerm as RawGlossaryTerm,
   Inducement as RawInducement,
   Position as RawPosition,
+  Prayer as RawPrayer,
   Skill as RawSkill,
   SpecialRule as RawSpecialRule,
   StarAbility as RawStarAbility,
@@ -10,8 +12,10 @@ import type {
 } from '@blitz/schema'
 
 import type {
+  CasualtyKey,
   GlossaryKey,
   InducementKey,
+  PrayerKey,
   SkillKey,
   SpecialRuleKey,
   StarAbilityKey,
@@ -65,3 +69,9 @@ export type Inducement = Omit<RawInducement, 'key' | 'restrictedTo'> & {
   key: InducementKey
   restrictedTo: SpecialRuleKey[]
 }
+
+/** A Casualty-table result. */
+export type Casualty = Omit<RawCasualty, 'key'> & { key: CasualtyKey }
+
+/** A Prayers to Nuffle result. */
+export type Prayer = Omit<RawPrayer, 'key'> & { key: PrayerKey }

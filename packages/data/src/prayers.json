@@ -1,0 +1,98 @@
+[
+  {
+    "key": "treacherous-trapdoor",
+    "name": "Treacherous Trapdoor",
+    "roll": 1,
+    "effect": "Trapdoors may open under players — roll a D6; on a 1 the player falls."
+  },
+  {
+    "key": "friends-with-the-ref",
+    "name": "Friends with the Ref",
+    "roll": 2,
+    "effect": "Argue the Call succeeds on a 5+."
+  },
+  {
+    "key": "stiletto",
+    "name": "Stiletto",
+    "roll": 3,
+    "effect": "A random player gains [[stab]]."
+  },
+  {
+    "key": "iron-man",
+    "name": "Iron Man",
+    "roll": 4,
+    "effect": "+1 AV to one player."
+  },
+  {
+    "key": "knuckle-dusters",
+    "name": "Knuckle Dusters",
+    "roll": 5,
+    "effect": "One player gains [[mighty-blow]]."
+  },
+  {
+    "key": "bad-habits",
+    "name": "Bad Habits",
+    "roll": 6,
+    "effect": "D3 opposition players gain [[loner|Loner]] (2+)."
+  },
+  {
+    "key": "greasy-cleats",
+    "name": "Greasy Cleats",
+    "roll": 7,
+    "effect": "−1 MA to one opposition player."
+  },
+  {
+    "key": "blessing-of-nuffle",
+    "name": "Blessing of Nuffle",
+    "roll": 8,
+    "effect": "One player gains [[pro]]."
+  },
+  {
+    "key": "moles-under-the-pitch",
+    "name": "Moles Under the Pitch",
+    "roll": 9,
+    "effect": "−1 to the opposition's [[rush]] rolls."
+  },
+  {
+    "key": "perfect-passing",
+    "name": "Perfect Passing",
+    "roll": 10,
+    "effect": "Completions earn 2 SPP this game."
+  },
+  {
+    "key": "dazzling-catching",
+    "name": "Dazzling Catching",
+    "roll": 11,
+    "effect": "Catches earn 1 SPP this game."
+  },
+  {
+    "key": "fan-interaction",
+    "name": "Fan Interaction",
+    "roll": 12,
+    "effect": "Crowd-push [[casualty|casualties]] earn 2 SPP this game."
+  },
+  {
+    "key": "fouling-frenzy",
+    "name": "Fouling Frenzy",
+    "roll": 13,
+    "effect": "[[casualty|Casualties]] caused by a [[foul]] earn 2 SPP this game."
+  },
+  {
+    "key": "throw-a-rock",
+    "name": "Throw a Rock",
+    "roll": 14,
+    "effect": "Once per game, knock down an opposition player on a 4+."
+  },
+  {
+    "key": "under-scrutiny",
+    "name": "Under Scrutiny",
+    "roll": 15,
+    "effect": "The opposition's armour-breaking fouls are automatically sent off."
+  },
+  {
+    "key": "intensive-training",
+    "name": "Intensive Training",
+    "roll": 16,
+    "effect": "One player gains a chosen primary skill."
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "key": "badly-hurt",
+    "name": "Badly Hurt",
+    "roll": [1, 8],
+    "effect": "No lasting effect; the player is moved to the Reserves box."
+  },
+  {
+    "key": "seriously-hurt",
+    "name": "Seriously Hurt",
+    "roll": [9, 10],
+    "effect": "Miss the next game."
+  },
+  {
+    "key": "serious-injury",
+    "name": "Serious Injury",
+    "roll": [11, 12],
+    "effect": "Gain a Niggling Injury and miss the next game."
+  },
+  {
+    "key": "lasting-injury",
+    "name": "Lasting Injury",
+    "roll": [13, 14],
+    "effect": "−1 to a characteristic and miss the next game."
+  },
+  {
+    "key": "dead",
+    "name": "Dead",
+    "roll": [15, 16],
+    "effect": "Removed from the roster."
+  }
+]

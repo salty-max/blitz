@@ -1,6 +1,8 @@
+export { casualties, getCasualty } from './casualties'
 export { getGlossaryTerm, glossary } from './glossary'
 export { getInducement, inducements } from './inducements'
 export * from './keys.gen'
+export { getPrayer, prayers } from './prayers'
 export {
   abilitiesOf,
   inducementsForTeam,
@@ -18,9 +20,11 @@ export { getStarPlayer, starPlayers } from './star-players'
 export { teamBuildingRules } from './team-building'
 export { getTeam, teams } from './teams'
 export type {
+  Casualty,
   GlossaryTerm,
   Inducement,
   Position,
+  Prayer,
   Skill,
   SpecialRule,
   StarAbility,
