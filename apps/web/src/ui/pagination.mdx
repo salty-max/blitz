@@ -1,0 +1,24 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks'
+
+import * as PaginationStories from './pagination.stories'
+
+<Meta of={PaginationStories} />
+
+# Pagination
+
+A page navigator — previous/next arrows around a windowed list of page numbers,
+the active page filled blood. Long star-player or fixture lists, anything paged.
+It's controlled: pass the 1-based `page`, the `pageCount`, and an `onPageChange`.
+
+<Canvas of={PaginationStories.Default} />
+
+## Props
+
+<Controls />
+
+## Few pages
+
+With seven pages or fewer, every page shows; beyond that, it collapses the middle
+to an ellipsis around the current page.
+
+<Canvas of={PaginationStories.FewPages} />
