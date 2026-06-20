@@ -5,11 +5,11 @@ import {
 } from '@tanstack/react-router'
 
 import { AppShell } from '@/components/app-shell'
-import { CasualtiesPage } from '@/routes/casualties'
 import { CodexHome, CodexLayout } from '@/routes/codex'
 import { ComingSoon } from '@/routes/coming-soon'
 import { GlossaryPage } from '@/routes/glossary'
 import { InducementsPage } from '@/routes/inducements'
+import { InjuriesPage } from '@/routes/injuries'
 import { LandingPage } from '@/routes/landing'
 import { PrayersPage } from '@/routes/prayers'
 import { RulesPage } from '@/routes/rules'
@@ -89,10 +89,10 @@ const codexRulesRoute = createRoute({
   component: RulesPage,
 })
 
-const codexCasualtiesRoute = createRoute({
+const codexInjuriesRoute = createRoute({
   getParentRoute: () => codexCategoryRoute,
-  path: 'casualties',
-  component: CasualtiesPage,
+  path: 'injuries',
+  component: InjuriesPage,
 })
 
 const codexPrayersRoute = createRoute({
@@ -131,7 +131,7 @@ const routeTree = rootRoute.addChildren([
       codexStarsRoute,
       codexInducementsRoute,
       codexRulesRoute,
-      codexCasualtiesRoute,
+      codexInjuriesRoute,
       codexPrayersRoute,
       codexGlossaryRoute,
     ]),
