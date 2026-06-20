@@ -18,6 +18,8 @@
     "dev": "turbo run dev",
     "dev:web": "turbo run dev --filter=@blitz/web",
     "dev:api": "turbo run dev --filter=@blitz/api",
+    "storybook": "turbo run storybook --filter=@blitz/web",
+    "build-storybook": "turbo run build-storybook",
     "commitlint": "commitlint --edit",
     "prepare": "husky"
   },

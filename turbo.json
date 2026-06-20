@@ -6,6 +6,11 @@
       "dependsOn": ["^build"],
       "outputs": ["storybook-static/**"]
     },
+    "storybook": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "persistent": true
+    },
     "test": { "dependsOn": ["^build", "build"] },
     "dev": { "dependsOn": ["^build"], "cache": false, "persistent": true },
     "typecheck": { "dependsOn": ["^build", "build"] },
