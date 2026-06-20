@@ -84,6 +84,8 @@ export default [
       '**/coverage/**',
       '**/node_modules/**',
       '.turbo/**',
+      '**/.storybook/**',
+      '**/storybook-static/**',
     ],
   },
 
