@@ -1,0 +1,17 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
+
+import * as SheetStories from './sheet.stories'
+
+<Meta of={SheetStories} />
+
+# Sheet
+
+A bottom-sheet overlay — Radix Dialog positioned as a panel that slides up from
+the bottom edge, with the heavy ink top rule. Compound parts: `Sheet.Trigger`,
+`Sheet.Content`, `Sheet.Title`, `Sheet.Description` and `Sheet.Close`.
+
+It backs the codex **reference drawer**; reach for it elsewhere for filters or a
+record's quick view. Centre the panel's content in a `max-w-5xl` wrapper to line
+it up with the page.
+
+<Canvas of={SheetStories.Default} />

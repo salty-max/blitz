@@ -8,6 +8,7 @@ export {
   type DescriptionRowProps,
   descriptionRowVariants,
 } from './description-list'
+export { Dialog } from './dialog'
 export { EmptyState } from './empty-state'
 export { Eyebrow, type EyebrowProps, eyebrowVariants } from './eyebrow'
 export { Field, type FieldProps } from './field'
@@ -29,6 +30,9 @@ export {
   segmentVariants,
 } from './segmented-control'
 export { Select } from './select'
+export { Sheet } from './sheet'
 export { Switch } from './switch'
 export { Table } from './table'
 export { Textarea, type TextareaProps, textareaVariants } from './textarea'
+export { ToastProvider, useToast } from './toast'
+export { Tooltip, type TooltipProps, TooltipProvider } from './tooltip'
