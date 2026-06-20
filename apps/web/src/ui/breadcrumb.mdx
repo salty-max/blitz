@@ -1,0 +1,14 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
+
+import * as BreadcrumbStories from './breadcrumb.stories'
+
+<Meta of={BreadcrumbStories} />
+
+# Breadcrumb
+
+A breadcrumb trail for nested navigation — the codex back-link formalised, or a
+team/league hierarchy. Interleave `Breadcrumb.Item` and `Breadcrumb.Separator`;
+pass `asChild` to wrap a router `Link`, and `current` on the final crumb to mark
+the active page (it turns blood and gets `aria-current="page"`).
+
+<Canvas of={BreadcrumbStories.Default} />

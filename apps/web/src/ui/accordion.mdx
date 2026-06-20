@@ -1,0 +1,17 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
+
+import * as AccordionStories from './accordion.stories'
+
+<Meta of={AccordionStories} />
+
+# Accordion
+
+Stacked collapsible sections — Radix-powered, animating to the measured content
+height, with a chevron that flips open. Compound parts: `Accordion.Item`,
+`Accordion.Trigger` and `Accordion.Content`.
+
+Pass `type="single" collapsible` for one-at-a-time (FAQ, rules subsections) or
+`type="multiple"` to open several at once. Use it for expandable detail —
+per-match breakdowns, a skill list.
+
+<Canvas of={AccordionStories.Default} />

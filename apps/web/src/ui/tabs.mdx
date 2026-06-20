@@ -1,0 +1,17 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
+
+import * as TabsStories from './tabs.stories'
+
+<Meta of={TabsStories} />
+
+# Tabs
+
+Page-level tabbed sections — Radix-powered, with arrow-key navigation. The active
+trigger underlines blood. Compound parts: `Tabs.List`, `Tabs.Trigger` and
+`Tabs.Content`.
+
+Use it to split a page into sections — a team page (Roster / Staff / History), a
+league page (Standings / Fixtures / Stats). For a small inline choice, reach for
+`SegmentedControl` instead.
+
+<Canvas of={TabsStories.Default} />
