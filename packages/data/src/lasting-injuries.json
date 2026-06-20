@@ -1,0 +1,32 @@
+[
+  {
+    "key": "head-injury",
+    "name": "Head Injury",
+    "roll": [1, 2],
+    "effect": "−1 AV."
+  },
+  {
+    "key": "smashed-knee",
+    "name": "Smashed Knee",
+    "roll": [3, 3],
+    "effect": "−1 MA."
+  },
+  {
+    "key": "broken-arm",
+    "name": "Broken Arm",
+    "roll": [4, 4],
+    "effect": "−1 PA."
+  },
+  {
+    "key": "neck-injury",
+    "name": "Neck Injury",
+    "roll": [5, 5],
+    "effect": "−1 AG."
+  },
+  {
+    "key": "dislocated-shoulder",
+    "name": "Dislocated Shoulder",
+    "roll": [6, 6],
+    "effect": "−1 ST."
+  }
+]

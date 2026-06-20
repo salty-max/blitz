@@ -7,6 +7,8 @@ import {
   inducements,
   injuries,
   INJURY_KEYS,
+  LASTING_INJURY_KEYS,
+  lastingInjuries,
   PRAYER_KEYS,
   prayers,
   SKILL_KEYS,
@@ -33,6 +35,7 @@ describe('generated key unions (keys.gen.ts)', () => {
     ['inducements', INDUCEMENT_KEYS, inducements],
     ['casualties', CASUALTY_KEYS, casualties],
     ['injuries', INJURY_KEYS, injuries],
+    ['lasting injuries', LASTING_INJURY_KEYS, lastingInjuries],
     ['prayers', PRAYER_KEYS, prayers],
   ]
 

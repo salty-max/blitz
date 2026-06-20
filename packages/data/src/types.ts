@@ -3,6 +3,7 @@ import type {
   GlossaryTerm as RawGlossaryTerm,
   Inducement as RawInducement,
   Injury as RawInjury,
+  LastingInjury as RawLastingInjury,
   Position as RawPosition,
   Prayer as RawPrayer,
   Skill as RawSkill,
@@ -17,6 +18,7 @@ import type {
   GlossaryKey,
   InducementKey,
   InjuryKey,
+  LastingInjuryKey,
   PrayerKey,
   SkillKey,
   SpecialRuleKey,
@@ -77,6 +79,11 @@ export type Casualty = Omit<RawCasualty, 'key'> & { key: CasualtyKey }
 
 /** An Injury-table result, in its standard or Stunty variant. */
 export type Injury = Omit<RawInjury, 'key'> & { key: InjuryKey }
+
+/** A Lasting Injury-table result — the characteristic a Lasting Injury lowers. */
+export type LastingInjury = Omit<RawLastingInjury, 'key'> & {
+  key: LastingInjuryKey
+}
 
 /** A Prayers to Nuffle result. */
 export type Prayer = Omit<RawPrayer, 'key'> & { key: PrayerKey }
