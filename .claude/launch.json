@@ -6,6 +6,18 @@
       "runtimeExecutable": "bun",
       "runtimeArgs": ["run", "--cwd", "apps/web", "dev"],
       "port": 5173
+    },
+    {
+      "name": "storybook",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": ["run", "--cwd", "packages/ui", "storybook"],
+      "port": 6006
+    },
+    {
+      "name": "storybook-static",
+      "runtimeExecutable": "bunx",
+      "runtimeArgs": ["serve", "-l", "6007", "packages/ui/storybook-static"],
+      "port": 6007
     }
   ]
 }
