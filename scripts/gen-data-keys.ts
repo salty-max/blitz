@@ -23,6 +23,12 @@ const entities = [
   ['INDUCEMENT_KEYS', 'InducementKey', 'inducements.json', 'an inducement'],
   ['CASUALTY_KEYS', 'CasualtyKey', 'casualties.json', 'a casualty result'],
   ['INJURY_KEYS', 'InjuryKey', 'injuries.json', 'an injury result'],
+  [
+    'LASTING_INJURY_KEYS',
+    'LastingInjuryKey',
+    'lasting-injuries.json',
+    'a lasting injury',
+  ],
   ['PRAYER_KEYS', 'PrayerKey', 'prayers.json', 'a prayer'],
 ]
 

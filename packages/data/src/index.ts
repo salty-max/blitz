@@ -3,6 +3,7 @@ export { getGlossaryTerm, glossary } from './glossary'
 export { getInducement, inducements } from './inducements'
 export { getInjury, injuries } from './injuries'
 export * from './keys.gen'
+export { getLastingInjury, lastingInjuries } from './lasting-injuries'
 export { getPrayer, prayers } from './prayers'
 export {
   abilitiesOf,
@@ -25,6 +26,7 @@ export type {
   GlossaryTerm,
   Inducement,
   Injury,
+  LastingInjury,
   Position,
   Prayer,
   Skill,

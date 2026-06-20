@@ -381,6 +381,17 @@ export const INJURY_KEYS = [
 /** The key of an injury result. */
 export type InjuryKey = (typeof INJURY_KEYS)[number]
 
+/** Every key of a lasting injury. */
+export const LASTING_INJURY_KEYS = [
+  'broken-arm',
+  'dislocated-shoulder',
+  'head-injury',
+  'neck-injury',
+  'smashed-knee',
+] as const
+/** The key of a lasting injury. */
+export type LastingInjuryKey = (typeof LASTING_INJURY_KEYS)[number]
+
 /** Every key of a prayer. */
 export const PRAYER_KEYS = [
   'bad-habits',
