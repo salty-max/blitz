@@ -1,5 +1,6 @@
 import { Badge } from '@blitz/ui'
 import * as Dialog from '@radix-ui/react-dialog'
+import { ArrowLeft, X } from 'lucide-react'
 import {
   createContext,
   type ReactNode,
@@ -64,13 +65,15 @@ export function RefDrawerProvider({ children }: { children: ReactNode }) {
                     <button
                       type="button"
                       onClick={back}
-                      className="text-ink/60 hover:text-ink"
+                      className="inline-flex items-center gap-1 text-ink/60 hover:text-ink"
                     >
-                      ← Back
+                      <ArrowLeft className="h-4 w-4" />
+                      Back
                     </button>
                   )}
-                  <Dialog.Close className="text-ink/60 hover:text-blood">
-                    Close ✕
+                  <Dialog.Close className="inline-flex items-center gap-1 text-ink/60 hover:text-blood">
+                    Close
+                    <X className="h-4 w-4" />
                   </Dialog.Close>
                 </div>
               </div>

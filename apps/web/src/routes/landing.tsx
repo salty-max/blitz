@@ -1,5 +1,6 @@
 import { Button, Card, Eyebrow } from '@blitz/ui'
 import { Link } from '@tanstack/react-router'
+import { ArrowRight } from 'lucide-react'
 
 const PILLARS = [
   {
@@ -42,7 +43,10 @@ export function LandingPage() {
           look up every rule, skill and star in a searchable codex.
         </p>
         <Button asChild className="mt-6">
-          <Link to="/codex">Open the codex →</Link>
+          <Link to="/codex">
+            Open the codex
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </Button>
       </section>
 
@@ -64,8 +68,9 @@ export function LandingPage() {
               <p className="mt-3 flex-1 text-ink/70 group-hover:text-paper/80">
                 {pillar.blurb}
               </p>
-              <span className="mt-5 font-headline text-sm font-semibold uppercase tracking-wide text-blood group-hover:text-gold">
-                {pillar.cta} →
+              <span className="mt-5 inline-flex items-center gap-1 font-headline text-sm font-semibold uppercase tracking-wide text-blood group-hover:text-gold">
+                {pillar.cta}
+                <ArrowRight className="h-4 w-4" />
               </span>
             </Link>
           </Card>

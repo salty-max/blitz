@@ -6,11 +6,6 @@ import {
   PageHeading,
   SectionHeading,
   Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
 } from '@blitz/ui'
 import { Link, useParams } from '@tanstack/react-router'
 import { type ReactNode, useState } from 'react'
@@ -152,48 +147,48 @@ export function TeamDetail() {
 
       <div className="mt-6">
         <Table className="min-w-[44rem]">
-          <TableHeader>
-            <TableRow>
-              <TableHead className="pr-3">Position</TableHead>
-              <TableHead className="px-2 text-center">Max</TableHead>
-              <TableHead className="px-2 text-center">MA</TableHead>
-              <TableHead className="px-2 text-center">ST</TableHead>
-              <TableHead className="px-2 text-center">AG</TableHead>
-              <TableHead className="px-2 text-center">PA</TableHead>
-              <TableHead className="px-2 text-center">AV</TableHead>
-              <TableHead className="px-2 text-right">Cost</TableHead>
-              <TableHead className="px-2">Skills</TableHead>
-              <TableHead className="px-2">Access</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
+          <Table.Header>
+            <Table.Row>
+              <Table.Head className="pr-3">Position</Table.Head>
+              <Table.Head className="px-2 text-center">Max</Table.Head>
+              <Table.Head className="px-2 text-center">MA</Table.Head>
+              <Table.Head className="px-2 text-center">ST</Table.Head>
+              <Table.Head className="px-2 text-center">AG</Table.Head>
+              <Table.Head className="px-2 text-center">PA</Table.Head>
+              <Table.Head className="px-2 text-center">AV</Table.Head>
+              <Table.Head className="px-2 text-right">Cost</Table.Head>
+              <Table.Head className="px-2">Skills</Table.Head>
+              <Table.Head className="px-2">Access</Table.Head>
+            </Table.Row>
+          </Table.Header>
+          <Table.Body>
             {team.positions.map((position) => (
-              <TableRow key={position.key} className="align-middle">
-                <TableCell className="pr-3 font-headline font-semibold uppercase tracking-wide">
+              <Table.Row key={position.key} className="align-middle">
+                <Table.Cell className="pr-3 font-headline font-semibold uppercase tracking-wide">
                   {position.name}
-                </TableCell>
-                <TableCell className="px-2 text-center font-headline font-semibold tabular-nums">
+                </Table.Cell>
+                <Table.Cell className="px-2 text-center font-headline font-semibold tabular-nums">
                   {position.max}
-                </TableCell>
-                <TableCell className="px-2 text-center font-headline font-semibold tabular-nums">
+                </Table.Cell>
+                <Table.Cell className="px-2 text-center font-headline font-semibold tabular-nums">
                   {position.characteristics.ma}
-                </TableCell>
-                <TableCell className="px-2 text-center font-headline font-semibold tabular-nums">
+                </Table.Cell>
+                <Table.Cell className="px-2 text-center font-headline font-semibold tabular-nums">
                   {position.characteristics.st}
-                </TableCell>
-                <TableCell className="px-2 text-center font-headline font-semibold tabular-nums">
+                </Table.Cell>
+                <Table.Cell className="px-2 text-center font-headline font-semibold tabular-nums">
                   {target(position.characteristics.ag)}
-                </TableCell>
-                <TableCell className="px-2 text-center font-headline font-semibold tabular-nums">
+                </Table.Cell>
+                <Table.Cell className="px-2 text-center font-headline font-semibold tabular-nums">
                   {target(position.characteristics.pa)}
-                </TableCell>
-                <TableCell className="px-2 text-center font-headline font-semibold tabular-nums">
+                </Table.Cell>
+                <Table.Cell className="px-2 text-center font-headline font-semibold tabular-nums">
                   {target(position.characteristics.av)}
-                </TableCell>
-                <TableCell className="px-2 text-right font-headline font-semibold tabular-nums">
+                </Table.Cell>
+                <Table.Cell className="px-2 text-right font-headline font-semibold tabular-nums">
                   {gp(position.cost)}
-                </TableCell>
-                <TableCell className="px-2">
+                </Table.Cell>
+                <Table.Cell className="px-2">
                   {position.startingSkills.length > 0 ? (
                     <RefChips
                       keys={position.startingSkills}
@@ -202,8 +197,8 @@ export function TeamDetail() {
                   ) : (
                     <span className="text-ink/40">—</span>
                   )}
-                </TableCell>
-                <TableCell className="px-2 font-headline tracking-wide text-ink/70">
+                </Table.Cell>
+                <Table.Cell className="px-2 font-headline tracking-wide text-ink/70">
                   {access(position.primary)}
                   {position.secondary.length > 0 && (
                     <span className="text-ink/35">
@@ -211,10 +206,10 @@ export function TeamDetail() {
                       {access(position.secondary)}
                     </span>
                   )}
-                </TableCell>
-              </TableRow>
+                </Table.Cell>
+              </Table.Row>
             ))}
-          </TableBody>
+          </Table.Body>
         </Table>
       </div>
       <p className="mt-2 text-xs text-ink/45">

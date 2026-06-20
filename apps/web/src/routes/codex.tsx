@@ -10,6 +10,7 @@ import {
 } from '@blitz/data'
 import { Card, Eyebrow, navLinkVariants, PageHeading } from '@blitz/ui'
 import { Link, Outlet } from '@tanstack/react-router'
+import { ChevronLeft } from 'lucide-react'
 
 const CATEGORIES = [
   { to: '/codex/teams', label: 'Teams', count: teams.length },
@@ -37,9 +38,10 @@ export function CodexLayout() {
         <Link
           to="/codex"
           activeOptions={{ exact: true }}
-          className="text-ink/45 transition-colors hover:text-blood"
+          className="inline-flex items-center gap-0.5 text-ink/45 transition-colors hover:text-blood"
         >
-          ‹ Codex
+          <ChevronLeft className="h-4 w-4" />
+          Codex
         </Link>
         {CATEGORIES.map((category) => (
           <Link

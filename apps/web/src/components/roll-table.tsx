@@ -1,11 +1,4 @@
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '@blitz/ui'
+import { Table } from '@blitz/ui'
 
 import { RefText } from '@/components/ref-text'
 
@@ -33,28 +26,28 @@ export function RollTable({
 }) {
   return (
     <Table className="min-w-[36rem]">
-      <TableHeader>
-        <TableRow>
-          <TableHead className="pr-3 text-center">Roll</TableHead>
-          <TableHead className="px-3">{resultHeader}</TableHead>
-          <TableHead className="px-3">Effect</TableHead>
-        </TableRow>
-      </TableHeader>
-      <TableBody>
+      <Table.Header>
+        <Table.Row>
+          <Table.Head className="pr-3 text-center">Roll</Table.Head>
+          <Table.Head className="px-3">{resultHeader}</Table.Head>
+          <Table.Head className="px-3">Effect</Table.Head>
+        </Table.Row>
+      </Table.Header>
+      <Table.Body>
         {rows.map((row) => (
-          <TableRow key={row.key}>
-            <TableCell className="pr-3 text-center font-display text-xl tabular-nums text-blood">
+          <Table.Row key={row.key}>
+            <Table.Cell className="pr-3 text-center font-display text-xl tabular-nums text-blood">
               {rollLabel(row.roll)}
-            </TableCell>
-            <TableCell className="px-3 font-headline font-semibold uppercase tracking-wide">
+            </Table.Cell>
+            <Table.Cell className="px-3 font-headline font-semibold uppercase tracking-wide">
               {row.name}
-            </TableCell>
-            <TableCell className="px-3 text-ink/85">
+            </Table.Cell>
+            <Table.Cell className="px-3 text-ink/85">
               <RefText>{row.effect}</RefText>
-            </TableCell>
-          </TableRow>
+            </Table.Cell>
+          </Table.Row>
         ))}
-      </TableBody>
+      </Table.Body>
     </Table>
   )
 }

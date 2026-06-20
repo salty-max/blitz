@@ -4,12 +4,7 @@ import {
   type Team,
   teamsForSpecialRule,
 } from '@blitz/data'
-import {
-  DescriptionList,
-  DescriptionRow,
-  FieldLabel,
-  PageHeading,
-} from '@blitz/ui'
+import { DescriptionList, Field, PageHeading } from '@blitz/ui'
 
 import { RefChips } from '@/components/ref-chips'
 import { RefText } from '@/components/ref-text'
@@ -33,7 +28,7 @@ export function InducementsPage() {
 
       <DescriptionList className="mt-6">
         {inducements.map((inducement) => (
-          <DescriptionRow
+          <DescriptionList.Row
             key={inducement.key}
             width="lg"
             className="py-3"
@@ -50,16 +45,16 @@ export function InducementsPage() {
             {inducement.restrictedTo.length > 0 && (
               <div className="mt-2 space-y-2">
                 <div className="flex flex-wrap items-center gap-2">
-                  <FieldLabel>Restricted to</FieldLabel>
+                  <Field.Label>Restricted to</Field.Label>
                   <RefChips keys={inducement.restrictedTo} />
                 </div>
                 <div className="flex flex-wrap items-center gap-2">
-                  <FieldLabel>Teams</FieldLabel>
+                  <Field.Label>Teams</Field.Label>
                   <TeamChips teams={teamsForInducement(inducement)} />
                 </div>
               </div>
             )}
-          </DescriptionRow>
+          </DescriptionList.Row>
         ))}
       </DescriptionList>
     </div>
