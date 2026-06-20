@@ -10,7 +10,7 @@ const meta = {
   argTypes: {
     variant: {
       control: 'inline-radio',
-      options: ['blood', 'ink', 'gold', 'outline', 'accent'],
+      options: ['blood', 'ink', 'gold', 'pitch', 'outline', 'accent'],
     },
     size: { control: 'inline-radio', options: ['sm', 'md'] },
     interactive: { control: 'boolean' },
@@ -20,9 +20,12 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-/** Filled label — used for the drawer's reference-kind badge. */
-export const Blood: Story = { args: { variant: 'blood' } }
-export const Ink: Story = { args: { variant: 'ink' } }
+/** Filled labels — colour-code the drawer's reference-kind badge by category. */
+export const Blood: Story = { args: { variant: 'blood', children: 'Skill' } }
+export const Ink: Story = { args: { variant: 'ink', children: 'Rules term' } }
+export const Pitch: Story = {
+  args: { variant: 'pitch', children: 'Special rule' },
+}
 
 /** Filled gold — used for cost badges (with `tabular-nums`). */
 export const Gold: Story = { args: { variant: 'gold', children: '120k' } }

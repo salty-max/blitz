@@ -5,6 +5,9 @@ import {
   getStarAbility,
 } from '@blitz/data'
 
+/** The category of a reference, used to colour-code it inline and in the drawer. */
+export type RefTone = 'skill' | 'term' | 'rule' | 'star'
+
 /** A reference resolved to a uniform shape the drawer can render. */
 export interface ResolvedRef {
   key: string
@@ -15,6 +18,8 @@ export interface ResolvedRef {
   body: string
   /** Optional sub-label, e.g. a skill's category. */
   meta?: string
+  /** Category used to pick the reference's colour. */
+  tone: RefTone
 }
 
 const SKILL_CATEGORY: Record<string, string> = {
@@ -40,11 +45,18 @@ export function resolveRef(key: string): ResolvedRef | undefined {
       name: skill.name,
       body: skill.effect,
       meta: SKILL_CATEGORY[skill.category] ?? skill.category,
+      tone: 'skill',
     }
   }
   const term = getGlossaryTerm(key)
   if (term) {
-    return { key, kind: 'Rules term', name: term.term, body: term.definition }
+    return {
+      key,
+      kind: 'Rules term',
+      name: term.term,
+      body: term.definition,
+      tone: 'term',
+    }
   }
   const rule = getSpecialRule(key)
   if (rule) {
@@ -53,6 +65,7 @@ export function resolveRef(key: string): ResolvedRef | undefined {
       kind: rule.category === 'league' ? 'League' : 'Special rule',
       name: rule.name,
       body: rule.effect,
+      tone: 'rule',
     }
   }
   const ability = getStarAbility(key)
@@ -62,6 +75,7 @@ export function resolveRef(key: string): ResolvedRef | undefined {
       kind: 'Star ability',
       name: ability.name,
       body: ability.effect,
+      tone: 'star',
     }
   }
   return undefined
