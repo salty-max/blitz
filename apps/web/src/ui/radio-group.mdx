@@ -1,0 +1,14 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
+
+import * as RadioGroupStories from './radio-group.stories'
+
+<Meta of={RadioGroupStories} />
+
+# RadioGroup
+
+A single-select radio group — Radix-powered, with arrow-key navigation. Use
+`RadioGroup.Item` for each choice, each beside its own label. Reach for it when
+the options carry descriptions or won't fit a `SegmentedControl` — recording a
+match result, picking a draft option.
+
+<Canvas of={RadioGroupStories.Default} />

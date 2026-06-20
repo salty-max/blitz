@@ -1,0 +1,23 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks'
+
+import * as NumberStepperStories from './number-stepper.stories'
+
+<Meta of={NumberStepperStories} />
+
+# NumberStepper
+
+A bordered −/value/+ stepper for bounded integer quantities — the number of
+Linemen on a roster, the treasury, a match score. The value is clamped to
+`min`/`max`, and the buttons disable at the bounds.
+
+<Canvas of={NumberStepperStories.Default} />
+
+## Props
+
+<Controls />
+
+## Bounded
+
+With `min` and `max` set, the stepper won't step past either end.
+
+<Canvas of={NumberStepperStories.Bounded} />

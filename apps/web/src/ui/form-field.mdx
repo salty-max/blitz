@@ -1,0 +1,27 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks'
+
+import * as FormFieldStories from './form-field.stories'
+
+<Meta of={FormFieldStories} />
+
+# FormField
+
+Wraps a single form control with a label and an optional hint or error. It
+generates an `id`, links the label to the control, and wires `aria-describedby`
+and `aria-invalid` to the message — so dropping any control inside (`Input`,
+`Switch`, `Select`…) gets you an accessible field for free.
+
+<Canvas of={FormFieldStories.Default} />
+
+## Props
+
+<Controls />
+
+## Hint and error
+
+The `error` message replaces the `hint` and flags the control invalid; `required`
+adds a blood asterisk to the label.
+
+<Canvas of={FormFieldStories.WithHint} />
+<Canvas of={FormFieldStories.WithError} />
+<Canvas of={FormFieldStories.Required} />
