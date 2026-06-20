@@ -78,24 +78,8 @@
         "typescript": "^6.0.3",
       },
     },
-    "packages/dsl": {
-      "name": "@blitz/dsl",
-      "version": "0.0.0",
-      "devDependencies": {
-        "bun-types": "^1.3.13",
-        "typescript": "^6.0.3",
-      },
-    },
     "packages/engine": {
       "name": "@blitz/engine",
-      "version": "0.0.0",
-      "devDependencies": {
-        "bun-types": "^1.3.13",
-        "typescript": "^6.0.3",
-      },
-    },
-    "packages/resolver": {
-      "name": "@blitz/resolver",
       "version": "0.0.0",
       "devDependencies": {
         "bun-types": "^1.3.13",
@@ -163,11 +147,7 @@
 
     "@blitz/data": ["@blitz/data@workspace:packages/data"],
 
-    "@blitz/dsl": ["@blitz/dsl@workspace:packages/dsl"],
-
     "@blitz/engine": ["@blitz/engine@workspace:packages/engine"],
-
-    "@blitz/resolver": ["@blitz/resolver@workspace:packages/resolver"],
 
     "@blitz/schema": ["@blitz/schema@workspace:packages/schema"],
 
