@@ -5,7 +5,6 @@ import { PageHeading } from './page-heading'
 const meta = {
   title: 'Components/PageHeading',
   component: PageHeading,
-  tags: ['autodocs'],
   args: { children: 'Star Players' },
 } satisfies Meta<typeof PageHeading>
 

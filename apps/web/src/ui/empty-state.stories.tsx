@@ -5,7 +5,6 @@ import { EmptyState } from './empty-state'
 const meta = {
   title: 'Components/EmptyState',
   component: EmptyState,
-  tags: ['autodocs'],
   args: { children: 'No stars match.' },
 } satisfies Meta<typeof EmptyState>
 

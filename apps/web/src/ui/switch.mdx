@@ -1,0 +1,24 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks'
+
+import * as SwitchStories from './switch.stories'
+
+<Meta of={SwitchStories} />
+
+# Switch
+
+A sharp on/off toggle. Radix-powered, so it carries `role="switch"`, keyboard
+support and form integration (pass `name` for a hidden input). The track fills
+blood when on; the square thumb slides across.
+
+<Canvas of={SwitchStories.On} />
+
+## Props
+
+<Controls />
+
+## States
+
+<Canvas of={SwitchStories.Off} />
+<Canvas of={SwitchStories.On} />
+<Canvas of={SwitchStories.Disabled} />
+<Canvas of={SwitchStories.DisabledOn} />

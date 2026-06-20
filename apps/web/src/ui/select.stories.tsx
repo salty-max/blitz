@@ -5,7 +5,6 @@ import { Select } from './select'
 const meta = {
   title: 'Components/Select',
   component: Select,
-  tags: ['autodocs'],
   render: () => (
     <Select defaultValue="orc">
       <Select.Trigger className="w-56" aria-label="Team">

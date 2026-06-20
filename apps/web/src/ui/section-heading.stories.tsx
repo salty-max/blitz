@@ -5,7 +5,6 @@ import { SectionHeading } from './section-heading'
 const meta = {
   title: 'Components/SectionHeading',
   component: SectionHeading,
-  tags: ['autodocs'],
   args: { children: 'General', hint: '· 12' },
   argTypes: {
     tone: { control: 'inline-radio', options: ['ink', 'blood'] },

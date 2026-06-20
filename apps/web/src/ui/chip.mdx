@@ -1,0 +1,34 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks'
+
+import * as ChipStories from './chip.stories'
+
+<Meta of={ChipStories} />
+
+# Chip
+
+A small uppercase headline pill — a static label, a price, or an interactive
+reference tag.
+
+<Canvas of={ChipStories.Blood} />
+
+## Props
+
+<Controls />
+
+## Filled variants
+
+`blood`, `ink` and `pitch` colour-code the reference drawer's kind badge;
+`gold` (with `tabular-nums`) is used for cost badges.
+
+<Canvas of={ChipStories.Blood} />
+<Canvas of={ChipStories.Ink} />
+<Canvas of={ChipStories.Pitch} />
+<Canvas of={ChipStories.Gold} />
+
+## Bordered, interactive
+
+`outline` and `accent` fill with blood on hover — used for the reference and
+team chips. Combine with `asChild` to render a link or button as the chip.
+
+<Canvas of={ChipStories.Outline} />
+<Canvas of={ChipStories.Accent} />

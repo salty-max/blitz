@@ -5,7 +5,6 @@ import { Switch } from './switch'
 const meta = {
   title: 'Components/Switch',
   component: Switch,
-  tags: ['autodocs'],
   args: { 'aria-label': 'Toggle' },
   argTypes: { disabled: { control: 'boolean' } },
 } satisfies Meta<typeof Switch>

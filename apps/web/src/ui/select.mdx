@@ -1,0 +1,14 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
+
+import * as SelectStories from './select.stories'
+
+<Meta of={SelectStories} />
+
+# Select
+
+A fully-styled select menu — Radix-powered, with no native dropdown — assembled
+from compound parts: `Select.Trigger`, `Select.Value`, `Select.Content` and
+`Select.Item`. Use it when the options need the codex look; reach for a native
+`<select>` only for very long, plain lists.
+
+<Canvas of={SelectStories.Default} />

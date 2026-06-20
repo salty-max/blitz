@@ -1,0 +1,16 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
+
+import * as CharacteristicsRowStories from './characteristics.stories'
+
+<Meta of={CharacteristicsRowStories} />
+
+# CharacteristicsRow
+
+A player's MA / ST / AG / PA / AV profile. Roll-target stats (AG, PA) render as
+`n+`; a player with no passing characteristic shows a dash.
+
+<Canvas of={CharacteristicsRowStories.Default} />
+
+## No passing value
+
+<Canvas of={CharacteristicsRowStories.NoPassing} />

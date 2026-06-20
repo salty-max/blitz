@@ -5,7 +5,6 @@ import { Field } from './field'
 const meta = {
   title: 'Components/Field',
   component: Field,
-  tags: ['autodocs'],
   args: { label: 'Skills', children: 'Block · Tackle · Mighty Blow' },
 } satisfies Meta<typeof Field>
 

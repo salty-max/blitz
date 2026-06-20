@@ -5,7 +5,6 @@ import { DescriptionList } from './description-list'
 const meta = {
   title: 'Components/DescriptionList',
   component: DescriptionList,
-  tags: ['autodocs'],
   render: () => (
     <DescriptionList className="w-[34rem]">
       <DescriptionList.Row term="Block">

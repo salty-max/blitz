@@ -5,7 +5,6 @@ import { Card } from './card'
 const meta = {
   title: 'Components/Card',
   component: Card,
-  tags: ['autodocs'],
   argTypes: { interactive: { control: 'boolean' } },
   render: (args) => (
     <Card {...args} className="w-72">

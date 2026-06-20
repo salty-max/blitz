@@ -1,0 +1,14 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
+
+import * as TableStories from './table.stories'
+
+<Meta of={TableStories} />
+
+# Table
+
+A horizontally scrollable data table with the codex's heavy header rule.
+Assembled from compound parts: `Table.Header`, `Table.Body`, `Table.Row`,
+`Table.Head` and `Table.Cell`. Rows are baseline-aligned so a tall cell lines up
+with its roll.
+
+<Canvas of={TableStories.Default} />

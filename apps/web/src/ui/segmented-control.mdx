@@ -1,0 +1,25 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks'
+
+import * as SegmentedControlStories from './segmented-control.stories'
+
+<Meta of={SegmentedControlStories} />
+
+# SegmentedControl
+
+A single-select control rendered as a row of equal-width segments with a sliding
+ink indicator behind the active one. Built on Radix's toggle group, so it has
+radio-group semantics and arrow-key navigation; the indicator is exactly one
+segment wide and slides by whole segments, so it always covers the target.
+
+<Canvas of={SegmentedControlStories.Default} />
+
+## Props
+
+<Controls />
+
+## Examples
+
+A two-option control, and the smaller size:
+
+<Canvas of={SegmentedControlStories.Small} />
+<Canvas of={SegmentedControlStories.TwoOptions} />

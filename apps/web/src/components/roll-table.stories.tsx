@@ -58,7 +58,6 @@ const PRAYER_ROWS: RollTableRow[] = [
 const meta = {
   title: 'Composites/RollTable',
   component: RollTable,
-  tags: ['autodocs'],
   args: { rows: INJURY_ROWS },
   decorators: [withDrawer],
 } satisfies Meta<typeof RollTable>

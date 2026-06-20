@@ -1,0 +1,18 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
+
+import * as RollTableStories from './roll-table.stories'
+
+<Meta of={RollTableStories} />
+
+# RollTable
+
+A dice-roll reference table — the roll (a single face or an inclusive range),
+the result it yields, and the result's effect. Effects pass through `RefText`,
+so `[[references]]` in them become clickable, colour-coded tags. The middle
+column header defaults to `Result`; override it with `resultHeader`.
+
+<Canvas of={RollTableStories.Default} />
+
+## Custom result header
+
+<Canvas of={RollTableStories.CustomHeader} />

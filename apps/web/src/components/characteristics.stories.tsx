@@ -5,7 +5,6 @@ import { CharacteristicsRow } from './characteristics'
 const meta = {
   title: 'Composites/CharacteristicsRow',
   component: CharacteristicsRow,
-  tags: ['autodocs'],
   args: { characteristics: { ma: 7, st: 4, ag: 3, pa: 4, av: 9 } },
 } satisfies Meta<typeof CharacteristicsRow>
 

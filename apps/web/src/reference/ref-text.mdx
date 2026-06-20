@@ -1,0 +1,14 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
+
+import * as RefTextStories from './ref-text.stories'
+
+<Meta of={RefTextStories} />
+
+# RefText
+
+Renders text containing `[[key]]` / `[[key|label]]` references, turning each into
+a button that opens it in the side-drawer — colour-coded by the kind of entry it
+points to (skill, rules term, special rule, star ability). Plain text passes
+through unchanged. It must be rendered inside a `RefDrawerProvider`.
+
+<Canvas of={RefTextStories.Default} />

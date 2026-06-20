@@ -1,0 +1,15 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks'
+
+import * as NavLinkStories from './nav-link.stories'
+
+<Meta of={NavLinkStories} />
+
+# NavLink
+
+Class variants for a navigation link, not a component. Active styling keys off
+the router's `data-status="active"` attribute, so apply `navLinkVariants(...)`
+to a router `Link`'s `className` — no active/inactive props needed. Two
+contexts ship: the codex `section` nav and the `masthead`.
+
+<Canvas of={NavLinkStories.Section} />
+<Canvas of={NavLinkStories.Masthead} />

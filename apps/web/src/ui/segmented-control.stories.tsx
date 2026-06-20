@@ -22,7 +22,6 @@ function ControlledSegmentedControl(args: SegmentedControlProps<string>) {
 const meta = {
   title: 'Components/SegmentedControl',
   component: SegmentedControl,
-  tags: ['autodocs'],
   args: {
     options: WEATHER,
     value: 'sunny',

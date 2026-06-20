@@ -5,7 +5,6 @@ import { Eyebrow } from './eyebrow'
 const meta = {
   title: 'Components/Eyebrow',
   component: Eyebrow,
-  tags: ['autodocs'],
   args: { children: 'Third Season Edition' },
   argTypes: {
     tone: { control: 'inline-radio', options: ['blood', 'gold', 'muted'] },
