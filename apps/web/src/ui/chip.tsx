@@ -13,6 +13,7 @@ export const chipVariants = cva(
         blood: 'bg-blood text-paper',
         ink: 'bg-ink text-paper',
         gold: 'bg-gold tabular-nums text-ink',
+        pitch: 'bg-pitch text-paper',
         outline: 'border border-ink/25 text-ink/80',
         accent: 'border border-blood/60 bg-blood/10 text-blood',
       },

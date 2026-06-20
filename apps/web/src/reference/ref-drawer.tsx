@@ -9,9 +9,17 @@ import {
   useState,
 } from 'react'
 
-import { resolveRef } from '@/lib/resolve-ref'
+import { type RefTone, resolveRef } from '@/lib/resolve-ref'
 import { RefText } from '@/reference/ref-text'
-import { Chip } from '@/ui'
+import { Chip, type ChipProps } from '@/ui'
+
+/** The drawer's kind chip takes the colour of the reference's category. */
+const toneChipVariant: Record<RefTone, ChipProps['variant']> = {
+  skill: 'blood',
+  term: 'ink',
+  rule: 'pitch',
+  star: 'gold',
+}
 
 interface RefDrawerValue {
   /** Open the drawer on a reference key (pushes onto the back-stack). */
@@ -59,7 +67,11 @@ export function RefDrawerProvider({ children }: { children: ReactNode }) {
           <Dialog.Content className="fixed inset-x-0 bottom-0 max-h-[85vh] overflow-y-auto border-t-4 border-ink bg-paper shadow-2xl focus:outline-none data-[state=closed]:animate-sheet-out data-[state=open]:animate-sheet-in">
             <div className="mx-auto w-full max-w-5xl">
               <div className="flex items-center justify-between border-b-2 border-ink/15 px-5 py-3">
-                <Chip variant="blood">{resolved?.kind ?? 'Reference'}</Chip>
+                <Chip
+                  variant={resolved ? toneChipVariant[resolved.tone] : 'blood'}
+                >
+                  {resolved?.kind ?? 'Reference'}
+                </Chip>
                 <div className="flex items-center gap-1">
                   {stack.length > 1 && (
                     <button
