@@ -2,6 +2,7 @@ import type {
   Casualty as RawCasualty,
   GlossaryTerm as RawGlossaryTerm,
   Inducement as RawInducement,
+  Injury as RawInjury,
   Position as RawPosition,
   Prayer as RawPrayer,
   Skill as RawSkill,
@@ -15,6 +16,7 @@ import type {
   CasualtyKey,
   GlossaryKey,
   InducementKey,
+  InjuryKey,
   PrayerKey,
   SkillKey,
   SpecialRuleKey,
@@ -72,6 +74,9 @@ export type Inducement = Omit<RawInducement, 'key' | 'restrictedTo'> & {
 
 /** A Casualty-table result. */
 export type Casualty = Omit<RawCasualty, 'key'> & { key: CasualtyKey }
+
+/** An Injury-table result, in its standard or Stunty variant. */
+export type Injury = Omit<RawInjury, 'key'> & { key: InjuryKey }
 
 /** A Prayers to Nuffle result. */
 export type Prayer = Omit<RawPrayer, 'key'> & { key: PrayerKey }

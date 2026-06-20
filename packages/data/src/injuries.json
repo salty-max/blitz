@@ -1,0 +1,51 @@
+[
+  {
+    "key": "stunned",
+    "name": "Stunned",
+    "variant": "standard",
+    "roll": [2, 7],
+    "effect": "Recovers on the pitch — turned face-up to [[prone|Prone]] at the end of the team's turn."
+  },
+  {
+    "key": "knocked-out",
+    "name": "Knocked-out",
+    "variant": "standard",
+    "roll": [8, 9],
+    "effect": "Carried off to the Reserves — recovers on a 4+ at the end of each drive."
+  },
+  {
+    "key": "casualty",
+    "name": "Casualty",
+    "variant": "standard",
+    "roll": [10, 12],
+    "effect": "Taken out of action — roll on the Casualty table."
+  },
+  {
+    "key": "stunty-stunned",
+    "name": "Stunned",
+    "variant": "stunty",
+    "roll": [2, 6],
+    "effect": "Recovers on the pitch — turned face-up to [[prone|Prone]] at the end of the team's turn."
+  },
+  {
+    "key": "stunty-knocked-out",
+    "name": "Knocked-out",
+    "variant": "stunty",
+    "roll": [7, 8],
+    "effect": "Carried off to the Reserves — recovers on a 4+ at the end of each drive."
+  },
+  {
+    "key": "stunty-badly-hurt",
+    "name": "Badly Hurt",
+    "variant": "stunty",
+    "roll": [9, 9],
+    "effect": "Badly Hurt — the mildest Casualty, suffered without a Casualty roll."
+  },
+  {
+    "key": "stunty-casualty",
+    "name": "Casualty",
+    "variant": "stunty",
+    "roll": [10, 12],
+    "effect": "Taken out of action — roll on the Casualty table."
+  }
+]

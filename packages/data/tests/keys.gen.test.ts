@@ -5,6 +5,8 @@ import {
   GLOSSARY_KEYS,
   INDUCEMENT_KEYS,
   inducements,
+  injuries,
+  INJURY_KEYS,
   PRAYER_KEYS,
   prayers,
   SKILL_KEYS,
@@ -30,6 +32,7 @@ describe('generated key unions (keys.gen.ts)', () => {
     ['star abilities', STAR_ABILITY_KEYS, starAbilities],
     ['inducements', INDUCEMENT_KEYS, inducements],
     ['casualties', CASUALTY_KEYS, casualties],
+    ['injuries', INJURY_KEYS, injuries],
     ['prayers', PRAYER_KEYS, prayers],
   ]
 
