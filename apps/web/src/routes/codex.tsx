@@ -1,6 +1,8 @@
 import {
+  casualties,
   glossary,
   inducements,
+  prayers,
   skills,
   specialRules,
   starPlayers,
@@ -19,6 +21,8 @@ const CATEGORIES = [
     count: inducements.length,
   },
   { to: '/codex/rules', label: 'Special Rules', count: specialRules.length },
+  { to: '/codex/casualties', label: 'Casualties', count: casualties.length },
+  { to: '/codex/prayers', label: 'Prayers', count: prayers.length },
   { to: '/codex/glossary', label: 'Glossary', count: glossary.length },
 ] as const
 
