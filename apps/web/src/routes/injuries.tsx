@@ -1,4 +1,4 @@
-import { casualties, injuries } from '@blitz/data'
+import { casualties, injuries, lastingInjuries } from '@blitz/data'
 
 import { RefText } from '@/components/ref-text'
 
@@ -78,6 +78,15 @@ export function InjuriesPage() {
       <section className="space-y-5">
         <TableHead die="D16">Casualty table</TableHead>
         <RollTable rows={casualties} />
+      </section>
+
+      <section className="space-y-5">
+        <TableHead die="D6">Lasting injury</TableHead>
+        <p className="text-sm text-ink/70">
+          A Lasting Injury casualty (13–14) rolls here for which characteristic
+          drops by 1.
+        </p>
+        <RollTable rows={lastingInjuries} />
       </section>
     </div>
   )
