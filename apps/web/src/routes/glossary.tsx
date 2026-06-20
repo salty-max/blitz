@@ -1,4 +1,5 @@
 import { glossary } from '@blitz/data'
+import { DescriptionList, DescriptionRow } from '@blitz/ui'
 
 import { RefText } from '@/components/ref-text'
 
@@ -10,21 +11,13 @@ export function GlossaryPage() {
     <div>
       <h1 className="font-display text-5xl uppercase">Glossary</h1>
 
-      <dl className="mt-6 divide-y divide-ink/10">
+      <DescriptionList className="mt-6">
         {TERMS.map((entry) => (
-          <div
-            key={entry.key}
-            className="grid gap-1 py-2.5 sm:grid-cols-[12rem_1fr] sm:gap-4"
-          >
-            <dt className="font-headline text-lg font-semibold uppercase tracking-wide">
-              {entry.term}
-            </dt>
-            <dd className="text-ink/85">
-              <RefText>{entry.definition}</RefText>
-            </dd>
-          </div>
+          <DescriptionRow key={entry.key} term={entry.term}>
+            <RefText>{entry.definition}</RefText>
+          </DescriptionRow>
         ))}
-      </dl>
+      </DescriptionList>
     </div>
   )
 }
