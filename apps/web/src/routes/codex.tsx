@@ -8,7 +8,7 @@ import {
   starPlayers,
   teams,
 } from '@blitz/data'
-import { Card, Eyebrow, navLinkVariants } from '@blitz/ui'
+import { Card, Eyebrow, navLinkVariants, PageHeading } from '@blitz/ui'
 import { Link, Outlet } from '@tanstack/react-router'
 
 const CATEGORIES = [
@@ -64,14 +64,12 @@ export function CodexHome() {
     <div>
       <section className="border-b-4 border-ink pb-6">
         <Eyebrow>Third Season Edition</Eyebrow>
-        <h1 className="mt-1 font-display text-5xl uppercase">
-          The Blood Bowl Codex
-        </h1>
+        <PageHeading className="mt-1">The Blood Bowl Codex</PageHeading>
       </section>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {CATEGORIES.map((category) => (
-          <Card key={category.to} asChild>
+          <Card key={category.to} asChild interactive>
             <Link to={category.to}>
               <div className="flex items-baseline justify-between gap-3">
                 <h2 className="font-display text-3xl uppercase">

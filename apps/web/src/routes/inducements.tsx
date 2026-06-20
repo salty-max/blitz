@@ -4,12 +4,16 @@ import {
   type Team,
   teamsForSpecialRule,
 } from '@blitz/data'
-import { DescriptionList, DescriptionRow } from '@blitz/ui'
-import { Link } from '@tanstack/react-router'
+import {
+  DescriptionList,
+  DescriptionRow,
+  FieldLabel,
+  PageHeading,
+} from '@blitz/ui'
 
-import { FieldLabel } from '@/components/field-label'
-import { chipClass, RefChips } from '@/components/ref-chips'
+import { RefChips } from '@/components/ref-chips'
 import { RefText } from '@/components/ref-text'
+import { TeamChips } from '@/components/team-chips'
 import { gp } from '@/lib/format'
 
 /** The teams eligible for an inducement — those sharing one of its special rules. */
@@ -25,7 +29,7 @@ function teamsForInducement(inducement: Inducement): Team[] {
 export function InducementsPage() {
   return (
     <div>
-      <h1 className="font-display text-5xl uppercase">Inducements</h1>
+      <PageHeading>Inducements</PageHeading>
 
       <DescriptionList className="mt-6">
         {inducements.map((inducement) => (
@@ -51,18 +55,7 @@ export function InducementsPage() {
                 </div>
                 <div className="flex flex-wrap items-center gap-2">
                   <FieldLabel>Teams</FieldLabel>
-                  <div className="flex flex-wrap gap-1.5">
-                    {teamsForInducement(inducement).map((team) => (
-                      <Link
-                        key={team.key}
-                        to="/codex/teams/$key"
-                        params={{ key: team.key }}
-                        className={chipClass()}
-                      >
-                        {team.name}
-                      </Link>
-                    ))}
-                  </div>
+                  <TeamChips teams={teamsForInducement(inducement)} />
                 </div>
               </div>
             )}

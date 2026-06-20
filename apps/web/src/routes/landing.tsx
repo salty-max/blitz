@@ -48,7 +48,12 @@ export function LandingPage() {
 
       <div className="mt-8 grid gap-4 lg:grid-cols-3">
         {PILLARS.map((pillar) => (
-          <Card key={pillar.to} asChild className="flex flex-col p-6">
+          <Card
+            key={pillar.to}
+            asChild
+            interactive
+            className="flex flex-col p-6"
+          >
             <Link to={pillar.to}>
               <Eyebrow size="sm" className="group-hover:text-gold">
                 {pillar.kicker}

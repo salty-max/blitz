@@ -1,9 +1,13 @@
 import { specialRules, teamsForSpecialRule } from '@blitz/data'
-import { DescriptionList, DescriptionRow, SectionHeading } from '@blitz/ui'
-import { Link } from '@tanstack/react-router'
+import {
+  DescriptionList,
+  DescriptionRow,
+  PageHeading,
+  SectionHeading,
+} from '@blitz/ui'
 
-import { chipClass } from '@/components/ref-chips'
 import { RefText } from '@/components/ref-text'
+import { TeamChips } from '@/components/team-chips'
 
 const GROUPS = [
   ['league', 'League affiliations'],
@@ -14,7 +18,7 @@ const GROUPS = [
 export function RulesPage() {
   return (
     <div>
-      <h1 className="font-display text-5xl uppercase">Special Rules</h1>
+      <PageHeading>Special Rules</PageHeading>
 
       {GROUPS.map(([category, label]) => {
         const group = specialRules.filter((rule) => rule.category === category)
@@ -30,17 +34,8 @@ export function RulesPage() {
                   <DescriptionRow key={rule.key} width="lg" term={rule.name}>
                     <RefText>{rule.effect}</RefText>
                     {ruleTeams.length > 0 && (
-                      <div className="mt-2 flex flex-wrap gap-1.5">
-                        {ruleTeams.map((team) => (
-                          <Link
-                            key={team.key}
-                            to="/codex/teams/$key"
-                            params={{ key: team.key }}
-                            className={chipClass()}
-                          >
-                            {team.name}
-                          </Link>
-                        ))}
+                      <div className="mt-2">
+                        <TeamChips teams={ruleTeams} />
                       </div>
                     )}
                   </DescriptionRow>

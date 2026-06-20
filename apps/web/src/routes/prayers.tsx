@@ -1,4 +1,5 @@
 import { prayers } from '@blitz/data'
+import { PageHeading } from '@blitz/ui'
 
 import { RollTable } from '@/components/roll-table'
 
@@ -6,7 +7,7 @@ import { RollTable } from '@/components/roll-table'
 export function PrayersPage() {
   return (
     <div>
-      <h1 className="font-display text-5xl uppercase">Prayers to Nuffle</h1>
+      <PageHeading>Prayers to Nuffle</PageHeading>
 
       <div className="mt-6">
         <RollTable rows={prayers} resultHeader="Prayer" />
