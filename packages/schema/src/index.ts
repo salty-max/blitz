@@ -2,6 +2,7 @@ export { type Casualty, casualtySchema } from './casualty'
 export { type GlossaryTerm, glossaryTermSchema } from './glossary'
 export { type Inducement, inducementSchema } from './inducement'
 export { type Injury, injurySchema } from './injury'
+export { type LastingInjury, lastingInjurySchema } from './lasting-injury'
 export { type Prayer, prayerSchema } from './prayer'
 export { parseRefs, refKeys, type RefSegment } from './refs'
 export {

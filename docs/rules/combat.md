@@ -76,6 +76,19 @@ A Knocked Down player checks armour, then possibly injury:
 | 13–14 | Lasting Injury | −1 to a characteristic + miss the next game |
 | 15–16 | Dead           | removed from the roster                     |
 
+## Lasting Injury table (D6)
+
+A **Lasting Injury** casualty (Casualty 13–14) rolls a **D6** here for which
+characteristic permanently drops by 1:
+
+| Roll | Lasting injury      | Effect |
+| ---- | ------------------- | ------ |
+| 1–2  | Head Injury         | −1 AV  |
+| 3    | Smashed Knee        | −1 MA  |
+| 4    | Broken Arm          | −1 PA  |
+| 5    | Neck Injury         | −1 AG  |
+| 6    | Dislocated Shoulder | −1 ST  |
+
 ## Implementation status
 
 - **engine** — the odds helper (#13) can compute block-dice outcome %,
