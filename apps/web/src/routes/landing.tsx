@@ -1,6 +1,7 @@
-import { Button, Card, Eyebrow } from '@blitz/ui'
 import { Link } from '@tanstack/react-router'
 import { ArrowRight } from 'lucide-react'
+
+import { Button, Card, Eyebrow } from '@/components/ui'
 
 const PILLARS = [
   {

@@ -1,5 +1,4 @@
-import { cn } from '@blitz/ui'
-
+import { cn } from '@/components/ui'
 import { gp } from '@/lib/format'
 
 const SIZE = {

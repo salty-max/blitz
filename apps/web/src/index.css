@@ -1,9 +1,4 @@
 @import 'tailwindcss';
 
-/* The shared Spike! design tokens and base layer, owned by @blitz/ui.
-   Imported by relative path: the web app's `@blitz/ui` Vite alias points at the
-   package's JS entry, so the `@blitz/ui/theme.css` subpath can't resolve here. */
-@import '../../../packages/ui/src/theme.css';
-
-/* Scan the workspace UI lib so its utility classes are generated. */
-@source '../../../packages/ui/src';
+/* The shared Spike! design tokens and base layer. */
+@import './components/ui/theme.css';

@@ -1,7 +1,7 @@
 import { prayers } from '@blitz/data'
-import { PageHeading } from '@blitz/ui'
 
 import { RollTable } from '@/components/roll-table'
+import { PageHeading } from '@/components/ui'
 
 /** The Prayers to Nuffle table — D16 pre-match blessings the underdog may pray for. */
 export function PrayersPage() {

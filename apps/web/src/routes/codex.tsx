@@ -8,9 +8,10 @@ import {
   starPlayers,
   teams,
 } from '@blitz/data'
-import { Card, Eyebrow, navLinkVariants, PageHeading } from '@blitz/ui'
 import { Link, Outlet } from '@tanstack/react-router'
 import { ChevronLeft } from 'lucide-react'
+
+import { Card, Eyebrow, navLinkVariants, PageHeading } from '@/components/ui'
 
 const CATEGORIES = [
   { to: '/codex/teams', label: 'Teams', count: teams.length },

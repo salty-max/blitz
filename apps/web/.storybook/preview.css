@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 /* The shared Spike! design tokens and base layer. */
-@import '@blitz/ui/theme.css';
+@import '../src/components/ui/theme.css';
 
 /* Scan the components and their stories so every utility class is generated. */
 @source '../src';

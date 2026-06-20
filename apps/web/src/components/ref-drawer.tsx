@@ -1,4 +1,3 @@
-import { Badge } from '@blitz/ui'
 import * as Dialog from '@radix-ui/react-dialog'
 import { ArrowLeft, X } from 'lucide-react'
 import {
@@ -11,6 +10,7 @@ import {
 } from 'react'
 
 import { RefText } from '@/components/ref-text'
+import { Badge } from '@/components/ui'
 import { resolveRef } from '@/lib/resolve-ref'
 
 interface RefDrawerValue {
