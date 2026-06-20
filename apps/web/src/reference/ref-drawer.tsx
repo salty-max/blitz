@@ -57,7 +57,7 @@ export function RefDrawerProvider({ children }: { children: ReactNode }) {
         <Dialog.Portal>
           <Dialog.Overlay className="fixed inset-0 bg-ink/50 data-[state=closed]:animate-overlay-out data-[state=open]:animate-overlay-in" />
           <Dialog.Content className="fixed inset-x-0 bottom-0 max-h-[85vh] overflow-y-auto border-t-4 border-ink bg-paper shadow-2xl focus:outline-none data-[state=closed]:animate-sheet-out data-[state=open]:animate-sheet-in">
-            <div className="mx-auto w-full max-w-3xl">
+            <div className="mx-auto w-full max-w-5xl">
               <div className="flex items-center justify-between border-b-2 border-ink/15 px-5 py-3">
                 <Chip variant="blood">{resolved?.kind ?? 'Reference'}</Chip>
                 <div className="flex items-center gap-1">
