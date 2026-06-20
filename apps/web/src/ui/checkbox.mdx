@@ -1,0 +1,26 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks'
+
+import * as CheckboxStories from './checkbox.stories'
+
+<Meta of={CheckboxStories} />
+
+# Checkbox
+
+A sharp square checkbox — Radix-powered, so it has the right role, keyboard
+support and form integration. It fills blood with a check when on. Use it for
+independent toggles: inducements to buy, a starting line-up.
+
+<Canvas of={CheckboxStories.WithLabel} />
+
+## Props
+
+<Controls />
+
+## States
+
+Give the box an accessible name — wrap it in a `<label>` (as above) or pass
+`aria-label`.
+
+<Canvas of={CheckboxStories.Off} />
+<Canvas of={CheckboxStories.On} />
+<Canvas of={CheckboxStories.Disabled} />

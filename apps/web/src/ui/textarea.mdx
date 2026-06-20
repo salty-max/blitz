@@ -1,0 +1,22 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks'
+
+import * as TextareaStories from './textarea.stories'
+
+<Meta of={TextareaStories} />
+
+# Textarea
+
+A multi-line text input — match notes, a league's description. The multi-line
+sibling of `Input`: same sharp bordered field, focusing to blood, with an
+`invalid` flag.
+
+<Canvas of={TextareaStories.Default} />
+
+## Props
+
+<Controls />
+
+## States
+
+<Canvas of={TextareaStories.Invalid} />
+<Canvas of={TextareaStories.Disabled} />
