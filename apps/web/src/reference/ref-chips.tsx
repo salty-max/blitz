@@ -1,6 +1,6 @@
-import { useRefDrawer } from '@/components/ref-drawer'
-import { Chip, cn } from '@/components/ui'
 import { resolveRef } from '@/lib/resolve-ref'
+import { useRefDrawer } from '@/reference/ref-drawer'
+import { Chip, cn } from '@/ui'
 
 /**
  * Renders a list of reference keys as clickable chips that open the drawer —

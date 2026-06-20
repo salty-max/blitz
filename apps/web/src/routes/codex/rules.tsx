@@ -1,8 +1,8 @@
 import { specialRules, teamsForSpecialRule } from '@blitz/data'
 
-import { RefText } from '@/components/ref-text'
 import { TeamChips } from '@/components/team-chips'
-import { DescriptionList, PageHeading, SectionHeading } from '@/components/ui'
+import { RefText } from '@/reference/ref-text'
+import { DescriptionList, PageHeading, SectionHeading } from '@/ui'
 
 const GROUPS = [
   ['league', 'League affiliations'],

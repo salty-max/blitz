@@ -1,7 +1,7 @@
 import { glossary } from '@blitz/data'
 
-import { RefText } from '@/components/ref-text'
-import { DescriptionList, PageHeading } from '@/components/ui'
+import { RefText } from '@/reference/ref-text'
+import { DescriptionList, PageHeading } from '@/ui'
 
 const TERMS = [...glossary].sort((a, b) => a.term.localeCompare(b.term))
 

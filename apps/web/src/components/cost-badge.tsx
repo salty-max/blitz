@@ -1,5 +1,5 @@
-import { Chip } from '@/components/ui'
 import { gp } from '@/lib/format'
+import { Chip } from '@/ui'
 
 /** A gold price tag showing a cost in gold pieces. */
 export function CostBadge({

@@ -1,7 +1,7 @@
 import { Link } from '@tanstack/react-router'
 import { ArrowRight } from 'lucide-react'
 
-import { Button, Card, Eyebrow } from '@/components/ui'
+import { Button, Card, Eyebrow } from '@/ui'
 
 const PILLARS = [
   {

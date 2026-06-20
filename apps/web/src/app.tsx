@@ -1,6 +1,6 @@
 import { RouterProvider } from '@tanstack/react-router'
 
-import { RefDrawerProvider } from '@/components/ref-drawer'
+import { RefDrawerProvider } from '@/reference/ref-drawer'
 import { router } from '@/router'
 
 /** The Blood Bowl codex — routed pages wrapped in the ref side-drawer. */

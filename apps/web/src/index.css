@@ -1,4 +1,4 @@
 @import 'tailwindcss';
 
 /* The shared Spike! design tokens and base layer. */
-@import './components/ui/theme.css';
+@import './ui/theme.css';
