@@ -10,6 +10,7 @@ export {
 export { EmptyState } from './empty-state'
 export { Eyebrow, type EyebrowProps, eyebrowVariants } from './eyebrow'
 export { Field, type FieldProps } from './field'
+export { Input, type InputProps, inputVariants } from './input'
 export { type NavLinkVariants, navLinkVariants } from './nav-link'
 export { PageHeading } from './page-heading'
 export {
@@ -17,5 +18,12 @@ export {
   type SectionHeadingProps,
   sectionHeadingVariants,
 } from './section-heading'
+export {
+  SegmentedControl,
+  type SegmentedControlOption,
+  type SegmentedControlProps,
+  segmentVariants,
+} from './segmented-control'
 export { Select } from './select'
+export { Switch } from './switch'
 export { Table } from './table'
