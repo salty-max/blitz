@@ -90,6 +90,9 @@
     margin: 0;
     background-color: var(--color-paper);
     color: var(--color-ink);
+    /* The body face reads large at 16px; 14px sits better against the
+       condensed headline type and the rest of the UI scale. */
+    font-size: 0.875rem;
     font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
   }
