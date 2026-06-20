@@ -1,6 +1,7 @@
 import type { Decorator, Meta, StoryObj } from '@storybook/react-vite'
 
-import { RefDrawerProvider } from './ref-drawer'
+import { RefDrawerProvider } from '@/reference/ref-drawer'
+
 import { RollTable, type RollTableRow } from './roll-table'
 
 const withDrawer: Decorator = (Story) => (

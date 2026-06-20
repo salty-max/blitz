@@ -11,7 +11,7 @@ import {
 import { Link, Outlet } from '@tanstack/react-router'
 import { ChevronLeft } from 'lucide-react'
 
-import { Card, Eyebrow, navLinkVariants, PageHeading } from '@/components/ui'
+import { Card, Eyebrow, navLinkVariants, PageHeading } from '@/ui'
 
 const CATEGORIES = [
   { to: '/codex/teams', label: 'Teams', count: teams.length },

@@ -1,7 +1,7 @@
 import { type Team } from '@blitz/data'
 import { Link } from '@tanstack/react-router'
 
-import { Chip } from '@/components/ui'
+import { Chip } from '@/ui'
 
 /** A wrapped row of team chips, each linking to that team's roster page. */
 export function TeamChips({ teams }: { teams: Team[] }) {

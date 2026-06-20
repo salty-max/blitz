@@ -1,8 +1,8 @@
 import { parseRefs } from '@blitz/schema'
 import { Fragment } from 'react'
 
-import { useRefDrawer } from '@/components/ref-drawer'
 import { resolveRef } from '@/lib/resolve-ref'
+import { useRefDrawer } from '@/reference/ref-drawer'
 
 const refLinkClass =
   'font-semibold text-blood underline decoration-blood/40 decoration-2 underline-offset-2 transition-colors hover:decoration-blood'

@@ -9,9 +9,9 @@ import {
   useState,
 } from 'react'
 
-import { RefText } from '@/components/ref-text'
-import { Chip } from '@/components/ui'
 import { resolveRef } from '@/lib/resolve-ref'
+import { RefText } from '@/reference/ref-text'
+import { Chip } from '@/ui'
 
 interface RefDrawerValue {
   /** Open the drawer on a reference key (pushes onto the back-stack). */

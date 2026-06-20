@@ -3,8 +3,9 @@ import { Link, useParams } from '@tanstack/react-router'
 import { type ReactNode, useState } from 'react'
 
 import { CostBadge } from '@/components/cost-badge'
-import { RefChips } from '@/components/ref-chips'
-import { RefText } from '@/components/ref-text'
+import { gp } from '@/lib/format'
+import { RefChips } from '@/reference/ref-chips'
+import { RefText } from '@/reference/ref-text'
 import {
   Button,
   Card,
@@ -12,8 +13,7 @@ import {
   PageHeading,
   SectionHeading,
   Table,
-} from '@/components/ui'
-import { gp } from '@/lib/format'
+} from '@/ui'
 
 /** Single-letter codes for the skill-access categories shown in the roster table. */
 const ACCESS: Record<string, string> = {

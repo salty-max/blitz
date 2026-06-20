@@ -5,11 +5,11 @@ import {
   teamsForSpecialRule,
 } from '@blitz/data'
 
-import { RefChips } from '@/components/ref-chips'
-import { RefText } from '@/components/ref-text'
 import { TeamChips } from '@/components/team-chips'
-import { DescriptionList, Field, PageHeading } from '@/components/ui'
 import { gp } from '@/lib/format'
+import { RefChips } from '@/reference/ref-chips'
+import { RefText } from '@/reference/ref-text'
+import { DescriptionList, Field, PageHeading } from '@/ui'
 
 /** The teams eligible for an inducement — those sharing one of its special rules. */
 function teamsForInducement(inducement: Inducement): Team[] {

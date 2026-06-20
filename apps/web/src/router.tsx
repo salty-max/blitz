@@ -4,18 +4,18 @@ import {
   createRouter,
 } from '@tanstack/react-router'
 
-import { AppShell } from '@/components/app-shell'
-import { CodexHome, CodexLayout } from '@/routes/codex'
+import { AppShell } from '@/layout/app-shell'
+import { CodexHome, CodexLayout } from '@/routes/codex/codex'
+import { GlossaryPage } from '@/routes/codex/glossary'
+import { InducementsPage } from '@/routes/codex/inducements'
+import { InjuriesPage } from '@/routes/codex/injuries'
+import { PrayersPage } from '@/routes/codex/prayers'
+import { RulesPage } from '@/routes/codex/rules'
+import { SkillsPage } from '@/routes/codex/skills'
+import { StarsPage } from '@/routes/codex/stars'
+import { TeamDetail, TeamsIndex } from '@/routes/codex/teams'
 import { ComingSoon } from '@/routes/coming-soon'
-import { GlossaryPage } from '@/routes/glossary'
-import { InducementsPage } from '@/routes/inducements'
-import { InjuriesPage } from '@/routes/injuries'
 import { LandingPage } from '@/routes/landing'
-import { PrayersPage } from '@/routes/prayers'
-import { RulesPage } from '@/routes/rules'
-import { SkillsPage } from '@/routes/skills'
-import { StarsPage } from '@/routes/stars'
-import { TeamDetail, TeamsIndex } from '@/routes/teams'
 
 const rootRoute = createRootRoute({ component: AppShell })
 
