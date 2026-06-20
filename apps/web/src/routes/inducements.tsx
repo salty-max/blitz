@@ -4,6 +4,7 @@ import {
   type Team,
   teamsForSpecialRule,
 } from '@blitz/data'
+import { DescriptionList, DescriptionRow } from '@blitz/ui'
 import { Link } from '@tanstack/react-router'
 
 import { FieldLabel } from '@/components/field-label'
@@ -26,49 +27,48 @@ export function InducementsPage() {
     <div>
       <h1 className="font-display text-5xl uppercase">Inducements</h1>
 
-      <dl className="mt-6 divide-y divide-ink/10">
+      <DescriptionList className="mt-6">
         {inducements.map((inducement) => (
-          <div
+          <DescriptionRow
             key={inducement.key}
-            className="grid gap-1 py-3 sm:grid-cols-[14rem_1fr] sm:gap-4"
+            width="lg"
+            className="py-3"
+            term={
+              <>
+                <span className="block">{inducement.name}</span>
+                <span className="block text-sm tabular-nums text-blood">
+                  {gp(inducement.cost)} · max {inducement.max}
+                </span>
+              </>
+            }
           >
-            <dt>
-              <span className="block font-headline text-lg font-semibold uppercase tracking-wide">
-                {inducement.name}
-              </span>
-              <span className="font-headline text-sm font-semibold uppercase tracking-wide tabular-nums text-blood">
-                {gp(inducement.cost)} · max {inducement.max}
-              </span>
-            </dt>
-            <dd className="text-ink/85">
-              <RefText>{inducement.effect}</RefText>
-              {inducement.restrictedTo.length > 0 && (
-                <div className="mt-2 space-y-2">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <FieldLabel>Restricted to</FieldLabel>
-                    <RefChips keys={inducement.restrictedTo} />
-                  </div>
-                  <div className="flex flex-wrap items-center gap-2">
-                    <FieldLabel>Teams</FieldLabel>
-                    <div className="flex flex-wrap gap-1.5">
-                      {teamsForInducement(inducement).map((team) => (
-                        <Link
-                          key={team.key}
-                          to="/codex/teams/$key"
-                          params={{ key: team.key }}
-                          className={chipClass()}
-                        >
-                          {team.name}
-                        </Link>
-                      ))}
-                    </div>
+            <RefText>{inducement.effect}</RefText>
+            {inducement.restrictedTo.length > 0 && (
+              <div className="mt-2 space-y-2">
+                <div className="flex flex-wrap items-center gap-2">
+                  <FieldLabel>Restricted to</FieldLabel>
+                  <RefChips keys={inducement.restrictedTo} />
+                </div>
+                <div className="flex flex-wrap items-center gap-2">
+                  <FieldLabel>Teams</FieldLabel>
+                  <div className="flex flex-wrap gap-1.5">
+                    {teamsForInducement(inducement).map((team) => (
+                      <Link
+                        key={team.key}
+                        to="/codex/teams/$key"
+                        params={{ key: team.key }}
+                        className={chipClass()}
+                      >
+                        {team.name}
+                      </Link>
+                    ))}
                   </div>
                 </div>
-              )}
-            </dd>
-          </div>
+              </div>
+            )}
+          </DescriptionRow>
         ))}
-      </dl>
+      </DescriptionList>
     </div>
   )
 }

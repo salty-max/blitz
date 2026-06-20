@@ -1,5 +1,15 @@
 import { getTeam, starsForTeam, teams } from '@blitz/data'
-import { Button, Card } from '@blitz/ui'
+import {
+  Button,
+  Card,
+  SectionHeading,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@blitz/ui'
 import { Link, useParams } from '@tanstack/react-router'
 import { type ReactNode, useState } from 'react'
 
@@ -143,50 +153,50 @@ export function TeamDetail() {
         </dl>
       </header>
 
-      <div className="mt-6 overflow-x-auto">
-        <table className="w-full min-w-[44rem] border-collapse text-left text-sm">
-          <thead>
-            <tr className="border-b-2 border-ink font-headline text-xs uppercase tracking-wide text-ink/55">
-              <th className="py-2 pr-3">Position</th>
-              <th className="px-2 text-center">Max</th>
-              <th className="px-2 text-center">MA</th>
-              <th className="px-2 text-center">ST</th>
-              <th className="px-2 text-center">AG</th>
-              <th className="px-2 text-center">PA</th>
-              <th className="px-2 text-center">AV</th>
-              <th className="px-2 text-right">Cost</th>
-              <th className="px-2">Skills</th>
-              <th className="px-2">Access</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-ink/10">
+      <div className="mt-6">
+        <Table className="min-w-[44rem]">
+          <TableHeader>
+            <TableRow>
+              <TableHead className="pr-3">Position</TableHead>
+              <TableHead className="px-2 text-center">Max</TableHead>
+              <TableHead className="px-2 text-center">MA</TableHead>
+              <TableHead className="px-2 text-center">ST</TableHead>
+              <TableHead className="px-2 text-center">AG</TableHead>
+              <TableHead className="px-2 text-center">PA</TableHead>
+              <TableHead className="px-2 text-center">AV</TableHead>
+              <TableHead className="px-2 text-right">Cost</TableHead>
+              <TableHead className="px-2">Skills</TableHead>
+              <TableHead className="px-2">Access</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
             {team.positions.map((position) => (
-              <tr key={position.key} className="align-middle">
-                <td className="py-2.5 pr-3 font-headline font-semibold uppercase tracking-wide">
+              <TableRow key={position.key} className="align-middle">
+                <TableCell className="pr-3 font-headline font-semibold uppercase tracking-wide">
                   {position.name}
-                </td>
-                <td className="px-2 py-2.5 text-center font-headline font-semibold tabular-nums">
+                </TableCell>
+                <TableCell className="px-2 text-center font-headline font-semibold tabular-nums">
                   {position.max}
-                </td>
-                <td className="px-2 py-2.5 text-center font-headline font-semibold tabular-nums">
+                </TableCell>
+                <TableCell className="px-2 text-center font-headline font-semibold tabular-nums">
                   {position.characteristics.ma}
-                </td>
-                <td className="px-2 py-2.5 text-center font-headline font-semibold tabular-nums">
+                </TableCell>
+                <TableCell className="px-2 text-center font-headline font-semibold tabular-nums">
                   {position.characteristics.st}
-                </td>
-                <td className="px-2 py-2.5 text-center font-headline font-semibold tabular-nums">
+                </TableCell>
+                <TableCell className="px-2 text-center font-headline font-semibold tabular-nums">
                   {target(position.characteristics.ag)}
-                </td>
-                <td className="px-2 py-2.5 text-center font-headline font-semibold tabular-nums">
+                </TableCell>
+                <TableCell className="px-2 text-center font-headline font-semibold tabular-nums">
                   {target(position.characteristics.pa)}
-                </td>
-                <td className="px-2 py-2.5 text-center font-headline font-semibold tabular-nums">
+                </TableCell>
+                <TableCell className="px-2 text-center font-headline font-semibold tabular-nums">
                   {target(position.characteristics.av)}
-                </td>
-                <td className="px-2 py-2.5 text-right font-headline font-semibold tabular-nums">
+                </TableCell>
+                <TableCell className="px-2 text-right font-headline font-semibold tabular-nums">
                   {gp(position.cost)}
-                </td>
-                <td className="px-2 py-2.5">
+                </TableCell>
+                <TableCell className="px-2">
                   {position.startingSkills.length > 0 ? (
                     <RefChips
                       keys={position.startingSkills}
@@ -195,8 +205,8 @@ export function TeamDetail() {
                   ) : (
                     <span className="text-ink/40">—</span>
                   )}
-                </td>
-                <td className="px-2 py-2.5 font-headline tracking-wide text-ink/70">
+                </TableCell>
+                <TableCell className="px-2 font-headline tracking-wide text-ink/70">
                   {access(position.primary)}
                   {position.secondary.length > 0 && (
                     <span className="text-ink/35">
@@ -204,11 +214,11 @@ export function TeamDetail() {
                       {access(position.secondary)}
                     </span>
                   )}
-                </td>
-              </tr>
+                </TableCell>
+              </TableRow>
             ))}
-          </tbody>
-        </table>
+          </TableBody>
+        </Table>
       </div>
       <p className="mt-2 text-xs text-ink/45">
         Access — primary / secondary: G general · A agility · S strength · P
@@ -217,9 +227,9 @@ export function TeamDetail() {
 
       {stars.length > 0 && (
         <section className="mt-8">
-          <h2 className="border-b-2 border-ink pb-1 font-display text-3xl uppercase text-blood">
+          <SectionHeading tone="blood" bordered>
             Star Players
-          </h2>
+          </SectionHeading>
           <ul className="mt-3 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
             {stars.map((star) => (
               <li key={star.key}>

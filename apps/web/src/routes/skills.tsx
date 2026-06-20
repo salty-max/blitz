@@ -1,4 +1,5 @@
 import { skills } from '@blitz/data'
+import { DescriptionList, DescriptionRow, SectionHeading } from '@blitz/ui'
 
 import { RefText } from '@/components/ref-text'
 
@@ -22,27 +23,16 @@ export function SkillsPage() {
         const group = skills.filter((skill) => skill.category === key)
         return (
           <section key={key} className="mt-8">
-            <h2 className="flex items-baseline gap-2 border-b-2 border-ink pb-1 font-display text-3xl uppercase text-blood">
+            <SectionHeading tone="blood" bordered hint={`· ${group.length}`}>
               {label}
-              <span className="font-headline text-base font-semibold text-ink/40">
-                · {group.length}
-              </span>
-            </h2>
-            <dl className="mt-3 divide-y divide-ink/10">
+            </SectionHeading>
+            <DescriptionList className="mt-3">
               {group.map((skill) => (
-                <div
-                  key={skill.key}
-                  className="grid gap-1 py-2.5 sm:grid-cols-[12rem_1fr] sm:gap-4"
-                >
-                  <dt className="font-headline text-lg font-semibold uppercase tracking-wide">
-                    {skill.name}
-                  </dt>
-                  <dd className="text-ink/85">
-                    <RefText>{skill.effect}</RefText>
-                  </dd>
-                </div>
+                <DescriptionRow key={skill.key} term={skill.name}>
+                  <RefText>{skill.effect}</RefText>
+                </DescriptionRow>
               ))}
-            </dl>
+            </DescriptionList>
           </section>
         )
       })}
