@@ -47,7 +47,7 @@ function BreadcrumbItem({
 /** The chevron between crumbs. */
 function BreadcrumbSeparator() {
   return (
-    <li aria-hidden className="text-ink/30">
+    <li role="presentation" aria-hidden className="text-ink/30">
       <ChevronRight className="h-3.5 w-3.5" />
     </li>
   )

@@ -30,8 +30,9 @@ export type AvatarProps = VariantProps<typeof avatarVariants> & {
 
 /** A sharp square avatar — a team crest or player portrait, with an initials fallback. */
 export function Avatar({ src, alt, fallback, size, className }: AvatarProps) {
-  const [broken, setBroken] = useState(false)
-  const showImage = src && !broken
+  // Track the URL that failed rather than a boolean, so a new `src` recovers.
+  const [erroredSrc, setErroredSrc] = useState<string>()
+  const showImage = src !== undefined && erroredSrc !== src
 
   return (
     <span className={cn(avatarVariants({ size }), className)}>
@@ -39,7 +40,7 @@ export function Avatar({ src, alt, fallback, size, className }: AvatarProps) {
         <img
           src={src}
           alt={alt ?? ''}
-          onError={() => setBroken(true)}
+          onError={() => setErroredSrc(src)}
           className="h-full w-full object-cover"
         />
       ) : (

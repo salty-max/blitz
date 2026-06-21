@@ -61,7 +61,7 @@ export function RefDrawerProvider({ children }: { children: ReactNode }) {
           if (!open) close()
         }}
       >
-        <Sheet.Content>
+        <Sheet.Content aria-describedby={undefined}>
           <div className="mx-auto w-full max-w-5xl">
             <div className="flex items-center justify-between border-b-2 border-ink/15 px-5 py-3">
               <Chip

@@ -35,22 +35,34 @@ export function FormField({
   className,
   children,
 }: FormFieldProps) {
-  const id = useId()
-  const messageId = `${id}-message`
+  const generatedId = useId()
+  const messageId = `${generatedId}-message`
   const message = error ?? hint
+
+  // Respect a control that brings its own id / aria-describedby rather than
+  // clobbering them: the label points at whichever id wins, and the message is
+  // appended to any existing description.
+  const childProps = isValidElement(children)
+    ? (children.props as Record<string, unknown>)
+    : {}
+  const controlId = (childProps.id as string | undefined) ?? generatedId
+  const describedBy =
+    [childProps['aria-describedby'], message && messageId]
+      .filter(Boolean)
+      .join(' ') || undefined
 
   const control = isValidElement(children)
     ? cloneElement(children as ReactElement<Record<string, unknown>>, {
-        id,
-        'aria-invalid': error ? true : undefined,
-        'aria-describedby': message ? messageId : undefined,
+        id: controlId,
+        'aria-invalid': error ? true : childProps['aria-invalid'],
+        'aria-describedby': describedBy,
       })
     : children
 
   return (
     <div className={cn('flex flex-col gap-1.5', className)}>
       <label
-        htmlFor={id}
+        htmlFor={controlId}
         className="font-headline text-xs font-semibold uppercase tracking-wide text-ink/55"
       >
         {label}

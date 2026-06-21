@@ -5,6 +5,7 @@ import {
   type ReactNode,
   useCallback,
   useContext,
+  useEffect,
   useMemo,
   useRef,
   useState,
@@ -55,6 +56,9 @@ export function useToast(): ToastContextValue {
 export function ToastProvider({ children }: { children: ReactNode }) {
   const [toasts, setToasts] = useState<ToastEntry[]>([])
   const nextId = useRef(0)
+  const exitTimers = useRef<ReturnType<typeof setTimeout>[]>([])
+
+  useEffect(() => () => exitTimers.current.forEach(clearTimeout), [])
 
   const toast = useCallback((options: ToastOptions) => {
     setToasts((current) => [
@@ -63,14 +67,17 @@ export function ToastProvider({ children }: { children: ReactNode }) {
     ])
   }, [])
 
-  // Close (so the exit animation plays), then drop the entry once it has.
+  // Close (so the exit animation plays), then drop the entry once it has. The
+  // 250ms must stay above the toast-out animation (160ms, see theme.css).
   const dismiss = useCallback((id: number) => {
     setToasts((current) =>
       current.map((t) => (t.id === id ? { ...t, open: false } : t))
     )
-    setTimeout(() => {
-      setToasts((current) => current.filter((t) => t.id !== id))
-    }, 250)
+    exitTimers.current.push(
+      setTimeout(() => {
+        setToasts((current) => current.filter((t) => t.id !== id))
+      }, 250)
+    )
   }, [])
 
   const value = useMemo(() => ({ toast }), [toast])
