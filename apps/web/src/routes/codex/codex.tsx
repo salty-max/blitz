@@ -1,4 +1,5 @@
 import {
+  getTeam,
   glossary,
   inducements,
   injuries,
@@ -10,11 +11,11 @@ import {
   teams,
   weather,
 } from '@blitz/data'
-import { Link, Outlet } from '@tanstack/react-router'
-import { ChevronLeft } from 'lucide-react'
+import { Link, Outlet, useRouterState } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
 
-import { Card, Eyebrow, navLinkVariants, PageHeading } from '@/ui'
+import { useDataLocale } from '@/i18n/use-data-locale'
+import { Breadcrumb, Card, Eyebrow, PageHeading } from '@/ui'
 
 const CATEGORIES = [
   { to: '/codex/teams', key: 'teams', count: teams.length },
@@ -37,33 +38,54 @@ const CATEGORIES = [
 ] as const
 
 /**
- * The codex section shell for category pages — a sub-nav back to the index and
- * across the sibling categories, above whichever category page is active.
+ * The codex section shell for category pages — a breadcrumb trail locating the
+ * active category (and, on a team's roster, the team) above the routed page.
  */
 export function CodexLayout() {
   const { t } = useTranslation('codex')
+  const locale = useDataLocale()
+  const pathname = useRouterState({
+    select: (state) => state.location.pathname,
+  })
+
+  const [, detailKey] = pathname.replace(/^\/codex\/?/, '').split('/')
+  const category = CATEGORIES.find((entry) => pathname.startsWith(entry.to))
+  const detailName =
+    category?.key === 'teams' && detailKey
+      ? (getTeam(detailKey, locale)?.name ?? detailKey)
+      : undefined
 
   return (
     <div>
-      <nav className="flex flex-wrap items-center gap-x-5 gap-y-1 border-b-2 border-ink pb-2 font-headline text-sm font-semibold uppercase tracking-wide">
-        <Link
-          to="/codex"
-          activeOptions={{ exact: true }}
-          className="inline-flex items-center gap-0.5 text-ink/45 transition-colors hover:text-blood"
-        >
-          <ChevronLeft className="h-4 w-4" />
-          {t('back')}
-        </Link>
-        {CATEGORIES.map((category) => (
-          <Link
-            key={category.to}
-            to={category.to}
-            className={navLinkVariants({ tone: 'section' })}
-          >
-            {t(`categories.${category.key}`)}
+      <Breadcrumb className="border-b-2 border-ink pb-2">
+        <Breadcrumb.Item asChild>
+          <Link to="/codex" activeOptions={{ exact: true }}>
+            {t('back')}
           </Link>
-        ))}
-      </nav>
+        </Breadcrumb.Item>
+        {category && (
+          <>
+            <Breadcrumb.Separator />
+            {detailName ? (
+              <Breadcrumb.Item asChild>
+                <Link to={category.to} activeOptions={{ exact: true }}>
+                  {t(`categories.${category.key}`)}
+                </Link>
+              </Breadcrumb.Item>
+            ) : (
+              <Breadcrumb.Item current>
+                {t(`categories.${category.key}`)}
+              </Breadcrumb.Item>
+            )}
+          </>
+        )}
+        {detailName && (
+          <>
+            <Breadcrumb.Separator />
+            <Breadcrumb.Item current>{detailName}</Breadcrumb.Item>
+          </>
+        )}
+      </Breadcrumb>
       <div className="mt-6">
         <Outlet />
       </div>
