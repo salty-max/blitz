@@ -42,7 +42,7 @@
   {
     "key": "wandering-apothecary",
     "name": "Apothicaire Itinérant",
-    "effect": "Agit une fois par match comme un Apothicaire supplémentaire (équipes pouvant utiliser un Apothicaire)."
+    "effect": "Agit une fois par match comme un apothicaire supplémentaire (équipes pouvant utiliser un apothicaire)."
   },
   {
     "key": "mortuary-assistant",
@@ -52,12 +52,12 @@
   {
     "key": "plague-doctor",
     "name": "Médecin de la Peste",
-    "effect": "Relancez un jet de [[regeneration|régénération]] raté, ou agissez une fois comme un Apothicaire."
+    "effect": "Relancez un jet de [[regeneration|régénération]] raté, ou agissez une fois comme un apothicaire."
   },
   {
     "key": "riotous-rookies",
     "name": "Bleus Déchaînés",
-    "effect": "Alignez 2D3+1 Remplaçants supplémentaires pour ce match."
+    "effect": "Alignez 2D3+1 remplaçants supplémentaires pour ce match."
   },
   {
     "key": "biased-referee",

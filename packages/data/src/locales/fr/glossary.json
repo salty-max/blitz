@@ -2,7 +2,7 @@
   {
     "key": "tackle-zone",
     "term": "Zone de tacle",
-    "definition": "Les huit cases autour d’un joueur Debout. Un adversaire qui s’y tient est [[marked|Marqué]]."
+    "definition": "Les huit cases autour d’un joueur debout. Un adversaire qui s’y tient est [[marked|Marqué]]."
   },
   {
     "key": "marked",
@@ -12,7 +12,7 @@
   {
     "key": "rush",
     "term": "Foncer",
-    "definition": "Se déplacer au-delà de sa MA, une case à la fois ; chaque Foncer demande un 2+ (un 1 naturel fait tomber). Jusqu’à deux par déplacement."
+    "definition": "Se déplacer au-delà de sa MA, une case à la fois ; chaque foncer demande un 2+ (un 1 naturel fait tomber). Jusqu’à deux par déplacement."
   },
   {
     "key": "turnover",
@@ -52,7 +52,7 @@
   {
     "key": "knocked-down",
     "term": "Mise à terre",
-    "definition": "Mis [[prone|À terre]] (ou [[stunned|Sonné]]) — ce qui déclenche un jet d’Armure."
+    "definition": "Mis [[prone|À terre]] (ou [[stunned|Sonné]]) — ce qui déclenche un jet d’armure."
   },
   {
     "key": "follow-up",
@@ -62,7 +62,7 @@
   {
     "key": "assist",
     "term": "Aide",
-    "definition": "Un coéquipier proche ajoutant ±1 en Force à un blocage — offensive (la vôtre) ou défensive (la leur)."
+    "definition": "Un coéquipier proche ajoutant ±1 en force à un blocage — offensive (la vôtre) ou défensive (la leur)."
   },
   {
     "key": "blitz",

@@ -7,7 +7,7 @@
   {
     "key": "dauntless",
     "name": "Intrépide",
-    "effect": "Lance un dé pour égaler la Force d’un adversaire plus fort lors d’un blocage."
+    "effect": "Lance un dé pour égaler la Force d’un adversaire plus fort lors d’un Blocage."
   },
   {
     "key": "fend",
@@ -17,7 +17,7 @@
   {
     "key": "frenzy",
     "name": "Frénésie",
-    "effect": "Doit [[follow-up]] et porter un second blocage si la cible a été repoussée."
+    "effect": "Doit [[follow-up]] et porter un second Blocage si la cible a été repoussée."
   },
   {
     "key": "kick",
@@ -87,7 +87,7 @@
   {
     "key": "hit-and-run",
     "name": "Frappe-et-cours",
-    "effect": "Après un blocage ou un poignard, avance d’une case gratuite si toujours debout."
+    "effect": "Après un Blocage ou un poignard, avance d’une case gratuite si toujours debout."
   },
   {
     "key": "jump-up",
@@ -137,7 +137,7 @@
   {
     "key": "dump-off",
     "name": "Délestage",
-    "effect": "Effectue une passe rapide lorsqu’il est pris pour cible par un blocage."
+    "effect": "Effectue une passe rapide lorsqu’il est pris pour cible par un Blocage."
   },
   {
     "key": "give-and-go",
@@ -157,7 +157,7 @@
   {
     "key": "nerves-of-steel",
     "name": "Nerfs d’acier",
-    "effect": "Ignore les modificateurs de [[marked|marquage]] lors d’une passe ou d’une réception."
+    "effect": "Ignore les modificateurs de [[marked|marquage]] lors d’une Passe ou d’une réception."
   },
   {
     "key": "on-the-ball",
@@ -187,7 +187,7 @@
   {
     "key": "brawler",
     "name": "Bagarreur",
-    "effect": "Relance un unique [[both-down]] lors d’un blocage."
+    "effect": "Relance un unique [[both-down]] lors d’un Blocage."
   },
   {
     "key": "break-tackle",
@@ -242,7 +242,7 @@
   {
     "key": "dirty-player",
     "name": "Joueur déloyal",
-    "effect": "+1 au jet d’Armure ou de Blessure lorsque vous [[foul|agressez]]."
+    "effect": "+1 au jet d’armure ou de blessure lorsque vous [[foul|agressez]]."
   },
   {
     "key": "eye-gouge",
@@ -262,12 +262,12 @@
   {
     "key": "lone-fouler",
     "name": "Agresseur solitaire",
-    "effect": "Relance un jet d’Armure raté lorsque vous [[foul|agressez]] sans [[assist|aides]]."
+    "effect": "Relance un jet d’armure raté lorsque vous [[foul|agressez]] sans [[assist|aides]]."
   },
   {
     "key": "pile-driver",
     "name": "Marteau-pilon",
-    "effect": "Après une mise à terre suite à un blocage, effectue une [[foul|agression]] gratuite."
+    "effect": "Après une mise à terre suite à un Blocage, effectue une [[foul|agression]] gratuite."
   },
   {
     "key": "put-the-boot-in",
@@ -282,7 +282,7 @@
   {
     "key": "saboteur",
     "name": "Saboteur",
-    "effect": "Quand vous tombez lors d’un blocage, l’adversaire est [[knocked-down]] lui aussi."
+    "effect": "Quand vous tombez lors d’un Blocage, l’adversaire est [[knocked-down]] lui aussi."
   },
   {
     "key": "shadowing",
@@ -327,7 +327,7 @@
   {
     "key": "horns",
     "name": "Cornes",
-    "effect": "+1 ST sur un blocage de [[blitz]]."
+    "effect": "+1 ST sur un Blocage de [[blitz]]."
   },
   {
     "key": "iron-hard-skin",
@@ -417,7 +417,7 @@
   {
     "key": "hatred",
     "name": "Haine (X)",
-    "effect": "Relance un résultat Joueur à terre lors d’un blocage contre un adversaire désigné."
+    "effect": "Relance un résultat Joueur à terre lors d’un Blocage contre un adversaire désigné."
   },
   {
     "key": "hypnotic-gaze",
