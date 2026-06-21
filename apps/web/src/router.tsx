@@ -9,6 +9,7 @@ import { CodexHome, CodexLayout } from '@/routes/codex/codex'
 import { GlossaryPage } from '@/routes/codex/glossary'
 import { InducementsPage } from '@/routes/codex/inducements'
 import { InjuriesPage } from '@/routes/codex/injuries'
+import { KickoffPage } from '@/routes/codex/kickoff'
 import { PrayersPage } from '@/routes/codex/prayers'
 import { RulesPage } from '@/routes/codex/rules'
 import { SkillsPage } from '@/routes/codex/skills'
@@ -95,6 +96,12 @@ const codexInjuriesRoute = createRoute({
   component: InjuriesPage,
 })
 
+const codexKickoffRoute = createRoute({
+  getParentRoute: () => codexCategoryRoute,
+  path: 'kickoff',
+  component: KickoffPage,
+})
+
 const codexPrayersRoute = createRoute({
   getParentRoute: () => codexCategoryRoute,
   path: 'prayers',
@@ -131,6 +138,7 @@ const routeTree = rootRoute.addChildren([
       codexStarsRoute,
       codexInducementsRoute,
       codexRulesRoute,
+      codexKickoffRoute,
       codexInjuriesRoute,
       codexPrayersRoute,
       codexGlossaryRoute,

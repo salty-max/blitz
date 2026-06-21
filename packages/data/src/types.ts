@@ -3,6 +3,7 @@ import type {
   GlossaryTerm as RawGlossaryTerm,
   Inducement as RawInducement,
   Injury as RawInjury,
+  KickoffEvent as RawKickoffEvent,
   LastingInjury as RawLastingInjury,
   Position as RawPosition,
   Prayer as RawPrayer,
@@ -11,6 +12,7 @@ import type {
   StarAbility as RawStarAbility,
   StarPlayer as RawStarPlayer,
   Team as RawTeam,
+  Weather as RawWeather,
 } from '@blitz/schema'
 
 import type {
@@ -18,6 +20,7 @@ import type {
   GlossaryKey,
   InducementKey,
   InjuryKey,
+  KickoffEventKey,
   LastingInjuryKey,
   PrayerKey,
   SkillKey,
@@ -25,6 +28,7 @@ import type {
   StarAbilityKey,
   StarPlayerKey,
   TeamKey,
+  WeatherKey,
 } from './keys.gen'
 
 /**
@@ -87,3 +91,11 @@ export type LastingInjury = Omit<RawLastingInjury, 'key'> & {
 
 /** A Prayers to Nuffle result. */
 export type Prayer = Omit<RawPrayer, 'key'> & { key: PrayerKey }
+
+/** A Kick-off Event result. */
+export type KickoffEvent = Omit<RawKickoffEvent, 'key'> & {
+  key: KickoffEventKey
+}
+
+/** A Weather result. */
+export type Weather = Omit<RawWeather, 'key'> & { key: WeatherKey }

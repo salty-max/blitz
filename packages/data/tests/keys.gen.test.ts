@@ -7,6 +7,8 @@ import {
   inducements,
   injuries,
   INJURY_KEYS,
+  KICKOFF_EVENT_KEYS,
+  kickoffEvents,
   LASTING_INJURY_KEYS,
   lastingInjuries,
   PRAYER_KEYS,
@@ -21,6 +23,8 @@ import {
   starPlayers,
   TEAM_KEYS,
   teams,
+  weather,
+  WEATHER_KEYS,
 } from '@blitz/data'
 import { describe, expect, test } from 'bun:test'
 
@@ -37,6 +41,8 @@ describe('generated key unions (keys.gen.ts)', () => {
     ['injuries', INJURY_KEYS, injuries],
     ['lasting injuries', LASTING_INJURY_KEYS, lastingInjuries],
     ['prayers', PRAYER_KEYS, prayers],
+    ['kick-off events', KICKOFF_EVENT_KEYS, kickoffEvents],
+    ['weather', WEATHER_KEYS, weather],
   ]
 
   for (const [name, keys, data] of cases) {

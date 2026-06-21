@@ -1,0 +1,68 @@
+[
+  {
+    "key": "get-the-ref",
+    "name": "Get the Ref",
+    "roll": 2,
+    "effect": "Each team gains a free Bribe."
+  },
+  {
+    "key": "time-out",
+    "name": "Time-out!",
+    "roll": 3,
+    "effect": "Both teams shift their turn marker one space."
+  },
+  {
+    "key": "solid-defence",
+    "name": "Solid Defence",
+    "roll": 4,
+    "effect": "The kicking team may set up D3+3 of its open players again."
+  },
+  {
+    "key": "high-kick",
+    "name": "High Kick",
+    "roll": 5,
+    "effect": "One open player on the receiving team may be moved into the ball's landing square."
+  },
+  {
+    "key": "cheering-fans",
+    "name": "Cheering Fans",
+    "roll": 6,
+    "effect": "Each coach rolls D6 + Cheerleaders; the winner gets a +1 assist on their first block next turn."
+  },
+  {
+    "key": "brilliant-coaching",
+    "name": "Brilliant Coaching",
+    "roll": 7,
+    "effect": "Each coach rolls D6 + Assistant Coaches; the winner gains a free team re-roll for this drive."
+  },
+  {
+    "key": "changing-weather",
+    "name": "Changing Weather",
+    "roll": 8,
+    "effect": "Roll again on the Weather table; the new result applies for the rest of the drive."
+  },
+  {
+    "key": "quick-snap",
+    "name": "Quick Snap!",
+    "roll": 9,
+    "effect": "The receiving team may move D3+3 of its open players one square each."
+  },
+  {
+    "key": "charge",
+    "name": "Charge!",
+    "roll": 10,
+    "effect": "The kicking team may give D3+3 of its open players a free Move, [[blitz|Blitz]] or Throw."
+  },
+  {
+    "key": "dodgy-snack",
+    "name": "Dodgy Snack",
+    "roll": 11,
+    "effect": "Random players risk a characteristic penalty for the drive."
+  },
+  {
+    "key": "pitch-invasion",
+    "name": "Pitch Invasion",
+    "roll": 12,
+    "effect": "Both coaches roll D6 + Fan Factor; the lower roll has D3 random players knocked [[prone|Prone]] and [[stunned|Stunned]]."
+  }
+]

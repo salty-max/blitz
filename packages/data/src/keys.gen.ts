@@ -413,3 +413,31 @@ export const PRAYER_KEYS = [
 ] as const
 /** The key of a prayer. */
 export type PrayerKey = (typeof PRAYER_KEYS)[number]
+
+/** Every key of a kick-off event. */
+export const KICKOFF_EVENT_KEYS = [
+  'brilliant-coaching',
+  'changing-weather',
+  'charge',
+  'cheering-fans',
+  'dodgy-snack',
+  'get-the-ref',
+  'high-kick',
+  'pitch-invasion',
+  'quick-snap',
+  'solid-defence',
+  'time-out',
+] as const
+/** The key of a kick-off event. */
+export type KickoffEventKey = (typeof KICKOFF_EVENT_KEYS)[number]
+
+/** Every key of a weather result. */
+export const WEATHER_KEYS = [
+  'blizzard',
+  'perfect-conditions',
+  'pouring-rain',
+  'sweltering-heat',
+  'very-sunny',
+] as const
+/** The key of a weather result. */
+export type WeatherKey = (typeof WEATHER_KEYS)[number]

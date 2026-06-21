@@ -30,6 +30,13 @@ const entities = [
     'a lasting injury',
   ],
   ['PRAYER_KEYS', 'PrayerKey', 'prayers.json', 'a prayer'],
+  [
+    'KICKOFF_EVENT_KEYS',
+    'KickoffEventKey',
+    'kickoff-events.json',
+    'a kick-off event',
+  ],
+  ['WEATHER_KEYS', 'WeatherKey', 'weather.json', 'a weather result'],
 ]
 
 let out =

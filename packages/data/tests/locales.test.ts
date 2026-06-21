@@ -6,12 +6,14 @@ import {
   glossary,
   inducements,
   injuries,
+  kickoffEvents,
   lastingInjuries,
   prayers,
   skills,
   specialRules,
   starAbilities,
   teams,
+  weather,
 } from '@blitz/data'
 import { refKeys } from '@blitz/schema'
 import { describe, expect, test } from 'bun:test'
@@ -20,12 +22,14 @@ import frCasualties from '../src/locales/fr/casualties.json'
 import frGlossary from '../src/locales/fr/glossary.json'
 import frInducements from '../src/locales/fr/inducements.json'
 import frInjuries from '../src/locales/fr/injuries.json'
+import frKickoff from '../src/locales/fr/kickoff-events.json'
 import frLasting from '../src/locales/fr/lasting-injuries.json'
 import frPrayers from '../src/locales/fr/prayers.json'
 import frSkills from '../src/locales/fr/skills.json'
 import frRules from '../src/locales/fr/special-rules.json'
 import frAbilities from '../src/locales/fr/star-abilities.json'
 import frTeams from '../src/locales/fr/teams.json'
+import frWeather from '../src/locales/fr/weather.json'
 
 /** Every key a `[[ref]]` may legitimately point at. */
 const known = new Set<string>([
@@ -64,6 +68,12 @@ const overlays: { name: string; rows: Overlay; english: { key: string }[] }[] =
       english: lastingInjuries,
     },
     { name: 'prayers', rows: frPrayers as Overlay, english: prayers },
+    {
+      name: 'kick-off events',
+      rows: frKickoff as Overlay,
+      english: kickoffEvents,
+    },
+    { name: 'weather', rows: frWeather as Overlay, english: weather },
   ]
 
 describe('French data overlays', () => {

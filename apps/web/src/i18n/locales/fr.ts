@@ -94,6 +94,7 @@ export const fr = {
       stars: 'Champions',
       inducements: 'Coups de pouce',
       rules: 'Règles spéciales',
+      kickoff: 'Coup d’envoi',
       injuries: 'Blessures',
       prayers: 'Prières',
       glossary: 'Glossaire',
@@ -164,6 +165,11 @@ export const fr = {
         league: 'Affiliations de ligue',
         special: 'Règles mécaniques',
       },
+    },
+    kickoff: {
+      heading: 'Coup d’envoi & météo',
+      events: 'Coups d’envoi',
+      weather: 'Météo',
     },
     injuries: {
       heading: 'Blessures',

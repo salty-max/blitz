@@ -1,0 +1,57 @@
+[
+  {
+    "key": "get-the-ref",
+    "name": "Appelez l’arbitre",
+    "effect": "Chaque équipe gagne un pot-de-vin gratuit."
+  },
+  {
+    "key": "time-out",
+    "name": "Temps mort",
+    "effect": "Les deux équipes décalent leur marqueur de tour d’une case."
+  },
+  {
+    "key": "solid-defence",
+    "name": "Défense solide",
+    "effect": "L’équipe qui dégage peut replacer D3+3 de ses joueurs debout."
+  },
+  {
+    "key": "high-kick",
+    "name": "Coup de pied haut",
+    "effect": "Un joueur debout de l’équipe qui reçoit peut être déplacé sur la case d’atterrissage du ballon."
+  },
+  {
+    "key": "cheering-fans",
+    "name": "Fans en folie",
+    "effect": "Chaque coach lance D6 + Pom-pom girls ; le gagnant obtient une aide supplémentaire sur son premier Blocage au tour suivant."
+  },
+  {
+    "key": "brilliant-coaching",
+    "name": "Coaching brillant",
+    "effect": "Chaque coach lance D6 + Coachs adjoints ; le gagnant obtient une relance d’équipe pour cette phase de jeu."
+  },
+  {
+    "key": "changing-weather",
+    "name": "Météo capricieuse",
+    "effect": "Relancez sur la table de météo ; le nouveau résultat s’applique pour le reste de la phase de jeu."
+  },
+  {
+    "key": "quick-snap",
+    "name": "Surprise",
+    "effect": "L’équipe qui reçoit peut déplacer D3+3 de ses joueurs debout d’une case chacun."
+  },
+  {
+    "key": "charge",
+    "name": "Charge !",
+    "effect": "L’équipe qui dégage peut accorder à D3+3 de ses joueurs debout un Mouvement, [[blitz|Blitz]] ou Lancer gratuit."
+  },
+  {
+    "key": "dodgy-snack",
+    "name": "En-cas douteux",
+    "effect": "Des joueurs au hasard risquent un malus de caractéristique pour la phase de jeu."
+  },
+  {
+    "key": "pitch-invasion",
+    "name": "Invasion du terrain",
+    "effect": "Chaque coach lance D6 + Fans dévoués ; le perdant voit D3 joueurs au hasard [[prone|à terre]] et [[stunned|sonnés]]."
+  }
+]
