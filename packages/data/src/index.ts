@@ -1,11 +1,15 @@
-export { casualties, getCasualty } from './casualties'
+export { casualties, getCasualties, getCasualty } from './casualties'
 export { getGlossary, getGlossaryTerm, glossary } from './glossary'
 export type { DataLocale } from './i18n'
-export { getInducement, inducements } from './inducements'
-export { getInjury, injuries } from './injuries'
+export { getInducement, getInducements, inducements } from './inducements'
+export { getInjuries, getInjury, injuries } from './injuries'
 export * from './keys.gen'
-export { getLastingInjury, lastingInjuries } from './lasting-injuries'
-export { getPrayer, prayers } from './prayers'
+export {
+  getLastingInjuries,
+  getLastingInjury,
+  lastingInjuries,
+} from './lasting-injuries'
+export { getPrayer, getPrayers, prayers } from './prayers'
 export {
   abilitiesOf,
   inducementsForTeam,
@@ -25,7 +29,7 @@ export {
 } from './star-abilities'
 export { getStarPlayer, starPlayers } from './star-players'
 export { teamBuildingRules } from './team-building'
-export { getTeam, teams } from './teams'
+export { getTeam, getTeams, teams } from './teams'
 export type {
   Casualty,
   GlossaryTerm,

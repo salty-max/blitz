@@ -1,0 +1,27 @@
+[
+  {
+    "key": "badly-hurt",
+    "name": "Sérieusement Blessé",
+    "effect": "Aucun effet durable ; le joueur est placé dans la case Réserves."
+  },
+  {
+    "key": "seriously-hurt",
+    "name": "Gravement Blessé",
+    "effect": "Manque le prochain match."
+  },
+  {
+    "key": "serious-injury",
+    "name": "Blessure Grave",
+    "effect": "Reçoit une Blessure Chronique et manque le prochain match."
+  },
+  {
+    "key": "lasting-injury",
+    "name": "Blessure Persistante",
+    "effect": "−1 à une caractéristique et manque le prochain match."
+  },
+  {
+    "key": "dead",
+    "name": "Mort",
+    "effect": "Retiré de l'effectif."
+  }
+]

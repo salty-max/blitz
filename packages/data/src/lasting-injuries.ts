@@ -1,6 +1,8 @@
 import { lastingInjurySchema } from '@blitz/schema'
 
+import { type DataLocale, localizeAll, localizeOne, overlayMap } from './i18n'
 import data from './lasting-injuries.json'
+import frData from './locales/fr/lasting-injuries.json'
 import type { LastingInjury } from './types'
 
 /**
@@ -14,8 +16,19 @@ export const lastingInjuries: LastingInjury[] = lastingInjurySchema
 const byKey = new Map<string, LastingInjury>(
   lastingInjuries.map((injury) => [injury.key, injury])
 )
+const frOverlay = overlayMap<LastingInjury>(
+  frData as unknown as Partial<LastingInjury>[]
+)
 
-/** Look up a lasting injury by its key, or `undefined` when there is none. */
-export function getLastingInjury(key: string): LastingInjury | undefined {
-  return byKey.get(key)
+/** The Lasting Injury table in the given locale (English when omitted). */
+export function getLastingInjuries(locale: DataLocale = 'en'): LastingInjury[] {
+  return localizeAll(lastingInjuries, frOverlay, locale)
+}
+
+/** Look up a lasting injury by its key in the given locale, or `undefined`. */
+export function getLastingInjury(
+  key: string,
+  locale: DataLocale = 'en'
+): LastingInjury | undefined {
+  return localizeOne(byKey.get(key), frOverlay, locale)
 }

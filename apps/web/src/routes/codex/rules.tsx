@@ -29,7 +29,7 @@ export function RulesPage() {
             </SectionHeading>
             <DescriptionList className="mt-3">
               {group.map((rule) => {
-                const ruleTeams = teamsForSpecialRule(rule)
+                const ruleTeams = teamsForSpecialRule(rule, locale)
                 return (
                   <DescriptionList.Row
                     key={rule.key}

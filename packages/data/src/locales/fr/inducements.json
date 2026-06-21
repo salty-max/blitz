@@ -1,0 +1,82 @@
+[
+  {
+    "key": "prayers-to-nuffle",
+    "name": "Prières à Nuffle",
+    "effect": "Lancez sur la table des Prières à Nuffle pour une bénédiction d'avant-match aléatoire."
+  },
+  {
+    "key": "temp-agency-cheerleaders",
+    "name": "Pom-pom Girls Intérimaires",
+    "effect": "Engagez une Pom-pom Girl supplémentaire pour ce match."
+  },
+  {
+    "key": "part-time-assistant-coaches",
+    "name": "Entraîneurs Adjoints à Temps Partiel",
+    "effect": "Engagez un Entraîneur Adjoint supplémentaire pour ce match."
+  },
+  {
+    "key": "team-mascot",
+    "name": "Mascotte d'Équipe",
+    "effect": "Une fois par mi-temps, sur un 4+, gagnez une relance d'équipe à usage unique."
+  },
+  {
+    "key": "weather-mage",
+    "name": "Mage de la Météo",
+    "effect": "Une fois par match, relancez la météo avec un modificateur allant jusqu'à +2 / -2."
+  },
+  {
+    "key": "bloodweiser-kegs",
+    "name": "Tonneaux de Bloodweiser",
+    "effect": "+1 à vos jets de récupération des joueurs sonnés."
+  },
+  {
+    "key": "bribes",
+    "name": "Pots-de-vin",
+    "effect": "Chaque pot-de-vin : sur un 2+, un joueur n'est pas expulsé suite à une [[foul|agression]] (et peut continuer à jouer). 50,000 gp et 0-6 pour les équipes Pots-de-vin et Corruption."
+  },
+  {
+    "key": "extra-team-training",
+    "name": "Entraînement Supplémentaire",
+    "effect": "Gagnez une relance d'équipe supplémentaire pour ce match."
+  },
+  {
+    "key": "wandering-apothecary",
+    "name": "Apothicaire Itinérant",
+    "effect": "Agit une fois par match comme un Apothicaire supplémentaire (équipes pouvant utiliser un Apothicaire)."
+  },
+  {
+    "key": "mortuary-assistant",
+    "name": "Assistant de Morgue",
+    "effect": "Une fois par match, relancez un jet de [[regeneration|régénération]] raté."
+  },
+  {
+    "key": "plague-doctor",
+    "name": "Médecin de la Peste",
+    "effect": "Relancez un jet de [[regeneration|régénération]] raté, ou agissez une fois comme un Apothicaire."
+  },
+  {
+    "key": "riotous-rookies",
+    "name": "Bleus Déchaînés",
+    "effect": "Alignez 2D3+1 Remplaçants supplémentaires pour ce match."
+  },
+  {
+    "key": "biased-referee",
+    "name": "Arbitre Partial",
+    "effect": "Sur un 5+, un agresseur adverse est expulsé ; +1 pour Contester la Décision. 80,000 gp pour les équipes Pots-de-vin et Corruption."
+  },
+  {
+    "key": "halfling-master-chef",
+    "name": "Maître Cuisinier Halfling",
+    "effect": "Lancez 3D6 ; pour chaque 4+, vous gagnez une relance d'équipe ce match et l'adversaire en perd une. 100,000 gp pour les équipes Halfling."
+  },
+  {
+    "key": "mercenary-players",
+    "name": "Joueurs Mercenaires",
+    "effect": "Engagez n'importe quel joueur positionnel ou trois-quarts pour +30,000 gp au-dessus de son coût ; ils gagnent [[loner|Solitaire]] (4+)."
+  },
+  {
+    "key": "wizard",
+    "name": "Sorcier",
+    "effect": "Une fois par match, lancez Boule de Feu ou Zap (éclair)."
+  }
+]

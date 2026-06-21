@@ -1,37 +1,42 @@
 import {
+  type DataLocale,
   getSkill,
   getStarAbility,
   getTeam,
+  getTeams,
   type StarPlayer,
   starPlayers,
   starsForTeam,
-  teams,
   teamsForStar,
 } from '@blitz/data'
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { CharacteristicsRow } from '@/components/characteristics'
 import { CostBadge } from '@/components/cost-badge'
 import { TeamChips } from '@/components/team-chips'
+import { useDataLocale } from '@/i18n/use-data-locale'
 import { RefChips } from '@/reference/ref-chips'
 import { Card, EmptyState, Field, PageHeading, Select } from '@/ui'
 
-/** Pre-built lowercase search text per star — its name, skills and abilities. */
-const SEARCH_INDEX = starPlayers.map((star) => ({
-  star,
-  text: [
-    star.name,
-    ...star.skills.map((key) => getSkill(key)?.name ?? key),
-    ...star.abilities.map((key) => getStarAbility(key)?.name ?? key),
-  ]
-    .join(' ')
-    .toLowerCase(),
-}))
+/** Lowercase search text per star — its name and its skill/ability names in the active locale. */
+function searchIndex(locale: DataLocale) {
+  return starPlayers.map((star) => ({
+    star,
+    text: [
+      star.name,
+      ...star.skills.map((key) => getSkill(key, locale)?.name ?? key),
+      ...star.abilities.map((key) => getStarAbility(key, locale)?.name ?? key),
+    ]
+      .join(' ')
+      .toLowerCase(),
+  }))
+}
 
 /** A single showcased star — stats, skills, abilities and eligibility. */
 function StarCard({ star }: { star: StarPlayer }) {
   const { t } = useTranslation('codex')
+  const locale = useDataLocale()
   return (
     <Card id={star.key} className="scroll-mt-8">
       <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-3">
@@ -57,7 +62,7 @@ function StarCard({ star }: { star: StarPlayer }) {
           {star.playsFor.length === 0 ? (
             t('stars.anyTeam')
           ) : (
-            <TeamChips teams={teamsForStar(star)} />
+            <TeamChips teams={teamsForStar(star, locale)} />
           )}
         </Field>
         {star.playsFor.length > 0 && (
@@ -79,17 +84,21 @@ const ANY_TEAM = 'any'
 /** The star-players catalogue — searchable and filterable by hiring team. */
 export function StarsPage() {
   const { t } = useTranslation('codex')
+  const locale = useDataLocale()
   const [query, setQuery] = useState('')
   const [teamKey, setTeamKey] = useState(ANY_TEAM)
 
-  const team = teamKey === ANY_TEAM ? undefined : getTeam(teamKey)
+  const team = teamKey === ANY_TEAM ? undefined : getTeam(teamKey, locale)
   const eligible = team ? new Set(starsForTeam(team).map((s) => s.key)) : null
   const q = query.trim().toLowerCase()
+  const index = useMemo(() => searchIndex(locale), [locale])
 
-  const shown = SEARCH_INDEX.filter(
-    ({ star, text }) =>
-      (!eligible || eligible.has(star.key)) && (!q || text.includes(q))
-  ).map((entry) => entry.star)
+  const shown = index
+    .filter(
+      ({ star, text }) =>
+        (!eligible || eligible.has(star.key)) && (!q || text.includes(q))
+    )
+    .map((entry) => entry.star)
 
   return (
     <div>
@@ -115,7 +124,7 @@ export function StarsPage() {
             </Select.Trigger>
             <Select.Content>
               <Select.Item value={ANY_TEAM}>{t('stars.anyTeam')}</Select.Item>
-              {teams.map((team) => (
+              {getTeams(locale).map((team) => (
                 <Select.Item key={team.key} value={team.key}>
                   {team.name}
                 </Select.Item>

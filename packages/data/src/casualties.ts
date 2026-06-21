@@ -1,6 +1,8 @@
 import { casualtySchema } from '@blitz/schema'
 
 import data from './casualties.json'
+import { type DataLocale, localizeAll, localizeOne, overlayMap } from './i18n'
+import frData from './locales/fr/casualties.json'
 import type { Casualty } from './types'
 
 /**
@@ -14,8 +16,17 @@ export const casualties: Casualty[] = casualtySchema
 const byKey = new Map<string, Casualty>(
   casualties.map((casualty) => [casualty.key, casualty])
 )
+const frOverlay = overlayMap<Casualty>(frData as unknown as Partial<Casualty>[])
 
-/** Look up a casualty result by its key, or `undefined` when there is none. */
-export function getCasualty(key: string): Casualty | undefined {
-  return byKey.get(key)
+/** The Casualty table in the given locale (English when omitted). */
+export function getCasualties(locale: DataLocale = 'en'): Casualty[] {
+  return localizeAll(casualties, frOverlay, locale)
+}
+
+/** Look up a casualty result by its key in the given locale, or `undefined`. */
+export function getCasualty(
+  key: string,
+  locale: DataLocale = 'en'
+): Casualty | undefined {
+  return localizeOne(byKey.get(key), frOverlay, locale)
 }

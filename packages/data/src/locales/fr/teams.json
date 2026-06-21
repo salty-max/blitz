@@ -1,0 +1,391 @@
+[
+  {
+    "key": "amazon",
+    "name": "Amazones",
+    "positions": [
+      {
+        "key": "eagle-warrior-lineman",
+        "name": "Guerrière Aigle (Trois-quarts)"
+      },
+      {
+        "key": "python-warrior-thrower",
+        "name": "Guerrière Python (Lanceuse)"
+      },
+      {
+        "key": "piranha-warrior-blitzer",
+        "name": "Guerrière Piranha (Blitzeuse)"
+      },
+      {
+        "key": "jaguar-warrior-blocker",
+        "name": "Guerrière Jaguar (Bloqueuse)"
+      }
+    ]
+  },
+  {
+    "key": "black-orc",
+    "name": "Orcs Noirs",
+    "positions": [
+      { "key": "goblin-bruiser", "name": "Cogneur Gobelin" },
+      { "key": "black-orc", "name": "Orc Noir" },
+      { "key": "trained-troll", "name": "Troll Dressé" }
+    ]
+  },
+  {
+    "key": "bretonnian",
+    "name": "Bretonniens",
+    "positions": [
+      {
+        "key": "bretonnian-squire-lineman",
+        "name": "Écuyer Bretonnien (Trois-quarts)"
+      },
+      {
+        "key": "bretonnian-knight-catcher",
+        "name": "Receveur Chevalier Bretonnien"
+      },
+      {
+        "key": "bretonnian-knight-thrower",
+        "name": "Lanceur Chevalier Bretonnien"
+      },
+      { "key": "grail-knight-blitzer", "name": "Chevalier du Graal (Blitzeur)" }
+    ]
+  },
+  {
+    "key": "chaos-chosen",
+    "name": "Élus du Chaos",
+    "positions": [
+      { "key": "beastman-lineman", "name": "Trois-quarts Homme-Bête" },
+      { "key": "chaos-chosen", "name": "Élu du Chaos" },
+      { "key": "troll", "name": "Troll" },
+      { "key": "ogre", "name": "Ogre" },
+      { "key": "minotaur", "name": "Minotaure" }
+    ]
+  },
+  {
+    "key": "chaos-dwarf",
+    "name": "Nains du Chaos",
+    "positions": [
+      { "key": "hobgoblin-lineman", "name": "Trois-quarts Hobgobelin" },
+      { "key": "chaos-dwarf-blocker", "name": "Bloqueur Nain du Chaos" },
+      { "key": "sneaky-stabba", "name": "Sournois Lardeur" },
+      { "key": "flamesmith", "name": "Forge-Flamme" },
+      { "key": "bull-centaur", "name": "Taureau Centaure" },
+      { "key": "minotaur", "name": "Minotaure" }
+    ]
+  },
+  {
+    "key": "chaos-renegades",
+    "name": "Renégats du Chaos",
+    "description": "Choisissez une allégeance Favori de (dieu du Chaos) à la création — elle détermine quels joueurs vedettes du Chaos l'équipe peut recruter.",
+    "positions": [
+      { "key": "renegade-human", "name": "Humain Renégat" },
+      { "key": "renegade-goblin", "name": "Gobelin Renégat" },
+      { "key": "renegade-orc", "name": "Orc Renégat" },
+      { "key": "renegade-skaven", "name": "Skaven Renégat" },
+      { "key": "renegade-dark-elf", "name": "Elfe Noir Renégat" },
+      { "key": "renegade-human-thrower", "name": "Lanceur Humain Renégat" },
+      { "key": "troll", "name": "Troll" },
+      { "key": "ogre", "name": "Ogre" },
+      { "key": "minotaur", "name": "Minotaure" },
+      { "key": "rat-ogre", "name": "Rat-Ogre" }
+    ]
+  },
+  {
+    "key": "dark-elf",
+    "name": "Elfes Noirs",
+    "positions": [
+      { "key": "dark-elf-lineman", "name": "Trois-quarts Elfe Noir" },
+      { "key": "dark-elf-runner", "name": "Coureur Elfe Noir" },
+      { "key": "dark-elf-assassin", "name": "Assassin Elfe Noir" },
+      { "key": "dark-elf-blitzer", "name": "Blitzeur Elfe Noir" },
+      { "key": "witch-elf", "name": "Sorcière Elfe" }
+    ]
+  },
+  {
+    "key": "dwarf",
+    "name": "Nains",
+    "positions": [
+      { "key": "dwarf-lineman", "name": "Trois-quarts Nain" },
+      { "key": "dwarf-runner", "name": "Coureur Nain" },
+      { "key": "dwarf-blitzer", "name": "Blitzeur Nain" },
+      { "key": "troll-slayer", "name": "Tueur de Trolls" },
+      { "key": "deathroller", "name": "Rouleau de la Mort" }
+    ]
+  },
+  {
+    "key": "elven-union",
+    "name": "Union Elfique",
+    "positions": [
+      { "key": "elf-lineman", "name": "Trois-quarts Elfe" },
+      { "key": "elf-thrower", "name": "Lanceur Elfe" },
+      { "key": "elf-catcher", "name": "Receveur Elfe" },
+      { "key": "elf-blitzer", "name": "Blitzeur Elfe" }
+    ]
+  },
+  {
+    "key": "gnome",
+    "name": "Gnomes",
+    "positions": [
+      { "key": "gnome-lineman", "name": "Trois-quarts Gnome" },
+      { "key": "woodland-fox", "name": "Renard des Bois" },
+      { "key": "gnome-illusionist", "name": "Illusionniste Gnome" },
+      { "key": "gnome-beastmaster", "name": "Maître des Bêtes Gnome" },
+      {
+        "key": "altern-forest-treeman",
+        "name": "Homme-Arbre de la Forêt d'Altern"
+      }
+    ]
+  },
+  {
+    "key": "goblin",
+    "name": "Gobelins",
+    "positions": [
+      { "key": "goblin-lineman", "name": "Trois-quarts Gobelin" },
+      { "key": "looney", "name": "Cinglé" },
+      { "key": "bomma", "name": "Bombardier" },
+      { "key": "ooligan", "name": "'Ooligan" },
+      { "key": "doom-diver", "name": "Plongeur de la Mort" },
+      { "key": "fanatic", "name": "Fanatique" },
+      { "key": "pogoer", "name": "Sauteur à l'Échasse" },
+      { "key": "trained-troll", "name": "Troll Dressé" }
+    ]
+  },
+  {
+    "key": "halfling",
+    "name": "Halflings",
+    "positions": [
+      { "key": "halfling-hopeful", "name": "Espoir Halfling" },
+      { "key": "halfling-hefty", "name": "Costaud Halfling" },
+      { "key": "halfling-catcher", "name": "Receveur Halfling" },
+      {
+        "key": "athel-forest-treeman",
+        "name": "Homme-Arbre de la Forêt d'Athel"
+      }
+    ]
+  },
+  {
+    "key": "high-elf",
+    "name": "Hauts Elfes",
+    "positions": [
+      { "key": "high-elf-lineman", "name": "Trois-quarts Haut Elfe" },
+      { "key": "phoenix-warrior", "name": "Guerrier Phénix" },
+      { "key": "dragon-prince", "name": "Prince Dragon" },
+      { "key": "white-lion", "name": "Lion Blanc" }
+    ]
+  },
+  {
+    "key": "human",
+    "name": "Humains",
+    "positions": [
+      { "key": "human-lineman", "name": "Trois-quarts Humain" },
+      { "key": "halfling-hopeful", "name": "Espoir Halfling" },
+      { "key": "human-catcher", "name": "Receveur Humain" },
+      { "key": "human-thrower", "name": "Lanceur Humain" },
+      { "key": "human-blitzer", "name": "Blitzeur Humain" },
+      { "key": "ogre", "name": "Ogre" }
+    ]
+  },
+  {
+    "key": "imperial-nobility",
+    "name": "Noblesse Impériale",
+    "positions": [
+      { "key": "imperial-retainer", "name": "Serviteur Impérial" },
+      { "key": "imperial-thrower", "name": "Lanceur Impérial" },
+      { "key": "bodyguard", "name": "Garde du Corps" },
+      { "key": "noble-blitzer", "name": "Blitzeur Noble" },
+      { "key": "ogre", "name": "Ogre" }
+    ]
+  },
+  {
+    "key": "khorne",
+    "name": "Khorne",
+    "positions": [
+      { "key": "bloodborn-marauder", "name": "Maraudeur Sanguinaire" },
+      { "key": "khorngor", "name": "Khorngor" },
+      { "key": "bloodseeker", "name": "Chercheur de Sang" },
+      { "key": "bloodspawn", "name": "Engeance Sanguinaire" }
+    ]
+  },
+  {
+    "key": "lizardmen",
+    "name": "Hommes-Lézards",
+    "positions": [
+      { "key": "skink-lineman", "name": "Trois-quarts Skink" },
+      { "key": "chameleon-skink", "name": "Skink Caméléon" },
+      { "key": "saurus-blocker", "name": "Bloqueur Saurus" },
+      { "key": "kroxigor", "name": "Kroxigor" }
+    ]
+  },
+  {
+    "key": "necromantic-horror",
+    "name": "Horreurs Nécromantiques",
+    "positions": [
+      { "key": "zombie-lineman", "name": "Trois-quarts Zombie" },
+      { "key": "ghoul-runner", "name": "Coureur Goule" },
+      { "key": "wraith", "name": "Spectre" },
+      { "key": "flesh-golem", "name": "Golem de Chair" },
+      { "key": "werewolf", "name": "Loup-Garou" }
+    ]
+  },
+  {
+    "key": "norse",
+    "name": "Nordiques",
+    "positions": [
+      {
+        "key": "norse-raider-lineman",
+        "name": "Pillard Nordique (Trois-quarts)"
+      },
+      { "key": "beer-boar", "name": "Sanglier à Bière" },
+      {
+        "key": "norse-berserker-blitzer",
+        "name": "Berserker Nordique (Blitzeur)"
+      },
+      { "key": "valkyrie", "name": "Valkyrie" },
+      { "key": "ulfwerener", "name": "Ulfwerener" },
+      { "key": "yhetee", "name": "Yhétie" }
+    ]
+  },
+  {
+    "key": "nurgle",
+    "name": "Nurgle",
+    "positions": [
+      { "key": "rotter", "name": "Pourrisseur" },
+      { "key": "pestigor", "name": "Pestigor" },
+      { "key": "bloater", "name": "Boursouflé" },
+      { "key": "rotspawn", "name": "Engeance Pourrissante" }
+    ]
+  },
+  {
+    "key": "ogre",
+    "name": "Ogres",
+    "positions": [
+      { "key": "gnoblar-lineman", "name": "Trois-quarts Gnoblar" },
+      { "key": "ogre-blocker", "name": "Bloqueur Ogre" },
+      { "key": "ogre-runt-punter", "name": "Botteur Avorton Ogre" }
+    ]
+  },
+  {
+    "key": "old-world-alliance",
+    "name": "Alliance du Vieux Monde",
+    "positions": [
+      { "key": "human-lineman", "name": "Trois-quarts Humain" },
+      { "key": "halfling-hopeful", "name": "Espoir Halfling" },
+      { "key": "human-catcher", "name": "Receveur Humain" },
+      { "key": "dwarf-lineman", "name": "Trois-quarts Nain" },
+      { "key": "human-thrower", "name": "Lanceur Humain" },
+      { "key": "dwarf-runner", "name": "Coureur Nain" },
+      { "key": "human-blitzer", "name": "Blitzeur Humain" },
+      { "key": "dwarf-blitzer", "name": "Blitzeur Nain" },
+      { "key": "troll-slayer", "name": "Tueur de Trolls" },
+      { "key": "ogre", "name": "Ogre" },
+      {
+        "key": "altern-forest-treeman",
+        "name": "Homme-Arbre de la Forêt d'Altern"
+      }
+    ]
+  },
+  {
+    "key": "orc",
+    "name": "Orcs",
+    "positions": [
+      { "key": "orc-lineman", "name": "Trois-quarts Orc" },
+      { "key": "goblin-lineman", "name": "Trois-quarts Gobelin" },
+      { "key": "orc-thrower", "name": "Lanceur Orc" },
+      { "key": "orc-blitzer", "name": "Blitzeur Orc" },
+      { "key": "big-un-blocker", "name": "Bloqueur Grosse Brute" },
+      { "key": "troll", "name": "Troll" }
+    ]
+  },
+  {
+    "key": "shambling-undead",
+    "name": "Morts-Vivants",
+    "positions": [
+      { "key": "skeleton-lineman", "name": "Trois-quarts Squelette" },
+      { "key": "zombie-lineman", "name": "Trois-quarts Zombie" },
+      { "key": "ghoul-runner", "name": "Coureur Goule" },
+      { "key": "wight-blitzer", "name": "Blitzeur Nécrarque" },
+      { "key": "mummy", "name": "Momie" }
+    ]
+  },
+  {
+    "key": "skaven",
+    "name": "Skavens",
+    "positions": [
+      { "key": "skaven-clanrat", "name": "Rat de Clan Skaven" },
+      { "key": "skaven-thrower", "name": "Lanceur Skaven" },
+      { "key": "gutter-runner", "name": "Coureur d'Égout" },
+      { "key": "skaven-blitzer", "name": "Blitzeur Skaven" },
+      { "key": "rat-ogre", "name": "Rat-Ogre" }
+    ]
+  },
+  {
+    "key": "slann",
+    "name": "Slanns",
+    "positions": [
+      { "key": "slann-lineman", "name": "Trois-quarts Slann" },
+      { "key": "slann-catcher", "name": "Receveur Slann" },
+      { "key": "slann-blitzer", "name": "Blitzeur Slann" },
+      { "key": "kroxigor", "name": "Kroxigor" }
+    ]
+  },
+  {
+    "key": "snotling",
+    "name": "Snotlings",
+    "positions": [
+      { "key": "snotling-lineman", "name": "Trois-quarts Snotling" },
+      { "key": "fun-hoppa", "name": "Sautillon" },
+      { "key": "stilty-runna", "name": "Coureur sur Échasses" },
+      { "key": "fungus-flinga", "name": "Lanceur de Champignons" },
+      { "key": "pump-wagon", "name": "Chariot à Pompe" },
+      { "key": "trained-troll", "name": "Troll Dressé" }
+    ]
+  },
+  {
+    "key": "tomb-kings",
+    "name": "Rois des Tombes",
+    "positions": [
+      { "key": "skeleton-lineman", "name": "Trois-quarts Squelette" },
+      { "key": "tomb-kings-thrower", "name": "Lanceur des Rois des Tombes" },
+      { "key": "tomb-kings-blitzer", "name": "Blitzeur des Rois des Tombes" },
+      { "key": "tomb-guardian", "name": "Gardien des Tombes" }
+    ]
+  },
+  {
+    "key": "underworld-denizens",
+    "name": "Habitants des Bas-Fonds",
+    "positions": [
+      { "key": "goblin-lineman", "name": "Trois-quarts Gobelin" },
+      { "key": "snotling-lineman", "name": "Trois-quarts Snotling" },
+      { "key": "skaven-clanrat", "name": "Rat de Clan Skaven" },
+      { "key": "skaven-thrower", "name": "Lanceur Skaven" },
+      { "key": "gutter-runner", "name": "Coureur d'Égout" },
+      { "key": "skaven-blitzer", "name": "Blitzeur Skaven" },
+      { "key": "troll", "name": "Troll" },
+      { "key": "rat-ogre", "name": "Rat-Ogre" }
+    ]
+  },
+  {
+    "key": "vampire",
+    "name": "Vampires",
+    "positions": [
+      { "key": "thrall-lineman", "name": "Trois-quarts Serf" },
+      { "key": "vampire-runner", "name": "Coureur Vampire" },
+      { "key": "vampire-thrower", "name": "Lanceur Vampire" },
+      { "key": "vampire-blitzer", "name": "Blitzeur Vampire" },
+      { "key": "vargheist", "name": "Vargheist" }
+    ]
+  },
+  {
+    "key": "wood-elf",
+    "name": "Elfes Sylvains",
+    "positions": [
+      { "key": "wood-elf-lineman", "name": "Trois-quarts Elfe Sylvain" },
+      { "key": "wood-elf-thrower", "name": "Lanceur Elfe Sylvain" },
+      { "key": "wood-elf-catcher", "name": "Receveur Elfe Sylvain" },
+      { "key": "wardancer", "name": "Danseur de Guerre" },
+      {
+        "key": "loren-forest-treeman",
+        "name": "Homme-Arbre de la Forêt de Loren"
+      }
+    ]
+  }
+]

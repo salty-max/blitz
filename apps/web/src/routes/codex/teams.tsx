@@ -1,9 +1,10 @@
-import { getTeam, starsForTeam, teams } from '@blitz/data'
+import { getTeam, getTeams, starsForTeam } from '@blitz/data'
 import { Link, useParams } from '@tanstack/react-router'
 import { type ReactNode, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { CostBadge } from '@/components/cost-badge'
+import { useDataLocale } from '@/i18n/use-data-locale'
 import { gp } from '@/lib/format'
 import { RefChips } from '@/reference/ref-chips'
 import { RefText } from '@/reference/ref-text'
@@ -50,9 +51,13 @@ function Meta({ label, children }: { label: string; children: ReactNode }) {
 /** The teams index — tier-filterable cards, each linking to its detail page. */
 export function TeamsIndex() {
   const { t } = useTranslation('codex')
+  const locale = useDataLocale()
   const [tier, setTier] = useState<number | null>(null)
+  const localizedTeams = getTeams(locale)
   const shown =
-    tier === null ? teams : teams.filter((team) => team.tier === tier)
+    tier === null
+      ? localizedTeams
+      : localizedTeams.filter((team) => team.tier === tier)
 
   return (
     <div>
@@ -106,8 +111,9 @@ export function TeamsIndex() {
 /** A single team's roster — profile, special rules, positions and available stars. */
 export function TeamDetail() {
   const { t } = useTranslation('codex')
+  const locale = useDataLocale()
   const { key } = useParams({ strict: false })
-  const team = key ? getTeam(key) : undefined
+  const team = key ? getTeam(key, locale) : undefined
 
   if (!team) {
     return <EmptyState>{t('teams.notFound')}</EmptyState>
