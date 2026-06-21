@@ -39,6 +39,19 @@ At the **end of each drive**, each coach rolls a **D6** for every KO'd player in
 their Reserves; on a **4+** the player recovers and is available next drive (some
 inducements and weather modify the roll).
 
+## Stalling
+
+A team with the ball and a clear path to score may hold off to run down the
+clock. If the referee judges a ball carrier is deliberately **stalling**, the
+crowd takes a hand and random interference can disrupt the stalling team.
+
+## Ending the game
+
+After **16 rounds** the team with the most touchdowns wins. A drawn knockout
+match goes to **extra time** — one more round each, played sudden-death (the
+first team to take the lead wins); a tie even then is settled by **penalty
+kicks**.
+
 ## Implementation status
 
 - **api/web** — the drive / turn / half structure and KO recovery feed live game

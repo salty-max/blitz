@@ -7,12 +7,17 @@
       {
         "key": "turn-structure",
         "heading": "Turn structure & turnovers",
-        "body": "Players activate one at a time; each declares one Action, resolves it, then the next may go — until everyone who wants to has acted, or a [[turnover|Turnover]] ends the turn. A Turnover (forfeiting any not-yet-activated players' go) is caused by, among other things: a failed pick-up, a fumbled or intercepted [[pass|Pass]], the ball ending with the opposition, or an active player pushed into the crowd or sent off."
+        "body": "Players activate one at a time; each declares one Action, resolves it, then the next may go — until everyone who wants to has acted, or a [[turnover|Turnover]] ends the turn. A Turnover (forfeiting any not-yet-activated players' go) is caused by, among other things: a failed pick-up, a fumbled or intercepted Pass, the ball ending with the opposition, or an active player pushed into the crowd or sent off."
+      },
+      {
+        "key": "team-rerolls",
+        "heading": "Team re-rolls",
+        "body": "Once per team turn a coach may spend a Team Re-roll to re-roll a single failed roll: every die of that roll is thrown again and the second result stands — a re-roll can't itself be re-rolled. A team's re-rolls are a limited pool that refreshes at half-time, and a handful of rolls (scatter, armour, injury, casualty, throw-ins) can't be team-re-rolled. A player with the [[loner|Loner]] trait isn't a reliable team player and may waste the re-roll."
       },
       {
         "key": "player-actions",
         "heading": "Player actions",
-        "body": "A player takes exactly one Action per activation. Move and [[block|Block]] are unlimited; capped at once per team turn are the [[blitz|Blitz]], Pass, Hand-off, [[foul|Foul]], Throw Team-mate and Secure the Ball actions."
+        "body": "A player takes exactly one Action per activation — one of the nine standard actions (Move, Secure the Ball, Block, Blitz, Pass, Hand-off, Throw Team-mate, Foul, or Forego Activation), or a Special action granted by a skill or trait. Move and Block are unlimited per turn; the Blitz, Pass, Hand-off, Foul, Throw Team-mate and Secure the Ball actions are each capped at once per team turn. Forego Activation simply skips the player without acting."
       },
       {
         "key": "movement",
@@ -22,12 +27,17 @@
       {
         "key": "rushing",
         "heading": "Rushing",
-        "body": "To move beyond MA, each extra square is a [[rush|Rush]]: roll 2+ (a natural 1 falls over, ending the activation). At most two Rushes per activation. If a square needs both a Rush and a [[dodge|Dodge]], the Rush is rolled first."
+        "body": "To move beyond MA, each extra square is a [[rush|Rush]]: roll 2+ (a natural 1 falls over, ending the activation). At most two Rushes per activation. If a square needs both a Rush and a Dodge, the Rush is rolled first."
       },
       {
         "key": "dodging",
         "heading": "Dodging",
         "body": "Leaving a square where the player is [[marked|Marked]] needs a Dodge — an Agility test against AG, with −1 for each opponent Marking the square being entered. Success: the player moves and stays standing, and may keep moving. Failure: they fall over in the target square — a [[turnover|Turnover]] if they were carrying the ball."
+      },
+      {
+        "key": "jumping",
+        "heading": "Jumping",
+        "body": "A player may Jump over a single [[prone|Prone]] or [[stunned|Stunned]] player in their path for 2 squares of MA: an Agility test, −1 per opponent Marking the starting or landing square (whichever has more). Success lands the player Standing and they may keep moving; failure falls them in the landing square — a natural 1 falls in the starting square — and ends the activation."
       },
       {
         "key": "picking-up",
@@ -49,7 +59,7 @@
       {
         "key": "tackle-zones",
         "heading": "Tackle zones & marking",
-        "body": "A standing player projects a [[tackle-zone|tackle zone]] over the eight squares around it. A standing player in an opponent's tackle zone is [[marked|Marked]] — what forces a [[dodge|Dodge]] to leave the square and adds the −1-per-marker penalties on pick-ups, passes and catches. [[prone|Prone]] and [[stunned|Stunned]] players have no tackle zone."
+        "body": "A standing player projects a [[tackle-zone|tackle zone]] over the eight squares around it. A standing player in an opponent's tackle zone is [[marked|Marked]] — what forces a Dodge to leave the square and adds the −1-per-marker penalties on pick-ups, passes and catches. [[prone|Prone]] and [[stunned|Stunned]] players have no tackle zone."
       },
       {
         "key": "player-states",
@@ -62,6 +72,11 @@
         "body": "A standing player carrying the ball who ends a move in the opposing end zone scores. The drive ends immediately, both teams set up again, and the team that just scored kicks off to restart."
       },
       {
+        "key": "stalling",
+        "heading": "Stalling",
+        "body": "A team with the ball and a clear path to score may hold off — stalling to run down the clock. If the referee judges a ball carrier is deliberately stalling, the crowd takes a hand, and random interference can disrupt the stalling team."
+      },
+      {
         "key": "structure",
         "heading": "Drives, turns & halves",
         "body": "A game is 2 halves. Each half is 8 rounds; a round is 2 turns (one per coach) — 8 turns per team per half, 16 per game. A drive runs from a kick-off until a touchdown is scored or the half ends."
@@ -70,6 +85,11 @@
         "key": "ko-recovery",
         "heading": "Knock-out recovery",
         "body": "At the end of each drive, each coach rolls a D6 for every KO'd player in their Reserves; on a 4+ the player recovers and is available next drive (some inducements and weather modify the roll)."
+      },
+      {
+        "key": "ending-game",
+        "heading": "Ending the game",
+        "body": "After 16 rounds the team with the most touchdowns wins. A drawn knockout match goes to extra time — one more round each, played sudden-death, the first team to take the lead winning; a tie even then is settled by penalty kicks."
       }
     ]
   },
@@ -81,7 +101,7 @@
       {
         "key": "block-action",
         "heading": "The Block action",
-        "body": "A [[block|Block]] pits the blocker's ST against an adjacent opponent's. Roll the Block dice, apply one result, then resolve any [[knocked-down|knock-down]]. A [[blitz|Blitz]] is a Block combined with movement, limited to once per team turn."
+        "body": "A Block pits the blocker's ST against an adjacent opponent's. Roll the Block dice, apply one result, then resolve any [[knocked-down|knock-down]]. A [[blitz|Blitz]] is a Block combined with movement, limited to once per team turn."
       },
       {
         "key": "dice",
@@ -107,6 +127,16 @@
         "key": "knockdown-injury",
         "heading": "Knock-down → armour → injury",
         "body": "A [[knocked-down|Knocked Down]] player checks armour, then possibly injury. Armour — roll 2D6; if the total is ≥ the player's AV, armour is broken and an injury roll follows. Injury — roll 2D6: 2–7 [[stunned|Stunned]] (recovers on the pitch), 8–9 Knocked-out (to the Reserves), 10–12 a [[casualty|Casualty]] resolved on the Injuries page; Stunty players use a harsher table."
+      },
+      {
+        "key": "crowd-injury",
+        "heading": "Pushed into the crowd",
+        "body": "A player pushed off the pitch edge is dragged into the crowd: roll immediately on the injury table, with no armour roll. A [[stunned|Stunned]] result sends them to the Reserves box rather than lying on the pitch. The ball, if they held it, is thrown back in; and if the player was on the active team, it is a [[turnover|Turnover]]."
+      },
+      {
+        "key": "apothecary",
+        "heading": "Apothecary",
+        "body": "A team with an apothecary may use it once per game on one of its own knocked-out or [[casualty|Casualty]] players. On a knocked-out player it patches them up to merely [[stunned|Stunned]] in place; on a Casualty the coach re-rolls the Casualty result and keeps the better. Some players — Secret Weapons among them — can't be treated."
       }
     ]
   },
@@ -118,7 +148,7 @@
       {
         "key": "pass-action",
         "heading": "The Pass action",
-        "body": "Once per turn, throw the ball at a target square: the thrower makes a Passing test against their PA, modified by range — Quick Pass 0, Short Pass −1, Long Pass −2, Long Bomb −3 — and −1 for each opponent [[marked|Marking]] the thrower.\nAccurate (test passed, or a natural 6): the ball lands in the target square for a team-mate to [[catch|Catch]]. Inaccurate (failed): it scatters before landing. Fumble (modified 1, or natural 1): the ball is dropped, bounces from the thrower's square, and a [[turnover|Turnover]] is caused."
+        "body": "Once per turn, throw the ball at a target square: the thrower makes a Passing test against their PA, modified by range — Quick Pass 0, Short Pass −1, Long Pass −2, Long Bomb −3 — and −1 for each opponent [[marked|Marking]] the thrower.\nAccurate (test passed, or a natural 6): the ball lands in the target square for a team-mate to Catch. Inaccurate (failed): it scatters before landing. Fumble (modified 1, or natural 1): the ball is dropped, bounces from the thrower's square, and a [[turnover|Turnover]] is caused."
       },
       {
         "key": "catching",
@@ -128,12 +158,17 @@
       {
         "key": "hand-off",
         "heading": "Hand-off",
-        "body": "A once-per-turn action: the ball carrier finishes their move adjacent to a standing team-mate who still has their [[tackle-zone|tackle zone]], and that team-mate makes a [[catch|Catch]]."
+        "body": "A once-per-turn action: the ball carrier finishes their move adjacent to a standing team-mate who still has their [[tackle-zone|tackle zone]], and that team-mate makes a Catch."
       },
       {
         "key": "loose-balls",
         "heading": "Loose balls",
         "body": "Bounce: a loose ball moves one square in a random direction. Scatter: an inaccurate pass deviates several squares from its target before landing. Throw-in: a ball leaving the pitch is placed on the last square it occupied, then rolls a D6 for direction (a D3 at a corner) and travels 2D6 squares."
+      },
+      {
+        "key": "throw-ins",
+        "heading": "Throw-ins",
+        "body": "When the ball leaves the pitch the crowd throws it back in from the last square it was over: roll for a direction (a wider spread from a corner) and the ball travels 2D6 squares before bouncing. A player whose square it reaches may catch it, with the throw-in penalty."
       },
       {
         "key": "throw-team-mate",
@@ -150,7 +185,7 @@
       {
         "key": "foul-action",
         "heading": "The Foul action",
-        "body": "A once-per-turn dirty hit on a [[prone|Prone]] or [[stunned|Stunned]] opponent: the fouler may move first, then fouls and can't move afterwards. It isn't a [[block|Block]] — just a straight Armour roll against the downed player (and an Injury roll if it breaks), modified by [[assist|assists]]: +1 per offensive assist (your players marking the target), −1 per defensive assist (their players marking your fouler).\nA natural double on the Armour or Injury roll spotted by the ref gets the fouler sent off once the foul resolves, causing a [[turnover|Turnover]] if it was the active team. Argue the Call (D6): 1 ejects the coach for the rest of the game; 2–5 the send-off stands; 6 reinstates the player (the Turnover still stands)."
+        "body": "A once-per-turn dirty hit on a [[prone|Prone]] or [[stunned|Stunned]] opponent: the fouler may move first, then fouls and can't move afterwards. It isn't a Block — just a straight Armour roll against the downed player (and an Injury roll if it breaks), modified by [[assist|assists]]: +1 per offensive assist (your players marking the target), −1 per defensive assist (their players marking your fouler).\nA natural double on the Armour or Injury roll spotted by the ref gets the fouler sent off once the foul resolves, causing a [[turnover|Turnover]] if it was the active team. Argue the Call (D6): 1 ejects the coach for the rest of the game; 2–5 the send-off stands; 6 reinstates the player (the Turnover still stands)."
       },
       {
         "key": "interception",

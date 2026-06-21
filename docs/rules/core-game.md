@@ -18,6 +18,15 @@ players lose their go). It is triggered by, among other things:
   or hand-off;
 - an active-team player being pushed into the crowd or sent off.
 
+## Team re-rolls
+
+Once per team turn a coach may spend a **Team Re-roll** to re-roll a single
+failed roll — **every die of that roll** is thrown again and the second result
+stands; a re-roll can't itself be re-rolled. Re-rolls are a limited pool that
+**refreshes at half-time**, and some rolls (scatter, armour, injury, casualty,
+throw-ins) can't be team-re-rolled. A player with **Loner** is not a reliable
+team player and may waste the re-roll.
+
 ## Player actions
 
 A player takes exactly one Action per activation. Some actions are capped at
@@ -33,6 +42,9 @@ A player takes exactly one Action per activation. Some actions are capped at
 | Foul            | 1         |
 | Throw Team-mate | 1         |
 | Secure the Ball | 1         |
+
+A ninth standard action, **Forego Activation**, simply skips the player without
+acting; a **Special action** is one granted by a skill or trait.
 
 ## Movement
 
@@ -57,6 +69,15 @@ a **Dodge** — an Agility test against the player's AG, with a **−1 modifier 
 each opposition player Marking the square being moved into**. Success: the player
 moves and stays standing, and may keep moving. Failure: the player falls over in
 the target square (a turnover if they had the ball).
+
+## Jumping
+
+A player may **Jump** over a single **Prone or Stunned** player in their path,
+at the cost of **2 squares of MA**: an Agility test with **−1 per opposition
+player Marking** the starting or landing square (whichever has more markers).
+Success lands the player Standing and they may keep moving; failure falls them in
+the landing square — a natural **1** falls in the **starting** square — and the
+activation ends.
 
 ## Picking up the ball
 
