@@ -3,6 +3,9 @@ dist
 coverage
 .turbo
 storybook-static
+test-results
+playwright-report
+.last-run.json
 *.tsbuildinfo
 .DS_Store
 .env

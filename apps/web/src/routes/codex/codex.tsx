@@ -74,7 +74,10 @@ export function CodexLayout() {
 
   return (
     <div>
-      <Breadcrumb className="border-b-2 border-ink pb-2">
+      <Breadcrumb
+        data-testid="breadcrumb"
+        className="border-b-2 border-ink pb-2"
+      >
         <Breadcrumb.Item asChild>
           <Link to="/codex" activeOptions={{ exact: true }}>
             {t('back')}
@@ -124,7 +127,7 @@ export function CodexHome() {
       <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {CATEGORIES.map((category) => (
           <Card key={category.to} asChild interactive>
-            <Link to={category.to}>
+            <Link to={category.to} data-testid={`codex-card-${category.key}`}>
               <div className="flex items-baseline justify-between gap-3">
                 <h2 className="font-display text-3xl uppercase group-hover:text-paper">
                   {t(`categories.${category.key}`)}

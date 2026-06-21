@@ -27,7 +27,11 @@ export function RefChips({
           interactive
           variant={tone === 'accent' ? 'accent' : 'outline'}
         >
-          <button type="button" onClick={() => openRef(key)}>
+          <button
+            type="button"
+            data-testid={`ref-chip-${key}`}
+            onClick={() => openRef(key)}
+          >
             {resolveRef(key, locale)?.name ?? key}
           </button>
         </Chip>

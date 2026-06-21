@@ -33,6 +33,7 @@ export function AppShell() {
                 <Link
                   key={item.to}
                   to={item.to}
+                  data-testid={`nav-${item.key}`}
                   className={navLinkVariants({ tone: 'masthead' })}
                 >
                   {t(`nav.${item.key}`)}
