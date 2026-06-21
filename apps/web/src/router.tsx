@@ -6,6 +6,7 @@ import {
 
 import { AppShell } from '@/layout/app-shell'
 import { CodexHome, CodexLayout } from '@/routes/codex/codex'
+import { DraftingPage } from '@/routes/codex/drafting'
 import { GlossaryPage } from '@/routes/codex/glossary'
 import { InducementsPage } from '@/routes/codex/inducements'
 import { InjuriesPage } from '@/routes/codex/injuries'
@@ -141,6 +142,12 @@ const codexSppRoute = createRoute({
   component: SppPage,
 })
 
+const codexDraftingRoute = createRoute({
+  getParentRoute: () => codexCategoryRoute,
+  path: 'drafting',
+  component: DraftingPage,
+})
+
 // Team management — your own rosters across a season.
 const teamsRoute = createRoute({
   getParentRoute: () => rootRoute,
@@ -174,6 +181,7 @@ const routeTree = rootRoute.addChildren([
       codexPrayersRoute,
       codexGlossaryRoute,
       codexSppRoute,
+      codexDraftingRoute,
     ]),
   ]),
   teamsRoute,

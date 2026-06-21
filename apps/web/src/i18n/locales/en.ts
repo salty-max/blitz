@@ -90,6 +90,7 @@ export const en = {
     back: 'Codex',
     categories: {
       teams: 'Teams',
+      drafting: 'Drafting',
       skills: 'Skills',
       stars: 'Star Players',
       inducements: 'Inducements',
@@ -206,6 +207,34 @@ export const en = {
       valueIncrease: 'Value increase per advancement',
       advancement: 'Advancement',
       value: 'Current value',
+    },
+    drafting: {
+      heading: 'Drafting a team',
+      budgetRoster: 'Budget & roster',
+      draftNote:
+        'A rookie league team starts with {{budget}} and drafts {{min}}–{{max}} players, all from its [[page:teams|roster]] — each position caps how many you may field.',
+      staff: 'Sideline staff & assets',
+      cols: { asset: 'Asset', cost: 'Cost', limit: 'Limit' },
+      money: '{{n}} gp',
+      perTeam: 'per team',
+      perPoint: '{{v}} / point',
+      max: 'max {{n}}',
+      apothLimit: '1 (if eligible)',
+      fanLimit: 'start {{start}}, max {{max}} at draft',
+      assets: {
+        reroll: 'Team Re-roll',
+        apothecary: 'Apothecary',
+        coach: 'Assistant Coach',
+        cheerleader: 'Cheerleader',
+        fan: 'Dedicated Fan',
+      },
+      rerollNote: 'A team re-roll bought after the draft costs double.',
+      tv: 'Team Value',
+      tvNote:
+        "Team Value (TV) is the worth of every player, sideline asset and team re-roll. Current Team Value (CTV) drops the players who can't take the field this game; the gap between the two teams' values is what [[page:inducements|inducements]] spend.",
+      gameDay: 'Game-day help',
+      gameDayNote:
+        'The lower-value coach evens the odds before kick-off with [[page:inducements|inducements]] for the match, and may hire up to two [[page:stars|star players]] — a star never earns SPP and shrugs off any casualty.',
     },
     glossary: {
       heading: 'Glossary',

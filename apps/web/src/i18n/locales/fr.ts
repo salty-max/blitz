@@ -90,6 +90,7 @@ export const fr = {
     back: 'Codex',
     categories: {
       teams: 'Équipes',
+      drafting: 'Création d’équipe',
       skills: 'Compétences',
       stars: 'Champions',
       inducements: 'Coups de pouce',
@@ -207,6 +208,35 @@ export const fr = {
       valueIncrease: 'Hausse de valeur par amélioration',
       advancement: 'Amélioration',
       value: 'Valeur actuelle',
+    },
+    drafting: {
+      heading: 'Créer une équipe',
+      budgetRoster: 'Budget & effectif',
+      draftNote:
+        'Une équipe débutante en ligue commence avec {{budget}} et recrute {{min}} à {{max}} joueurs, tous issus de sa [[page:teams|liste d’équipe]] — chaque poste limite le nombre que vous pouvez aligner.',
+      staff: 'Encadrement & extras',
+      cols: { asset: 'Élément', cost: 'Coût', limit: 'Limite' },
+      money: '{{n}} po',
+      perTeam: 'selon l’équipe',
+      perPoint: '{{v}} / point',
+      max: 'max {{n}}',
+      apothLimit: '1 (si éligible)',
+      fanLimit: 'départ {{start}}, max {{max}} au recrutement',
+      assets: {
+        reroll: 'Relance d’équipe',
+        apothecary: 'Apothicaire',
+        coach: 'Entraîneur adjoint',
+        cheerleader: 'Pom-pom girl',
+        fan: 'Fan dévoué',
+      },
+      rerollNote:
+        'Une relance d’équipe achetée après le recrutement coûte le double.',
+      tv: 'Valeur d’équipe',
+      tvNote:
+        'La valeur d’équipe (VE) est la valeur de chaque joueur, extra de banc et relance d’équipe. La valeur d’équipe actuelle (VEA) retire les joueurs qui ne peuvent pas jouer ce match ; l’écart entre les valeurs des deux équipes est ce que dépensent les [[page:inducements|coups de pouce]].',
+      gameDay: 'Renforts d’avant-match',
+      gameDayNote:
+        'Le coach à la valeur la plus basse équilibre les chances avant le coup d’envoi avec des [[page:inducements|coups de pouce]] pour le match, et peut recruter jusqu’à deux [[page:stars|champions]] — un champion ne gagne jamais de SPP et ignore toute blessure.',
     },
     glossary: {
       heading: 'Glossaire',

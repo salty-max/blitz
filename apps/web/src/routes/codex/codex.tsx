@@ -22,6 +22,7 @@ import { Breadcrumb, Card, Eyebrow, PageHeading } from '@/ui'
 
 const CATEGORIES = [
   { to: '/codex/teams', key: 'teams', count: teams.length },
+  { to: '/codex/drafting', key: 'drafting' },
   { to: '/codex/skills', key: 'skills', count: skills.length },
   { to: '/codex/stars', key: 'stars', count: starPlayers.length },
   {
@@ -128,9 +129,11 @@ export function CodexHome() {
                 <h2 className="font-display text-3xl uppercase group-hover:text-paper">
                   {t(`categories.${category.key}`)}
                 </h2>
-                <span className="font-display text-3xl text-blood group-hover:text-gold">
-                  {category.count}
-                </span>
+                {'count' in category && (
+                  <span className="font-display text-3xl text-blood group-hover:text-gold">
+                    {category.count}
+                  </span>
+                )}
               </div>
             </Link>
           </Card>
