@@ -25,7 +25,12 @@ export type FormFieldProps = {
 
 /**
  * Wraps a single form control with a label and optional hint or error, wiring
- * up the `id`/`aria-describedby`/`aria-invalid` links between them.
+ * up the label (`htmlFor` + `aria-labelledby`), `aria-describedby` and
+ * `aria-invalid`. It fits any control that forwards these props to its root —
+ * `Input`, `Textarea`, `Switch`, `Checkbox`, `RadioGroup` (named via
+ * `aria-labelledby`), or a `Select.Trigger`. The grouped and searchable
+ * controls (`SegmentedControl`, `NumberStepper`, `Combobox`) take a fixed prop
+ * set, so pass their own `aria-label` rather than wrapping them here.
  */
 export function FormField({
   label,
@@ -36,16 +41,20 @@ export function FormField({
   children,
 }: FormFieldProps) {
   const generatedId = useId()
+  const labelId = `${generatedId}-label`
   const messageId = `${generatedId}-message`
   const message = error ?? hint
 
-  // Respect a control that brings its own id / aria-describedby rather than
-  // clobbering them: the label points at whichever id wins, and the message is
+  // Respect a control that brings its own id / aria props rather than clobbering
+  // them: the label points at whichever id wins, the control is named via
+  // `aria-labelledby` (so groups like RadioGroup work too), and the message is
   // appended to any existing description.
   const childProps = isValidElement(children)
     ? (children.props as Record<string, unknown>)
     : {}
   const controlId = (childProps.id as string | undefined) ?? generatedId
+  const labelledBy =
+    (childProps['aria-labelledby'] as string | undefined) ?? labelId
   const describedBy =
     [childProps['aria-describedby'], message && messageId]
       .filter(Boolean)
@@ -54,6 +63,7 @@ export function FormField({
   const control = isValidElement(children)
     ? cloneElement(children as ReactElement<Record<string, unknown>>, {
         id: controlId,
+        'aria-labelledby': labelledBy,
         'aria-invalid': error ? true : childProps['aria-invalid'],
         'aria-describedby': describedBy,
       })
@@ -62,6 +72,7 @@ export function FormField({
   return (
     <div className={cn('flex flex-col gap-1.5', className)}>
       <label
+        id={labelId}
         htmlFor={controlId}
         className="font-headline text-xs font-semibold uppercase tracking-wide text-ink/55"
       >
