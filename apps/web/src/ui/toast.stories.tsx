@@ -38,6 +38,18 @@ function ToastDemo() {
       >
         Trigger error
       </Button>
+      <Button
+        variant="outline"
+        onClick={() =>
+          toast({
+            title: 'Player removed',
+            description: 'Varag Ghoul-Chewer left the roster.',
+            action: { label: 'Undo', onClick: () => {} },
+          })
+        }
+      >
+        With action
+      </Button>
     </div>
   )
 }
