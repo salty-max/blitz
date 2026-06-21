@@ -48,6 +48,7 @@ export function refKeys(text: string): string[] {
  */
 export const PAGE_REF_KEYS = [
   'teams',
+  'drafting',
   'skills',
   'stars',
   'inducements',

@@ -6,6 +6,7 @@ import { PAGE_REF_PREFIX, type PageRefKey } from '@blitz/schema'
  */
 const PAGE_ROUTES = {
   teams: '/codex/teams',
+  drafting: '/codex/drafting',
   skills: '/codex/skills',
   stars: '/codex/stars',
   inducements: '/codex/inducements',
