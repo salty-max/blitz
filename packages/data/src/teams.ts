@@ -2,7 +2,7 @@ import { teamSchema } from '@blitz/schema'
 
 import { type DataLocale } from './i18n'
 import data from './locales/en/teams.json'
-import frData from './locales/fr/teams.json'
+import { teamOverlays as overlays } from './overlays'
 import type { Team } from './types'
 
 /**
@@ -13,19 +13,6 @@ import type { Team } from './types'
 export const teams: Team[] = teamSchema.array().parse(data) as Team[]
 
 const byKey = new Map<string, Team>(teams.map((team) => [team.key, team]))
-
-/** A team's locale overlay — its name, optional description and position names. */
-type TeamOverlay = {
-  key: string
-  name?: string
-  description?: string
-  positions?: { key: string; name: string }[]
-}
-const overlays: Partial<Record<DataLocale, Map<string, TeamOverlay>>> = {
-  fr: new Map(
-    (frData as unknown as TeamOverlay[]).map((team) => [team.key, team])
-  ),
-}
 
 /** Merge a team's overlay — its name, description and per-position names. */
 function localizeTeam(team: Team, locale: DataLocale): Team {

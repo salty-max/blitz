@@ -1,14 +1,8 @@
 import { skillSchema } from '@blitz/schema'
 
-import {
-  type DataLocale,
-  localizeAll,
-  localizeOne,
-  overlayMap,
-  type Overlays,
-} from './i18n'
+import { type DataLocale, localizeAll, localizeOne } from './i18n'
 import data from './locales/en/skills.json'
-import frData from './locales/fr/skills.json'
+import { skillOverlays as overlays } from './overlays'
 import type { Skill } from './types'
 
 /**
@@ -19,9 +13,6 @@ import type { Skill } from './types'
 export const skills: Skill[] = skillSchema.array().parse(data) as Skill[]
 
 const byKey = new Map<string, Skill>(skills.map((skill) => [skill.key, skill]))
-const overlays: Overlays<Skill> = {
-  fr: overlayMap<Skill>(frData as unknown as Partial<Skill>[]),
-}
 
 /** The full skill catalogue in the given locale (English when omitted). */
 export function getSkills(locale: DataLocale = 'en'): Skill[] {

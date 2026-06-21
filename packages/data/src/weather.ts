@@ -1,14 +1,8 @@
 import { weatherSchema } from '@blitz/schema'
 
-import {
-  type DataLocale,
-  localizeAll,
-  localizeOne,
-  overlayMap,
-  type Overlays,
-} from './i18n'
+import { type DataLocale, localizeAll, localizeOne } from './i18n'
 import data from './locales/en/weather.json'
-import frData from './locales/fr/weather.json'
+import { weatherOverlays as overlays } from './overlays'
 import type { Weather } from './types'
 
 /**
@@ -20,9 +14,6 @@ export const weather: Weather[] = weatherSchema.array().parse(data) as Weather[]
 const byKey = new Map<string, Weather>(
   weather.map((entry) => [entry.key, entry])
 )
-const overlays: Overlays<Weather> = {
-  fr: overlayMap<Weather>(frData as unknown as Partial<Weather>[]),
-}
 
 /** The Weather table in the given locale (English when omitted). */
 export function getWeather(locale: DataLocale = 'en'): Weather[] {
