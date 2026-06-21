@@ -72,5 +72,182 @@
         "body": "At the end of each drive, each coach rolls a D6 for every KO'd player in their Reserves; on a 4+ the player recovers and is available next drive (some inducements and weather modify the roll)."
       }
     ]
+  },
+  {
+    "key": "combat",
+    "title": "Blocking",
+    "summary": "Throwing a Block, how Strength and assists set the dice, and resolving a knock-down through armour and injury.",
+    "sections": [
+      {
+        "key": "block-action",
+        "heading": "The Block action",
+        "body": "A [[block|Block]] pits the blocker's ST against an adjacent opponent's. Roll the Block dice, apply one result, then resolve any [[knocked-down|knock-down]]. A [[blitz|Blitz]] is a Block combined with movement, limited to once per team turn."
+      },
+      {
+        "key": "dice",
+        "heading": "Strength & number of block dice",
+        "body": "Compare the blocker's ST to the target's, after [[assist|assists]]: equal rolls 1 die, one player stronger rolls 2, one player at least double rolls 3. With 2 or 3 dice the coach of the stronger player chooses which result applies — so blocking up into a stronger player still rolls 2–3 dice, but the defender picks."
+      },
+      {
+        "key": "assists",
+        "heading": "Assists",
+        "body": "Each [[assist|assist]] grants +1 ST.\nOffensive assist — another of your standing players is also [[marked|Marking]] the target and is not itself Marked → +1 ST to the blocker.\nDefensive assist — one of the target's standing team-mates is Marking the blocker and is not itself Marked → +1 ST to the target."
+      },
+      {
+        "key": "dice-results",
+        "heading": "Block dice results",
+        "body": "Player Down — the blocker is [[knocked-down|Knocked Down]].\n[[both-down|Both Down]] — both players are Knocked Down.\n[[push-back|Push Back]] — the target is pushed back one square; the blocker may [[follow-up|Follow-up]].\nStumble — if the target has [[dodge|Dodge]], treat as Push Back; otherwise as POW!\n[[pow|POW!]] — the target is pushed back one square, then Knocked Down."
+      },
+      {
+        "key": "push-follow",
+        "heading": "Push backs & follow-up",
+        "body": "A [[push-back|push]] moves the target one square away; the blocker may [[follow-up|Follow-up]] into the vacated square (free, no MA), decided before any armour roll. If there is no empty square, the pushed player chain-pushes whoever occupies the destination, and so on; the blocking coach chooses the directions. A player pushed off the pitch edge is removed and risks injury (a Throw-in if they carried the ball; a [[turnover|Turnover]] if they were on the active team)."
+      },
+      {
+        "key": "knockdown-injury",
+        "heading": "Knock-down → armour → injury",
+        "body": "A [[knocked-down|Knocked Down]] player checks armour, then possibly injury. Armour — roll 2D6; if the total is ≥ the player's AV, armour is broken and an injury roll follows. Injury — roll 2D6: 2–7 [[stunned|Stunned]] (recovers on the pitch), 8–9 Knocked-out (to the Reserves), 10–12 a [[casualty|Casualty]] resolved on the Injuries page; Stunty players use a harsher table."
+      }
+    ]
+  },
+  {
+    "key": "passing",
+    "title": "Passing",
+    "summary": "Throwing the ball, catching it, handing off, and what a loose ball does.",
+    "sections": [
+      {
+        "key": "pass-action",
+        "heading": "The Pass action",
+        "body": "Once per turn, throw the ball at a target square: the thrower makes a Passing test against their PA, modified by range — Quick Pass 0, Short Pass −1, Long Pass −2, Long Bomb −3 — and −1 for each opponent [[marked|Marking]] the thrower.\nAccurate (test passed, or a natural 6): the ball lands in the target square for a team-mate to [[catch|Catch]]. Inaccurate (failed): it scatters before landing. Fumble (modified 1, or natural 1): the ball is dropped, bounces from the thrower's square, and a [[turnover|Turnover]] is caused."
+      },
+      {
+        "key": "catching",
+        "heading": "Catching",
+        "body": "The receiver makes an Agility test, with −1 if the ball had bounced, −1 if it was thrown in, and −1 per opponent [[marked|Marking]] the catcher. Success (or a natural 6) gives possession; failure (or a natural 1) makes the ball bounce. A [[prone|Prone]], [[stunned|Stunned]] or [[distracted|Distracted]] player auto-fails a catch."
+      },
+      {
+        "key": "hand-off",
+        "heading": "Hand-off",
+        "body": "A once-per-turn action: the ball carrier finishes their move adjacent to a standing team-mate who still has their [[tackle-zone|tackle zone]], and that team-mate makes a [[catch|Catch]]."
+      },
+      {
+        "key": "loose-balls",
+        "heading": "Loose balls",
+        "body": "Bounce: a loose ball moves one square in a random direction. Scatter: an inaccurate pass deviates several squares from its target before landing. Throw-in: a ball leaving the pitch is placed on the last square it occupied, then rolls a D6 for direction (a D3 at a corner) and travels 2D6 squares."
+      },
+      {
+        "key": "throw-team-mate",
+        "heading": "Throw Team-mate",
+        "body": "Requires the [[throw-team-mate|Throw Team-mate]] trait. Once per turn, the thrower picks up an adjacent team-mate who has [[right-stuff|Right Stuff]] and throws them; the target must lie within the first two bands of the Range Ruler."
+      }
+    ]
+  },
+  {
+    "key": "fouling",
+    "title": "Fouling & interceptions",
+    "summary": "Kicking a downed opponent, and snatching a thrown pass out of the air.",
+    "sections": [
+      {
+        "key": "foul-action",
+        "heading": "The Foul action",
+        "body": "A once-per-turn dirty hit on a [[prone|Prone]] or [[stunned|Stunned]] opponent: the fouler may move first, then fouls and can't move afterwards. It isn't a [[block|Block]] — just a straight Armour roll against the downed player (and an Injury roll if it breaks), modified by [[assist|assists]]: +1 per offensive assist (your players marking the target), −1 per defensive assist (their players marking your fouler).\nA natural double on the Armour or Injury roll spotted by the ref gets the fouler sent off once the foul resolves, causing a [[turnover|Turnover]] if it was the active team. Argue the Call (D6): 1 ejects the coach for the rest of the game; 2–5 the send-off stands; 6 reinstates the player (the Turnover still stands)."
+      },
+      {
+        "key": "interception",
+        "heading": "Interception",
+        "body": "When a pass is thrown and the Range Ruler crosses a square holding a standing opposition player, that coach may pick one to attempt an interception — an Agility test at −3 against an accurate pass or −2 against an inaccurate one, plus −1 per opponent [[marked|Marking]] the interceptor.\nSuccess (or a natural 6) takes the ball and causes a [[turnover|Turnover]]; failure lets the pass carry on as normal."
+      }
+    ]
+  },
+  {
+    "key": "setup-kickoff",
+    "title": "Setup & kick-off",
+    "summary": "Setting up both teams, the coin toss, and kicking off to begin a drive.",
+    "sections": [
+      {
+        "key": "team-setup",
+        "heading": "Team setup",
+        "body": "Both teams set up in their own half, up to 11 players each: the kicking team first, then the receiving team. At least 3 players must stand on the Line of Scrimmage (the central squares adjacent to the line), and no more than 2 may stand in each Wide Zone."
+      },
+      {
+        "key": "coin-toss",
+        "heading": "Coin toss",
+        "body": "A roll-off decides who starts: the winner chooses whether to kick or receive."
+      },
+      {
+        "key": "the-kick",
+        "heading": "The kick",
+        "body": "The kicking team places the ball in any square of the opponent's half, then it deviates to the square it lands in. Touchback — if the ball leaves the pitch or crosses back over the Line of Scrimmage, the receiving coach gives it to a standing player (or empty square) in their own half. The kick then triggers a kick-off event (see the Kick-off page)."
+      }
+    ]
+  },
+  {
+    "key": "pre-game",
+    "title": "Pre-game",
+    "summary": "What happens between fixtures and kick-off — filling the squad, levelling the odds, and a plea to the dice god.",
+    "sections": [
+      {
+        "key": "pre-game-sequence",
+        "heading": "Pre-game sequence",
+        "body": "Before the coin toss and kick-off, a league fixture runs three steps. First, each team takes on Journeymen to fill its squad out to 11. Then the coach with the lower Team Value spends the gap on star players and inducements. Finally, the underdog may pray to Nuffle for a blessing (see the Prayers to Nuffle page)."
+      },
+      {
+        "key": "journeymen",
+        "heading": "Journeymen",
+        "body": "A team with fewer than 11 available players takes on Journeymen — free, 0-cost Linemen from its own roster with the [[loner|Loner]] (4+) trait — enough to reach 11. They can push the squad over 16 temporarily (counting injured players), but never more than 11 able to take the field."
+      },
+      {
+        "key": "special-play-cards",
+        "heading": "Special play cards",
+        "body": "Special play cards are not part of the core Third Season Edition game; some house and league formats add their own card decks."
+      }
+    ]
+  },
+  {
+    "key": "post-game",
+    "title": "Post-game & leagues",
+    "summary": "What happens after a match: winnings, fan changes, and how players earn and spend Star Player Points.",
+    "sections": [
+      {
+        "key": "post-game-sequence",
+        "heading": "Post-game sequence",
+        "body": "Resolved in order:\n1. Record the outcome and collect winnings\n2. Update Dedicated Fans\n3. Player advancement\n4. Hiring, firing and temporary retirement\n5. Expensive mistakes\n6. Prepare for the next fixture"
+      },
+      {
+        "key": "winnings",
+        "heading": "Winnings",
+        "body": "Added to the treasury: winnings = (Fan Attendance ÷ 2 + touchdowns scored + 1 if you didn't stall) × 10 000 gp. Fan Attendance is both teams' Fan Factors added together."
+      },
+      {
+        "key": "dedicated-fans",
+        "heading": "Dedicated Fans",
+        "body": "Win — roll a D6; if it's ≥ your current Dedicated Fans, +1 (max 7).\nLoss — roll a D6; if it's < your current Dedicated Fans, −1 (min 1).\nDraw — no change."
+      },
+      {
+        "key": "spp",
+        "heading": "Star Player Points",
+        "body": "Completion (an accurate pass caught) — 1 SPP\nThrow Team-mate (lands safely) — 1 SPP\nCaught after being thrown — 1 SPP\nInterception — 2 SPP\n[[casualty|Casualty]] caused — 2 SPP\nTouchdown — 3 SPP\nMVP — 4 SPP\nStar players earn no SPP; Journeymen do."
+      },
+      {
+        "key": "advancement",
+        "heading": "Advancement — SPP cost by level",
+        "body": "Cost rises with each advance taken (1° = primary-category skill, 2° = secondary-category skill):\nExperienced (1st) — random 1° 3, chosen 1° 6, random 2° 10, chosen 2° 14, characteristic 14\nVeteran (2nd) — 4 / 8 / 12 / 16 / 16\nEmerging Star (3rd) — 6 / 12 / 16 / 20 / 20\nStar (4th) — 8 / 16 / 20 / 24 / 24\nSuperstar (5th) — 10 / 20 / 24 / 28 / 28\nLegend (6th) — 15 / 30 / 34 / 38 / 38\nA characteristic improvement is a D8 roll: 1 → +1 AV; 2 → +1 AV or PA; 3–4 → +1 AV, MA or PA; 5 → +1 MA or PA; 6 → +1 AG or MA; 7 → +1 AG or ST; 8 → +1 to any. A player may decline the roll and take a skill instead (the SPP are still spent)."
+      },
+      {
+        "key": "value-increase",
+        "heading": "Value increase per advancement",
+        "body": "Added to current value:\nPrimary skill — +20 000 gp\nSecondary skill — +40 000 gp\n+1 AV — +10 000 gp\n+1 MA — +20 000 gp\n+1 PA — +20 000 gp\n+1 AG — +30 000 gp\n+1 ST — +60 000 gp"
+      },
+      {
+        "key": "expensive-mistakes",
+        "heading": "Expensive mistakes",
+        "body": "After a league fixture, a treasury of 100 000 gp or more risks a D6 roll on a table whose severity scales with the hoard: Crisis Averted (nothing), Minor Incident (lose D3 × 10 000 gp), Major Incident (lose half), or Catastrophe (keep only 2D6 × 10 000 gp). Spend your gold, don't hoard it."
+      },
+      {
+        "key": "leagues",
+        "heading": "Leagues & tournaments",
+        "body": "A league is a season of fixtures in which teams persist and grow through this post-game sequence. A tournament is usually a one-off format — often fixed Team Value and \"resurrection\" (no lasting injuries between games)."
+      }
+    ]
   }
 ]

@@ -72,5 +72,182 @@
         "body": "À la fin de chaque phase de jeu, chaque coach lance un D6 pour chaque joueur K.O. dans ses réserves ; sur 4+ le joueur récupère et est disponible à la phase suivante (certains coups de pouce et la météo modifient le jet)."
       }
     ]
+  },
+  {
+    "key": "combat",
+    "title": "Le blocage",
+    "summary": "Porter un Blocage, comment la ST et les aides fixent les dés, et résoudre une mise à terre via l’armure et la blessure.",
+    "sections": [
+      {
+        "key": "block-action",
+        "heading": "L’action de Blocage",
+        "body": "Un [[block|Blocage]] oppose la ST du bloqueur à celle d’un adversaire adjacent. Lancez les dés de blocage, appliquez un résultat, puis résolvez toute [[knocked-down|mise à terre]]. Un [[blitz|Blitz]] est un Blocage combiné à un mouvement, limité à une fois par tour d’équipe."
+      },
+      {
+        "key": "dice",
+        "heading": "ST & nombre de dés de blocage",
+        "body": "Comparez la ST du bloqueur à celle de la cible, après [[assist|aides]] : à égalité on lance 1 dé, si un joueur est plus fort 2, si un joueur a au moins le double 3. Avec 2 ou 3 dés, le coach du joueur le plus fort choisit le résultat appliqué — bloquer vers le haut contre un joueur plus fort lance donc 2–3 dés, mais c’est le défenseur qui choisit."
+      },
+      {
+        "key": "assists",
+        "heading": "Aides",
+        "body": "Chaque [[assist|aide]] donne +1 ST.\nAide offensive — un autre de vos joueurs debout marque aussi la cible et n’est pas lui-même [[marked|Marqué]] → +1 ST au bloqueur.\nAide défensive — un coéquipier debout de la cible marque le bloqueur et n’est pas lui-même Marqué → +1 ST à la cible."
+      },
+      {
+        "key": "dice-results",
+        "heading": "Résultats des dés de blocage",
+        "body": "Joueur à terre — le bloqueur est [[knocked-down|mis à terre]].\n[[both-down|Les deux à terre]] — les deux joueurs sont mis à terre.\n[[push-back|Repoussé]] — la cible est repoussée d’une case ; le bloqueur peut [[follow-up|Suivre]].\nTrébuchement — si la cible a [[dodge|Esquive]], traitez comme un Repoussé ; sinon comme un POW!\n[[pow|POW!]] — la cible est repoussée d’une case, puis mise à terre."
+      },
+      {
+        "key": "push-follow",
+        "heading": "Repoussés & suivre",
+        "body": "Un [[push-back|repoussé]] écarte la cible d’une case ; le bloqueur peut [[follow-up|Suivre]] sur la case libérée (gratuit, sans MA), à décider avant tout jet d’armure. S’il n’y a pas de case vide, le joueur repoussé pousse en chaîne celui qui occupe la destination, et ainsi de suite ; le coach qui bloque choisit les directions. Un joueur poussé hors du terrain est retiré et risque une blessure (une Remise en jeu s’il portait le ballon ; un [[turnover|Turnover]] s’il était dans l’équipe active)."
+      },
+      {
+        "key": "knockdown-injury",
+        "heading": "Mise à terre → armure → blessure",
+        "body": "Un joueur [[knocked-down|mis à terre]] teste son armure, puis éventuellement la blessure. Armure — lancez 2D6 ; si le total est ≥ à l’AV du joueur, l’armure est percée et un jet de blessure suit. Blessure — lancez 2D6 : 2–7 [[stunned|Sonné]] (récupère sur le terrain), 8–9 K.O. (aux réserves), 10–12 une [[casualty|Blessure]] résolue sur la page des Blessures ; les joueurs Chétifs utilisent une table plus dure."
+      }
+    ]
+  },
+  {
+    "key": "passing",
+    "title": "La passe",
+    "summary": "Lancer le ballon, le réceptionner, le transmettre, et ce que fait un ballon libre.",
+    "sections": [
+      {
+        "key": "pass-action",
+        "heading": "L’action de Passe",
+        "body": "Une fois par tour, lancez le ballon vers une case cible : le lanceur effectue un test de Passe contre sa PA, modifié par la portée — Passe rapide 0, Passe courte −1, Passe longue −2, Bombe longue −3 — et −1 par adversaire qui [[marked|marque]] le lanceur.\nPrécise (test réussi, ou un 6 naturel) : le ballon atterrit sur la case cible où un coéquipier peut le [[catch|réceptionner]]. Imprécise (test raté) : il dévie avant d’atterrir. Maladresse (1 modifié, ou 1 naturel) : le ballon est lâché, rebondit depuis la case du lanceur, et cause un [[turnover|Turnover]]."
+      },
+      {
+        "key": "catching",
+        "heading": "Réception",
+        "body": "Le réceptionneur effectue un test d’agilité, avec −1 si le ballon avait rebondi, −1 s’il s’agissait d’une remise en jeu, et −1 par adversaire qui [[marked|marque]] le réceptionneur. Réussite (ou un 6 naturel) : il prend possession ; échec (ou un 1 naturel) : le ballon rebondit. Un joueur [[prone|À terre]], [[stunned|Sonné]] ou [[distracted|Distrait]] rate automatiquement sa réception."
+      },
+      {
+        "key": "hand-off",
+        "heading": "Transmission",
+        "body": "Une action limitée à une fois par tour : le porteur du ballon termine son mouvement au contact d’un coéquipier debout qui a encore sa [[tackle-zone|zone de tacle]], et ce coéquipier effectue une [[catch|réception]]."
+      },
+      {
+        "key": "loose-balls",
+        "heading": "Ballons libres",
+        "body": "Rebond : un ballon libre se déplace d’une case dans une direction aléatoire. Déviation : une passe imprécise dévie de plusieurs cases avant d’atterrir. Remise en jeu : un ballon qui quitte le terrain est placé sur la dernière case qu’il occupait, puis on lance un D6 pour la direction (un D3 dans un coin) et il parcourt 2D6 cases."
+      },
+      {
+        "key": "throw-team-mate",
+        "heading": "Lancer de coéquipier",
+        "body": "Nécessite le trait [[throw-team-mate|Lancer de coéquipier]]. Une fois par tour, le lanceur soulève un coéquipier adjacent doté de [[right-stuff|Right Stuff]] et le lance ; la cible doit se trouver dans les deux premières bandes de la Règle de portée."
+      }
+    ]
+  },
+  {
+    "key": "fouling",
+    "title": "Agression & interceptions",
+    "summary": "Frapper un adversaire à terre, et arracher une passe en plein vol.",
+    "sections": [
+      {
+        "key": "foul-action",
+        "heading": "L’action Agression",
+        "body": "Un coup bas une fois par tour sur un adversaire [[prone|À terre]] ou [[stunned|Sonné]] : l’agresseur peut d’abord se déplacer, puis agresse et ne peut plus bouger ensuite. Ce n’est pas un [[block|Blocage]] — juste un jet d’armure direct contre le joueur à terre (et un jet de blessure s’il le perce), modifié par les [[assist|aides]] : +1 par aide offensive (vos joueurs marquant la cible), −1 par aide défensive (leurs joueurs marquant votre agresseur).\nUn double naturel sur le jet d’armure ou de blessure repéré par l’arbitre fait expulser l’agresseur une fois l’agression résolue, causant un [[turnover|Turnover]] si c’était l’équipe active. Contester la décision (D6) : 1 expulse le coach pour le reste du match ; 2–5 l’expulsion est maintenue ; 6 réintègre le joueur (le Turnover reste maintenu)."
+      },
+      {
+        "key": "interception",
+        "heading": "Interception",
+        "body": "Quand une passe est lancée et que la Règle de portée traverse une case occupée par un joueur adverse debout, ce coach peut en choisir un pour tenter une interception — un test d’agilité à −3 contre une passe précise ou −2 contre une passe imprécise, plus −1 par adversaire [[marked|marquant]] l’intercepteur.\nUne réussite (ou un 6 naturel) prend le ballon et cause un [[turnover|Turnover]] ; un échec laisse la passe se poursuivre normalement."
+      }
+    ]
+  },
+  {
+    "key": "setup-kickoff",
+    "title": "Mise en place & coup d’envoi",
+    "summary": "Placer les deux équipes, le tirage au sort, et donner le coup d’envoi pour lancer une phase de jeu.",
+    "sections": [
+      {
+        "key": "team-setup",
+        "heading": "Mise en place des équipes",
+        "body": "Les deux équipes se placent dans leur propre moitié de terrain, jusqu’à 11 joueurs chacune : l’équipe qui dégage d’abord, puis l’équipe qui reçoit. Au moins 3 joueurs doivent se tenir sur la ligne de mêlée (les cases centrales adjacentes à la ligne), et 2 au maximum dans chaque zone latérale."
+      },
+      {
+        "key": "coin-toss",
+        "heading": "Tirage au sort",
+        "body": "Un jet d’opposition désigne qui commence : le gagnant choisit de dégager ou de recevoir."
+      },
+      {
+        "key": "the-kick",
+        "heading": "Le coup d’envoi",
+        "body": "L’équipe qui dégage place le ballon sur n’importe quelle case de la moitié de terrain adverse, puis il dévie jusqu’à la case où il atterrit. Touché — si le ballon quitte le terrain ou repasse au-dessus de la ligne de mêlée, le coach qui reçoit le donne à un joueur debout (ou sur une case vide) dans sa propre moitié. Le coup d’envoi déclenche ensuite un événement de coup d’envoi (voir la page Coup d’envoi)."
+      }
+    ]
+  },
+  {
+    "key": "pre-game",
+    "title": "Avant-match",
+    "summary": "Ce qui se passe entre les rencontres et le coup d’envoi — compléter l’effectif, équilibrer les chances, et une supplique au dieu des dés.",
+    "sections": [
+      {
+        "key": "pre-game-sequence",
+        "heading": "Séquence d’avant-match",
+        "body": "Avant le tirage au sort et le coup d’envoi, une rencontre de ligue se déroule en trois étapes. D’abord, chaque équipe recrute des remplaçants pour compléter son effectif jusqu’à 11. Ensuite, le coach avec la valeur d’équipe la plus basse dépense l’écart en champions et en coups de pouce. Enfin, l’outsider peut adresser une prière à Nuffle pour obtenir une bénédiction (voir la page Prières à Nuffle)."
+      },
+      {
+        "key": "journeymen",
+        "heading": "Remplaçants",
+        "body": "Une équipe avec moins de 11 joueurs disponibles recrute des remplaçants — des Hommes de Base gratuits, à 0 po, issus de sa propre liste et dotés du trait [[loner|Solitaire]] (4+) — juste assez pour atteindre 11. Ils peuvent porter temporairement l’effectif au-delà de 16 (en comptant les joueurs blessés), mais jamais plus de 11 aptes à entrer sur le terrain."
+      },
+      {
+        "key": "special-play-cards",
+        "heading": "Cartes de jeu spéciales",
+        "body": "Les cartes de jeu spéciales ne font pas partie du jeu de base Troisième Saison ; certains formats maison ou de ligue ajoutent leurs propres paquets de cartes."
+      }
+    ]
+  },
+  {
+    "key": "post-game",
+    "title": "Après-match & ligues",
+    "summary": "Ce qui se passe après un match : les gains, l’évolution des fans, et comment les joueurs gagnent et dépensent leurs SPP.",
+    "sections": [
+      {
+        "key": "post-game-sequence",
+        "heading": "Séquence d’après-match",
+        "body": "Résolue dans l’ordre :\n1. Noter le résultat et encaisser les gains\n2. Mettre à jour les Fans dévoués\n3. Amélioration des joueurs\n4. Recrutement, licenciement et retraite temporaire\n5. Erreurs coûteuses\n6. Préparer la prochaine rencontre"
+      },
+      {
+        "key": "winnings",
+        "heading": "Gains",
+        "body": "Ajoutés au trésor : gains = (affluence ÷ 2 + touchdowns marqués + 1 si vous n’avez pas temporisé) × 10 000 po. L’affluence est la somme des cotes de popularité des deux équipes."
+      },
+      {
+        "key": "dedicated-fans",
+        "heading": "Fans dévoués",
+        "body": "Victoire — lancez un D6 ; s’il est ≥ vos Fans dévoués actuels, +1 (max 7).\nDéfaite — lancez un D6 ; s’il est < vos Fans dévoués actuels, −1 (min 1).\nMatch nul — aucun changement."
+      },
+      {
+        "key": "spp",
+        "heading": "SPP",
+        "body": "Réception (une passe précise réceptionnée) — 1 SPP\nLancer de coéquipier (atterrissage réussi) — 1 SPP\nRéceptionné après un lancer — 1 SPP\nInterception — 2 SPP\n[[casualty|Blessure]] infligée — 2 SPP\nTouchdown — 3 SPP\nMVP — 4 SPP\nLes Stars ne gagnent aucun SPP ; les Mercenaires en gagnent."
+      },
+      {
+        "key": "advancement",
+        "heading": "Amélioration — coût en SPP par niveau",
+        "body": "Le coût augmente à chaque amélioration prise (1° = compétence primaire, 2° = compétence secondaire) :\nExpérimenté (1re) — 1° aléatoire 3, 1° choisie 6, 2° aléatoire 10, 2° choisie 14, caractéristique 14\nVétéran (2e) — 4 / 8 / 12 / 16 / 16\nÉtoile montante (3e) — 6 / 12 / 16 / 20 / 20\nÉtoile (4e) — 8 / 16 / 20 / 24 / 24\nSuperstar (5e) — 10 / 20 / 24 / 28 / 28\nLégende (6e) — 15 / 30 / 34 / 38 / 38\nL’amélioration de caractéristique est un jet de D8 : 1 → +1 AV ; 2 → +1 AV ou PA ; 3–4 → +1 AV, MA ou PA ; 5 → +1 MA ou PA ; 6 → +1 AG ou MA ; 7 → +1 AG ou ST ; 8 → +1 au choix. Un joueur peut refuser le jet et prendre une compétence à la place (les SPP sont tout de même dépensés)."
+      },
+      {
+        "key": "value-increase",
+        "heading": "Hausse de valeur par amélioration",
+        "body": "Ajoutée à la valeur actuelle :\nCompétence primaire — +20 000 po\nCompétence secondaire — +40 000 po\n+1 AV — +10 000 po\n+1 MA — +20 000 po\n+1 PA — +20 000 po\n+1 AG — +30 000 po\n+1 ST — +60 000 po"
+      },
+      {
+        "key": "expensive-mistakes",
+        "heading": "Erreurs coûteuses",
+        "body": "Après une rencontre de ligue, un trésor de 100 000 po ou plus risque un jet de D6 sur une table dont la sévérité augmente avec le magot : Crise évitée (rien), Incident mineur (perte de D3 × 10 000 po), Incident majeur (perte de la moitié) ou Catastrophe (ne garder que 2D6 × 10 000 po). Dépensez votre or, ne le thésaurisez pas."
+      },
+      {
+        "key": "leagues",
+        "heading": "Ligues & tournois",
+        "body": "Une ligue est une saison de rencontres où les équipes persistent et évoluent au fil de cette séquence d’après-match. Un tournoi est en général un format ponctuel — souvent à valeur d’équipe fixe et en « résurrection » (aucune blessure durable entre les matchs)."
+      }
+    ]
   }
 ]
