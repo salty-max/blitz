@@ -21,7 +21,7 @@
   },
   {
     "key": "kick",
-    "name": "Frappe Précise",
+    "name": "Frappe précise",
     "effect": "Réduit la déviation du coup d’envoi à un D3."
   },
   {
@@ -31,17 +31,17 @@
   },
   {
     "key": "steady-footing",
-    "name": "Appuis Sûrs",
+    "name": "Appuis sûrs",
     "effect": "Réussit un 6 pour éviter une mise à terre ou une chute."
   },
   {
     "key": "strip-ball",
-    "name": "Arracher le Ballon",
+    "name": "Arracher le ballon",
     "effect": "Un porteur du ballon que vous [[push-back]] lâche le ballon."
   },
   {
     "key": "sure-hands",
-    "name": "Prise Sûre",
+    "name": "Prise sûre",
     "effect": "Relance un ramassage raté ; immunisé à [[strip-ball]]."
   },
   {
@@ -66,12 +66,12 @@
   },
   {
     "key": "diving-catch",
-    "name": "Réception Plongeante",
+    "name": "Réception plongeante",
     "effect": "Réceptionne dans les cases adjacentes ; +1 à la réception dans la case cible."
   },
   {
     "key": "diving-tackle",
-    "name": "Tacle Plongeant",
+    "name": "Tacle plongeant",
     "effect": "Applique −2 à l’[[dodge|esquive]] d’un adversaire hors de votre [[tackle-zone]] ; vous passez [[prone]]."
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "key": "hit-and-run",
-    "name": "Frappe et Fuite",
+    "name": "Frappe-et-cours",
     "effect": "Après un blocage ou un poignard, avance d’une case gratuite si toujours debout."
   },
   {
@@ -101,12 +101,12 @@
   },
   {
     "key": "safe-pair-of-hands",
-    "name": "Libération Contrôlée",
+    "name": "Libération contrôlée",
     "effect": "Une fois mis à terre, place le ballon dans une case adjacente au lieu de le faire rebondir."
   },
   {
     "key": "sidestep",
-    "name": "Glissade Contrôlée",
+    "name": "Glissade contrôlée",
     "effect": "Choisit votre propre case de [[push-back]]."
   },
   {
@@ -141,12 +141,12 @@
   },
   {
     "key": "give-and-go",
-    "name": "Transmission dans la Course",
+    "name": "Transmission dans la course",
     "effect": "Continue de se déplacer après une passe rapide ou une transmission."
   },
   {
     "key": "hail-mary-pass",
-    "name": "Passe Désespérée",
+    "name": "Passe désespérée",
     "effect": "Lance vers n’importe quelle case en Chandelle ; ne peut pas être interceptée."
   },
   {
@@ -156,12 +156,12 @@
   },
   {
     "key": "nerves-of-steel",
-    "name": "Nerfs d’Acier",
+    "name": "Nerfs d’acier",
     "effect": "Ignore les modificateurs de [[marked|marquage]] lors d’une passe ou d’une réception."
   },
   {
     "key": "on-the-ball",
-    "name": "Sur le Ballon",
+    "name": "Sur le ballon",
     "effect": "Se déplace de 3 cases maximum avant que la passe d’un adversaire ne se résolve."
   },
   {
@@ -176,12 +176,12 @@
   },
   {
     "key": "safe-pass",
-    "name": "Passe Assurée",
+    "name": "Passe assurée",
     "effect": "Un 1 naturel sur une passe conserve le ballon — pas de [[turnover]]."
   },
   {
     "key": "arm-bar",
-    "name": "Clé de Bras",
+    "name": "Clé de bras",
     "effect": "+1 à l’armure/blessure si un adversaire tombe en [[dodge|esquivant]] hors de votre [[tackle-zone]]."
   },
   {
@@ -191,12 +191,12 @@
   },
   {
     "key": "break-tackle",
-    "name": "Esquive en Force",
+    "name": "Esquive en force",
     "effect": "+1/+2/+3 à une esquive, selon votre Force."
   },
   {
     "key": "bullseye",
-    "name": "Dans le Mille",
+    "name": "Dans le mille",
     "effect": "Le Lancer de Coéquipier atterrit sur la cible sans déviation."
   },
   {
@@ -221,7 +221,7 @@
   },
   {
     "key": "multiple-block",
-    "name": "Blocage Multiple",
+    "name": "Blocage multiple",
     "effect": "Bloque deux adversaires à la fois (−2 ST)."
   },
   {
@@ -231,17 +231,17 @@
   },
   {
     "key": "strong-arm",
-    "name": "Bras Musclé",
+    "name": "Bras musclé",
     "effect": "+1 au Lancer de Coéquipier."
   },
   {
     "key": "thick-skull",
-    "name": "Crâne Épais",
+    "name": "Crâne épais",
     "effect": "Mis K.O. uniquement sur 9+ (8+ si [[stunty]])."
   },
   {
     "key": "dirty-player",
-    "name": "Joueur Déloyal",
+    "name": "Joueur déloyal",
     "effect": "+1 au jet d’Armure ou de Blessure lorsque vous [[foul|agressez]]."
   },
   {
@@ -256,27 +256,27 @@
   },
   {
     "key": "lethal-flight",
-    "name": "Vol Fatal",
+    "name": "Vol fatal",
     "effect": "+1 à l’armure/blessure quand un joueur lancé met un adversaire à terre."
   },
   {
     "key": "lone-fouler",
-    "name": "Agresseur Solitaire",
+    "name": "Agresseur solitaire",
     "effect": "Relance un jet d’Armure raté lorsque vous [[foul|agressez]] sans [[assist|aides]]."
   },
   {
     "key": "pile-driver",
-    "name": "Marteau-Pilon",
+    "name": "Marteau-pilon",
     "effect": "Après une mise à terre suite à un blocage, effectue une [[foul|agression]] gratuite."
   },
   {
     "key": "put-the-boot-in",
-    "name": "Coup de Crampons",
+    "name": "Coup de crampons",
     "effect": "Fournit des [[assist|aides]] offensives à une [[foul|agression]] même en étant [[marked]]."
   },
   {
     "key": "quick-foul",
-    "name": "Agression Éclair",
+    "name": "Agression éclair",
     "effect": "Continue de se déplacer après une [[foul|agression]]."
   },
   {
@@ -296,12 +296,12 @@
   },
   {
     "key": "violent-innovator",
-    "name": "Innovateur Violent",
+    "name": "Innovateur violent",
     "effect": "Gagne des SPP pour les sorties causées par vos actions spéciales."
   },
   {
     "key": "big-hand",
-    "name": "Main Démesurée",
+    "name": "Main démesurée",
     "effect": "Ignore tous les malus lors du ramassage du ballon."
   },
   {
@@ -311,12 +311,12 @@
   },
   {
     "key": "disturbing-presence",
-    "name": "Présence Perturbante",
+    "name": "Présence perturbante",
     "effect": "−1 aux passes, réceptions ou interceptions ennemies par joueur de ce type dans un rayon de 3 cases."
   },
   {
     "key": "extra-arms",
-    "name": "Bras Supplémentaires",
+    "name": "Bras supplémentaires",
     "effect": "+1 à la réception, au ramassage ou à l’interception."
   },
   {
@@ -331,17 +331,17 @@
   },
   {
     "key": "iron-hard-skin",
-    "name": "Peau de Fer",
+    "name": "Peau de fer",
     "effect": "Les adversaires ne peuvent pas modifier les jets d’armure contre vous ; immunisé à [[claws]]."
   },
   {
     "key": "monstrous-mouth",
-    "name": "Grande Gueule",
+    "name": "Grande gueule",
     "effect": "Bloque un adversaire debout [[marked]] pour l’empêcher de partir."
   },
   {
     "key": "prehensile-tail",
-    "name": "Queue Préhensile",
+    "name": "Queue préhensile",
     "effect": "−1 supplémentaire aux adversaires qui [[dodge|esquivent]] hors de votre [[tackle-zone]]."
   },
   {
@@ -351,22 +351,22 @@
   },
   {
     "key": "two-heads",
-    "name": "Deux Têtes",
+    "name": "Deux têtes",
     "effect": "+1 à l’esquive."
   },
   {
     "key": "very-long-legs",
-    "name": "Très Longues Jambes",
+    "name": "Très longues jambes",
     "effect": "+1 au saut, +2 à l’interception ; ignore [[cloud-burster]]."
   },
   {
     "key": "always-hungry",
-    "name": "Toujours Affamé",
+    "name": "Toujours affamé",
     "effect": "Risque de dévorer le coéquipier que vous lancez."
   },
   {
     "key": "animal-savagery",
-    "name": "Sauvagerie Animale",
+    "name": "Sauvagerie animale",
     "effect": "Peut mettre à terre votre propre coéquipier adjacent après avoir agi."
   },
   {
@@ -376,12 +376,12 @@
   },
   {
     "key": "ball-and-chain",
-    "name": "Chaîne et Boulet",
+    "name": "Chaîne et boulet",
     "effect": "Se déplace au hasard via un gabarit, percutant tout sur son passage."
   },
   {
     "key": "bloodlust",
-    "name": "Soif de Sang (X+)",
+    "name": "Soif de sang (X+)",
     "effect": "Doit se repaître d’un Thrall après avoir agi, sinon provoque un [[turnover]]."
   },
   {
@@ -391,12 +391,12 @@
   },
   {
     "key": "bone-head",
-    "name": "Cerveau Lent",
+    "name": "Cerveau lent",
     "effect": "Peut devenir [[distracted]] après avoir agi (sur un 1)."
   },
   {
     "key": "breathe-fire",
-    "name": "Souffle Ardent",
+    "name": "Souffle ardent",
     "effect": "Une attaque spéciale sur un adversaire [[marked]]."
   },
   {
@@ -411,7 +411,7 @@
   },
   {
     "key": "drunkard",
-    "name": "Poivrot",
+    "name": "Ivrogne",
     "effect": "−1 au [[rush]]."
   },
   {
@@ -421,7 +421,7 @@
   },
   {
     "key": "hypnotic-gaze",
-    "name": "Regard Hypnotique",
+    "name": "Regard hypnotique",
     "effect": "Rend un adversaire adjacent [[distracted]]."
   },
   {
@@ -431,7 +431,7 @@
   },
   {
     "key": "kick-team-mate",
-    "name": "Botter un Coéquipier",
+    "name": "Botté de coéquipier",
     "effect": "Lance un coéquipier comme une attaque (une fois par tour)."
   },
   {
@@ -441,17 +441,17 @@
   },
   {
     "key": "my-ball",
-    "name": "Mon Ballon",
+    "name": "Ma balle",
     "effect": "Ne lâche pas volontairement le ballon."
   },
   {
     "key": "no-ball",
-    "name": "Sans Ballon",
+    "name": "Sans ballon",
     "effect": "Ne peut pas porter le ballon ; rate automatiquement une réception, un ramassage ou une interception."
   },
   {
     "key": "pick-me-up",
-    "name": "Petit Remontant",
+    "name": "Petit remontant",
     "effect": "Les coéquipiers [[prone]] proches peuvent se relever gratuitement à la fin du tour adverse."
   },
   {
@@ -461,17 +461,17 @@
   },
   {
     "key": "pogo",
-    "name": "Pogo",
+    "name": "Monté sur ressort",
     "effect": "Saute par-dessus une case adjacente en ignorant les malus de saut."
   },
   {
     "key": "projectile-vomit",
-    "name": "Gerbe de Vomi",
+    "name": "Gerbe de vomi",
     "effect": "Une attaque spéciale sur un adversaire adjacent."
   },
   {
     "key": "really-stupid",
-    "name": "Gros Débile",
+    "name": "Gros débile",
     "effect": "Susceptible de devenir [[distracted]] à moins que des coéquipiers ne soient proches."
   },
   {
@@ -481,12 +481,12 @@
   },
   {
     "key": "right-stuff",
-    "name": "Poids Plume",
+    "name": "Poids plume",
     "effect": "Peut être lancé (Lancer de Coéquipier), même en étant [[prone]]."
   },
   {
     "key": "secret-weapon",
-    "name": "Arme Secrète",
+    "name": "Arme secrète",
     "effect": "Expulsé à la fin de la phase de jeu où il a joué."
   },
   {
@@ -506,17 +506,17 @@
   },
   {
     "key": "take-root",
-    "name": "Prendre Racine",
+    "name": "Prendre racine",
     "effect": "Peut prendre racine (être bloqué) après avoir agi (sur un 1)."
   },
   {
     "key": "throw-team-mate",
-    "name": "Lancer de Coéquipier",
+    "name": "Lancer de coéquipier",
     "effect": "Peut lancer un coéquipier doté de [[right-stuff]]."
   },
   {
     "key": "timmm-ber",
-    "name": "Timmm-ber !",
+    "name": "Timmm-ber!",
     "effect": "Les coéquipiers adjacents aident un joueur à faible MA à se relever (+1 chacun)."
   },
   {
@@ -526,12 +526,12 @@
   },
   {
     "key": "trickster",
-    "name": "Trompeur",
+    "name": "Farceur",
     "effect": "Quand il est pris pour cible, se glisse dans une case adjacente avant que l’action ne se résolve."
   },
   {
     "key": "unchannelled-fury",
-    "name": "Fureur Débridée",
+    "name": "Fureur débridée",
     "effect": "Peut entrer en rage et gâcher son activation (sur un 1–3)."
   },
   {
