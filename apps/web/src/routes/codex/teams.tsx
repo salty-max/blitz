@@ -182,7 +182,7 @@ export function TeamDetail() {
           </Table.Header>
           <Table.Body>
             {team.positions.map((position) => (
-              <Table.Row key={position.key} className="align-middle">
+              <Table.Row key={position.key}>
                 <Table.Cell className="pr-3 font-headline font-semibold uppercase tracking-wide">
                   {position.name}
                 </Table.Cell>
