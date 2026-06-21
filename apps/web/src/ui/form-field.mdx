@@ -7,9 +7,14 @@ import * as FormFieldStories from './form-field.stories'
 # FormField
 
 Wraps a single form control with a label and an optional hint or error. It
-generates an `id`, links the label to the control, and wires `aria-describedby`
-and `aria-invalid` to the message — so dropping any control inside (`Input`,
-`Switch`, `Select`…) gets you an accessible field for free.
+generates an `id`, links the label to the control (`htmlFor` plus
+`aria-labelledby`), and wires `aria-describedby` and `aria-invalid` to the
+message — so dropping a control inside gets you an accessible field for free.
+
+It fits any control that forwards these props to its root: `Input`, `Textarea`,
+`Switch`, `Checkbox`, `RadioGroup`, or a `Select.Trigger`. The grouped and
+searchable controls (`SegmentedControl`, `NumberStepper`, `Combobox`) take a
+fixed prop set, so give those their own `aria-label` instead of wrapping them.
 
 <Canvas of={FormFieldStories.Default} />
 
@@ -25,3 +30,10 @@ adds a blood asterisk to the label.
 <Canvas of={FormFieldStories.WithHint} />
 <Canvas of={FormFieldStories.WithError} />
 <Canvas of={FormFieldStories.Required} />
+
+## A group control
+
+Around a `RadioGroup`, the visible label names the `radiogroup` via
+`aria-labelledby` (a `<label htmlFor>` can't point at a group).
+
+<Canvas of={FormFieldStories.WithRadioGroup} />
