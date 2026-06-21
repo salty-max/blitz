@@ -17,7 +17,7 @@
   {
     "key": "beer-barrel-bash",
     "name": "Coup de Tonneau",
-    "effect": "Une fois par Phase, au début de son activation, Thorsson peut sélectionner un joueur adverse à trois cases ou moins et lancer un D6. Sur 3+, le joueur sélectionné est immédiatement Mis à Terre. Sur 2, rien ne se passe. Sur 1, Thorsson Tombe. Après avoir utilisé cette règle spéciale, l’activation de Thorsson se termine immédiatement."
+    "effect": "Une fois par Phase, au début de son activation, Thorsson peut sélectionner un joueur adverse à trois cases ou moins et lancer un D6. Sur 3+, le joueur sélectionné est immédiatement mis à terre. Sur 2, rien ne se passe. Sur 1, Thorsson Tombe. Après avoir utilisé cette règle spéciale, l’activation de Thorsson se termine immédiatement."
   },
   {
     "key": "black-ink",
@@ -52,7 +52,7 @@
   {
     "key": "crushing-blow",
     "name": "Coup Écrasant",
-    "effect": "Une fois par match, lorsqu’un joueur adverse est Mis à Terre suite à une Action de Blocage effectuée par Zug, vous pouvez appliquer un modificateur supplémentaire de +1 au Jet d’Armure. Ce modificateur peut être appliqué après que le Jet d’Armure a été effectué."
+    "effect": "Une fois par match, lorsqu’un joueur adverse est mis à terre suite à une Action de Blocage effectuée par Zug, vous pouvez appliquer un modificateur supplémentaire de +1 au Jet d’Armure. Ce modificateur peut être appliqué après que le Jet d’Armure a été effectué."
   },
   {
     "key": "dwarfen-grit",
@@ -62,7 +62,7 @@
   {
     "key": "dwarven-scourge",
     "name": "Fléau des Nains",
-    "effect": "Une fois par match, lorsqu’un joueur adverse est Mis à Terre suite à une Action de Blocage effectuée par Ivan, vous pouvez appliquer un modificateur supplémentaire de +1 au Jet d’Armure ou au Jet de Blessure. Si c’est contre un joueur Nain, ce modificateur peut être de +2 à la place."
+    "effect": "Une fois par match, lorsqu’un joueur adverse est mis à terre suite à une Action de Blocage effectuée par Ivan, vous pouvez appliquer un modificateur supplémentaire de +1 au Jet d’Armure ou au Jet de Blessure. Si c’est contre un joueur Nain, ce modificateur peut être de +2 à la place."
   },
   {
     "key": "excuse-me-are-you-a-zoat",
@@ -121,13 +121,13 @@
   },
   {
     "key": "kick-em-while-theyre-down",
-    "name": "Achève-le à Terre !",
-    "effect": "Une fois par match, Nobbla peut utiliser l’Action Spéciale d’Attaque à la Tronçonneuse contre un joueur adverse à Terre ou Sonné. Cela ne compte pas comme une Action d’Agression, et Nobbla ne peut donc pas être Expulsé lorsqu’il utilise cette règle spéciale."
+    "name": "Achève-le à terre !",
+    "effect": "Une fois par match, Nobbla peut utiliser l’Action Spéciale d’Attaque à la Tronçonneuse contre un joueur adverse à terre ou Sonné. Cela ne compte pas comme une Action d’Agression, et Nobbla ne peut donc pas être Expulsé lorsqu’il utilise cette règle spéciale."
   },
   {
     "key": "krump-and-smash",
     "name": "Cogne et Fracasse",
-    "effect": "Une fois par match, lorsqu’un joueur adverse est Mis à Terre suite à une Action de Blocage effectuée par Varag, il peut relancer le Jet d’Armure."
+    "effect": "Une fois par match, lorsqu’un joueur adverse est mis à terre suite à une Action de Blocage effectuée par Varag, il peut relancer le Jet d’Armure."
   },
   {
     "key": "look-into-my-eyes",
@@ -177,7 +177,7 @@
   {
     "key": "quick-bite",
     "name": "Morsure Rapide",
-    "effect": "Une fois par match, si Guffle Marque un joueur adverse qui réceptionne le ballon, il peut immédiatement effectuer un Jet d’Armure contre ce joueur. Si l’Armure de la cible est percée, Guffle prend immédiatement possession du ballon. Aucun revirement n’est causé par l’utilisation de cette règle spéciale."
+    "effect": "Une fois par match, si Guffle Marque un joueur adverse qui réceptionne le ballon, il peut immédiatement effectuer un Jet d’Armure contre ce joueur. Si l’Armure de la cible est percée, Guffle prend immédiatement possession du ballon. Aucun turnover n’est causé par l’utilisation de cette règle spéciale."
   },
   {
     "key": "raiding-party",
@@ -187,7 +187,7 @@
   {
     "key": "ram",
     "name": "Bélier",
-    "effect": "Une fois par match, lorsqu’un joueur adverse est Mis à Terre suite à une Action de Blocage effectuée par Rumbelow, vous pouvez appliquer un modificateur supplémentaire de +1 soit au Jet d’Armure, soit au Jet de Blessure."
+    "effect": "Une fois par match, lorsqu’un joueur adverse est mis à terre suite à une Action de Blocage effectuée par Rumbelow, vous pouvez appliquer un modificateur supplémentaire de +1 soit au Jet d’Armure, soit au Jet de Blessure."
   },
   {
     "key": "reliable",
@@ -217,7 +217,7 @@
   {
     "key": "slayer",
     "name": "Tueur",
-    "effect": "Une fois par match, lorsqu’un Gros Bras adverse est Mis à Terre suite à une Action de Blocage effectuée par Grim, vous pouvez appliquer un modificateur supplémentaire de +1 soit au Jet d’Armure, soit au Jet de Blessure. Ce modificateur peut être appliqué après que le jet a été effectué."
+    "effect": "Une fois par match, lorsqu’un Gros Bras adverse est mis à terre suite à une Action de Blocage effectuée par Grim, vous pouvez appliquer un modificateur supplémentaire de +1 soit au Jet d’Armure, soit au Jet de Blessure. Ce modificateur peut être appliqué après que le jet a été effectué."
   },
   {
     "key": "sneakiest-of-the-lot",
@@ -267,7 +267,7 @@
   {
     "key": "treacherous",
     "name": "Traître",
-    "effect": "Une fois par match, si Hakflem est adjacent à un coéquipier en possession du ballon lorsqu’il est activé, alors Hakflem peut choisir de prendre possession du ballon. S’il le fait, le coéquipier est immédiatement Mis à Terre. Cela ne causera pas de revirement même si le coéquipier subit une Blessure."
+    "effect": "Une fois par match, si Hakflem est adjacent à un coéquipier en possession du ballon lorsqu’il est activé, alors Hakflem peut choisir de prendre possession du ballon. S’il le fait, le coéquipier est immédiatement mis à terre. Cela ne causera pas de turnover même si le coéquipier subit une Blessure."
   },
   {
     "key": "unstoppable-momentum",
@@ -297,7 +297,7 @@
   {
     "key": "woodland-fury",
     "name": "Fureur Sylvestre",
-    "effect": "Une fois par match, lorsque Willow effectue une Action de Blocage qui la Mettrait à Terre, elle peut choisir de relancer un seul Dé de Blocage."
+    "effect": "Une fois par match, lorsque Willow effectue une Action de Blocage qui la mettrait à terre, elle peut choisir de relancer un seul Dé de Blocage."
   },
   {
     "key": "working-in-tandem",
