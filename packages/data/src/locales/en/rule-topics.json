@@ -69,7 +69,7 @@
       {
         "key": "player-states",
         "heading": "Player states",
-        "body": "Standing — acts normally.\nProne — knocked down, face-up; can't act; stands for 3 MA (4+ at MA ≤ 2); no tackle zone.\nStunned — face-down; can't be activated; turned face-up to [[prone|Prone]] at the end of its team's turn.\nDistracted — can't catch or give [[assist|assists]]; becomes Standing at the end of its team's turn."
+        "body": "- Standing — acts normally.\n- Prone — knocked down, face-up; can't act; stands for 3 MA (4+ at MA ≤ 2); no tackle zone.\n- Stunned — face-down; can't be activated; turned face-up to [[prone|Prone]] at the end of its team's turn.\n- Distracted — can't catch or give [[assist|assists]]; becomes Standing at the end of its team's turn."
       },
       {
         "key": "scoring",
@@ -116,12 +116,12 @@
       {
         "key": "assists",
         "heading": "Assists",
-        "body": "Each [[assist|assist]] grants +1 ST.\nOffensive assist — another of your standing players is also [[marked|Marking]] the target and is not itself Marked → +1 ST to the blocker.\nDefensive assist — one of the target's standing team-mates is Marking the blocker and is not itself Marked → +1 ST to the target."
+        "body": "Each [[assist|assist]] grants +1 ST.\n- Offensive assist — another of your standing players is also [[marked|Marking]] the target and is not itself Marked → +1 ST to the blocker.\n- Defensive assist — one of the target's standing team-mates is Marking the blocker and is not itself Marked → +1 ST to the target."
       },
       {
         "key": "dice-results",
         "heading": "Block dice results",
-        "body": "Player Down — the blocker is [[knocked-down|Knocked Down]].\n[[both-down|Both Down]] — both players are Knocked Down.\n[[push-back|Push Back]] — the target is pushed back one square; the blocker may [[follow-up|Follow-up]].\nStumble — if the target has [[dodge|Dodge]], treat as Push Back; otherwise as POW!\n[[pow|POW!]] — the target is pushed back one square, then Knocked Down."
+        "body": "- Player Down — the blocker is [[knocked-down|Knocked Down]].\n- [[both-down|Both Down]] — both players are Knocked Down.\n- [[push-back|Push Back]] — the target is pushed back one square; the blocker may [[follow-up|Follow-up]].\n- Stumble — if the target has [[dodge|Dodge]], treat as Push Back; otherwise as POW!\n- [[pow|POW!]] — the target is pushed back one square, then Knocked Down."
       },
       {
         "key": "push-follow",
@@ -153,7 +153,7 @@
       {
         "key": "pass-action",
         "heading": "The Pass action",
-        "body": "The Pass action opens with a free Move, then the throw — and no movement after. Once per turn, the thrower aims at a target square: a Passing test against their PA, modified by range — Quick Pass 0, Short Pass −1, Long Pass −2, Long Bomb −3 — and −1 for each opponent [[marked|Marking]] the thrower.\nAccurate (test passed, or a natural 6): the ball lands in the target square for a team-mate to catch. Inaccurate (failed): it scatters before landing. Fumble (modified 1, or natural 1): the ball is dropped, bounces from the thrower's square, and causes a [[turnover|Turnover]]."
+        "body": "The Pass action opens with a free Move, then the throw — and no movement after. Once per turn, the thrower aims at a target square: a Passing test against their PA, modified by range — Quick Pass 0, Short Pass −1, Long Pass −2, Long Bomb −3 — and −1 for each opponent [[marked|Marking]] the thrower.\n- Accurate (test passed, or a natural 6): the ball lands in the target square for a team-mate to catch.\n- Inaccurate (failed): it scatters before landing.\n- Fumble (modified 1, or natural 1): the ball is dropped, bounces from the thrower's square, and causes a [[turnover|Turnover]]."
       },
       {
         "key": "catching",
@@ -229,7 +229,7 @@
       {
         "key": "pre-game-sequence",
         "heading": "Pre-game sequence",
-        "body": "A league fixture is prepared in five steps. 1) The Fans — each coach rolls a D3 and adds it to their Dedicated Fans for this game's Fan Factor. 2) The Weather — both coaches roll, sum the dice and consult the [[page:weather|weather table]]. 3) Journeymen — each team fills its squad out to 11. 4) Inducements — the coach with the lower [[page:drafting|Team Value]] spends the gap on [[page:inducements|inducements]] (star players among them, [[page:stars|hired]] here), and the underdog may pray to Nuffle ([[page:prayers|Prayers to Nuffle]]). 5) Determine the kicking team — a roll-off, the winner choosing to kick or receive."
+        "body": "A league fixture is prepared in five steps.\n1. The Fans — each coach rolls a D3 and adds it to their Dedicated Fans for this game's Fan Factor.\n2. The Weather — both coaches roll, sum the dice and consult the [[page:weather|weather table]].\n3. Journeymen — each team fills its squad out to 11.\n4. Inducements — the coach with the lower [[page:drafting|Team Value]] spends the gap on [[page:inducements|inducements]] (star players among them, [[page:stars|hired]] here), and the underdog may pray to Nuffle ([[page:prayers|Prayers to Nuffle]]).\n5. Determine the kicking team — a roll-off, the winner choosing to kick or receive."
       },
       {
         "key": "journeymen",
@@ -261,7 +261,7 @@
       {
         "key": "dedicated-fans",
         "heading": "Dedicated Fans",
-        "body": "Win — roll a D6; if it's ≥ your current Dedicated Fans, +1 (max 7).\nLoss — roll a D6; if it's < your current Dedicated Fans, −1 (min 1).\nDraw — no change."
+        "body": "- Win — roll a D6; if it's ≥ your current Dedicated Fans, +1 (max 7).\n- Loss — roll a D6; if it's < your current Dedicated Fans, −1 (min 1).\n- Draw — no change."
       },
       {
         "key": "advancement",

@@ -38,6 +38,69 @@ export function RulebookIndex() {
   )
 }
 
+type ProseBlock =
+  | { kind: 'p'; text: string }
+  | { kind: 'ol'; items: string[] }
+  | { kind: 'ul'; items: string[] }
+
+/** Group a body's lines into paragraphs and `1.`/`-` lists for readable layout. */
+function toBlocks(body: string): ProseBlock[] {
+  const blocks: ProseBlock[] = []
+  for (const raw of body.split('\n')) {
+    const line = raw.trim()
+    if (!line) continue
+    const ordered = /^\d+[.)] (.*)$/.exec(line)
+    const unordered = /^[-•] (.*)$/.exec(line)
+    const last = blocks.at(-1)
+    if (ordered) {
+      if (last?.kind === 'ol') last.items.push(ordered[1])
+      else blocks.push({ kind: 'ol', items: [ordered[1]] })
+    } else if (unordered) {
+      if (last?.kind === 'ul') last.items.push(unordered[1])
+      else blocks.push({ kind: 'ul', items: [unordered[1]] })
+    } else {
+      blocks.push({ kind: 'p', text: line })
+    }
+  }
+  return blocks
+}
+
+/** A rule section's body — plain paragraphs, with `1.`/`-` lines as real lists. */
+function RuleProse({ body }: { body: string }) {
+  return (
+    <div className="max-w-3xl space-y-3 leading-relaxed text-ink/85">
+      {toBlocks(body).map((block, index) => {
+        if (block.kind === 'p')
+          return (
+            <p key={index}>
+              <RefText>{block.text}</RefText>
+            </p>
+          )
+        const items = block.items.map((item, i) => (
+          <li key={i} className="pl-1.5">
+            <RefText>{item}</RefText>
+          </li>
+        ))
+        return block.kind === 'ol' ? (
+          <ol
+            key={index}
+            className="list-decimal space-y-1.5 pl-6 marker:font-display marker:font-semibold marker:text-blood"
+          >
+            {items}
+          </ol>
+        ) : (
+          <ul
+            key={index}
+            className="list-disc space-y-1.5 pl-6 marker:text-blood"
+          >
+            {items}
+          </ul>
+        )
+      })}
+    </div>
+  )
+}
+
 /** A single rules topic — its sections, with `[[ref]]` prose linked to the drawer. */
 export function RulebookTopic() {
   const { t } = useTranslation('codex')
@@ -61,9 +124,7 @@ export function RulebookTopic() {
           <SectionHeading tone="blood" bordered>
             {section.heading}
           </SectionHeading>
-          <p className="max-w-3xl whitespace-pre-line leading-relaxed text-ink/85">
-            <RefText>{section.body}</RefText>
-          </p>
+          <RuleProse body={section.body} />
         </section>
       ))}
     </div>

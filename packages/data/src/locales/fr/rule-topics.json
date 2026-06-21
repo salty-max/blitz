@@ -69,7 +69,7 @@
       {
         "key": "player-states",
         "heading": "États des joueurs",
-        "body": "Debout — agit normalement.\nÀ terre — mis à terre, face visible ; ne peut pas agir ; se relève pour 3 MA (4+ à MA ≤ 2) ; pas de zone de tacle.\nSonné — face cachée ; ne peut pas être activé ; retourné face visible en [[prone|À terre]] à la fin du tour de son équipe.\nDistrait — ne peut ni réceptionner ni donner d’[[assist|aides]] ; redevient Debout à la fin du tour de son équipe."
+        "body": "- Debout — agit normalement.\n- À terre — mis à terre, face visible ; ne peut pas agir ; se relève pour 3 MA (4+ à MA ≤ 2) ; pas de zone de tacle.\n- Sonné — face cachée ; ne peut pas être activé ; retourné face visible en [[prone|À terre]] à la fin du tour de son équipe.\n- Distrait — ne peut ni réceptionner ni donner d’[[assist|aides]] ; redevient Debout à la fin du tour de son équipe."
       },
       {
         "key": "scoring",
@@ -116,12 +116,12 @@
       {
         "key": "assists",
         "heading": "Aides",
-        "body": "Chaque [[assist|aide]] donne +1 ST.\nAide offensive — un autre de vos joueurs debout marque aussi la cible et n’est pas lui-même [[marked|Marqué]] → +1 ST au bloqueur.\nAide défensive — un coéquipier debout de la cible marque le bloqueur et n’est pas lui-même Marqué → +1 ST à la cible."
+        "body": "Chaque [[assist|aide]] donne +1 ST.\n- Aide offensive — un autre de vos joueurs debout marque aussi la cible et n’est pas lui-même [[marked|Marqué]] → +1 ST au bloqueur.\n- Aide défensive — un coéquipier debout de la cible marque le bloqueur et n’est pas lui-même Marqué → +1 ST à la cible."
       },
       {
         "key": "dice-results",
         "heading": "Résultats des dés de blocage",
-        "body": "Joueur à terre — le bloqueur est [[knocked-down|mis à terre]].\n[[both-down|Les deux à terre]] — les deux joueurs sont mis à terre.\n[[push-back|Repoussé]] — la cible est repoussée d’une case ; le bloqueur peut [[follow-up|Suivre]].\nTrébuchement — si la cible a [[dodge|Esquive]], traitez comme un Repoussé ; sinon comme un POW!\n[[pow|POW!]] — la cible est repoussée d’une case, puis mise à terre."
+        "body": "- Joueur à terre — le bloqueur est [[knocked-down|mis à terre]].\n- [[both-down|Les deux à terre]] — les deux joueurs sont mis à terre.\n- [[push-back|Repoussé]] — la cible est repoussée d’une case ; le bloqueur peut [[follow-up|Suivre]].\n- Trébuchement — si la cible a [[dodge|Esquive]], traitez comme un Repoussé ; sinon comme un POW!\n- [[pow|POW!]] — la cible est repoussée d’une case, puis mise à terre."
       },
       {
         "key": "push-follow",
@@ -153,7 +153,7 @@
       {
         "key": "pass-action",
         "heading": "L’action de Passe",
-        "body": "L’action de Passe débute par un Mouvement gratuit, puis le lancer — et aucun déplacement après. Une fois par tour, le lanceur vise une case cible : un test de Passe contre sa PA, modifié par la portée — Passe rapide 0, Passe courte −1, Passe longue −2, Bombe longue −3 — et −1 par adversaire qui [[marked|marque]] le lanceur.\nPrécise (test réussi, ou un 6 naturel) : le ballon atterrit sur la case cible où un coéquipier peut le réceptionner. Imprécise (test raté) : il dévie avant d’atterrir. Maladresse (1 modifié, ou 1 naturel) : le ballon est lâché, rebondit depuis la case du lanceur, et cause un [[turnover|Turnover]]."
+        "body": "L’action de Passe débute par un Mouvement gratuit, puis le lancer — et aucun déplacement après. Une fois par tour, le lanceur vise une case cible : un test de Passe contre sa PA, modifié par la portée — Passe rapide 0, Passe courte −1, Passe longue −2, Bombe longue −3 — et −1 par adversaire qui [[marked|marque]] le lanceur.\n- Précise (test réussi, ou un 6 naturel) : le ballon atterrit sur la case cible où un coéquipier peut le réceptionner.\n- Imprécise (test raté) : il dévie avant d’atterrir.\n- Maladresse (1 modifié, ou 1 naturel) : le ballon est lâché, rebondit depuis la case du lanceur, et cause un [[turnover|Turnover]]."
       },
       {
         "key": "catching",
@@ -229,7 +229,7 @@
       {
         "key": "pre-game-sequence",
         "heading": "Séquence d’avant-match",
-        "body": "Une rencontre de ligue se prépare en cinq étapes. 1) Les fans — chaque coach lance un D3 et l’ajoute à ses fans dévoués pour obtenir sa cote de popularité du match. 2) La météo — les deux coachs lancent, additionnent les dés et consultent le [[page:weather|tableau météo]]. 3) Remplaçants — chaque équipe complète son effectif jusqu’à 11. 4) Coups de pouce — le coach avec la [[page:drafting|valeur d’équipe]] la plus basse dépense l’écart en [[page:inducements|coups de pouce]] (dont les champions, [[page:stars|recrutés]] ici), et l’outsider peut adresser une prière à Nuffle ([[page:prayers|Prières à Nuffle]]). 5) Déterminer l’équipe qui dégage — un jet d’opposition, le gagnant choisissant de dégager ou de recevoir."
+        "body": "Une rencontre de ligue se prépare en cinq étapes.\n1. Les fans — chaque coach lance un D3 et l’ajoute à ses fans dévoués pour obtenir sa cote de popularité du match.\n2. La météo — les deux coachs lancent, additionnent les dés et consultent le [[page:weather|tableau météo]].\n3. Remplaçants — chaque équipe complète son effectif jusqu’à 11.\n4. Coups de pouce — le coach avec la [[page:drafting|valeur d’équipe]] la plus basse dépense l’écart en [[page:inducements|coups de pouce]] (dont les champions, [[page:stars|recrutés]] ici), et l’outsider peut adresser une prière à Nuffle ([[page:prayers|Prières à Nuffle]]).\n5. Déterminer l’équipe qui dégage — un jet d’opposition, le gagnant choisissant de dégager ou de recevoir."
       },
       {
         "key": "journeymen",
@@ -261,7 +261,7 @@
       {
         "key": "dedicated-fans",
         "heading": "Fans dévoués",
-        "body": "Victoire — lancez un D6 ; s’il est ≥ vos Fans dévoués actuels, +1 (max 7).\nDéfaite — lancez un D6 ; s’il est < vos Fans dévoués actuels, −1 (min 1).\nMatch nul — aucun changement."
+        "body": "- Victoire — lancez un D6 ; s’il est ≥ vos Fans dévoués actuels, +1 (max 7).\n- Défaite — lancez un D6 ; s’il est < vos Fans dévoués actuels, −1 (min 1).\n- Match nul — aucun changement."
       },
       {
         "key": "advancement",
