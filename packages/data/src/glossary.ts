@@ -1,7 +1,7 @@
 import { glossaryTermSchema } from '@blitz/schema'
 
-import data from './glossary.json'
 import { type DataLocale, localizeAll, localizeOne, overlayMap } from './i18n'
+import data from './locales/en/glossary.json'
 import frData from './locales/fr/glossary.json'
 import type { GlossaryTerm } from './types'
 

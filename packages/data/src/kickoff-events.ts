@@ -1,7 +1,7 @@
 import { kickoffEventSchema } from '@blitz/schema'
 
 import { type DataLocale, localizeAll, localizeOne, overlayMap } from './i18n'
-import data from './kickoff-events.json'
+import data from './locales/en/kickoff-events.json'
 import frData from './locales/fr/kickoff-events.json'
 import type { KickoffEvent } from './types'
 

@@ -1,6 +1,6 @@
 import { starPlayerSchema } from '@blitz/schema'
 
-import data from './star-players.json'
+import data from './locales/en/star-players.json'
 import type { StarPlayer } from './types'
 
 /**

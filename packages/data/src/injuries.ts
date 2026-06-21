@@ -1,7 +1,7 @@
 import { injurySchema } from '@blitz/schema'
 
 import { type DataLocale, localizeAll, localizeOne, overlayMap } from './i18n'
-import data from './injuries.json'
+import data from './locales/en/injuries.json'
 import frData from './locales/fr/injuries.json'
 import type { Injury } from './types'
 
