@@ -1,3 +1,10 @@
+import type {
+  AdvancementCost,
+  CharacteristicGain,
+  SppAction,
+  ValueIncrease,
+} from '@blitz/schema'
+
 import { type DataLocale, overlayMap, type Overlays } from './i18n'
 import frCasualties from './locales/fr/casualties.json'
 import frGlossary from './locales/fr/glossary.json'
@@ -6,6 +13,7 @@ import frInjuries from './locales/fr/injuries.json'
 import frKickoffEvents from './locales/fr/kickoff-events.json'
 import frLastingInjuries from './locales/fr/lasting-injuries.json'
 import frPrayers from './locales/fr/prayers.json'
+import frProgression from './locales/fr/progression.json'
 import frRuleTopics from './locales/fr/rule-topics.json'
 import frSkills from './locales/fr/skills.json'
 import frSpecialRules from './locales/fr/special-rules.json'
@@ -90,4 +98,34 @@ export const ruleTopicOverlays: Partial<
       topic,
     ])
   ),
+}
+
+/** The progression tables' locale overlay — translated row text, by sub-table. */
+export type ProgressionOverlay = {
+  sppActions?: Map<string, Partial<SppAction>>
+  advancementCosts?: Map<string, Partial<AdvancementCost>>
+  characteristicGains?: Map<string, Partial<CharacteristicGain>>
+  valueIncreases?: Map<string, Partial<ValueIncrease>>
+}
+
+function progressionMaps(doc: {
+  sppActions: { key: string }[]
+  advancementCosts: { key: string }[]
+  characteristicGains: { key: string }[]
+  valueIncreases: { key: string }[]
+}): ProgressionOverlay {
+  const byKey = <T extends { key: string }>(rows: T[]) =>
+    new Map(rows.map((row) => [row.key, row]))
+  return {
+    sppActions: byKey(doc.sppActions),
+    advancementCosts: byKey(doc.advancementCosts),
+    characteristicGains: byKey(doc.characteristicGains),
+    valueIncreases: byKey(doc.valueIncreases),
+  }
+}
+
+export const progressionOverlay: Partial<
+  Record<DataLocale, ProgressionOverlay>
+> = {
+  fr: progressionMaps(frProgression),
 }

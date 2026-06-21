@@ -259,19 +259,9 @@
         "body": "Win — roll a D6; if it's ≥ your current Dedicated Fans, +1 (max 7).\nLoss — roll a D6; if it's < your current Dedicated Fans, −1 (min 1).\nDraw — no change."
       },
       {
-        "key": "spp",
-        "heading": "Star Player Points",
-        "body": "Completion (an accurate pass caught) — 1 SPP\nThrow Team-mate (lands safely) — 1 SPP\nCaught after being thrown — 1 SPP\nInterception — 2 SPP\n[[casualty|Casualty]] caused — 2 SPP\nTouchdown — 3 SPP\nMVP — 4 SPP\nStar players earn no SPP; Journeymen do."
-      },
-      {
         "key": "advancement",
-        "heading": "Advancement — SPP cost by level",
-        "body": "Cost rises with each advance taken (1° = primary-category skill, 2° = secondary-category skill):\nExperienced (1st) — random 1° 3, chosen 1° 6, random 2° 10, chosen 2° 14, characteristic 14\nVeteran (2nd) — 4 / 8 / 12 / 16 / 16\nEmerging Star (3rd) — 6 / 12 / 16 / 20 / 20\nStar (4th) — 8 / 16 / 20 / 24 / 24\nSuperstar (5th) — 10 / 20 / 24 / 28 / 28\nLegend (6th) — 15 / 30 / 34 / 38 / 38\nA characteristic improvement is a D8 roll: 1 → +1 AV; 2 → +1 AV or PA; 3–4 → +1 AV, MA or PA; 5 → +1 MA or PA; 6 → +1 AG or MA; 7 → +1 AG or ST; 8 → +1 to any. A player may decline the roll and take a skill instead (the SPP are still spent)."
-      },
-      {
-        "key": "value-increase",
-        "heading": "Value increase per advancement",
-        "body": "Added to current value:\nPrimary skill — +20 000 gp\nSecondary skill — +40 000 gp\n+1 AV — +10 000 gp\n+1 MA — +20 000 gp\n+1 PA — +20 000 gp\n+1 AG — +30 000 gp\n+1 ST — +60 000 gp"
+        "heading": "Advancement",
+        "body": "Players earn Star Player Points (SPP) for completions, interceptions, casualties, touchdowns and the MVP award, then spend them on new skills and characteristic improvements — each of which raises the player's value. The full earning, cost and value tables are on the [[page:spp|SPP & advancement]] page."
       },
       {
         "key": "expensive-mistakes",

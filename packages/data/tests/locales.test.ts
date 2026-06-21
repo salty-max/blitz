@@ -9,6 +9,7 @@ import {
   kickoffEvents,
   lastingInjuries,
   prayers,
+  progression,
   ruleTopics,
   skills,
   specialRules,
@@ -16,7 +17,7 @@ import {
   teams,
   weather,
 } from '@blitz/data'
-import { refKeys } from '@blitz/schema'
+import { pageRefKeys, refKeys } from '@blitz/schema'
 import { describe, expect, test } from 'bun:test'
 
 import frCasualties from '../src/locales/fr/casualties.json'
@@ -26,6 +27,7 @@ import frInjuries from '../src/locales/fr/injuries.json'
 import frKickoff from '../src/locales/fr/kickoff-events.json'
 import frLasting from '../src/locales/fr/lasting-injuries.json'
 import frPrayers from '../src/locales/fr/prayers.json'
+import frProgression from '../src/locales/fr/progression.json'
 import frRuleTopics from '../src/locales/fr/rule-topics.json'
 import frSkills from '../src/locales/fr/skills.json'
 import frRules from '../src/locales/fr/special-rules.json'
@@ -39,6 +41,8 @@ const known = new Set<string>([
   ...glossary.map((g) => g.key),
   ...specialRules.map((r) => r.key),
   ...starAbilities.map((a) => a.key),
+  // `[[page:<key>]]` references navigate to a dedicated codex page.
+  ...pageRefKeys,
 ])
 
 type Overlay = ReadonlyArray<{
@@ -138,6 +142,21 @@ describe('French data overlays', () => {
       }
     }
     expect(missing).toEqual([])
+  })
+
+  test('progression: the fr overlay covers every row key in each table', () => {
+    const overlay = frProgression as Record<string, { key: string }[]>
+    const tables = [
+      'sppActions',
+      'advancementCosts',
+      'characteristicGains',
+      'valueIncreases',
+    ] as const
+    for (const table of tables) {
+      expect([...overlay[table].map((r) => r.key)].sort()).toEqual(
+        [...progression[table].map((r) => r.key)].sort()
+      )
+    }
   })
 
   test('rule topics: every section cross-reference resolves (en + fr)', () => {

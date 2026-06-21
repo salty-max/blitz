@@ -97,6 +97,7 @@ export const fr = {
       kickoff: 'Coup d’envoi',
       injuries: 'Blessures',
       prayers: 'Prières',
+      spp: 'SPP & améliorations',
       glossary: 'Glossaire',
       rulebook: 'Règles du jeu',
     },
@@ -185,6 +186,27 @@ export const fr = {
     prayers: {
       heading: 'Prières à Nuffle',
       resultHeader: 'Prière',
+    },
+    spp: {
+      heading: 'SPP & améliorations',
+      earning: 'Gagner des SPP',
+      action: 'Action',
+      advancementCost: 'Coût des améliorations',
+      advancementNote:
+        '1° = une compétence primaire, 2° = une compétence secondaire. Le coût augmente à mesure qu’un joueur prend des améliorations.',
+      level: 'Niveau',
+      randomPrimary: '1° aléatoire',
+      chosenPrimary: '1° choisie',
+      randomSecondary: '2° aléatoire',
+      chosenSecondary: '2° choisie',
+      characteristic: 'Caractéristique',
+      characteristicTable: 'Amélioration de caractéristique',
+      improvement: 'Amélioration',
+      characteristicNote:
+        'Un joueur peut refuser le jet et prendre une compétence à la place — les SPP sont tout de même dépensés.',
+      valueIncrease: 'Hausse de valeur par amélioration',
+      advancement: 'Amélioration',
+      value: 'Valeur actuelle',
     },
     glossary: {
       heading: 'Glossaire',

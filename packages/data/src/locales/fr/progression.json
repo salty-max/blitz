@@ -1,0 +1,51 @@
+{
+  "sppActions": [
+    {
+      "key": "completion",
+      "action": "Réception (une passe précise réceptionnée)"
+    },
+    {
+      "key": "throw-team-mate",
+      "action": "Lancer de coéquipier (atterrissage réussi)"
+    },
+    { "key": "caught-thrown", "action": "Réceptionné après un lancer" },
+    { "key": "interception", "action": "Interception" },
+    { "key": "casualty", "action": "Blessure infligée" },
+    { "key": "touchdown", "action": "Touchdown" },
+    { "key": "mvp", "action": "Joueur le plus utile (MVP)" }
+  ],
+  "advancementCosts": [
+    { "key": "experienced", "level": "Expérimenté (1re)" },
+    { "key": "veteran", "level": "Vétéran (2e)" },
+    { "key": "emerging-star", "level": "Étoile montante (3e)" },
+    { "key": "star", "level": "Étoile (4e)" },
+    { "key": "superstar", "level": "Superstar (5e)" },
+    { "key": "legend", "level": "Légende (6e)" }
+  ],
+  "characteristicGains": [
+    { "key": "d8-1", "gain": "+1 AV" },
+    { "key": "d8-2", "gain": "+1 AV ou PA" },
+    { "key": "d8-3", "gain": "+1 AV, MA ou PA" },
+    { "key": "d8-5", "gain": "+1 MA ou PA" },
+    { "key": "d8-6", "gain": "+1 AG ou MA" },
+    { "key": "d8-7", "gain": "+1 AG ou ST" },
+    { "key": "d8-8", "gain": "+1 au choix" }
+  ],
+  "valueIncreases": [
+    {
+      "key": "primary",
+      "advancement": "Compétence primaire",
+      "value": "+20 000 po"
+    },
+    {
+      "key": "secondary",
+      "advancement": "Compétence secondaire",
+      "value": "+40 000 po"
+    },
+    { "key": "av", "advancement": "+1 AV", "value": "+10 000 po" },
+    { "key": "ma", "advancement": "+1 MA", "value": "+20 000 po" },
+    { "key": "pa", "advancement": "+1 PA", "value": "+20 000 po" },
+    { "key": "ag", "advancement": "+1 AG", "value": "+30 000 po" },
+    { "key": "st", "advancement": "+1 ST", "value": "+60 000 po" }
+  ]
+}
