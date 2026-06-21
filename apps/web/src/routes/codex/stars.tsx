@@ -38,7 +38,11 @@ function StarCard({ star }: { star: StarPlayer }) {
   const { t } = useTranslation('codex')
   const locale = useDataLocale()
   return (
-    <Card id={star.key} className="scroll-mt-8">
+    <Card
+      id={star.key}
+      data-testid={`star-card-${star.key}`}
+      className="scroll-mt-8"
+    >
       <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-3">
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
           <h2 className="font-display text-2xl uppercase leading-none">
@@ -111,6 +115,7 @@ export function StarsPage() {
           onChange={(event) => setQuery(event.target.value)}
           placeholder={t('stars.searchPlaceholder')}
           aria-label={t('stars.searchLabel')}
+          data-testid="stars-search"
           className={`${CONTROL} w-full px-3 placeholder:text-ink/40 sm:w-64`}
         />
         <div className="flex items-center gap-2">
@@ -119,13 +124,20 @@ export function StarsPage() {
             <Select.Trigger
               className="w-56"
               aria-label={t('stars.filterLabel')}
+              data-testid="stars-team-filter"
             >
               <Select.Value />
             </Select.Trigger>
             <Select.Content>
-              <Select.Item value={ANY_TEAM}>{t('stars.anyTeam')}</Select.Item>
+              <Select.Item value={ANY_TEAM} data-testid="stars-team-option-any">
+                {t('stars.anyTeam')}
+              </Select.Item>
               {getTeams(locale).map((team) => (
-                <Select.Item key={team.key} value={team.key}>
+                <Select.Item
+                  key={team.key}
+                  value={team.key}
+                  data-testid={`stars-team-option-${team.key}`}
+                >
                   {team.name}
                 </Select.Item>
               ))}

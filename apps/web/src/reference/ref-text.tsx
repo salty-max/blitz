@@ -29,7 +29,14 @@ const refToneClass: Record<RefTone, string> = {
  * reference into a button that opens it in the side-drawer, colour-coded by the
  * kind of entry it points to. Plain text passes through unchanged.
  */
-export function RefText({ children }: { children: string }) {
+export function RefText({
+  children,
+  idPrefix,
+}: {
+  children: string
+  /** When set, each reference button gets a `<idPrefix>-<key>` test id — used to target refs inside the drawer. */
+  idPrefix?: string
+}) {
   const { openRef } = useRefDrawer()
   const locale = useDataLocale()
 
@@ -50,6 +57,7 @@ export function RefText({ children }: { children: string }) {
           <button
             key={index}
             type="button"
+            data-testid={idPrefix ? `${idPrefix}-${segment.key}` : undefined}
             onClick={() => openRef(segment.key)}
             className={`${refBaseClass} ${refToneClass[ref?.tone ?? 'skill']}`}
           >

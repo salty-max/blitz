@@ -65,7 +65,7 @@ export function RefDrawerProvider({ children }: { children: ReactNode }) {
           if (!open) close()
         }}
       >
-        <Sheet.Content aria-describedby={undefined}>
+        <Sheet.Content aria-describedby={undefined} data-testid="ref-drawer">
           <div className="mx-auto w-full max-w-5xl">
             <div className="flex items-center justify-between border-b-2 border-ink/15 px-5 py-3">
               <Chip
@@ -79,6 +79,7 @@ export function RefDrawerProvider({ children }: { children: ReactNode }) {
                     type="button"
                     onClick={back}
                     aria-label={t('back')}
+                    data-testid="ref-drawer-back"
                     className="inline-flex h-8 w-8 items-center justify-center text-ink/55 transition-colors hover:bg-ink/5 hover:text-ink"
                   >
                     <ArrowLeft className="h-5 w-5" />
@@ -86,6 +87,7 @@ export function RefDrawerProvider({ children }: { children: ReactNode }) {
                 )}
                 <Sheet.Close
                   aria-label={t('close')}
+                  data-testid="ref-drawer-close"
                   className="inline-flex h-8 w-8 items-center justify-center text-ink/55 transition-colors hover:bg-ink/5 hover:text-blood"
                 >
                   <X className="h-5 w-5" />
@@ -105,7 +107,7 @@ export function RefDrawerProvider({ children }: { children: ReactNode }) {
               )}
               <p className="mt-4 leading-relaxed text-ink/90">
                 {resolved ? (
-                  <RefText>{resolved.body}</RefText>
+                  <RefText idPrefix="drawer-ref">{resolved.body}</RefText>
                 ) : (
                   t('notFound', { key: currentKey ?? '' })
                 )}

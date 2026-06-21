@@ -9,7 +9,11 @@ export function TeamChips({ teams }: { teams: Team[] }) {
     <div className="flex flex-wrap gap-1.5">
       {teams.map((team) => (
         <Chip key={team.key} asChild interactive variant="outline">
-          <Link to="/codex/teams/$key" params={{ key: team.key }}>
+          <Link
+            to="/codex/teams/$key"
+            params={{ key: team.key }}
+            data-testid={`team-chip-${team.key}`}
+          >
             {team.name}
           </Link>
         </Chip>

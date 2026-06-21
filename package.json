@@ -10,6 +10,7 @@
   "scripts": {
     "build": "turbo run build",
     "test": "turbo run test",
+    "test:e2e": "turbo run build --filter=@blitz/web && bun run --cwd apps/web e2e",
     "typecheck": "turbo run typecheck",
     "lint": "turbo run lint",
     "lint:fix": "eslint . --fix --max-warnings 0",

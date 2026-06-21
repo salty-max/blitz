@@ -1,6 +1,6 @@
 import { Slot } from '@radix-ui/react-slot'
 import { ChevronRight } from 'lucide-react'
-import { type ComponentProps, type ReactNode } from 'react'
+import { type ComponentProps } from 'react'
 
 import { cn } from './cn'
 
@@ -8,12 +8,10 @@ import { cn } from './cn'
 function BreadcrumbRoot({
   className,
   children,
-}: {
-  className?: string
-  children: ReactNode
-}) {
+  ...props
+}: ComponentProps<'nav'>) {
   return (
-    <nav aria-label="Breadcrumb" className={className}>
+    <nav aria-label="Breadcrumb" className={className} {...props}>
       <ol className="flex flex-wrap items-center gap-1.5 font-headline text-sm font-semibold uppercase tracking-wide text-ink/55">
         {children}
       </ol>

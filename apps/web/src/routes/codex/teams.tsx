@@ -68,6 +68,7 @@ export function TeamsIndex() {
           size="sm"
           variant={tier === null ? 'solid' : 'outline'}
           onClick={() => setTier(null)}
+          data-testid="tier-all"
         >
           {t('teams.filterAll')}
         </Button>
@@ -77,6 +78,7 @@ export function TeamsIndex() {
             size="sm"
             variant={tier === value ? 'solid' : 'outline'}
             onClick={() => setTier(value)}
+            data-testid={`tier-${value}`}
           >
             {t('teams.tier', { n: value })}
           </Button>
@@ -86,7 +88,11 @@ export function TeamsIndex() {
       <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {shown.map((team) => (
           <Card key={team.key} asChild interactive>
-            <Link to="/codex/teams/$key" params={{ key: team.key }}>
+            <Link
+              to="/codex/teams/$key"
+              params={{ key: team.key }}
+              data-testid={`team-card-${team.key}`}
+            >
               <div className="flex items-baseline justify-between gap-3">
                 <h2 className="font-display text-3xl uppercase leading-none group-hover:text-paper">
                   {team.name}

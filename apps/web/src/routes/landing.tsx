@@ -25,7 +25,7 @@ export function LandingPage() {
           {t('hero.subtitle')}
         </p>
         <Button asChild className="mt-6">
-          <Link to="/codex">
+          <Link to="/codex" data-testid="landing-cta-codex">
             {t('hero.cta')}
             <ArrowRight className="h-4 w-4" />
           </Link>
