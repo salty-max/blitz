@@ -2,52 +2,52 @@
   {
     "key": "badlands-brawl",
     "name": "Rixe des Terres Arides",
-    "effect": "La ligue régionale des Peaux-Vertes et des Ogres — détermine quels joueurs vedettes et coups de pouce l'équipe peut recruter."
+    "effect": "La ligue régionale des Peaux-Vertes et des Ogres — détermine quels joueurs vedettes et coups de pouce l’équipe peut recruter."
   },
   {
     "key": "chaos-clash",
     "name": "Affrontement du Chaos",
-    "effect": "La ligue des puissances du Chaos — détermine l'accès aux joueurs vedettes et aux coups de pouce. Une équipe de Renégats du Chaos choisit une allégeance Favori de (dieu du Chaos) à la création."
+    "effect": "La ligue des puissances du Chaos — détermine l’accès aux joueurs vedettes et aux coups de pouce. Une équipe de Renégats du Chaos choisit une allégeance Favori de (dieu du Chaos) à la création."
   },
   {
     "key": "elven-kingdoms-league",
     "name": "Ligue des Royaumes Elfiques",
-    "effect": "La ligue elfique — détermine quels joueurs vedettes et coups de pouce l'équipe peut recruter."
+    "effect": "La ligue elfique — détermine quels joueurs vedettes et coups de pouce l’équipe peut recruter."
   },
   {
     "key": "halfling-thimble-cup",
     "name": "Coupe du Dé à Coudre Halfling",
-    "effect": "Une ligue pour le petit peuple — détermine quels joueurs vedettes et coups de pouce l'équipe peut recruter."
+    "effect": "Une ligue pour le petit peuple — détermine quels joueurs vedettes et coups de pouce l’équipe peut recruter."
   },
   {
     "key": "lustrian-superleague",
     "name": "Superligue de Lustrie",
-    "effect": "L'antique ligue lustrienne — détermine quels joueurs vedettes et coups de pouce l'équipe peut recruter."
+    "effect": "L’antique ligue lustrienne — détermine quels joueurs vedettes et coups de pouce l’équipe peut recruter."
   },
   {
     "key": "old-world-classic",
     "name": "Classique du Vieux Monde",
-    "effect": "La ligue du Vieux Monde regroupant des équipes humaines et alliées variées — détermine quels joueurs vedettes et coups de pouce l'équipe peut recruter."
+    "effect": "La ligue du Vieux Monde regroupant des équipes humaines et alliées variées — détermine quels joueurs vedettes et coups de pouce l’équipe peut recruter."
   },
   {
     "key": "sylvanian-spotlight",
     "name": "Pleins Feux sur la Sylvanie",
-    "effect": "La ligue mort-vivante — détermine quels joueurs vedettes et coups de pouce l'équipe peut recruter."
+    "effect": "La ligue mort-vivante — détermine quels joueurs vedettes et coups de pouce l’équipe peut recruter."
   },
   {
     "key": "underworld-challenge",
     "name": "Défi des Bas-Fonds",
-    "effect": "La ligue des races marginales vivant sous terre — détermine quels joueurs vedettes et coups de pouce l'équipe peut recruter."
+    "effect": "La ligue des races marginales vivant sous terre — détermine quels joueurs vedettes et coups de pouce l’équipe peut recruter."
   },
   {
     "key": "woodland-league",
     "name": "Ligue Sylvestre",
-    "effect": "Une ligue forestière — détermine quels joueurs vedettes et coups de pouce l'équipe peut recruter."
+    "effect": "Une ligue forestière — détermine quels joueurs vedettes et coups de pouce l’équipe peut recruter."
   },
   {
     "key": "worlds-edge-superleague",
     "name": "Superligue du Bord du Monde",
-    "effect": "La ligue des montagnes, traditionnellement naine — détermine quels joueurs vedettes et coups de pouce l'équipe peut recruter."
+    "effect": "La ligue des montagnes, traditionnellement naine — détermine quels joueurs vedettes et coups de pouce l’équipe peut recruter."
   },
   {
     "key": "brawlin-brutes",
@@ -57,27 +57,27 @@
   {
     "key": "bribery-and-corruption",
     "name": "Pots-de-vin et Corruption",
-    "effect": "Une fois par match, relancez un 1 lors d'une Contestation de la Décision. Les pots-de-vin coûtent 50 000 gp (limite 0-6) et un Arbitre Partial coûte 80 000 gp."
+    "effect": "Une fois par match, relancez un 1 lors d’une Contestation de la Décision. Les pots-de-vin coûtent 50 000 gp (limite 0-6) et un Arbitre Partial coûte 80 000 gp."
   },
   {
     "key": "favoured-of-hashut",
     "name": "Favori de Hashut",
-    "effect": "L'allégeance chaotique de l'équipe (Hashut) — détermine quels joueurs vedettes du Chaos elle peut recruter."
+    "effect": "L’allégeance chaotique de l’équipe (Hashut) — détermine quels joueurs vedettes du Chaos elle peut recruter."
   },
   {
     "key": "favoured-of-khorne",
     "name": "Favori de Khorne",
-    "effect": "L'allégeance chaotique de l'équipe (Khorne) — détermine quels joueurs vedettes du Chaos elle peut recruter."
+    "effect": "L’allégeance chaotique de l’équipe (Khorne) — détermine quels joueurs vedettes du Chaos elle peut recruter."
   },
   {
     "key": "favoured-of-nurgle",
     "name": "Favori de Nurgle",
-    "effect": "L'allégeance chaotique de l'équipe (Nurgle) — détermine l'accès aux joueurs vedettes du Chaos et permet à l'équipe de prendre le coup de pouce Médecin de la Peste."
+    "effect": "L’allégeance chaotique de l’équipe (Nurgle) — détermine l’accès aux joueurs vedettes du Chaos et permet à l’équipe de prendre le coup de pouce Médecin de la Peste."
   },
   {
     "key": "low-cost-linemen",
     "name": "Trois-quarts Bon Marché",
-    "effect": "En jeu de ligue, les frais de recrutement des Trois-quarts comptent pour 0 gp dans la Valeur d'Équipe ; l'équipe peut prendre le coup de pouce Bleus Déchaînés."
+    "effect": "En jeu de ligue, les frais de recrutement des Trois-quarts comptent pour 0 gp dans la Valeur d’Équipe ; l’équipe peut prendre le coup de pouce Bleus Déchaînés."
   },
   {
     "key": "masters-of-undeath",
@@ -91,7 +91,7 @@
   },
   {
     "key": "team-captain",
-    "name": "Capitaine d'Équipe",
-    "effect": "Désignez un titulaire qui n'est pas une Grosse Brute comme capitaine : il gagne [[pro]] gratuitement, et chaque fois que vous utilisez une relance d'équipe, un 6 naturel rend cette relance gratuite."
+    "name": "Capitaine d’Équipe",
+    "effect": "Désignez un titulaire qui n’est pas une Grosse Brute comme capitaine : il gagne [[pro]] gratuitement, et chaque fois que vous utilisez une relance d’équipe, un 6 naturel rend cette relance gratuite."
   }
 ]

@@ -7,7 +7,7 @@
   {
     "key": "dauntless",
     "name": "Intrépide",
-    "effect": "Lance un dé pour égaler la Force d'un adversaire plus fort lors d'un blocage."
+    "effect": "Lance un dé pour égaler la Force d’un adversaire plus fort lors d’un blocage."
   },
   {
     "key": "fend",
@@ -22,7 +22,7 @@
   {
     "key": "kick",
     "name": "Frappe Précise",
-    "effect": "Réduit la déviation du coup d'envoi à un D3."
+    "effect": "Réduit la déviation du coup d’envoi à un D3."
   },
   {
     "key": "pro",
@@ -72,7 +72,7 @@
   {
     "key": "diving-tackle",
     "name": "Tacle Plongeant",
-    "effect": "Applique −2 à l'[[dodge]] d'un adversaire hors de votre [[tackle-zone]] ; vous passez [[prone]]."
+    "effect": "Applique −2 à l’[[dodge|esquive]] d’un adversaire hors de votre [[tackle-zone]] ; vous passez [[prone]]."
   },
   {
     "key": "dodge",
@@ -86,8 +86,8 @@
   },
   {
     "key": "hit-and-run",
-    "name": "Frappe-et-court",
-    "effect": "Après un blocage ou un poignard, avance d'une case gratuite si toujours debout."
+    "name": "Frappe et Fuite",
+    "effect": "Après un blocage ou un poignard, avance d’une case gratuite si toujours debout."
   },
   {
     "key": "jump-up",
@@ -132,12 +132,12 @@
   {
     "key": "cloud-burster",
     "name": "Perce-nuages",
-    "effect": "Relance une Chandelle, ou prive les adversaires d'une interception."
+    "effect": "Relance une Chandelle, ou prive les adversaires d’une interception."
   },
   {
     "key": "dump-off",
     "name": "Délestage",
-    "effect": "Effectue une passe rapide lorsqu'il est pris pour cible par un blocage."
+    "effect": "Effectue une passe rapide lorsqu’il est pris pour cible par un blocage."
   },
   {
     "key": "give-and-go",
@@ -147,22 +147,22 @@
   {
     "key": "hail-mary-pass",
     "name": "Passe Désespérée",
-    "effect": "Lance vers n'importe quelle case en Chandelle ; ne peut pas être interceptée."
+    "effect": "Lance vers n’importe quelle case en Chandelle ; ne peut pas être interceptée."
   },
   {
     "key": "leader",
     "name": "Chef",
-    "effect": "Une relance d'équipe supplémentaire tant qu'il est sur le terrain au début d'une mi-temps."
+    "effect": "Une relance d’équipe supplémentaire tant qu’il est sur le terrain au début d’une mi-temps."
   },
   {
     "key": "nerves-of-steel",
-    "name": "Nerfs d'Acier",
-    "effect": "Ignore les modificateurs de [[marked|marquage]] lors d'une passe ou d'une réception."
+    "name": "Nerfs d’Acier",
+    "effect": "Ignore les modificateurs de [[marked|marquage]] lors d’une passe ou d’une réception."
   },
   {
     "key": "on-the-ball",
     "name": "Sur le Ballon",
-    "effect": "Se déplace de 3 cases maximum avant que la passe d'un adversaire ne se résolve."
+    "effect": "Se déplace de 3 cases maximum avant que la passe d’un adversaire ne se résolve."
   },
   {
     "key": "pass",
@@ -172,7 +172,7 @@
   {
     "key": "punt",
     "name": "Dégagement",
-    "effect": "Une action spéciale pour botter le ballon vers l'avant du terrain."
+    "effect": "Une action spéciale pour botter le ballon vers l’avant du terrain."
   },
   {
     "key": "safe-pass",
@@ -182,12 +182,12 @@
   {
     "key": "arm-bar",
     "name": "Clé de Bras",
-    "effect": "+1 à l'armure/blessure si un adversaire tombe en [[dodge|esquivant]] hors de votre [[tackle-zone]]."
+    "effect": "+1 à l’armure/blessure si un adversaire tombe en [[dodge|esquivant]] hors de votre [[tackle-zone]]."
   },
   {
     "key": "brawler",
     "name": "Bagarreur",
-    "effect": "Relance un unique [[both-down]] lors d'un blocage."
+    "effect": "Relance un unique [[both-down]] lors d’un blocage."
   },
   {
     "key": "break-tackle",
@@ -202,7 +202,7 @@
   {
     "key": "grab",
     "name": "Projection",
-    "effect": "Choisit la case de [[push-back]] de l'adversaire ; il ne peut pas utiliser [[sidestep]]."
+    "effect": "Choisit la case de [[push-back]] de l’adversaire ; il ne peut pas utiliser [[sidestep]]."
   },
   {
     "key": "guard",
@@ -217,7 +217,7 @@
   {
     "key": "mighty-blow",
     "name": "Châtaigne",
-    "effect": "+1 à l'armure/blessure quand vous mettez un joueur à terre."
+    "effect": "+1 à l’armure/blessure quand vous mettez un joueur à terre."
   },
   {
     "key": "multiple-block",
@@ -227,7 +227,7 @@
   {
     "key": "stand-firm",
     "name": "Stabilité",
-    "effect": "N'est pas [[push-back|repoussé]]."
+    "effect": "N’est pas [[push-back|repoussé]]."
   },
   {
     "key": "strong-arm",
@@ -242,12 +242,12 @@
   {
     "key": "dirty-player",
     "name": "Joueur Déloyal",
-    "effect": "+1 au jet d'Armure ou de Blessure lorsque vous [[foul|agressez]]."
+    "effect": "+1 au jet d’Armure ou de Blessure lorsque vous [[foul|agressez]]."
   },
   {
     "key": "eye-gouge",
     "name": "Fourchette",
-    "effect": "Un adversaire que vous [[push-back]] ne peut pas fournir d'[[assist|aides]]."
+    "effect": "Un adversaire que vous [[push-back]] ne peut pas fournir d’[[assist|aides]]."
   },
   {
     "key": "fumblerooski",
@@ -257,12 +257,12 @@
   {
     "key": "lethal-flight",
     "name": "Vol Fatal",
-    "effect": "+1 à l'armure/blessure quand un joueur lancé met un adversaire à terre."
+    "effect": "+1 à l’armure/blessure quand un joueur lancé met un adversaire à terre."
   },
   {
     "key": "lone-fouler",
     "name": "Agresseur Solitaire",
-    "effect": "Relance un jet d'Armure raté lorsque vous [[foul|agressez]] sans [[assist|aides]]."
+    "effect": "Relance un jet d’Armure raté lorsque vous [[foul|agressez]] sans [[assist|aides]]."
   },
   {
     "key": "pile-driver",
@@ -282,7 +282,7 @@
   {
     "key": "saboteur",
     "name": "Saboteur",
-    "effect": "Quand vous tombez lors d'un blocage, l'adversaire est [[knocked-down]] lui aussi."
+    "effect": "Quand vous tombez lors d’un blocage, l’adversaire est [[knocked-down]] lui aussi."
   },
   {
     "key": "shadowing",
@@ -292,7 +292,7 @@
   {
     "key": "sneaky-git",
     "name": "Sournois",
-    "effect": "Pas expulsé sur un double lors d'une [[foul|agression]], sauf si l'armure est percée."
+    "effect": "Pas expulsé sur un double lors d’une [[foul|agression]], sauf si l’armure est percée."
   },
   {
     "key": "violent-innovator",
@@ -307,7 +307,7 @@
   {
     "key": "claws",
     "name": "Griffes",
-    "effect": "Perce l'armure sur un 8+ quelle que soit l'AV."
+    "effect": "Perce l’armure sur un 8+ quelle que soit l’AV."
   },
   {
     "key": "disturbing-presence",
@@ -317,12 +317,12 @@
   {
     "key": "extra-arms",
     "name": "Bras Supplémentaires",
-    "effect": "+1 à la réception, au ramassage ou à l'interception."
+    "effect": "+1 à la réception, au ramassage ou à l’interception."
   },
   {
     "key": "foul-appearance",
     "name": "Répulsion",
-    "effect": "L'attaquant lance d'abord ; sur un 1 l'action qui vous vise échoue."
+    "effect": "L’attaquant lance d’abord ; sur un 1, l’action qui vous vise échoue."
   },
   {
     "key": "horns",
@@ -332,12 +332,12 @@
   {
     "key": "iron-hard-skin",
     "name": "Peau de Fer",
-    "effect": "Les adversaires ne peuvent pas modifier les jets d'armure contre vous ; immunisé à [[claws]]."
+    "effect": "Les adversaires ne peuvent pas modifier les jets d’armure contre vous ; immunisé à [[claws]]."
   },
   {
     "key": "monstrous-mouth",
     "name": "Grande Gueule",
-    "effect": "Bloque un adversaire debout [[marked]] pour l'empêcher de partir."
+    "effect": "Bloque un adversaire debout [[marked]] pour l’empêcher de partir."
   },
   {
     "key": "prehensile-tail",
@@ -352,12 +352,12 @@
   {
     "key": "two-heads",
     "name": "Deux Têtes",
-    "effect": "+1 à l'esquive."
+    "effect": "+1 à l’esquive."
   },
   {
     "key": "very-long-legs",
     "name": "Très Longues Jambes",
-    "effect": "+1 au saut, +2 à l'interception ; ignore [[cloud-burster]]."
+    "effect": "+1 au saut, +2 à l’interception ; ignore [[cloud-burster]]."
   },
   {
     "key": "always-hungry",
@@ -382,7 +382,7 @@
   {
     "key": "bloodlust",
     "name": "Soif de Sang (X+)",
-    "effect": "Doit se repaître d'un Thrall après avoir agi, sinon provoque un [[turnover]]."
+    "effect": "Doit se repaître d’un Thrall après avoir agi, sinon provoque un [[turnover]]."
   },
   {
     "key": "bombardier",
@@ -402,7 +402,7 @@
   {
     "key": "chainsaw",
     "name": "Tronçonneuse",
-    "effect": "Une attaque spéciale avec un jet d'armure +3 ; un 1 vous touche vous-même."
+    "effect": "Une attaque spéciale avec un jet d’armure +3 ; un 1 vous touche vous-même."
   },
   {
     "key": "decay",
@@ -417,7 +417,7 @@
   {
     "key": "hatred",
     "name": "Haine (X)",
-    "effect": "Relance un résultat Joueur à Terre lors d'un blocage contre un adversaire désigné."
+    "effect": "Relance un résultat Joueur à Terre lors d’un blocage contre un adversaire désigné."
   },
   {
     "key": "hypnotic-gaze",
@@ -431,13 +431,13 @@
   },
   {
     "key": "kick-team-mate",
-    "name": "Botter de Coéquipier",
+    "name": "Botter un Coéquipier",
     "effect": "Lance un coéquipier comme une attaque (une fois par tour)."
   },
   {
     "key": "loner",
     "name": "Solitaire (X+)",
-    "effect": "Réussit un X+ pour utiliser une relance d'équipe, sinon la perd."
+    "effect": "Réussit un X+ pour utiliser une relance d’équipe, sinon la perd."
   },
   {
     "key": "my-ball",
@@ -457,7 +457,7 @@
   {
     "key": "plague-ridden",
     "name": "Contagieux",
-    "effect": "Une fois par match, ressuscite un nouveau lineman à partir d'une mort."
+    "effect": "Une fois par match, ressuscite un nouveau lineman à partir d’une mort."
   },
   {
     "key": "pogo",
@@ -477,7 +477,7 @@
   {
     "key": "regeneration",
     "name": "Régénération",
-    "effect": "4+ pour se remettre d'une [[casualty|sortie]] (vers les Réserves)."
+    "effect": "4+ pour se remettre d’une [[casualty|sortie]] (vers les Réserves)."
   },
   {
     "key": "right-stuff",
@@ -492,17 +492,17 @@
   {
     "key": "stab",
     "name": "Poignard",
-    "effect": "Une attaque spéciale avec un jet d'armure non modifiable."
+    "effect": "Une attaque spéciale avec un jet d’armure non modifiable."
   },
   {
     "key": "stunty",
     "name": "Minus",
-    "effect": "Aucun malus de [[marked|marquage]] lors d'une esquive ; −1 à l'interception ; utilise la table de blessure des Minus."
+    "effect": "Aucun malus de [[marked|marquage]] lors d’une esquive ; −1 à l’interception ; utilise la table de blessure des Minus."
   },
   {
     "key": "swoop",
     "name": "Piqué",
-    "effect": "Une fois lancé, plane (pas de déviation) et relance l'atterrissage."
+    "effect": "Une fois lancé, plane (pas de déviation) et relance l’atterrissage."
   },
   {
     "key": "take-root",
@@ -516,18 +516,18 @@
   },
   {
     "key": "timmm-ber",
-    "name": "Timmm-ber!",
+    "name": "Timmm-ber !",
     "effect": "Les coéquipiers adjacents aident un joueur à faible MA à se relever (+1 chacun)."
   },
   {
     "key": "titchy",
     "name": "Microbe",
-    "effect": "+1 à l'esquive ; n'ajoute aucun malus de [[marked|marquage]] aux adversaires."
+    "effect": "+1 à l’esquive ; n’ajoute aucun malus de [[marked|marquage]] aux adversaires."
   },
   {
     "key": "trickster",
     "name": "Trompeur",
-    "effect": "Quand il est pris pour cible, se glisse dans une case adjacente avant que l'action ne se résolve."
+    "effect": "Quand il est pris pour cible, se glisse dans une case adjacente avant que l’action ne se résolve."
   },
   {
     "key": "unchannelled-fury",
@@ -537,6 +537,6 @@
   {
     "key": "unsteady",
     "name": "Instable",
-    "effect": "Ne peut pas utiliser l'action Sécuriser le Ballon."
+    "effect": "Ne peut pas utiliser l’action Sécuriser le Ballon."
   }
 ]
