@@ -42,7 +42,7 @@ export function RollTable({
       <Table.Body>
         {rows.map((row) => (
           <Table.Row key={row.key}>
-            <Table.Cell className="pr-3 text-center font-display text-xl leading-none tabular-nums text-blood">
+            <Table.Cell className="whitespace-nowrap pr-3 text-center font-display text-xl leading-none tabular-nums text-blood">
               {rollLabel(row.roll)}
             </Table.Cell>
             <Table.Cell className="px-3 font-headline font-semibold uppercase tracking-wide">
