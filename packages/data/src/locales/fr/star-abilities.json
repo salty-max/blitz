@@ -242,7 +242,7 @@
   {
     "key": "tasty-morsel",
     "name": "Morceau de Choix",
-    "effect": "Une fois par match, lorsque Karina rate un jet de Soif de Sang, elle peut choisir de mordre un joueur adverse ayant une ST de 3 ou moins comme s’il s’agissait d’un coéquipier Serf Linéman. Karina ne peut pas mordre de Joueurs Vedettes avec cette règle spéciale."
+    "effect": "Une fois par match, lorsque Karina rate un jet de Soif de Sang, elle peut choisir de mordre un joueur adverse ayant une ST de 3 ou moins comme s’il s’agissait d’un coéquipier Serf Linéman. Karina ne peut pas mordre de champions avec cette règle spéciale."
   },
   {
     "key": "the-ballista",
