@@ -18,6 +18,7 @@ export type TooltipProps = Pick<
   content: ReactNode
   /** The element the tooltip describes; it becomes the trigger. */
   children: ReactNode
+  /** Which edge of the trigger to place the tooltip on; defaults to `top`. */
   side?: ComponentProps<typeof TooltipPrimitive.Content>['side']
   className?: string
 }

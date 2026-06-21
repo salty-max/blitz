@@ -36,11 +36,12 @@ export function Progress({
   className,
   'aria-label': ariaLabel,
 }: ProgressProps) {
-  const percent = Math.min(100, Math.max(0, (value / max) * 100))
+  const clamped = Math.min(max, Math.max(0, value))
+  const percent = (clamped / max) * 100
   return (
     <div
       role="progressbar"
-      aria-valuenow={value}
+      aria-valuenow={clamped}
       aria-valuemin={0}
       aria-valuemax={max}
       aria-label={ariaLabel}
