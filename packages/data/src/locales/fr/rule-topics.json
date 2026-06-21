@@ -229,7 +229,7 @@
       {
         "key": "pre-game-sequence",
         "heading": "Séquence d’avant-match",
-        "body": "Une rencontre de ligue se prépare en cinq étapes. 1) Les fans — chaque coach lance un D3 et l’ajoute à ses fans dévoués pour obtenir sa cote de popularité du match. 2) La météo — les deux coachs lancent, additionnent les dés et consultent le [[page:weather|tableau météo]]. 3) Remplaçants — chaque équipe complète son effectif jusqu’à 11. 4) Coups de pouce — le coach avec la valeur d’équipe la plus basse dépense l’écart en [[page:inducements|coups de pouce]] (dont les champions, [[page:stars|recrutés]] ici), et l’outsider peut adresser une prière à Nuffle ([[page:prayers|Prières à Nuffle]]). 5) Déterminer l’équipe qui dégage — un jet d’opposition, le gagnant choisissant de dégager ou de recevoir."
+        "body": "Une rencontre de ligue se prépare en cinq étapes. 1) Les fans — chaque coach lance un D3 et l’ajoute à ses fans dévoués pour obtenir sa cote de popularité du match. 2) La météo — les deux coachs lancent, additionnent les dés et consultent le [[page:weather|tableau météo]]. 3) Remplaçants — chaque équipe complète son effectif jusqu’à 11. 4) Coups de pouce — le coach avec la [[page:drafting|valeur d’équipe]] la plus basse dépense l’écart en [[page:inducements|coups de pouce]] (dont les champions, [[page:stars|recrutés]] ici), et l’outsider peut adresser une prière à Nuffle ([[page:prayers|Prières à Nuffle]]). 5) Déterminer l’équipe qui dégage — un jet d’opposition, le gagnant choisissant de dégager ou de recevoir."
       },
       {
         "key": "journeymen",
@@ -276,7 +276,7 @@
       {
         "key": "leagues",
         "heading": "Ligues & tournois",
-        "body": "Une ligue est une saison de rencontres où les équipes persistent et évoluent au fil de cette séquence d’après-match. Un tournoi est en général un format ponctuel — souvent à valeur d’équipe fixe et en « résurrection » (aucune blessure durable entre les matchs)."
+        "body": "Une ligue est une saison de rencontres où les équipes persistent et évoluent au fil de cette séquence d’après-match. Un tournoi est en général un format ponctuel — souvent à [[page:drafting|valeur d’équipe]] fixe et en « résurrection » (aucune blessure durable entre les matchs)."
       }
     ]
   }
