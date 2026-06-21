@@ -1,8 +1,8 @@
 import { specialRuleSchema } from '@blitz/schema'
 
 import { type DataLocale, localizeAll, localizeOne, overlayMap } from './i18n'
+import data from './locales/en/special-rules.json'
 import frData from './locales/fr/special-rules.json'
-import data from './special-rules.json'
 import type { SpecialRule } from './types'
 
 /**

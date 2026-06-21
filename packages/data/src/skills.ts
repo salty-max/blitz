@@ -1,8 +1,8 @@
 import { skillSchema } from '@blitz/schema'
 
 import { type DataLocale, localizeAll, localizeOne, overlayMap } from './i18n'
+import data from './locales/en/skills.json'
 import frData from './locales/fr/skills.json'
-import data from './skills.json'
 import type { Skill } from './types'
 
 /**

@@ -2,7 +2,8 @@
 // reference data. Run with `bun run gen:keys` after changing any data file.
 import { readFileSync, writeFileSync } from 'node:fs'
 
-const dir = 'packages/data/src'
+const dataDir = 'packages/data/src/locales/en'
+const outFile = 'packages/data/src/keys.gen.ts'
 const entities = [
   ['SKILL_KEYS', 'SkillKey', 'skills.json', 'a catalogue skill'],
   ['GLOSSARY_KEYS', 'GlossaryKey', 'glossary.json', 'a glossary term'],
@@ -44,7 +45,7 @@ let out =
   '// Regenerate with `bun run gen:keys` after changing any data file.\n\n'
 
 for (const [arr, type, file, desc] of entities) {
-  const entries = JSON.parse(readFileSync(`${dir}/${file}`, 'utf8'))
+  const entries = JSON.parse(readFileSync(`${dataDir}/${file}`, 'utf8'))
   const keys = entries.map((e) => e.key).sort()
   out += `/** Every key of ${desc}. */\nexport const ${arr} = [\n${keys
     .map((k) => `  '${k}',`)
@@ -53,5 +54,5 @@ for (const [arr, type, file, desc] of entities) {
     )}\n] as const\n/** The key of ${desc}. */\nexport type ${type} = (typeof ${arr})[number]\n\n`
 }
 
-writeFileSync(`${dir}/keys.gen.ts`, `${out.trimEnd()}\n`)
+writeFileSync(outFile, `${out.trimEnd()}\n`)
 console.log('wrote packages/data/src/keys.gen.ts')

@@ -1,9 +1,9 @@
 import { weatherSchema } from '@blitz/schema'
 
 import { type DataLocale, localizeAll, localizeOne, overlayMap } from './i18n'
+import data from './locales/en/weather.json'
 import frData from './locales/fr/weather.json'
 import type { Weather } from './types'
-import data from './weather.json'
 
 /**
  * The Weather table (2D6) — the conditions for the drive, re-rolled by the

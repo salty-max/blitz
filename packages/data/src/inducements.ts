@@ -1,7 +1,7 @@
 import { inducementSchema } from '@blitz/schema'
 
 import { type DataLocale, localizeAll, localizeOne, overlayMap } from './i18n'
-import data from './inducements.json'
+import data from './locales/en/inducements.json'
 import frData from './locales/fr/inducements.json'
 import type { Inducement } from './types'
 

@@ -1,8 +1,8 @@
 import { starAbilitySchema } from '@blitz/schema'
 
 import { type DataLocale, localizeAll, localizeOne, overlayMap } from './i18n'
+import data from './locales/en/star-abilities.json'
 import frData from './locales/fr/star-abilities.json'
-import data from './star-abilities.json'
 import type { StarAbility } from './types'
 
 /**

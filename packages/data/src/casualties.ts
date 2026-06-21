@@ -1,7 +1,7 @@
 import { casualtySchema } from '@blitz/schema'
 
-import data from './casualties.json'
 import { type DataLocale, localizeAll, localizeOne, overlayMap } from './i18n'
+import data from './locales/en/casualties.json'
 import frData from './locales/fr/casualties.json'
 import type { Casualty } from './types'
 

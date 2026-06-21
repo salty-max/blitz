@@ -1,8 +1,8 @@
 import { teamSchema } from '@blitz/schema'
 
 import { type DataLocale } from './i18n'
+import data from './locales/en/teams.json'
 import frData from './locales/fr/teams.json'
-import data from './teams.json'
 import type { Team } from './types'
 
 /**

@@ -1,8 +1,8 @@
 import { prayerSchema } from '@blitz/schema'
 
 import { type DataLocale, localizeAll, localizeOne, overlayMap } from './i18n'
+import data from './locales/en/prayers.json'
 import frData from './locales/fr/prayers.json'
-import data from './prayers.json'
 import type { Prayer } from './types'
 
 /**

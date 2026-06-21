@@ -1,6 +1,6 @@
 import { type TeamBuildingRules, teamBuildingRulesSchema } from '@blitz/schema'
 
-import data from './team-building.json'
+import data from './locales/en/team-building.json'
 
 /**
  * The universal team-building constants — starting budget, player limits, the
