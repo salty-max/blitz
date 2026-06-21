@@ -443,6 +443,15 @@ export const WEATHER_KEYS = [
 export type WeatherKey = (typeof WEATHER_KEYS)[number]
 
 /** Every key of a rule topic. */
-export const RULE_TOPIC_KEYS = ['core-game', 'the-drive'] as const
+export const RULE_TOPIC_KEYS = [
+  'combat',
+  'core-game',
+  'fouling',
+  'passing',
+  'post-game',
+  'pre-game',
+  'setup-kickoff',
+  'the-drive',
+] as const
 /** The key of a rule topic. */
 export type RuleTopicKey = (typeof RULE_TOPIC_KEYS)[number]
