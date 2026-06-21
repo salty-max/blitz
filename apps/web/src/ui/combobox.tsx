@@ -1,5 +1,5 @@
 import * as PopoverPrimitive from '@radix-ui/react-popover'
-import { Check, ChevronsUpDown } from 'lucide-react'
+import { Check, ChevronsUpDown, X } from 'lucide-react'
 import { useMemo, useState } from 'react'
 
 import { cn } from './cn'
@@ -72,15 +72,15 @@ export function Combobox(props: ComboboxProps) {
       : options
   }, [options, query])
 
-  const selectedLabels = options
-    .filter((option) => selectedValues.includes(option.value))
-    .map((option) => option.label)
+  const selectedOptions = options.filter((option) =>
+    selectedValues.includes(option.value)
+  )
+  // In multiple mode the picks show as pills; otherwise the label or placeholder.
+  const showPills = props.multiple && selectedOptions.length > 0
   const triggerText =
-    selectedValues.length === 0
+    selectedOptions.length === 0
       ? placeholder
-      : props.multiple && selectedValues.length > 1
-        ? `${selectedValues.length} selected`
-        : selectedLabels.join(', ')
+      : selectedOptions.map((option) => option.label).join(', ')
 
   const select = (value: string) => {
     if (props.multiple) {
@@ -107,12 +107,39 @@ export function Combobox(props: ComboboxProps) {
       <PopoverPrimitive.Trigger
         aria-label={ariaLabel}
         className={cn(
-          'inline-flex w-64 items-center justify-between gap-2 border-2 border-ink bg-paper py-1.5 pl-3 pr-2.5 font-headline text-sm font-semibold uppercase tracking-wide outline-none transition-colors focus-visible:border-blood data-[state=open]:border-blood',
+          'inline-flex w-64 items-center justify-between gap-2 border-2 border-ink bg-paper text-left font-headline text-sm font-semibold uppercase tracking-wide outline-none transition-colors focus-visible:border-blood data-[state=open]:border-blood',
+          showPills ? 'min-h-9 py-1 pl-1.5 pr-2' : 'py-1.5 pl-3 pr-2.5',
           selectedValues.length > 0 ? 'text-ink' : 'text-ink/45',
           className
         )}
       >
-        <span className="truncate">{triggerText}</span>
+        {showPills ? (
+          <span className="flex flex-1 flex-wrap items-center gap-1">
+            {selectedOptions.map((option) => (
+              <span
+                key={option.value}
+                className="inline-flex items-center gap-1 border border-ink/30 bg-paper-2 py-0.5 pl-1.5 pr-1 text-xs text-ink"
+              >
+                {option.label}
+                <span
+                  role="button"
+                  tabIndex={-1}
+                  aria-label={`Remove ${option.label}`}
+                  onPointerDown={(event) => event.stopPropagation()}
+                  onClick={(event) => {
+                    event.stopPropagation()
+                    select(option.value)
+                  }}
+                  className="text-ink/50 transition-colors hover:text-blood"
+                >
+                  <X className="h-3 w-3" />
+                </span>
+              </span>
+            ))}
+          </span>
+        ) : (
+          <span className="truncate">{triggerText}</span>
+        )}
         <ChevronsUpDown className="h-4 w-4 shrink-0 text-ink/55" />
       </PopoverPrimitive.Trigger>
       <PopoverPrimitive.Portal>
