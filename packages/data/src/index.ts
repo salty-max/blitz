@@ -5,6 +5,11 @@ export { getInducement, getInducements, inducements } from './inducements'
 export { getInjuries, getInjury, injuries } from './injuries'
 export * from './keys.gen'
 export {
+  getKickoffEvent,
+  getKickoffEvents,
+  kickoffEvents,
+} from './kickoff-events'
+export {
   getLastingInjuries,
   getLastingInjury,
   lastingInjuries,
@@ -35,6 +40,7 @@ export type {
   GlossaryTerm,
   Inducement,
   Injury,
+  KickoffEvent,
   LastingInjury,
   Position,
   Prayer,
@@ -43,4 +49,6 @@ export type {
   StarAbility,
   StarPlayer,
   Team,
+  Weather,
 } from './types'
+export { getWeather, getWeatherResult, weather } from './weather'

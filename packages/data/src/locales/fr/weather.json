@@ -1,0 +1,27 @@
+[
+  {
+    "key": "sweltering-heat",
+    "name": "Canicule",
+    "effect": "À la fin de chaque phase de jeu, les deux coachs envoient D3 de leurs joueurs dans la zone des réserves."
+  },
+  {
+    "key": "very-sunny",
+    "name": "Très ensoleillé",
+    "effect": "−1 à tous les tests de passe."
+  },
+  {
+    "key": "perfect-conditions",
+    "name": "Conditions idéales",
+    "effect": "Aucun effet sur le jeu."
+  },
+  {
+    "key": "pouring-rain",
+    "name": "Averse",
+    "effect": "−1 pour ramasser, réceptionner ou intercepter le ballon."
+  },
+  {
+    "key": "blizzard",
+    "name": "Blizzard",
+    "effect": "−1 pour [[rush|foncer]] ; seules les passes rapides et courtes sont autorisées."
+  }
+]

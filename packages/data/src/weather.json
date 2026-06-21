@@ -1,0 +1,32 @@
+[
+  {
+    "key": "sweltering-heat",
+    "name": "Sweltering Heat",
+    "roll": [2, 2],
+    "effect": "At the end of each drive, both coaches send D3 of their players to the Reserves box."
+  },
+  {
+    "key": "very-sunny",
+    "name": "Very Sunny",
+    "roll": [3, 3],
+    "effect": "−1 to all Passing tests."
+  },
+  {
+    "key": "perfect-conditions",
+    "name": "Perfect Conditions",
+    "roll": [4, 10],
+    "effect": "No effect on play."
+  },
+  {
+    "key": "pouring-rain",
+    "name": "Pouring Rain",
+    "roll": [11, 11],
+    "effect": "−1 to pick up, catch or intercept the ball."
+  },
+  {
+    "key": "blizzard",
+    "name": "Blizzard",
+    "roll": [12, 12],
+    "effect": "−1 to [[rush|Rush]]; only Quick and Short passes may be attempted."
+  }
+]

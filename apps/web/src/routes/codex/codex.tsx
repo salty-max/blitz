@@ -2,11 +2,13 @@ import {
   glossary,
   inducements,
   injuries,
+  kickoffEvents,
   prayers,
   skills,
   specialRules,
   starPlayers,
   teams,
+  weather,
 } from '@blitz/data'
 import { Link, Outlet } from '@tanstack/react-router'
 import { ChevronLeft } from 'lucide-react'
@@ -24,6 +26,11 @@ const CATEGORIES = [
     count: inducements.length,
   },
   { to: '/codex/rules', key: 'rules', count: specialRules.length },
+  {
+    to: '/codex/kickoff',
+    key: 'kickoff',
+    count: kickoffEvents.length + weather.length,
+  },
   { to: '/codex/injuries', key: 'injuries', count: injuries.length },
   { to: '/codex/prayers', key: 'prayers', count: prayers.length },
   { to: '/codex/glossary', key: 'glossary', count: glossary.length },

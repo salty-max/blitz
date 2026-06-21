@@ -94,6 +94,7 @@ export const en = {
       stars: 'Star Players',
       inducements: 'Inducements',
       rules: 'Special Rules',
+      kickoff: 'Kick-off',
       injuries: 'Injuries',
       prayers: 'Prayers',
       glossary: 'Glossary',
@@ -164,6 +165,11 @@ export const en = {
         league: 'League affiliations',
         special: 'Mechanical rules',
       },
+    },
+    kickoff: {
+      heading: 'Kick-off & Weather',
+      events: 'Kick-off events',
+      weather: 'Weather',
     },
     injuries: {
       heading: 'Injuries',
