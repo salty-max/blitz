@@ -7,12 +7,17 @@
       {
         "key": "turn-structure",
         "heading": "Structure du tour & turnovers",
-        "body": "Les joueurs s’activent un par un ; chacun déclare une Action, la résout, puis le suivant peut s’activer — jusqu’à ce que tous ceux qui le souhaitent aient agi, ou qu’un [[turnover|Turnover]] mette fin au tour. Un Turnover (qui fait perdre leur activation aux joueurs pas encore activés) est causé, entre autres, par : un ramassage raté, une [[pass|Passe]] ratée ou interceptée, le ballon finissant chez l’adversaire, ou un joueur actif poussé dans la foule ou expulsé."
+        "body": "Les joueurs s’activent un par un ; chacun déclare une Action, la résout, puis le suivant peut s’activer — jusqu’à ce que tous ceux qui le souhaitent aient agi, ou qu’un [[turnover|Turnover]] mette fin au tour. Un Turnover (qui fait perdre leur activation aux joueurs pas encore activés) est causé, entre autres, par : un ramassage raté, une Passe ratée ou interceptée, le ballon finissant chez l’adversaire, ou un joueur actif poussé dans la foule ou expulsé."
+      },
+      {
+        "key": "team-rerolls",
+        "heading": "Relances d’équipe",
+        "body": "Une fois par tour d’équipe, un coach peut dépenser une Relance d’équipe pour relancer un seul jet raté : chaque dé de ce jet est relancé et le second résultat est définitif — une relance ne peut pas être relancée à son tour. Les relances d’une équipe forment une réserve limitée qui se renouvelle à la mi-temps, et quelques jets (déviation, armure, blessure, remises en jeu) ne peuvent pas être relancés ainsi. Un joueur avec le trait [[loner|Solitaire]] n’est pas un joueur d’équipe fiable et peut gâcher la relance."
       },
       {
         "key": "player-actions",
         "heading": "Actions du joueur",
-        "body": "Un joueur effectue exactement une Action par activation. Mouvement et [[block|Blocage]] sont illimités ; limitées à une fois par tour d’équipe : les actions [[blitz|Blitz]], Passe, Transmission, [[foul|Agression]], Lancer de coéquipier et Sécuriser le ballon."
+        "body": "Un joueur effectue exactement une Action par activation — l’une des neuf actions standard (Mouvement, Sécuriser le ballon, Blocage, Blitz, Passe, Transmission, Lancer de coéquipier, Agression, ou Renoncer à l’activation), ou une Action spéciale accordée par une compétence ou un trait. Mouvement et Blocage sont illimités par tour ; les actions Blitz, Passe, Transmission, Agression, Lancer de coéquipier et Sécuriser le ballon sont chacune limitées à une fois par tour d’équipe. Renoncer à l’activation passe simplement le joueur sans agir."
       },
       {
         "key": "movement",
@@ -22,12 +27,17 @@
       {
         "key": "rushing",
         "heading": "Foncer",
-        "body": "Pour dépasser son MA, chaque case supplémentaire est un [[rush|Foncer]] : lancez 2+ (un 1 naturel fait tomber et met fin à l’activation). Deux Foncers au maximum par activation. Si une case demande à la fois un Foncer et une [[dodge|Esquive]], le Foncer est lancé en premier."
+        "body": "Pour dépasser son MA, chaque case supplémentaire est un [[rush|Foncer]] : lancez 2+ (un 1 naturel fait tomber et met fin à l’activation). Deux Foncers au maximum par activation. Si une case demande à la fois un Foncer et une Esquive, le Foncer est lancé en premier."
       },
       {
         "key": "dodging",
         "heading": "Esquive",
         "body": "Quitter une case où le joueur est [[marked|Marqué]] demande une Esquive — un test d’agilité contre l’AG, avec −1 par adversaire qui marque la case d’arrivée. Réussite : le joueur se déplace et reste debout, et peut continuer. Échec : il tombe sur la case cible — un [[turnover|Turnover]] s’il portait le ballon."
+      },
+      {
+        "key": "jumping",
+        "heading": "Saut",
+        "body": "Un joueur peut sauter par-dessus un seul joueur [[prone|À terre]] ou [[stunned|Sonné]] sur son chemin pour 2 cases de MA : un test d’agilité, −1 par adversaire qui marque la case de départ ou d’arrivée (celle qui en a le plus). Réussite : le joueur atterrit Debout et peut continuer ; échec : il tombe sur la case d’arrivée — un 1 naturel le fait tomber sur la case de départ — et l’activation prend fin."
       },
       {
         "key": "picking-up",
@@ -49,7 +59,7 @@
       {
         "key": "tackle-zones",
         "heading": "Zones de tacle & marquage",
-        "body": "Un joueur debout projette une [[tackle-zone|zone de tacle]] sur les huit cases autour de lui. Un joueur debout dans la zone de tacle d’un adversaire est [[marked|Marqué]] — c’est ce qui force une [[dodge|Esquive]] pour quitter la case et ajoute les malus de −1 par marqueur aux ramassages, passes et réceptions. Les joueurs [[prone|À terre]] et [[stunned|Sonné]] n’ont pas de zone de tacle."
+        "body": "Un joueur debout projette une [[tackle-zone|zone de tacle]] sur les huit cases autour de lui. Un joueur debout dans la zone de tacle d’un adversaire est [[marked|Marqué]] — c’est ce qui force une Esquive pour quitter la case et ajoute les malus de −1 par marqueur aux ramassages, passes et réceptions. Les joueurs [[prone|À terre]] et [[stunned|Sonné]] n’ont pas de zone de tacle."
       },
       {
         "key": "player-states",
@@ -62,6 +72,11 @@
         "body": "Un joueur debout porteur du ballon qui termine un mouvement dans la zone d’en-but adverse marque. La phase de jeu s’achève aussitôt, les deux équipes se replacent, et l’équipe qui vient de marquer donne le coup d’envoi pour reprendre."
       },
       {
+        "key": "stalling",
+        "heading": "Temporisation",
+        "body": "Une équipe qui a le ballon et la voie libre pour marquer peut attendre — temporiser pour faire tourner le chrono. Si l’arbitre juge qu’un porteur du ballon temporise délibérément, la foule s’en mêle, et une interférence aléatoire peut perturber l’équipe qui temporise."
+      },
+      {
         "key": "structure",
         "heading": "Phases, tours & mi-temps",
         "body": "Un match compte 2 mi-temps. Chaque mi-temps fait 8 rounds ; un round est 2 tours (un par coach) — 8 tours par équipe et par mi-temps, 16 par match. Une phase de jeu va d’un coup d’envoi jusqu’à un touchdown ou la fin de la mi-temps."
@@ -70,6 +85,11 @@
         "key": "ko-recovery",
         "heading": "Récupération des K.O.",
         "body": "À la fin de chaque phase de jeu, chaque coach lance un D6 pour chaque joueur K.O. dans ses réserves ; sur 4+ le joueur récupère et est disponible à la phase suivante (certains coups de pouce et la météo modifient le jet)."
+      },
+      {
+        "key": "ending-game",
+        "heading": "Fin du match",
+        "body": "Après 16 rounds, l’équipe avec le plus de touchdowns l’emporte. Un match à élimination à égalité passe en prolongation — un round de plus chacun, en mort subite, la première équipe à prendre l’avantage l’emportant ; toujours à égalité, on départage aux tirs au but."
       }
     ]
   },
@@ -81,7 +101,7 @@
       {
         "key": "block-action",
         "heading": "L’action de Blocage",
-        "body": "Un [[block|Blocage]] oppose la ST du bloqueur à celle d’un adversaire adjacent. Lancez les dés de blocage, appliquez un résultat, puis résolvez toute [[knocked-down|mise à terre]]. Un [[blitz|Blitz]] est un Blocage combiné à un mouvement, limité à une fois par tour d’équipe."
+        "body": "Un Blocage oppose la ST du bloqueur à celle d’un adversaire adjacent. Lancez les dés de blocage, appliquez un résultat, puis résolvez toute [[knocked-down|mise à terre]]. Un [[blitz|Blitz]] est un Blocage combiné à un mouvement, limité à une fois par tour d’équipe."
       },
       {
         "key": "dice",
@@ -107,6 +127,16 @@
         "key": "knockdown-injury",
         "heading": "Mise à terre → armure → blessure",
         "body": "Un joueur [[knocked-down|mis à terre]] teste son armure, puis éventuellement la blessure. Armure — lancez 2D6 ; si le total est ≥ à l’AV du joueur, l’armure est percée et un jet de blessure suit. Blessure — lancez 2D6 : 2–7 [[stunned|Sonné]] (récupère sur le terrain), 8–9 K.O. (aux réserves), 10–12 une [[casualty|Blessure]] résolue sur la page des Blessures ; les joueurs Chétifs utilisent une table plus dure."
+      },
+      {
+        "key": "crowd-injury",
+        "heading": "Poussé dans la foule",
+        "body": "Un joueur poussé hors du terrain est happé par la foule : lancez aussitôt sur la table de blessure, sans jet d’armure. Un résultat [[stunned|Sonné]] l’envoie dans la zone des réserves plutôt qu’au sol. Le ballon, s’il le portait, est remis en jeu ; et si le joueur était dans l’équipe active, c’est un [[turnover|Turnover]]."
+      },
+      {
+        "key": "apothecary",
+        "heading": "Apothicaire",
+        "body": "Une équipe avec un apothicaire peut l’utiliser une fois par match sur un de ses joueurs K.O. ou [[casualty|blessés]]. Sur un joueur K.O., il le remet sur pied, simplement [[stunned|Sonné]] sur place ; sur une Blessure, le coach relance le résultat de blessure et garde le meilleur. Certains joueurs — dont les Armes secrètes — ne peuvent pas être soignés."
       }
     ]
   },
@@ -118,7 +148,7 @@
       {
         "key": "pass-action",
         "heading": "L’action de Passe",
-        "body": "Une fois par tour, lancez le ballon vers une case cible : le lanceur effectue un test de Passe contre sa PA, modifié par la portée — Passe rapide 0, Passe courte −1, Passe longue −2, Bombe longue −3 — et −1 par adversaire qui [[marked|marque]] le lanceur.\nPrécise (test réussi, ou un 6 naturel) : le ballon atterrit sur la case cible où un coéquipier peut le [[catch|réceptionner]]. Imprécise (test raté) : il dévie avant d’atterrir. Maladresse (1 modifié, ou 1 naturel) : le ballon est lâché, rebondit depuis la case du lanceur, et cause un [[turnover|Turnover]]."
+        "body": "Une fois par tour, lancez le ballon vers une case cible : le lanceur effectue un test de Passe contre sa PA, modifié par la portée — Passe rapide 0, Passe courte −1, Passe longue −2, Bombe longue −3 — et −1 par adversaire qui [[marked|marque]] le lanceur.\nPrécise (test réussi, ou un 6 naturel) : le ballon atterrit sur la case cible où un coéquipier peut le réceptionner. Imprécise (test raté) : il dévie avant d’atterrir. Maladresse (1 modifié, ou 1 naturel) : le ballon est lâché, rebondit depuis la case du lanceur, et cause un [[turnover|Turnover]]."
       },
       {
         "key": "catching",
@@ -128,12 +158,17 @@
       {
         "key": "hand-off",
         "heading": "Transmission",
-        "body": "Une action limitée à une fois par tour : le porteur du ballon termine son mouvement au contact d’un coéquipier debout qui a encore sa [[tackle-zone|zone de tacle]], et ce coéquipier effectue une [[catch|réception]]."
+        "body": "Une action limitée à une fois par tour : le porteur du ballon termine son mouvement au contact d’un coéquipier debout qui a encore sa [[tackle-zone|zone de tacle]], et ce coéquipier effectue une réception."
       },
       {
         "key": "loose-balls",
         "heading": "Ballons libres",
         "body": "Rebond : un ballon libre se déplace d’une case dans une direction aléatoire. Déviation : une passe imprécise dévie de plusieurs cases avant d’atterrir. Remise en jeu : un ballon qui quitte le terrain est placé sur la dernière case qu’il occupait, puis on lance un D6 pour la direction (un D3 dans un coin) et il parcourt 2D6 cases."
+      },
+      {
+        "key": "throw-ins",
+        "heading": "Remises en jeu",
+        "body": "Quand le ballon quitte le terrain, la foule le renvoie depuis la dernière case qu’il survolait : on détermine une direction (un éventail plus large depuis un coin) et le ballon parcourt 2D6 cases avant de rebondir. Un joueur dont il atteint la case peut le réceptionner, avec le malus de remise en jeu."
       },
       {
         "key": "throw-team-mate",
@@ -150,7 +185,7 @@
       {
         "key": "foul-action",
         "heading": "L’action Agression",
-        "body": "Un coup bas une fois par tour sur un adversaire [[prone|À terre]] ou [[stunned|Sonné]] : l’agresseur peut d’abord se déplacer, puis agresse et ne peut plus bouger ensuite. Ce n’est pas un [[block|Blocage]] — juste un jet d’armure direct contre le joueur à terre (et un jet de blessure s’il le perce), modifié par les [[assist|aides]] : +1 par aide offensive (vos joueurs marquant la cible), −1 par aide défensive (leurs joueurs marquant votre agresseur).\nUn double naturel sur le jet d’armure ou de blessure repéré par l’arbitre fait expulser l’agresseur une fois l’agression résolue, causant un [[turnover|Turnover]] si c’était l’équipe active. Contester la décision (D6) : 1 expulse le coach pour le reste du match ; 2–5 l’expulsion est maintenue ; 6 réintègre le joueur (le Turnover reste maintenu)."
+        "body": "Un coup bas une fois par tour sur un adversaire [[prone|À terre]] ou [[stunned|Sonné]] : l’agresseur peut d’abord se déplacer, puis agresse et ne peut plus bouger ensuite. Ce n’est pas un Blocage — juste un jet d’armure direct contre le joueur à terre (et un jet de blessure s’il le perce), modifié par les [[assist|aides]] : +1 par aide offensive (vos joueurs marquant la cible), −1 par aide défensive (leurs joueurs marquant votre agresseur).\nUn double naturel sur le jet d’armure ou de blessure repéré par l’arbitre fait expulser l’agresseur une fois l’agression résolue, causant un [[turnover|Turnover]] si c’était l’équipe active. Contester la décision (D6) : 1 expulse le coach pour le reste du match ; 2–5 l’expulsion est maintenue ; 6 réintègre le joueur (le Turnover reste maintenu)."
       },
       {
         "key": "interception",

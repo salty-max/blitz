@@ -66,6 +66,21 @@ A Knocked Down player checks armour, then possibly injury:
    - _Stunty_ players use a harsher table: 2–6 Stunned, 7–8 KO, 9 Badly Hurt,
      10–12 Casualty.
 
+## Pushed into the crowd
+
+A player pushed off the pitch edge is dragged into the crowd: roll immediately on
+the injury table, with **no armour roll**. A **Stunned** result sends them to the
+Reserves box rather than lying on the pitch. The ball, if they held it, is thrown
+back in; and if the player was on the active team, it is a **turnover**.
+
+## Apothecary
+
+A team with an apothecary may use it **once per game** on one of its own
+knocked-out or Casualty players. On a knocked-out player it patches them up to
+merely **Stunned** in place; on a **Casualty** the coach re-rolls the Casualty
+result and keeps the better. Some players — Secret Weapons among them — can't be
+treated.
+
 ## Casualty table (D16)
 
 | Roll  | Casualty       | Effect                                      |
