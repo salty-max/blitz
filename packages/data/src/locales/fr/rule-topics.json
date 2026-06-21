@@ -259,19 +259,9 @@
         "body": "Victoire — lancez un D6 ; s’il est ≥ vos Fans dévoués actuels, +1 (max 7).\nDéfaite — lancez un D6 ; s’il est < vos Fans dévoués actuels, −1 (min 1).\nMatch nul — aucun changement."
       },
       {
-        "key": "spp",
-        "heading": "SPP",
-        "body": "Réception (une passe précise réceptionnée) — 1 SPP\nLancer de coéquipier (atterrissage réussi) — 1 SPP\nRéceptionné après un lancer — 1 SPP\nInterception — 2 SPP\n[[casualty|Blessure]] infligée — 2 SPP\nTouchdown — 3 SPP\nMVP — 4 SPP\nLes Stars ne gagnent aucun SPP ; les Mercenaires en gagnent."
-      },
-      {
         "key": "advancement",
-        "heading": "Amélioration — coût en SPP par niveau",
-        "body": "Le coût augmente à chaque amélioration prise (1° = compétence primaire, 2° = compétence secondaire) :\nExpérimenté (1re) — 1° aléatoire 3, 1° choisie 6, 2° aléatoire 10, 2° choisie 14, caractéristique 14\nVétéran (2e) — 4 / 8 / 12 / 16 / 16\nÉtoile montante (3e) — 6 / 12 / 16 / 20 / 20\nÉtoile (4e) — 8 / 16 / 20 / 24 / 24\nSuperstar (5e) — 10 / 20 / 24 / 28 / 28\nLégende (6e) — 15 / 30 / 34 / 38 / 38\nL’amélioration de caractéristique est un jet de D8 : 1 → +1 AV ; 2 → +1 AV ou PA ; 3–4 → +1 AV, MA ou PA ; 5 → +1 MA ou PA ; 6 → +1 AG ou MA ; 7 → +1 AG ou ST ; 8 → +1 au choix. Un joueur peut refuser le jet et prendre une compétence à la place (les SPP sont tout de même dépensés)."
-      },
-      {
-        "key": "value-increase",
-        "heading": "Hausse de valeur par amélioration",
-        "body": "Ajoutée à la valeur actuelle :\nCompétence primaire — +20 000 po\nCompétence secondaire — +40 000 po\n+1 AV — +10 000 po\n+1 MA — +20 000 po\n+1 PA — +20 000 po\n+1 AG — +30 000 po\n+1 ST — +60 000 po"
+        "heading": "Améliorations",
+        "body": "Les joueurs gagnent des points de star (SPP) pour leurs réceptions, interceptions, blessures, touchdowns et le titre de MVP, puis les dépensent en nouvelles compétences et améliorations de caractéristiques — chacune augmentant la valeur du joueur. Les tableaux complets (gain, coût, valeur) sont sur la page [[page:spp|SPP & améliorations]]."
       },
       {
         "key": "expensive-mistakes",

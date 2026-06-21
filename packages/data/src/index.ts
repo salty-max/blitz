@@ -15,6 +15,7 @@ export {
   lastingInjuries,
 } from './lasting-injuries'
 export { getPrayer, getPrayers, prayers } from './prayers'
+export { getProgression, progression } from './progression'
 export {
   abilitiesOf,
   inducementsForTeam,
@@ -54,3 +55,10 @@ export type {
   Weather,
 } from './types'
 export { getWeather, getWeatherResult, weather } from './weather'
+export type {
+  AdvancementCost,
+  CharacteristicGain,
+  Progression,
+  SppAction,
+  ValueIncrease,
+} from '@blitz/schema'

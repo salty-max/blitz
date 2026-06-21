@@ -40,3 +40,32 @@ export function refKeys(text: string): string[] {
     ...new Set([...text.matchAll(REF_PATTERN)].map((match) => match[1].trim())),
   ]
 }
+
+/**
+ * Codex pages that prose may link to with a `[[page:<key>]]` reference. Unlike a
+ * plain `[[key]]` (which opens an entry in the drawer), a page reference
+ * navigates — used to point at a dedicated table page instead of repeating it.
+ */
+export const PAGE_REF_KEYS = [
+  'teams',
+  'skills',
+  'stars',
+  'inducements',
+  'rules',
+  'kickoff',
+  'weather',
+  'injuries',
+  'prayers',
+  'glossary',
+  'spp',
+  'rulebook',
+] as const
+export type PageRefKey = (typeof PAGE_REF_KEYS)[number]
+
+/** The prefix marking a reference as a codex-page link rather than a drawer entry. */
+export const PAGE_REF_PREFIX = 'page:'
+
+/** The fully-qualified `page:`-prefixed keys, for cross-reference integrity checks. */
+export const pageRefKeys: string[] = PAGE_REF_KEYS.map(
+  (key) => `${PAGE_REF_PREFIX}${key}`
+)

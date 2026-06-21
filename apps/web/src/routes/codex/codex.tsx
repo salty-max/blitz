@@ -6,6 +6,7 @@ import {
   injuries,
   kickoffEvents,
   prayers,
+  progression,
   ruleTopics,
   skills,
   specialRules,
@@ -36,6 +37,15 @@ const CATEGORIES = [
   },
   { to: '/codex/injuries', key: 'injuries', count: injuries.length },
   { to: '/codex/prayers', key: 'prayers', count: prayers.length },
+  {
+    to: '/codex/spp',
+    key: 'spp',
+    count:
+      progression.sppActions.length +
+      progression.advancementCosts.length +
+      progression.characteristicGains.length +
+      progression.valueIncreases.length,
+  },
   { to: '/codex/glossary', key: 'glossary', count: glossary.length },
   { to: '/codex/rulebook', key: 'rulebook', count: ruleTopics.length },
 ] as const

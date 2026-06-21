@@ -5,7 +5,27 @@ export { type Injury, injurySchema } from './injury'
 export { type KickoffEvent, kickoffEventSchema } from './kickoff-event'
 export { type LastingInjury, lastingInjurySchema } from './lasting-injury'
 export { type Prayer, prayerSchema } from './prayer'
-export { parseRefs, refKeys, type RefSegment } from './refs'
+export {
+  type AdvancementCost,
+  advancementCostSchema,
+  type CharacteristicGain,
+  characteristicGainSchema,
+  type Progression,
+  progressionSchema,
+  type SppAction,
+  sppActionSchema,
+  type ValueIncrease,
+  valueIncreaseSchema,
+} from './progression'
+export {
+  PAGE_REF_KEYS,
+  PAGE_REF_PREFIX,
+  type PageRefKey,
+  pageRefKeys,
+  parseRefs,
+  refKeys,
+  type RefSegment,
+} from './refs'
 export {
   type RuleSection,
   ruleSectionSchema,

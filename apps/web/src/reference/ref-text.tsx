@@ -1,11 +1,17 @@
 import { parseRefs } from '@blitz/schema'
+import { Link } from '@tanstack/react-router'
 import { Fragment } from 'react'
 
 import { useDataLocale } from '@/i18n/use-data-locale'
+import { pageLinkRoute } from '@/lib/page-links'
 import { type RefTone, resolveRef } from '@/lib/resolve-ref'
 import { useRefDrawer } from '@/reference/ref-drawer'
 
 const refBaseClass = 'box-decoration-clone px-1 font-semibold transition-colors'
+
+/** A page reference navigates to a dedicated codex page rather than opening the drawer. */
+const pageLinkClass =
+  'font-semibold text-blood underline decoration-blood/40 decoration-2 underline-offset-2 transition-colors hover:decoration-blood'
 
 /**
  * Per-category colours: a tinted tag at rest that fills its colour on hover,
@@ -32,6 +38,13 @@ export function RefText({ children }: { children: string }) {
       {parseRefs(children).map((segment, index) => {
         if (segment.kind === 'text')
           return <Fragment key={index}>{segment.text}</Fragment>
+        const route = pageLinkRoute(segment.key)
+        if (route)
+          return (
+            <Link key={index} to={route} className={pageLinkClass}>
+              {segment.label ?? segment.key}
+            </Link>
+          )
         const ref = resolveRef(segment.key, locale)
         return (
           <button

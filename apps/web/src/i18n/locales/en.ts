@@ -97,6 +97,7 @@ export const en = {
       kickoff: 'Kick-off',
       injuries: 'Injuries',
       prayers: 'Prayers',
+      spp: 'SPP & Advancement',
       glossary: 'Glossary',
       rulebook: 'Rulebook',
     },
@@ -184,6 +185,27 @@ export const en = {
     prayers: {
       heading: 'Prayers to Nuffle',
       resultHeader: 'Prayer',
+    },
+    spp: {
+      heading: 'SPP & Advancement',
+      earning: 'Earning SPP',
+      action: 'Action',
+      advancementCost: 'Advancement cost',
+      advancementNote:
+        '1° = a Primary-category skill, 2° = a Secondary-category skill. The cost rises as a player takes more advances.',
+      level: 'Level',
+      randomPrimary: 'Random 1°',
+      chosenPrimary: 'Chosen 1°',
+      randomSecondary: 'Random 2°',
+      chosenSecondary: 'Chosen 2°',
+      characteristic: 'Characteristic',
+      characteristicTable: 'Characteristic improvement',
+      improvement: 'Improvement',
+      characteristicNote:
+        'A player may decline the roll and take a skill instead — the SPP are still spent.',
+      valueIncrease: 'Value increase per advancement',
+      advancement: 'Advancement',
+      value: 'Current value',
     },
     glossary: {
       heading: 'Glossary',

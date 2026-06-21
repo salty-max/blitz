@@ -14,6 +14,7 @@ import { PrayersPage } from '@/routes/codex/prayers'
 import { RulebookIndex, RulebookTopic } from '@/routes/codex/rulebook'
 import { RulesPage } from '@/routes/codex/rules'
 import { SkillsPage } from '@/routes/codex/skills'
+import { SppPage } from '@/routes/codex/spp'
 import { StarsPage } from '@/routes/codex/stars'
 import { TeamDetail, TeamsIndex } from '@/routes/codex/teams'
 import { ComingSoon } from '@/routes/coming-soon'
@@ -134,6 +135,12 @@ const codexGlossaryRoute = createRoute({
   component: GlossaryPage,
 })
 
+const codexSppRoute = createRoute({
+  getParentRoute: () => codexCategoryRoute,
+  path: 'spp',
+  component: SppPage,
+})
+
 // Team management — your own rosters across a season.
 const teamsRoute = createRoute({
   getParentRoute: () => rootRoute,
@@ -166,6 +173,7 @@ const routeTree = rootRoute.addChildren([
       codexInjuriesRoute,
       codexPrayersRoute,
       codexGlossaryRoute,
+      codexSppRoute,
     ]),
   ]),
   teamsRoute,

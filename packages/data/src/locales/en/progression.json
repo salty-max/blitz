@@ -1,0 +1,97 @@
+{
+  "sppActions": [
+    {
+      "key": "completion",
+      "action": "Completion (an accurate pass caught)",
+      "spp": 1
+    },
+    {
+      "key": "throw-team-mate",
+      "action": "Throw Team-mate (lands safely)",
+      "spp": 1
+    },
+    { "key": "caught-thrown", "action": "Caught after being thrown", "spp": 1 },
+    { "key": "interception", "action": "Interception", "spp": 2 },
+    { "key": "casualty", "action": "Casualty caused", "spp": 2 },
+    { "key": "touchdown", "action": "Touchdown", "spp": 3 },
+    { "key": "mvp", "action": "Most Valuable Player", "spp": 4 }
+  ],
+  "advancementCosts": [
+    {
+      "key": "experienced",
+      "level": "Experienced (1st)",
+      "randomPrimary": 3,
+      "chosenPrimary": 6,
+      "randomSecondary": 10,
+      "chosenSecondary": 14,
+      "characteristic": 14
+    },
+    {
+      "key": "veteran",
+      "level": "Veteran (2nd)",
+      "randomPrimary": 4,
+      "chosenPrimary": 8,
+      "randomSecondary": 12,
+      "chosenSecondary": 16,
+      "characteristic": 16
+    },
+    {
+      "key": "emerging-star",
+      "level": "Emerging Star (3rd)",
+      "randomPrimary": 6,
+      "chosenPrimary": 12,
+      "randomSecondary": 16,
+      "chosenSecondary": 20,
+      "characteristic": 20
+    },
+    {
+      "key": "star",
+      "level": "Star (4th)",
+      "randomPrimary": 8,
+      "chosenPrimary": 16,
+      "randomSecondary": 20,
+      "chosenSecondary": 24,
+      "characteristic": 24
+    },
+    {
+      "key": "superstar",
+      "level": "Superstar (5th)",
+      "randomPrimary": 10,
+      "chosenPrimary": 20,
+      "randomSecondary": 24,
+      "chosenSecondary": 28,
+      "characteristic": 28
+    },
+    {
+      "key": "legend",
+      "level": "Legend (6th)",
+      "randomPrimary": 15,
+      "chosenPrimary": 30,
+      "randomSecondary": 34,
+      "chosenSecondary": 38,
+      "characteristic": 38
+    }
+  ],
+  "characteristicGains": [
+    { "key": "d8-1", "roll": [1, 1], "gain": "+1 AV" },
+    { "key": "d8-2", "roll": [2, 2], "gain": "+1 AV or PA" },
+    { "key": "d8-3", "roll": [3, 4], "gain": "+1 AV, MA or PA" },
+    { "key": "d8-5", "roll": [5, 5], "gain": "+1 MA or PA" },
+    { "key": "d8-6", "roll": [6, 6], "gain": "+1 AG or MA" },
+    { "key": "d8-7", "roll": [7, 7], "gain": "+1 AG or ST" },
+    { "key": "d8-8", "roll": [8, 8], "gain": "+1 to any" }
+  ],
+  "valueIncreases": [
+    { "key": "primary", "advancement": "Primary skill", "value": "+20,000 gp" },
+    {
+      "key": "secondary",
+      "advancement": "Secondary skill",
+      "value": "+40,000 gp"
+    },
+    { "key": "av", "advancement": "+1 AV", "value": "+10,000 gp" },
+    { "key": "ma", "advancement": "+1 MA", "value": "+20,000 gp" },
+    { "key": "pa", "advancement": "+1 PA", "value": "+20,000 gp" },
+    { "key": "ag", "advancement": "+1 AG", "value": "+30,000 gp" },
+    { "key": "st", "advancement": "+1 ST", "value": "+60,000 gp" }
+  ]
+}
