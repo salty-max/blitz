@@ -5,13 +5,20 @@ the odds, and a plea to the dice god.
 
 ## Pre-game sequence (league fixture)
 
-Before the coin toss and kick-off (see
+Resolved in five steps, before the kick-off (see
 [setup-and-kickoff.md](setup-and-kickoff.md)):
 
-1. **Take on Journeymen** — fill the squad out to 11.
-2. **Hire star players & buy inducements** — the coach with the lower Team Value
-   spends the gap (see [team-building.md](team-building.md)).
-3. **Prayers to Nuffle** — the underdog may pray for a blessing (below).
+1. **The Fans** — each coach rolls a **D3** and adds it to their **Dedicated
+   Fans** for this game's **Fan Factor**.
+2. **The Weather** — both coaches roll, **sum the dice**, and consult the Weather
+   table (see [setup-and-kickoff.md](setup-and-kickoff.md)).
+3. **Take on Journeymen** — fill the squad out to 11.
+4. **Inducements** — the coach with the lower Team Value spends the gap on
+   inducements, star players among them (see
+   [team-building.md](team-building.md)); the underdog may also pray to Nuffle
+   (below).
+5. **Determine the kicking team** — a roll-off; the winner chooses to kick or
+   receive.
 
 ## Journeymen
 

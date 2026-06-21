@@ -15,6 +15,11 @@
         "body": "Une fois par tour d’équipe, un coach peut dépenser une Relance d’équipe pour relancer un seul jet raté : chaque dé de ce jet est relancé et le second résultat est définitif — une relance ne peut pas être relancée à son tour. Les relances d’une équipe forment une réserve limitée qui se renouvelle à la mi-temps, et quelques jets (déviation, armure, blessure, remises en jeu) ne peuvent pas être relancés ainsi. Un joueur avec le trait [[loner|Solitaire]] n’est pas un joueur d’équipe fiable et peut gâcher la relance."
       },
       {
+        "key": "dice-basics",
+        "heading": "Les dés",
+        "body": "La plupart des jets utilisent un D6 ; un D3 est un D6 divisé par deux, arrondi au supérieur ; un D8 donne une direction aléatoire ; un D16 désigne une blessure ou un joueur au hasard. Un 1 naturel échoue toujours et un 6 naturel réussit toujours, quels que soient les modificateurs, et un D6 modifié ne descend jamais sous 1 ni au-dessus de 6."
+      },
+      {
         "key": "player-actions",
         "heading": "Actions du joueur",
         "body": "Un joueur effectue exactement une Action par activation — l’une des neuf actions standard (Mouvement, Sécuriser le ballon, Blocage, Blitz, Passe, Transmission, Lancer de coéquipier, Agression, ou Renoncer à l’activation), ou une Action spéciale accordée par une compétence ou un trait. Mouvement et Blocage sont illimités par tour ; les actions Blitz, Passe, Transmission, Agression, Lancer de coéquipier et Sécuriser le ballon sont chacune limitées à une fois par tour d’équipe. Renoncer à l’activation passe simplement le joueur sans agir."
@@ -42,7 +47,7 @@
       {
         "key": "picking-up",
         "heading": "Ramasser le ballon",
-        "body": "Entrer sur la case du ballon pendant un Mouvement est un test d’agilité, −1 par adversaire qui [[marked|marque]] le ramasseur ; un échec est un [[turnover|Turnover]] et le ballon rebondit. L’action Sécuriser le ballon (nouveauté Troisième Saison) permet à un joueur à l’écart des adversaires de faire un mouvement gratuit jusqu’au ballon et de lancer 2+ pour le ramasser automatiquement (un 1 naturel est un Turnover) — un ramassage fiable pour les équipes à faible AG."
+        "body": "Entrer sur la case du ballon pendant un Mouvement est un test d’agilité, −1 par adversaire qui [[marked|marque]] le ramasseur ; un échec est un [[turnover|Turnover]] et le ballon rebondit. Un joueur amené sur le ballon involontairement ne teste pas — le ballon rebondit simplement, sans turnover. L’action Sécuriser le ballon (nouveauté Troisième Saison) permet à un joueur qui n’est pas un Big Guy, sans adversaire debout et non distrait à moins de 2 cases, de faire un mouvement gratuit jusqu’au ballon et de lancer 2+ pour le ramasser automatiquement (un 1 naturel est un Turnover) — un ramassage fiable pour les équipes à faible AG."
       },
       {
         "key": "standing-up",
@@ -69,7 +74,7 @@
       {
         "key": "scoring",
         "heading": "Marquer un touchdown",
-        "body": "Un joueur debout porteur du ballon qui termine un mouvement dans la zone d’en-but adverse marque. La phase de jeu s’achève aussitôt, les deux équipes se replacent, et l’équipe qui vient de marquer donne le coup d’envoi pour reprendre."
+        "body": "Un joueur debout porteur du ballon qui termine un mouvement dans la zone d’en-but adverse marque — même pendant le tour de l’adversaire, s’il y parvient. La phase de jeu s’achève aussitôt, les deux équipes se replacent, et l’équipe qui vient de marquer donne le coup d’envoi pour reprendre."
       },
       {
         "key": "stalling",
@@ -79,17 +84,17 @@
       {
         "key": "structure",
         "heading": "Phases, tours & mi-temps",
-        "body": "Un match compte 2 mi-temps. Chaque mi-temps fait 8 rounds ; un round est 2 tours (un par coach) — 8 tours par équipe et par mi-temps, 16 par match. Une phase de jeu va d’un coup d’envoi jusqu’à un touchdown ou la fin de la mi-temps."
+        "body": "Un match compte deux mi-temps. Chaque mi-temps fait 8 rounds ; un round vaut 2 tours, un par coach — 8 tours par équipe et par mi-temps, 16 par match. Le marqueur de tour avance au début de chaque tour d’équipe, et la mi-temps se termine dès qu’il dépasse la huitième case. Une phase de jeu court d’un coup d’envoi jusqu’à un touchdown ou la fin de la mi-temps ; à la mi-temps, les relances des deux équipes se renouvellent et les joueurs K.O. tentent de récupérer."
       },
       {
         "key": "ko-recovery",
-        "heading": "Récupération des K.O.",
-        "body": "À la fin de chaque phase de jeu, chaque coach lance un D6 pour chaque joueur K.O. dans ses réserves ; sur 4+ le joueur récupère et est disponible à la phase suivante (certains coups de pouce et la météo modifient le jet)."
+        "heading": "Fin d’une phase de jeu",
+        "body": "Quand un touchdown est marqué ou que la mi-temps se termine, la phase de jeu se résout dans l’ordre : on gère les Armes secrètes, on applique les effets de fin de phase (certaines météos envoient des joueurs en réserve), puis chaque coach lance un D6 pour chaque joueur K.O. dans ses réserves — sur 4+ le joueur récupère et est disponible à la phase suivante (certains coups de pouce et la météo modifient le jet). Les deux équipes se replacent ensuite pour le coup d’envoi suivant."
       },
       {
         "key": "ending-game",
         "heading": "Fin du match",
-        "body": "Après 16 rounds, l’équipe avec le plus de touchdowns l’emporte. Un match à élimination à égalité passe en prolongation — un round de plus chacun, en mort subite, la première équipe à prendre l’avantage l’emportant ; toujours à égalité, on départage aux tirs au but."
+        "body": "Après 16 rounds, l’équipe avec le plus de touchdowns l’emporte. Un match à élimination à égalité passe en prolongation : l’équipe qui recevait au début de la seconde mi-temps donne maintenant le coup d’envoi, les relances ne sont pas renouvelées, et c’est la mort subite — la première équipe à marquer un touchdown gagne. Toujours à égalité après la prolongation, on départage aux tirs au but : chaque équipe tire cinq fois (2D6, 4+ marque), le plus de buts l’emporte ; encore à égalité, des tirs uniques alternés en mort subite décident."
       }
     ]
   },
@@ -101,7 +106,7 @@
       {
         "key": "block-action",
         "heading": "L’action de Blocage",
-        "body": "Un Blocage oppose la ST du bloqueur à celle d’un adversaire adjacent. Lancez les dés de blocage, appliquez un résultat, puis résolvez toute [[knocked-down|mise à terre]]. Un [[blitz|Blitz]] est un Blocage combiné à un mouvement, limité à une fois par tour d’équipe."
+        "body": "Un Blocage oppose la ST du bloqueur à celle d’un adversaire adjacent. Lancez les dés de blocage, appliquez un résultat, puis résolvez toute [[knocked-down|mise à terre]]. Un [[blitz|Blitz]] est l’unique Blocage par tour d’équipe qu’un joueur peut combiner à un mouvement : désignez la cible avant de bouger, dépensez 1 case de MA pour le Blocage lui-même (un Foncer peut la payer) et continuez à vous déplacer ensuite — renoncer au Blocage dépense tout de même le Blitz."
       },
       {
         "key": "dice",
@@ -126,7 +131,7 @@
       {
         "key": "knockdown-injury",
         "heading": "Mise à terre → armure → blessure",
-        "body": "Un joueur [[knocked-down|mis à terre]] teste son armure, puis éventuellement la blessure. Armure — lancez 2D6 ; si le total est ≥ à l’AV du joueur, l’armure est percée et un jet de blessure suit. Blessure — lancez 2D6 : 2–7 [[stunned|Sonné]] (récupère sur le terrain), 8–9 K.O. (aux réserves), 10–12 une [[casualty|Blessure]] résolue sur la page des Blessures ; les joueurs Chétifs utilisent une table plus dure."
+        "body": "Un joueur [[knocked-down|mis à terre]] teste son armure, puis éventuellement sa blessure. Armure — lancez 2D6 ; si le total est ≥ à l’AV du joueur, l’armure cède et un jet de blessure suit. Blessure — lancez 2D6 : 2–7 [[stunned|Sonné]] (récupère sur le terrain), 8–9 K.O. (en réserve), 10–12 une [[casualty|Blessure]]. Les tableaux complets des blessés et des blessures persistantes, ainsi que le tableau plus sévère des Stunty, sont sur la page [[page:injuries|Blessures]]."
       },
       {
         "key": "crowd-injury",
@@ -136,7 +141,7 @@
       {
         "key": "apothecary",
         "heading": "Apothicaire",
-        "body": "Une équipe avec un apothicaire peut l’utiliser une fois par match sur un de ses joueurs K.O. ou [[casualty|blessés]]. Sur un joueur K.O., il le remet sur pied, simplement [[stunned|Sonné]] sur place ; sur une Blessure, le coach relance le résultat de blessure et garde le meilleur. Certains joueurs — dont les Armes secrètes — ne peuvent pas être soignés."
+        "body": "Une équipe avec un apothicaire peut l’utiliser une fois par match sur un de ses joueurs K.O. ou [[casualty|blessés]]. Sur un joueur K.O., il le remet sur pied, simplement [[stunned|Sonné]] sur place — ou l’envoie en réserve si c’est la foule qui l’a mis K.O. Sur une Blessure, il force un second jet de blessure, le coach gardant le meilleur, et un joueur rétabli va en réserve plutôt que dans la zone des blessés. Certains joueurs — dont les Armes secrètes — ne peuvent pas être soignés."
       }
     ]
   },
@@ -148,7 +153,7 @@
       {
         "key": "pass-action",
         "heading": "L’action de Passe",
-        "body": "Une fois par tour, lancez le ballon vers une case cible : le lanceur effectue un test de Passe contre sa PA, modifié par la portée — Passe rapide 0, Passe courte −1, Passe longue −2, Bombe longue −3 — et −1 par adversaire qui [[marked|marque]] le lanceur.\nPrécise (test réussi, ou un 6 naturel) : le ballon atterrit sur la case cible où un coéquipier peut le réceptionner. Imprécise (test raté) : il dévie avant d’atterrir. Maladresse (1 modifié, ou 1 naturel) : le ballon est lâché, rebondit depuis la case du lanceur, et cause un [[turnover|Turnover]]."
+        "body": "L’action de Passe débute par un Mouvement gratuit, puis le lancer — et aucun déplacement après. Une fois par tour, le lanceur vise une case cible : un test de Passe contre sa PA, modifié par la portée — Passe rapide 0, Passe courte −1, Passe longue −2, Bombe longue −3 — et −1 par adversaire qui [[marked|marque]] le lanceur.\nPrécise (test réussi, ou un 6 naturel) : le ballon atterrit sur la case cible où un coéquipier peut le réceptionner. Imprécise (test raté) : il dévie avant d’atterrir. Maladresse (1 modifié, ou 1 naturel) : le ballon est lâché, rebondit depuis la case du lanceur, et cause un [[turnover|Turnover]]."
       },
       {
         "key": "catching",
@@ -158,12 +163,12 @@
       {
         "key": "hand-off",
         "heading": "Transmission",
-        "body": "Une action limitée à une fois par tour : le porteur du ballon termine son mouvement au contact d’un coéquipier debout qui a encore sa [[tackle-zone|zone de tacle]], et ce coéquipier effectue une réception."
+        "body": "La Transmission, comme la Passe, débute par un Mouvement gratuit et se termine sans autre déplacement. Une fois par tour, le porteur du ballon finit au contact d’un coéquipier debout qui n’est pas [[marked|marqué]] par l’adversaire, et ce coéquipier effectue une réception."
       },
       {
         "key": "loose-balls",
         "heading": "Ballons libres",
-        "body": "Rebond : un ballon libre se déplace d’une case dans une direction aléatoire. Déviation : une passe imprécise dévie de plusieurs cases avant d’atterrir. Remise en jeu : un ballon qui quitte le terrain est placé sur la dernière case qu’il occupait, puis on lance un D6 pour la direction (un D3 dans un coin) et il parcourt 2D6 cases."
+        "body": "Rebond : un ballon libre se déplace d’une case dans une direction aléatoire. Déviation : une passe imprécise se déplace de trois cases, chacune dans sa propre direction, avant d’atterrir. Dégagement dévié : un ballon dégagé se déplace de D6 cases dans une seule direction aléatoire. Remise en jeu : un ballon qui quitte le terrain est placé sur la dernière case qu’il survolait, puis on lance un D6 pour la direction (un D3 dans un coin) et il parcourt 2D6 cases."
       },
       {
         "key": "throw-ins",
@@ -202,7 +207,7 @@
       {
         "key": "team-setup",
         "heading": "Mise en place des équipes",
-        "body": "Les deux équipes se placent dans leur propre moitié de terrain, jusqu’à 11 joueurs chacune : l’équipe qui dégage d’abord, puis l’équipe qui reçoit. Au moins 3 joueurs doivent se tenir sur la ligne de mêlée (les cases centrales adjacentes à la ligne), et 2 au maximum dans chaque zone latérale."
+        "body": "Les deux équipes se placent dans leur propre moitié de terrain, jusqu’à 11 joueurs chacune — l’équipe qui dégage d’abord, puis celle qui reçoit ; les autres attendent dans la zone des réserves. Au moins 3 joueurs doivent se tenir sur la ligne de mêlée (les cases centrales près de la ligne médiane) et 2 au maximum dans chaque zone latérale. Une équipe avec 3 joueurs ou moins disponibles les place tous sur la ligne de mêlée."
       },
       {
         "key": "coin-toss",
@@ -212,7 +217,7 @@
       {
         "key": "the-kick",
         "heading": "Le coup d’envoi",
-        "body": "L’équipe qui dégage place le ballon sur n’importe quelle case de la moitié de terrain adverse, puis il dévie jusqu’à la case où il atterrit. Touché — si le ballon quitte le terrain ou repasse au-dessus de la ligne de mêlée, le coach qui reçoit le donne à un joueur debout (ou sur une case vide) dans sa propre moitié. Le coup d’envoi déclenche ensuite un événement de coup d’envoi (voir la page Coup d’envoi)."
+        "body": "L’équipe qui dégage désigne un dégageur — ni sur la ligne de mêlée ni dans une zone latérale — et place le ballon sur n’importe quelle case de la moitié adverse. Le ballon dévie de D6 cases dans une direction aléatoire jusqu’à sa case d’atterrissage. Un [[page:kickoff|événement de coup d’envoi]] est alors lancé (2D6) et résolu ; le ballon ne retombe qu’ensuite. S’il atterrit sur un joueur, celui-ci peut tenter une réception ; sur une case vide, il rebondit. S’il quitte le terrain ou repasse au-dessus de la ligne de mêlée, c’est un touché — résolu après l’événement, le coach qui reçoit confiant le ballon à un joueur debout (ou une case vide) de sa moitié."
       }
     ]
   },
@@ -224,7 +229,7 @@
       {
         "key": "pre-game-sequence",
         "heading": "Séquence d’avant-match",
-        "body": "Avant le tirage au sort et le coup d’envoi, une rencontre de ligue se déroule en trois étapes. D’abord, chaque équipe recrute des remplaçants pour compléter son effectif jusqu’à 11. Ensuite, le coach avec la valeur d’équipe la plus basse dépense l’écart en champions et en coups de pouce. Enfin, l’outsider peut adresser une prière à Nuffle pour obtenir une bénédiction (voir la page Prières à Nuffle)."
+        "body": "Une rencontre de ligue se prépare en cinq étapes. 1) Les fans — chaque coach lance un D3 et l’ajoute à ses fans dévoués pour obtenir sa cote de popularité du match. 2) La météo — les deux coachs lancent, additionnent les dés et consultent le [[page:weather|tableau météo]]. 3) Remplaçants — chaque équipe complète son effectif jusqu’à 11. 4) Coups de pouce — le coach avec la valeur d’équipe la plus basse dépense l’écart en [[page:inducements|coups de pouce]] (dont les champions, [[page:stars|recrutés]] ici), et l’outsider peut adresser une prière à Nuffle ([[page:prayers|Prières à Nuffle]]). 5) Déterminer l’équipe qui dégage — un jet d’opposition, le gagnant choisissant de dégager ou de recevoir."
       },
       {
         "key": "journeymen",

@@ -32,12 +32,19 @@ that just scored **kicks off** to restart.
 - Each half is **8 rounds**; a round is **2 turns** (one per coach) → **8 turns
   per team per half** (16 per game).
 - A **drive** runs from a kick-off until a touchdown is scored or the half ends.
+- The **turn marker** advances at the start of each team turn; the half ends once
+  it passes the **eighth** space.
+- At **half-time**, both teams' **team re-rolls refresh** and KO'd players roll to
+  recover.
 
-## Knock-out recovery
+## End of a drive
 
-At the **end of each drive**, each coach rolls a **D6** for every KO'd player in
-their Reserves; on a **4+** the player recovers and is available next drive (some
-inducements and weather modify the roll).
+When a touchdown is scored or the half ends, the drive is resolved **in order**:
+deal with **Secret Weapons**, apply any **end-of-drive effects** (e.g. Sweltering
+Heat sending players to the Reserves), then each coach rolls a **D6** for every
+KO'd player in their Reserves — on a **4+** the player recovers and is available
+next drive (some inducements and weather modify the roll). Both teams then set up
+again for the next kick-off.
 
 ## Stalling
 
@@ -48,9 +55,11 @@ crowd takes a hand and random interference can disrupt the stalling team.
 ## Ending the game
 
 After **16 rounds** the team with the most touchdowns wins. A drawn knockout
-match goes to **extra time** — one more round each, played sudden-death (the
-first team to take the lead wins); a tie even then is settled by **penalty
-kicks**.
+match goes to **extra time**: the team that received at the start of the second
+half now kicks off, **re-rolls are not refreshed**, and it is **sudden death** —
+the first team to score a touchdown wins. Still tied, a **penalty shoot-out**
+decides it: each team takes **five kicks** (2D6, a **4+** scores), most goals
+winning, then single **alternating sudden-death kicks** if still level.
 
 ## Implementation status
 

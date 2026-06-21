@@ -4,8 +4,10 @@ Throwing, catching, handing off, and what a loose ball does.
 
 ## The Pass action
 
-Throw the ball to a target square (once per turn). The thrower makes a **Passing
-test** against their **PA** characteristic, modified by range and by markers.
+The Pass — like the Hand-off, Foul and Throw Team-mate — opens with a **free
+Move**, then the throw, with **no movement after**. Throw the ball to a target
+square (once per turn). The thrower makes a **Passing test** against their **PA**
+characteristic, modified by range and by markers.
 
 ### Range & modifiers
 
@@ -38,8 +40,8 @@ makes the ball bounce. A Prone, Stunned or Distracted player auto-fails a catch.
 
 ## Hand-off
 
-A once-per-turn action: the carrier finishes their move adjacent to a standing
-team-mate who still has their tackle zone, and that team-mate makes a Catch.
+A once-per-turn action: the carrier finishes their move adjacent to a **Standing
+team-mate not Marked** by the opposition, and that team-mate makes a Catch.
 
 ## Loose balls
 
