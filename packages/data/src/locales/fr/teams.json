@@ -75,7 +75,7 @@
   {
     "key": "chaos-renegades",
     "name": "Renégats du Chaos",
-    "description": "Choisissez une allégeance Favori de (dieu du Chaos) à la création — elle détermine quels joueurs vedettes du Chaos l’équipe peut recruter.",
+    "description": "Choisissez une allégeance Favori de (dieu du Chaos) à la création — elle détermine quels champions du Chaos l’équipe peut recruter.",
     "positions": [
       { "key": "renegade-human", "name": "Humain Renégat" },
       { "key": "renegade-goblin", "name": "Gobelin Renégat" },

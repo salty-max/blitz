@@ -27,7 +27,7 @@ export const fr = {
       eyebrow: 'Blood Bowl',
       title: 'Tout, en dehors du terrain',
       subtitle:
-        'Composez et gérez vos équipes, organisez vos ligues et tournois, et retrouvez chaque règle, compétence et joueur vedette dans un codex consultable.',
+        'Composez et gérez vos équipes, organisez vos ligues et tournois, et retrouvez chaque règle, compétence et champion dans un codex consultable.',
       cta: 'Ouvrir le codex',
     },
     pillars: {
@@ -35,7 +35,7 @@ export const fr = {
         kicker: 'La référence',
         label: 'Codex',
         blurb:
-          'Chaque équipe, compétence, joueur vedette, coup de pouce et règle — interconnectés et consultables, toujours à portée de main.',
+          'Chaque équipe, compétence, champion, coup de pouce et règle — interconnectés et consultables, toujours à portée de main.',
         cta: 'Ouvrir le codex',
       },
       teams: {
@@ -67,7 +67,7 @@ export const fr = {
       rulesTerm: 'Terme de règles',
       league: 'Ligue',
       specialRule: 'Règle spéciale',
-      starAbility: 'Capacité de vedette',
+      starAbility: 'Capacité de champion',
       fallback: 'Référence',
     },
     skillCategory: {
@@ -91,7 +91,7 @@ export const fr = {
     categories: {
       teams: 'Équipes',
       skills: 'Compétences',
-      stars: 'Joueurs vedettes',
+      stars: 'Champions',
       inducements: 'Coups de pouce',
       rules: 'Règles spéciales',
       injuries: 'Blessures',
@@ -126,7 +126,7 @@ export const fr = {
       yes: 'Oui',
       no: 'Non',
       specialRules: 'Règles spéciales',
-      stars: 'Joueurs vedettes',
+      stars: 'Champions',
       table: {
         position: 'Poste',
         max: 'Max',
@@ -138,13 +138,13 @@ export const fr = {
         'Accès — primaire / secondaire : G générale · A agilité · S force · P passe · M mutation · D sournoise.',
     },
     stars: {
-      heading: 'Joueurs vedettes',
+      heading: 'Champions',
       searchPlaceholder: 'Rechercher un nom ou une compétence…',
-      searchLabel: 'Rechercher des joueurs vedettes',
+      searchLabel: 'Rechercher des champions',
       hireableBy: 'Recrutable par',
       filterLabel: 'Filtrer par équipe recruteuse',
       anyTeam: 'Toutes les équipes',
-      noMatch: 'Aucune vedette ne correspond.',
+      noMatch: 'Aucun champion ne correspond.',
       fields: {
         skills: 'Compétences',
         abilities: 'Capacités',
