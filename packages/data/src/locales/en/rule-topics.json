@@ -229,7 +229,7 @@
       {
         "key": "pre-game-sequence",
         "heading": "Pre-game sequence",
-        "body": "A league fixture is prepared in five steps. 1) The Fans — each coach rolls a D3 and adds it to their Dedicated Fans for this game's Fan Factor. 2) The Weather — both coaches roll, sum the dice and consult the [[page:weather|weather table]]. 3) Journeymen — each team fills its squad out to 11. 4) Inducements — the coach with the lower Team Value spends the gap on [[page:inducements|inducements]] (star players among them, [[page:stars|hired]] here), and the underdog may pray to Nuffle ([[page:prayers|Prayers to Nuffle]]). 5) Determine the kicking team — a roll-off, the winner choosing to kick or receive."
+        "body": "A league fixture is prepared in five steps. 1) The Fans — each coach rolls a D3 and adds it to their Dedicated Fans for this game's Fan Factor. 2) The Weather — both coaches roll, sum the dice and consult the [[page:weather|weather table]]. 3) Journeymen — each team fills its squad out to 11. 4) Inducements — the coach with the lower [[page:drafting|Team Value]] spends the gap on [[page:inducements|inducements]] (star players among them, [[page:stars|hired]] here), and the underdog may pray to Nuffle ([[page:prayers|Prayers to Nuffle]]). 5) Determine the kicking team — a roll-off, the winner choosing to kick or receive."
       },
       {
         "key": "journeymen",
@@ -276,7 +276,7 @@
       {
         "key": "leagues",
         "heading": "Leagues & tournaments",
-        "body": "A league is a season of fixtures in which teams persist and grow through this post-game sequence. A tournament is usually a one-off format — often fixed Team Value and \"resurrection\" (no lasting injuries between games)."
+        "body": "A league is a season of fixtures in which teams persist and grow through this post-game sequence. A tournament is usually a one-off format — often fixed [[page:drafting|Team Value]] and \"resurrection\" (no lasting injuries between games)."
       }
     ]
   }
