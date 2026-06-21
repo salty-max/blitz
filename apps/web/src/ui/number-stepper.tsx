@@ -1,9 +1,18 @@
 import { Minus, Plus } from 'lucide-react'
+import { type ComponentProps } from 'react'
 
 import { cn } from './cn'
 
-/** Props for {@link NumberStepper}. */
-export type NumberStepperProps = {
+/** Props for {@link NumberStepper} — its value controls plus the props a FormField forwards. */
+export type NumberStepperProps = Pick<
+  ComponentProps<'div'>,
+  | 'className'
+  | 'id'
+  | 'aria-label'
+  | 'aria-labelledby'
+  | 'aria-describedby'
+  | 'aria-invalid'
+> & {
   /** The current value. */
   value: number
   /** Called with the new value when stepped. */
@@ -14,14 +23,12 @@ export type NumberStepperProps = {
   max?: number
   /** Amount each press adds or removes. */
   step?: number
-  /** Accessible name for the group. */
-  'aria-label'?: string
-  className?: string
 }
 
 /**
- * A bordered −/value/+ stepper for bounded integer quantities — roster counts,
- * treasury, a match score. The value is clamped to `min`/`max`.
+ * A bordered −/value/+ stepper for bounded quantities — roster counts,
+ * treasury, a match score. The value is clamped to `min`/`max`. It forwards the
+ * group's id/aria props, so it slots straight into a `FormField`.
  */
 export function NumberStepper({
   value,
@@ -29,8 +36,8 @@ export function NumberStepper({
   min = -Infinity,
   max = Infinity,
   step = 1,
-  'aria-label': ariaLabel,
   className,
+  ...rest
 }: NumberStepperProps) {
   const clamp = (n: number) => Math.min(max, Math.max(min, n))
   const button =
@@ -39,11 +46,11 @@ export function NumberStepper({
   return (
     <div
       role="group"
-      aria-label={ariaLabel}
       className={cn(
         'inline-flex items-center border-2 border-ink bg-paper',
         className
       )}
+      {...rest}
     >
       <button
         type="button"

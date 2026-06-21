@@ -1,13 +1,17 @@
 import * as PopoverPrimitive from '@radix-ui/react-popover'
 import { Check, ChevronsUpDown, X } from 'lucide-react'
-import { useMemo, useState } from 'react'
+import { type ComponentProps, useMemo, useState } from 'react'
 
 import { cn } from './cn'
 
 /** A choice in a {@link Combobox}. */
 export type ComboboxOption = { value: string; label: string }
 
-type ComboboxBase = {
+// The trigger's id/aria props are forwarded so the control slots into a FormField.
+type ComboboxBase = Pick<
+  ComponentProps<'button'>,
+  'id' | 'aria-label' | 'aria-labelledby' | 'aria-describedby' | 'aria-invalid'
+> & {
   /** The choices to search and pick from. */
   options: ComboboxOption[]
   /** Trigger text when nothing is selected. */
@@ -17,7 +21,6 @@ type ComboboxBase = {
   /** Shown when the query matches nothing. */
   emptyMessage?: string
   className?: string
-  'aria-label'?: string
 }
 
 /** Props for a single-select {@link Combobox}. */
@@ -54,7 +57,11 @@ export function Combobox(props: ComboboxProps) {
     searchPlaceholder = 'Search…',
     emptyMessage = 'No matches.',
     className,
+    id,
     'aria-label': ariaLabel,
+    'aria-labelledby': ariaLabelledby,
+    'aria-describedby': ariaDescribedby,
+    'aria-invalid': ariaInvalid,
   } = props
   const [open, setOpen] = useState(false)
   const [query, setQuery] = useState('')
@@ -105,7 +112,11 @@ export function Combobox(props: ComboboxProps) {
       }}
     >
       <PopoverPrimitive.Trigger
+        id={id}
         aria-label={ariaLabel}
+        aria-labelledby={ariaLabelledby}
+        aria-describedby={ariaDescribedby}
+        aria-invalid={ariaInvalid}
         className={cn(
           'inline-flex w-64 items-center justify-between gap-2 border-2 border-ink bg-paper text-left font-headline text-sm font-semibold uppercase tracking-wide outline-none transition-colors focus-visible:border-blood data-[state=open]:border-blood',
           showPills ? 'min-h-9 py-1 pl-1.5 pr-2' : 'py-1.5 pl-3 pr-2.5',

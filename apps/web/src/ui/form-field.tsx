@@ -26,11 +26,10 @@ export type FormFieldProps = {
 /**
  * Wraps a single form control with a label and optional hint or error, wiring
  * up the label (`htmlFor` + `aria-labelledby`), `aria-describedby` and
- * `aria-invalid`. It fits any control that forwards these props to its root —
- * `Input`, `Textarea`, `Switch`, `Checkbox`, `RadioGroup` (named via
- * `aria-labelledby`), or a `Select.Trigger`. The grouped and searchable
- * controls (`SegmentedControl`, `NumberStepper`, `Combobox`) take a fixed prop
- * set, so pass their own `aria-label` rather than wrapping them here.
+ * `aria-invalid`. Every form control in the library forwards these to its root,
+ * so any of them — `Input`, `Textarea`, `Switch`, `Checkbox`, `Select.Trigger`,
+ * `RadioGroup`, `SegmentedControl`, `NumberStepper`, `Combobox` — slots straight
+ * in as the direct child.
  */
 export function FormField({
   label,

@@ -11,10 +11,10 @@ generates an `id`, links the label to the control (`htmlFor` plus
 `aria-labelledby`), and wires `aria-describedby` and `aria-invalid` to the
 message — so dropping a control inside gets you an accessible field for free.
 
-It fits any control that forwards these props to its root: `Input`, `Textarea`,
-`Switch`, `Checkbox`, `RadioGroup`, or a `Select.Trigger`. The grouped and
-searchable controls (`SegmentedControl`, `NumberStepper`, `Combobox`) take a
-fixed prop set, so give those their own `aria-label` instead of wrapping them.
+Every form control in the library forwards these props to its root, so any of
+them slots in as the direct child — `Input`, `Textarea`, `Switch`, `Checkbox`,
+`Select.Trigger`, `RadioGroup`, `SegmentedControl`, `NumberStepper` and
+`Combobox`.
 
 <Canvas of={FormFieldStories.Default} />
 
@@ -31,9 +31,12 @@ adds a blood asterisk to the label.
 <Canvas of={FormFieldStories.WithError} />
 <Canvas of={FormFieldStories.Required} />
 
-## A group control
+## Around other controls
 
-Around a `RadioGroup`, the visible label names the `radiogroup` via
-`aria-labelledby` (a `<label htmlFor>` can't point at a group).
+A group like `RadioGroup` or `SegmentedControl` is named via `aria-labelledby`
+(a `<label htmlFor>` can't point at a group); a `Combobox` takes the label on its
+trigger. Each is wired the same way — drop it in as the direct child.
 
 <Canvas of={FormFieldStories.WithRadioGroup} />
+<Canvas of={FormFieldStories.WithSegmentedControl} />
+<Canvas of={FormFieldStories.WithCombobox} />
