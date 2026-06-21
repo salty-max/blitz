@@ -1,4 +1,5 @@
 import { casualties, injuries, lastingInjuries } from '@blitz/data'
+import { useTranslation } from 'react-i18next'
 
 import { RollTable } from '@/components/roll-table'
 import { RefText } from '@/reference/ref-text'
@@ -6,37 +7,35 @@ import { PageHeading, SectionHeading } from '@/ui'
 
 /** The injury sequence — the 2D6 Injury roll (and its Stunty variant) feeding the D16 Casualty table. */
 export function InjuriesPage() {
+  const { t } = useTranslation('codex')
   const standard = injuries.filter((injury) => injury.variant === 'standard')
   const stunty = injuries.filter((injury) => injury.variant === 'stunty')
 
   return (
     <div className="space-y-10">
-      <PageHeading>Injuries</PageHeading>
+      <PageHeading>{t('injuries.heading')}</PageHeading>
 
       <section className="space-y-5">
-        <SectionHeading hint="2D6">Injury roll</SectionHeading>
+        <SectionHeading hint="2D6">{t('injuries.injuryRoll')}</SectionHeading>
         <RollTable rows={standard} />
         <div className="space-y-3">
           <p className="text-sm text-ink/70">
-            <RefText>
-              {'Players with the [[stunty]] trait use this harsher table.'}
-            </RefText>
+            <RefText>{t('injuries.stuntyNote')}</RefText>
           </p>
           <RollTable rows={stunty} />
         </div>
       </section>
 
       <section className="space-y-5">
-        <SectionHeading hint="D16">Casualty table</SectionHeading>
+        <SectionHeading hint="D16">
+          {t('injuries.casualtyTable')}
+        </SectionHeading>
         <RollTable rows={casualties} />
       </section>
 
       <section className="space-y-5">
-        <SectionHeading hint="D6">Lasting injury</SectionHeading>
-        <p className="text-sm text-ink/70">
-          A Lasting Injury casualty (13–14) rolls here for which characteristic
-          drops by 1.
-        </p>
+        <SectionHeading hint="D6">{t('injuries.lastingInjury')}</SectionHeading>
+        <p className="text-sm text-ink/70">{t('injuries.lastingNote')}</p>
         <RollTable rows={lastingInjuries} />
       </section>
     </div>

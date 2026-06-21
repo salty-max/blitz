@@ -111,14 +111,14 @@ const codexGlossaryRoute = createRoute({
 const teamsRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/teams',
-  component: () => <ComingSoon title="Team Management" />,
+  component: () => <ComingSoon titleKey="teamManagement" />,
 })
 
 // League & tournament management.
 const leaguesRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/leagues',
-  component: () => <ComingSoon title="Leagues" />,
+  component: () => <ComingSoon titleKey="leagues" />,
 })
 
 const routeTree = rootRoute.addChildren([

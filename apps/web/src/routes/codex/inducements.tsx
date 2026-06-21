@@ -4,6 +4,7 @@ import {
   type Team,
   teamsForSpecialRule,
 } from '@blitz/data'
+import { useTranslation } from 'react-i18next'
 
 import { TeamChips } from '@/components/team-chips'
 import { gp } from '@/lib/format'
@@ -22,9 +23,10 @@ function teamsForInducement(inducement: Inducement): Team[] {
 
 /** The inducements catalogue — cost, limit, effect and eligibility per inducement. */
 export function InducementsPage() {
+  const { t } = useTranslation('codex')
   return (
     <div>
-      <PageHeading>Inducements</PageHeading>
+      <PageHeading>{t('inducements.heading')}</PageHeading>
 
       <DescriptionList className="mt-6">
         {inducements.map((inducement) => (
@@ -36,7 +38,10 @@ export function InducementsPage() {
               <>
                 <span className="block">{inducement.name}</span>
                 <span className="block text-sm tabular-nums text-blood">
-                  {gp(inducement.cost)} · max {inducement.max}
+                  {t('inducements.costMax', {
+                    cost: gp(inducement.cost),
+                    max: inducement.max,
+                  })}
                 </span>
               </>
             }
@@ -45,11 +50,11 @@ export function InducementsPage() {
             {inducement.restrictedTo.length > 0 && (
               <div className="mt-2 space-y-2">
                 <div className="flex flex-wrap items-center gap-2">
-                  <Field.Label>Restricted to</Field.Label>
+                  <Field.Label>{t('inducements.restrictedTo')}</Field.Label>
                   <RefChips keys={inducement.restrictedTo} />
                 </div>
                 <div className="flex flex-wrap items-center gap-2">
-                  <Field.Label>Teams</Field.Label>
+                  <Field.Label>{t('inducements.teams')}</Field.Label>
                   <TeamChips teams={teamsForInducement(inducement)} />
                 </div>
               </div>
