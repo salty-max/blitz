@@ -26,9 +26,9 @@ function TableBody({ className, ...props }: ComponentProps<'tbody'>) {
   )
 }
 
-/** A table row, baseline-aligned so a tall cell lines up with its roll. */
+/** A table row; cells are vertically centred so a tall cell sits level with its text. */
 function TableRow({ className, ...props }: ComponentProps<'tr'>) {
-  return <tr className={cn('align-baseline', className)} {...props} />
+  return <tr className={cn('align-middle', className)} {...props} />
 }
 
 /** A header cell — uppercase, carrying the heavy rule beneath the header row. */
