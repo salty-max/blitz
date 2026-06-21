@@ -1,14 +1,8 @@
 import { prayerSchema } from '@blitz/schema'
 
-import {
-  type DataLocale,
-  localizeAll,
-  localizeOne,
-  overlayMap,
-  type Overlays,
-} from './i18n'
+import { type DataLocale, localizeAll, localizeOne } from './i18n'
 import data from './locales/en/prayers.json'
-import frData from './locales/fr/prayers.json'
+import { prayerOverlays as overlays } from './overlays'
 import type { Prayer } from './types'
 
 /**
@@ -20,9 +14,6 @@ export const prayers: Prayer[] = prayerSchema.array().parse(data) as Prayer[]
 const byKey = new Map<string, Prayer>(
   prayers.map((prayer) => [prayer.key, prayer])
 )
-const overlays: Overlays<Prayer> = {
-  fr: overlayMap<Prayer>(frData as unknown as Partial<Prayer>[]),
-}
 
 /** The Prayers to Nuffle table in the given locale (English when omitted). */
 export function getPrayers(locale: DataLocale = 'en'): Prayer[] {

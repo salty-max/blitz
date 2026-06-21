@@ -1,14 +1,8 @@
 import { inducementSchema } from '@blitz/schema'
 
-import {
-  type DataLocale,
-  localizeAll,
-  localizeOne,
-  overlayMap,
-  type Overlays,
-} from './i18n'
+import { type DataLocale, localizeAll, localizeOne } from './i18n'
 import data from './locales/en/inducements.json'
-import frData from './locales/fr/inducements.json'
+import { inducementOverlays as overlays } from './overlays'
 import type { Inducement } from './types'
 
 /**
@@ -23,9 +17,6 @@ export const inducements: Inducement[] = inducementSchema
 const byKey = new Map<string, Inducement>(
   inducements.map((inducement) => [inducement.key, inducement])
 )
-const overlays: Overlays<Inducement> = {
-  fr: overlayMap<Inducement>(frData as unknown as Partial<Inducement>[]),
-}
 
 /** The inducements catalogue in the given locale (English when omitted). */
 export function getInducements(locale: DataLocale = 'en'): Inducement[] {

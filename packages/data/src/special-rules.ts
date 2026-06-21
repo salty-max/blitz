@@ -1,14 +1,8 @@
 import { specialRuleSchema } from '@blitz/schema'
 
-import {
-  type DataLocale,
-  localizeAll,
-  localizeOne,
-  overlayMap,
-  type Overlays,
-} from './i18n'
+import { type DataLocale, localizeAll, localizeOne } from './i18n'
 import data from './locales/en/special-rules.json'
-import frData from './locales/fr/special-rules.json'
+import { specialRuleOverlays as overlays } from './overlays'
 import type { SpecialRule } from './types'
 
 /**
@@ -26,9 +20,6 @@ const byKey = new Map<string, SpecialRule>(
 const byName = new Map<string, SpecialRule>(
   specialRules.map((rule) => [rule.name, rule])
 )
-const overlays: Overlays<SpecialRule> = {
-  fr: overlayMap<SpecialRule>(frData as unknown as Partial<SpecialRule>[]),
-}
 
 /** The special-rules catalogue in the given locale (English when omitted). */
 export function getSpecialRules(locale: DataLocale = 'en'): SpecialRule[] {

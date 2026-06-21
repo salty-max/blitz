@@ -1,14 +1,8 @@
 import { starAbilitySchema } from '@blitz/schema'
 
-import {
-  type DataLocale,
-  localizeAll,
-  localizeOne,
-  overlayMap,
-  type Overlays,
-} from './i18n'
+import { type DataLocale, localizeAll, localizeOne } from './i18n'
 import data from './locales/en/star-abilities.json'
-import frData from './locales/fr/star-abilities.json'
+import { starAbilityOverlays as overlays } from './overlays'
 import type { StarAbility } from './types'
 
 /**
@@ -23,9 +17,6 @@ export const starAbilities: StarAbility[] = starAbilitySchema
 const byKey = new Map<string, StarAbility>(
   starAbilities.map((ability) => [ability.key, ability])
 )
-const overlays: Overlays<StarAbility> = {
-  fr: overlayMap<StarAbility>(frData as unknown as Partial<StarAbility>[]),
-}
 
 /** The star-abilities catalogue in the given locale (English when omitted). */
 export function getStarAbilities(locale: DataLocale = 'en'): StarAbility[] {
