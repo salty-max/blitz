@@ -1,4 +1,5 @@
 import {
+  type DataLocale,
   getGlossaryTerm,
   getSkill,
   getSpecialRule,
@@ -33,10 +34,14 @@ export interface ResolvedRef {
 
 /**
  * Resolve a `[[key]]` reference across the data catalogues (skill, glossary
- * term, special rule, star ability), or `undefined` when nothing matches.
+ * term, special rule, star ability) in the given locale, or `undefined` when
+ * nothing matches.
  */
-export function resolveRef(key: string): ResolvedRef | undefined {
-  const skill = getSkill(key)
+export function resolveRef(
+  key: string,
+  locale: DataLocale = 'en'
+): ResolvedRef | undefined {
+  const skill = getSkill(key, locale)
   if (skill) {
     return {
       key,
@@ -47,7 +52,7 @@ export function resolveRef(key: string): ResolvedRef | undefined {
       tone: 'skill',
     }
   }
-  const term = getGlossaryTerm(key)
+  const term = getGlossaryTerm(key, locale)
   if (term) {
     return {
       key,
@@ -57,7 +62,7 @@ export function resolveRef(key: string): ResolvedRef | undefined {
       tone: 'term',
     }
   }
-  const rule = getSpecialRule(key)
+  const rule = getSpecialRule(key, locale)
   if (rule) {
     return {
       key,
@@ -67,7 +72,7 @@ export function resolveRef(key: string): ResolvedRef | undefined {
       tone: 'rule',
     }
   }
-  const ability = getStarAbility(key)
+  const ability = getStarAbility(key, locale)
   if (ability) {
     return {
       key,

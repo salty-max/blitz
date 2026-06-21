@@ -1,3 +1,4 @@
+import { useDataLocale } from '@/i18n/use-data-locale'
 import { resolveRef } from '@/lib/resolve-ref'
 import { useRefDrawer } from '@/reference/ref-drawer'
 import { Chip, cn } from '@/ui'
@@ -16,6 +17,7 @@ export function RefChips({
   className?: string
 }) {
   const { openRef } = useRefDrawer()
+  const locale = useDataLocale()
   return (
     <div className={cn('flex flex-wrap gap-1.5', className)}>
       {keys.map((key) => (
@@ -26,7 +28,7 @@ export function RefChips({
           variant={tone === 'accent' ? 'accent' : 'outline'}
         >
           <button type="button" onClick={() => openRef(key)}>
-            {resolveRef(key)?.name ?? key}
+            {resolveRef(key, locale)?.name ?? key}
           </button>
         </Chip>
       ))}

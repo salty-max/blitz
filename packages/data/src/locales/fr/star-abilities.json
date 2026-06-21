@@ -1,0 +1,312 @@
+[
+  {
+    "key": "a-sneaky-pair",
+    "name": "Un Duo Sournois",
+    "effect": "Dribl et Drull doivent être recrutés en duo. De plus, chaque fois que Dribl ou Drull effectue une Action d'Agression ou une Action Spéciale de Poignard contre un joueur adverse Marqué à la fois par Dribl et Drull, ils peuvent appliquer un modificateur de +1 au jet. Le bloc de caractéristiques ci-dessus est le premier membre, Dribl (MA 8, ST 2, AG 3+, PA 4+, AV 8+ ; compétences : Joueur Vicieux, Esquive, Solitaire (4+), Agression Rapide, Pas de Côté, Sournois, Minus). Second membre Drull : MA 8, ST 2, AG 3+, PA 4+, AV 8+ ; compétences : Esquive, Solitaire (4+), Pas de Côté, Poignard, Minus."
+  },
+  {
+    "key": "all-you-can-eat",
+    "name": "À Volonté",
+    "effect": "Une fois par match, Cindy peut effectuer deux Actions Spéciales de Lancer de Bombe au lieu d'une ; mais elle doit s'y engager avant d'effectuer la première Action. Si elle le fait, immédiatement après avoir effectué la seconde Action Spéciale de Lancer de Bombe, lancez un D6. Sur 1-3, Cindy est immédiatement Expulsée."
+  },
+  {
+    "key": "baleful-hex",
+    "name": "Maléfice Funeste",
+    "effect": "Une fois par match, au début de l'activation d'Estelle, elle peut sélectionner un joueur adverse à 5 cases ou moins et lancer un D6. Sur 2+, le joueur sélectionné devient Distrait et ne peut pas être activé pendant le prochain Tour de son équipe."
+  },
+  {
+    "key": "beer-barrel-bash",
+    "name": "Coup de Tonneau",
+    "effect": "Une fois par Phase, au début de son activation, Thorsson peut sélectionner un joueur adverse à trois cases ou moins et lancer un D6. Sur 3+, le joueur sélectionné est immédiatement Mis à Terre. Sur 2, rien ne se passe. Sur 1, Thorsson Tombe. Après avoir utilisé cette règle spéciale, l'activation de Thorsson se termine immédiatement."
+  },
+  {
+    "key": "black-ink",
+    "name": "Encre Noire",
+    "effect": "Une fois par match, au début de l'une de ses activations, Kiroth peut sélectionner un joueur adverse qu'il Marque. Le joueur sélectionné devient Distrait jusqu'à sa prochaine activation."
+  },
+  {
+    "key": "blast-it",
+    "name": "Fais Tout Péter !",
+    "effect": "Chaque fois que Barik effectue une Passe Désespérée, il peut relancer les résultats de Déviation pour déterminer où le ballon atterrit, et tout coéquipier tentant de réceptionner le ballon applique un modificateur de +1 au jet."
+  },
+  {
+    "key": "blastin-solves-everything",
+    "name": "Tout se Règle à l'Explosif",
+    "effect": "Une fois par mi-temps, au début de son activation, Zzharg peut sélectionner un joueur adverse Debout à 3 cases ou moins et lancer un D6. Sur 3+, le joueur sélectionné est touché. Sur 2, le coach adverse sélectionne un joueur (de l'une ou l'autre équipe, mais pas Zzharg) à 3 cases ou moins du joueur initialement sélectionné pour être touché à la place. Sur 1, Zzharg est touché à la place. Effectuez un Jet d'Armure pour le joueur touché. L'activation de Zzharg se termine alors immédiatement."
+  },
+  {
+    "key": "blind-rage",
+    "name": "Rage Aveugle",
+    "effect": "Akhorne peut choisir de relancer le D6 lorsqu'il lance pour la compétence Téméraire."
+  },
+  {
+    "key": "catch-of-the-day",
+    "name": "Prise du Jour",
+    "effect": "Une fois par mi-temps, si Rodney est Debout et commence son activation à 3 cases ou moins d'un ballon au sol, il peut lancer un D6. Sur 1-2, rien ne se passe. Sur 3+, Rodney prend immédiatement possession du ballon."
+  },
+  {
+    "key": "consummate-professional",
+    "name": "Professionnel Accompli",
+    "effect": "Une fois par match, Griff peut appliquer un modificateur de +1 à un Test d'Agilité qu'il a effectué. Ce modificateur peut être appliqué après que le jet a été effectué."
+  },
+  {
+    "key": "crushing-blow",
+    "name": "Coup Écrasant",
+    "effect": "Une fois par match, lorsqu'un joueur adverse est Mis à Terre suite à une Action de Blocage effectuée par Zug, vous pouvez appliquer un modificateur supplémentaire de +1 au Jet d'Armure. Ce modificateur peut être appliqué après que le Jet d'Armure a été effectué."
+  },
+  {
+    "key": "dwarfen-grit",
+    "name": "Cran Nain",
+    "effect": "Une fois par match, lorsque l'armure de Josef est percée suite à un Jet d'Armure, vous pouvez choisir de faire relancer le Jet d'Armure."
+  },
+  {
+    "key": "dwarven-scourge",
+    "name": "Fléau des Nains",
+    "effect": "Une fois par match, lorsqu'un joueur adverse est Mis à Terre suite à une Action de Blocage effectuée par Ivan, vous pouvez appliquer un modificateur supplémentaire de +1 au Jet d'Armure ou au Jet de Blessure. Si c'est contre un joueur Nain, ce modificateur peut être de +2 à la place."
+  },
+  {
+    "key": "excuse-me-are-you-a-zoat",
+    "name": "Excusez-moi, êtes-vous un Zoat ?",
+    "effect": "Une fois par match, lorsque Zolcath est activé, il peut sélectionner un joueur adverse à 3 cases ou moins. Le joueur sélectionné devient immédiatement Distrait."
+  },
+  {
+    "key": "frenzied-rush",
+    "name": "Ruée Frénétique",
+    "effect": "Une fois par mi-temps, lorsque Glart déclare une Action de Blitz, il peut acquérir la compétence Frénésie jusqu'à la fin de son activation. Glart ne peut pas utiliser la compétence Coup de Crampons pendant un Tour où il utilise cette règle spéciale."
+  },
+  {
+    "key": "furious-outburst",
+    "name": "Accès de Fureur",
+    "effect": "Une fois par mi-temps, tant qu'elle est Debout au début de son activation, Swiftvine peut se placer adjacente à un joueur adverse Debout à 3 cases ou moins d'elle et effectuer immédiatement une Action Spéciale de Poignard contre lui. Elle peut alors se placer dans une case inoccupée à 3 cases ou moins de sa nouvelle position. Son activation se termine alors immédiatement. Cela compte comme l'Action de Blitz de l'équipe pour ce tour."
+  },
+  {
+    "key": "fury-of-the-blood-god",
+    "name": "Fureur du Dieu du Sang",
+    "effect": "Une fois par match, si Scyla obtient un 1 à son jet de Fureur Débridée après avoir déclaré une Action de Blocage, alors, au lieu d'appliquer les effets habituels de la Fureur Débridée, Scyla peut effectuer deux Actions de Blocage à la place. La première Action de Blocage doit être entièrement résolue, y compris l'utilisation de la compétence Frénésie, avant que la seconde ne soit effectuée."
+  },
+  {
+    "key": "gored-by-the-bull",
+    "name": "Encorné par le Taureau",
+    "effect": "Une fois par match, lorsque Grashnak effectue une Action de Blocage dans le cadre d'une Action de Blitz, il peut lancer un Dé de Blocage supplémentaire contre le joueur adverse quelle que soit sa ST, jusqu'à un maximum de trois Dés de Blocage."
+  },
+  {
+    "key": "halfling-luck",
+    "name": "Chance de Halfling",
+    "effect": "Une fois par match, Puggy peut relancer un seul dé qui a été lancé soit comme un jet de dé unique, un jet de plusieurs dés, ou une réserve de dés, à condition que ce ne soit pas un dé lancé dans le cadre d'un Jet d'Armure, d'un Jet de Blessure ou d'un Jet de Gravité."
+  },
+  {
+    "key": "ill-be-back",
+    "name": "Je Reviendrai !",
+    "effect": "La première fois dans un match où Kreek serait Expulsé en raison du Trait Arme Secrète, il n'est pas Expulsé et peut au contraire continuer à participer au match. Le coach de Kreek ne peut pas Contester la Décision lorsque Kreek utilise cette règle spéciale."
+  },
+  {
+    "key": "ill-carry-you",
+    "name": "Je Vais te Porter",
+    "effect": "Une fois par mi-temps, si Grak commence son activation adjacent à Crumbleberry, il peut ramasser Crumbleberry ; retirez temporairement Crumbleberry du terrain et, à la fin de l'activation de Grak, placez Crumbleberry dans une case inoccupée adjacente à Grak. Tant que Crumbleberry est porté par Grak, Grak acquiert les compétences Percée et Esquive. Le bloc de caractéristiques ci-dessus est le premier membre, Grak (MA 5, ST 5, AG 4+, PA 4+, AV 10+ ; compétences : Tête de Pioche, Lancer de Coéquipier, Solitaire (4+), Châtaigne, Crâne Épais). Second membre Crumbleberry : MA 5, ST 2, AG 3+, PA 5+, AV 7+ ; compétences : Esquive, Vol Mortel, Solitaire (4+), Projectile Vivant, Minus, Mains Sûres. Joue pour tous les types d'équipes (la page liste tous les mots-clés de ligue)."
+  },
+  {
+    "key": "incorporeal",
+    "name": "Incorporel",
+    "effect": "La forme spectrale de Gretchen lui permet de se libérer des zones de tacle adverses sans effectuer les jets d'Esquive habituels."
+  },
+  {
+    "key": "indomitable",
+    "name": "Indomptable",
+    "effect": "Une fois par match, lorsque Karla réussit un jet pour utiliser sa compétence Téméraire, elle peut augmenter sa caractéristique de ST jusqu'au double de celle de la cible de l'Action de Blocage."
+  },
+  {
+    "key": "kaboom",
+    "name": "Boum !",
+    "effect": "Une fois par match, si un joueur adverse réceptionne une bombe lancée par Bomber, vous pouvez choisir de la faire exploser au lieu que le joueur adverse tente immédiatement de la relancer."
+  },
+  {
+    "key": "kick-em-while-theyre-down",
+    "name": "Achève-le à Terre !",
+    "effect": "Une fois par match, Nobbla peut utiliser l'Action Spéciale d'Attaque à la Tronçonneuse contre un joueur adverse à Terre ou Sonné. Cela ne compte pas comme une Action d'Agression, et Nobbla ne peut donc pas être Expulsé lorsqu'il utilise cette règle spéciale."
+  },
+  {
+    "key": "krump-and-smash",
+    "name": "Cogne et Fracasse",
+    "effect": "Une fois par match, lorsqu'un joueur adverse est Mis à Terre suite à une Action de Blocage effectuée par Varag, il peut relancer le Jet d'Armure."
+  },
+  {
+    "key": "look-into-my-eyes",
+    "name": "Regarde-moi dans les Yeux",
+    "effect": "Une fois par match, si Boa commence son activation en Marquant un joueur adverse en possession du ballon, il peut lancer un D6. Sur 1, rien ne se passe. Sur 2+, le joueur adverse perd la possession du ballon, Boa prend immédiatement possession du ballon, et l'activation de Boa se termine immédiatement."
+  },
+  {
+    "key": "lord-of-chaos",
+    "name": "Seigneur du Chaos",
+    "effect": "Une fois par match, lorsque Lord Borak effectue une Action de Blocage, il peut relancer un seul Dé de Blocage."
+  },
+  {
+    "key": "master-assassin",
+    "name": "Maître Assassin",
+    "effect": "Une fois par match, lorsque Skitter effectue une Action Spéciale de Poignard, il peut choisir de relancer le Jet d'Armure."
+  },
+  {
+    "key": "maximum-carnage",
+    "name": "Carnage Maximal",
+    "effect": "Une fois par match, après que Max a effectué une Action Spéciale d'Attaque à la Tronçonneuse, il peut immédiatement effectuer une autre Action Spéciale d'Attaque à la Tronçonneuse ciblant un joueur adverse différent."
+  },
+  {
+    "key": "mesmerising-dance",
+    "name": "Danse Envoûtante",
+    "effect": "Une fois par mi-temps, Eldril peut relancer le dé lorsqu'il effectue une Action Spéciale de Regard Hypnotique."
+  },
+  {
+    "key": "old-pro",
+    "name": "Vieux Briscard",
+    "effect": "Une fois par match, Helmut peut utiliser sa compétence Pro pour relancer un seul dé lancé dans le cadre d'un Jet d'Armure."
+  },
+  {
+    "key": "primal-savagery",
+    "name": "Sauvagerie Primale",
+    "effect": "Une fois par match, lorsque Glotl rate un jet de Bestialité, il peut s'en prendre à un joueur adverse plutôt qu'à un coéquipier."
+  },
+  {
+    "key": "pump-up-the-crowd",
+    "name": "Chauffe la Foule",
+    "effect": "Une fois par match, lorsque Skrorg fait retirer un joueur adverse comme Blessure suite à une Action de Blocage, le coach contrôlant Skrorg gagne une Relance d'Équipe jusqu'à la fin de la Phase en cours. Si la Relance n'a pas été utilisée à la fin de la Phase, elle est perdue."
+  },
+  {
+    "key": "putrid-regurgitation",
+    "name": "Régurgitation Putride",
+    "effect": "Une fois par mi-temps, Bilerot peut utiliser l'Action Spéciale de Vomi Projeté. Cela peut être utilisé même si Bilerot a déjà effectué une Action de Blocage ce tour-ci."
+  },
+  {
+    "key": "quick-bite",
+    "name": "Morsure Rapide",
+    "effect": "Une fois par match, si Guffle Marque un joueur adverse qui réceptionne le ballon, il peut immédiatement effectuer un Jet d'Armure contre ce joueur. Si l'Armure de la cible est percée, Guffle prend immédiatement possession du ballon. Aucun revirement n'est causé par l'utilisation de cette règle spéciale."
+  },
+  {
+    "key": "raiding-party",
+    "name": "Raid",
+    "effect": "Une fois par Phase, lorsqu'Ivar commence son activation, il peut sélectionner un coéquipier Démarqué à 5 cases ou moins. Le joueur sélectionné peut immédiatement se déplacer d'1 case, mais il doit terminer ce déplacement en Marquant un joueur adverse."
+  },
+  {
+    "key": "ram",
+    "name": "Bélier",
+    "effect": "Une fois par match, lorsqu'un joueur adverse est Mis à Terre suite à une Action de Blocage effectuée par Rumbelow, vous pouvez appliquer un modificateur supplémentaire de +1 soit au Jet d'Armure, soit au Jet de Blessure."
+  },
+  {
+    "key": "reliable",
+    "name": "Fiable",
+    "effect": "Si Deeproot effectue un Lancer Raté en effectuant une Action de Lancer de Coéquipier, le joueur lancé Rebondira normalement mais atterrira automatiquement sans dommage."
+  },
+  {
+    "key": "savage-blow",
+    "name": "Coup Sauvage",
+    "effect": "Une fois par match, lorsqu'Anqi effectue une Action de Blocage contre un joueur adverse, il peut choisir de relancer n'importe quel nombre de Dés de Blocage."
+  },
+  {
+    "key": "savage-mauling",
+    "name": "Mutilation Sauvage",
+    "effect": "Une fois par match, lorsque Wilhelm effectue un Jet de Blessure contre un joueur adverse, il peut choisir de relancer le résultat."
+  },
+  {
+    "key": "shot-to-nothing",
+    "name": "Coup de Poker",
+    "effect": "Une fois par match, lorsque Gloriel est activée, elle peut utiliser cette règle spéciale ; si elle le fait, Gloriel acquiert la compétence Passe Désespérée jusqu'à la fin de son activation."
+  },
+  {
+    "key": "slashing-nails",
+    "name": "Griffes Lacérantes",
+    "effect": "Une fois par mi-temps, lorsque Roxanna déclare une Action de Blitz, elle acquiert la compétence Griffes jusqu'à la fin de son activation."
+  },
+  {
+    "key": "slayer",
+    "name": "Tueur",
+    "effect": "Une fois par match, lorsqu'un Gros Bras adverse est Mis à Terre suite à une Action de Blocage effectuée par Grim, vous pouvez appliquer un modificateur supplémentaire de +1 soit au Jet d'Armure, soit au Jet de Blessure. Ce modificateur peut être appliqué après que le jet a été effectué."
+  },
+  {
+    "key": "sneakiest-of-the-lot",
+    "name": "Le Plus Sournois de Tous",
+    "effect": "Si votre équipe inclut le Black Gobbo, alors vous pouvez déclarer deux Actions d'Agression par Tour au lieu d'une seule habituellement. Cependant, l'une de ces Actions d'Agression doit être déclarée par le Black Gobbo lui-même."
+  },
+  {
+    "key": "star-of-the-show",
+    "name": "Vedette du Spectacle",
+    "effect": "Une fois par match, lorsque le Comte Luthor marque un Touchdown, le coach qui le contrôle gagne une Relance d'Équipe jusqu'à la fin de la Phase suivante. Si cette Relance d'Équipe n'a pas été utilisée à la fin de la Phase suivante, elle est perdue."
+  },
+  {
+    "key": "strong-passing-game",
+    "name": "Jeu de Passes Puissant",
+    "effect": "Une fois par match, lorsque Skrull effectue une Action de Passe, il peut modifier le résultat du Test de Capacité de Passe de la valeur de sa caractéristique de ST, jusqu'à un maximum de 6."
+  },
+  {
+    "key": "swift-as-the-breeze",
+    "name": "Rapide comme la Brise",
+    "effect": "Une fois par match, Jordell peut choisir de réussir un seul Test d'Esquive, de Saut ou de Sprint sur 2+, quels que soient les modificateurs."
+  },
+  {
+    "key": "tasty-morsel",
+    "name": "Morceau de Choix",
+    "effect": "Une fois par match, lorsque Karina rate un jet de Soif de Sang, elle peut choisir de mordre un joueur adverse ayant une ST de 3 ou moins comme s'il s'agissait d'un coéquipier Serf Linéman. Karina ne peut pas mordre de Joueurs Vedettes avec cette règle spéciale."
+  },
+  {
+    "key": "the-ballista",
+    "name": "La Baliste",
+    "effect": "Une fois par match, lorsque Morg effectue une Action de Lancer de Coéquipier, il peut relancer le Test de Capacité de Passe."
+  },
+  {
+    "key": "the-flashing-blade",
+    "name": "La Lame Étincelante",
+    "effect": "Une fois par match, au début de son activation, Jeremiah peut déclarer une Action Spéciale de Poignard contre un joueur adverse qu'il Marque. Après avoir effectué l'Action Spéciale de Poignard, Jeremiah peut alors effectuer une Action de Mouvement avant que son activation ne se termine."
+  },
+  {
+    "key": "thinking-mans-troll",
+    "name": "Le Troll Réfléchi",
+    "effect": "Une fois par mi-temps, Ripper peut relancer un seul dé qui a été lancé soit comme un jet de dé unique, un jet de plusieurs dés, ou une réserve de dés, à condition que ce ne soit pas un dé lancé dans le cadre d'un Jet d'Armure, d'un Jet de Blessure ou d'un Jet de Gravité."
+  },
+  {
+    "key": "toxin-connoisseur",
+    "name": "Connaisseur en Toxines",
+    "effect": "Une fois par match, lorsque Rashnak perce avec succès l'armure d'un joueur adverse suite à une Action Spéciale de Poignard, vous pouvez appliquer un modificateur supplémentaire de +1 au Jet de Blessure. Ce modificateur peut être appliqué après que le jet a été effectué."
+  },
+  {
+    "key": "treacherous",
+    "name": "Traître",
+    "effect": "Une fois par match, si Hakflem est adjacent à un coéquipier en possession du ballon lorsqu'il est activé, alors Hakflem peut choisir de prendre possession du ballon. S'il le fait, le coéquipier est immédiatement Mis à Terre. Cela ne causera pas de revirement même si le coéquipier subit une Blessure."
+  },
+  {
+    "key": "unstoppable-momentum",
+    "name": "Élan Irrésistible",
+    "effect": "Chaque fois que H'thark effectue une Action de Blocage dans le cadre d'une Action de Blitz, il peut relancer un seul Dé de Blocage."
+  },
+  {
+    "key": "vicious-vines",
+    "name": "Lianes Vicieuses",
+    "effect": "Une fois par mi-temps, lorsque Maple déclare une Action de Blocage, il peut le faire contre un joueur adverse situé à 2 cases en suivant toutes les règles normales pour effectuer une Action de Blocage, mais il ne peut pas suivre le mouvement."
+  },
+  {
+    "key": "watch-out",
+    "name": "Attention !",
+    "effect": "La première fois à chaque Phase où Withergrasp est la cible d'une Action de Blocage effectuée par un joueur adverse, il est considéré comme ayant la compétence Esquive."
+  },
+  {
+    "key": "whirling-dervish",
+    "name": "Derviche Tourneur",
+    "effect": "Une fois par Activation, Fungus peut relancer le D6 pour déterminer dans quelle direction il se déplace."
+  },
+  {
+    "key": "wisdom-of-the-white-dwarf",
+    "name": "Sagesse du Nain Blanc",
+    "effect": "Une fois par match, lorsque Grombrindal est activé, il peut sélectionner un coéquipier à 2 cases ou moins. Le coéquipier sélectionné acquiert l'une des compétences suivantes jusqu'à la fin du tour : Percée, Téméraire, Châtaigne, Équilibre."
+  },
+  {
+    "key": "woodland-fury",
+    "name": "Fureur Sylvestre",
+    "effect": "Une fois par match, lorsque Willow effectue une Action de Blocage qui la Mettrait à Terre, elle peut choisir de relancer un seul Dé de Blocage."
+  },
+  {
+    "key": "working-in-tandem",
+    "name": "En Tandem",
+    "effect": "Les Jumeaux Swift doivent être recrutés en duo. Lucien : si Lucien effectue une Action de Blocage contre un joueur adverse également Marqué par Valen, Lucien peut relancer un seul Dé de Blocage. Valen : si Valen effectue une Action de Passe ciblant une case contenant Lucien, Valen ne subit aucun modificateur au test de PA pour la portée de l'Action de Passe."
+  },
+  {
+    "key": "yoink",
+    "name": "Chipé !",
+    "effect": "Une fois par match, lorsque Scrappa tente d'Intercepter une Action de Passe, il peut lancer un D6. Sur 2+, Scrappa n'a pas besoin d'Intercepter ; au contraire, il Interceptera automatiquement l'Action de Passe et prend le contrôle du ballon."
+  }
+]

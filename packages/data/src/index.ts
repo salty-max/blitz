@@ -1,5 +1,6 @@
 export { casualties, getCasualty } from './casualties'
-export { getGlossaryTerm, glossary } from './glossary'
+export { getGlossary, getGlossaryTerm, glossary } from './glossary'
+export type { DataLocale } from './i18n'
 export { getInducement, inducements } from './inducements'
 export { getInjury, injuries } from './injuries'
 export * from './keys.gen'
@@ -15,9 +16,13 @@ export {
   teamsForStar,
   teamSpecialRules,
 } from './relations'
-export { getSkill, skills } from './skills'
-export { getSpecialRule, specialRules } from './special-rules'
-export { getStarAbility, starAbilities } from './star-abilities'
+export { getSkill, getSkills, skills } from './skills'
+export { getSpecialRule, getSpecialRules, specialRules } from './special-rules'
+export {
+  getStarAbilities,
+  getStarAbility,
+  starAbilities,
+} from './star-abilities'
 export { getStarPlayer, starPlayers } from './star-players'
 export { teamBuildingRules } from './team-building'
 export { getTeam, teams } from './teams'

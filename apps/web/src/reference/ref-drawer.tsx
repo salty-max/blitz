@@ -9,6 +9,7 @@ import {
 } from 'react'
 import { useTranslation } from 'react-i18next'
 
+import { useDataLocale } from '@/i18n/use-data-locale'
 import { type RefTone, resolveRef } from '@/lib/resolve-ref'
 import { RefText } from '@/reference/ref-text'
 import { Chip, type ChipProps, Sheet } from '@/ui'
@@ -39,6 +40,7 @@ export function useRefDrawer(): RefDrawerValue {
 /** Provides the click-to-open rule/term side-drawer for the whole codex. */
 export function RefDrawerProvider({ children }: { children: ReactNode }) {
   const { t } = useTranslation('ref')
+  const locale = useDataLocale()
   const [stack, setStack] = useState<string[]>([])
 
   const openRef = useCallback((key: string) => {
@@ -52,7 +54,7 @@ export function RefDrawerProvider({ children }: { children: ReactNode }) {
 
   const value = useMemo(() => ({ openRef }), [openRef])
   const currentKey = stack.at(-1)
-  const resolved = currentKey ? resolveRef(currentKey) : undefined
+  const resolved = currentKey ? resolveRef(currentKey, locale) : undefined
 
   return (
     <RefDrawerContext.Provider value={value}>

@@ -1,6 +1,7 @@
 import { parseRefs } from '@blitz/schema'
 import { Fragment } from 'react'
 
+import { useDataLocale } from '@/i18n/use-data-locale'
 import { type RefTone, resolveRef } from '@/lib/resolve-ref'
 import { useRefDrawer } from '@/reference/ref-drawer'
 
@@ -24,13 +25,14 @@ const refToneClass: Record<RefTone, string> = {
  */
 export function RefText({ children }: { children: string }) {
   const { openRef } = useRefDrawer()
+  const locale = useDataLocale()
 
   return (
     <>
       {parseRefs(children).map((segment, index) => {
         if (segment.kind === 'text')
           return <Fragment key={index}>{segment.text}</Fragment>
-        const ref = resolveRef(segment.key)
+        const ref = resolveRef(segment.key, locale)
         return (
           <button
             key={index}
