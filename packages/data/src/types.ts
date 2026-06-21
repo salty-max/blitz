@@ -7,6 +7,7 @@ import type {
   LastingInjury as RawLastingInjury,
   Position as RawPosition,
   Prayer as RawPrayer,
+  RuleTopic as RawRuleTopic,
   Skill as RawSkill,
   SpecialRule as RawSpecialRule,
   StarAbility as RawStarAbility,
@@ -23,6 +24,7 @@ import type {
   KickoffEventKey,
   LastingInjuryKey,
   PrayerKey,
+  RuleTopicKey,
   SkillKey,
   SpecialRuleKey,
   StarAbilityKey,
@@ -99,3 +101,6 @@ export type KickoffEvent = Omit<RawKickoffEvent, 'key'> & {
 
 /** A Weather result. */
 export type Weather = Omit<RawWeather, 'key'> & { key: WeatherKey }
+
+/** A rulebook topic; its sections' prose may carry `[[key]]` references. */
+export type RuleTopic = Omit<RawRuleTopic, 'key'> & { key: RuleTopicKey }

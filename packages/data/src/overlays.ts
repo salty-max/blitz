@@ -6,6 +6,7 @@ import frInjuries from './locales/fr/injuries.json'
 import frKickoffEvents from './locales/fr/kickoff-events.json'
 import frLastingInjuries from './locales/fr/lasting-injuries.json'
 import frPrayers from './locales/fr/prayers.json'
+import frRuleTopics from './locales/fr/rule-topics.json'
 import frSkills from './locales/fr/skills.json'
 import frSpecialRules from './locales/fr/special-rules.json'
 import frStarAbilities from './locales/fr/star-abilities.json'
@@ -69,5 +70,24 @@ export const teamOverlays: Partial<
 > = {
   fr: new Map(
     (frTeams as unknown as TeamOverlay[]).map((team) => [team.key, team])
+  ),
+}
+
+/** A rule topic's locale overlay — its title, summary and per-section heading/body. */
+export type RuleTopicOverlay = {
+  key: string
+  title?: string
+  summary?: string
+  sections?: { key: string; heading?: string; body?: string }[]
+}
+
+export const ruleTopicOverlays: Partial<
+  Record<DataLocale, Map<string, RuleTopicOverlay>>
+> = {
+  fr: new Map(
+    (frRuleTopics as unknown as RuleTopicOverlay[]).map((topic) => [
+      topic.key,
+      topic,
+    ])
   ),
 }

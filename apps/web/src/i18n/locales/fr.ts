@@ -98,6 +98,7 @@ export const fr = {
       injuries: 'Blessures',
       prayers: 'Prières',
       glossary: 'Glossaire',
+      rulebook: 'Règles du jeu',
     },
     rollTable: {
       roll: 'Jet',
@@ -187,6 +188,10 @@ export const fr = {
     },
     glossary: {
       heading: 'Glossaire',
+    },
+    rulebook: {
+      heading: 'Règles du jeu',
+      notFound: 'Aucun sujet trouvé.',
     },
   },
 } as const

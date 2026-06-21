@@ -1,0 +1,76 @@
+[
+  {
+    "key": "core-game",
+    "title": "Règles de base",
+    "summary": "Le déroulement d’un tour, les actions possibles et les tests de mouvement de base.",
+    "sections": [
+      {
+        "key": "turn-structure",
+        "heading": "Structure du tour & turnovers",
+        "body": "Les joueurs s’activent un par un ; chacun déclare une Action, la résout, puis le suivant peut s’activer — jusqu’à ce que tous ceux qui le souhaitent aient agi, ou qu’un [[turnover|Turnover]] mette fin au tour. Un Turnover (qui fait perdre leur activation aux joueurs pas encore activés) est causé, entre autres, par : un ramassage raté, une [[pass|Passe]] ratée ou interceptée, le ballon finissant chez l’adversaire, ou un joueur actif poussé dans la foule ou expulsé."
+      },
+      {
+        "key": "player-actions",
+        "heading": "Actions du joueur",
+        "body": "Un joueur effectue exactement une Action par activation. Mouvement et [[block|Blocage]] sont illimités ; limitées à une fois par tour d’équipe : les actions [[blitz|Blitz]], Passe, Transmission, [[foul|Agression]], Lancer de coéquipier et Sécuriser le ballon."
+      },
+      {
+        "key": "movement",
+        "heading": "Mouvement",
+        "body": "Un joueur peut se déplacer jusqu’à son MA en cases, une à la fois, dans n’importe quelle direction (diagonales comprises). Le mouvement simple ne demande aucun jet ; un joueur ne peut pas entrer sur une case occupée ni quitter le terrain volontairement."
+      },
+      {
+        "key": "rushing",
+        "heading": "Foncer",
+        "body": "Pour dépasser son MA, chaque case supplémentaire est un [[rush|Foncer]] : lancez 2+ (un 1 naturel fait tomber et met fin à l’activation). Deux Foncers au maximum par activation. Si une case demande à la fois un Foncer et une [[dodge|Esquive]], le Foncer est lancé en premier."
+      },
+      {
+        "key": "dodging",
+        "heading": "Esquive",
+        "body": "Quitter une case où le joueur est [[marked|Marqué]] demande une Esquive — un test d’agilité contre l’AG, avec −1 par adversaire qui marque la case d’arrivée. Réussite : le joueur se déplace et reste debout, et peut continuer. Échec : il tombe sur la case cible — un [[turnover|Turnover]] s’il portait le ballon."
+      },
+      {
+        "key": "picking-up",
+        "heading": "Ramasser le ballon",
+        "body": "Entrer sur la case du ballon pendant un Mouvement est un test d’agilité, −1 par adversaire qui [[marked|marque]] le ramasseur ; un échec est un [[turnover|Turnover]] et le ballon rebondit. L’action Sécuriser le ballon (nouveauté Troisième Saison) permet à un joueur à l’écart des adversaires de faire un mouvement gratuit jusqu’au ballon et de lancer 2+ pour le ramasser automatiquement (un 1 naturel est un Turnover) — un ramassage fiable pour les équipes à faible AG."
+      },
+      {
+        "key": "standing-up",
+        "heading": "Se relever",
+        "body": "Se relever d’une position [[prone|À terre]] coûte 3 cases de MA avant toute autre chose. Un joueur avec MA 2 ou moins lance plutôt : 4+ pour se relever (en y consacrant tout son mouvement) ; sur 1–3 il reste à terre et l’activation prend fin."
+      }
+    ]
+  },
+  {
+    "key": "the-drive",
+    "title": "Le déroulement",
+    "summary": "Zones de tacle, états des joueurs, marquer, la structure des tours et la récupération des K.O.",
+    "sections": [
+      {
+        "key": "tackle-zones",
+        "heading": "Zones de tacle & marquage",
+        "body": "Un joueur debout projette une [[tackle-zone|zone de tacle]] sur les huit cases autour de lui. Un joueur debout dans la zone de tacle d’un adversaire est [[marked|Marqué]] — c’est ce qui force une [[dodge|Esquive]] pour quitter la case et ajoute les malus de −1 par marqueur aux ramassages, passes et réceptions. Les joueurs [[prone|À terre]] et [[stunned|Sonné]] n’ont pas de zone de tacle."
+      },
+      {
+        "key": "player-states",
+        "heading": "États des joueurs",
+        "body": "Debout — agit normalement.\nÀ terre — mis à terre, face visible ; ne peut pas agir ; se relève pour 3 MA (4+ à MA ≤ 2) ; pas de zone de tacle.\nSonné — face cachée ; ne peut pas être activé ; retourné face visible en [[prone|À terre]] à la fin du tour de son équipe.\nDistrait — ne peut ni réceptionner ni donner d’[[assist|aides]] ; redevient Debout à la fin du tour de son équipe."
+      },
+      {
+        "key": "scoring",
+        "heading": "Marquer un touchdown",
+        "body": "Un joueur debout porteur du ballon qui termine un mouvement dans la zone d’en-but adverse marque. La phase de jeu s’achève aussitôt, les deux équipes se replacent, et l’équipe qui vient de marquer donne le coup d’envoi pour reprendre."
+      },
+      {
+        "key": "structure",
+        "heading": "Phases, tours & mi-temps",
+        "body": "Un match compte 2 mi-temps. Chaque mi-temps fait 8 rounds ; un round est 2 tours (un par coach) — 8 tours par équipe et par mi-temps, 16 par match. Une phase de jeu va d’un coup d’envoi jusqu’à un touchdown ou la fin de la mi-temps."
+      },
+      {
+        "key": "ko-recovery",
+        "heading": "Récupération des K.O.",
+        "body": "À la fin de chaque phase de jeu, chaque coach lance un D6 pour chaque joueur K.O. dans ses réserves ; sur 4+ le joueur récupère et est disponible à la phase suivante (certains coups de pouce et la météo modifient le jet)."
+      }
+    ]
+  }
+]

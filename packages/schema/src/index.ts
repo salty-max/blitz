@@ -7,6 +7,12 @@ export { type LastingInjury, lastingInjurySchema } from './lasting-injury'
 export { type Prayer, prayerSchema } from './prayer'
 export { parseRefs, refKeys, type RefSegment } from './refs'
 export {
+  type RuleSection,
+  ruleSectionSchema,
+  type RuleTopic,
+  ruleTopicSchema,
+} from './rule-topic'
+export {
   type Skill,
   type SkillCategory,
   skillCategorySchema,

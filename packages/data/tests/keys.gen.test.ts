@@ -13,6 +13,8 @@ import {
   lastingInjuries,
   PRAYER_KEYS,
   prayers,
+  RULE_TOPIC_KEYS,
+  ruleTopics,
   SKILL_KEYS,
   skills,
   SPECIAL_RULE_KEYS,
@@ -43,6 +45,7 @@ describe('generated key unions (keys.gen.ts)', () => {
     ['prayers', PRAYER_KEYS, prayers],
     ['kick-off events', KICKOFF_EVENT_KEYS, kickoffEvents],
     ['weather', WEATHER_KEYS, weather],
+    ['rule topics', RULE_TOPIC_KEYS, ruleTopics],
   ]
 
   for (const [name, keys, data] of cases) {
