@@ -9,6 +9,7 @@ import {
   kickoffEvents,
   lastingInjuries,
   prayers,
+  ruleTopics,
   skills,
   specialRules,
   starAbilities,
@@ -25,6 +26,7 @@ import frInjuries from '../src/locales/fr/injuries.json'
 import frKickoff from '../src/locales/fr/kickoff-events.json'
 import frLasting from '../src/locales/fr/lasting-injuries.json'
 import frPrayers from '../src/locales/fr/prayers.json'
+import frRuleTopics from '../src/locales/fr/rule-topics.json'
 import frSkills from '../src/locales/fr/skills.json'
 import frRules from '../src/locales/fr/special-rules.json'
 import frAbilities from '../src/locales/fr/star-abilities.json'
@@ -114,6 +116,58 @@ describe('French data overlays', () => {
       }
     }
     expect(missing).toEqual([])
+  })
+
+  test('rule topics: the fr overlay covers every topic and section key', () => {
+    const overlay = frRuleTopics as ReadonlyArray<{
+      key: string
+      sections?: { key: string }[]
+    }>
+    const byKey = new Map(overlay.map((t) => [t.key, t]))
+    expect([...byKey.keys()].sort()).toEqual(
+      [...ruleTopics.map((t) => t.key)].sort()
+    )
+    const missing: string[] = []
+    for (const topic of ruleTopics) {
+      const covered = new Set(
+        (byKey.get(topic.key)?.sections ?? []).map((s) => s.key)
+      )
+      for (const section of topic.sections) {
+        if (!covered.has(section.key))
+          missing.push(`${topic.key}/${section.key}`)
+      }
+    }
+    expect(missing).toEqual([])
+  })
+
+  test('rule topics: every section cross-reference resolves (en + fr)', () => {
+    const dangling: string[] = []
+    const scan = (
+      rows: ReadonlyArray<{
+        key: string
+        sections?: { key: string; body?: string }[]
+      }>,
+      lang: string
+    ) => {
+      for (const topic of rows) {
+        for (const section of topic.sections ?? []) {
+          for (const key of refKeys(section.body ?? '')) {
+            if (!known.has(key)) {
+              dangling.push(`${lang}:${topic.key}/${section.key} → ${key}`)
+            }
+          }
+        }
+      }
+    }
+    scan(ruleTopics, 'en')
+    scan(
+      frRuleTopics as ReadonlyArray<{
+        key: string
+        sections?: { key: string; body?: string }[]
+      }>,
+      'fr'
+    )
+    expect(dangling).toEqual([])
   })
 
   test('accessors return French prose for fr and English for en', () => {

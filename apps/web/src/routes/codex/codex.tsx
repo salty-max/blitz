@@ -1,10 +1,12 @@
 import {
+  getRuleTopic,
   getTeam,
   glossary,
   inducements,
   injuries,
   kickoffEvents,
   prayers,
+  ruleTopics,
   skills,
   specialRules,
   starPlayers,
@@ -35,6 +37,7 @@ const CATEGORIES = [
   { to: '/codex/injuries', key: 'injuries', count: injuries.length },
   { to: '/codex/prayers', key: 'prayers', count: prayers.length },
   { to: '/codex/glossary', key: 'glossary', count: glossary.length },
+  { to: '/codex/rulebook', key: 'rulebook', count: ruleTopics.length },
 ] as const
 
 /**
@@ -50,10 +53,13 @@ export function CodexLayout() {
 
   const [, detailKey] = pathname.replace(/^\/codex\/?/, '').split('/')
   const category = CATEGORIES.find((entry) => pathname.startsWith(entry.to))
-  const detailName =
-    category?.key === 'teams' && detailKey
+  const detailName = !detailKey
+    ? undefined
+    : category?.key === 'teams'
       ? (getTeam(detailKey, locale)?.name ?? detailKey)
-      : undefined
+      : category?.key === 'rulebook'
+        ? (getRuleTopic(detailKey, locale)?.title ?? detailKey)
+        : undefined
 
   return (
     <div>

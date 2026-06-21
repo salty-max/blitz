@@ -25,6 +25,7 @@ export {
   teamsForStar,
   teamSpecialRules,
 } from './relations'
+export { getRuleTopic, getRuleTopics, ruleTopics } from './rule-topics'
 export { getSkill, getSkills, skills } from './skills'
 export { getSpecialRule, getSpecialRules, specialRules } from './special-rules'
 export {
@@ -44,6 +45,7 @@ export type {
   LastingInjury,
   Position,
   Prayer,
+  RuleTopic,
   Skill,
   SpecialRule,
   StarAbility,

@@ -38,6 +38,7 @@ const entities = [
     'a kick-off event',
   ],
   ['WEATHER_KEYS', 'WeatherKey', 'weather.json', 'a weather result'],
+  ['RULE_TOPIC_KEYS', 'RuleTopicKey', 'rule-topics.json', 'a rule topic'],
 ]
 
 let out =

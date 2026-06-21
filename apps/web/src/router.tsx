@@ -11,6 +11,7 @@ import { InducementsPage } from '@/routes/codex/inducements'
 import { InjuriesPage } from '@/routes/codex/injuries'
 import { KickoffPage } from '@/routes/codex/kickoff'
 import { PrayersPage } from '@/routes/codex/prayers'
+import { RulebookIndex, RulebookTopic } from '@/routes/codex/rulebook'
 import { RulesPage } from '@/routes/codex/rules'
 import { SkillsPage } from '@/routes/codex/skills'
 import { StarsPage } from '@/routes/codex/stars'
@@ -90,6 +91,25 @@ const codexRulesRoute = createRoute({
   component: RulesPage,
 })
 
+// Rulebook — the core rules as topic pages, like teams: an index of topics and
+// a detail page per topic, through the outlet.
+const codexRulebookRoute = createRoute({
+  getParentRoute: () => codexCategoryRoute,
+  path: 'rulebook',
+})
+
+const codexRulebookIndexRoute = createRoute({
+  getParentRoute: () => codexRulebookRoute,
+  path: '/',
+  component: RulebookIndex,
+})
+
+const codexRulebookTopicRoute = createRoute({
+  getParentRoute: () => codexRulebookRoute,
+  path: '$topic',
+  component: RulebookTopic,
+})
+
 const codexInjuriesRoute = createRoute({
   getParentRoute: () => codexCategoryRoute,
   path: 'injuries',
@@ -138,6 +158,10 @@ const routeTree = rootRoute.addChildren([
       codexStarsRoute,
       codexInducementsRoute,
       codexRulesRoute,
+      codexRulebookRoute.addChildren([
+        codexRulebookIndexRoute,
+        codexRulebookTopicRoute,
+      ]),
       codexKickoffRoute,
       codexInjuriesRoute,
       codexPrayersRoute,

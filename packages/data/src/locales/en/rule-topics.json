@@ -1,0 +1,76 @@
+[
+  {
+    "key": "core-game",
+    "title": "Core game",
+    "summary": "How a turn flows, the actions a player may take, and the basic movement tests.",
+    "sections": [
+      {
+        "key": "turn-structure",
+        "heading": "Turn structure & turnovers",
+        "body": "Players activate one at a time; each declares one Action, resolves it, then the next may go — until everyone who wants to has acted, or a [[turnover|Turnover]] ends the turn. A Turnover (forfeiting any not-yet-activated players' go) is caused by, among other things: a failed pick-up, a fumbled or intercepted [[pass|Pass]], the ball ending with the opposition, or an active player pushed into the crowd or sent off."
+      },
+      {
+        "key": "player-actions",
+        "heading": "Player actions",
+        "body": "A player takes exactly one Action per activation. Move and [[block|Block]] are unlimited; capped at once per team turn are the [[blitz|Blitz]], Pass, Hand-off, [[foul|Foul]], Throw Team-mate and Secure the Ball actions."
+      },
+      {
+        "key": "movement",
+        "heading": "Movement",
+        "body": "A player may move up to their MA in squares, one at a time, in any direction (diagonals included). Plain movement needs no roll; a player can't enter an occupied square or voluntarily leave the pitch."
+      },
+      {
+        "key": "rushing",
+        "heading": "Rushing",
+        "body": "To move beyond MA, each extra square is a [[rush|Rush]]: roll 2+ (a natural 1 falls over, ending the activation). At most two Rushes per activation. If a square needs both a Rush and a [[dodge|Dodge]], the Rush is rolled first."
+      },
+      {
+        "key": "dodging",
+        "heading": "Dodging",
+        "body": "Leaving a square where the player is [[marked|Marked]] needs a Dodge — an Agility test against AG, with −1 for each opponent Marking the square being entered. Success: the player moves and stays standing, and may keep moving. Failure: they fall over in the target square — a [[turnover|Turnover]] if they were carrying the ball."
+      },
+      {
+        "key": "picking-up",
+        "heading": "Picking up the ball",
+        "body": "Entering the ball's square during a Move is an Agility test, −1 per opponent [[marked|Marking]] the picker-up; failure is a [[turnover|Turnover]] and the ball bounces. The Secure the Ball action (new in Third Season) lets a player clear of nearby opponents make a free move to the ball and roll 2+ to collect it automatically (a natural 1 is a Turnover) — a reliable pick-up for low-Agility teams."
+      },
+      {
+        "key": "standing-up",
+        "heading": "Standing up",
+        "body": "Standing from [[prone|Prone]] costs 3 squares of MA before the player does anything else. A player with MA 2 or less rolls instead: 4+ to stand (spending the whole move); on 1–3 they stay prone and the activation ends."
+      }
+    ]
+  },
+  {
+    "key": "the-drive",
+    "title": "The drive",
+    "summary": "Tackle zones, player states, scoring, the turn structure, and recovering knocked-out players.",
+    "sections": [
+      {
+        "key": "tackle-zones",
+        "heading": "Tackle zones & marking",
+        "body": "A standing player projects a [[tackle-zone|tackle zone]] over the eight squares around it. A standing player in an opponent's tackle zone is [[marked|Marked]] — what forces a [[dodge|Dodge]] to leave the square and adds the −1-per-marker penalties on pick-ups, passes and catches. [[prone|Prone]] and [[stunned|Stunned]] players have no tackle zone."
+      },
+      {
+        "key": "player-states",
+        "heading": "Player states",
+        "body": "Standing — acts normally.\nProne — knocked down, face-up; can't act; stands for 3 MA (4+ at MA ≤ 2); no tackle zone.\nStunned — face-down; can't be activated; turned face-up to [[prone|Prone]] at the end of its team's turn.\nDistracted — can't catch or give [[assist|assists]]; becomes Standing at the end of its team's turn."
+      },
+      {
+        "key": "scoring",
+        "heading": "Scoring a touchdown",
+        "body": "A standing player carrying the ball who ends a move in the opposing end zone scores. The drive ends immediately, both teams set up again, and the team that just scored kicks off to restart."
+      },
+      {
+        "key": "structure",
+        "heading": "Drives, turns & halves",
+        "body": "A game is 2 halves. Each half is 8 rounds; a round is 2 turns (one per coach) — 8 turns per team per half, 16 per game. A drive runs from a kick-off until a touchdown is scored or the half ends."
+      },
+      {
+        "key": "ko-recovery",
+        "heading": "Knock-out recovery",
+        "body": "At the end of each drive, each coach rolls a D6 for every KO'd player in their Reserves; on a 4+ the player recovers and is available next drive (some inducements and weather modify the roll)."
+      }
+    ]
+  }
+]

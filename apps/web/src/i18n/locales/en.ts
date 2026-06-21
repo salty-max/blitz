@@ -98,6 +98,7 @@ export const en = {
       injuries: 'Injuries',
       prayers: 'Prayers',
       glossary: 'Glossary',
+      rulebook: 'Rulebook',
     },
     rollTable: {
       roll: 'Roll',
@@ -186,6 +187,10 @@ export const en = {
     },
     glossary: {
       heading: 'Glossary',
+    },
+    rulebook: {
+      heading: 'Rulebook',
+      notFound: 'No topic found.',
     },
   },
 } as const
