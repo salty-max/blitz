@@ -1,6 +1,12 @@
 import { specialRuleSchema } from '@blitz/schema'
 
-import { type DataLocale, localizeAll, localizeOne, overlayMap } from './i18n'
+import {
+  type DataLocale,
+  localizeAll,
+  localizeOne,
+  overlayMap,
+  type Overlays,
+} from './i18n'
 import data from './locales/en/special-rules.json'
 import frData from './locales/fr/special-rules.json'
 import type { SpecialRule } from './types'
@@ -20,13 +26,13 @@ const byKey = new Map<string, SpecialRule>(
 const byName = new Map<string, SpecialRule>(
   specialRules.map((rule) => [rule.name, rule])
 )
-const frOverlay = overlayMap<SpecialRule>(
-  frData as unknown as Partial<SpecialRule>[]
-)
+const overlays: Overlays<SpecialRule> = {
+  fr: overlayMap<SpecialRule>(frData as unknown as Partial<SpecialRule>[]),
+}
 
 /** The special-rules catalogue in the given locale (English when omitted). */
 export function getSpecialRules(locale: DataLocale = 'en'): SpecialRule[] {
-  return localizeAll(specialRules, frOverlay, locale)
+  return localizeAll(specialRules, overlays[locale], locale)
 }
 
 /** Look up a special rule by its key or name in the given locale, or `undefined`. */
@@ -36,7 +42,7 @@ export function getSpecialRule(
 ): SpecialRule | undefined {
   return localizeOne(
     byKey.get(keyOrName) ?? byName.get(keyOrName),
-    frOverlay,
+    overlays[locale],
     locale
   )
 }

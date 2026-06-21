@@ -21,14 +21,16 @@ type TeamOverlay = {
   description?: string
   positions?: { key: string; name: string }[]
 }
-const frOverlay = new Map<string, TeamOverlay>(
-  (frData as unknown as TeamOverlay[]).map((team) => [team.key, team])
-)
+const overlays: Partial<Record<DataLocale, Map<string, TeamOverlay>>> = {
+  fr: new Map(
+    (frData as unknown as TeamOverlay[]).map((team) => [team.key, team])
+  ),
+}
 
 /** Merge a team's overlay — its name, description and per-position names. */
 function localizeTeam(team: Team, locale: DataLocale): Team {
   if (locale === 'en') return team
-  const tr = frOverlay.get(team.key)
+  const tr = overlays[locale]?.get(team.key)
   if (!tr) return team
   const names = new Map((tr.positions ?? []).map((p) => [p.key, p.name]))
   return {

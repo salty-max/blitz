@@ -1,6 +1,12 @@
 import { kickoffEventSchema } from '@blitz/schema'
 
-import { type DataLocale, localizeAll, localizeOne, overlayMap } from './i18n'
+import {
+  type DataLocale,
+  localizeAll,
+  localizeOne,
+  overlayMap,
+  type Overlays,
+} from './i18n'
 import data from './locales/en/kickoff-events.json'
 import frData from './locales/fr/kickoff-events.json'
 import type { KickoffEvent } from './types'
@@ -16,13 +22,13 @@ export const kickoffEvents: KickoffEvent[] = kickoffEventSchema
 const byKey = new Map<string, KickoffEvent>(
   kickoffEvents.map((event) => [event.key, event])
 )
-const frOverlay = overlayMap<KickoffEvent>(
-  frData as unknown as Partial<KickoffEvent>[]
-)
+const overlays: Overlays<KickoffEvent> = {
+  fr: overlayMap<KickoffEvent>(frData as unknown as Partial<KickoffEvent>[]),
+}
 
 /** The Kick-off Event table in the given locale (English when omitted). */
 export function getKickoffEvents(locale: DataLocale = 'en'): KickoffEvent[] {
-  return localizeAll(kickoffEvents, frOverlay, locale)
+  return localizeAll(kickoffEvents, overlays[locale], locale)
 }
 
 /** Look up a kick-off event by its key in the given locale, or `undefined`. */
@@ -30,5 +36,5 @@ export function getKickoffEvent(
   key: string,
   locale: DataLocale = 'en'
 ): KickoffEvent | undefined {
-  return localizeOne(byKey.get(key), frOverlay, locale)
+  return localizeOne(byKey.get(key), overlays[locale], locale)
 }
