@@ -1,6 +1,6 @@
 export { casualties, getCasualties, getCasualty } from './casualties'
 export { getGlossary, getGlossaryTerm, glossary } from './glossary'
-export type { DataLocale } from './i18n'
+export { DATA_LOCALES, type DataLocale } from './i18n'
 export { getInducement, getInducements, inducements } from './inducements'
 export { getInjuries, getInjury, injuries } from './injuries'
 export * from './keys.gen'
