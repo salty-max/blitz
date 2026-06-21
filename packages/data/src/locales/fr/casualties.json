@@ -2,7 +2,7 @@
   {
     "key": "badly-hurt",
     "name": "Sérieusement Blessé",
-    "effect": "Aucun effet durable ; le joueur est placé dans la case Réserves."
+    "effect": "Aucun effet durable ; le joueur est placé dans la case réserves."
   },
   {
     "key": "seriously-hurt",
@@ -12,7 +12,7 @@
   {
     "key": "serious-injury",
     "name": "Blessure Grave",
-    "effect": "Reçoit une Blessure Chronique et manque le prochain match."
+    "effect": "Reçoit une blessure chronique et manque le prochain match."
   },
   {
     "key": "lasting-injury",

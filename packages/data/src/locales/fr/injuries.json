@@ -7,12 +7,12 @@
   {
     "key": "knocked-out",
     "name": "K.O.",
-    "effect": "Évacué vers les Réserves — récupère sur un 4+ à la fin de chaque engagement."
+    "effect": "Évacué vers les réserves — récupère sur un 4+ à la fin de chaque engagement."
   },
   {
     "key": "casualty",
     "name": "Blessure",
-    "effect": "Sorti du jeu — lancez sur la table des Blessures."
+    "effect": "Sorti du jeu — lancez sur la table des blessures."
   },
   {
     "key": "stunty-stunned",
@@ -22,16 +22,16 @@
   {
     "key": "stunty-knocked-out",
     "name": "K.O.",
-    "effect": "Évacué vers les Réserves — récupère sur un 4+ à la fin de chaque engagement."
+    "effect": "Évacué vers les réserves — récupère sur un 4+ à la fin de chaque engagement."
   },
   {
     "key": "stunty-badly-hurt",
     "name": "Sérieusement Blessé",
-    "effect": "Sérieusement Blessé — la Blessure la plus bénigne, subie sans jet sur la table des Blessures."
+    "effect": "Sérieusement Blessé — la blessure la plus bénigne, subie sans jet sur la table des blessures."
   },
   {
     "key": "stunty-casualty",
     "name": "Blessure",
-    "effect": "Sorti du jeu — lancez sur la table des Blessures."
+    "effect": "Sorti du jeu — lancez sur la table des blessures."
   }
 ]

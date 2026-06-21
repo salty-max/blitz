@@ -12,7 +12,7 @@
   {
     "key": "baleful-hex",
     "name": "Maléfice Funeste",
-    "effect": "Une fois par match, au début de l’activation d’Estelle, elle peut sélectionner un joueur adverse à 5 cases ou moins et lancer un D6. Sur 2+, le joueur sélectionné devient Distrait et ne peut pas être activé pendant le prochain Tour de son équipe."
+    "effect": "Une fois par match, au début de l’activation d’Estelle, elle peut sélectionner un joueur adverse à 5 cases ou moins et lancer un D6. Sur 2+, le joueur sélectionné devient Distrait et ne peut pas être activé pendant le prochain tour de son équipe."
   },
   {
     "key": "beer-barrel-bash",
@@ -27,12 +27,12 @@
   {
     "key": "blast-it",
     "name": "Fais Tout Péter !",
-    "effect": "Chaque fois que Barik effectue une Passe Désespérée, il peut relancer les résultats de Déviation pour déterminer où le ballon atterrit, et tout coéquipier tentant de réceptionner le ballon applique un modificateur de +1 au jet."
+    "effect": "Chaque fois que Barik effectue une Passe Désespérée, il peut relancer les résultats de déviation pour déterminer où le ballon atterrit, et tout coéquipier tentant de réceptionner le ballon applique un modificateur de +1 au jet."
   },
   {
     "key": "blastin-solves-everything",
     "name": "Tout se Règle à l’Explosif",
-    "effect": "Une fois par mi-temps, au début de son activation, Zzharg peut sélectionner un joueur adverse Debout à 3 cases ou moins et lancer un D6. Sur 3+, le joueur sélectionné est touché. Sur 2, le coach adverse sélectionne un joueur (de l’une ou l’autre équipe, mais pas Zzharg) à 3 cases ou moins du joueur initialement sélectionné pour être touché à la place. Sur 1, Zzharg est touché à la place. Effectuez un Jet d’Armure pour le joueur touché. L’activation de Zzharg se termine alors immédiatement."
+    "effect": "Une fois par mi-temps, au début de son activation, Zzharg peut sélectionner un joueur adverse Debout à 3 cases ou moins et lancer un D6. Sur 3+, le joueur sélectionné est touché. Sur 2, le coach adverse sélectionne un joueur (de l’une ou l’autre équipe, mais pas Zzharg) à 3 cases ou moins du joueur initialement sélectionné pour être touché à la place. Sur 1, Zzharg est touché à la place. Effectuez un jet d’armure pour le joueur touché. L’activation de Zzharg se termine alors immédiatement."
   },
   {
     "key": "blind-rage",
@@ -52,17 +52,17 @@
   {
     "key": "crushing-blow",
     "name": "Coup Écrasant",
-    "effect": "Une fois par match, lorsqu’un joueur adverse est mis à terre suite à une Action de Blocage effectuée par Zug, vous pouvez appliquer un modificateur supplémentaire de +1 au Jet d’Armure. Ce modificateur peut être appliqué après que le Jet d’Armure a été effectué."
+    "effect": "Une fois par match, lorsqu’un joueur adverse est mis à terre suite à une Action de Blocage effectuée par Zug, vous pouvez appliquer un modificateur supplémentaire de +1 au jet d’armure. Ce modificateur peut être appliqué après que le jet d’armure a été effectué."
   },
   {
     "key": "dwarfen-grit",
     "name": "Cran Nain",
-    "effect": "Une fois par match, lorsque l’armure de Josef est percée suite à un Jet d’Armure, vous pouvez choisir de faire relancer le Jet d’Armure."
+    "effect": "Une fois par match, lorsque l’armure de Josef est percée suite à un jet d’armure, vous pouvez choisir de faire relancer le jet d’armure."
   },
   {
     "key": "dwarven-scourge",
     "name": "Fléau des Nains",
-    "effect": "Une fois par match, lorsqu’un joueur adverse est mis à terre suite à une Action de Blocage effectuée par Ivan, vous pouvez appliquer un modificateur supplémentaire de +1 au Jet d’Armure ou au Jet de Blessure. Si c’est contre un joueur Nain, ce modificateur peut être de +2 à la place."
+    "effect": "Une fois par match, lorsqu’un joueur adverse est mis à terre suite à une Action de Blocage effectuée par Ivan, vous pouvez appliquer un modificateur supplémentaire de +1 au jet d’armure ou au jet de blessure. Si c’est contre un joueur Nain, ce modificateur peut être de +2 à la place."
   },
   {
     "key": "excuse-me-are-you-a-zoat",
@@ -72,7 +72,7 @@
   {
     "key": "frenzied-rush",
     "name": "Ruée Frénétique",
-    "effect": "Une fois par mi-temps, lorsque Glart déclare une Action de Blitz, il peut acquérir la compétence Frénésie jusqu’à la fin de son activation. Glart ne peut pas utiliser la compétence Coup de Crampons pendant un Tour où il utilise cette règle spéciale."
+    "effect": "Une fois par mi-temps, lorsque Glart déclare une Action de Blitz, il peut acquérir la compétence Frénésie jusqu’à la fin de son activation. Glart ne peut pas utiliser la compétence Coup de Crampons pendant un tour où il utilise cette règle spéciale."
   },
   {
     "key": "furious-outburst",
@@ -87,12 +87,12 @@
   {
     "key": "gored-by-the-bull",
     "name": "Encorné par le Taureau",
-    "effect": "Une fois par match, lorsque Grashnak effectue une Action de Blocage dans le cadre d’une Action de Blitz, il peut lancer un Dé de Blocage supplémentaire contre le joueur adverse quelle que soit sa ST, jusqu’à un maximum de trois Dés de Blocage."
+    "effect": "Une fois par match, lorsque Grashnak effectue une Action de Blocage dans le cadre d’une Action de Blitz, il peut lancer un dé de Blocage supplémentaire contre le joueur adverse quelle que soit sa ST, jusqu’à un maximum de trois dés de Blocage."
   },
   {
     "key": "halfling-luck",
     "name": "Chance de Halfling",
-    "effect": "Une fois par match, Puggy peut relancer un seul dé qui a été lancé soit comme un jet de dé unique, un jet de plusieurs dés, ou une réserve de dés, à condition que ce ne soit pas un dé lancé dans le cadre d’un Jet d’Armure, d’un Jet de Blessure ou d’un Jet de Gravité."
+    "effect": "Une fois par match, Puggy peut relancer un seul dé qui a été lancé soit comme un jet de dé unique, un jet de plusieurs dés, ou une réserve de dés, à condition que ce ne soit pas un dé lancé dans le cadre d’un jet d’armure, d’un jet de blessure ou d’un jet de gravité."
   },
   {
     "key": "ill-be-back",
@@ -127,7 +127,7 @@
   {
     "key": "krump-and-smash",
     "name": "Cogne et Fracasse",
-    "effect": "Une fois par match, lorsqu’un joueur adverse est mis à terre suite à une Action de Blocage effectuée par Varag, il peut relancer le Jet d’Armure."
+    "effect": "Une fois par match, lorsqu’un joueur adverse est mis à terre suite à une Action de Blocage effectuée par Varag, il peut relancer le jet d’armure."
   },
   {
     "key": "look-into-my-eyes",
@@ -137,12 +137,12 @@
   {
     "key": "lord-of-chaos",
     "name": "Seigneur du Chaos",
-    "effect": "Une fois par match, lorsque Lord Borak effectue une Action de Blocage, il peut relancer un seul Dé de Blocage."
+    "effect": "Une fois par match, lorsque Lord Borak effectue une Action de Blocage, il peut relancer un seul dé de Blocage."
   },
   {
     "key": "master-assassin",
     "name": "Maître Assassin",
-    "effect": "Une fois par match, lorsque Skitter effectue une Action Spéciale de Poignard, il peut choisir de relancer le Jet d’Armure."
+    "effect": "Une fois par match, lorsque Skitter effectue une Action Spéciale de Poignard, il peut choisir de relancer le jet d’armure."
   },
   {
     "key": "maximum-carnage",
@@ -157,7 +157,7 @@
   {
     "key": "old-pro",
     "name": "Vieux Briscard",
-    "effect": "Une fois par match, Helmut peut utiliser sa compétence Pro pour relancer un seul dé lancé dans le cadre d’un Jet d’Armure."
+    "effect": "Une fois par match, Helmut peut utiliser sa compétence Pro pour relancer un seul dé lancé dans le cadre d’un jet d’armure."
   },
   {
     "key": "primal-savagery",
@@ -167,7 +167,7 @@
   {
     "key": "pump-up-the-crowd",
     "name": "Chauffe la Foule",
-    "effect": "Une fois par match, lorsque Skrorg fait retirer un joueur adverse comme Blessure suite à une Action de Blocage, le coach contrôlant Skrorg gagne une Relance d’Équipe jusqu’à la fin de la Phase en cours. Si la Relance n’a pas été utilisée à la fin de la Phase, elle est perdue."
+    "effect": "Une fois par match, lorsque Skrorg fait retirer un joueur adverse comme Blessure suite à une Action de Blocage, le coach contrôlant Skrorg gagne une relance d’équipe jusqu’à la fin de la Phase en cours. Si la relance n’a pas été utilisée à la fin de la Phase, elle est perdue."
   },
   {
     "key": "putrid-regurgitation",
@@ -177,7 +177,7 @@
   {
     "key": "quick-bite",
     "name": "Morsure Rapide",
-    "effect": "Une fois par match, si Guffle Marque un joueur adverse qui réceptionne le ballon, il peut immédiatement effectuer un Jet d’Armure contre ce joueur. Si l’Armure de la cible est percée, Guffle prend immédiatement possession du ballon. Aucun turnover n’est causé par l’utilisation de cette règle spéciale."
+    "effect": "Une fois par match, si Guffle Marque un joueur adverse qui réceptionne le ballon, il peut immédiatement effectuer un jet d’armure contre ce joueur. Si l’armure de la cible est percée, Guffle prend immédiatement possession du ballon. Aucun turnover n’est causé par l’utilisation de cette règle spéciale."
   },
   {
     "key": "raiding-party",
@@ -187,7 +187,7 @@
   {
     "key": "ram",
     "name": "Bélier",
-    "effect": "Une fois par match, lorsqu’un joueur adverse est mis à terre suite à une Action de Blocage effectuée par Rumbelow, vous pouvez appliquer un modificateur supplémentaire de +1 soit au Jet d’Armure, soit au Jet de Blessure."
+    "effect": "Une fois par match, lorsqu’un joueur adverse est mis à terre suite à une Action de Blocage effectuée par Rumbelow, vous pouvez appliquer un modificateur supplémentaire de +1 soit au jet d’armure, soit au jet de blessure."
   },
   {
     "key": "reliable",
@@ -197,12 +197,12 @@
   {
     "key": "savage-blow",
     "name": "Coup Sauvage",
-    "effect": "Une fois par match, lorsqu’Anqi effectue une Action de Blocage contre un joueur adverse, il peut choisir de relancer n’importe quel nombre de Dés de Blocage."
+    "effect": "Une fois par match, lorsqu’Anqi effectue une Action de Blocage contre un joueur adverse, il peut choisir de relancer n’importe quel nombre de dés de Blocage."
   },
   {
     "key": "savage-mauling",
     "name": "Mutilation Sauvage",
-    "effect": "Une fois par match, lorsque Wilhelm effectue un Jet de Blessure contre un joueur adverse, il peut choisir de relancer le résultat."
+    "effect": "Une fois par match, lorsque Wilhelm effectue un jet de blessure contre un joueur adverse, il peut choisir de relancer le résultat."
   },
   {
     "key": "shot-to-nothing",
@@ -217,7 +217,7 @@
   {
     "key": "slayer",
     "name": "Tueur",
-    "effect": "Une fois par match, lorsqu’un Gros Bras adverse est mis à terre suite à une Action de Blocage effectuée par Grim, vous pouvez appliquer un modificateur supplémentaire de +1 soit au Jet d’Armure, soit au Jet de Blessure. Ce modificateur peut être appliqué après que le jet a été effectué."
+    "effect": "Une fois par match, lorsqu’un Gros Bras adverse est mis à terre suite à une Action de Blocage effectuée par Grim, vous pouvez appliquer un modificateur supplémentaire de +1 soit au jet d’armure, soit au jet de blessure. Ce modificateur peut être appliqué après que le jet a été effectué."
   },
   {
     "key": "sneakiest-of-the-lot",
@@ -227,7 +227,7 @@
   {
     "key": "star-of-the-show",
     "name": "Vedette du Spectacle",
-    "effect": "Une fois par match, lorsque le Comte Luthor marque un Touchdown, le coach qui le contrôle gagne une Relance d’Équipe jusqu’à la fin de la Phase suivante. Si cette Relance d’Équipe n’a pas été utilisée à la fin de la Phase suivante, elle est perdue."
+    "effect": "Une fois par match, lorsque le Comte Luthor marque un Touchdown, le coach qui le contrôle gagne une relance d’équipe jusqu’à la fin de la Phase suivante. Si cette relance d’équipe n’a pas été utilisée à la fin de la Phase suivante, elle est perdue."
   },
   {
     "key": "strong-passing-game",
@@ -257,12 +257,12 @@
   {
     "key": "thinking-mans-troll",
     "name": "Le Troll Réfléchi",
-    "effect": "Une fois par mi-temps, Ripper peut relancer un seul dé qui a été lancé soit comme un jet de dé unique, un jet de plusieurs dés, ou une réserve de dés, à condition que ce ne soit pas un dé lancé dans le cadre d’un Jet d’Armure, d’un Jet de Blessure ou d’un Jet de Gravité."
+    "effect": "Une fois par mi-temps, Ripper peut relancer un seul dé qui a été lancé soit comme un jet de dé unique, un jet de plusieurs dés, ou une réserve de dés, à condition que ce ne soit pas un dé lancé dans le cadre d’un jet d’armure, d’un jet de blessure ou d’un jet de gravité."
   },
   {
     "key": "toxin-connoisseur",
     "name": "Connaisseur en Toxines",
-    "effect": "Une fois par match, lorsque Rashnak perce avec succès l’armure d’un joueur adverse suite à une Action Spéciale de Poignard, vous pouvez appliquer un modificateur supplémentaire de +1 au Jet de Blessure. Ce modificateur peut être appliqué après que le jet a été effectué."
+    "effect": "Une fois par match, lorsque Rashnak perce avec succès l’armure d’un joueur adverse suite à une Action Spéciale de Poignard, vous pouvez appliquer un modificateur supplémentaire de +1 au jet de blessure. Ce modificateur peut être appliqué après que le jet a été effectué."
   },
   {
     "key": "treacherous",
@@ -272,7 +272,7 @@
   {
     "key": "unstoppable-momentum",
     "name": "Élan Irrésistible",
-    "effect": "Chaque fois que H’thark effectue une Action de Blocage dans le cadre d’une Action de Blitz, il peut relancer un seul Dé de Blocage."
+    "effect": "Chaque fois que H’thark effectue une Action de Blocage dans le cadre d’une Action de Blitz, il peut relancer un seul dé de Blocage."
   },
   {
     "key": "vicious-vines",
@@ -297,12 +297,12 @@
   {
     "key": "woodland-fury",
     "name": "Fureur Sylvestre",
-    "effect": "Une fois par match, lorsque Willow effectue une Action de Blocage qui la mettrait à terre, elle peut choisir de relancer un seul Dé de Blocage."
+    "effect": "Une fois par match, lorsque Willow effectue une Action de Blocage qui la mettrait à terre, elle peut choisir de relancer un seul dé de Blocage."
   },
   {
     "key": "working-in-tandem",
     "name": "En Tandem",
-    "effect": "Les Jumeaux Swift doivent être recrutés en duo. Lucien : si Lucien effectue une Action de Blocage contre un joueur adverse également Marqué par Valen, Lucien peut relancer un seul Dé de Blocage. Valen : si Valen effectue une Action de Passe ciblant une case contenant Lucien, Valen ne subit aucun modificateur au test de PA pour la portée de l’Action de Passe."
+    "effect": "Les Jumeaux Swift doivent être recrutés en duo. Lucien : si Lucien effectue une Action de Blocage contre un joueur adverse également Marqué par Valen, Lucien peut relancer un seul dé de Blocage. Valen : si Valen effectue une Action de Passe ciblant une case contenant Lucien, Valen ne subit aucun modificateur au test de PA pour la portée de l’Action de Passe."
   },
   {
     "key": "yoink",
