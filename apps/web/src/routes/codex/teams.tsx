@@ -1,6 +1,7 @@
 import { getTeam, starsForTeam, teams } from '@blitz/data'
 import { Link, useParams } from '@tanstack/react-router'
 import { type ReactNode, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 import { CostBadge } from '@/components/cost-badge'
 import { gp } from '@/lib/format'
@@ -48,13 +49,14 @@ function Meta({ label, children }: { label: string; children: ReactNode }) {
 
 /** The teams index — tier-filterable cards, each linking to its detail page. */
 export function TeamsIndex() {
+  const { t } = useTranslation('codex')
   const [tier, setTier] = useState<number | null>(null)
   const shown =
     tier === null ? teams : teams.filter((team) => team.tier === tier)
 
   return (
     <div>
-      <PageHeading>Teams</PageHeading>
+      <PageHeading>{t('teams.heading')}</PageHeading>
 
       <div className="mt-4 flex flex-wrap gap-2">
         <Button
@@ -62,7 +64,7 @@ export function TeamsIndex() {
           variant={tier === null ? 'solid' : 'outline'}
           onClick={() => setTier(null)}
         >
-          All
+          {t('teams.filterAll')}
         </Button>
         {TIERS.map((value) => (
           <Button
@@ -71,7 +73,7 @@ export function TeamsIndex() {
             variant={tier === value ? 'solid' : 'outline'}
             onClick={() => setTier(value)}
           >
-            Tier {value}
+            {t('teams.tier', { n: value })}
           </Button>
         ))}
       </div>
@@ -86,12 +88,12 @@ export function TeamsIndex() {
                 </h2>
                 {team.tier != null && (
                   <span className="font-headline text-sm font-semibold uppercase tracking-wide text-blood group-hover:text-gold">
-                    Tier {team.tier}
+                    {t('teams.tier', { n: team.tier })}
                   </span>
                 )}
               </div>
               <p className="mt-2 text-sm text-ink/60 group-hover:text-paper/70">
-                {team.positions.length} positions
+                {t('teams.positions', { n: team.positions.length })}
               </p>
             </Link>
           </Card>
@@ -103,11 +105,12 @@ export function TeamsIndex() {
 
 /** A single team's roster — profile, special rules, positions and available stars. */
 export function TeamDetail() {
+  const { t } = useTranslation('codex')
   const { key } = useParams({ strict: false })
   const team = key ? getTeam(key) : undefined
 
   if (!team) {
-    return <EmptyState>No team found.</EmptyState>
+    return <EmptyState>{t('teams.notFound')}</EmptyState>
   }
 
   const stars = starsForTeam(team)
@@ -119,7 +122,7 @@ export function TeamDetail() {
           <PageHeading className="leading-none">{team.name}</PageHeading>
           {team.tier != null && (
             <span className="font-headline text-lg font-semibold uppercase tracking-wide text-blood">
-              Tier {team.tier}
+              {t('teams.tier', { n: team.tier })}
             </span>
           )}
         </div>
@@ -129,17 +132,17 @@ export function TeamDetail() {
           </p>
         )}
         <dl className="mt-5 flex flex-wrap gap-x-10 gap-y-3">
-          <Meta label="Re-rolls">
+          <Meta label={t('teams.rerolls')}>
             <span className="font-headline tabular-nums">
               {gp(team.rerollCost)}
             </span>
           </Meta>
-          <Meta label="Apothecary">
+          <Meta label={t('teams.apothecary')}>
             <span className="font-headline">
-              {team.apothecary ? 'Yes' : 'No'}
+              {team.apothecary ? t('teams.yes') : t('teams.no')}
             </span>
           </Meta>
-          <Meta label="Special rules">
+          <Meta label={t('teams.specialRules')}>
             <RefChips keys={team.specialRules} />
           </Meta>
         </dl>
@@ -149,16 +152,26 @@ export function TeamDetail() {
         <Table className="min-w-[44rem]">
           <Table.Header>
             <Table.Row>
-              <Table.Head className="pr-3">Position</Table.Head>
-              <Table.Head className="px-2 text-center">Max</Table.Head>
+              <Table.Head className="pr-3">
+                {t('teams.table.position')}
+              </Table.Head>
+              <Table.Head className="px-2 text-center">
+                {t('teams.table.max')}
+              </Table.Head>
               <Table.Head className="px-2 text-center">MA</Table.Head>
               <Table.Head className="px-2 text-center">ST</Table.Head>
               <Table.Head className="px-2 text-center">AG</Table.Head>
               <Table.Head className="px-2 text-center">PA</Table.Head>
               <Table.Head className="px-2 text-center">AV</Table.Head>
-              <Table.Head className="px-2 text-right">Cost</Table.Head>
-              <Table.Head className="px-2">Skills</Table.Head>
-              <Table.Head className="px-2">Access</Table.Head>
+              <Table.Head className="px-2 text-right">
+                {t('teams.table.cost')}
+              </Table.Head>
+              <Table.Head className="px-2">
+                {t('teams.table.skills')}
+              </Table.Head>
+              <Table.Head className="px-2">
+                {t('teams.table.access')}
+              </Table.Head>
             </Table.Row>
           </Table.Header>
           <Table.Body>
@@ -212,15 +225,12 @@ export function TeamDetail() {
           </Table.Body>
         </Table>
       </div>
-      <p className="mt-2 text-xs text-ink/45">
-        Access — primary / secondary: G general · A agility · S strength · P
-        passing · M mutation · D devious.
-      </p>
+      <p className="mt-2 text-xs text-ink/45">{t('teams.accessLegend')}</p>
 
       {stars.length > 0 && (
         <section className="mt-8">
           <SectionHeading tone="blood" bordered>
-            Star Players
+            {t('teams.stars')}
           </SectionHeading>
           <ul className="mt-3 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
             {stars.map((star) => (

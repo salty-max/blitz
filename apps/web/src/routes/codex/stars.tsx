@@ -9,6 +9,7 @@ import {
   teamsForStar,
 } from '@blitz/data'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 import { CharacteristicsRow } from '@/components/characteristics'
 import { CostBadge } from '@/components/cost-badge'
@@ -30,6 +31,7 @@ const SEARCH_INDEX = starPlayers.map((star) => ({
 
 /** A single showcased star — stats, skills, abilities and eligibility. */
 function StarCard({ star }: { star: StarPlayer }) {
+  const { t } = useTranslation('codex')
   return (
     <Card id={star.key} className="scroll-mt-8">
       <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-3">
@@ -43,23 +45,23 @@ function StarCard({ star }: { star: StarPlayer }) {
       </div>
 
       <div className="mt-4 space-y-3">
-        <Field label="Skills">
+        <Field label={t('stars.fields.skills')}>
           <RefChips keys={star.skills} />
         </Field>
         {star.abilities.length > 0 && (
-          <Field label="Abilities">
+          <Field label={t('stars.fields.abilities')}>
             <RefChips keys={star.abilities} tone="accent" />
           </Field>
         )}
-        <Field label="Plays for">
+        <Field label={t('stars.fields.playsFor')}>
           {star.playsFor.length === 0 ? (
-            'Any team'
+            t('stars.anyTeam')
           ) : (
             <TeamChips teams={teamsForStar(star)} />
           )}
         </Field>
         {star.playsFor.length > 0 && (
-          <Field label="Leagues & special rules">
+          <Field label={t('stars.fields.leaguesAndRules')}>
             <RefChips keys={star.playsFor} />
           </Field>
         )}
@@ -76,6 +78,7 @@ const ANY_TEAM = 'any'
 
 /** The star-players catalogue — searchable and filterable by hiring team. */
 export function StarsPage() {
+  const { t } = useTranslation('codex')
   const [query, setQuery] = useState('')
   const [teamKey, setTeamKey] = useState(ANY_TEAM)
 
@@ -90,28 +93,31 @@ export function StarsPage() {
 
   return (
     <div>
-      <PageHeading>Star Players</PageHeading>
+      <PageHeading>{t('stars.heading')}</PageHeading>
 
       <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2">
         <input
           type="search"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
-          placeholder="Search name or skill…"
-          aria-label="Search star players"
+          placeholder={t('stars.searchPlaceholder')}
+          aria-label={t('stars.searchLabel')}
           className={`${CONTROL} w-full px-3 placeholder:text-ink/40 sm:w-64`}
         />
         <div className="flex items-center gap-2">
-          <Field.Label>Hireable by</Field.Label>
+          <Field.Label>{t('stars.hireableBy')}</Field.Label>
           <Select value={teamKey} onValueChange={setTeamKey}>
-            <Select.Trigger className="w-56" aria-label="Filter by hiring team">
+            <Select.Trigger
+              className="w-56"
+              aria-label={t('stars.filterLabel')}
+            >
               <Select.Value />
             </Select.Trigger>
             <Select.Content>
-              <Select.Item value={ANY_TEAM}>Any team</Select.Item>
-              {teams.map((t) => (
-                <Select.Item key={t.key} value={t.key}>
-                  {t.name}
+              <Select.Item value={ANY_TEAM}>{t('stars.anyTeam')}</Select.Item>
+              {teams.map((team) => (
+                <Select.Item key={team.key} value={team.key}>
+                  {team.name}
                 </Select.Item>
               ))}
             </Select.Content>
@@ -124,7 +130,7 @@ export function StarsPage() {
 
       <div className="mt-6 space-y-4">
         {shown.length === 0 ? (
-          <EmptyState>No stars match.</EmptyState>
+          <EmptyState>{t('stars.noMatch')}</EmptyState>
         ) : (
           shown.map((star) => <StarCard key={star.key} star={star} />)
         )}

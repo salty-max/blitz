@@ -7,6 +7,7 @@ import {
   useMemo,
   useState,
 } from 'react'
+import { useTranslation } from 'react-i18next'
 
 import { type RefTone, resolveRef } from '@/lib/resolve-ref'
 import { RefText } from '@/reference/ref-text'
@@ -37,6 +38,7 @@ export function useRefDrawer(): RefDrawerValue {
 
 /** Provides the click-to-open rule/term side-drawer for the whole codex. */
 export function RefDrawerProvider({ children }: { children: ReactNode }) {
+  const { t } = useTranslation('ref')
   const [stack, setStack] = useState<string[]>([])
 
   const openRef = useCallback((key: string) => {
@@ -67,21 +69,21 @@ export function RefDrawerProvider({ children }: { children: ReactNode }) {
               <Chip
                 variant={resolved ? toneChipVariant[resolved.tone] : 'blood'}
               >
-                {resolved?.kind ?? 'Reference'}
+                {resolved ? t(`kind.${resolved.kind}`) : t('kind.fallback')}
               </Chip>
               <div className="flex items-center gap-1">
                 {stack.length > 1 && (
                   <button
                     type="button"
                     onClick={back}
-                    aria-label="Back"
+                    aria-label={t('back')}
                     className="inline-flex h-8 w-8 items-center justify-center text-ink/55 transition-colors hover:bg-ink/5 hover:text-ink"
                   >
                     <ArrowLeft className="h-5 w-5" />
                   </button>
                 )}
                 <Sheet.Close
-                  aria-label="Close"
+                  aria-label={t('close')}
                   className="inline-flex h-8 w-8 items-center justify-center text-ink/55 transition-colors hover:bg-ink/5 hover:text-blood"
                 >
                   <X className="h-5 w-5" />
@@ -93,17 +95,17 @@ export function RefDrawerProvider({ children }: { children: ReactNode }) {
                 its links are then fresh nodes and don't inherit the hover
                 state of the link that was just clicked. */}
             <div key={currentKey} className="px-5 py-5">
-              <Sheet.Title>{resolved?.name ?? 'Unknown reference'}</Sheet.Title>
-              {resolved?.meta && (
+              <Sheet.Title>{resolved?.name ?? t('unknown')}</Sheet.Title>
+              {resolved?.category && (
                 <p className="mt-1 font-headline text-sm font-semibold uppercase tracking-wide text-ink/55">
-                  {resolved.meta}
+                  {t(`skillCategory.${resolved.category}`)}
                 </p>
               )}
               <p className="mt-4 leading-relaxed text-ink/90">
                 {resolved ? (
                   <RefText>{resolved.body}</RefText>
                 ) : (
-                  `No entry found for "${currentKey ?? ''}".`
+                  t('notFound', { key: currentKey ?? '' })
                 )}
               </p>
             </div>

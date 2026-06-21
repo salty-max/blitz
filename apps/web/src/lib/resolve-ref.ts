@@ -3,33 +3,32 @@ import {
   getSkill,
   getSpecialRule,
   getStarAbility,
+  type Skill,
 } from '@blitz/data'
 
 /** The category of a reference, used to colour-code it inline and in the drawer. */
 export type RefTone = 'skill' | 'term' | 'rule' | 'star'
 
+/** The kind of entry a reference points at — a key into the `ref.kind` catalogue. */
+export type RefKind =
+  | 'skill'
+  | 'rulesTerm'
+  | 'league'
+  | 'specialRule'
+  | 'starAbility'
+
 /** A reference resolved to a uniform shape the drawer can render. */
 export interface ResolvedRef {
   key: string
-  /** Human label for the kind of entry, e.g. `Skill`, `Rules term`. */
-  kind: string
+  /** The kind of entry, as a `ref.kind` translation key. */
+  kind: RefKind
   name: string
   /** The body text (effect / definition); may itself contain `[[key]]` refs. */
   body: string
-  /** Optional sub-label, e.g. a skill's category. */
-  meta?: string
+  /** A skill's category key, for skills only — the drawer localizes it. */
+  category?: Skill['category']
   /** Category used to pick the reference's colour. */
   tone: RefTone
-}
-
-const SKILL_CATEGORY: Record<string, string> = {
-  general: 'General skill',
-  agility: 'Agility skill',
-  passing: 'Passing skill',
-  strength: 'Strength skill',
-  devious: 'Devious skill',
-  mutation: 'Mutation',
-  trait: 'Trait',
 }
 
 /**
@@ -41,10 +40,10 @@ export function resolveRef(key: string): ResolvedRef | undefined {
   if (skill) {
     return {
       key,
-      kind: 'Skill',
+      kind: 'skill',
       name: skill.name,
       body: skill.effect,
-      meta: SKILL_CATEGORY[skill.category] ?? skill.category,
+      category: skill.category,
       tone: 'skill',
     }
   }
@@ -52,7 +51,7 @@ export function resolveRef(key: string): ResolvedRef | undefined {
   if (term) {
     return {
       key,
-      kind: 'Rules term',
+      kind: 'rulesTerm',
       name: term.term,
       body: term.definition,
       tone: 'term',
@@ -62,7 +61,7 @@ export function resolveRef(key: string): ResolvedRef | undefined {
   if (rule) {
     return {
       key,
-      kind: rule.category === 'league' ? 'League' : 'Special rule',
+      kind: rule.category === 'league' ? 'league' : 'specialRule',
       name: rule.name,
       body: rule.effect,
       tone: 'rule',
@@ -72,7 +71,7 @@ export function resolveRef(key: string): ResolvedRef | undefined {
   if (ability) {
     return {
       key,
-      kind: 'Star ability',
+      kind: 'starAbility',
       name: ability.name,
       body: ability.effect,
       tone: 'star',

@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next'
+
 import { RefText } from '@/reference/ref-text'
 import { Table } from '@/ui'
 
@@ -17,19 +19,24 @@ const rollLabel = (roll: number | [number, number]): string => {
 /** A dice-roll reference table — the roll, the result it yields, and the result's effect. */
 export function RollTable({
   rows,
-  resultHeader = 'Result',
+  resultHeader,
 }: {
   rows: RollTableRow[]
-  /** Heading for the middle column (e.g. `Prayer`); defaults to `Result`. */
+  /** Heading for the middle column (e.g. `Prayer`); defaults to the localized `Result`. */
   resultHeader?: string
 }) {
+  const { t } = useTranslation('codex')
   return (
     <Table className="min-w-[36rem]">
       <Table.Header>
         <Table.Row>
-          <Table.Head className="pr-3 text-center">Roll</Table.Head>
-          <Table.Head className="px-3">{resultHeader}</Table.Head>
-          <Table.Head className="px-3">Effect</Table.Head>
+          <Table.Head className="pr-3 text-center">
+            {t('rollTable.roll')}
+          </Table.Head>
+          <Table.Head className="px-3">
+            {resultHeader ?? t('rollTable.result')}
+          </Table.Head>
+          <Table.Head className="px-3">{t('rollTable.effect')}</Table.Head>
         </Table.Row>
       </Table.Header>
       <Table.Body>
