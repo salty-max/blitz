@@ -1,18 +1,31 @@
 import {
+  casualties,
   getGlossaryTerm,
   getSkill,
+  getTeam,
   glossary,
+  inducements,
+  injuries,
+  lastingInjuries,
+  prayers,
   skills,
   specialRules,
   starAbilities,
+  teams,
 } from '@blitz/data'
 import { refKeys } from '@blitz/schema'
 import { describe, expect, test } from 'bun:test'
 
+import frCasualties from '../src/locales/fr/casualties.json'
 import frGlossary from '../src/locales/fr/glossary.json'
+import frInducements from '../src/locales/fr/inducements.json'
+import frInjuries from '../src/locales/fr/injuries.json'
+import frLasting from '../src/locales/fr/lasting-injuries.json'
+import frPrayers from '../src/locales/fr/prayers.json'
 import frSkills from '../src/locales/fr/skills.json'
 import frRules from '../src/locales/fr/special-rules.json'
 import frAbilities from '../src/locales/fr/star-abilities.json'
+import frTeams from '../src/locales/fr/teams.json'
 
 /** Every key a `[[ref]]` may legitimately point at. */
 const known = new Set<string>([
@@ -38,6 +51,19 @@ const overlays: { name: string; rows: Overlay; english: { key: string }[] }[] =
       rows: frAbilities as Overlay,
       english: starAbilities,
     },
+    {
+      name: 'inducements',
+      rows: frInducements as Overlay,
+      english: inducements,
+    },
+    { name: 'casualties', rows: frCasualties as Overlay, english: casualties },
+    { name: 'injuries', rows: frInjuries as Overlay, english: injuries },
+    {
+      name: 'lasting injuries',
+      rows: frLasting as Overlay,
+      english: lastingInjuries,
+    },
+    { name: 'prayers', rows: frPrayers as Overlay, english: prayers },
   ]
 
 describe('French data overlays', () => {
@@ -59,11 +85,34 @@ describe('French data overlays', () => {
     })
   }
 
+  test('teams: the fr overlay covers every team and position key', () => {
+    const overlay = frTeams as ReadonlyArray<{
+      key: string
+      positions?: { key: string }[]
+    }>
+    const byKey = new Map(overlay.map((t) => [t.key, t]))
+    expect([...byKey.keys()].sort()).toEqual(
+      [...teams.map((t) => t.key)].sort()
+    )
+    const missing: string[] = []
+    for (const team of teams) {
+      const positions = byKey.get(team.key)?.positions ?? []
+      const covered = new Set(positions.map((p) => p.key))
+      for (const position of team.positions) {
+        if (!covered.has(position.key))
+          missing.push(`${team.key}/${position.key}`)
+      }
+    }
+    expect(missing).toEqual([])
+  })
+
   test('accessors return French prose for fr and English for en', () => {
     expect(getSkill('block', 'en')?.name).toBe('Block')
     expect(getSkill('block', 'fr')?.name).toBe('Blocage')
     expect(getGlossaryTerm('tackle-zone', 'en')?.term).toBe('Tackle Zone')
     expect(getGlossaryTerm('tackle-zone', 'fr')?.term).toBe('Zone de Tacle')
+    expect(getTeam('amazon', 'en')?.name).toBe('Amazon')
+    expect(getTeam('amazon', 'fr')?.name).toBe('Amazones')
     expect(getSkill('not-a-skill', 'fr')).toBeUndefined()
   })
 })

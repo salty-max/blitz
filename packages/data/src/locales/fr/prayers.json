@@ -1,0 +1,82 @@
+[
+  {
+    "key": "treacherous-trapdoor",
+    "name": "Trappe Traîtresse",
+    "effect": "Des trappes peuvent s'ouvrir sous les joueurs — lancez un D6 ; sur un 1 le joueur tombe."
+  },
+  {
+    "key": "friends-with-the-ref",
+    "name": "Copain avec l'Arbitre",
+    "effect": "Contester la Décision réussit sur un 5+."
+  },
+  {
+    "key": "stiletto",
+    "name": "Stylet",
+    "effect": "Un joueur aléatoire gagne [[stab]]."
+  },
+  {
+    "key": "iron-man",
+    "name": "Homme de Fer",
+    "effect": "+1 AV à un joueur."
+  },
+  {
+    "key": "knuckle-dusters",
+    "name": "Coup de Poing Américain",
+    "effect": "Un joueur gagne [[mighty-blow]]."
+  },
+  {
+    "key": "bad-habits",
+    "name": "Mauvaises Habitudes",
+    "effect": "D3 joueurs adverses gagnent [[loner|Solitaire]] (2+)."
+  },
+  {
+    "key": "greasy-cleats",
+    "name": "Crampons Graisseux",
+    "effect": "−1 MA à un joueur adverse."
+  },
+  {
+    "key": "blessing-of-nuffle",
+    "name": "Bénédiction de Nuffle",
+    "effect": "Un joueur gagne [[pro]]."
+  },
+  {
+    "key": "moles-under-the-pitch",
+    "name": "Taupes sous le Terrain",
+    "effect": "−1 aux jets de [[rush]] de l'adversaire."
+  },
+  {
+    "key": "perfect-passing",
+    "name": "Passe Parfaite",
+    "effect": "Les passes complétées rapportent 2 SPP cette partie."
+  },
+  {
+    "key": "dazzling-catching",
+    "name": "Réception Éblouissante",
+    "effect": "Les réceptions rapportent 1 SPP cette partie."
+  },
+  {
+    "key": "fan-interaction",
+    "name": "Interaction avec les Fans",
+    "effect": "Les [[casualty|blessures]] causées par une poussée dans la foule rapportent 2 SPP cette partie."
+  },
+  {
+    "key": "fouling-frenzy",
+    "name": "Frénésie d'Agression",
+    "effect": "Les [[casualty|blessures]] causées par une [[foul|agression]] rapportent 2 SPP cette partie."
+  },
+  {
+    "key": "throw-a-rock",
+    "name": "Jet de Pierre",
+    "effect": "Une fois par partie, mettez à terre un joueur adverse sur un 4+."
+  },
+  {
+    "key": "under-scrutiny",
+    "name": "Sous Surveillance",
+    "effect": "Les agressions de l'adversaire qui brisent l'armure entraînent automatiquement une expulsion."
+  },
+  {
+    "key": "intensive-training",
+    "name": "Entraînement Intensif",
+    "effect": "Un joueur gagne une compétence primaire au choix."
+  }
+]

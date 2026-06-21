@@ -1,0 +1,37 @@
+[
+  {
+    "key": "stunned",
+    "name": "Sonné",
+    "effect": "Récupère sur le terrain — retourné face visible en [[prone|À Terre]] à la fin du tour de l'équipe."
+  },
+  {
+    "key": "knocked-out",
+    "name": "K.O.",
+    "effect": "Évacué vers les Réserves — récupère sur un 4+ à la fin de chaque engagement."
+  },
+  {
+    "key": "casualty",
+    "name": "Blessure",
+    "effect": "Sorti du jeu — lancez sur la table des Blessures."
+  },
+  {
+    "key": "stunty-stunned",
+    "name": "Sonné",
+    "effect": "Récupère sur le terrain — retourné face visible en [[prone|À Terre]] à la fin du tour de l'équipe."
+  },
+  {
+    "key": "stunty-knocked-out",
+    "name": "K.O.",
+    "effect": "Évacué vers les Réserves — récupère sur un 4+ à la fin de chaque engagement."
+  },
+  {
+    "key": "stunty-badly-hurt",
+    "name": "Sérieusement Blessé",
+    "effect": "Sérieusement Blessé — la Blessure la plus bénigne, subie sans jet sur la table des Blessures."
+  },
+  {
+    "key": "stunty-casualty",
+    "name": "Blessure",
+    "effect": "Sorti du jeu — lancez sur la table des Blessures."
+  }
+]
