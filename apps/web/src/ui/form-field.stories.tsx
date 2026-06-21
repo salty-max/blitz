@@ -1,13 +1,22 @@
 import type { Decorator, Meta, StoryObj } from '@storybook/react-vite'
+import { useState } from 'react'
 
+import { Combobox } from './combobox'
 import { FormField } from './form-field'
 import { Input } from './input'
 import { RadioGroup } from './radio-group'
+import { SegmentedControl } from './segmented-control'
 
 const RESULTS = [
   { value: 'win', label: 'Win' },
   { value: 'draw', label: 'Draw' },
   { value: 'loss', label: 'Loss' },
+]
+
+const STARS = [
+  { value: 'griff', label: 'Griff Oberwald' },
+  { value: 'morg', label: 'Morg ’n’ Thorg' },
+  { value: 'varag', label: 'Varag Ghoul-Chewer' },
 ]
 
 const withWidth: Decorator = (Story) => (
@@ -60,3 +69,36 @@ export const WithRadioGroup: Story = {
     ),
   },
 }
+
+/** A controlled control works too, as long as it's the direct child. */
+function SegmentedField() {
+  const [value, setValue] = useState('home')
+  return (
+    <FormField label="Fixture side">
+      <SegmentedControl
+        options={[
+          { value: 'home', label: 'Home' },
+          { value: 'away', label: 'Away' },
+        ]}
+        value={value}
+        onValueChange={setValue}
+      />
+    </FormField>
+  )
+}
+export const WithSegmentedControl: Story = { render: () => <SegmentedField /> }
+
+function ComboboxField() {
+  const [value, setValue] = useState<string | null>(null)
+  return (
+    <FormField label="Star player" hint="Search the roster.">
+      <Combobox
+        options={STARS}
+        value={value}
+        onValueChange={setValue}
+        placeholder="Hire a star…"
+      />
+    </FormField>
+  )
+}
+export const WithCombobox: Story = { render: () => <ComboboxField /> }

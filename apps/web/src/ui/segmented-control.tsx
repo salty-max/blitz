@@ -1,6 +1,6 @@
 import * as ToggleGroupPrimitive from '@radix-ui/react-toggle-group'
 import { cva, type VariantProps } from 'class-variance-authority'
-import { type ReactNode } from 'react'
+import { type ComponentProps, type ReactNode } from 'react'
 
 import { cn } from './cn'
 
@@ -24,20 +24,26 @@ export const segmentVariants = cva(
   }
 )
 
-/** Props for {@link SegmentedControl}. */
+/** Props for {@link SegmentedControl} — its choices plus the props a FormField forwards. */
 export type SegmentedControlProps<T extends string> = VariantProps<
   typeof segmentVariants
-> & {
-  /** The choices, left to right. */
-  options: SegmentedControlOption<T>[]
-  /** The currently selected value. */
-  value: T
-  /** Called with the newly selected value on click or arrow-key navigation. */
-  onValueChange: (value: T) => void
-  className?: string
-  /** Accessible name for the group, which carries `role="radiogroup"`. */
-  'aria-label'?: string
-}
+> &
+  Pick<
+    ComponentProps<'div'>,
+    | 'className'
+    | 'id'
+    | 'aria-label'
+    | 'aria-labelledby'
+    | 'aria-describedby'
+    | 'aria-invalid'
+  > & {
+    /** The choices, left to right. */
+    options: SegmentedControlOption<T>[]
+    /** The currently selected value. */
+    value: T
+    /** Called with the newly selected value on click or arrow-key navigation. */
+    onValueChange: (value: T) => void
+  }
 
 /**
  * A single-select control rendered as a row of equal-width segments with a
@@ -51,7 +57,7 @@ export function SegmentedControl<T extends string>({
   onValueChange,
   size,
   className,
-  'aria-label': ariaLabel,
+  ...rest
 }: SegmentedControlProps<T>) {
   const index = Math.max(
     0,
@@ -65,11 +71,11 @@ export function SegmentedControl<T extends string>({
       onValueChange={(next) => {
         if (next) onValueChange(next as T)
       }}
-      aria-label={ariaLabel}
       className={cn(
         'relative inline-grid grid-flow-col auto-cols-[1fr] border-2 border-ink bg-paper p-0.5',
         className
       )}
+      {...rest}
     >
       <span
         aria-hidden
