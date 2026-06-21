@@ -1,7 +1,8 @@
-import { specialRules, teamsForSpecialRule } from '@blitz/data'
+import { getSpecialRules, teamsForSpecialRule } from '@blitz/data'
 import { useTranslation } from 'react-i18next'
 
 import { TeamChips } from '@/components/team-chips'
+import { useDataLocale } from '@/i18n/use-data-locale'
 import { RefText } from '@/reference/ref-text'
 import { DescriptionList, PageHeading, SectionHeading } from '@/ui'
 
@@ -10,13 +11,17 @@ const GROUPS = ['league', 'special'] as const
 /** The special-rules catalogue — league affiliations and mechanical team rules. */
 export function RulesPage() {
   const { t } = useTranslation('codex')
+  const locale = useDataLocale()
+  const localizedRules = getSpecialRules(locale)
 
   return (
     <div>
       <PageHeading>{t('rules.heading')}</PageHeading>
 
       {GROUPS.map((category) => {
-        const group = specialRules.filter((rule) => rule.category === category)
+        const group = localizedRules.filter(
+          (rule) => rule.category === category
+        )
         return (
           <section key={category} className="mt-8">
             <SectionHeading tone="blood" bordered hint={`· ${group.length}`}>

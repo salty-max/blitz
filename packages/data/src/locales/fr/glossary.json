@@ -1,0 +1,82 @@
+[
+  {
+    "key": "tackle-zone",
+    "term": "Zone de Tacle",
+    "definition": "Les huit cases autour d'un joueur Debout. Un adversaire qui s'y tient est [[marked|Marqué]]."
+  },
+  {
+    "key": "marked",
+    "term": "Marqué",
+    "definition": "Se tenir dans la [[tackle-zone]] d'un adversaire — ce qui force une esquive pour partir et ajoute −1 à de nombreuses actions."
+  },
+  {
+    "key": "rush",
+    "term": "Foncer",
+    "definition": "Se déplacer au-delà de sa MA, une case à la fois ; chaque Foncer demande un 2+ (un 1 naturel fait tomber). Jusqu'à deux par déplacement."
+  },
+  {
+    "key": "turnover",
+    "term": "Revirement",
+    "definition": "Met aussitôt fin au tour de votre équipe — un ramassage ou une passe ratés, une chute avec le ballon, ou le ballon qui atteint l'adversaire."
+  },
+  {
+    "key": "prone",
+    "term": "À Terre",
+    "definition": "Mis à terre mais face vers le haut. Ne peut pas agir ; se relever coûte 3 cases de mouvement. N'exerce aucune [[tackle-zone|Zone de Tacle]]."
+  },
+  {
+    "key": "stunned",
+    "term": "Sonné",
+    "definition": "Face contre terre et impossible à activer. Retourné face vers le haut à l'état [[prone|À Terre]] à la fin de votre tour."
+  },
+  {
+    "key": "distracted",
+    "term": "Distrait",
+    "definition": "Ne peut ni réceptionner, ni intercepter, ni fournir d'[[assist|aides]] ; récupère à la fin de votre tour."
+  },
+  {
+    "key": "both-down",
+    "term": "Double Tampon",
+    "definition": "Un résultat de Blocage qui met à terre les deux joueurs sauf s'ils ont [[block|Blocage]] ou [[wrestle|Lutte]]."
+  },
+  {
+    "key": "push-back",
+    "term": "Repoussé",
+    "definition": "Un résultat de Blocage qui pousse la cible d'une case ; le bloqueur peut [[follow-up|Suivre]]."
+  },
+  {
+    "key": "pow",
+    "term": "POW!",
+    "definition": "Un résultat de Blocage qui repousse la cible et la met à terre."
+  },
+  {
+    "key": "knocked-down",
+    "term": "Mise à Terre",
+    "definition": "Mis [[prone|À Terre]] (ou [[stunned|Sonné]]) — ce qui déclenche un jet d'Armure."
+  },
+  {
+    "key": "follow-up",
+    "term": "Suivre",
+    "definition": "Se déplacer gratuitement dans la case qu'un joueur repoussé a libérée."
+  },
+  {
+    "key": "assist",
+    "term": "Aide",
+    "definition": "Un coéquipier proche ajoutant ±1 en Force à un blocage — offensive (la vôtre) ou défensive (la leur)."
+  },
+  {
+    "key": "blitz",
+    "term": "Blitz",
+    "definition": "Un Blocage combiné à un déplacement ; un seul joueur peut Blitzer par tour d'équipe."
+  },
+  {
+    "key": "foul",
+    "term": "Agression",
+    "definition": "Attaquer un adversaire [[prone|À Terre]] ou [[stunned|Sonné]] ; une par tour, et l'agresseur risque d'être expulsé."
+  },
+  {
+    "key": "casualty",
+    "term": "Blessure",
+    "definition": "Un résultat de blessure grave — lancez sur la table des blessures pour le résultat."
+  }
+]

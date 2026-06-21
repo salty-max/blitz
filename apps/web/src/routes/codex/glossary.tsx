@@ -1,21 +1,24 @@
-import { glossary } from '@blitz/data'
+import { getGlossary } from '@blitz/data'
 import { useTranslation } from 'react-i18next'
 
+import { useDataLocale } from '@/i18n/use-data-locale'
 import { RefText } from '@/reference/ref-text'
 import { DescriptionList, PageHeading } from '@/ui'
-
-const TERMS = [...glossary].sort((a, b) => a.term.localeCompare(b.term))
 
 /** The rules glossary — core game keywords and their definitions, cross-linked. */
 export function GlossaryPage() {
   const { t } = useTranslation('codex')
+  const locale = useDataLocale()
+  const terms = [...getGlossary(locale)].sort((a, b) =>
+    a.term.localeCompare(b.term, locale)
+  )
 
   return (
     <div>
       <PageHeading>{t('glossary.heading')}</PageHeading>
 
       <DescriptionList className="mt-6">
-        {TERMS.map((entry) => (
+        {terms.map((entry) => (
           <DescriptionList.Row key={entry.key} term={entry.term}>
             <RefText>{entry.definition}</RefText>
           </DescriptionList.Row>
