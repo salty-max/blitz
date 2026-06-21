@@ -6,9 +6,17 @@ import * as ComboboxStories from './combobox.stories'
 
 # Combobox
 
-A searchable single-select — a trigger that opens a filtered list in a popover.
-Reach for it over `Select` when the options are many: hiring a star player,
-picking a team or a skill. It's controlled: pass `options`, the selected `value`
-(or `null`), and an `onValueChange`.
+A searchable select — a trigger that opens a filtered list in a popover. Reach
+for it over `Select` when the options are many: hiring a star player, picking a
+team or a set of skills. It's controlled: pass `options`, the selected `value`,
+and an `onValueChange`.
 
 <Canvas of={ComboboxStories.Default} />
+
+## Multiple selection
+
+Pass `multiple` to toggle several values at once: `value` becomes a `string[]`,
+the picks are ticked, and the popover stays open as you select. The trigger
+summarises the count once more than one is chosen.
+
+<Canvas of={ComboboxStories.Multiple} />
