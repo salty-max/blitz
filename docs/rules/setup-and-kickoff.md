@@ -9,6 +9,8 @@ How a drive begins: setting up, kicking off, the kick-off event, and the weather
 - **At least 3** players must stand on the Line of Scrimmage (the centre field,
   adjacent to the line).
 - **No more than 2** players may stand in each Wide Zone.
+- Players not set up wait in the **Reserves box**. A team with **3 or fewer**
+  players able to set up must put **all** of them on the Line of Scrimmage.
 
 ## Coin toss
 
@@ -16,11 +18,16 @@ A roll-off; the winner chooses whether to kick or receive.
 
 ## The kick
 
-- The kicking team places the ball in any square of the **opponent's** half.
-- The ball **deviates** from that square to the square it lands in.
+- The kicking team nominates a **kicker** — **not** on the Line of Scrimmage and
+  **not** in a Wide Zone — and places the ball in any square of the **opponent's**
+  half.
+- The ball **deviates D6 squares** in a random direction to the square it lands
+  in.
+- A **kick-off event** is rolled (2D6) and resolved; **only then** does the ball
+  come down — caught if it lands on a player, bouncing on an empty square.
 - **Touchback** — if the ball leaves the pitch, or crosses back over the Line of
-  Scrimmage into the kicking team's half, the receiving coach simply gives it to
-  a standing player (or an empty square) in their own half.
+  Scrimmage into the kicking team's half, then **after the event** the receiving
+  coach gives it to a standing player (or an empty square) in their own half.
 
 ## Kick-off event table (2D6)
 

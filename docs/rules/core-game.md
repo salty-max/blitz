@@ -27,6 +27,14 @@ stands; a re-roll can't itself be re-rolled. Re-rolls are a limited pool that
 throw-ins) can't be team-re-rolled. A player with **Loner** is not a reliable
 team player and may waste the re-roll.
 
+## How the dice work
+
+- **D6** is the standard die; a **D3** is a D6 halved, **rounding up**; a **D8**
+  gives a random direction; a **D16** picks a Casualty result or a random player.
+- A **natural 1 always fails** and a **natural 6 always succeeds**, whatever the
+  modifiers.
+- A modified **D6 can never read below 1 or above 6**.
+
 ## Player actions
 
 A player takes exactly one Action per activation. Some actions are capped at
@@ -83,12 +91,14 @@ activation ends.
 
 - **During a Move** (entering the ball's square): an Agility test, with **−1 per
   opposition player Marking the picker-upper**. Failure causes a **turnover** and
-  the ball bounces.
-- **Secure the Ball action** (new in Third Season Edition): only available when
-  the loose ball is clear of nearby standing, undistracted opponents. The player
-  makes a free move to the ball, then rolls **2+ to pick it up automatically**;
-  the activation then ends. A natural **1** is a turnover. This gives low-Agility
-  teams a reliable way to collect the ball.
+  the ball bounces. A player moved onto the ball **involuntarily** does not test
+  — the ball simply **bounces, with no turnover**.
+- **Secure the Ball action** (new in Third Season Edition): available when the
+  player is **not a Big Guy** and there is **no Standing, undistracted opposition
+  player within 2 squares** of them. The player makes a free move to the ball,
+  then rolls **2+ to pick it up automatically**; the activation then ends. A
+  natural **1** is a turnover. This gives low-Agility teams a reliable way to
+  collect the ball.
 
 ## Standing up
 

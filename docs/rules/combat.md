@@ -6,8 +6,12 @@ knock-down through armour, injury and the casualty table.
 ## The Block action
 
 A Block pits the blocker's Strength against an adjacent opponent's. Roll the
-Block Dice, apply one result, then resolve any knock-down. (A Blitz is a Block
-combined with movement, and is limited to once per turn.)
+Block Dice, apply one result, then resolve any knock-down.
+
+A **Blitz** is the one Block per team turn a player may combine with movement:
+declare the target **before moving**, spend **1 square of MA** on the Block
+itself (a Rush can pay for it), and carry on moving afterward. Declining the
+Block still spends the Blitz.
 
 ## Strength & number of block dice
 
@@ -77,9 +81,10 @@ back in; and if the player was on the active team, it is a **turnover**.
 
 A team with an apothecary may use it **once per game** on one of its own
 knocked-out or Casualty players. On a knocked-out player it patches them up to
-merely **Stunned** in place; on a **Casualty** the coach re-rolls the Casualty
-result and keeps the better. Some players — Secret Weapons among them — can't be
-treated.
+merely **Stunned** in place — or sends them to the **Reserves** if the crowd
+knocked them out. On a **Casualty** it forces a second Casualty roll, the coach
+keeping the better, and a recovered player goes to the **Reserves** rather than
+the Casualty box. Some players — Secret Weapons among them — can't be treated.
 
 ## Casualty table (D16)
 
