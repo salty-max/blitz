@@ -110,7 +110,7 @@ describe('French data overlays', () => {
     expect(getSkill('block', 'en')?.name).toBe('Block')
     expect(getSkill('block', 'fr')?.name).toBe('Blocage')
     expect(getGlossaryTerm('tackle-zone', 'en')?.term).toBe('Tackle Zone')
-    expect(getGlossaryTerm('tackle-zone', 'fr')?.term).toBe('Zone de Tacle')
+    expect(getGlossaryTerm('tackle-zone', 'fr')?.term).toBe('Zone de tacle')
     expect(getTeam('amazon', 'en')?.name).toBe('Amazon')
     expect(getTeam('amazon', 'fr')?.name).toBe('Amazones')
     expect(getSkill('not-a-skill', 'fr')).toBeUndefined()

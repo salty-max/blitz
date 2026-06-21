@@ -1,7 +1,7 @@
 [
   {
     "key": "tackle-zone",
-    "term": "Zone de Tacle",
+    "term": "Zone de tacle",
     "definition": "Les huit cases autour d’un joueur Debout. Un adversaire qui s’y tient est [[marked|Marqué]]."
   },
   {
@@ -16,18 +16,18 @@
   },
   {
     "key": "turnover",
-    "term": "Revirement",
+    "term": "Turnover",
     "definition": "Met aussitôt fin au tour de votre équipe — un ramassage ou une passe ratés, une chute avec le ballon, ou le ballon qui atteint l’adversaire."
   },
   {
     "key": "prone",
-    "term": "À Terre",
-    "definition": "Mis à terre mais face vers le haut. Ne peut pas agir ; se relever coûte 3 cases de mouvement. N’exerce aucune [[tackle-zone|Zone de Tacle]]."
+    "term": "À terre",
+    "definition": "Mis à terre mais face vers le haut. Ne peut pas agir ; se relever coûte 3 cases de mouvement. N’exerce aucune [[tackle-zone|Zone de tacle]]."
   },
   {
     "key": "stunned",
     "term": "Sonné",
-    "definition": "Face contre terre et impossible à activer. Retourné face vers le haut à l’état [[prone|À Terre]] à la fin de votre tour."
+    "definition": "Face contre terre et impossible à activer. Retourné face vers le haut à l’état [[prone|À terre]] à la fin de votre tour."
   },
   {
     "key": "distracted",
@@ -36,7 +36,7 @@
   },
   {
     "key": "both-down",
-    "term": "Double Tampon",
+    "term": "Les deux à terre",
     "definition": "Un résultat de Blocage qui met à terre les deux joueurs sauf s’ils ont [[block|Blocage]] ou [[wrestle|Lutte]]."
   },
   {
@@ -51,8 +51,8 @@
   },
   {
     "key": "knocked-down",
-    "term": "Mise à Terre",
-    "definition": "Mis [[prone|À Terre]] (ou [[stunned|Sonné]]) — ce qui déclenche un jet d’Armure."
+    "term": "Mise à terre",
+    "definition": "Mis [[prone|À terre]] (ou [[stunned|Sonné]]) — ce qui déclenche un jet d’Armure."
   },
   {
     "key": "follow-up",
@@ -72,7 +72,7 @@
   {
     "key": "foul",
     "term": "Agression",
-    "definition": "Attaquer un adversaire [[prone|À Terre]] ou [[stunned|Sonné]] ; une par tour, et l’agresseur risque d’être expulsé."
+    "definition": "Attaquer un adversaire [[prone|À terre]] ou [[stunned|Sonné]] ; une par tour, et l’agresseur risque d’être expulsé."
   },
   {
     "key": "casualty",
