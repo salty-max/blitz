@@ -75,7 +75,7 @@
   {
     "key": "chaos-renegades",
     "name": "Renégats du Chaos",
-    "description": "Choisissez une allégeance Favori de (dieu du Chaos) à la création — elle détermine quels joueurs vedettes du Chaos l'équipe peut recruter.",
+    "description": "Choisissez une allégeance Favori de (dieu du Chaos) à la création — elle détermine quels joueurs vedettes du Chaos l’équipe peut recruter.",
     "positions": [
       { "key": "renegade-human", "name": "Humain Renégat" },
       { "key": "renegade-goblin", "name": "Gobelin Renégat" },
@@ -131,7 +131,7 @@
       { "key": "gnome-beastmaster", "name": "Maître des Bêtes Gnome" },
       {
         "key": "altern-forest-treeman",
-        "name": "Homme-Arbre de la Forêt d'Altern"
+        "name": "Homme-Arbre de la Forêt d’Altern"
       }
     ]
   },
@@ -142,10 +142,10 @@
       { "key": "goblin-lineman", "name": "Trois-quarts Gobelin" },
       { "key": "looney", "name": "Cinglé" },
       { "key": "bomma", "name": "Bombardier" },
-      { "key": "ooligan", "name": "'Ooligan" },
+      { "key": "ooligan", "name": "’Ooligan" },
       { "key": "doom-diver", "name": "Plongeur de la Mort" },
       { "key": "fanatic", "name": "Fanatique" },
-      { "key": "pogoer", "name": "Sauteur à l'Échasse" },
+      { "key": "pogoer", "name": "Sauteur à l’Échasse" },
       { "key": "trained-troll", "name": "Troll Dressé" }
     ]
   },
@@ -158,7 +158,7 @@
       { "key": "halfling-catcher", "name": "Receveur Halfling" },
       {
         "key": "athel-forest-treeman",
-        "name": "Homme-Arbre de la Forêt d'Athel"
+        "name": "Homme-Arbre de la Forêt d’Athel"
       }
     ]
   },
@@ -279,7 +279,7 @@
       { "key": "ogre", "name": "Ogre" },
       {
         "key": "altern-forest-treeman",
-        "name": "Homme-Arbre de la Forêt d'Altern"
+        "name": "Homme-Arbre de la Forêt d’Altern"
       }
     ]
   },
@@ -312,7 +312,7 @@
     "positions": [
       { "key": "skaven-clanrat", "name": "Rat de Clan Skaven" },
       { "key": "skaven-thrower", "name": "Lanceur Skaven" },
-      { "key": "gutter-runner", "name": "Coureur d'Égout" },
+      { "key": "gutter-runner", "name": "Coureur d’Égout" },
       { "key": "skaven-blitzer", "name": "Blitzeur Skaven" },
       { "key": "rat-ogre", "name": "Rat-Ogre" }
     ]
@@ -357,7 +357,7 @@
       { "key": "snotling-lineman", "name": "Trois-quarts Snotling" },
       { "key": "skaven-clanrat", "name": "Rat de Clan Skaven" },
       { "key": "skaven-thrower", "name": "Lanceur Skaven" },
-      { "key": "gutter-runner", "name": "Coureur d'Égout" },
+      { "key": "gutter-runner", "name": "Coureur d’Égout" },
       { "key": "skaven-blitzer", "name": "Blitzeur Skaven" },
       { "key": "troll", "name": "Troll" },
       { "key": "rat-ogre", "name": "Rat-Ogre" }

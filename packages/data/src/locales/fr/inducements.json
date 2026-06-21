@@ -2,7 +2,7 @@
   {
     "key": "prayers-to-nuffle",
     "name": "Prières à Nuffle",
-    "effect": "Lancez sur la table des Prières à Nuffle pour une bénédiction d'avant-match aléatoire."
+    "effect": "Lancez sur la table des Prières à Nuffle pour une bénédiction d’avant-match aléatoire."
   },
   {
     "key": "temp-agency-cheerleaders",
@@ -16,13 +16,13 @@
   },
   {
     "key": "team-mascot",
-    "name": "Mascotte d'Équipe",
-    "effect": "Une fois par mi-temps, sur un 4+, gagnez une relance d'équipe à usage unique."
+    "name": "Mascotte d’Équipe",
+    "effect": "Une fois par mi-temps, sur un 4+, gagnez une relance d’équipe à usage unique."
   },
   {
     "key": "weather-mage",
     "name": "Mage de la Météo",
-    "effect": "Une fois par match, relancez la météo avec un modificateur allant jusqu'à +2 / -2."
+    "effect": "Une fois par match, relancez la météo avec un modificateur allant jusqu’à +2 / -2."
   },
   {
     "key": "bloodweiser-kegs",
@@ -32,12 +32,12 @@
   {
     "key": "bribes",
     "name": "Pots-de-vin",
-    "effect": "Chaque pot-de-vin : sur un 2+, un joueur n'est pas expulsé suite à une [[foul|agression]] (et peut continuer à jouer). 50,000 gp et 0-6 pour les équipes Pots-de-vin et Corruption."
+    "effect": "Chaque pot-de-vin : sur un 2+, un joueur n’est pas expulsé suite à une [[foul|agression]] (et peut continuer à jouer). 50 000 po et 0-6 pour les équipes Pots-de-vin et Corruption."
   },
   {
     "key": "extra-team-training",
     "name": "Entraînement Supplémentaire",
-    "effect": "Gagnez une relance d'équipe supplémentaire pour ce match."
+    "effect": "Gagnez une relance d’équipe supplémentaire pour ce match."
   },
   {
     "key": "wandering-apothecary",
@@ -62,17 +62,17 @@
   {
     "key": "biased-referee",
     "name": "Arbitre Partial",
-    "effect": "Sur un 5+, un agresseur adverse est expulsé ; +1 pour Contester la Décision. 80,000 gp pour les équipes Pots-de-vin et Corruption."
+    "effect": "Sur un 5+, un agresseur adverse est expulsé ; +1 pour Contester la Décision. 80 000 po pour les équipes Pots-de-vin et Corruption."
   },
   {
     "key": "halfling-master-chef",
     "name": "Maître Cuisinier Halfling",
-    "effect": "Lancez 3D6 ; pour chaque 4+, vous gagnez une relance d'équipe ce match et l'adversaire en perd une. 100,000 gp pour les équipes Halfling."
+    "effect": "Lancez 3D6 ; pour chaque 4+, vous gagnez une relance d’équipe ce match et l’adversaire en perd une. 100 000 po pour les équipes Halfling."
   },
   {
     "key": "mercenary-players",
     "name": "Joueurs Mercenaires",
-    "effect": "Engagez n'importe quel joueur positionnel ou trois-quarts pour +30,000 gp au-dessus de son coût ; ils gagnent [[loner|Solitaire]] (4+)."
+    "effect": "Engagez n’importe quel joueur positionnel ou trois-quarts pour +30 000 po au-dessus de son coût ; ils gagnent [[loner|Solitaire]] (4+)."
   },
   {
     "key": "wizard",

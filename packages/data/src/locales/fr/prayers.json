@@ -2,11 +2,11 @@
   {
     "key": "treacherous-trapdoor",
     "name": "Trappe Traîtresse",
-    "effect": "Des trappes peuvent s'ouvrir sous les joueurs — lancez un D6 ; sur un 1 le joueur tombe."
+    "effect": "Des trappes peuvent s’ouvrir sous les joueurs — lancez un D6 ; sur un 1 le joueur tombe."
   },
   {
     "key": "friends-with-the-ref",
-    "name": "Copain avec l'Arbitre",
+    "name": "Copain avec l’Arbitre",
     "effect": "Contester la Décision réussit sur un 5+."
   },
   {
@@ -42,7 +42,7 @@
   {
     "key": "moles-under-the-pitch",
     "name": "Taupes sous le Terrain",
-    "effect": "−1 aux jets de [[rush]] de l'adversaire."
+    "effect": "−1 aux jets de [[rush]] de l’adversaire."
   },
   {
     "key": "perfect-passing",
@@ -61,7 +61,7 @@
   },
   {
     "key": "fouling-frenzy",
-    "name": "Frénésie d'Agression",
+    "name": "Frénésie d’Agression",
     "effect": "Les [[casualty|blessures]] causées par une [[foul|agression]] rapportent 2 SPP cette partie."
   },
   {
@@ -72,7 +72,7 @@
   {
     "key": "under-scrutiny",
     "name": "Sous Surveillance",
-    "effect": "Les agressions de l'adversaire qui brisent l'armure entraînent automatiquement une expulsion."
+    "effect": "Les agressions de l’adversaire qui brisent l’armure entraînent automatiquement une expulsion."
   },
   {
     "key": "intensive-training",

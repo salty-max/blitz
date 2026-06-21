@@ -2,7 +2,7 @@
   {
     "key": "stunned",
     "name": "Sonné",
-    "effect": "Récupère sur le terrain — retourné face visible en [[prone|À Terre]] à la fin du tour de l'équipe."
+    "effect": "Récupère sur le terrain — retourné face visible en [[prone|À Terre]] à la fin du tour de l’équipe."
   },
   {
     "key": "knocked-out",
@@ -17,7 +17,7 @@
   {
     "key": "stunty-stunned",
     "name": "Sonné",
-    "effect": "Récupère sur le terrain — retourné face visible en [[prone|À Terre]] à la fin du tour de l'équipe."
+    "effect": "Récupère sur le terrain — retourné face visible en [[prone|À Terre]] à la fin du tour de l’équipe."
   },
   {
     "key": "stunty-knocked-out",
