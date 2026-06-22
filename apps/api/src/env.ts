@@ -5,7 +5,7 @@ export const env = {
    * production must set `DATABASE_URL` explicitly.
    */
   databaseUrl:
-    process.env.DATABASE_URL ?? 'postgres://blitz:blitz@localhost:5433/blitz',
+    process.env.DATABASE_URL ?? 'postgres://blitz:blitz@localhost:5432/blitz',
   /** Signing secret for sessions; required in production, defaulted for local dev. */
   authSecret: process.env.BETTER_AUTH_SECRET ?? 'dev-secret-change-me',
   /** The auth server's own base URL. */
