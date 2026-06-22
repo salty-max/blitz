@@ -61,7 +61,6 @@ export const fr = {
       cta: 'Ouvrir le codex',
     },
     pillars: {
-      signIn: 'Connexion',
       codex: {
         kicker: 'La référence',
         label: 'Codex',
