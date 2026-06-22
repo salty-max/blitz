@@ -14,12 +14,43 @@ export const fr = {
       teams: 'Équipes',
       leagues: 'Ligues',
     },
+    auth: {
+      signIn: 'Connexion',
+      signOut: 'Déconnexion',
+    },
     footer: {
       github: 'GitHub',
       reportIssue: 'Signaler un problème',
       copyright: '© 2026 Blitz',
       disclaimer:
         'Blitz est un outil non officiel créé par des fans. Blood Bowl et tous les noms associés sont des marques déposées de Games Workshop Limited. Ce projet n’est ni affilié à Games Workshop ni approuvé par celle-ci.',
+    },
+  },
+  auth: {
+    eyebrow: 'Coachs',
+    title: {
+      signIn: 'Connexion',
+      signUp: 'Créer un compte',
+    },
+    fields: {
+      name: 'Nom du coach',
+      email: 'E-mail',
+      password: 'Mot de passe',
+    },
+    submit: {
+      signIn: 'Se connecter',
+      signUp: 'Créer le compte',
+    },
+    toggle: {
+      needAccount: 'Nouveau ici ?',
+      haveAccount: 'Vous avez déjà un compte ?',
+      toSignUp: 'Créer un compte',
+      toSignIn: 'Se connecter',
+    },
+    errors: {
+      signIn:
+        'Connexion impossible. Vérifiez votre e-mail et votre mot de passe.',
+      signUp: 'Création impossible. Cet e-mail est peut-être déjà utilisé.',
     },
   },
   landing: {

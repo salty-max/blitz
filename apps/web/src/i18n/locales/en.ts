@@ -14,12 +14,43 @@ export const en = {
       teams: 'Teams',
       leagues: 'Leagues',
     },
+    auth: {
+      signIn: 'Sign in',
+      signOut: 'Sign out',
+    },
     footer: {
       github: 'GitHub',
       reportIssue: 'Report an issue',
       copyright: '© 2026 Blitz',
       disclaimer:
         'Blitz is an unofficial, fan-made tool. Blood Bowl and all associated names are trademarks of Games Workshop Limited. This project is not affiliated with or endorsed by Games Workshop.',
+    },
+  },
+  auth: {
+    eyebrow: 'Coaches',
+    title: {
+      signIn: 'Sign in',
+      signUp: 'Create an account',
+    },
+    fields: {
+      name: 'Coach name',
+      email: 'Email',
+      password: 'Password',
+    },
+    submit: {
+      signIn: 'Sign in',
+      signUp: 'Create account',
+    },
+    toggle: {
+      needAccount: 'New here?',
+      haveAccount: 'Already have an account?',
+      toSignUp: 'Create an account',
+      toSignIn: 'Sign in',
+    },
+    errors: {
+      signIn: 'Could not sign you in. Check your email and password.',
+      signUp:
+        'Could not create your account. That email may already be in use.',
     },
   },
   landing: {
