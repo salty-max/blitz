@@ -27,13 +27,12 @@ export const en = {
     },
   },
   auth: {
-    eyebrow: 'Coaches',
     title: {
       signIn: 'Sign in',
       signUp: 'Create an account',
     },
     fields: {
-      name: 'Coach name',
+      name: 'Name',
       email: 'Email',
       password: 'Password',
     },
