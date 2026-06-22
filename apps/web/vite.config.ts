@@ -11,11 +11,11 @@ export default defineConfig({
     },
   },
   // Proxy API calls to the Hono server so the SPA and API share an origin in
-  // dev — the session cookie works without CORS.
+  // dev — the session cookie works without CORS. Only `/api/*` is proxied; the
+  // SPA owns app routes like `/teams`, and team/league data lives under `/api`.
   server: {
     proxy: {
       '/api': 'http://localhost:3000',
-      '/teams': 'http://localhost:3000',
     },
   },
 })

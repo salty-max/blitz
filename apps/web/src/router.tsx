@@ -2,9 +2,12 @@ import {
   createRootRoute,
   createRoute,
   createRouter,
+  type ParsedLocation,
+  redirect,
 } from '@tanstack/react-router'
 
 import { AppShell } from '@/layout/app-shell'
+import { authClient } from '@/lib/auth-client'
 import { AuthPage } from '@/routes/auth'
 import { CodexHome, CodexLayout } from '@/routes/codex/codex'
 import { DraftingPage } from '@/routes/codex/drafting'
@@ -149,24 +152,40 @@ const codexDraftingRoute = createRoute({
   component: DraftingPage,
 })
 
-// Team management — your own rosters across a season.
+// Route guard — bounce to /login (remembering where the coach was headed)
+// when there's no session.
+async function requireAuth({ location }: { location: ParsedLocation }) {
+  const { data } = await authClient.getSession()
+  if (!data) {
+    // `redirect()` is a thrown control-flow signal, not an Error — TanStack's pattern.
+    // eslint-disable-next-line @typescript-eslint/only-throw-error
+    throw redirect({ to: '/login', search: { redirect: location.href } })
+  }
+}
+
+// Team management — your own rosters across a season. Requires a signed-in coach.
 const teamsRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/teams',
+  beforeLoad: requireAuth,
   component: () => <ComingSoon titleKey="teamManagement" />,
 })
 
-// League & tournament management.
+// League & tournament management. Requires a signed-in coach.
 const leaguesRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/leagues',
+  beforeLoad: requireAuth,
   component: () => <ComingSoon titleKey="leagues" />,
 })
 
-// Sign in / sign up.
+// Sign in / sign up. `redirect` carries where to return after authenticating.
 const loginRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/login',
+  validateSearch: (search: Record<string, unknown>): { redirect?: string } => ({
+    redirect: typeof search.redirect === 'string' ? search.redirect : undefined,
+  }),
   component: AuthPage,
 })
 

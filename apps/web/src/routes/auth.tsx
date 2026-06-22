@@ -1,4 +1,4 @@
-import { useNavigate } from '@tanstack/react-router'
+import { useNavigate, useSearch } from '@tanstack/react-router'
 import { type FormEvent, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -7,11 +7,19 @@ import { Button, FormField, Input, PageHeading } from '@/ui'
 
 type Mode = 'signIn' | 'signUp'
 
+/** Where to land after authenticating — whitelisted to in-app, auth-gated routes (no open redirect). */
+type Destination = '/' | '/teams' | '/leagues'
+function destination(redirect: string | undefined): Destination {
+  return redirect === '/teams' || redirect === '/leagues' ? redirect : '/'
+}
+
 /** The sign-in / sign-up page — a coach authenticates here to own and save teams. */
 export function AuthPage() {
   const { t } = useTranslation('auth')
   const navigate = useNavigate()
   const { data: session } = authClient.useSession()
+  const search = useSearch({ strict: false })
+  const target = destination(search.redirect)
   const [mode, setMode] = useState<Mode>('signIn')
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -22,8 +30,8 @@ export function AuthPage() {
 
   // An already-signed-in coach has no business on the login page.
   useEffect(() => {
-    if (session) void navigate({ to: '/' })
-  }, [session, navigate])
+    if (session) void navigate({ to: target })
+  }, [session, navigate, target])
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault()
@@ -37,7 +45,7 @@ export function AuthPage() {
       setError(t(isSignUp ? 'errors.signUp' : 'errors.signIn'))
       return
     }
-    await navigate({ to: '/' })
+    await navigate({ to: target })
   }
 
   return (
