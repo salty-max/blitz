@@ -18,7 +18,7 @@ import { Link, Outlet, useRouterState } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
 
 import { useDataLocale } from '@/i18n/use-data-locale'
-import { Breadcrumb, Card, Eyebrow, PageHeading } from '@/ui'
+import { Breadcrumb, Card, Eyebrow, PageHeading, Text } from '@/ui'
 
 const CATEGORIES = [
   { to: '/codex/teams', key: 'teams', count: teams.length },
@@ -129,13 +129,22 @@ export function CodexHome() {
           <Card key={category.to} asChild interactive>
             <Link to={category.to} data-testid={`codex-card-${category.key}`}>
               <div className="flex items-baseline justify-between gap-3">
-                <h2 className="font-display text-3xl uppercase group-hover:text-paper">
+                <Text
+                  as="h2"
+                  variant="heading"
+                  className="group-hover:text-paper"
+                >
                   {t(`categories.${category.key}`)}
-                </h2>
+                </Text>
                 {'count' in category && (
-                  <span className="font-display text-3xl text-blood group-hover:text-gold">
+                  <Text
+                    as="span"
+                    variant="heading"
+                    tone="blood"
+                    className="normal-case group-hover:text-gold"
+                  >
                     {category.count}
-                  </span>
+                  </Text>
                 )}
               </div>
             </Link>

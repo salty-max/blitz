@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 
 import { RefText } from '@/reference/ref-text'
-import { Table } from '@/ui'
+import { cn, Table, textVariants } from '@/ui'
 
 /** A row of a {@link RollTable}: a die roll (single face or inclusive range), the result, and its effect. */
 export type RollTableRow = {
@@ -42,13 +42,22 @@ export function RollTable({
       <Table.Body>
         {rows.map((row) => (
           <Table.Row key={row.key}>
-            <Table.Cell className="whitespace-nowrap pr-3 text-center font-display text-xl leading-none tabular-nums text-blood">
+            <Table.Cell
+              className={cn(
+                textVariants({ variant: 'stat', tone: 'blood' }),
+                'whitespace-nowrap pr-3 text-center'
+              )}
+            >
               {rollLabel(row.roll)}
             </Table.Cell>
-            <Table.Cell className="px-3 font-headline font-semibold uppercase tracking-wide">
+            <Table.Cell
+              className={cn(textVariants({ variant: 'labelLg' }), 'px-3')}
+            >
               {row.name}
             </Table.Cell>
-            <Table.Cell className="px-3 text-ink/85">
+            <Table.Cell
+              className={cn(textVariants({ tone: 'default' }), 'px-3')}
+            >
               <RefText>{row.effect}</RefText>
             </Table.Cell>
           </Table.Row>

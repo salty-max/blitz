@@ -2,13 +2,23 @@ import { getProgression } from '@blitz/data'
 import { useTranslation } from 'react-i18next'
 
 import { useDataLocale } from '@/i18n/use-data-locale'
-import { PageHeading, SectionHeading, Table } from '@/ui'
+import {
+  cn,
+  PageHeading,
+  SectionHeading,
+  Table,
+  Text,
+  textVariants,
+} from '@/ui'
 
 const rollLabel = (roll: [number, number]): string =>
   roll[0] === roll[1] ? `${roll[0]}` : `${roll[0]}–${roll[1]}`
 
-const numberCell = 'px-3 text-center tabular-nums text-ink/85'
-const labelCell = 'px-3 font-headline font-semibold uppercase tracking-wide'
+const numberCell = cn(
+  textVariants({ tone: 'default', tabular: true }),
+  'px-3 text-center'
+)
+const labelCell = cn(textVariants({ variant: 'labelLg' }), 'px-3')
 
 /** Star Player Points and advancement — how players earn SPP and spend them to improve. */
 export function SppPage() {
@@ -33,10 +43,17 @@ export function SppPage() {
           <Table.Body>
             {sppActions.map((row) => (
               <Table.Row key={row.key}>
-                <Table.Cell className="px-3 text-ink/85">
+                <Table.Cell
+                  className={cn(textVariants({ tone: 'default' }), 'px-3')}
+                >
                   {row.action}
                 </Table.Cell>
-                <Table.Cell className="px-3 text-center font-display text-xl leading-none tabular-nums text-blood">
+                <Table.Cell
+                  className={cn(
+                    textVariants({ variant: 'stat', tone: 'blood' }),
+                    'px-3 text-center'
+                  )}
+                >
                   {row.spp}
                 </Table.Cell>
               </Table.Row>
@@ -47,9 +64,9 @@ export function SppPage() {
 
       <section className="space-y-3">
         <SectionHeading hint="SPP">{t('spp.advancementCost')}</SectionHeading>
-        <p className="max-w-2xl text-sm text-ink/70">
+        <Text tone="secondary" className="max-w-2xl">
           {t('spp.advancementNote')}
-        </p>
+        </Text>
         <Table className="min-w-[44rem]">
           <Table.Header>
             <Table.Row>
@@ -112,17 +129,26 @@ export function SppPage() {
           <Table.Body>
             {characteristicGains.map((row) => (
               <Table.Row key={row.key}>
-                <Table.Cell className="whitespace-nowrap pr-3 text-center font-display text-xl leading-none tabular-nums text-blood">
+                <Table.Cell
+                  className={cn(
+                    textVariants({ variant: 'stat', tone: 'blood' }),
+                    'whitespace-nowrap pr-3 text-center'
+                  )}
+                >
                   {rollLabel(row.roll)}
                 </Table.Cell>
-                <Table.Cell className="px-3 text-ink/85">{row.gain}</Table.Cell>
+                <Table.Cell
+                  className={cn(textVariants({ tone: 'default' }), 'px-3')}
+                >
+                  {row.gain}
+                </Table.Cell>
               </Table.Row>
             ))}
           </Table.Body>
         </Table>
-        <p className="max-w-2xl text-sm text-ink/70">
+        <Text tone="secondary" className="max-w-2xl">
           {t('spp.characteristicNote')}
-        </p>
+        </Text>
       </section>
 
       <section className="space-y-5">

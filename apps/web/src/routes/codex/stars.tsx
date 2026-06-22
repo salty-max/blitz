@@ -17,7 +17,7 @@ import { CostBadge } from '@/components/cost-badge'
 import { TeamChips } from '@/components/team-chips'
 import { useDataLocale } from '@/i18n/use-data-locale'
 import { RefChips } from '@/reference/ref-chips'
-import { Card, EmptyState, Field, PageHeading, Select } from '@/ui'
+import { Card, EmptyState, Field, PageHeading, Select, Text } from '@/ui'
 
 /** Lowercase search text per star — its name and its skill/ability names in the active locale. */
 function searchIndex(locale: DataLocale) {
@@ -45,9 +45,9 @@ function StarCard({ star }: { star: StarPlayer }) {
     >
       <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-3">
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-          <h2 className="font-display text-2xl uppercase leading-none">
+          <Text as="h2" variant="subheading" className="leading-none">
             {star.name}
-          </h2>
+          </Text>
           <CostBadge cost={star.cost} />
         </div>
         <CharacteristicsRow characteristics={star.characteristics} />
@@ -144,9 +144,9 @@ export function StarsPage() {
             </Select.Content>
           </Select>
         </div>
-        <span className="font-headline text-sm font-semibold uppercase tracking-wide tabular-nums text-ink/45">
+        <Text as="span" variant="labelLg" tone="muted" tabular>
           {shown.length} / {starPlayers.length}
-        </span>
+        </Text>
       </div>
 
       <div className="mt-6 space-y-4">

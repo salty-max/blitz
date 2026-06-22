@@ -3,7 +3,14 @@ import { useTranslation } from 'react-i18next'
 
 import { useDataLocale } from '@/i18n/use-data-locale'
 import { RefText } from '@/reference/ref-text'
-import { PageHeading, SectionHeading, Table } from '@/ui'
+import {
+  cn,
+  PageHeading,
+  SectionHeading,
+  Table,
+  Text,
+  textVariants,
+} from '@/ui'
 
 /** How a roster is drafted: budget, player limits, sideline staff and Team Value. */
 export function DraftingPage() {
@@ -57,7 +64,7 @@ export function DraftingPage() {
 
       <section className="space-y-3">
         <SectionHeading>{t('drafting.budgetRoster')}</SectionHeading>
-        <p className="max-w-3xl leading-relaxed text-ink/85">
+        <Text tone="default" className="max-w-3xl leading-relaxed">
           <RefText>
             {t('drafting.draftNote', {
               budget: money(r.budget),
@@ -65,7 +72,7 @@ export function DraftingPage() {
               max: r.maxPlayers,
             })}
           </RefText>
-        </p>
+        </Text>
       </section>
 
       <section className="space-y-3">
@@ -87,34 +94,45 @@ export function DraftingPage() {
           <Table.Body>
             {assets.map((a) => (
               <Table.Row key={a.key}>
-                <Table.Cell className="px-3 font-headline font-semibold uppercase tracking-wide">
+                <Table.Cell
+                  className={cn(textVariants({ variant: 'labelLg' }), 'px-3')}
+                >
                   {a.label}
                 </Table.Cell>
-                <Table.Cell className="px-3 tabular-nums text-ink/85">
+                <Table.Cell
+                  className={cn(
+                    textVariants({ tone: 'default', tabular: true }),
+                    'px-3'
+                  )}
+                >
                   {a.cost}
                 </Table.Cell>
-                <Table.Cell className="px-3 text-ink/85">{a.limit}</Table.Cell>
+                <Table.Cell
+                  className={cn(textVariants({ tone: 'default' }), 'px-3')}
+                >
+                  {a.limit}
+                </Table.Cell>
               </Table.Row>
             ))}
           </Table.Body>
         </Table>
-        <p className="max-w-3xl text-sm text-ink/70">
+        <Text tone="secondary" className="max-w-3xl">
           {t('drafting.rerollNote')}
-        </p>
+        </Text>
       </section>
 
       <section className="space-y-3">
         <SectionHeading>{t('drafting.tv')}</SectionHeading>
-        <p className="max-w-3xl leading-relaxed text-ink/85">
+        <Text tone="default" className="max-w-3xl leading-relaxed">
           <RefText>{t('drafting.tvNote')}</RefText>
-        </p>
+        </Text>
       </section>
 
       <section className="space-y-3">
         <SectionHeading>{t('drafting.gameDay')}</SectionHeading>
-        <p className="max-w-3xl leading-relaxed text-ink/85">
+        <Text tone="default" className="max-w-3xl leading-relaxed">
           <RefText>{t('drafting.gameDayNote')}</RefText>
-        </p>
+        </Text>
       </section>
     </div>
   )

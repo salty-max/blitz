@@ -11,10 +11,13 @@ import { RefText } from '@/reference/ref-text'
 import {
   Button,
   Card,
+  cn,
   EmptyState,
   PageHeading,
   SectionHeading,
   Table,
+  Text,
+  textVariants,
 } from '@/ui'
 
 /** Single-letter codes for the skill-access categories shown in the roster table. */
@@ -36,13 +39,23 @@ const target = (value: number | null): string =>
 
 const TIERS = [1, 2, 3, 4] as const
 
+/** Roster stat cells — tabular figures in the headline face. */
+const statCell = cn(
+  textVariants({ variant: 'figure', weight: 'semibold' }),
+  'px-2 text-center'
+)
+const costCell = cn(
+  textVariants({ variant: 'figure', weight: 'semibold' }),
+  'px-2 text-right'
+)
+
 /** A label-over-value pair in a team's meta strip. */
 function Meta({ label, children }: { label: string; children: ReactNode }) {
   return (
     <div>
-      <dt className="font-headline text-[0.625rem] font-bold uppercase tracking-wider text-ink/45">
+      <Text as="dt" variant="overline" tone="muted">
         {label}
-      </dt>
+      </Text>
       <dd className="mt-1 text-base font-semibold">{children}</dd>
     </div>
   )
@@ -94,18 +107,30 @@ export function TeamsIndex() {
               data-testid={`team-card-${team.key}`}
             >
               <div className="flex items-baseline justify-between gap-3">
-                <h2 className="font-display text-3xl uppercase leading-none group-hover:text-paper">
+                <Text
+                  as="h2"
+                  variant="heading"
+                  className="leading-none group-hover:text-paper"
+                >
                   {team.name}
-                </h2>
+                </Text>
                 {team.tier != null && (
-                  <span className="font-headline text-sm font-semibold uppercase tracking-wide text-blood group-hover:text-gold">
+                  <Text
+                    as="span"
+                    variant="labelLg"
+                    tone="blood"
+                    className="group-hover:text-gold"
+                  >
                     {t('teams.tier', { n: team.tier })}
-                  </span>
+                  </Text>
                 )}
               </div>
-              <p className="mt-2 text-sm text-ink/60 group-hover:text-paper/70">
+              <Text
+                tone="secondary"
+                className="mt-2 text-sm group-hover:text-paper/70"
+              >
                 {t('teams.positions', { n: team.positions.length })}
-              </p>
+              </Text>
             </Link>
           </Card>
         ))}
@@ -133,26 +158,26 @@ export function TeamDetail() {
         <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
           <PageHeading className="leading-none">{team.name}</PageHeading>
           {team.tier != null && (
-            <span className="font-headline text-lg font-semibold uppercase tracking-wide text-blood">
+            <Text as="span" variant="labelLg" tone="blood" className="text-lg">
               {t('teams.tier', { n: team.tier })}
-            </span>
+            </Text>
           )}
         </div>
         {team.description && (
-          <p className="mt-3 max-w-2xl text-ink/75">
+          <Text as="p" tone="secondary" className="mt-3 max-w-2xl">
             <RefText>{team.description}</RefText>
-          </p>
+          </Text>
         )}
         <dl className="mt-5 flex flex-wrap gap-x-10 gap-y-3">
           <Meta label={t('teams.rerolls')}>
-            <span className="font-headline tabular-nums">
+            <Text as="span" variant="figure">
               {gp(team.rerollCost)}
-            </span>
+            </Text>
           </Meta>
           <Meta label={t('teams.apothecary')}>
-            <span className="font-headline">
+            <Text as="span" variant="figure">
               {team.apothecary ? t('teams.yes') : t('teams.no')}
-            </span>
+            </Text>
           </Meta>
           <Meta label={t('teams.specialRules')}>
             <RefChips keys={team.specialRules} />
@@ -189,28 +214,28 @@ export function TeamDetail() {
           <Table.Body>
             {team.positions.map((position) => (
               <Table.Row key={position.key}>
-                <Table.Cell className="pr-3 font-headline font-semibold uppercase tracking-wide">
+                <Table.Cell
+                  className={cn(textVariants({ variant: 'labelLg' }), 'pr-3')}
+                >
                   {position.name}
                 </Table.Cell>
-                <Table.Cell className="px-2 text-center font-headline font-semibold tabular-nums">
-                  {position.max}
-                </Table.Cell>
-                <Table.Cell className="px-2 text-center font-headline font-semibold tabular-nums">
+                <Table.Cell className={statCell}>{position.max}</Table.Cell>
+                <Table.Cell className={statCell}>
                   {position.characteristics.ma}
                 </Table.Cell>
-                <Table.Cell className="px-2 text-center font-headline font-semibold tabular-nums">
+                <Table.Cell className={statCell}>
                   {position.characteristics.st}
                 </Table.Cell>
-                <Table.Cell className="px-2 text-center font-headline font-semibold tabular-nums">
+                <Table.Cell className={statCell}>
                   {target(position.characteristics.ag)}
                 </Table.Cell>
-                <Table.Cell className="px-2 text-center font-headline font-semibold tabular-nums">
+                <Table.Cell className={statCell}>
                   {target(position.characteristics.pa)}
                 </Table.Cell>
-                <Table.Cell className="px-2 text-center font-headline font-semibold tabular-nums">
+                <Table.Cell className={statCell}>
                   {target(position.characteristics.av)}
                 </Table.Cell>
-                <Table.Cell className="px-2 text-right font-headline font-semibold tabular-nums">
+                <Table.Cell className={costCell}>
                   {gp(position.cost)}
                 </Table.Cell>
                 <Table.Cell className="px-2">
@@ -237,7 +262,9 @@ export function TeamDetail() {
           </Table.Body>
         </Table>
       </div>
-      <p className="mt-2 text-xs text-ink/45">{t('teams.accessLegend')}</p>
+      <Text variant="caption" tone="muted" className="mt-2">
+        {t('teams.accessLegend')}
+      </Text>
 
       {stars.length > 0 && (
         <section className="mt-8">
@@ -252,9 +279,9 @@ export function TeamDetail() {
                   hash={star.key}
                   className="flex items-center justify-between gap-3 border-b border-ink/10 py-1.5 transition-colors hover:text-blood"
                 >
-                  <span className="font-headline text-sm uppercase tracking-wide">
+                  <Text as="span" variant="labelLg" weight="normal">
                     {star.name}
-                  </span>
+                  </Text>
                   <CostBadge cost={star.cost} size="sm" className="shrink-0" />
                 </Link>
               </li>

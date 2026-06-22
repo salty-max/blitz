@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 
 import { useDataLocale } from '@/i18n/use-data-locale'
 import { RefText } from '@/reference/ref-text'
-import { Card, EmptyState, PageHeading, SectionHeading } from '@/ui'
+import { Card, EmptyState, PageHeading, SectionHeading, Text } from '@/ui'
 
 /** The rulebook landing — a card per rules topic. */
 export function RulebookIndex() {
@@ -24,12 +24,19 @@ export function RulebookIndex() {
             className="flex flex-col p-5"
           >
             <Link to="/codex/rulebook/$topic" params={{ topic: topic.key }}>
-              <h2 className="font-display text-2xl uppercase group-hover:text-paper">
+              <Text
+                as="h2"
+                variant="subheading"
+                className="group-hover:text-paper"
+              >
                 {topic.title}
-              </h2>
-              <p className="mt-2 flex-1 text-sm text-ink/65 group-hover:text-paper/80">
+              </Text>
+              <Text
+                tone="secondary"
+                className="mt-2 flex-1 group-hover:text-paper/80"
+              >
                 {topic.summary}
-              </p>
+              </Text>
             </Link>
           </Card>
         ))}
@@ -72,9 +79,9 @@ function RuleProse({ body }: { body: string }) {
       {toBlocks(body).map((block, index) => {
         if (block.kind === 'p')
           return (
-            <p key={index}>
+            <Text key={index}>
               <RefText>{block.text}</RefText>
-            </p>
+            </Text>
           )
         const items = block.items.map((item, i) => (
           <li key={i} className="pl-1.5">
@@ -116,7 +123,9 @@ export function RulebookTopic() {
     <div className="space-y-8">
       <header className="border-b-4 border-ink pb-5">
         <PageHeading>{topic.title}</PageHeading>
-        <p className="mt-3 max-w-2xl text-ink/75">{topic.summary}</p>
+        <Text tone="secondary" className="mt-3 max-w-2xl">
+          {topic.summary}
+        </Text>
       </header>
 
       {topic.sections.map((section) => (
