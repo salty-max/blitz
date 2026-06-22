@@ -94,6 +94,15 @@ describe('teams API', () => {
     expect(res.status).toBe(400)
   })
 
+  const roster = {
+    players: [{ position: 'blitzer', name: 'Grukk Bonesplitter', number: 7 }],
+    rerolls: 2,
+    apothecary: false,
+    assistantCoaches: 0,
+    cheerleaders: 0,
+    dedicatedFans: 1,
+  }
+
   test('creates a team, scopes it to the coach, and echoes it', async () => {
     signIn()
     const created = {
@@ -101,17 +110,32 @@ describe('teams API', () => {
       userId: 'coach-1',
       name: 'My Orcs',
       teamKey: 'orc',
-      roster: { players: [] },
+      roster,
     }
     rows.insert = [created]
     const res = await app.request(
       '/api/teams',
-      json('POST', { name: 'My Orcs', teamKey: 'orc', roster: { players: [] } })
+      json('POST', { name: 'My Orcs', teamKey: 'orc', roster })
     )
     expect(res.status).toBe(201)
     expect(await res.json()).toEqual(created)
     expect(recorded.insert?.userId).toBe('coach-1')
     expect(recorded.insert?.name).toBe('My Orcs')
+    // Player names and numbers survive validation into the stored roster.
+    expect(recorded.insert?.roster).toEqual(roster)
+  })
+
+  test('rejects a create whose roster is malformed', async () => {
+    signIn()
+    const res = await app.request(
+      '/api/teams',
+      json('POST', {
+        name: 'My Orcs',
+        teamKey: 'orc',
+        roster: { ...roster, players: [{ position: 42 }] },
+      })
+    )
+    expect(res.status).toBe(400)
   })
 
   test('lists the teams the store returns', async () => {

@@ -1,20 +1,7 @@
-/** A single player slot on a roster — the position it fills. */
-export interface RosterPlayer {
-  /** A position key from the team's roster. */
-  position: string
-}
-
-/** A drafted roster: the players hired, plus the re-rolls and sideline staff bought. */
-export interface Roster {
-  players: readonly RosterPlayer[]
-  /** Team re-rolls bought. */
-  rerolls: number
-  apothecary: boolean
-  assistantCoaches: number
-  cheerleaders: number
-  /** Total Dedicated Fans (a new team starts with `rules.dedicatedFans.start`). */
-  dedicatedFans: number
-}
+// The persisted roster shape is part of the data model, so it lives in
+// `@blitz/schema` as a zod schema (the single source of truth the API validates
+// against); re-exported here for the resolver's own callers.
+export type { Roster, RosterPlayer } from '@blitz/schema'
 
 /** The kind of a {@link Diagnostic}; the UI formats a message from the code and its values. */
 export type DiagnosticCode =

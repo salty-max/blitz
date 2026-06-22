@@ -1,3 +1,4 @@
+import { rosterSchema } from '@blitz/schema'
 import { and, eq } from 'drizzle-orm'
 import { Hono } from 'hono'
 import { z } from 'zod'
@@ -9,8 +10,8 @@ import { team } from '../db/schema'
 const teamInput = z.object({
   name: z.string().min(1).max(100),
   teamKey: z.string().min(1),
-  /** The drafted roster, stored verbatim (validated client-side by the resolver). */
-  roster: z.record(z.string(), z.unknown()),
+  /** The drafted roster, validated against the shared schema before it is stored. */
+  roster: rosterSchema,
 })
 
 /** A coach's saved teams — owned by the authenticated user, isolated per user. */
