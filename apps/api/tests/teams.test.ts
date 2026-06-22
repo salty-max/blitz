@@ -51,13 +51,13 @@ dbSuite('teams API', () => {
   })
 
   test('rejects unauthenticated requests', async () => {
-    const res = await app.request('/teams')
+    const res = await app.request('/api/teams')
     expect(res.status).toBe(401)
   })
 
   test('creates and lists a coach’s own teams', async () => {
     const cookie = await signUp('coach@blitz.test')
-    const created = await app.request('/teams', {
+    const created = await app.request('/api/teams', {
       method: 'POST',
       headers: { 'content-type': 'application/json', cookie },
       body: JSON.stringify({
@@ -68,7 +68,7 @@ dbSuite('teams API', () => {
     })
     expect(created.status).toBe(201)
 
-    const list = await app.request('/teams', { headers: { cookie } })
+    const list = await app.request('/api/teams', { headers: { cookie } })
     expect(list.status).toBe(200)
     const teams = (await list.json()) as { name: string }[]
     expect(teams).toHaveLength(1)
@@ -77,7 +77,7 @@ dbSuite('teams API', () => {
 
   test('isolates teams between coaches', async () => {
     const owner = await signUp('owner@blitz.test')
-    await app.request('/teams', {
+    await app.request('/api/teams', {
       method: 'POST',
       headers: { 'content-type': 'application/json', cookie: owner },
       body: JSON.stringify({
@@ -88,7 +88,7 @@ dbSuite('teams API', () => {
     })
 
     const other = await signUp('other@blitz.test')
-    const list = await app.request('/teams', { headers: { cookie: other } })
+    const list = await app.request('/api/teams', { headers: { cookie: other } })
     expect(await list.json()).toEqual([])
   })
 })

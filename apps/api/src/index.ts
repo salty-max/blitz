@@ -22,7 +22,9 @@ app.use('*', async (c, next) => {
 // better-auth owns every /api/auth/* route (sign-up, sign-in, sign-out, …).
 app.on(['GET', 'POST'], '/api/auth/*', (c) => auth.handler(c.req.raw))
 
-app.route('/teams', teams)
+// Team store lives under /api (the web app proxies /api to this server; the SPA
+// owns the bare /teams page route).
+app.route('/api/teams', teams)
 
 /** The Hono app type, for a future end-to-end-typed client. */
 export type AppType = typeof app
