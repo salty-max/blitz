@@ -3,7 +3,7 @@ import { type FormEvent, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { authClient } from '@/lib/auth-client'
-import { Button, Eyebrow, FormField, Input, PageHeading } from '@/ui'
+import { Button, FormField, Input, PageHeading } from '@/ui'
 
 type Mode = 'signIn' | 'signUp'
 
@@ -42,10 +42,7 @@ export function AuthPage() {
 
   return (
     <div className="mx-auto max-w-sm">
-      <Eyebrow>{t('eyebrow')}</Eyebrow>
-      <PageHeading className="mt-1">
-        {t(isSignUp ? 'title.signUp' : 'title.signIn')}
-      </PageHeading>
+      <PageHeading>{t(isSignUp ? 'title.signUp' : 'title.signIn')}</PageHeading>
 
       <form
         onSubmit={(event) => void handleSubmit(event)}

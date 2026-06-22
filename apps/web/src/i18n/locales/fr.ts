@@ -27,13 +27,12 @@ export const fr = {
     },
   },
   auth: {
-    eyebrow: 'Coachs',
     title: {
       signIn: 'Connexion',
       signUp: 'Créer un compte',
     },
     fields: {
-      name: 'Nom du coach',
+      name: 'Nom',
       email: 'E-mail',
       password: 'Mot de passe',
     },
