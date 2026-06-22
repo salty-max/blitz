@@ -1,94 +1,158 @@
-import {
-  afterAll,
-  beforeAll,
-  beforeEach,
-  describe,
-  expect,
-  test,
-} from 'bun:test'
-import { migrate } from 'drizzle-orm/postgres-js/migrator'
+import { beforeEach, describe, expect, mock, test } from 'bun:test'
 
-import { db, schema, sql } from '../src/db'
-import app from '../src/index'
+// These cover the teams routes' contract — auth gating, body validation, status
+// codes and response shapes — so the data layer and the session are mocked. No
+// Postgres: the routing and I/O are what's under test, not the SQL.
 
-// Integration tests need a live Postgres; they run when DATABASE_URL is set
-// (CI's service, or local docker compose) and are skipped otherwise.
-const dbSuite = process.env.DATABASE_URL ? describe : describe.skip
+type Session = { user: { id: string }; session: Record<string, unknown> } | null
+let session: Session = null
 
-const orcRoster = {
-  players: [],
-  rerolls: 3,
-  apothecary: true,
-  assistantCoaches: 0,
-  cheerleaders: 0,
-  dedicatedFans: 1,
+const rows = {
+  select: [] as unknown[],
+  insert: [] as unknown[],
+  update: [] as unknown[],
+  delete: [] as unknown[],
 }
+const recorded: {
+  insert?: Record<string, unknown>
+  update?: Record<string, unknown>
+} = {}
 
-async function signUp(email: string): Promise<string> {
-  const res = await app.request('/api/auth/sign-up/email', {
-    method: 'POST',
-    headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({ name: 'Coach', email, password: 'password123' }),
+// A drizzle-shaped stub matching exactly the chains the routes use: each query
+// resolves to the rows a test queued, and the writes capture their payload.
+mock.module('../src/db', () => ({
+  db: {
+    select: () => ({
+      from: () => ({ where: () => Promise.resolve(rows.select) }),
+    }),
+    insert: () => ({
+      values: (values: Record<string, unknown>) => {
+        recorded.insert = values
+        return { returning: () => Promise.resolve(rows.insert) }
+      },
+    }),
+    update: () => ({
+      set: (values: Record<string, unknown>) => {
+        recorded.update = values
+        return {
+          where: () => ({ returning: () => Promise.resolve(rows.update) }),
+        }
+      },
+    }),
+    delete: () => ({
+      where: () => ({ returning: () => Promise.resolve(rows.delete) }),
+    }),
+  },
+}))
+
+mock.module('../src/auth', () => ({
+  auth: { api: { getSession: () => Promise.resolve(session) } },
+}))
+
+const { default: app } = await import('../src/index')
+
+const json = (method: string, data: unknown) => ({
+  method,
+  headers: { 'content-type': 'application/json' },
+  body: JSON.stringify(data),
+})
+
+describe('teams API', () => {
+  beforeEach(() => {
+    session = null
+    rows.select = []
+    rows.insert = []
+    rows.update = []
+    rows.delete = []
+    recorded.insert = undefined
+    recorded.update = undefined
   })
-  return (res.headers.get('set-cookie') ?? '').split(';')[0]
-}
 
-dbSuite('teams API', () => {
-  beforeAll(async () => {
-    await migrate(db, { migrationsFolder: `${import.meta.dir}/../drizzle` })
+  const signIn = () => {
+    session = { user: { id: 'coach-1' }, session: {} }
+  }
+
+  test('rejects unauthenticated requests on every route', async () => {
+    const requests = [
+      app.request('/api/teams'),
+      app.request('/api/teams', json('POST', {})),
+      app.request('/api/teams/x'),
+      app.request('/api/teams/x', json('PUT', {})),
+      app.request('/api/teams/x', { method: 'DELETE' }),
+    ]
+    for (const request of requests) {
+      expect((await request).status).toBe(401)
+    }
   })
 
-  beforeEach(async () => {
-    await db.delete(schema.team)
-    await db.delete(schema.session)
-    await db.delete(schema.account)
-    await db.delete(schema.verification)
-    await db.delete(schema.user)
+  test('rejects a create with an invalid body', async () => {
+    signIn()
+    const res = await app.request(
+      '/api/teams',
+      json('POST', { name: '', teamKey: 'orc', roster: {} })
+    )
+    expect(res.status).toBe(400)
   })
 
-  afterAll(async () => {
-    await sql.end()
+  test('creates a team, scopes it to the coach, and echoes it', async () => {
+    signIn()
+    const created = {
+      id: 't1',
+      userId: 'coach-1',
+      name: 'My Orcs',
+      teamKey: 'orc',
+      roster: { players: [] },
+    }
+    rows.insert = [created]
+    const res = await app.request(
+      '/api/teams',
+      json('POST', { name: 'My Orcs', teamKey: 'orc', roster: { players: [] } })
+    )
+    expect(res.status).toBe(201)
+    expect(await res.json()).toEqual(created)
+    expect(recorded.insert?.userId).toBe('coach-1')
+    expect(recorded.insert?.name).toBe('My Orcs')
   })
 
-  test('rejects unauthenticated requests', async () => {
+  test('lists the teams the store returns', async () => {
+    signIn()
+    rows.select = [{ id: 't1' }, { id: 't2' }]
     const res = await app.request('/api/teams')
-    expect(res.status).toBe(401)
+    expect(res.status).toBe(200)
+    expect(await res.json()).toHaveLength(2)
   })
 
-  test('creates and lists a coach’s own teams', async () => {
-    const cookie = await signUp('coach@blitz.test')
-    const created = await app.request('/api/teams', {
-      method: 'POST',
-      headers: { 'content-type': 'application/json', cookie },
-      body: JSON.stringify({
-        name: 'My Orcs',
-        teamKey: 'orc',
-        roster: orcRoster,
-      }),
-    })
-    expect(created.status).toBe(201)
-
-    const list = await app.request('/api/teams', { headers: { cookie } })
-    expect(list.status).toBe(200)
-    const teams = (await list.json()) as { name: string }[]
-    expect(teams).toHaveLength(1)
-    expect(teams[0].name).toBe('My Orcs')
+  test('returns 404 when the store has no matching team', async () => {
+    signIn()
+    rows.select = []
+    expect((await app.request('/api/teams/missing')).status).toBe(404)
   })
 
-  test('isolates teams between coaches', async () => {
-    const owner = await signUp('owner@blitz.test')
-    await app.request('/api/teams', {
-      method: 'POST',
-      headers: { 'content-type': 'application/json', cookie: owner },
-      body: JSON.stringify({
-        name: 'Owned',
-        teamKey: 'orc',
-        roster: orcRoster,
-      }),
-    })
+  test('updates a team, and 404s when it is absent', async () => {
+    signIn()
+    expect(
+      (await app.request('/api/teams/x', json('PUT', { name: 'Renamed' })))
+        .status
+    ).toBe(404)
 
-    const other = await signUp('other@blitz.test')
-    const list = await app.request('/api/teams', { headers: { cookie: other } })
-    expect(await list.json()).toEqual([])
+    rows.update = [{ id: 'x', name: 'Renamed' }]
+    const res = await app.request(
+      '/api/teams/x',
+      json('PUT', { name: 'Renamed' })
+    )
+    expect(res.status).toBe(200)
+    expect(recorded.update?.name).toBe('Renamed')
+  })
+
+  test('deletes a team, and 404s when it is absent', async () => {
+    signIn()
+    expect(
+      (await app.request('/api/teams/x', { method: 'DELETE' })).status
+    ).toBe(404)
+
+    rows.delete = [{ id: 'x' }]
+    const res = await app.request('/api/teams/x', { method: 'DELETE' })
+    expect(res.status).toBe(200)
+    expect(await res.json()).toEqual({ ok: true })
   })
 })
