@@ -24,6 +24,8 @@ import { StarsPage } from '@/routes/codex/stars'
 import { TeamDetail, TeamsIndex } from '@/routes/codex/teams'
 import { ComingSoon } from '@/routes/coming-soon'
 import { LandingPage } from '@/routes/landing'
+import { TeamBuilderPage } from '@/routes/teams/team-builder'
+import { TeamsListPage } from '@/routes/teams/teams-list'
 
 const rootRoute = createRootRoute({ component: AppShell })
 
@@ -168,12 +170,30 @@ async function requireAuth({ location }: { location: ParsedLocation }) {
   }
 }
 
-// Team management — your own rosters across a season. Requires a signed-in coach.
+// Team management — your own rosters. Requires a signed-in coach; the index
+// lists saved teams while /new and /$id open the builder through the outlet.
 const teamsRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/teams',
   beforeLoad: requireAuth,
-  component: () => <ComingSoon titleKey="teamManagement" />,
+})
+
+const teamsIndexRoute = createRoute({
+  getParentRoute: () => teamsRoute,
+  path: '/',
+  component: TeamsListPage,
+})
+
+const teamsNewRoute = createRoute({
+  getParentRoute: () => teamsRoute,
+  path: 'new',
+  component: TeamBuilderPage,
+})
+
+const teamEditRoute = createRoute({
+  getParentRoute: () => teamsRoute,
+  path: '$id',
+  component: TeamBuilderPage,
 })
 
 // League & tournament management. Requires a signed-in coach.
@@ -216,7 +236,7 @@ const routeTree = rootRoute.addChildren([
       codexDraftingRoute,
     ]),
   ]),
-  teamsRoute,
+  teamsRoute.addChildren([teamsIndexRoute, teamsNewRoute, teamEditRoute]),
   leaguesRoute,
   loginRoute,
 ])

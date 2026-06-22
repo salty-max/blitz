@@ -91,6 +91,81 @@ export const fr = {
     },
     body: 'Bientôt disponible.',
   },
+  teamBuilder: {
+    list: {
+      heading: 'Vos équipes',
+      new: 'Nouvelle équipe',
+      empty: 'Aucune équipe — composez votre premier effectif.',
+      players: '{{n}} joueurs',
+      delete: 'Supprimer',
+      deleteTitle: 'Supprimer cette équipe ?',
+      deleteBody:
+        'Cela supprime définitivement « {{name}} ». C’est irréversible.',
+      deleteConfirm: 'Supprimer',
+      cancel: 'Annuler',
+    },
+    builder: {
+      newTitle: 'Nouvelle équipe',
+      name: 'Nom de l’équipe',
+      namePlaceholder: 'The Gouged Eye',
+      chooseTeam: 'Équipe',
+      choosePlaceholder: 'Choisissez un effectif…',
+      pickTeamFirst: 'Choisissez un effectif pour commencer.',
+      roster: 'Effectif',
+      staff: 'Personnel de touche',
+      save: 'Enregistrer l’équipe',
+      saving: 'Enregistrement…',
+      cancel: 'Annuler',
+      notFound: 'Équipe introuvable.',
+    },
+    cols: {
+      position: 'Poste',
+      cost: 'Coût',
+      count: 'Nombre',
+      subtotal: 'Sous-total',
+    },
+    assets: {
+      apothecary: 'Apothicaire',
+      assistantCoaches: 'Assistants coachs',
+      cheerleaders: 'Pom-pom girls',
+      dedicatedFans: 'Supporters dévoués',
+      rerolls: 'Relances d’équipe',
+    },
+    summary: {
+      heading: 'Récapitulatif',
+      budget: 'Budget',
+      spent: 'Dépensé',
+      treasury: 'Trésorerie',
+      teamValue: 'Valeur d’équipe',
+      players: 'Joueurs',
+    },
+    status: {
+      legal: 'Effectif valide',
+      issues: 'Effectif non conforme',
+    },
+    diagnostics: {
+      'unknown-position': 'Poste inconnu « {{position}} ».',
+      'position-limit': 'Trop de {{position}} — {{actual}} sur {{limit}}.',
+      'too-few-players':
+        'Effectif incomplet — {{actual}} sur {{limit}} joueurs.',
+      'too-many-players': 'Trop de joueurs — {{actual}}, max {{limit}}.',
+      'reroll-limit': 'Trop de relances — {{actual}}, max {{limit}}.',
+      'apothecary-not-allowed':
+        'Cette équipe ne peut pas engager d’apothicaire.',
+      'assistant-coach-limit':
+        'Trop d’assistants coachs — {{actual}}, max {{limit}}.',
+      'cheerleader-limit': 'Trop de pom-pom girls — {{actual}}, max {{limit}}.',
+      'dedicated-fans-limit':
+        'Trop de supporters dévoués — {{actual}}, max {{limit}}.',
+      'over-budget': 'Dépassement du budget — {{actual}} sur {{limit}}.',
+    },
+    toast: {
+      saved: 'Équipe enregistrée.',
+      deleted: 'Équipe supprimée.',
+      saveError: 'Impossible d’enregistrer l’équipe.',
+      loadError: 'Impossible de charger vos équipes.',
+    },
+  },
   ref: {
     kind: {
       skill: 'Compétence',
