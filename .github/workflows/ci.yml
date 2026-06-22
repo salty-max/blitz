@@ -16,14 +16,14 @@ jobs:
           POSTGRES_PASSWORD: blitz
           POSTGRES_DB: blitz
         ports:
-          - 5432:5432
+          - 5433:5432
         options: >-
           --health-cmd "pg_isready -U blitz -d blitz"
           --health-interval 5s
           --health-timeout 5s
           --health-retries 5
     env:
-      DATABASE_URL: postgres://blitz:blitz@localhost:5432/blitz
+      DATABASE_URL: postgres://blitz:blitz@localhost:5433/blitz
     steps:
       - uses: actions/checkout@v5
 
