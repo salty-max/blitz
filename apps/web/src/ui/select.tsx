@@ -21,7 +21,7 @@ function SelectTrigger({
   return (
     <SelectPrimitive.Trigger
       className={cn(
-        'group inline-flex items-center justify-between gap-2 border-2 border-ink bg-paper py-1.5 pl-3 pr-2.5 font-headline text-sm font-semibold uppercase tracking-wide text-ink outline-none transition-colors focus-visible:border-blood data-[state=open]:border-blood',
+        'group inline-flex items-center justify-between gap-2 border-2 border-ink bg-paper py-2 pl-3 pr-2.5 font-headline text-sm font-semibold uppercase tracking-wide text-ink outline-none transition-colors focus-visible:border-blood data-[state=open]:border-blood',
         className
       )}
       {...props}

@@ -95,8 +95,13 @@ test.describe('team builder', () => {
     await page.getByRole('option').first().click()
     await expect(page.getByTestId('builder-status')).toBeVisible()
 
-    // Draft one player via the first position's stepper, then save.
-    await page.locator('tbody tr').first().getByRole('button').last().click()
+    // Draft a player by stepping up the first position's count, then save.
+    await page
+      .locator('[data-testid^="count-"]')
+      .first()
+      .getByRole('button')
+      .last()
+      .click()
     await page.getByTestId('builder-save').click()
 
     await expect(page).toHaveURL(/\/teams$/)
