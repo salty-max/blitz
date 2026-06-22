@@ -155,8 +155,13 @@ const codexDraftingRoute = createRoute({
 // Route guard — bounce to /login (remembering where the coach was headed)
 // when there's no session.
 async function requireAuth({ location }: { location: ParsedLocation }) {
-  const { data } = await authClient.getSession()
-  if (!data) {
+  let signedIn = false
+  try {
+    signedIn = Boolean((await authClient.getSession()).data)
+  } catch {
+    // Auth API unreachable — fail safe by treating the coach as signed out.
+  }
+  if (!signedIn) {
     // `redirect()` is a thrown control-flow signal, not an Error — TanStack's pattern.
     // eslint-disable-next-line @typescript-eslint/only-throw-error
     throw redirect({ to: '/login', search: { redirect: location.href } })
