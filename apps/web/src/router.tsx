@@ -5,6 +5,7 @@ import {
 } from '@tanstack/react-router'
 
 import { AppShell } from '@/layout/app-shell'
+import { AuthPage } from '@/routes/auth'
 import { CodexHome, CodexLayout } from '@/routes/codex/codex'
 import { DraftingPage } from '@/routes/codex/drafting'
 import { GlossaryPage } from '@/routes/codex/glossary'
@@ -162,6 +163,13 @@ const leaguesRoute = createRoute({
   component: () => <ComingSoon titleKey="leagues" />,
 })
 
+// Sign in / sign up.
+const loginRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/login',
+  component: AuthPage,
+})
+
 const routeTree = rootRoute.addChildren([
   indexRoute,
   codexRoute.addChildren([
@@ -186,6 +194,7 @@ const routeTree = rootRoute.addChildren([
   ]),
   teamsRoute,
   leaguesRoute,
+  loginRoute,
 ])
 
 export const router = createRouter({ routeTree })

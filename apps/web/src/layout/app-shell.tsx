@@ -3,6 +3,7 @@ import { ArrowUpRight } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
 import { LanguageToggle } from '@/i18n/language-toggle'
+import { AuthNav } from '@/layout/auth-nav'
 import { navLinkVariants } from '@/ui'
 
 const NAV = [
@@ -40,6 +41,7 @@ export function AppShell() {
                 </Link>
               ))}
             </nav>
+            <AuthNav />
             <LanguageToggle />
           </div>
         </div>

@@ -10,4 +10,8 @@ export const env = {
   authSecret: process.env.BETTER_AUTH_SECRET ?? 'dev-secret-change-me',
   /** The auth server's own base URL. */
   authUrl: process.env.BETTER_AUTH_URL ?? 'http://localhost:3000',
+  /** Origins allowed to call the auth API — the web app (the Vite dev server by default). */
+  trustedOrigins: (
+    process.env.TRUSTED_ORIGINS ?? 'http://localhost:5173'
+  ).split(','),
 }

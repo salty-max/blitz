@@ -10,4 +10,12 @@ export default defineConfig({
       '@': new URL('./src', import.meta.url).pathname,
     },
   },
+  // Proxy API calls to the Hono server so the SPA and API share an origin in
+  // dev — the session cookie works without CORS.
+  server: {
+    proxy: {
+      '/api': 'http://localhost:3000',
+      '/teams': 'http://localhost:3000',
+    },
+  },
 })
