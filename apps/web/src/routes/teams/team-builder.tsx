@@ -6,7 +6,7 @@ import {
 } from '@blitz/resolver'
 import { Link, useNavigate, useParams } from '@tanstack/react-router'
 import { Dices, GripVertical, X } from 'lucide-react'
-import { type ReactNode, useEffect, useState } from 'react'
+import { type ReactNode, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { CharacteristicsRow } from '@/components/characteristics'
@@ -220,6 +220,8 @@ export function TeamBuilderPage() {
   const [notFound, setNotFound] = useState(false)
   const [dragFrom, setDragFrom] = useState<number | null>(null)
   const [dragOver, setDragOver] = useState<number | null>(null)
+  const rosterRef = useRef<HTMLElement>(null)
+  const [reorderFocus, setReorderFocus] = useState<number | null>(null)
 
   // Editing an existing team: hydrate name, archetype and roster from the API.
   useEffect(() => {
@@ -239,6 +241,15 @@ export function TeamBuilderPage() {
     }
   }, [id])
 
+  // After a keyboard reorder, follow the moved player with focus on their handle.
+  useEffect(() => {
+    if (reorderFocus === null) return
+    rosterRef.current
+      ?.querySelector<HTMLButtonElement>(`[data-reorder="${reorderFocus}"]`)
+      ?.focus()
+    setReorderFocus(null)
+  }, [reorderFocus])
+
   const team = teamKey ? getTeam(teamKey, locale) : undefined
   const validation = team ? validateRoster(team, rules, roster) : undefined
   const positionOf = (key: string) =>
@@ -248,6 +259,12 @@ export function TeamBuilderPage() {
   function pickTeam(key: string) {
     setTeamKey(key)
     setRoster(emptyRoster(rules))
+  }
+
+  // Move a player to a new index, re-numbering the squad and keeping focus.
+  function movePlayer(from: number, to: number) {
+    setRoster((current) => reorderPlayers(current, from, to))
+    setReorderFocus(to)
   }
 
   async function handleSave() {
@@ -391,7 +408,7 @@ export function TeamBuilderPage() {
               </Table>
             </section>
 
-            <section>
+            <section ref={rosterRef}>
               <SectionHeading bordered>{t('builder.roster')}</SectionHeading>
               {squad.length === 0 ? (
                 <EmptyState className="mt-3 text-base">
@@ -444,6 +461,7 @@ export function TeamBuilderPage() {
                             <button
                               type="button"
                               draggable
+                              data-reorder={index}
                               onDragStart={(event) => {
                                 setDragFrom(index)
                                 event.dataTransfer.effectAllowed = 'move'
@@ -452,8 +470,21 @@ export function TeamBuilderPage() {
                                 setDragFrom(null)
                                 setDragOver(null)
                               }}
+                              onKeyDown={(event) => {
+                                if (event.key === 'ArrowUp' && index > 0) {
+                                  event.preventDefault()
+                                  movePlayer(index, index - 1)
+                                } else if (
+                                  event.key === 'ArrowDown' &&
+                                  index < squad.length - 1
+                                ) {
+                                  event.preventDefault()
+                                  movePlayer(index, index + 1)
+                                }
+                              }}
                               aria-label={t('builder.reorder')}
-                              className="cursor-grab text-ink/35 transition-colors hover:text-ink active:cursor-grabbing"
+                              aria-keyshortcuts="ArrowUp ArrowDown"
+                              className="cursor-grab rounded-sm text-ink/35 outline-none transition-colors hover:text-ink focus-visible:text-ink focus-visible:ring-2 focus-visible:ring-blood active:cursor-grabbing"
                             >
                               <GripVertical className="h-4 w-4" />
                             </button>
