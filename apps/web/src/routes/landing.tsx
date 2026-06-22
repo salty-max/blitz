@@ -2,7 +2,7 @@ import { Link } from '@tanstack/react-router'
 import { ArrowRight } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
-import { Button, Card, Eyebrow } from '@/ui'
+import { Button, Card, Eyebrow, Text } from '@/ui'
 
 const PILLARS = [
   { to: '/codex', key: 'codex' },
@@ -23,12 +23,12 @@ export function LandingPage() {
     <div>
       <section className="border-b-4 border-ink pb-8">
         <Eyebrow>{t('hero.eyebrow')}</Eyebrow>
-        <h1 className="mt-2 max-w-4xl font-display text-6xl uppercase leading-[0.9] sm:text-7xl">
+        <Text as="h1" variant="display" className="mt-2 max-w-4xl">
           {t('hero.title')}
-        </h1>
-        <p className="mt-5 max-w-2xl text-lg text-ink/75">
+        </Text>
+        <Text variant="lead" tone="secondary" className="mt-5 max-w-2xl">
           {t('hero.subtitle')}
-        </p>
+        </Text>
         <Button asChild className="mt-6">
           <Link to="/codex" data-testid="landing-cta-codex">
             {t('hero.cta')}
@@ -49,16 +49,28 @@ export function LandingPage() {
               <Eyebrow size="sm" className="group-hover:text-gold">
                 {t(`pillars.${pillar.key}.kicker`)}
               </Eyebrow>
-              <h2 className="mt-1 font-display text-3xl uppercase group-hover:text-paper">
+              <Text
+                as="h2"
+                variant="heading"
+                className="mt-1 group-hover:text-paper"
+              >
                 {t(`pillars.${pillar.key}.label`)}
-              </h2>
-              <p className="mt-3 flex-1 text-ink/70 group-hover:text-paper/80">
+              </Text>
+              <Text
+                tone="secondary"
+                className="mt-3 flex-1 group-hover:text-paper/80"
+              >
                 {t(`pillars.${pillar.key}.blurb`)}
-              </p>
-              <span className="mt-5 inline-flex items-center gap-1 font-headline text-sm font-semibold uppercase tracking-wide text-blood group-hover:text-gold">
+              </Text>
+              <Text
+                as="span"
+                variant="labelLg"
+                tone="blood"
+                className="mt-5 inline-flex items-center gap-1 group-hover:text-gold"
+              >
                 {t(`pillars.${pillar.key}.cta`)}
                 <ArrowRight className="h-4 w-4" />
-              </span>
+              </Text>
             </Link>
           </Card>
         ))}

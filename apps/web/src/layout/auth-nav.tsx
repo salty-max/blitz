@@ -3,7 +3,7 @@ import { LogOut } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
 import { authClient } from '@/lib/auth-client'
-import { Avatar } from '@/ui'
+import { Avatar, Text } from '@/ui'
 
 /** First letters of up to two words, e.g. "Max Blanc" → "MB". */
 function initials(name: string): string {
@@ -31,13 +31,16 @@ export function AuthNav() {
 
   if (!data) {
     return (
-      <Link
-        to="/login"
-        data-testid="masthead-signin"
-        className="border-2 border-gold/70 px-3 py-1.5 font-headline text-xs font-semibold uppercase tracking-wide text-gold transition-colors hover:bg-gold hover:text-ink"
+      <Text
+        asChild
+        variant="label"
+        tone="gold"
+        className="border-2 border-gold/70 px-3 py-1.5 transition-colors hover:bg-gold hover:text-ink"
       >
-        {t('auth.signIn')}
-      </Link>
+        <Link to="/login" data-testid="masthead-signin">
+          {t('auth.signIn')}
+        </Link>
+      </Text>
     )
   }
 
@@ -48,9 +51,14 @@ export function AuthNav() {
         fallback={initials(data.user.name)}
         className="border-gold bg-gold text-ink"
       />
-      <span className="hidden font-headline text-sm font-semibold uppercase tracking-wide text-paper sm:inline">
+      <Text
+        as="span"
+        variant="labelLg"
+        tone="paper"
+        className="hidden sm:inline"
+      >
         {data.user.name}
-      </span>
+      </Text>
       <button
         type="button"
         onClick={() => void handleSignOut()}

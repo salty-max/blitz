@@ -1,0 +1,34 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks'
+
+import * as TextStories from './text.stories'
+
+<Meta of={TextStories} />
+
+# Text
+
+The single source of typographic truth. Every run of styled text flows through
+`Text` so faces, scale and colour stay consistent. Pick the semantic tag with
+`as` (or `asChild` to style an existing child, like a router `Link`), and the
+look with `variant` and `tone`; `weight` and `tabular` are orthogonal overrides
+for the cases a variant's defaults don't cover.
+
+<Canvas of={TextStories.Body} />
+
+## Props
+
+<Controls />
+
+## The scale
+
+Every `variant`, from the heavy display face down to fine print. The heading
+primitives (`PageHeading`, `SectionHeading`, `Eyebrow`) and `EmptyState` /
+`StatBlock` are thin wrappers over these.
+
+<Canvas of={TextStories.Scale} />
+
+## Tones
+
+Ink and accent tones read on paper; the `paper` tones are for dark surfaces like
+the masthead and footer.
+
+<Canvas of={TextStories.Tones} />

@@ -14,7 +14,7 @@ export {
 } from './description-list'
 export { Dialog } from './dialog'
 export { EmptyState } from './empty-state'
-export { Eyebrow, type EyebrowProps, eyebrowVariants } from './eyebrow'
+export { Eyebrow, type EyebrowProps } from './eyebrow'
 export { Field, type FieldProps } from './field'
 export { FormField, type FormFieldProps } from './form-field'
 export { Input, type InputProps, inputVariants } from './input'
@@ -24,11 +24,7 @@ export { PageHeading } from './page-heading'
 export { Pagination, type PaginationProps } from './pagination'
 export { Progress, type ProgressProps } from './progress'
 export { RadioGroup } from './radio-group'
-export {
-  SectionHeading,
-  type SectionHeadingProps,
-  sectionHeadingVariants,
-} from './section-heading'
+export { SectionHeading, type SectionHeadingProps } from './section-heading'
 export {
   SegmentedControl,
   type SegmentedControlOption,
@@ -41,6 +37,7 @@ export { StatBlock, type StatBlockProps } from './stat-block'
 export { Switch } from './switch'
 export { Table } from './table'
 export { Tabs } from './tabs'
+export { Text, type TextProps, textVariants } from './text'
 export { Textarea, type TextareaProps, textareaVariants } from './textarea'
 export { ToastProvider, useToast } from './toast'
 export { Tooltip, type TooltipProps, TooltipProvider } from './tooltip'

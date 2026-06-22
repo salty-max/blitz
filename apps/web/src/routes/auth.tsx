@@ -3,7 +3,15 @@ import { type FormEvent, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { authClient } from '@/lib/auth-client'
-import { Button, FormField, Input, PageHeading } from '@/ui'
+import {
+  Button,
+  cn,
+  FormField,
+  Input,
+  PageHeading,
+  Text,
+  textVariants,
+} from '@/ui'
 
 type Mode = 'signIn' | 'signUp'
 
@@ -86,16 +94,16 @@ export function AuthPage() {
           />
         </FormField>
         {error && (
-          <p role="alert" className="text-sm font-semibold text-blood">
+          <Text role="alert" weight="semibold" tone="blood">
             {error}
-          </p>
+          </Text>
         )}
         <Button type="submit" disabled={pending}>
           {t(isSignUp ? 'submit.signUp' : 'submit.signIn')}
         </Button>
       </form>
 
-      <p className="mt-4 text-sm text-ink/65">
+      <Text tone="secondary" className="mt-4">
         {t(isSignUp ? 'toggle.haveAccount' : 'toggle.needAccount')}{' '}
         <button
           type="button"
@@ -103,11 +111,14 @@ export function AuthPage() {
             setMode(isSignUp ? 'signIn' : 'signUp')
             setError(null)
           }}
-          className="font-semibold text-blood underline underline-offset-2 hover:text-blood/80"
+          className={cn(
+            textVariants({ weight: 'semibold', tone: 'blood' }),
+            'underline underline-offset-2 hover:text-blood/80'
+          )}
         >
           {t(isSignUp ? 'toggle.toSignIn' : 'toggle.toSignUp')}
         </button>
-      </p>
+      </Text>
     </div>
   )
 }

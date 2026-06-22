@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { RollTable } from '@/components/roll-table'
 import { useDataLocale } from '@/i18n/use-data-locale'
 import { RefText } from '@/reference/ref-text'
-import { PageHeading, SectionHeading } from '@/ui'
+import { PageHeading, SectionHeading, Text } from '@/ui'
 
 /** The injury sequence — the 2D6 Injury roll (and its Stunty variant) feeding the D16 Casualty table. */
 export function InjuriesPage() {
@@ -22,9 +22,9 @@ export function InjuriesPage() {
         <SectionHeading hint="2D6">{t('injuries.injuryRoll')}</SectionHeading>
         <RollTable rows={standard} />
         <div className="space-y-3">
-          <p className="text-sm text-ink/70">
+          <Text tone="secondary">
             <RefText>{t('injuries.stuntyNote')}</RefText>
-          </p>
+          </Text>
           <RollTable rows={stunty} />
         </div>
       </section>
@@ -38,7 +38,7 @@ export function InjuriesPage() {
 
       <section className="space-y-5">
         <SectionHeading hint="D6">{t('injuries.lastingInjury')}</SectionHeading>
-        <p className="text-sm text-ink/70">{t('injuries.lastingNote')}</p>
+        <Text tone="secondary">{t('injuries.lastingNote')}</Text>
         <RollTable rows={getLastingInjuries(locale)} />
       </section>
     </div>

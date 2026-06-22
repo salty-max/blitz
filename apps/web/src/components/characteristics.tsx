@@ -1,5 +1,7 @@
 import type { Characteristics } from '@blitz/schema'
 
+import { Text } from '@/ui'
+
 const STATS = [
   { key: 'ma', label: 'MA', target: false },
   { key: 'st', label: 'ST', target: false },
@@ -15,17 +17,22 @@ export function CharacteristicsRow({
   characteristics: Characteristics
 }) {
   return (
-    <dl className="inline-flex divide-x divide-ink/15 border border-ink/15 text-center font-headline tabular-nums">
+    <dl className="inline-flex divide-x divide-ink/15 border border-ink/15 text-center">
       {STATS.map((stat) => {
         const value = characteristics[stat.key]
         return (
           <div key={stat.key} className="px-2.5 py-1">
-            <dt className="text-[0.625rem] font-bold uppercase tracking-wider text-ink/45">
+            <Text as="dt" variant="overline" tone="muted">
               {stat.label}
-            </dt>
-            <dd className="mt-1 text-base font-semibold leading-none">
+            </Text>
+            <Text
+              as="dd"
+              variant="figure"
+              weight="semibold"
+              className="mt-1 text-base leading-none"
+            >
               {value === null ? '–' : stat.target ? `${value}+` : value}
-            </dd>
+            </Text>
           </div>
         )
       })}
