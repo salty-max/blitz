@@ -33,6 +33,7 @@ export function AuthNav() {
     return (
       <Link
         to="/login"
+        data-testid="masthead-signin"
         className="border-2 border-gold/70 px-3 py-1.5 font-headline text-xs font-semibold uppercase tracking-wide text-gold transition-colors hover:bg-gold hover:text-ink"
       >
         {t('auth.signIn')}
@@ -41,7 +42,7 @@ export function AuthNav() {
   }
 
   return (
-    <div className="flex items-center gap-2.5">
+    <div data-testid="masthead-account" className="flex items-center gap-2.5">
       <Avatar
         size="sm"
         fallback={initials(data.user.name)}
@@ -53,6 +54,7 @@ export function AuthNav() {
       <button
         type="button"
         onClick={() => void handleSignOut()}
+        data-testid="masthead-signout"
         aria-label={t('auth.signOut')}
         title={t('auth.signOut')}
         className="inline-flex h-8 w-8 items-center justify-center text-paper/60 transition-colors hover:text-gold"
