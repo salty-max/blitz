@@ -36,3 +36,11 @@ bun test
 bun run lint
 bun run build
 ```
+
+The API needs Postgres. Copy `apps/api/.env.example` to `apps/api/.env`, then:
+
+```sh
+docker compose up -d                  # Postgres on :5432
+bun run --cwd apps/api db:migrate     # apply migrations
+bun run --cwd apps/api dev            # http://localhost:3000
+```

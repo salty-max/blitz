@@ -8,6 +8,22 @@ on:
 jobs:
   ci:
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: blitz
+          POSTGRES_PASSWORD: blitz
+          POSTGRES_DB: blitz
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U blitz -d blitz"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DATABASE_URL: postgres://blitz:blitz@localhost:5432/blitz
     steps:
       - uses: actions/checkout@v5
 
