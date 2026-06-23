@@ -277,7 +277,12 @@ export function TeamBuilderPage() {
         await teamsApi.create({ name, teamKey: team.key, roster })
       }
       toast({ title: t('toast.saved'), tone: 'success' })
-      await navigate({ to: '/teams' })
+      // Editing returns to the team's page; a fresh team lands on the list.
+      if (id) {
+        await navigate({ to: '/teams/$id', params: { id } })
+      } else {
+        await navigate({ to: '/teams' })
+      }
     } catch {
       toast({ title: t('toast.saveError'), tone: 'danger' })
     } finally {

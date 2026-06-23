@@ -25,6 +25,7 @@ import { TeamDetail, TeamsIndex } from '@/routes/codex/teams'
 import { ComingSoon } from '@/routes/coming-soon'
 import { LandingPage } from '@/routes/landing'
 import { TeamBuilderPage } from '@/routes/teams/team-builder'
+import { TeamPage } from '@/routes/teams/team-page'
 import { TeamsListPage } from '@/routes/teams/teams-list'
 
 const rootRoute = createRootRoute({ component: AppShell })
@@ -190,9 +191,15 @@ const teamsNewRoute = createRoute({
   component: TeamBuilderPage,
 })
 
-const teamEditRoute = createRoute({
+const teamDetailRoute = createRoute({
   getParentRoute: () => teamsRoute,
   path: '$id',
+  component: TeamPage,
+})
+
+const teamEditRoute = createRoute({
+  getParentRoute: () => teamsRoute,
+  path: '$id/edit',
   component: TeamBuilderPage,
 })
 
@@ -236,7 +243,12 @@ const routeTree = rootRoute.addChildren([
       codexDraftingRoute,
     ]),
   ]),
-  teamsRoute.addChildren([teamsIndexRoute, teamsNewRoute, teamEditRoute]),
+  teamsRoute.addChildren([
+    teamsIndexRoute,
+    teamsNewRoute,
+    teamDetailRoute,
+    teamEditRoute,
+  ]),
   leaguesRoute,
   loginRoute,
 ])

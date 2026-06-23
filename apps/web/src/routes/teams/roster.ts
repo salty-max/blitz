@@ -1,4 +1,9 @@
-import type { Roster, RosterPlayer } from '@blitz/resolver'
+import type {
+  Advancement,
+  PlayerInjury,
+  Roster,
+  RosterPlayer,
+} from '@blitz/resolver'
 import type { TeamBuildingRules } from '@blitz/schema'
 
 /** A fresh roster — no players or staff, and the free starting Dedicated Fan. */
@@ -124,4 +129,64 @@ export function setPositionCount(
     }
   }
   return roster
+}
+
+/** Apply a change to the player wearing the given squad number. */
+function mapPlayer(
+  roster: Roster,
+  number: number,
+  change: (player: RosterPlayer) => RosterPlayer
+): Roster {
+  return {
+    ...roster,
+    players: roster.players.map((player) =>
+      player.number === number ? change(player) : player
+    ),
+  }
+}
+
+/** Add (or, with a negative amount, remove) Star Player Points for a player. */
+export function addSpp(roster: Roster, number: number, amount: number): Roster {
+  return mapPlayer(roster, number, (player) => ({
+    ...player,
+    spp: Math.max(0, (player.spp ?? 0) + amount),
+  }))
+}
+
+/** Spend SPP on an advancement — deduct its cost and record the upgrade. */
+export function applyAdvancement(
+  roster: Roster,
+  number: number,
+  advancement: Advancement,
+  cost: number
+): Roster {
+  return mapPlayer(roster, number, (player) => ({
+    ...player,
+    spp: Math.max(0, (player.spp ?? 0) - cost),
+    advancements: [...(player.advancements ?? []), advancement],
+  }))
+}
+
+/** Record a lasting injury on a player. */
+export function addInjury(
+  roster: Roster,
+  number: number,
+  injury: PlayerInjury
+): Roster {
+  return mapPlayer(roster, number, (player) => ({
+    ...player,
+    injuries: [...(player.injuries ?? []), injury],
+  }))
+}
+
+/** Remove the lasting injury at the given index (a correction or apothecary save). */
+export function removeInjury(
+  roster: Roster,
+  number: number,
+  index: number
+): Roster {
+  return mapPlayer(roster, number, (player) => ({
+    ...player,
+    injuries: (player.injuries ?? []).filter((_, i) => i !== index),
+  }))
 }
