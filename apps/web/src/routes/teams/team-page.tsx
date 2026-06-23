@@ -10,6 +10,7 @@ import {
   advancementCost,
   type CharacteristicKey,
   currentTeamValue,
+  improvableCharacteristics,
   playerCharacteristics,
   playerLevel,
   playerValue,
@@ -18,7 +19,7 @@ import {
 } from '@blitz/resolver'
 import type { Position, Progression, Skill } from '@blitz/schema'
 import { Link, useParams } from '@tanstack/react-router'
-import { Pencil, Plus, X } from 'lucide-react'
+import { Pencil, Plus } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -31,6 +32,7 @@ import {
   Chip,
   Dialog,
   EmptyState,
+  NumberStepper,
   PageHeading,
   SectionHeading,
   Select,
@@ -188,8 +190,12 @@ export function TeamPage() {
             <Table.Row>
               <Table.Head className="pr-2">{t('cols.number')}</Table.Head>
               <Table.Head>{t('cols.name')}</Table.Head>
-              <Table.Head className="px-2">{t('page.profile')}</Table.Head>
-              <Table.Head className="px-2">{t('page.skills')}</Table.Head>
+              <Table.Head className="hidden px-2 md:table-cell">
+                {t('page.profile')}
+              </Table.Head>
+              <Table.Head className="hidden px-2 md:table-cell">
+                {t('page.skills')}
+              </Table.Head>
               <Table.Head className="px-2 text-center">
                 {t('page.spp')}
               </Table.Head>
@@ -220,7 +226,7 @@ export function TeamPage() {
                       {player.journeyman ? ` · ${t('page.journeyman')}` : ''}
                     </Text>
                   </Table.Cell>
-                  <Table.Cell className="px-2">
+                  <Table.Cell className="hidden px-2 md:table-cell">
                     <CharacteristicsRow
                       characteristics={playerCharacteristics(
                         position.characteristics,
@@ -228,7 +234,7 @@ export function TeamPage() {
                       )}
                     />
                   </Table.Cell>
-                  <Table.Cell className="px-2">
+                  <Table.Cell className="hidden px-2 md:table-cell">
                     <SkillList
                       player={player}
                       position={position}
@@ -388,6 +394,35 @@ function ManagePlayer({
       )
     : 0
   const statCost = advancementCost(progression, player, 'characteristic')
+  const improvable = improvableCharacteristics(position.characteristics, player)
+
+  const primaryPool = available.filter((s) =>
+    position.primary.includes(s.category)
+  )
+  const secondaryPool = available.filter(isSecondary)
+  const randomPrimaryCost = advancementCost(
+    progression,
+    player,
+    'randomPrimary'
+  )
+  const randomSecondaryCost = advancementCost(
+    progression,
+    player,
+    'randomSecondary'
+  )
+
+  function learnRandom(pool: Skill[], cost: number, secondary: boolean) {
+    if (pool.length === 0 || spp < cost) return
+    const picked = pool[Math.floor(Math.random() * pool.length)]
+    onChange((roster) =>
+      applyAdvancement(
+        roster,
+        number,
+        { kind: 'skill', skill: picked.key, secondary },
+        cost
+      )
+    )
+  }
 
   function learnSkill() {
     if (!skill || spp < skillCost) return
@@ -446,14 +481,15 @@ function ManagePlayer({
           )}
           <section>
             <SectionHeading>{t('page.addSpp')}</SectionHeading>
-            <div className="mt-2 flex items-center gap-2">
-              <Text
-                variant="stat"
-                tone="gold"
-                className="text-3xl leading-none"
-              >
-                {spp}
-              </Text>
+            <div className="mt-2 flex flex-wrap items-center gap-3">
+              <NumberStepper
+                value={spp}
+                min={0}
+                onValueChange={(value) =>
+                  onChange((roster) => addSpp(roster, number, value - spp))
+                }
+                aria-label={t('page.addSpp')}
+              />
               <Text variant="caption" tone="muted">
                 {t('page.sppBanked')}
               </Text>
@@ -471,21 +507,36 @@ function ManagePlayer({
                   +{action.spp} {action.action.replace(/ \(.*\)$/, '')}
                 </Button>
               ))}
-              <Button
-                size="sm"
-                variant="ghost"
-                onClick={() => onChange((roster) => addSpp(roster, number, -1))}
-                disabled={spp === 0}
-                aria-label={t('page.removeSpp')}
-              >
-                <X className="h-4 w-4" />
-              </Button>
             </div>
           </section>
 
           <section>
             <SectionHeading>{t('page.advance')}</SectionHeading>
             <div className="mt-2 flex flex-col gap-2">
+              <div className="flex flex-wrap gap-2">
+                <Button
+                  size="sm"
+                  variant="outline"
+                  onClick={() =>
+                    learnRandom(primaryPool, randomPrimaryCost, false)
+                  }
+                  disabled={primaryPool.length === 0 || spp < randomPrimaryCost}
+                >
+                  {t('page.randomPrimary', { spp: randomPrimaryCost })}
+                </Button>
+                <Button
+                  size="sm"
+                  variant="outline"
+                  onClick={() =>
+                    learnRandom(secondaryPool, randomSecondaryCost, true)
+                  }
+                  disabled={
+                    secondaryPool.length === 0 || spp < randomSecondaryCost
+                  }
+                >
+                  {t('page.randomSecondary', { spp: randomSecondaryCost })}
+                </Button>
+              </div>
               <div className="flex items-end gap-2">
                 <Select value={skillKey} onValueChange={setSkillKey}>
                   <Select.Trigger className="flex-1">
@@ -515,11 +566,14 @@ function ManagePlayer({
                     setStatKey(value as CharacteristicKey)
                   }
                 >
-                  <Select.Trigger className="flex-1">
+                  <Select.Trigger
+                    className="flex-1"
+                    disabled={improvable.length === 0}
+                  >
                     <Select.Value placeholder={t('page.chooseStat')} />
                   </Select.Trigger>
                   <Select.Content>
-                    {CHARACTERISTICS.map((key) => (
+                    {improvable.map((key) => (
                       <Select.Item key={key} value={key}>
                         {t(`page.stat.${key}` as 'page.stat.ma')}
                       </Select.Item>
