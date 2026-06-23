@@ -55,6 +55,8 @@ export const valueIncreaseSchema = z.object({
   advancement: z.string().min(1),
   /** The value added to the player, e.g. `+20,000 gp`. */
   value: z.string().min(1),
+  /** The same value as a gold-piece number, for computing a player's worth. */
+  gp: z.number().int().min(0),
 })
 export type ValueIncrease = z.infer<typeof valueIncreaseSchema>
 

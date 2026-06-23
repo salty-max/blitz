@@ -1,7 +1,13 @@
 // The persisted roster shape is part of the data model, so it lives in
 // `@blitz/schema` as a zod schema (the single source of truth the API validates
 // against); re-exported here for the resolver's own callers.
-export type { Roster, RosterPlayer } from '@blitz/schema'
+export type {
+  Advancement,
+  CharacteristicKey,
+  PlayerInjury,
+  Roster,
+  RosterPlayer,
+} from '@blitz/schema'
 
 /** The kind of a {@link Diagnostic}; the UI formats a message from the code and its values. */
 export type DiagnosticCode =
