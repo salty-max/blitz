@@ -82,16 +82,22 @@
     { "key": "d8-8", "roll": [8, 8], "gain": "+1 to any" }
   ],
   "valueIncreases": [
-    { "key": "primary", "advancement": "Primary skill", "value": "+20,000 gp" },
+    {
+      "key": "primary",
+      "advancement": "Primary skill",
+      "value": "+20,000 gp",
+      "gp": 20000
+    },
     {
       "key": "secondary",
       "advancement": "Secondary skill",
-      "value": "+40,000 gp"
+      "value": "+40,000 gp",
+      "gp": 40000
     },
-    { "key": "av", "advancement": "+1 AV", "value": "+10,000 gp" },
-    { "key": "ma", "advancement": "+1 MA", "value": "+20,000 gp" },
-    { "key": "pa", "advancement": "+1 PA", "value": "+20,000 gp" },
-    { "key": "ag", "advancement": "+1 AG", "value": "+30,000 gp" },
-    { "key": "st", "advancement": "+1 ST", "value": "+60,000 gp" }
+    { "key": "av", "advancement": "+1 AV", "value": "+10,000 gp", "gp": 10000 },
+    { "key": "ma", "advancement": "+1 MA", "value": "+20,000 gp", "gp": 20000 },
+    { "key": "pa", "advancement": "+1 PA", "value": "+20,000 gp", "gp": 20000 },
+    { "key": "ag", "advancement": "+1 AG", "value": "+30,000 gp", "gp": 30000 },
+    { "key": "st", "advancement": "+1 ST", "value": "+60,000 gp", "gp": 60000 }
   ]
 }

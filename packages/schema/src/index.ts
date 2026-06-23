@@ -27,6 +27,12 @@ export {
   type RefSegment,
 } from './refs'
 export {
+  type Advancement,
+  advancementSchema,
+  type CharacteristicKey,
+  characteristicKeySchema,
+  type PlayerInjury,
+  playerInjurySchema,
   type Roster,
   type RosterPlayer,
   rosterPlayerSchema,
