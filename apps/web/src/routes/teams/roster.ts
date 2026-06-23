@@ -195,13 +195,13 @@ export function removeInjury(
 export function addJourneyman(
   roster: Roster,
   position: string,
-  name: string
+  nameFor: NameFactory
 ): Roster {
   return {
     ...roster,
     players: renumbered([
       ...roster.players,
-      { position, name, journeyman: true },
+      { position, name: nameFor(takenNames(roster)), journeyman: true },
     ]),
   }
 }

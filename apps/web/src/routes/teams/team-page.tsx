@@ -122,16 +122,12 @@ export function TeamPage() {
   const lineman = [...team.positions].sort(
     (a, b) => b.max - a.max || a.cost - b.cost
   )[0]
-  const takeJourneyman = () => {
-    const used = new Set(
-      roster.players
-        .map((player) => player.name)
-        .filter((name): name is string => Boolean(name))
-    )
+  const takeJourneyman = () =>
     edit((current) =>
-      addJourneyman(current, lineman.key, randomPlayerName(team.key, used))
+      addJourneyman(current, lineman.key, (used) =>
+        randomPlayerName(team.key, used)
+      )
     )
-  }
 
   return (
     <div>
