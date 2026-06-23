@@ -3,6 +3,7 @@ export {
   advancementCost,
   type AdvancementKind,
   currentTeamValue,
+  improvableCharacteristics,
   playerCharacteristics,
   playerLevel,
   playerValue,

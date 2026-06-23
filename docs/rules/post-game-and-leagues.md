@@ -70,6 +70,20 @@ Star players earn no SPP; Journeymen do.
 
 A player may decline the roll and take a skill instead (the SPP are still spent).
 
+No characteristic may be improved more than **twice**, nor beyond the bounds
+below (AG, PA and AV are roll targets, so a lower number is better for AG/PA and
+a higher one for AV):
+
+| Characteristic | Min | Max |
+| -------------- | --- | --- |
+| MA             | 1   | 9   |
+| ST             | 1   | 8   |
+| AG             | 6+  | 1+  |
+| PA             | 6+  | 1+  |
+| AV             | 3+  | 11+ |
+
+Lasting injuries reduce a characteristic toward its minimum by the same bounds.
+
 ## Value increase per advancement
 
 | Advancement     | + Current Value |

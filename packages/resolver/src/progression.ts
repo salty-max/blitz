@@ -38,6 +38,21 @@ export function advancementCost(
   return row[kind]
 }
 
+const CHARACTERISTICS: CharacteristicKey[] = ['ma', 'st', 'ag', 'pa', 'av']
+
+// The bounds a characteristic may never pass (stored as the roll target where
+// applicable). A characteristic may also be improved at most twice.
+const CHARACTERISTIC_BOUNDS: Record<
+  CharacteristicKey,
+  readonly [number, number]
+> = {
+  ma: [1, 9],
+  st: [1, 8],
+  ag: [1, 6],
+  pa: [1, 6],
+  av: [3, 11],
+}
+
 // MA, ST and AV improve as the number rises; AG and PA are roll targets that
 // improve as the number falls. `delta` is positive for a gain, negative for a loss.
 function applyDelta(
@@ -50,11 +65,8 @@ function applyDelta(
 }
 
 function clamp(characteristic: CharacteristicKey, value: number): number {
-  if (characteristic === 'av') return Math.min(11, Math.max(1, value))
-  if (characteristic === 'ag' || characteristic === 'pa') {
-    return Math.min(6, Math.max(1, value))
-  }
-  return Math.max(1, value)
+  const [min, max] = CHARACTERISTIC_BOUNDS[characteristic]
+  return Math.min(max, Math.max(min, value))
 }
 
 /**
@@ -90,6 +102,36 @@ export function playerCharacteristics(
         : clamp('pa', applyDelta('pa', base.pa, delta.pa)),
     av: clamp('av', applyDelta('av', base.av, delta.av)),
   }
+}
+
+/**
+ * The characteristics a player may still improve — improved fewer than twice and
+ * not yet at the better end of their range. A player with no Passing can't raise it.
+ */
+export function improvableCharacteristics(
+  base: Characteristics,
+  player: RosterPlayer
+): CharacteristicKey[] {
+  const current = playerCharacteristics(base, player)
+  const timesImproved = (key: CharacteristicKey) =>
+    (player.advancements ?? []).filter(
+      (advancement) =>
+        advancement.kind === 'characteristic' &&
+        advancement.characteristic === key
+    ).length
+  const atBest = (key: CharacteristicKey) => {
+    const [min, max] = CHARACTERISTIC_BOUNDS[key]
+    const value = current[key]
+    if (value === null) return true
+    // AG and PA improve toward their minimum; the others toward their maximum.
+    return key === 'ag' || key === 'pa' ? value <= min : value >= max
+  }
+  return CHARACTERISTICS.filter(
+    (key) =>
+      !(key === 'pa' && base.pa === null) &&
+      timesImproved(key) < 2 &&
+      !atBest(key)
+  )
 }
 
 function valueGp(progression: Progression, key: string): number {

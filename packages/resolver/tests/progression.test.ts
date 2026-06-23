@@ -1,6 +1,7 @@
 import {
   advancementCost,
   currentTeamValue,
+  improvableCharacteristics,
   playerCharacteristics,
   playerLevel,
   playerValue,
@@ -296,5 +297,49 @@ describe('currentTeamValue', () => {
       dedicatedFans: 1,
     }
     expect(currentTeamValue(team, rules, roster, progression)).toBe(50_000)
+  })
+})
+
+describe('characteristic bounds & improvability', () => {
+  test('a stat cannot rise past its maximum (ST 8)', () => {
+    const strong = { ma: 6, st: 8, ag: 3, pa: 4, av: 9 }
+    const result = playerCharacteristics(
+      strong,
+      player({
+        advancements: [{ kind: 'characteristic', characteristic: 'st' }],
+      })
+    )
+    expect(result.st).toBe(8)
+  })
+
+  test('an injury cannot drop AV below its minimum (3+)', () => {
+    const brittle = { ma: 6, st: 3, ag: 3, pa: 4, av: 3 }
+    const result = playerCharacteristics(
+      brittle,
+      player({ injuries: [{ kind: 'characteristic', characteristic: 'av' }] })
+    )
+    expect(result.av).toBe(3)
+  })
+
+  test('improvable list excludes twice-improved, capped and absent stats', () => {
+    // A fresh lineman can improve any characteristic.
+    expect(improvableCharacteristics(stats, player())).toEqual([
+      'ma',
+      'st',
+      'ag',
+      'pa',
+      'av',
+    ])
+    // MA improved twice is no longer improvable.
+    const maxedMa = player({
+      advancements: [
+        { kind: 'characteristic', characteristic: 'ma' },
+        { kind: 'characteristic', characteristic: 'ma' },
+      ],
+    })
+    expect(improvableCharacteristics(stats, maxedMa)).not.toContain('ma')
+    // A passer-less profile can't raise PA.
+    const noPass = { ma: 6, st: 3, ag: 3, pa: null, av: 9 }
+    expect(improvableCharacteristics(noPass, player())).not.toContain('pa')
   })
 })
