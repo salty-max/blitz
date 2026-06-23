@@ -197,6 +197,11 @@ export const fr = {
       injuries: 'Blessures persistantes',
       niggling: 'Blessure tenace',
       minusStatPick: '−1 caractéristique…',
+      journeyman: 'Remplaçant',
+      addJourneyman: 'Ajouter un remplaçant',
+      loner: 'Solitaire (4+)',
+      hire: 'Recruter',
+      journeymanNote: 'Un Solitaire gratuit — recrutez-le pour le garder.',
       done: 'Terminé',
       stat: { ma: 'MO', st: 'FO', ag: 'AG', pa: 'PA', av: 'AR' },
       minusStat: {

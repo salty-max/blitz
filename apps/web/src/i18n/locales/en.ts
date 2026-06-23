@@ -194,6 +194,11 @@ export const en = {
       injuries: 'Lasting injuries',
       niggling: 'Niggling',
       minusStatPick: '−1 characteristic…',
+      journeyman: 'Journeyman',
+      addJourneyman: 'Add journeyman',
+      loner: 'Loner (4+)',
+      hire: 'Hire',
+      journeymanNote: 'A free Loner — hire to keep them permanently.',
       done: 'Done',
       stat: { ma: 'MA', st: 'ST', ag: 'AG', pa: 'PA', av: 'AV' },
       minusStat: {

@@ -18,7 +18,7 @@ import {
 } from '@blitz/resolver'
 import type { Position, Progression, Skill } from '@blitz/schema'
 import { Link, useParams } from '@tanstack/react-router'
-import { Pencil, X } from 'lucide-react'
+import { Pencil, Plus, X } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -39,7 +39,15 @@ import {
   useToast,
 } from '@/ui'
 
-import { addInjury, addSpp, applyAdvancement, removeInjury } from './roster'
+import { randomPlayerName } from './player-names'
+import {
+  addInjury,
+  addJourneyman,
+  addSpp,
+  applyAdvancement,
+  hireJourneyman,
+  removeInjury,
+} from './roster'
 
 const rules = teamBuildingRules
 const CHARACTERISTICS: CharacteristicKey[] = ['ma', 'st', 'ag', 'pa', 'av']
@@ -108,6 +116,21 @@ export function TeamPage() {
     (a, b) => (a.number ?? 0) - (b.number ?? 0)
   )
 
+  // A Journeyman is a free Lineman — the 0–16 positional, the cheapest at the cap.
+  const lineman = [...team.positions].sort(
+    (a, b) => b.max - a.max || a.cost - b.cost
+  )[0]
+  const takeJourneyman = () => {
+    const used = new Set(
+      roster.players
+        .map((player) => player.name)
+        .filter((name): name is string => Boolean(name))
+    )
+    edit((current) =>
+      addJourneyman(current, lineman.key, randomPlayerName(team.key, used))
+    )
+  }
+
   return (
     <div>
       <div className="flex flex-wrap items-start justify-between gap-4">
@@ -127,6 +150,15 @@ export function TeamPage() {
               {saving ? t('builder.saving') : t('page.save')}
             </Button>
           )}
+          <Button
+            variant="outline"
+            onClick={takeJourneyman}
+            disabled={roster.players.length >= rules.maxPlayers}
+            data-testid="add-journeyman"
+          >
+            <Plus className="h-4 w-4" />
+            {t('page.addJourneyman')}
+          </Button>
           <Button variant="outline" asChild>
             <Link to="/teams/$id/edit" params={{ id }}>
               <Pencil className="h-4 w-4" />
@@ -185,6 +217,7 @@ export function TeamPage() {
                     </Text>
                     <Text variant="caption" tone="muted" className="block">
                       {position.name}
+                      {player.journeyman ? ` · ${t('page.journeyman')}` : ''}
                     </Text>
                   </Table.Cell>
                   <Table.Cell className="px-2">
@@ -276,15 +309,18 @@ function SkillList({
   const stats = (player.advancements ?? []).filter(
     (a) => a.kind === 'characteristic'
   ).length
-  if (
-    position.startingSkills.length === 0 &&
-    earned.length === 0 &&
-    stats === 0
-  ) {
+  const isEmpty =
+    position.startingSkills.length === 0 && earned.length === 0 && stats === 0
+  if (isEmpty && !player.journeyman) {
     return <Text tone="muted">—</Text>
   }
   return (
     <div className="flex flex-wrap gap-1">
+      {player.journeyman && (
+        <Chip variant="accent" size="sm">
+          {t('page.loner')}
+        </Chip>
+      )}
       {position.startingSkills.map((key) => (
         <Chip key={key} variant="outline" size="sm">
           {nameOf(key)}
@@ -393,6 +429,21 @@ function ManagePlayer({
         </Dialog.Title>
 
         <div className="mt-2 flex flex-col gap-5">
+          {player.journeyman && (
+            <div className="flex items-center justify-between gap-3 border-2 border-ink bg-paper-2 p-3">
+              <Text variant="caption" tone="muted">
+                {t('page.journeymanNote')}
+              </Text>
+              <Button
+                size="sm"
+                onClick={() =>
+                  onChange((roster) => hireJourneyman(roster, number))
+                }
+              >
+                {t('page.hire')}
+              </Button>
+            </div>
+          )}
           <section>
             <SectionHeading>{t('page.addSpp')}</SectionHeading>
             <div className="mt-2 flex items-center gap-2">

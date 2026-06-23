@@ -190,3 +190,26 @@ export function removeInjury(
     injuries: (player.injuries ?? []).filter((_, i) => i !== index),
   }))
 }
+
+/** Take on a free Journeyman — a Lineman with the Loner trait — to fill the squad. */
+export function addJourneyman(
+  roster: Roster,
+  position: string,
+  name: string
+): Roster {
+  return {
+    ...roster,
+    players: renumbered([
+      ...roster.players,
+      { position, name, journeyman: true },
+    ]),
+  }
+}
+
+/** Hire a Journeyman onto the roster for good — it becomes a full-value player. */
+export function hireJourneyman(roster: Roster, number: number): Roster {
+  return mapPlayer(roster, number, (player) => ({
+    ...player,
+    journeyman: false,
+  }))
+}
